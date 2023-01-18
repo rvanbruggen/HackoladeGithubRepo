@@ -1,0 +1,841 @@
+{
+    "modelName": "BeergraphModel (Polyglot)",
+    "collections": [
+        {
+            "collectionName": "Beerbrand",
+            "isActivated": true,
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "Name",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "unique": false,
+                    "GUID": "4874ba63-c6f1-43d2-92c2-0ac65dff2c6b",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f652f7b5-de67-45e9-93dc-7d14943a9136"
+            },
+            "GUID": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+            "type": "object"
+        },
+        {
+            "collectionName": "Brewery",
+            "isActivated": true,
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "name",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "unique": false,
+                    "GUID": "a2ee484c-18b8-498c-b5e0-76f304c15c0c",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ff01e4c5-aec8-4264-ae16-78c6ac93ad23"
+            },
+            "GUID": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+            "type": "object"
+        },
+        {
+            "collectionName": "Beertype",
+            "isActivated": true,
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "name",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "unique": false,
+                    "GUID": "6609267b-eb03-45c0-b9e8-b7c0cc6a928f",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "394b1748-b332-4581-b093-0cb17f581f02"
+            },
+            "GUID": "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+            "type": "object"
+        },
+        {
+            "collectionName": "Alcoholpercentage",
+            "isActivated": true,
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "Percentage",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "4dbef99e-4705-4d11-91a9-ac38f8fb2d47",
+                    "type": "numeric",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "24a9e6c6-95d4-48dc-a5ee-fcb40a2f91b7"
+            },
+            "GUID": "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
+            "type": "object"
+        },
+        {
+            "collectionName": "Pub",
+            "type": "object",
+            "properties": [],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "3d5fcec6-fac5-41d5-bd9a-c8dfbbcd4227"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "GUID": "6f974acd-6815-4583-bd3c-a4bfd483fa8b",
+            "bucketId": "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+        },
+        {
+            "collectionName": "Consumption",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "timestamp",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "timestamp_tz",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "b70c2a87-ffd1-49c9-9f42-32d2a80a08ff",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "cfd73853-f8d0-4ab9-ae05-cf1e35e7a5fd"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "2f148184-6361-4f45-ad1b-9bd605da52e2",
+            "bucketId": "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Beergraph",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "957909f9-f939-494c-bd24-7d75833e6215",
+            "type": "bucket",
+            "collectionIds": [
+                "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+                "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+                "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+                "323a4a5a-e7e2-4b74-ab29-dee60bcd312d"
+            ],
+            "show": true
+        },
+        {
+            "name": "Time Series data",
+            "type": "bucket",
+            "collectionIds": [
+                "6f974acd-6815-4583-bd3c-a4bfd483fa8b",
+                "2f148184-6361-4f45-ad1b-9bd605da52e2"
+            ],
+            "backgroundColor": {
+                "r": 0,
+                "g": 138,
+                "b": 0,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "indexes": [],
+            "GUID": "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "BREWED_BY",
+            "relationshipType": "",
+            "parentCollection": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "level": "entity",
+            "GUID": "4d6a8a0d-fa74-4475-8b1f-1d0a2b41377f",
+            "properties": []
+        },
+        {
+            "name": "IS_OF_TYPE",
+            "relationshipType": "",
+            "parentCollection": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "level": "entity",
+            "GUID": "1f7e2073-a5db-409d-ae17-8879f0fa723a",
+            "properties": []
+        },
+        {
+            "name": "HAS_ALCOHOLPERCENTAGE",
+            "relationshipType": "",
+            "parentCollection": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "level": "entity",
+            "GUID": "432d9eaa-6dcf-49b0-b7af-ab3242dc72e4",
+            "properties": []
+        },
+        {
+            "name": "HAS_ADDRESS",
+            "relationshipType": "",
+            "parentCollection": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "level": "entity",
+            "GUID": "67e57497-d47f-4f0f-a436-de868faf5e85",
+            "properties": []
+        },
+        {
+            "name": "HAS_ADDRESS",
+            "relationshipType": "",
+            "parentCollection": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "level": "entity",
+            "GUID": "fecca2d3-b627-461a-a9e6-044f16fa75d3",
+            "properties": []
+        },
+        {
+            "name": "SERVES",
+            "relationshipType": "",
+            "parentCollection": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "level": "entity",
+            "GUID": "0d753cdc-bb37-4176-8beb-4c5d23f93853",
+            "properties": []
+        },
+        {
+            "name": "CONSUMES_BEERBRAND",
+            "relationshipType": "Foreign Key",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "6f902818-a233-48c0-9651-cf9a38cee49b",
+            "level": "field",
+            "lineSize": 2,
+            "parentCollection": "2f148184-6361-4f45-ad1b-9bd605da52e2",
+            "childCollection": "09d7b339-e16b-4b72-82e4-5b44e0dc8344"
+        },
+        {
+            "name": "CONSUMPTION_LOCATION",
+            "relationshipType": "Foreign Key",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "4669e934-937c-4b07-9b2c-161111fcbcb8",
+            "level": "field",
+            "lineSize": 2,
+            "parentCollection": "2f148184-6361-4f45-ad1b-9bd605da52e2",
+            "childCollection": "6f974acd-6815-4583-bd3c-a4bfd483fa8b"
+        }
+    ],
+    "users": [],
+    "diagramViews": [
+        {
+            "GUID": "5bcd8d02-1a86-42ea-b907-019d373cf4be",
+            "name": "BeergraphDiagram",
+            "buckets": [
+                "957909f9-f939-494c-bd24-7d75833e6215",
+                "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+            ],
+            "entities": [
+                "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
+                "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+                "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+                "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+                "4d6a8a0d-fa74-4475-8b1f-1d0a2b41377f",
+                "1f7e2073-a5db-409d-ae17-8879f0fa723a",
+                "432d9eaa-6dcf-49b0-b7af-ab3242dc72e4",
+                "67e57497-d47f-4f0f-a436-de868faf5e85",
+                "fecca2d3-b627-461a-a9e6-044f16fa75d3",
+                "0d753cdc-bb37-4176-8beb-4c5d23f93853",
+                "6f974acd-6815-4583-bd3c-a4bfd483fa8b",
+                "2f148184-6361-4f45-ad1b-9bd605da52e2",
+                "6f902818-a233-48c0-9651-cf9a38cee49b",
+                "4669e934-937c-4b07-9b2c-161111fcbcb8"
+            ]
+        }
+    ],
+    "idToNameHashTable": {
+        "09d7b339-e16b-4b72-82e4-5b44e0dc8344": "Beerbrand",
+        "4874ba63-c6f1-43d2-92c2-0ac65dff2c6b": "Name",
+        "cdfed2a3-3118-415f-b223-e6a50d13dc60": "Brewery",
+        "a2ee484c-18b8-498c-b5e0-76f304c15c0c": "name",
+        "afcbe078-1073-4e16-851b-4c7cbdf7bbea": "Beertype",
+        "6609267b-eb03-45c0-b9e8-b7c0cc6a928f": "name",
+        "323a4a5a-e7e2-4b74-ab29-dee60bcd312d": "Alcoholpercentage",
+        "4dbef99e-4705-4d11-91a9-ac38f8fb2d47": "Percentage",
+        "957909f9-f939-494c-bd24-7d75833e6215": "Beergraph",
+        "4d6a8a0d-fa74-4475-8b1f-1d0a2b41377f": "BREWED_BY",
+        "1f7e2073-a5db-409d-ae17-8879f0fa723a": "IS_OF_TYPE",
+        "432d9eaa-6dcf-49b0-b7af-ab3242dc72e4": "HAS_ALCOHOLPERCENTAGE",
+        "67e57497-d47f-4f0f-a436-de868faf5e85": "HAS_ADDRESS",
+        "fecca2d3-b627-461a-a9e6-044f16fa75d3": "HAS_ADDRESS",
+        "0d753cdc-bb37-4176-8beb-4c5d23f93853": "SERVES",
+        "5bcd8d02-1a86-42ea-b907-019d373cf4be": "BeergraphDiagram",
+        "1eedb759-e67f-4dac-b3ea-919e8d0b09db": "Time Series data",
+        "6f974acd-6815-4583-bd3c-a4bfd483fa8b": "Pub",
+        "2f148184-6361-4f45-ad1b-9bd605da52e2": "Consumption",
+        "6f902818-a233-48c0-9651-cf9a38cee49b": "CONSUMES_BEERBRAND",
+        "b70c2a87-ffd1-49c9-9f42-32d2a80a08ff": "timestamp",
+        "4669e934-937c-4b07-9b2c-161111fcbcb8": "CONSUMPTION_LOCATION"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "db50a253-8e23-4c34-85b2-2d19b0b7fdfc"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "0aafb657-160f-4ec8-af53-bbbab391e868"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "0de781e5-4512-46ea-9edf-e9e579e12afc"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Polyglot",
+    "appTarget": "Polyglot",
+    "creationTS": "2023-01-18T08:18:49.834Z",
+    "GUID": "80e9a80b-dbf9-4363-ac73-1660b8b56822",
+    "isLineageEnabled": false,
+    "dbVersion": "4.4",
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-01-18T08:27:21.835Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "6.8.3"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+                        "x": 666,
+                        "y": 90,
+                        "width": 183,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+                        "x": 1256,
+                        "y": 90,
+                        "width": 169,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+                        "x": 90,
+                        "y": 90,
+                        "width": 174,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
+                        "x": 644,
+                        "y": 307,
+                        "width": 227,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "4d6a8a0d-fa74-4475-8b1f-1d0a2b41377f",
+                        "x": 982,
+                        "y": 90,
+                        "width": 189,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "1f7e2073-a5db-409d-ae17-8879f0fa723a",
+                        "x": 349,
+                        "y": 90,
+                        "width": 184,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "432d9eaa-6dcf-49b0-b7af-ab3242dc72e4",
+                        "x": 618,
+                        "y": 207,
+                        "width": 279,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "67e57497-d47f-4f0f-a436-de868faf5e85",
+                        "x": 40,
+                        "y": 40,
+                        "width": 203,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "fecca2d3-b627-461a-a9e6-044f16fa75d3",
+                        "x": 60,
+                        "y": 60,
+                        "width": 203,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0d753cdc-bb37-4176-8beb-4c5d23f93853",
+                        "x": 80,
+                        "y": 80,
+                        "width": 164,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "6f974acd-6815-4583-bd3c-a4bfd483fa8b",
+                        "x": 100,
+                        "y": 100,
+                        "width": 144,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "2f148184-6361-4f45-ad1b-9bd605da52e2",
+                        "x": 120,
+                        "y": 120,
+                        "width": 202,
+                        "height": 51,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "GUID": "957909f9-f939-494c-bd24-7d75833e6215"
+                    },
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+                            "size": 100,
+                            "x": 214.43571223056432,
+                            "y": 173.4231170718616,
+                            "isPined": false
+                        },
+                        {
+                            "GUID": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+                            "size": 100,
+                            "x": 505.56904402920503,
+                            "y": 100
+                        },
+                        {
+                            "GUID": "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+                            "size": 100,
+                            "x": 80,
+                            "y": 441.86477113113983
+                        },
+                        {
+                            "GUID": "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
+                            "size": 100,
+                            "x": 346.56047211230435,
+                            "y": 443.12752977443887
+                        },
+                        {
+                            "GUID": "6f974acd-6815-4583-bd3c-a4bfd483fa8b",
+                            "size": 100,
+                            "x": 100,
+                            "y": 100
+                        },
+                        {
+                            "GUID": "2f148184-6361-4f45-ad1b-9bd605da52e2",
+                            "size": 100,
+                            "x": 120,
+                            "y": 120
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 40,
+                            "y": 58,
+                            "GUID": "957909f9-f939-494c-bd24-7d75833e6215"
+                        },
+                        {
+                            "x": 40,
+                            "y": 40,
+                            "GUID": "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [
+                    {
+                        "GUID": "5bcd8d02-1a86-42ea-b907-019d373cf4be",
+                        "entities": [
+                            {
+                                "GUID": "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
+                                "x": 646,
+                                "y": 966,
+                                "width": 227,
+                                "height": 51,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            },
+                            {
+                                "GUID": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+                                "x": 668,
+                                "y": 675,
+                                "width": 182,
+                                "height": 51,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            },
+                            {
+                                "GUID": "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+                                "x": 90,
+                                "y": 675,
+                                "width": 173,
+                                "height": 51,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            },
+                            {
+                                "GUID": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+                                "x": 1260,
+                                "y": 675,
+                                "width": 169,
+                                "height": 51,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            },
+                            {
+                                "GUID": "4d6a8a0d-fa74-4475-8b1f-1d0a2b41377f",
+                                "x": 984,
+                                "y": 675,
+                                "width": 191,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#333333"
+                                }
+                            },
+                            {
+                                "GUID": "1f7e2073-a5db-409d-ae17-8879f0fa723a",
+                                "x": 348,
+                                "y": 675,
+                                "width": 186,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#333333"
+                                }
+                            },
+                            {
+                                "GUID": "432d9eaa-6dcf-49b0-b7af-ab3242dc72e4",
+                                "x": 619,
+                                "y": 796,
+                                "width": 280,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#333333"
+                                }
+                            },
+                            {
+                                "GUID": "67e57497-d47f-4f0f-a436-de868faf5e85",
+                                "x": 40,
+                                "y": 625,
+                                "width": 203,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#333333"
+                                }
+                            },
+                            {
+                                "GUID": "fecca2d3-b627-461a-a9e6-044f16fa75d3",
+                                "x": 60,
+                                "y": 645,
+                                "width": 203,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#333333"
+                                }
+                            },
+                            {
+                                "GUID": "0d753cdc-bb37-4176-8beb-4c5d23f93853",
+                                "x": 80,
+                                "y": 665,
+                                "width": 164,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#333333"
+                                }
+                            },
+                            {
+                                "GUID": "6f974acd-6815-4583-bd3c-a4bfd483fa8b",
+                                "x": 100,
+                                "y": 100,
+                                "width": 144,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            },
+                            {
+                                "GUID": "2f148184-6361-4f45-ad1b-9bd605da52e2",
+                                "x": 490,
+                                "y": 428,
+                                "width": 202,
+                                "height": 51,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            }
+                        ],
+                        "buckets": [
+                            {
+                                "x": 40,
+                                "y": 625,
+                                "GUID": "957909f9-f939-494c-bd24-7d75833e6215"
+                            },
+                            {
+                                "x": 60,
+                                "y": 60,
+                                "GUID": "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+                            }
+                        ],
+                        "graphView": {
+                            "erd": [
+                                {
+                                    "GUID": "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
+                                    "size": 100,
+                                    "x": 810.1779170669355,
+                                    "y": 239.77768102506863
+                                },
+                                {
+                                    "GUID": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
+                                    "size": 100,
+                                    "x": 524.6808807048027,
+                                    "y": 147.0625766385137,
+                                    "isPined": false
+                                },
+                                {
+                                    "GUID": "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
+                                    "size": 100,
+                                    "x": 442.90224794521714,
+                                    "y": 436.0604754324363
+                                },
+                                {
+                                    "GUID": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
+                                    "size": 100,
+                                    "x": 821.8372526451357,
+                                    "y": 100
+                                },
+                                {
+                                    "GUID": "a645258e-2768-4566-8fa5-9f3342b01486",
+                                    "size": 100,
+                                    "x": 1051.6807319839877,
+                                    "y": 105.2218204954577
+                                },
+                                {
+                                    "GUID": "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae",
+                                    "size": 100,
+                                    "x": 1007.1175473834008,
+                                    "y": 337.02493556762465
+                                },
+                                {
+                                    "GUID": "dd2088c6-7f6a-452a-8a17-c40c2455b6b6",
+                                    "size": 100,
+                                    "x": 709.8142634210992,
+                                    "y": 384.4715861929732
+                                },
+                                {
+                                    "GUID": "dee98206-ea0d-4358-a3d6-d08fe63fa4b2",
+                                    "size": 100,
+                                    "x": 1007.1175473834008,
+                                    "y": 467.02493556762465
+                                },
+                                {
+                                    "GUID": "6f974acd-6815-4583-bd3c-a4bfd483fa8b",
+                                    "size": 100,
+                                    "x": 100,
+                                    "y": 100
+                                },
+                                {
+                                    "GUID": "2f148184-6361-4f45-ad1b-9bd605da52e2",
+                                    "size": 100,
+                                    "x": 120,
+                                    "y": 120
+                                }
+                            ],
+                            "buckets": [
+                                {
+                                    "x": 571.9624003273683,
+                                    "y": 60,
+                                    "GUID": "957909f9-f939-494c-bd24-7d75833e6215"
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 40,
+                                    "GUID": "1eedb759-e67f-4dac-b3ea-919e8d0b09db"
+                                }
+                            ],
+                            "decorativeSymbols": [],
+                            "forceLayout": true,
+                            "defaultLinkLength": 300
+                        },
+                        "hiddenBuckets": []
+                    }
+                ],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
