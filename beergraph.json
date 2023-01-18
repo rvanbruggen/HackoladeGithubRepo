@@ -125,7 +125,7 @@
             "bucketId": "957909f9-f939-494c-bd24-7d75833e6215"
         },
         {
-            "collectionName": "Address",
+            "collectionName": "Location",
             "type": "object",
             "properties": [
                 {
@@ -191,6 +191,81 @@
                     "error": {},
                     "foreignCollection": "",
                     "foreignField": []
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "name": "latitude",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositeNodeKey"
+                            ],
+                            "compositeNodeKey": false,
+                            "mode": "float",
+                            "maximum": 90,
+                            "minimum": -90,
+                            "GUID": "89c6cc24-5519-4b9d-acb7-0335e5fd21ed"
+                        },
+                        {
+                            "name": "longitude",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositeNodeKey"
+                            ],
+                            "compositeNodeKey": false,
+                            "mode": "float",
+                            "maximum": 90,
+                            "minimum": -90,
+                            "GUID": "9ddc4743-9d1a-408b-9a5e-3cf76cac031f"
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "mode": "point",
+                    "subTypes": [
+                        {
+                            "name": "WGS-84",
+                            "snippet": "point-wgs-84"
+                        },
+                        {
+                            "name": "WGS-84-3D",
+                            "snippet": "point-wgs-84-3d"
+                        },
+                        {
+                            "name": "Cartesian",
+                            "snippet": "cartesian"
+                        },
+                        {
+                            "name": "Cartesian 3D",
+                            "snippet": "cartesian-3d"
+                        }
+                    ],
+                    "childType": "spatial",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "edbfa528-55e4-4302-a6bf-0f2a11b49de5",
+                    "unique": false,
+                    "name": "point",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -202,7 +277,10 @@
             "additionalProperties": false,
             "collectionUsers": [],
             "GUID": "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae",
-            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215"
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "childCollection": [
+                "dee98206-ea0d-4358-a3d6-d08fe63fa4b2"
+            ]
         },
         {
             "collectionName": "Pub",
@@ -233,6 +311,27 @@
             "collectionUsers": [],
             "GUID": "dd2088c6-7f6a-452a-8a17-c40c2455b6b6",
             "bucketId": "957909f9-f939-494c-bd24-7d75833e6215"
+        },
+        {
+            "collectionName": "City",
+            "type": "object",
+            "properties": [],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "113f8ada-6f0b-40c8-ae20-3f09b81a47bc"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "entityType": "sub-node",
+            "relationName": "Subclass of",
+            "GUID": "dee98206-ea0d-4358-a3d6-d08fe63fa4b2",
+            "bucketId": "957909f9-f939-494c-bd24-7d75833e6215",
+            "parentCollection": "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae",
+            "parentCollections": [
+                "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae"
+            ]
         }
     ],
     "buckets": [
@@ -245,7 +344,8 @@
                 "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
                 "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
                 "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae",
-                "dd2088c6-7f6a-452a-8a17-c40c2455b6b6"
+                "dd2088c6-7f6a-452a-8a17-c40c2455b6b6",
+                "dee98206-ea0d-4358-a3d6-d08fe63fa4b2"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -372,7 +472,8 @@
                 "67e57497-d47f-4f0f-a436-de868faf5e85",
                 "dd2088c6-7f6a-452a-8a17-c40c2455b6b6",
                 "fecca2d3-b627-461a-a9e6-044f16fa75d3",
-                "0d753cdc-bb37-4176-8beb-4c5d23f93853"
+                "0d753cdc-bb37-4176-8beb-4c5d23f93853",
+                "dee98206-ea0d-4358-a3d6-d08fe63fa4b2"
             ]
         }
     ],
@@ -394,12 +495,16 @@
         "0514df1a-9e37-4460-a1fc-7dad272b1ae4": "ZIPcode",
         "4e528ce0-7288-49a5-80fd-5faec16d4309": "City",
         "568b02d1-0d6e-460e-8394-3f272339ccff": "Country",
-        "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae": "Address",
+        "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae": "Location",
         "67e57497-d47f-4f0f-a436-de868faf5e85": "HAS_ADDRESS",
         "dd2088c6-7f6a-452a-8a17-c40c2455b6b6": "Pub",
         "c301c3a2-6444-45f6-8c0b-c8fef3aa4c46": "name",
         "fecca2d3-b627-461a-a9e6-044f16fa75d3": "HAS_ADDRESS",
-        "0d753cdc-bb37-4176-8beb-4c5d23f93853": "SERVES"
+        "0d753cdc-bb37-4176-8beb-4c5d23f93853": "SERVES",
+        "edbfa528-55e4-4302-a6bf-0f2a11b49de5": "point",
+        "89c6cc24-5519-4b9d-acb7-0335e5fd21ed": "latitude",
+        "9ddc4743-9d1a-408b-9a5e-3cf76cac031f": "longitude",
+        "dee98206-ea0d-4358-a3d6-d08fe63fa4b2": "City"
     },
     "definitions": {
         "type": "definitions",
@@ -429,7 +534,7 @@
             "modelName": false
         }
     },
-    "lastModifTS": "2023-01-18T08:08:39.667Z",
+    "lastModifTS": "2023-01-18T08:14:34.021Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -518,8 +623,8 @@
                         "GUID": "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae",
                         "x": 968,
                         "y": 143,
-                        "width": 168,
-                        "height": 105,
+                        "width": 182,
+                        "height": 141,
                         "color": {
                             "hex": "#2196F3"
                         }
@@ -548,7 +653,7 @@
                         "GUID": "fecca2d3-b627-461a-a9e6-044f16fa75d3",
                         "x": 60,
                         "y": 60,
-                        "width": 240,
+                        "width": 203,
                         "height": 100,
                         "color": {
                             "hex": "#333333"
@@ -558,10 +663,20 @@
                         "GUID": "0d753cdc-bb37-4176-8beb-4c5d23f93853",
                         "x": 80,
                         "y": 80,
-                        "width": 240,
+                        "width": 164,
                         "height": 100,
                         "color": {
                             "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "dee98206-ea0d-4358-a3d6-d08fe63fa4b2",
+                        "x": 987.5,
+                        "y": 314,
+                        "width": 143,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
                         }
                     }
                 ],
@@ -573,8 +688,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 50,
-                        "y": 50,
+                        "x": 0,
+                        "y": 0,
                         "GUID": "957909f9-f939-494c-bd24-7d75833e6215"
                     }
                 ],
@@ -624,6 +739,12 @@
                             "size": 100,
                             "x": 522.7199543210875,
                             "y": 216.6281847512541
+                        },
+                        {
+                            "GUID": "dee98206-ea0d-4358-a3d6-d08fe63fa4b2",
+                            "size": 100,
+                            "x": 100,
+                            "y": 100
                         }
                     ],
                     "buckets": [
@@ -715,8 +836,8 @@
                                 "GUID": "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae",
                                 "x": 968,
                                 "y": 143,
-                                "width": 168,
-                                "height": 105,
+                                "width": 182,
+                                "height": 141,
                                 "color": {
                                     "hex": "#2196F3"
                                 }
@@ -745,7 +866,7 @@
                                 "GUID": "fecca2d3-b627-461a-a9e6-044f16fa75d3",
                                 "x": 60,
                                 "y": 60,
-                                "width": 240,
+                                "width": 203,
                                 "height": 100,
                                 "color": {
                                     "hex": "#333333"
@@ -755,10 +876,20 @@
                                 "GUID": "0d753cdc-bb37-4176-8beb-4c5d23f93853",
                                 "x": 80,
                                 "y": 80,
-                                "width": 240,
+                                "width": 164,
                                 "height": 100,
                                 "color": {
                                     "hex": "#333333"
+                                }
+                            },
+                            {
+                                "GUID": "dee98206-ea0d-4358-a3d6-d08fe63fa4b2",
+                                "x": 987.5,
+                                "y": 314,
+                                "width": 143,
+                                "height": 100,
+                                "color": {
+                                    "hex": "#2196F3"
                                 }
                             }
                         ],
@@ -774,26 +905,26 @@
                                 {
                                     "GUID": "323a4a5a-e7e2-4b74-ab29-dee60bcd312d",
                                     "size": 100,
-                                    "x": 793.6472328467306,
-                                    "y": 317.00236674706326
+                                    "x": 810.1779170669355,
+                                    "y": 239.77768102506863
                                 },
                                 {
                                     "GUID": "09d7b339-e16b-4b72-82e4-5b44e0dc8344",
                                     "size": 100,
-                                    "x": 549.4578062296158,
-                                    "y": 142.2822940240812,
+                                    "x": 524.6808807048027,
+                                    "y": 147.0625766385137,
                                     "isPined": false
                                 },
                                 {
                                     "GUID": "afcbe078-1073-4e16-851b-4c7cbdf7bbea",
                                     "size": 100,
-                                    "x": 542.5542010953153,
-                                    "y": 442.5433744699594
+                                    "x": 442.90224794521714,
+                                    "y": 436.0604754324363
                                 },
                                 {
                                     "GUID": "cdfed2a3-3118-415f-b223-e6a50d13dc60",
                                     "size": 100,
-                                    "x": 847.2143546545502,
+                                    "x": 821.8372526451357,
                                     "y": 100
                                 },
                                 {
@@ -805,14 +936,20 @@
                                 {
                                     "GUID": "bb261d96-5823-4eb5-8c5e-ca849d9cb2ae",
                                     "size": 100,
-                                    "x": 1128.3877775615827,
-                                    "y": 205.71361545081479
+                                    "x": 1007.1175473834008,
+                                    "y": 337.02493556762465
                                 },
                                 {
                                     "GUID": "dd2088c6-7f6a-452a-8a17-c40c2455b6b6",
                                     "size": 100,
-                                    "x": 522.3318371754683,
-                                    "y": 217.36670653680312
+                                    "x": 709.8142634210992,
+                                    "y": 384.4715861929732
+                                },
+                                {
+                                    "GUID": "dee98206-ea0d-4358-a3d6-d08fe63fa4b2",
+                                    "size": 100,
+                                    "x": 1007.1175473834008,
+                                    "y": 467.02493556762465
                                 }
                             ],
                             "buckets": [
