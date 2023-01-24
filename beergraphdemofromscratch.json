@@ -96,6 +96,113 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "Pubs",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "15872b95-14d1-43cd-aef6-4859ebe0d707",
+                    "error": {}
+                },
+                {
+                    "name": "New property key",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "name": "latitude",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositeNodeKey"
+                            ],
+                            "compositeNodeKey": false,
+                            "mode": "float",
+                            "maximum": 90,
+                            "minimum": -90,
+                            "GUID": "464f5a15-2a11-46c1-a6c0-826729c39a8a"
+                        },
+                        {
+                            "name": "longitude",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositeNodeKey"
+                            ],
+                            "compositeNodeKey": false,
+                            "mode": "float",
+                            "maximum": 90,
+                            "minimum": -90,
+                            "GUID": "3cadfb07-ad9c-494a-93fc-85a81927a34a"
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "mode": "point",
+                    "subTypes": [
+                        {
+                            "name": "WGS-84",
+                            "snippet": "point-wgs-84"
+                        },
+                        {
+                            "name": "WGS-84-3D",
+                            "snippet": "point-wgs-84-3d"
+                        },
+                        {
+                            "name": "Cartesian",
+                            "snippet": "cartesian"
+                        },
+                        {
+                            "name": "Cartesian 3D",
+                            "snippet": "cartesian-3d"
+                        }
+                    ],
+                    "childType": "spatial",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "afb81aef-5ca4-4bd7-b43f-f6b692e596bc",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "e3f0972a-8941-4120-8f8f-61c28d866020"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "a0fb160e-ea91-47bb-b3ff-e2485cecd799",
+            "bucketId": "b0d49e63-2dfb-4da6-8015-9f99ab6f6b56"
         }
     ],
     "buckets": [
@@ -124,7 +231,8 @@
                 "c2af6aad-b0c9-4731-aeed-9c2c51c17f3a",
                 "8c8ca8fb-f035-4c59-9b15-8ac090f79d9d",
                 "6bd739a3-db44-4490-870c-8b16cbedd9d8",
-                "03fd8300-e0ec-4873-8160-ba827cfbb1d6"
+                "03fd8300-e0ec-4873-8160-ba827cfbb1d6",
+                "a0fb160e-ea91-47bb-b3ff-e2485cecd799"
             ],
             "hackoladeMeta": {
                 "validationErrors": {}
@@ -204,6 +312,21 @@
             "ref": "7890a615-0259-4a73-8ca9-0161ab95546f",
             "GUID": "4552e195-4536-4536-9c7f-41c9a7d0274e",
             "lineSize": 2
+        },
+        {
+            "name": "SERVED_IN",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03fd8300-e0ec-4873-8160-ba827cfbb1d6",
+            "childCollection": "a0fb160e-ea91-47bb-b3ff-e2485cecd799",
+            "level": "entity",
+            "GUID": "42f31bf5-06f5-49ac-8e02-e69452102cfb",
+            "lineSize": 2,
+            "bucketId": "b0d49e63-2dfb-4da6-8015-9f99ab6f6b56",
+            "properties": []
         }
     ],
     "users": [],
@@ -229,7 +352,13 @@
         "b0d49e63-2dfb-4da6-8015-9f99ab6f6b56": "neo4j",
         "92b91151-50d6-499b-b895-8ff122194aa4": "HAS_ALCOHOLPERCENTAGE",
         "9745750a-8374-4cd3-8c59-329d26f5ad2a": "BREWS",
-        "4552e195-4536-4536-9c7f-41c9a7d0274e": "IS_A"
+        "4552e195-4536-4536-9c7f-41c9a7d0274e": "IS_A",
+        "a0fb160e-ea91-47bb-b3ff-e2485cecd799": "Pubs",
+        "15872b95-14d1-43cd-aef6-4859ebe0d707": "name",
+        "afb81aef-5ca4-4bd7-b43f-f6b692e596bc": "New property key",
+        "464f5a15-2a11-46c1-a6c0-826729c39a8a": "latitude",
+        "3cadfb07-ad9c-494a-93fc-85a81927a34a": "longitude",
+        "42f31bf5-06f5-49ac-8e02-e69452102cfb": "SERVED_IN"
     },
     "definitions": {
         "type": "definitions",
@@ -574,7 +703,7 @@
             "polyglotModelPath": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/beergraphdemofromscratch.json"
         }
     ],
-    "lastModifTS": "2023-01-24T05:07:47.650Z",
+    "lastModifTS": "2023-01-24T05:10:01.822Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -716,6 +845,26 @@
                         "width": 151,
                         "height": 30,
                         "color": {}
+                    },
+                    {
+                        "GUID": "a0fb160e-ea91-47bb-b3ff-e2485cecd799",
+                        "x": 110,
+                        "y": 110,
+                        "width": 233,
+                        "height": 105,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "42f31bf5-06f5-49ac-8e02-e69452102cfb",
+                        "x": 40,
+                        "y": 40,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
                     }
                 ],
                 "erdDefinitions": {
@@ -737,7 +886,7 @@
                     }
                 ],
                 "collapsedNodes": [],
-                "activeRelationship": "",
+                "activeRelationship": "42f31bf5-06f5-49ac-8e02-e69452102cfb",
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
@@ -749,50 +898,56 @@
                         {
                             "GUID": "3f666620-3422-46a0-867f-627633a57b2a",
                             "size": 100,
-                            "x": 402.7077864350998,
-                            "y": 559.6383930279732
+                            "x": 431.1270410468932,
+                            "y": 587.4336346451399
                         },
                         {
                             "GUID": "5ab324ee-4e1f-4b79-afbe-bfc01ddf8d2e",
                             "size": 100,
-                            "x": 192.6060894347164,
-                            "y": 211.44084782365186
+                            "x": 133.90317858412868,
+                            "y": 231.0353786082209
                         },
                         {
                             "GUID": "327a3609-0d90-489e-9a6c-3c45f10addbd",
                             "size": 100,
-                            "x": 262.7760175138616,
-                            "y": 413.5885634480873
+                            "x": 209.11792520192998,
+                            "y": 408.5779002389236
                         },
                         {
                             "GUID": "05bedd30-affa-4588-9e29-ceb08fa49452",
                             "size": 100,
-                            "x": 674.7362804704227,
-                            "y": 139.90092769229696
+                            "x": 719.9844113067012,
+                            "y": 100
                         },
                         {
                             "GUID": "c2af6aad-b0c9-4731-aeed-9c2c51c17f3a",
                             "size": 100,
-                            "x": 498.0498621566771,
-                            "y": 736.1297461156232
+                            "x": 484.85035628173307,
+                            "y": 859.5128349640786
                         },
                         {
                             "GUID": "8c8ca8fb-f035-4c59-9b15-8ac090f79d9d",
                             "size": 100,
-                            "x": 256.1546808108115,
-                            "y": 534.442457223186
+                            "x": 304.53354980408665,
+                            "y": 553.5930582254782
                         },
                         {
                             "GUID": "6bd739a3-db44-4490-870c-8b16cbedd9d8",
                             "size": 100,
-                            "x": 261.46503827248426,
-                            "y": 788.067768723423
+                            "x": 373.4124165239582,
+                            "y": 750.511533061999
                         },
                         {
                             "GUID": "03fd8300-e0ec-4873-8160-ba827cfbb1d6",
                             "size": 100,
-                            "x": 707.9252385327565,
-                            "y": 475.65063077384485
+                            "x": 704.0859135600903,
+                            "y": 524.5503901256551
+                        },
+                        {
+                            "GUID": "a0fb160e-ea91-47bb-b3ff-e2485cecd799",
+                            "size": 100,
+                            "x": 388.8735999827817,
+                            "y": 277.53340794930875
                         }
                     ],
                     "buckets": [
@@ -802,8 +957,8 @@
                             "GUID": "f7dd5bb2-8f12-4711-85fc-f3b944ce822f"
                         },
                         {
-                            "x": 228.70774077433202,
-                            "y": 430.64200325747225,
+                            "x": 264.53354980408665,
+                            "y": 237.53340794930875,
                             "GUID": "b0d49e63-2dfb-4da6-8015-9f99ab6f6b56"
                         }
                     ],
