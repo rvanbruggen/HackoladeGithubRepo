@@ -211,7 +211,7 @@
                         "step_num": 1
                     },
                     "tPrecision": 9,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "childType": "varchar",
                     "type": "string",
                     "compositeKey": [
@@ -366,6 +366,31 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "8a7cc796-a557-47d5-be76-bfea9b481645",
+                    "error": {}
+                },
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "c40338c0-3f22-4ba2-9e6d-e96905281dfd"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "0eea1c96-0ca2-45b1-af67-3881bd16073a",
                     "error": {}
                 }
             ],
@@ -556,7 +581,20 @@
         }
     ],
     "users": [],
-    "diagramViews": [],
+    "diagramViews": [
+        {
+            "GUID": "c569d627-bc8f-44ec-9112-79131a745e56",
+            "name": "New Diagram View",
+            "buckets": [
+                "22d3261e-dac1-4d00-812c-0d314b2e1505"
+            ],
+            "entities": [
+                "09ecdae8-4019-4bb4-928f-9bb0bda1dc10",
+                "f49cdc32-f1c3-458e-96dc-36d0019c2958",
+                "ca4b501f-b895-4d62-920d-e26cef76765f"
+            ]
+        }
+    ],
     "idToNameHashTable": {
         "5c3739d3-e1bd-4c44-b1cc-dd3eb5d39f35": "Beerbrand",
         "cf1df952-279b-43dd-aec4-20e23de6fc73": "Name",
@@ -589,7 +627,9 @@
         "8a7cc796-a557-47d5-be76-bfea9b481645": "Country",
         "ca4b501f-b895-4d62-920d-e26cef76765f": "Located_At",
         "f5bfc008-a9cc-4895-a93a-a41d9fdbe1e3": "New Relationship",
-        "a2a21900-a1f1-4c9f-8f17-7fe27b73a19f": "New Relationship(1)"
+        "a2a21900-a1f1-4c9f-8f17-7fe27b73a19f": "New Relationship(1)",
+        "c569d627-bc8f-44ec-9112-79131a745e56": "New Diagram View",
+        "0eea1c96-0ca2-45b1-af67-3881bd16073a": "id"
     },
     "definitions": {
         "type": "definitions",
@@ -625,7 +665,7 @@
         "pluginVersion": "0.0.1",
         "pluginEngineVersion": "1.0.0"
     },
-    "lastModifTS": "2023-01-26T17:45:38.631Z",
+    "lastModifTS": "2023-01-27T10:58:20.072Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "applicationInformation": {
@@ -637,8 +677,8 @@
                 "erd": [
                     {
                         "GUID": "5c3739d3-e1bd-4c44-b1cc-dd3eb5d39f35",
-                        "x": 666,
-                        "y": 226,
+                        "x": 690,
+                        "y": 231,
                         "width": 183,
                         "height": 47,
                         "color": {
@@ -647,8 +687,8 @@
                     },
                     {
                         "GUID": "7e380289-afb7-4c7a-9588-4cb463609c15",
-                        "x": 1256,
-                        "y": 226,
+                        "x": 1280,
+                        "y": 231,
                         "width": 169,
                         "height": 47,
                         "color": {
@@ -657,8 +697,8 @@
                     },
                     {
                         "GUID": "4930cc3a-9223-42f5-90ce-6c56792410af",
-                        "x": 90,
-                        "y": 226,
+                        "x": 114,
+                        "y": 231,
                         "width": 174,
                         "height": 47,
                         "color": {
@@ -667,8 +707,8 @@
                     },
                     {
                         "GUID": "17fda260-a675-4c71-8856-f38d2f54e016",
-                        "x": 644,
-                        "y": 443,
+                        "x": 668,
+                        "y": 448,
                         "width": 227,
                         "height": 47,
                         "color": {
@@ -677,8 +717,8 @@
                     },
                     {
                         "GUID": "06e54bd0-6e80-4107-9445-3da1c44efd1a",
-                        "x": 982,
-                        "y": 226,
+                        "x": 1006,
+                        "y": 231,
                         "width": 189,
                         "height": 30,
                         "color": {
@@ -687,8 +727,8 @@
                     },
                     {
                         "GUID": "d70d6b7d-96a3-4ed7-9f7b-139e11c4d6bc",
-                        "x": 349,
-                        "y": 226,
+                        "x": 373,
+                        "y": 231,
                         "width": 184,
                         "height": 30,
                         "color": {
@@ -697,8 +737,8 @@
                     },
                     {
                         "GUID": "211157ab-6e2f-4724-b3ee-d9738388d658",
-                        "x": 618,
-                        "y": 343,
+                        "x": 642,
+                        "y": 348,
                         "width": 279,
                         "height": 30,
                         "color": {
@@ -707,8 +747,8 @@
                     },
                     {
                         "GUID": "157ef61d-0626-40d0-a4db-9eda7c3cecd0",
-                        "x": 299,
-                        "y": 435,
+                        "x": 323,
+                        "y": 440,
                         "width": 164,
                         "height": 100,
                         "color": {
@@ -897,8 +937,8 @@
                     },
                     {
                         "GUID": "8fb1316b-b3e9-415f-beb2-e97f8e845ec4",
-                        "x": 100,
-                        "y": 364,
+                        "x": 124,
+                        "y": 369,
                         "width": 240,
                         "height": 100,
                         "color": {
@@ -907,8 +947,8 @@
                     },
                     {
                         "GUID": "86c14abe-19da-43e6-9f24-0c01f2b42f37",
-                        "x": 164,
-                        "y": 650,
+                        "x": 166,
+                        "y": 641,
                         "width": 251,
                         "height": 87,
                         "color": {
@@ -917,8 +957,8 @@
                     },
                     {
                         "GUID": "09ecdae8-4019-4bb4-928f-9bb0bda1dc10",
-                        "x": 115.5179856115108,
-                        "y": 896.2517985611512,
+                        "x": 453.51798561151077,
+                        "y": 968.2517985611512,
                         "width": 180,
                         "height": 69,
                         "color": {
@@ -927,10 +967,10 @@
                     },
                     {
                         "GUID": "f49cdc32-f1c3-458e-96dc-36d0019c2958",
-                        "x": 257,
-                        "y": 985,
+                        "x": 595,
+                        "y": 1057,
                         "width": 213,
-                        "height": 123,
+                        "height": 141,
                         "color": {
                             "hex": "#2196F3"
                         }
@@ -954,18 +994,18 @@
                         "GUID": "0a9b8225-9228-4480-ad29-71893a3ad40a"
                     },
                     {
-                        "x": 50,
-                        "y": 186,
+                        "x": 74,
+                        "y": 191,
                         "GUID": "7ae8a2e2-7710-44b2-80c9-362acd190df2"
                     },
                     {
-                        "x": 124,
-                        "y": 610,
+                        "x": 126,
+                        "y": 601,
                         "GUID": "2edd6ae9-0411-4438-99a2-9987ac5dae56"
                     },
                     {
-                        "x": 75.5179856115108,
-                        "y": 856.2517985611512,
+                        "x": 413.51798561151077,
+                        "y": 928.2517985611512,
                         "GUID": "22d3261e-dac1-4d00-812c-0d314b2e1505"
                     }
                 ],
@@ -1271,6 +1311,74 @@
                                     "x": 571.9624003273683,
                                     "y": 60,
                                     "GUID": "957909f9-f939-494c-bd24-7d75833e6215"
+                                }
+                            ],
+                            "decorativeSymbols": [],
+                            "forceLayout": true,
+                            "defaultLinkLength": 300
+                        }
+                    },
+                    {
+                        "GUID": "c569d627-bc8f-44ec-9112-79131a745e56",
+                        "entities": [
+                            {
+                                "GUID": "09ecdae8-4019-4bb4-928f-9bb0bda1dc10",
+                                "x": 107,
+                                "y": 279,
+                                "width": 171,
+                                "height": 65,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            },
+                            {
+                                "GUID": "f49cdc32-f1c3-458e-96dc-36d0019c2958",
+                                "x": 90,
+                                "y": 90,
+                                "width": 213,
+                                "height": 141,
+                                "color": {
+                                    "hex": "#2196F3"
+                                }
+                            }
+                        ],
+                        "buckets": [
+                            {
+                                "x": 40,
+                                "y": 40,
+                                "GUID": "22d3261e-dac1-4d00-812c-0d314b2e1505"
+                            },
+                            {
+                                "x": 324,
+                                "y": 40,
+                                "GUID": "7ae8a2e2-7710-44b2-80c9-362acd190df2"
+                            },
+                            {
+                                "x": 324,
+                                "y": 70,
+                                "GUID": "2edd6ae9-0411-4438-99a2-9987ac5dae56"
+                            }
+                        ],
+                        "graphView": {
+                            "erd": [
+                                {
+                                    "GUID": "09ecdae8-4019-4bb4-928f-9bb0bda1dc10",
+                                    "size": 100,
+                                    "x": 175.5179856115108,
+                                    "y": 143.25179856115108
+                                },
+                                {
+                                    "GUID": "f49cdc32-f1c3-458e-96dc-36d0019c2958",
+                                    "size": 100,
+                                    "x": 304,
+                                    "y": 999
+                                }
+                            ],
+                            "buckets": [
+                                {
+                                    "x": 135.5179856115108,
+                                    "y": 103.25179856115108,
+                                    "GUID": "22d3261e-dac1-4d00-812c-0d314b2e1505"
                                 }
                             ],
                             "decorativeSymbols": [],
