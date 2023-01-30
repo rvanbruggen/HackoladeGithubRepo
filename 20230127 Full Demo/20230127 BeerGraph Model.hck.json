@@ -23,6 +23,9 @@
             },
             "hackoladeMeta": {
                 "validationErrors": {}
+            },
+            "error": {
+                "refPath": false
             }
         },
         {
@@ -47,6 +50,9 @@
             },
             "hackoladeMeta": {
                 "validationErrors": {}
+            },
+            "error": {
+                "refPath": false
             }
         },
         {
@@ -71,6 +77,9 @@
             },
             "hackoladeMeta": {
                 "validationErrors": {}
+            },
+            "error": {
+                "refPath": false
             }
         },
         {
@@ -95,6 +104,9 @@
             },
             "hackoladeMeta": {
                 "validationErrors": {}
+            },
+            "error": {
+                "refPath": false
             }
         }
     ],
@@ -142,7 +154,6 @@
             "childField": [],
             "childCardinality": "1",
             "level": "entity",
-            "properties": [],
             "hackoladeMeta": {},
             "bucketId": "58b59d9a-676f-4bff-adb3-8e947e2f4939",
             "type": "reference",
@@ -155,7 +166,8 @@
             ],
             "ref": "5b535e02-c2a5-4724-8b07-de42ec40563d",
             "GUID": "313241a1-c047-4535-b580-e142902a2290",
-            "lineSize": 2
+            "lineSize": 2,
+            "properties": []
         },
         {
             "name": "HAS_ALCOHOLPERCENTAGE",
@@ -166,7 +178,6 @@
             "childField": [],
             "childCardinality": "1",
             "level": "entity",
-            "properties": [],
             "hackoladeMeta": {},
             "bucketId": "58b59d9a-676f-4bff-adb3-8e947e2f4939",
             "type": "reference",
@@ -179,7 +190,8 @@
             ],
             "ref": "600c5c1b-3735-46e7-942f-d737402e1af1",
             "GUID": "96ce4c7c-c34b-4ef3-86d2-4983aee61e89",
-            "lineSize": 2
+            "lineSize": 2,
+            "properties": []
         },
         {
             "name": "IS_OF_TYPE",
@@ -190,7 +202,6 @@
             "childField": [],
             "childCardinality": "1",
             "level": "entity",
-            "properties": [],
             "hackoladeMeta": {},
             "bucketId": "58b59d9a-676f-4bff-adb3-8e947e2f4939",
             "type": "reference",
@@ -203,7 +214,8 @@
             ],
             "ref": "c65e9a71-34fe-4ca0-be02-35dea331b509",
             "GUID": "9e46420d-0130-4d75-81cd-5b01139d888d",
-            "lineSize": 2
+            "lineSize": 2,
+            "properties": []
         },
         {
             "name": "SIMILAR_TO",
@@ -216,7 +228,6 @@
             "childCardinality": "1",
             "comments": "Result of the Neo4j Data Science graph algorithms, most likely!",
             "level": "entity",
-            "properties": [],
             "hackoladeMeta": {},
             "bucketId": "58b59d9a-676f-4bff-adb3-8e947e2f4939",
             "type": "reference",
@@ -229,7 +240,8 @@
             ],
             "ref": "ee202b41-f218-4ff4-b229-17a12de8847d",
             "GUID": "13af2867-52dc-45ea-a32c-294b0901ffd4",
-            "lineSize": 2
+            "lineSize": 2,
+            "properties": []
         }
     ],
     "users": [],
@@ -271,16 +283,18 @@
         "type": "polyglotDefinitions",
         "properties": [
             {
-                "collectionName": "Alcoholpercentage",
                 "code": "",
+                "collectionName": "Alcoholpercentage",
                 "isActivated": true,
                 "bucketId": "a17dbfa3-3f63-4be2-856d-0cb1b29f619e",
                 "additionalProperties": true,
                 "properties": [
                     {
+                        "code": "",
                         "primaryKey": false,
                         "properties": [
                             {
+                                "code": "",
                                 "exclusiveMinimum": false,
                                 "exclusiveMaximum": false,
                                 "primaryKey": false,
@@ -292,7 +306,6 @@
                                 ],
                                 "compositeNodeKey": false,
                                 "name": "Percentage",
-                                "code": "",
                                 "isActivated": true,
                                 "mode": "integer",
                                 "required": true,
@@ -310,7 +323,6 @@
                         ],
                         "compositeNodeKey": false,
                         "name": "undefined",
-                        "code": "",
                         "isActivated": true,
                         "required": true,
                         "GUID": "4643a90a-b801-4b94-bf97-db2d961b0d0c",
@@ -328,27 +340,29 @@
                     "validationErrors": {}
                 },
                 "definitionEntityType": "collection",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/neo4j/Alcoholpercentage",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "9b5a2bb9-8d81-4525-acee-a837b5e9e9f4"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/neo4j/Alcoholpercentage"
             },
             {
-                "collectionName": "Beertype",
                 "code": "",
+                "collectionName": "Beertype",
                 "isActivated": true,
                 "bucketId": "a17dbfa3-3f63-4be2-856d-0cb1b29f619e",
                 "additionalProperties": true,
                 "properties": [
                     {
+                        "code": "",
                         "primaryKey": false,
                         "properties": [
                             {
+                                "code": "",
                                 "primaryKey": false,
                                 "unique": false,
                                 "type": "string",
@@ -357,7 +371,6 @@
                                 ],
                                 "compositeNodeKey": false,
                                 "name": "name",
-                                "code": "",
                                 "isActivated": true,
                                 "required": true,
                                 "sample": "Lorem",
@@ -374,7 +387,6 @@
                         ],
                         "compositeNodeKey": false,
                         "name": "undefined",
-                        "code": "",
                         "isActivated": true,
                         "required": true,
                         "GUID": "d7d91b22-493d-4322-829a-61c872fd03c3",
@@ -392,27 +404,29 @@
                     "validationErrors": {}
                 },
                 "definitionEntityType": "collection",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/neo4j/Beertype",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "24d76385-ad02-4c75-8f4d-9f77c863e0a8"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/neo4j/Beertype"
             },
             {
-                "collectionName": "Brewery",
                 "code": "",
+                "collectionName": "Brewery",
                 "isActivated": true,
                 "bucketId": "a17dbfa3-3f63-4be2-856d-0cb1b29f619e",
                 "additionalProperties": true,
                 "properties": [
                     {
+                        "code": "",
                         "primaryKey": false,
                         "properties": [
                             {
+                                "code": "",
                                 "primaryKey": false,
                                 "unique": false,
                                 "type": "string",
@@ -421,7 +435,6 @@
                                 ],
                                 "compositeNodeKey": false,
                                 "name": "name",
-                                "code": "",
                                 "isActivated": true,
                                 "required": true,
                                 "sample": "Lorem",
@@ -438,7 +451,6 @@
                         ],
                         "compositeNodeKey": false,
                         "name": "undefined",
-                        "code": "",
                         "isActivated": true,
                         "required": true,
                         "GUID": "4b15569c-dc29-4359-a13b-63680e293ff8",
@@ -456,27 +468,29 @@
                     "validationErrors": {}
                 },
                 "definitionEntityType": "collection",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/neo4j/Brewery",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "dcc572fc-c0fa-48f3-9d9f-2d7d5d596e40"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/neo4j/Brewery"
             },
             {
-                "collectionName": "Beerbrand",
                 "code": "",
+                "collectionName": "Beerbrand",
                 "isActivated": true,
                 "bucketId": "a17dbfa3-3f63-4be2-856d-0cb1b29f619e",
                 "additionalProperties": true,
                 "properties": [
                     {
+                        "code": "",
                         "primaryKey": false,
                         "properties": [
                             {
+                                "code": "",
                                 "primaryKey": false,
                                 "unique": false,
                                 "type": "string",
@@ -485,7 +499,6 @@
                                 ],
                                 "compositeNodeKey": false,
                                 "name": "Name",
-                                "code": "",
                                 "isActivated": true,
                                 "required": true,
                                 "sample": "Lorem",
@@ -502,7 +515,6 @@
                         ],
                         "compositeNodeKey": false,
                         "name": "undefined",
-                        "code": "",
                         "isActivated": true,
                         "required": true,
                         "GUID": "72c862a2-3cca-4b2c-a5a1-984d24b5d78a",
@@ -520,15 +532,15 @@
                     "validationErrors": {}
                 },
                 "definitionEntityType": "collection",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/neo4j/Beerbrand",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "4e20fa5c-22ec-4a07-a557-027fe581b0a4"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/neo4j/Beerbrand"
             },
             {
                 "name": "BREWED_BY",
@@ -542,17 +554,17 @@
                 "level": "entity",
                 "GUID": "5b535e02-c2a5-4724-8b07-de42ec40563d",
                 "properties": [],
-                "definitionEntityType": "relationship",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/BREWED_BY",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "313241a1-c047-4535-b580-e142902a2290"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/relationships/BREWED_BY"
             },
             {
                 "name": "HAS_ALCOHOLPERCENTAGE",
@@ -566,17 +578,17 @@
                 "level": "entity",
                 "GUID": "600c5c1b-3735-46e7-942f-d737402e1af1",
                 "properties": [],
-                "definitionEntityType": "relationship",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/HAS_ALCOHOLPERCENTAGE",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "96ce4c7c-c34b-4ef3-86d2-4983aee61e89"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/relationships/HAS_ALCOHOLPERCENTAGE"
             },
             {
                 "name": "IS_OF_TYPE",
@@ -590,17 +602,17 @@
                 "level": "entity",
                 "GUID": "c65e9a71-34fe-4ca0-be02-35dea331b509",
                 "properties": [],
-                "definitionEntityType": "relationship",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/IS_OF_TYPE",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "9e46420d-0130-4d75-81cd-5b01139d888d"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/relationships/IS_OF_TYPE"
             },
             {
                 "name": "SIMILAR_TO",
@@ -616,21 +628,21 @@
                 "level": "entity",
                 "GUID": "ee202b41-f218-4ff4-b229-17a12de8847d",
                 "properties": [],
-                "definitionEntityType": "relationship",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/SIMILAR_TO",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "13af2867-52dc-45ea-a32c-294b0901ffd4"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/relationships/SIMILAR_TO"
             },
             {
-                "name": "neo4j",
                 "code": "",
+                "name": "neo4j",
                 "isActivated": true,
                 "backgroundColor": {
                     "r": 216,
@@ -651,15 +663,15 @@
                 },
                 "show": true,
                 "definitionEntityType": "bucket",
-                "link": "20230127 Polyglot BeerModel.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/neo4j",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "58b59d9a-676f-4bff-adb3-8e947e2f4939"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "20230127 Polyglot BeerModel.json",
+                "fieldRelativePath": "#/neo4j"
             }
         ],
         "GUID": "054f5832-4f58-496b-a7c8-f9619eebc3b7"
@@ -685,17 +697,18 @@
             "polyglotModelPath": "20230127 Polyglot BeerModel.json"
         }
     ],
-    "lastModifTS": "2023-01-27T14:50:57.834Z",
+    "lastModifTS": "2023-01-30T17:35:39.685Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Neo4j",
-        "pluginVersion": "0.1.47",
+        "pluginVersion": "0.1.48",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.8.4"
+        "version": "6.8.5"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -880,50 +893,50 @@
                         {
                             "GUID": "cbcab9e9-79ac-4879-968c-e00fc7be6ffd",
                             "size": 100,
-                            "x": 530.7440355059509,
-                            "y": 375.0742214589165
+                            "x": 547.2230401624385,
+                            "y": 377.07207327082983
                         },
                         {
                             "GUID": "52e4c56b-62e3-4238-bee2-3226e525ff7c",
                             "size": 100,
                             "x": 80,
-                            "y": 466.6622268266626
+                            "y": 465.7706517303961
                         },
                         {
                             "GUID": "fd186704-9233-42d6-9f41-6df1ddc2aef2",
                             "size": 100,
-                            "x": 293.8943171585425,
-                            "y": 496.55206253095184
+                            "x": 293.75816317722604,
+                            "y": 500.3857773347435
                         },
                         {
                             "GUID": "59528d86-372d-4675-abae-7addc59ff2e3",
                             "size": 100,
-                            "x": 240.06671908770508,
+                            "x": 234.52290151983988,
                             "y": 100
                         },
                         {
                             "GUID": "9b5a2bb9-8d81-4525-acee-a837b5e9e9f4",
                             "size": 100,
-                            "x": 300,
-                            "y": 996.5520625309518
+                            "x": 257.0266518158035,
+                            "y": 1098.3636110760947
                         },
                         {
                             "GUID": "24d76385-ad02-4c75-8f4d-9f77c863e0a8",
                             "size": 100,
-                            "x": 50,
-                            "y": 796.5520625309518
+                            "x": 82.65382887170949,
+                            "y": 801.4037952091201
                         },
                         {
                             "GUID": "dcc572fc-c0fa-48f3-9d9f-2d7d5d596e40",
                             "size": 100,
-                            "x": 50,
-                            "y": 1046.5520625309518
+                            "x": 149.95965717886844,
+                            "y": 991.2549932570809
                         },
                         {
                             "GUID": "4e20fa5c-22ec-4a07-a557-027fe581b0a4",
                             "size": 100,
-                            "x": 500,
-                            "y": 746.5520625309518
+                            "x": 481.6757428297084,
+                            "y": 767.1871274522672
                         }
                     ],
                     "buckets": [
@@ -933,8 +946,8 @@
                             "GUID": "a17dbfa3-3f63-4be2-856d-0cb1b29f619e"
                         },
                         {
-                            "x": 40,
-                            "y": 40,
+                            "x": 42.65382887170949,
+                            "y": 727.1871274522672,
                             "GUID": "58b59d9a-676f-4bff-adb3-8e947e2f4939"
                         }
                     ],
