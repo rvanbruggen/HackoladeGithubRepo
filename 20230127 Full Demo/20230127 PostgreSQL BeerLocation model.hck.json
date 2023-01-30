@@ -57,6 +57,9 @@
                         "error": {}
                     }
                 ]
+            },
+            "error": {
+                "refPath": false
             }
         }
     ],
@@ -335,7 +338,7 @@
                     },
                     {
                         "code": "",
-                        "primaryKey": true,
+                        "primaryKey": false,
                         "mode": "varchar",
                         "length": 50,
                         "childType": "char",
@@ -407,6 +410,22 @@
                         "isActivated": true,
                         "GUID": "b9f71f28-a7e4-4ba0-9989-de41ba2266ac",
                         "fakerFunction": "faker.address.country()",
+                        "error": {}
+                    },
+                    {
+                        "code": "",
+                        "primaryKey": true,
+                        "childType": "uuid",
+                        "type": "string",
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "id",
+                        "isActivated": true,
+                        "GUID": "c2b9ae31-da57-48b2-8d53-2e23bf5f2da3",
                         "error": {}
                     }
                 ],
@@ -622,17 +641,18 @@
             "polyglotModelPath": "20230127 Polyglot BeerModel.json"
         }
     ],
-    "lastModifTS": "2023-01-27T16:08:57.552Z",
+    "lastModifTS": "2023-01-30T17:34:36.347Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "PostgreSQL",
-        "pluginVersion": "0.1.31",
+        "pluginVersion": "0.1.32",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.8.4"
+        "version": "6.8.5"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
