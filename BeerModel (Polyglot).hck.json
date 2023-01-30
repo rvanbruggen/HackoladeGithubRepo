@@ -12,11 +12,15 @@
                     "isActivated": true,
                     "childType": "varchar",
                     "mode": "string",
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "unique": false,
                     "GUID": "cf1df952-279b-43dd-aec4-20e23de6fc73",
                     "type": "string",
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "error": {},
+                    "childRelationships": [
+                        "f5bfc008-a9cc-4895-a93a-a41d9fdbe1e3"
+                    ]
                 }
             ],
             "definitions": {
@@ -124,7 +128,7 @@
             "type": "object",
             "properties": [
                 {
-                    "name": "Desccription",
+                    "name": "BeerBrand",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
@@ -141,6 +145,13 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "2fb48fa3-25a7-4d3e-bf9b-5670ac2dcecd",
+                    "parentRelationship": "f5bfc008-a9cc-4895-a93a-a41d9fdbe1e3",
+                    "foreignCollection": "5c3739d3-e1bd-4c44-b1cc-dd3eb5d39f35",
+                    "foreignField": [
+                        "5c3739d3-e1bd-4c44-b1cc-dd3eb5d39f35",
+                        "cf1df952-279b-43dd-aec4-20e23de6fc73"
+                    ],
+                    "relationshipType": "Foreign Key",
                     "error": {}
                 },
                 {
@@ -187,6 +198,29 @@
                     "compositeUniqueKey": false,
                     "GUID": "653e8bf0-f9ef-419a-87f0-597ee525db42",
                     "error": {}
+                },
+                {
+                    "name": "BeerBar",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": true,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "5fe50acf-11f9-4d49-a0b4-c39e4ce73ed2",
+                    "error": {},
+                    "childRelationships": [
+                        "a2a21900-a1f1-4c9f-8f17-7fe27b73a19f"
+                    ]
                 }
             ],
             "definitions": {
@@ -221,6 +255,13 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "c944bf59-bc89-4a4c-86a3-c0890380c8df",
+                    "parentRelationship": "a2a21900-a1f1-4c9f-8f17-7fe27b73a19f",
+                    "foreignCollection": "86c14abe-19da-43e6-9f24-0c01f2b42f37",
+                    "foreignField": [
+                        "86c14abe-19da-43e6-9f24-0c01f2b42f37",
+                        "5fe50acf-11f9-4d49-a0b4-c39e4ce73ed2"
+                    ],
+                    "relationshipType": "Foreign Key",
                     "error": {}
                 },
                 {
@@ -246,6 +287,38 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "be3ece1e-6fdc-463c-9b19-3d19925b4125",
+                    "error": {}
+                },
+                {
+                    "name": "Address",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "a6e4d102-a617-4aac-a264-9b1ffb899f69"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "0cf83cd1-5f89-402c-b342-b10a6b83d1a0",
+                    "parentRelationship": "ca4b501f-b895-4d62-920d-e26cef76765f",
+                    "foreignCollection": "f49cdc32-f1c3-458e-96dc-36d0019c2958",
+                    "foreignField": [
+                        "f49cdc32-f1c3-458e-96dc-36d0019c2958",
+                        "0eea1c96-0ca2-45b1-af67-3881bd16073a"
+                    ],
+                    "relationshipType": "Foreign Key",
                     "error": {}
                 }
             ],
@@ -391,7 +464,10 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "0eea1c96-0ca2-45b1-af67-3881bd16073a",
-                    "error": {}
+                    "error": {},
+                    "childRelationships": [
+                        "ca4b501f-b895-4d62-920d-e26cef76765f"
+                    ]
                 }
             ],
             "definitions": {
@@ -543,9 +619,19 @@
         {
             "name": "Located_At",
             "relationshipType": "Foreign Key",
-            "parentField": [],
+            "parentField": [
+                [
+                    "f49cdc32-f1c3-458e-96dc-36d0019c2958",
+                    "0eea1c96-0ca2-45b1-af67-3881bd16073a"
+                ]
+            ],
             "parentCardinality": "1",
-            "childField": [],
+            "childField": [
+                [
+                    "09ecdae8-4019-4bb4-928f-9bb0bda1dc10",
+                    "0cf83cd1-5f89-402c-b342-b10a6b83d1a0"
+                ]
+            ],
             "childCardinality": "1..n",
             "GUID": "ca4b501f-b895-4d62-920d-e26cef76765f",
             "level": "field",
@@ -556,9 +642,19 @@
         {
             "name": "New Relationship",
             "relationshipType": "Foreign Key",
-            "parentField": [],
+            "parentField": [
+                [
+                    "5c3739d3-e1bd-4c44-b1cc-dd3eb5d39f35",
+                    "cf1df952-279b-43dd-aec4-20e23de6fc73"
+                ]
+            ],
             "parentCardinality": "1",
-            "childField": [],
+            "childField": [
+                [
+                    "86c14abe-19da-43e6-9f24-0c01f2b42f37",
+                    "2fb48fa3-25a7-4d3e-bf9b-5670ac2dcecd"
+                ]
+            ],
             "childCardinality": "1",
             "GUID": "f5bfc008-a9cc-4895-a93a-a41d9fdbe1e3",
             "level": "field",
@@ -569,9 +665,19 @@
         {
             "name": "New Relationship(1)",
             "relationshipType": "Foreign Key",
-            "parentField": [],
+            "parentField": [
+                [
+                    "86c14abe-19da-43e6-9f24-0c01f2b42f37",
+                    "5fe50acf-11f9-4d49-a0b4-c39e4ce73ed2"
+                ]
+            ],
             "parentCardinality": "1",
-            "childField": [],
+            "childField": [
+                [
+                    "09ecdae8-4019-4bb4-928f-9bb0bda1dc10",
+                    "c944bf59-bc89-4a4c-86a3-c0890380c8df"
+                ]
+            ],
             "childCardinality": "1",
             "GUID": "a2a21900-a1f1-4c9f-8f17-7fe27b73a19f",
             "level": "field",
@@ -612,7 +718,7 @@
         "8fb1316b-b3e9-415f-beb2-e97f8e845ec4": "Beerbrand to New node label",
         "2edd6ae9-0411-4438-99a2-9987ac5dae56": "TimeStamps",
         "86c14abe-19da-43e6-9f24-0c01f2b42f37": "BeerConsumption",
-        "2fb48fa3-25a7-4d3e-bf9b-5670ac2dcecd": "Desccription",
+        "2fb48fa3-25a7-4d3e-bf9b-5670ac2dcecd": "BeerBrand",
         "ed78470a-d1cc-49ba-aec7-d6ace3c22bb9": "TimeOfConsumption",
         "653e8bf0-f9ef-419a-87f0-597ee525db42": "Liters",
         "22d3261e-dac1-4d00-812c-0d314b2e1505": "BeerBars",
@@ -629,7 +735,9 @@
         "f5bfc008-a9cc-4895-a93a-a41d9fdbe1e3": "New Relationship",
         "a2a21900-a1f1-4c9f-8f17-7fe27b73a19f": "New Relationship(1)",
         "c569d627-bc8f-44ec-9112-79131a745e56": "New Diagram View",
-        "0eea1c96-0ca2-45b1-af67-3881bd16073a": "id"
+        "0eea1c96-0ca2-45b1-af67-3881bd16073a": "id",
+        "0cf83cd1-5f89-402c-b342-b10a6b83d1a0": "Address",
+        "5fe50acf-11f9-4d49-a0b4-c39e4ce73ed2": "BeerBar"
     },
     "definitions": {
         "type": "definitions",
@@ -665,11 +773,11 @@
         "pluginVersion": "0.0.1",
         "pluginEngineVersion": "1.0.0"
     },
-    "lastModifTS": "2023-01-27T10:58:20.072Z",
+    "lastModifTS": "2023-01-30T17:29:24.736Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "applicationInformation": {
-        "version": "6.8.4"
+        "version": "6.8.5"
     },
     "settings": {
         "centralPane": {
@@ -949,8 +1057,8 @@
                         "GUID": "86c14abe-19da-43e6-9f24-0c01f2b42f37",
                         "x": 166,
                         "y": 641,
-                        "width": 251,
-                        "height": 87,
+                        "width": 252,
+                        "height": 105,
                         "color": {
                             "hex": "#2196F3"
                         }
@@ -960,15 +1068,15 @@
                         "x": 453.51798561151077,
                         "y": 968.2517985611512,
                         "width": 180,
-                        "height": 69,
+                        "height": 87,
                         "color": {
                             "hex": "#2196F3"
                         }
                     },
                     {
                         "GUID": "f49cdc32-f1c3-458e-96dc-36d0019c2958",
-                        "x": 595,
-                        "y": 1057,
+                        "x": 608.5898473840821,
+                        "y": 1084.1796947681653,
                         "width": 213,
                         "height": 141,
                         "color": {
@@ -1325,8 +1433,8 @@
                                 "GUID": "09ecdae8-4019-4bb4-928f-9bb0bda1dc10",
                                 "x": 107,
                                 "y": 279,
-                                "width": 171,
-                                "height": 65,
+                                "width": 180,
+                                "height": 87,
                                 "color": {
                                     "hex": "#2196F3"
                                 }
