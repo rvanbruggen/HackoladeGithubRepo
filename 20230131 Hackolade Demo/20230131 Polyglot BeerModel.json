@@ -172,50 +172,6 @@
                     "error": {}
                 },
                 {
-                    "name": "Location",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "properties": [],
-                    "ignore_z_value": true,
-                    "additionalProperties": false,
-                    "subTypes": [
-                        {
-                            "name": "object",
-                            "snippet": "geopoint-object"
-                        },
-                        {
-                            "name": "string",
-                            "snippet": "geopoint-string"
-                        },
-                        {
-                            "name": "geoJSON",
-                            "snippet": "geopoint-geojson"
-                        },
-                        {
-                            "name": "geo-bounding",
-                            "snippet": "geopoint-geo-bounding"
-                        },
-                        {
-                            "name": "geohash",
-                            "snippet": "geopoint-geohash"
-                        }
-                    ],
-                    "childType": "geopoint",
-                    "type": "document",
-                    "compositeKey": [
-                        "compositePrimaryKey",
-                        "compositeUniqueKey"
-                    ],
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "GUID": "8bb6fdaa-95e6-47d7-b0e0-9c8e76ef2130",
-                    "error": {}
-                },
-                {
                     "name": "TimeStamp",
                     "hackoladeMeta": {},
                     "isActivated": true,
@@ -279,6 +235,93 @@
                     "compositeUniqueKey": false,
                     "GUID": "4b789c70-ddf9-4298-ace4-10f1633b8d4b",
                     "error": {}
+                },
+                {
+                    "name": "latlotlocation",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": true,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1,
+                                "GUID": "861c508e-d59f-4f2b-ae61-ba74de1aa9f3"
+                            },
+                            "tPrecision": 9,
+                            "index": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "precision": 4,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "85c4ec1d-258a-4755-b2b7-4a05d7f19629",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "long",
+                            "error": {}
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1,
+                                "GUID": "3cccd8b7-c0de-4406-b423-eeb88535bc20"
+                            },
+                            "tPrecision": 9,
+                            "index": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "precision": 4,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "1d8f7698-3407-434d-8b2d-c593da716ad8",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {},
+                            "displayName": "lat"
+                        }
+                    ],
+                    "childType": "array",
+                    "type": "array",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "3398161b-62e7-4c8b-aacc-afb8e7931f29",
+                    "minProperties": 2,
+                    "maxProperties": 2,
+                    "foreignCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                    "parentRelationship": "75702952-3096-4f55-a023-d48ffdc1722c",
+                    "foreignField": [
+                        "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                        "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -290,6 +333,332 @@
             "additionalProperties": false,
             "GUID": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
             "bucketId": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c"
+        },
+        {
+            "collectionName": "BarAddress",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Streetname",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "ad0ba01a-d492-4cbb-bbfc-354e0121f5a9",
+                    "error": {}
+                },
+                {
+                    "name": "Streetnr",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "783d1d05-fbb0-4618-955f-19a7e7ab1b86"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int32",
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "abc69f05-f35a-446b-a401-d7794a59e8f7",
+                    "error": {}
+                },
+                {
+                    "name": "zipcode",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "b23e6c2b-dc2c-48c4-b943-4d2aff0fbc53",
+                    "error": {}
+                },
+                {
+                    "name": "city",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "2659479a-972d-4fe4-a6cb-adfdee64097f",
+                    "error": {}
+                },
+                {
+                    "name": "latlotlocation",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": true,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1,
+                                "GUID": "861c508e-d59f-4f2b-ae61-ba74de1aa9f3"
+                            },
+                            "tPrecision": 9,
+                            "index": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "precision": 4,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "7be53e6a-fa9c-444d-97d8-8cb9ade80160",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "long",
+                            "error": {}
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1,
+                                "GUID": "3cccd8b7-c0de-4406-b423-eeb88535bc20"
+                            },
+                            "tPrecision": 9,
+                            "index": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "precision": 4,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "e9f38e4e-de14-4ec9-acd6-a4cc54ffbcc2",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {},
+                            "displayName": "lat"
+                        }
+                    ],
+                    "childType": "array",
+                    "type": "array",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a",
+                    "minProperties": 2,
+                    "maxProperties": 2,
+                    "error": {},
+                    "childRelationships": [
+                        "75702952-3096-4f55-a023-d48ffdc1722c",
+                        "a639152f-752b-494c-a2da-6458989be4a3"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "12919b89-2536-4fb3-8bf9-45d8f21ee2f3"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+            "bucketId": "10340fac-0aaf-48b4-be70-77f98a407f24"
+        },
+        {
+            "collectionName": "BeerBars",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "d3736455-bd56-48cb-8ffb-4acd677e3f76",
+                    "error": {}
+                },
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "type": "objectId",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "dd6356df-58ae-4ced-bff4-b638ac630e50",
+                    "error": {}
+                },
+                {
+                    "name": "latlotlocation",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": true,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1,
+                                "GUID": "861c508e-d59f-4f2b-ae61-ba74de1aa9f3"
+                            },
+                            "tPrecision": 9,
+                            "index": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "precision": 4,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "89c04342-d495-4460-9758-680f05e828bd",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "long",
+                            "error": {}
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "autoincrement": {
+                                "step_num": 1,
+                                "GUID": "3cccd8b7-c0de-4406-b423-eeb88535bc20"
+                            },
+                            "tPrecision": 9,
+                            "index": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "precision": 4,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositePrimaryKey",
+                                "compositeUniqueKey"
+                            ],
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "GUID": "d64a5c6d-7872-4bbf-a4e4-7d4ab9a9d365",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {},
+                            "displayName": "lat"
+                        }
+                    ],
+                    "childType": "array",
+                    "type": "array",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "c8765e3c-16e3-43c8-b21a-c66d08df8ed4",
+                    "minProperties": 2,
+                    "maxProperties": 2,
+                    "foreignCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                    "parentRelationship": "a639152f-752b-494c-a2da-6458989be4a3",
+                    "foreignField": [
+                        "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                        "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "904c8fe7-52cd-4427-9f9b-e1b227563d9e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+            "bucketId": "10340fac-0aaf-48b4-be70-77f98a407f24"
         }
     ],
     "buckets": [
@@ -330,6 +699,24 @@
             "isActivated": true,
             "indexes": [],
             "GUID": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c"
+        },
+        {
+            "name": "BeerLocations",
+            "type": "bucket",
+            "collectionIds": [
+                "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+                "166c18dd-bb2f-4ecb-8a0c-5be052851d1c"
+            ],
+            "backgroundColor": {
+                "r": 0,
+                "g": 188,
+                "b": 213,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "indexes": [],
+            "GUID": "10340fac-0aaf-48b4-be70-77f98a407f24"
         }
     ],
     "views": [],
@@ -423,6 +810,52 @@
             "lineSize": 2,
             "parentCollection": "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
             "childCollection": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c"
+        },
+        {
+            "name": "BarAtAddress",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                    "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+                    "c8765e3c-16e3-43c8-b21a-c66d08df8ed4"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "a639152f-752b-494c-a2da-6458989be4a3",
+            "level": "field",
+            "lineSize": 2,
+            "parentCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+            "childCollection": "77d0d713-f92e-44b2-8e0e-00c28fe1032c"
+        },
+        {
+            "name": "ConsumptionAtLocation",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                    "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
+                    "3398161b-62e7-4c8b-aacc-afb8e7931f29"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "75702952-3096-4f55-a023-d48ffdc1722c",
+            "level": "field",
+            "lineSize": 2,
+            "parentCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+            "childCollection": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c"
         }
     ],
     "users": [],
@@ -446,11 +879,24 @@
         "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c": "BeerConsumption",
         "3a7e3090-c2b4-4772-a828-2c9f09db4e4c": "BeerConsumptions",
         "8b659f94-730f-4eb9-8028-43d339a41af4": "BeerBrand",
-        "8bb6fdaa-95e6-47d7-b0e0-9c8e76ef2130": "Location",
         "751b374d-707c-4308-be18-34ddc7531025": "TimeStamp",
         "7093f865-3f65-40d1-a5e5-31d729688999": "Liters",
         "4b789c70-ddf9-4298-ace4-10f1633b8d4b": "id",
-        "4ed0ba32-6533-4d48-9398-746a0cc4266b": "ConsumptionOfBeer"
+        "4ed0ba32-6533-4d48-9398-746a0cc4266b": "ConsumptionOfBeer",
+        "10340fac-0aaf-48b4-be70-77f98a407f24": "BeerLocations",
+        "77d0d713-f92e-44b2-8e0e-00c28fe1032c": "BeerBars",
+        "dd6356df-58ae-4ced-bff4-b638ac630e50": "id",
+        "d3736455-bd56-48cb-8ffb-4acd677e3f76": "name",
+        "166c18dd-bb2f-4ecb-8a0c-5be052851d1c": "BarAddress",
+        "ad0ba01a-d492-4cbb-bbfc-354e0121f5a9": "Streetname",
+        "abc69f05-f35a-446b-a401-d7794a59e8f7": "Streetnr",
+        "b23e6c2b-dc2c-48c4-b943-4d2aff0fbc53": "zipcode",
+        "2659479a-972d-4fe4-a6cb-adfdee64097f": "city",
+        "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a": "latlotlocation",
+        "a639152f-752b-494c-a2da-6458989be4a3": "BarAtAddress",
+        "75702952-3096-4f55-a023-d48ffdc1722c": "ConsumptionAtLocation",
+        "c8765e3c-16e3-43c8-b21a-c66d08df8ed4": "latlotlocation",
+        "3398161b-62e7-4c8b-aacc-afb8e7931f29": "latlotlocation"
     },
     "definitions": {
         "type": "definitions",
@@ -481,7 +927,7 @@
         "pluginVersion": "0.0.1",
         "pluginEngineVersion": "1.0.0"
     },
-    "lastModifTS": "2023-01-31T17:49:45.641Z",
+    "lastModifTS": "2023-01-31T19:08:02.507Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "applicationInformation": {
@@ -570,7 +1016,27 @@
                         "x": 80,
                         "y": 601,
                         "width": 230,
+                        "height": 159,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+                        "x": 1144.278955954323,
+                        "y": 919.2479608482871,
+                        "width": 208,
                         "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                        "x": 888,
+                        "y": 791,
+                        "width": 208,
+                        "height": 159,
                         "color": {
                             "hex": "#2196F3"
                         }
@@ -585,13 +1051,18 @@
                 "buckets": [
                     {
                         "x": 40,
-                        "y": 49.87960688614554,
+                        "y": 39.879606886145524,
                         "GUID": "5c2bd204-3dfe-411b-9b52-126dc54b1b04"
                     },
                     {
                         "x": 40,
                         "y": 561,
                         "GUID": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c"
+                    },
+                    {
+                        "x": 848,
+                        "y": 751,
+                        "GUID": "10340fac-0aaf-48b4-be70-77f98a407f24"
                     }
                 ],
                 "collapsedNodes": [],
@@ -607,32 +1078,44 @@
                         {
                             "GUID": "7cecb01a-2457-4d40-b203-05b759714e92",
                             "size": 100,
-                            "x": 403.37001755956834,
-                            "y": 686.4566540068714
+                            "x": 440.1048924465906,
+                            "y": 486.8893424699416
                         },
                         {
                             "GUID": "0b3fc85f-96c0-46d9-ac5e-496117554258",
                             "size": 100,
-                            "x": 105.26583425673878,
-                            "y": 107.96972958703748
+                            "x": 179.99811083729597,
+                            "y": 100
                         },
                         {
                             "GUID": "72fa10be-de8f-4e5d-873b-c2cee28ba254",
                             "size": 100,
-                            "x": 80,
-                            "y": 410.99568543854645
+                            "x": 199.82207889574659,
+                            "y": 314.36069394139594
                         },
                         {
                             "GUID": "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
                             "size": 100,
-                            "x": 461.5497195027312,
-                            "y": 290.4283108815667
+                            "x": 580.0454811820606,
+                            "y": 100
                         },
                         {
                             "GUID": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
                             "size": 100,
                             "x": 270.39546834411294,
                             "y": 642.1457678925278
+                        },
+                        {
+                            "GUID": "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+                            "size": 100,
+                            "x": 193.27895595432298,
+                            "y": 176.2479608482871
+                        },
+                        {
+                            "GUID": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                            "size": 100,
+                            "x": 56,
+                            "y": 48
                         }
                     ],
                     "buckets": [
@@ -645,6 +1128,11 @@
                             "x": 117.02025945274534,
                             "y": 857.6650226935988,
                             "GUID": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c"
+                        },
+                        {
+                            "x": 153.27895595432298,
+                            "y": 136.2479608482871,
+                            "GUID": "10340fac-0aaf-48b4-be70-77f98a407f24"
                         }
                     ],
                     "decorativeSymbols": [],
