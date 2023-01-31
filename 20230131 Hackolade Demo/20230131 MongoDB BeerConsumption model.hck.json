@@ -1,12 +1,119 @@
 {
     "modelName": "New Model",
-    "collections": [],
-    "buckets": [],
+    "collections": [
+        {
+            "GUID": "72e5292b-55c6-4ca6-a1f2-ef912f325675",
+            "type": "reference",
+            "$ref": "#external/definitions/BeerConsumptions",
+            "refType": "polyglot",
+            "ref": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
+            "refIdPath": [
+                "ca21810f-09e1-4a55-88cd-5df7d43cd073",
+                "88a50645-c863-4fcb-97fa-9ac16a91d865",
+                "3a7e3090-c2b4-4772-a828-2c9f09db4e4c"
+            ],
+            "isActivated": true,
+            "collectionName": "BeerConsumptions",
+            "bucketId": "46bd8cdc-8e78-4ac6-a077-8ae3dcdca100",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "23d471a2-2b42-471f-9830-fa2d1962f794"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "8b659f94-730f-4eb9-8028-43d339a41af4",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+                        "foreignField": [
+                            "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+                            "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+                            "7fe7116a-4949-43e4-9637-50c3f81c8951"
+                        ],
+                        "parentRelationship": "b0965652-e479-4d46-9e3a-cf025b767c38",
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "46bd8cdc-8e78-4ac6-a077-8ae3dcdca100",
+            "name": "BeerConsumption",
+            "type": "reference",
+            "$ref": "#external/definitions/BeerConsumption",
+            "refType": "polyglot",
+            "ref": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c",
+            "refIdPath": [
+                "ca21810f-09e1-4a55-88cd-5df7d43cd073",
+                "88a50645-c863-4fcb-97fa-9ac16a91d865",
+                "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c"
+            ],
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 0,
+                "g": 138,
+                "b": 0,
+                "a": 1
+            },
+            "show": true,
+            "collectionIds": [
+                "72e5292b-55c6-4ca6-a1f2-ef912f325675"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
     "views": [],
-    "relationships": [],
+    "relationships": [
+        {
+            "name": "ConsumptionOfBeer",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+                    "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+                    "7fe7116a-4949-43e4-9637-50c3f81c8951"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "72e5292b-55c6-4ca6-a1f2-ef912f325675",
+                    "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
+                    "8b659f94-730f-4eb9-8028-43d339a41af4"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "lineSize": 2,
+            "parentCollection": "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+            "childCollection": "72e5292b-55c6-4ca6-a1f2-ef912f325675",
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/ConsumptionOfBeer",
+            "refIdPath": [
+                "ca21810f-09e1-4a55-88cd-5df7d43cd073",
+                "88a50645-c863-4fcb-97fa-9ac16a91d865",
+                "4ed0ba32-6533-4d48-9398-746a0cc4266b"
+            ],
+            "ref": "4ed0ba32-6533-4d48-9398-746a0cc4266b",
+            "GUID": "b0965652-e479-4d46-9e3a-cf025b767c38"
+        }
+    ],
     "users": [],
     "diagramViews": [],
-    "idToNameHashTable": {},
+    "idToNameHashTable": {
+        "72e5292b-55c6-4ca6-a1f2-ef912f325675": "BeerConsumptions",
+        "46bd8cdc-8e78-4ac6-a077-8ae3dcdca100": "BeerConsumption",
+        "b0965652-e479-4d46-9e3a-cf025b767c38": "ConsumptionOfBeer"
+    },
     "definitions": {
         "type": "definitions",
         "properties": [],
@@ -14,7 +121,168 @@
     },
     "polyglotDefinitions": {
         "type": "polyglotDefinitions",
-        "properties": [],
+        "properties": [
+            {
+                "collectionName": "BeerConsumptions",
+                "type": "object",
+                "properties": [
+                    {
+                        "type": "string",
+                        "name": "BeerBrand",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "GUID": "8b659f94-730f-4eb9-8028-43d339a41af4",
+                        "error": {}
+                    },
+                    {
+                        "type": "document",
+                        "properties": [],
+                        "additionalProperties": false,
+                        "name": "Location",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "GUID": "8bb6fdaa-95e6-47d7-b0e0-9c8e76ef2130",
+                        "error": {}
+                    },
+                    {
+                        "type": "timestamp",
+                        "name": "TimeStamp",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "GUID": "751b374d-707c-4308-be18-34ddc7531025",
+                        "error": {}
+                    },
+                    {
+                        "type": "numeric",
+                        "name": "Liters",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "GUID": "7093f865-3f65-40d1-a5e5-31d729688999",
+                        "mode": "",
+                        "error": {}
+                    },
+                    {
+                        "type": "objectId",
+                        "name": "id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "primaryKey": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "GUID": "4b789c70-ddf9-4298-ace4-10f1633b8d4b",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "ac32d1f5-e246-4a76-bd18-1b42b9a48137"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
+                "bucketId": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c",
+                "definitionEntityType": "collection",
+                "link": "20230131 Polyglot BeerModel.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/BeerConsumption/BeerConsumptions",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "72e5292b-55c6-4ca6-a1f2-ef912f325675"
+                    ]
+                ]
+            },
+            {
+                "name": "ConsumptionOfBeer",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+                        "7fe7116a-4949-43e4-9637-50c3f81c8951"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
+                        "8b659f94-730f-4eb9-8028-43d339a41af4"
+                    ]
+                ],
+                "childCardinality": "1..n",
+                "GUID": "4ed0ba32-6533-4d48-9398-746a0cc4266b",
+                "lineSize": 2,
+                "parentCollection": "bcc8f16a-47c7-47d7-bbf0-52e8ea2b9be8",
+                "childCollection": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c",
+                "definitionEntityType": "relationship",
+                "link": "20230131 Polyglot BeerModel.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/ConsumptionOfBeer",
+                "hackoladeMeta": {},
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "b0965652-e479-4d46-9e3a-cf025b767c38"
+                    ]
+                ]
+            },
+            {
+                "name": "BeerConsumption",
+                "type": "bucket",
+                "collectionIds": [
+                    "3a7e3090-c2b4-4772-a828-2c9f09db4e4c"
+                ],
+                "backgroundColor": {
+                    "r": 0,
+                    "g": 138,
+                    "b": 0,
+                    "a": 1
+                },
+                "show": true,
+                "isActivated": true,
+                "indexes": [],
+                "GUID": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c",
+                "definitionEntityType": "bucket",
+                "link": "20230131 Polyglot BeerModel.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/BeerConsumption",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "46bd8cdc-8e78-4ac6-a077-8ae3dcdca100"
+                    ]
+                ]
+            }
+        ],
         "GUID": "88a50645-c863-4fcb-97fa-9ac16a91d865"
     },
     "externalDefinitions": {
@@ -30,7 +298,14 @@
     "creationTS": "2023-01-31T17:47:34.052Z",
     "GUID": "ca21810f-09e1-4a55-88cd-5df7d43cd073",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-01-31T17:48:15.450Z",
+    "polyglotModelPaths": [
+        {
+            "GUID": "e148cd3b-35e7-4602-aa51-083bcb49a01b",
+            "polyglotModelName": "20230131 Polyglot BeerModel",
+            "polyglotModelPath": "20230131 Polyglot BeerModel.json"
+        }
+    ],
+    "lastModifTS": "2023-01-31T17:51:25.474Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -42,14 +317,31 @@
     "settings": {
         "centralPane": {
             "dbLevel": {
-                "erd": [],
+                "erd": [
+                    {
+                        "GUID": "72e5292b-55c6-4ca6-a1f2-ef912f325675",
+                        "x": 80,
+                        "y": 199,
+                        "width": 230,
+                        "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
                 "erdDefinitions": {
                     "erd": [],
                     "rootPath": [],
                     "entities": [],
                     "decorativeSymbols": []
                 },
-                "buckets": [],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 159,
+                        "GUID": "46bd8cdc-8e78-4ac6-a077-8ae3dcdca100"
+                    }
+                ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
                 "activeRelationshipFields": {
