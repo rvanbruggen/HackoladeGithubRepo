@@ -237,50 +237,23 @@
                     "error": {}
                 },
                 {
-                    "name": "latlotlocation",
+                    "name": "barid",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
                         "step_num": 1
                     },
                     "tPrecision": 9,
-                    "properties": [],
-                    "ignore_z_value": true,
-                    "additionalProperties": false,
-                    "subTypes": [
-                        {
-                            "name": "object",
-                            "snippet": "geopoint-object"
-                        },
-                        {
-                            "name": "string",
-                            "snippet": "geopoint-string"
-                        },
-                        {
-                            "name": "geoJSON",
-                            "snippet": "geopoint-geojson"
-                        },
-                        {
-                            "name": "geo-bounding",
-                            "snippet": "geopoint-geo-bounding"
-                        },
-                        {
-                            "name": "geohash",
-                            "snippet": "geopoint-geohash"
-                        }
-                    ],
-                    "childType": "geopoint",
-                    "type": "document",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "objectId",
                     "compositeKey": [
                         "compositePrimaryKey",
                         "compositeUniqueKey"
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "primaryKey": true,
                     "GUID": "3398161b-62e7-4c8b-aacc-afb8e7931f29",
-                    "parentRelationship": "75702952-3096-4f55-a023-d48ffdc1722c",
-                    "relationshipType": "Foreign Key",
                     "error": {}
                 }
             ],
@@ -424,11 +397,33 @@
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "primaryKey": true,
+                    "primaryKey": false,
                     "GUID": "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a",
                     "childRelationships": [
-                        "75702952-3096-4f55-a023-d48ffdc1722c",
                         "a639152f-752b-494c-a2da-6458989be4a3"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "type": "objectId",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "e34b520d-4b8f-4084-b789-b41259f471d4",
+                    "childRelationships": [
+                        "60582d48-40b5-474f-b82f-ef6343a4b760"
                     ],
                     "error": {}
                 }
@@ -475,7 +470,7 @@
                         "step_num": 1
                     },
                     "tPrecision": 9,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "childType": "uuid",
                     "type": "objectId",
                     "compositeKey": [
@@ -485,54 +480,37 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "dd6356df-58ae-4ced-bff4-b638ac630e50",
-                    "error": {}
+                    "error": {},
+                    "childRelationships": [
+                        "75702952-3096-4f55-a023-d48ffdc1722c"
+                    ]
                 },
                 {
-                    "name": "latlotlocation",
+                    "name": "BarAddress",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "autoincrement": {
                         "step_num": 1
                     },
                     "tPrecision": 9,
-                    "properties": [],
-                    "ignore_z_value": true,
-                    "additionalProperties": false,
-                    "subTypes": [
-                        {
-                            "name": "object",
-                            "snippet": "geopoint-object"
-                        },
-                        {
-                            "name": "string",
-                            "snippet": "geopoint-string"
-                        },
-                        {
-                            "name": "geoJSON",
-                            "snippet": "geopoint-geojson"
-                        },
-                        {
-                            "name": "geo-bounding",
-                            "snippet": "geopoint-geo-bounding"
-                        },
-                        {
-                            "name": "geohash",
-                            "snippet": "geopoint-geohash"
-                        }
-                    ],
-                    "childType": "geopoint",
-                    "type": "document",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "type": "objectId",
                     "compositeKey": [
                         "compositePrimaryKey",
                         "compositeUniqueKey"
                     ],
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
-                    "primaryKey": true,
-                    "GUID": "c8765e3c-16e3-43c8-b21a-c66d08df8ed4",
-                    "parentRelationship": "a639152f-752b-494c-a2da-6458989be4a3",
+                    "GUID": "d38f8520-0f73-4c8c-b1b1-a353a13b0080",
+                    "error": {},
                     "relationshipType": "Foreign Key",
-                    "error": {}
+                    "foreignCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                    "foreignField": [
+                        "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                        "e34b520d-4b8f-4084-b789-b41259f471d4"
+                    ],
+                    "parentRelationship": "60582d48-40b5-474f-b82f-ef6343a4b760"
                 }
             ],
             "definitions": {
@@ -697,35 +675,12 @@
             "childCollection": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c"
         },
         {
-            "name": "BarAtAddress",
-            "relationshipType": "Foreign Key",
-            "parentField": [
-                [
-                    "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
-                    "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childField": [
-                [
-                    "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
-                    "c8765e3c-16e3-43c8-b21a-c66d08df8ed4"
-                ]
-            ],
-            "childCardinality": "1..n",
-            "GUID": "a639152f-752b-494c-a2da-6458989be4a3",
-            "level": "field",
-            "lineSize": 2,
-            "parentCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
-            "childCollection": "77d0d713-f92e-44b2-8e0e-00c28fe1032c"
-        },
-        {
             "name": "ConsumptionAtLocation",
             "relationshipType": "Foreign Key",
             "parentField": [
                 [
-                    "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
-                    "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a"
+                    "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+                    "dd6356df-58ae-4ced-bff4-b638ac630e50"
                 ]
             ],
             "parentCardinality": "1",
@@ -739,8 +694,31 @@
             "GUID": "75702952-3096-4f55-a023-d48ffdc1722c",
             "level": "field",
             "lineSize": 2,
-            "parentCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+            "parentCollection": "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
             "childCollection": "3a7e3090-c2b4-4772-a828-2c9f09db4e4c"
+        },
+        {
+            "name": "BarToBarAddress",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+                    "e34b520d-4b8f-4084-b789-b41259f471d4"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+                    "d38f8520-0f73-4c8c-b1b1-a353a13b0080"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "parentCollection": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
+            "childCollection": "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
+            "GUID": "60582d48-40b5-474f-b82f-ef6343a4b760",
+            "level": "field",
+            "lineSize": 2
         }
     ],
     "users": [],
@@ -778,10 +756,11 @@
         "b23e6c2b-dc2c-48c4-b943-4d2aff0fbc53": "zipcode",
         "2659479a-972d-4fe4-a6cb-adfdee64097f": "city",
         "4c5e6c11-df3b-4d7a-9edc-4e36d61f168a": "latlotlocation",
-        "a639152f-752b-494c-a2da-6458989be4a3": "BarAtAddress",
         "75702952-3096-4f55-a023-d48ffdc1722c": "ConsumptionAtLocation",
-        "c8765e3c-16e3-43c8-b21a-c66d08df8ed4": "latlotlocation",
-        "3398161b-62e7-4c8b-aacc-afb8e7931f29": "latlotlocation"
+        "3398161b-62e7-4c8b-aacc-afb8e7931f29": "barid",
+        "e34b520d-4b8f-4084-b789-b41259f471d4": "id",
+        "d38f8520-0f73-4c8c-b1b1-a353a13b0080": "BarAddress",
+        "60582d48-40b5-474f-b82f-ef6343a4b760": "BarToBarAddress"
     },
     "definitions": {
         "type": "definitions",
@@ -812,7 +791,7 @@
         "pluginVersion": "0.0.1",
         "pluginEngineVersion": "1.0.0"
     },
-    "lastModifTS": "2023-01-31T19:19:31.695Z",
+    "lastModifTS": "2023-01-31T19:32:36.535Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "applicationInformation": {
@@ -908,9 +887,9 @@
                     },
                     {
                         "GUID": "77d0d713-f92e-44b2-8e0e-00c28fe1032c",
-                        "x": 1265.278955954323,
-                        "y": 862.2479608482871,
-                        "width": 208,
+                        "x": 921.278955954323,
+                        "y": 721.2479608482871,
+                        "width": 199,
                         "height": 87,
                         "color": {
                             "hex": "#2196F3"
@@ -918,10 +897,10 @@
                     },
                     {
                         "GUID": "166c18dd-bb2f-4ecb-8a0c-5be052851d1c",
-                        "x": 896,
-                        "y": 714,
+                        "x": 1312,
+                        "y": 720,
                         "width": 209,
-                        "height": 123,
+                        "height": 141,
                         "color": {
                             "hex": "#2196F3"
                         }
@@ -945,8 +924,8 @@
                         "GUID": "1cf2d4f7-19a3-4bfd-81af-a85b19caaa5c"
                     },
                     {
-                        "x": 856,
-                        "y": 674,
+                        "x": 881.278955954323,
+                        "y": 680,
                         "GUID": "10340fac-0aaf-48b4-be70-77f98a407f24"
                     }
                 ],
