@@ -311,6 +311,39 @@
             "bucketId": "0b11b187-af59-49ec-90bc-61578177bbfe",
             "lineSize": 2,
             "properties": []
+        },
+        {
+            "name": "IS_SIMILAR",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "731ed948-31b1-484b-8b96-9df104e9f4eb",
+            "childCollection": "731ed948-31b1-484b-8b96-9df104e9f4eb",
+            "level": "entity",
+            "GUID": "7af4432a-f1a4-46e7-b150-c44836504c09",
+            "lineSize": 2,
+            "bucketId": "0b11b187-af59-49ec-90bc-61578177bbfe",
+            "properties": [
+                {
+                    "name": "SimilarityScore",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "8c7c22c0-5f41-4da4-a704-b9e609e0bd90",
+                    "error": {}
+                }
+            ]
         }
     ],
     "users": [],
@@ -328,7 +361,9 @@
         "731ed948-31b1-484b-8b96-9df104e9f4eb": "BeerBrand",
         "aea38549-d78b-4d04-b13e-09dc6fbb374f": "HAS_ALCOHOLPERCENTAGE",
         "81b364c8-8d7c-4260-b136-6019e759b0ae": "BREWS",
-        "4b497b77-1294-4703-becb-d3135a284aa3": "IS_A"
+        "4b497b77-1294-4703-becb-d3135a284aa3": "IS_A",
+        "7af4432a-f1a4-46e7-b150-c44836504c09": "IS_SIMILAR",
+        "8c7c22c0-5f41-4da4-a704-b9e609e0bd90": "SimilarityScore"
     },
     "definitions": {
         "type": "definitions",
@@ -353,7 +388,7 @@
     "creationTS": "2023-02-01T14:43:06.166Z",
     "GUID": "6f4e108e-0e49-4aa1-8311-e93cef4bc7a2",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-02-01T14:44:36.669Z",
+    "lastModifTS": "2023-02-01T14:47:45.801Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -431,6 +466,16 @@
                         "width": 240,
                         "height": 100,
                         "color": {}
+                    },
+                    {
+                        "GUID": "7af4432a-f1a4-46e7-b150-c44836504c09",
+                        "x": 40,
+                        "y": 40,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
                     }
                 ],
                 "erdDefinitions": {
@@ -459,26 +504,26 @@
                         {
                             "GUID": "a7e8779f-7fcc-4441-841d-ef2a4d5bf04a",
                             "size": 100,
-                            "x": 292.7607101142591,
-                            "y": 428.6543195988191
+                            "x": 302.01847165002386,
+                            "y": 683.379584828057
                         },
                         {
                             "GUID": "5e3cd805-337d-426b-97fa-144d9f8749cd",
                             "size": 100,
-                            "x": 121.56687378176737,
-                            "y": 122.95847517415233
+                            "x": 80,
+                            "y": 100
                         },
                         {
                             "GUID": "d258142a-b9e1-444c-bbb6-81e6e1f851f5",
                             "size": 100,
-                            "x": 187.35005152141574,
-                            "y": 320.8251113541018
+                            "x": 95.6743544226497,
+                            "y": 555.8014317806825
                         },
                         {
                             "GUID": "731ed948-31b1-484b-8b96-9df104e9f4eb",
                             "size": 100,
-                            "x": 521.1610635005565,
-                            "y": 100
+                            "x": 405.9678079467692,
+                            "y": 299.2510671322159
                         }
                     ],
                     "buckets": [
