@@ -1,0 +1,282 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "GUID": "b63c02fd-a094-4421-b116-208811939889",
+            "type": "reference",
+            "$ref": "#external/definitions/Beerconsumption",
+            "refType": "polyglot",
+            "ref": "d95c526e-109c-4ba2-adfc-8a434f4d7cc0",
+            "refIdPath": [
+                "42c07704-d494-455e-8bd4-ff09b180e426",
+                "b32bde31-8766-4e0d-8592-59a2326f5859",
+                "d95c526e-109c-4ba2-adfc-8a434f4d7cc0"
+            ],
+            "isActivated": true,
+            "collectionName": "Beerconsumption",
+            "bucketId": "71d790ca-64cd-4d77-b111-c0da6bd3a728",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "3e08a7d8-2d2f-4e23-b940-51b46ce4b5c1"
+            },
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "71d790ca-64cd-4d77-b111-c0da6bd3a728",
+            "name": "BeerConsumptions",
+            "type": "reference",
+            "$ref": "#external/definitions/BeerConsumptions",
+            "refType": "polyglot",
+            "ref": "0c91ee35-a332-4b13-b15b-3059d87630c3",
+            "refIdPath": [
+                "42c07704-d494-455e-8bd4-ff09b180e426",
+                "b32bde31-8766-4e0d-8592-59a2326f5859",
+                "0c91ee35-a332-4b13-b15b-3059d87630c3"
+            ],
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 0,
+                "g": 188,
+                "b": 213,
+                "a": 1
+            },
+            "show": true,
+            "collectionIds": [
+                "b63c02fd-a094-4421-b116-208811939889"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "b63c02fd-a094-4421-b116-208811939889": "Beerconsumption",
+        "71d790ca-64cd-4d77-b111-c0da6bd3a728": "BeerConsumptions"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "dac8eed7-cdb6-403a-9f71-8e0fd067957b"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "Beerconsumption",
+                "type": "object",
+                "properties": [
+                    {
+                        "type": "document",
+                        "properties": [
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "compositeKey": [
+                                    "compositePrimaryKey",
+                                    "compositeUniqueKey"
+                                ],
+                                "name": "BeerBrand",
+                                "isActivated": true,
+                                "GUID": "5b799f9b-8f6a-48f0-bfe7-3ddd344ddc6c",
+                                "relationshipType": "Foreign Key",
+                                "foreignCollection": "33d570d4-377f-47db-b5ce-54ebebecae24",
+                                "foreignField": [
+                                    "33d570d4-377f-47db-b5ce-54ebebecae24",
+                                    "23df3928-79df-4945-9c67-74e6f7312dd2"
+                                ],
+                                "definitionRefs": [],
+                                "error": {}
+                            },
+                            {
+                                "type": "objectId",
+                                "primaryKey": true,
+                                "compositeKey": [
+                                    "compositePrimaryKey",
+                                    "compositeUniqueKey"
+                                ],
+                                "name": "id",
+                                "isActivated": true,
+                                "GUID": "5020a48d-94dc-487e-bdfb-59a141c8b414",
+                                "definitionRefs": [],
+                                "error": {}
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "compositeKey": [
+                                    "compositePrimaryKey",
+                                    "compositeUniqueKey"
+                                ],
+                                "name": "timestamp",
+                                "isActivated": true,
+                                "GUID": "030eae82-0524-4dc4-92a6-4031a22e6e3d",
+                                "definitionRefs": [],
+                                "error": {}
+                            }
+                        ],
+                        "additionalProperties": false,
+                        "name": "BeerConsumption",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "description": "",
+                        "comments": "",
+                        "GUID": "90e73e6d-e320-4df2-afaf-eeb78008e5ca",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "3e47505c-07da-4014-bb4d-0c2a8be99d33"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "d95c526e-109c-4ba2-adfc-8a434f4d7cc0",
+                "bucketId": "0c91ee35-a332-4b13-b15b-3059d87630c3",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "link": "5-Polyglot Beermodel.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/BeerConsumptions/Beerconsumption",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "b63c02fd-a094-4421-b116-208811939889"
+                    ]
+                ]
+            },
+            {
+                "name": "BeerConsumptions",
+                "type": "bucket",
+                "collectionIds": [
+                    "d95c526e-109c-4ba2-adfc-8a434f4d7cc0"
+                ],
+                "backgroundColor": {
+                    "r": 0,
+                    "g": 188,
+                    "b": 213,
+                    "a": 1
+                },
+                "show": true,
+                "isActivated": true,
+                "indexes": [],
+                "GUID": "0c91ee35-a332-4b13-b15b-3059d87630c3",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "bucket",
+                "link": "5-Polyglot Beermodel.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/BeerConsumptions",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "71d790ca-64cd-4d77-b111-c0da6bd3a728"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "b32bde31-8766-4e0d-8592-59a2326f5859"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "8aae0129-eeb4-4687-9550-69ead5eda09b"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-02-10T10:24:45.504Z",
+    "GUID": "42c07704-d494-455e-8bd4-ff09b180e426",
+    "isLineageEnabled": false,
+    "polyglotModelPaths": [
+        {
+            "GUID": "dc6233b0-0b7d-4696-bd6c-173b41af93be",
+            "polyglotModelName": "5-Polyglot Beermodel",
+            "polyglotModelPath": "5-Polyglot Beermodel.json"
+        }
+    ],
+    "lastModifTS": "2023-02-10T10:26:22.631Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.8.6"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "b63c02fd-a094-4421-b116-208811939889",
+                        "x": 207,
+                        "y": 200,
+                        "width": 266,
+                        "height": 105,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 167,
+                        "y": 160,
+                        "GUID": "71d790ca-64cd-4d77-b111-c0da6bd3a728"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

@@ -22,6 +22,9 @@
             },
             "hackoladeMeta": {
                 "validationErrors": {}
+            },
+            "error": {
+                "refPath": false
             }
         }
     ],
@@ -180,13 +183,14 @@
         "type": "polyglotDefinitions",
         "properties": [
             {
+                "code": "",
                 "collectionName": "BeerConsumption",
                 "type": "object",
                 "properties": [
                     {
+                        "code": "",
                         "type": "string",
                         "name": "BeerBrand",
-                        "hackoladeMeta": {},
                         "isActivated": true,
                         "primaryKey": false,
                         "compositeKey": [
@@ -197,9 +201,9 @@
                         "error": {}
                     },
                     {
+                        "code": "",
                         "type": "objectId",
                         "name": "id",
-                        "hackoladeMeta": {},
                         "isActivated": true,
                         "primaryKey": true,
                         "compositeKey": [
@@ -210,9 +214,9 @@
                         "error": {}
                     },
                     {
+                        "code": "",
                         "type": "timestamp",
                         "name": "timestamp",
-                        "hackoladeMeta": {},
                         "isActivated": true,
                         "primaryKey": false,
                         "compositeKey": [
@@ -232,19 +236,19 @@
                 "additionalProperties": false,
                 "GUID": "7f3b1fad-f448-4959-b2a0-d9a3743f92a4",
                 "bucketId": "487e0c94-f462-4617-a4af-b08efa4d91a4",
-                "definitionEntityType": "collection",
-                "link": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/BeerConsumptions/BeerConsumption",
                 "hackoladeMeta": {
                     "validationErrors": {}
                 },
+                "definitionEntityType": "collection",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "7dfe2605-a051-4355-876c-b4e152c50267"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "BeerModel (Polyglot).hck.json",
+                "fieldRelativePath": "#/BeerConsumptions/BeerConsumption"
             },
             {
                 "name": "HAS_ALCOHOLPERCENTAGE",
@@ -255,17 +259,17 @@
                 "childField": [],
                 "childCardinality": "1",
                 "GUID": "da5e9a77-50e5-4726-bfe7-db40d9803ad3",
-                "definitionEntityType": "relationship",
-                "link": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/HAS_ALCOHOLPERCENTAGE",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "1e6b8dee-1a89-4acc-b051-505efb1e5d68"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "BeerModel (Polyglot).hck.json",
+                "fieldRelativePath": "#/relationships/HAS_ALCOHOLPERCENTAGE"
             },
             {
                 "name": "BREWS",
@@ -276,17 +280,17 @@
                 "childField": [],
                 "childCardinality": "1",
                 "GUID": "0682ed2d-2d68-40aa-873a-ea2fe0dc227b",
-                "definitionEntityType": "relationship",
-                "link": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/BREWS",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "1432e600-752e-4af0-9546-1f9b6510d703"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "BeerModel (Polyglot).hck.json",
+                "fieldRelativePath": "#/relationships/BREWS"
             },
             {
                 "name": "IS_A",
@@ -297,17 +301,17 @@
                 "childField": [],
                 "childCardinality": "1",
                 "GUID": "dca43e11-6d22-4b80-b563-584db1fa265e",
-                "definitionEntityType": "relationship",
-                "link": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/IS_A",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "28beff9b-b365-49a7-b042-10613f483c44"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "BeerModel (Polyglot).hck.json",
+                "fieldRelativePath": "#/relationships/IS_A"
             },
             {
                 "name": "SIMILAR_TO",
@@ -319,17 +323,17 @@
                 "childField": [],
                 "childCardinality": "1",
                 "GUID": "88942b35-2e4d-4cd0-8167-542b9767dbf8",
-                "definitionEntityType": "relationship",
-                "link": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/SIMILAR_TO",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "1c71a1b3-54a8-4adf-a2e7-1878e256de49"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "BeerModel (Polyglot).hck.json",
+                "fieldRelativePath": "#/relationships/SIMILAR_TO"
             },
             {
                 "name": "BeerBrand_to_Consumption",
@@ -342,19 +346,20 @@
                 "lineSize": 2,
                 "parentCollection": "7f3b1fad-f448-4959-b2a0-d9a3743f92a4",
                 "childCollection": "482eb434-a91f-479e-8178-90b1e4a37fce",
-                "definitionEntityType": "relationship",
-                "link": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/BeerBrand_to_Consumption",
                 "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "58a73369-f529-4d0d-a122-83a776e6b594"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "BeerModel (Polyglot).hck.json",
+                "fieldRelativePath": "#/relationships/BeerBrand_to_Consumption"
             },
             {
+                "code": "",
                 "name": "BeerConsumptions",
                 "type": "bucket",
                 "collectionIds": [
@@ -370,19 +375,19 @@
                 "isActivated": true,
                 "indexes": [],
                 "GUID": "487e0c94-f462-4617-a4af-b08efa4d91a4",
-                "definitionEntityType": "bucket",
-                "link": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/BeerConsumptions",
                 "hackoladeMeta": {
                     "validationErrors": {}
                 },
+                "definitionEntityType": "bucket",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "7e92debf-4647-4d66-a1fe-9f20addbeec1"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "BeerModel (Polyglot).hck.json",
+                "fieldRelativePath": "#/BeerConsumptions"
             }
         ],
         "GUID": "9fad2cec-6de9-4fd8-8023-fb38fb50210a"
@@ -404,18 +409,19 @@
         {
             "GUID": "6b61e135-9204-4d86-acaf-db38906db213",
             "polyglotModelName": "BeerModel (Polyglot).hck",
-            "polyglotModelPath": "FULLDEMO BeerModel/BeerModel (Polyglot).hck.json"
+            "polyglotModelPath": "BeerModel (Polyglot).hck.json"
         }
     ],
-    "lastModifTS": "2023-02-01T18:00:56.309Z",
+    "lastModifTS": "2023-02-09T14:16:01.126Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.8.5"
+        "version": "6.8.6"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
