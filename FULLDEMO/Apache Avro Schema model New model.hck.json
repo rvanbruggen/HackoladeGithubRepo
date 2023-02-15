@@ -1,0 +1,944 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "365d4344-f2c3-4133-99e0-fb1da2e12a2e",
+            "type": "reference",
+            "$ref": "#external/definitions/test",
+            "refType": "polyglot",
+            "ref": "18625b10-cb1b-455c-8d5c-82521cb182c0",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "18625b10-cb1b-455c-8d5c-82521cb182c0"
+            ],
+            "isActivated": true,
+            "collectionName": "test",
+            "bucketId": "0cc211d6-cb72-4d9a-9d0a-601ccae62f8e",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "1747e0e2-01e0-43ec-a0b9-bc734be60d92"
+            },
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "e616dc4f-f68a-4533-8b6e-09bbe916f4f3",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+                        "foreignField": [
+                            "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+                            "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                            "3b3d3e7e-6dce-4ff2-8841-08bf2b1d5a82"
+                        ],
+                        "parentRelationship": "7e573457-c362-49b4-adc0-543744c823db"
+                    }
+                ]
+            }
+        },
+        {
+            "GUID": "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+            "type": "reference",
+            "$ref": "#external/definitions/beerbrands",
+            "refType": "polyglot",
+            "ref": "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "ceba9a0a-8941-44fe-8ffb-b87bf3154574"
+            ],
+            "isActivated": true,
+            "collectionName": "beerbrands",
+            "code": "",
+            "bucketId": "0cc211d6-cb72-4d9a-9d0a-601ccae62f8e",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "0c7d3b3e-e89e-4ffa-8a51-bae838d7bc2f"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "de138410-a876-4822-92e5-eb035cddd2c9",
+                        "childRelationships": [
+                            "cf981614-b106-485a-bf60-4dfbbe26715a"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "GUID": "3b3d3e7e-6dce-4ff2-8841-08bf2b1d5a82",
+                        "childRelationships": [
+                            "7e573457-c362-49b4-adc0-543744c823db"
+                        ]
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "0cc211d6-cb72-4d9a-9d0a-601ccae62f8e",
+            "name": "public",
+            "type": "reference",
+            "$ref": "#external/definitions/public",
+            "refType": "polyglot",
+            "ref": "722fe8f8-b411-47a0-af52-9e9fad0278d1",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "722fe8f8-b411-47a0-af52-9e9fad0278d1"
+            ],
+            "isActivated": true,
+            "code": "",
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "collectionIds": [
+                "365d4344-f2c3-4133-99e0-fb1da2e12a2e",
+                "7434ba42-12f7-4352-a8cb-a81fdea803ee"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk BeerConsumptions.BeerBrand to beerbrands.BeerBrand",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+                    "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                    "de138410-a876-4822-92e5-eb035cddd2c9"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "89cde1c6-0f8c-41ac-b979-26e99ee7c5ec",
+                    "89cde1c6-0f8c-41ac-b979-26e99ee7c5ec",
+                    "c732adf8-cde3-4aeb-b50b-5b21b74ef817"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+            "childCollection": "89cde1c6-0f8c-41ac-b979-26e99ee7c5ec",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "a07d0df4-2344-4018-9a69-1b75fcd0e13b",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 195,
+                        "y": 368.66666666666663
+                    },
+                    {
+                        "x": 195,
+                        "y": 274.8333333333333
+                    },
+                    {
+                        "x": 459.66666666666674,
+                        "y": 274.8333333333333
+                    },
+                    {
+                        "x": 459.66666666666674,
+                        "y": 181
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk BeerConsumptions.BeerBrand to beerbrands.BeerBrand",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "8c7185b3-2dc6-4116-a0ff-b6a7d831c300"
+            ],
+            "ref": "8c7185b3-2dc6-4116-a0ff-b6a7d831c300",
+            "GUID": "cf981614-b106-485a-bf60-4dfbbe26715a"
+        },
+        {
+            "name": "HAS_ALCOHOLPERCENTAGE",
+            "parentCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "2b2145bf-977c-40ed-b970-93d164586476",
+            "childField": [],
+            "childCardinality": "1",
+            "hackoladeStyles": {},
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/HAS_ALCOHOLPERCENTAGE",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "2ddf0178-8f90-4c8e-a610-08c4c722e3a5"
+            ],
+            "ref": "2ddf0178-8f90-4c8e-a610-08c4c722e3a5",
+            "GUID": "5649b31e-cbe2-42a7-a82e-791b3fddba10"
+        },
+        {
+            "name": "BREWS",
+            "parentCollection": "63349014-ae0f-4348-bdf8-571cb24f7e76",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+            "childField": [],
+            "childCardinality": "1",
+            "hackoladeStyles": {},
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/BREWS",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "f9251e95-5d12-4e84-a7c6-9e405f7f024a"
+            ],
+            "ref": "f9251e95-5d12-4e84-a7c6-9e405f7f024a",
+            "GUID": "1a049fbf-4a26-405a-a893-dd29de22bcb9"
+        },
+        {
+            "name": "IS_A",
+            "parentCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "b80b8c08-731e-4aa2-ba23-eca80bbd5330",
+            "childField": [],
+            "childCardinality": "1",
+            "hackoladeStyles": {},
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/IS_A",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "bf29b119-33cc-4432-903c-25703c1c009e"
+            ],
+            "ref": "bf29b119-33cc-4432-903c-25703c1c009e",
+            "GUID": "acfb0729-f60a-4fae-8930-c4632ab35e8a"
+        },
+        {
+            "name": "New Relationship",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+                    "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                    "de138410-a876-4822-92e5-eb035cddd2c9"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "lineSize": 2,
+            "parentCollection": "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+            "childCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+            "hackoladeStyles": {
+                "GUID": "ff675e93-2548-45e8-8ef6-b8cfc8a085ad",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 524.5871794871773,
+                        "y": -11001.952820512823
+                    },
+                    {
+                        "x": 524.5871794871773,
+                        "y": -5460.976410256411
+                    },
+                    {
+                        "x": 459.66666666666674,
+                        "y": -5460.976410256411
+                    },
+                    {
+                        "x": 459.66666666666674,
+                        "y": 80
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/New Relationship",
+            "refIdPath": [
+                "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+                "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7",
+                "c3a46d6e-c5af-44a6-a7d3-f3e9a8fe007d"
+            ],
+            "ref": "c3a46d6e-c5af-44a6-a7d3-f3e9a8fe007d",
+            "GUID": "83e01853-51e7-4624-9c8a-bc7445c554aa"
+        },
+        {
+            "name": "fk test. to beerbrands.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+                    "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                    "3b3d3e7e-6dce-4ff2-8841-08bf2b1d5a82"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "365d4344-f2c3-4133-99e0-fb1da2e12a2e",
+                    "18625b10-cb1b-455c-8d5c-82521cb182c0",
+                    "e616dc4f-f68a-4533-8b6e-09bbe916f4f3"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+            "childCollection": "365d4344-f2c3-4133-99e0-fb1da2e12a2e",
+            "GUID": "7e573457-c362-49b4-adc0-543744c823db",
+            "hackoladeStyles": {
+                "GUID": "4bd08b8f-8ae4-40e2-bb29-4681ed97a46c",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 328.1712099473936,
+                        "y": 149.64610234337638
+                    },
+                    {
+                        "x": 379.76135820181725,
+                        "y": 149.64610234337638
+                    },
+                    {
+                        "x": 379.76135820181725,
+                        "y": 240.14610234337638
+                    },
+                    {
+                        "x": 424.8378766140603,
+                        "y": 240.14610234337638
+                    }
+                ],
+                "sides": [
+                    null,
+                    null
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "365d4344-f2c3-4133-99e0-fb1da2e12a2e": "test",
+        "7434ba42-12f7-4352-a8cb-a81fdea803ee": "beerbrands",
+        "0cc211d6-cb72-4d9a-9d0a-601ccae62f8e": "public",
+        "cf981614-b106-485a-bf60-4dfbbe26715a": "fk BeerConsumptions.BeerBrand to beerbrands.BeerBrand",
+        "5649b31e-cbe2-42a7-a82e-791b3fddba10": "HAS_ALCOHOLPERCENTAGE",
+        "1a049fbf-4a26-405a-a893-dd29de22bcb9": "BREWS",
+        "acfb0729-f60a-4fae-8930-c4632ab35e8a": "IS_A",
+        "83e01853-51e7-4624-9c8a-bc7445c554aa": "New Relationship",
+        "7e573457-c362-49b4-adc0-543744c823db": "fk test. to beerbrands."
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "9963ee78-dbaa-40ad-94ca-9c2e9224efa4"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "code": "",
+                "collectionName": "test",
+                "type": "object",
+                "properties": [
+                    {
+                        "code": "",
+                        "name": "New attribute",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "99cffe7a-6d63-440f-bfc5-478cfe70d030"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1,
+                                    "GUID": "a9d0231a-90b3-4871-a293-94141bf5190c"
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "precision": 4,
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "545e9405-24b1-485f-b78c-4d4e2f0636eb",
+                                "error": {
+                                    "name": false,
+                                    "code": false
+                                },
+                                "mode": "int"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "a8393158-6d6c-45c0-a4db-3203aba7f296",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "code": "",
+                        "name": "jancasteels",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "cf1b8f07-d32e-450e-8a52-2313d3e52924"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "4affce3d-4183-4f39-b2af-4c4dfcb824f6",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "e616dc4f-f68a-4533-8b6e-09bbe916f4f3",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "3ab88c15-8cd6-451b-9732-58224af6d57f"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "18625b10-cb1b-455c-8d5c-82521cb182c0",
+                "bucketId": "722fe8f8-b411-47a0-af52-9e9fad0278d1",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "365d4344-f2c3-4133-99e0-fb1da2e12a2e"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/public/test"
+            },
+            {
+                "code": "",
+                "collectionName": "beerbrands",
+                "isActivated": true,
+                "bucketId": "722fe8f8-b411-47a0-af52-9e9fad0278d1",
+                "additionalProperties": true,
+                "primaryKey": [],
+                "uniqueKey": [],
+                "properties": [
+                    {
+                        "code": "",
+                        "name": "BeerBrand",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "32515706-d9e4-408d-996c-18208550f695"
+                            },
+                            {
+                                "childType": "string",
+                                "length": 10,
+                                "compositePrimaryKey": false,
+                                "compositeUniqueKey": false,
+                                "unique": false,
+                                "GUID": "abfefdab-6320-4d20-8a34-01034789e401",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "required": true,
+                        "childRelationships": [
+                            "8c7185b3-2dc6-4116-a0ff-b6a7d831c300",
+                            "c3a46d6e-c5af-44a6-a7d3-f3e9a8fe007d"
+                        ],
+                        "default": null,
+                        "GUID": "de138410-a876-4822-92e5-eb035cddd2c9",
+                        "error": {}
+                    },
+                    {
+                        "code": "",
+                        "name": "AlcoholPercentage",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "ecf02964-c645-417f-bb6b-1a542f58ad45"
+                            },
+                            {
+                                "childType": "string",
+                                "length": 10,
+                                "compositePrimaryKey": false,
+                                "compositeUniqueKey": false,
+                                "unique": false,
+                                "GUID": "f58ea74f-0d3b-4f51-b21f-6ad8723c6880",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "required": true,
+                        "default": null,
+                        "GUID": "96cb5a0e-9d9c-4bc1-bf0c-0d2a6e052489",
+                        "error": {}
+                    },
+                    {
+                        "code": "",
+                        "name": "Brewery",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "c3a8be05-7885-4aad-bcde-92b1d37f2c72"
+                            },
+                            {
+                                "childType": "string",
+                                "length": 10,
+                                "compositePrimaryKey": false,
+                                "compositeUniqueKey": false,
+                                "unique": false,
+                                "GUID": "5687e536-0f43-4965-84d7-fd5394be55cc",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "required": true,
+                        "default": null,
+                        "GUID": "668c7a59-fbdc-4ee9-ab9f-766d9113bf65",
+                        "error": {}
+                    },
+                    {
+                        "code": "",
+                        "name": "BeerType",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "0165ffdd-27dd-45a3-9f2d-16092d2a658c"
+                            },
+                            {
+                                "childType": "string",
+                                "length": 10,
+                                "compositePrimaryKey": false,
+                                "compositeUniqueKey": false,
+                                "unique": false,
+                                "GUID": "337a2d13-9e55-4914-9bac-305c8aa1b9d7",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "required": true,
+                        "default": null,
+                        "GUID": "3b3d3e7e-6dce-4ff2-8841-08bf2b1d5a82",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "c31dfbd6-8464-4aa5-bed8-f15ae26aac05",
+                    "properties": []
+                },
+                "GUID": "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                "type": "object",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "7434ba42-12f7-4352-a8cb-a81fdea803ee"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/public/beerbrands"
+            },
+            {
+                "name": "fk BeerConsumptions.BeerBrand to beerbrands.BeerBrand",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                        "de138410-a876-4822-92e5-eb035cddd2c9"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "89cde1c6-0f8c-41ac-b979-26e99ee7c5ec",
+                        "c732adf8-cde3-4aeb-b50b-5b21b74ef817"
+                    ]
+                ],
+                "childCardinality": "1",
+                "parentCollection": "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                "childCollection": "89cde1c6-0f8c-41ac-b979-26e99ee7c5ec",
+                "GUID": "8c7185b3-2dc6-4116-a0ff-b6a7d831c300",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "a07d0df4-2344-4018-9a69-1b75fcd0e13b",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 195,
+                            "y": 368.66666666666663
+                        },
+                        {
+                            "x": 195,
+                            "y": 274.8333333333333
+                        },
+                        {
+                            "x": 459.66666666666674,
+                            "y": 274.8333333333333
+                        },
+                        {
+                            "x": 459.66666666666674,
+                            "y": 181
+                        }
+                    ],
+                    "sides": [
+                        "top",
+                        "bottom"
+                    ]
+                },
+                "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "cf981614-b106-485a-bf60-4dfbbe26715a"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/relationships/fk BeerConsumptions.BeerBrand to beerbrands.BeerBrand"
+            },
+            {
+                "name": "HAS_ALCOHOLPERCENTAGE",
+                "parentCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+                "parentField": [],
+                "parentCardinality": "1",
+                "childCollection": "2b2145bf-977c-40ed-b970-93d164586476",
+                "childField": [],
+                "childCardinality": "1",
+                "GUID": "2ddf0178-8f90-4c8e-a610-08c4c722e3a5",
+                "hackoladeStyles": {},
+                "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "5649b31e-cbe2-42a7-a82e-791b3fddba10"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/relationships/HAS_ALCOHOLPERCENTAGE"
+            },
+            {
+                "name": "BREWS",
+                "parentCollection": "63349014-ae0f-4348-bdf8-571cb24f7e76",
+                "parentField": [],
+                "parentCardinality": "1",
+                "childCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+                "childField": [],
+                "childCardinality": "1",
+                "GUID": "f9251e95-5d12-4e84-a7c6-9e405f7f024a",
+                "hackoladeStyles": {},
+                "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "1a049fbf-4a26-405a-a893-dd29de22bcb9"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/relationships/BREWS"
+            },
+            {
+                "name": "IS_A",
+                "parentCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+                "parentField": [],
+                "parentCardinality": "1",
+                "childCollection": "b80b8c08-731e-4aa2-ba23-eca80bbd5330",
+                "childField": [],
+                "childCardinality": "1",
+                "GUID": "bf29b119-33cc-4432-903c-25703c1c009e",
+                "hackoladeStyles": {},
+                "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "acfb0729-f60a-4fae-8930-c4632ab35e8a"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/relationships/IS_A"
+            },
+            {
+                "name": "New Relationship",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                        "de138410-a876-4822-92e5-eb035cddd2c9"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [],
+                "childCardinality": "1",
+                "GUID": "c3a46d6e-c5af-44a6-a7d3-f3e9a8fe007d",
+                "lineSize": 2,
+                "parentCollection": "ceba9a0a-8941-44fe-8ffb-b87bf3154574",
+                "childCollection": "13f8ca30-a4ab-4c93-ba07-3247750b8319",
+                "hackoladeStyles": {
+                    "GUID": "ff675e93-2548-45e8-8ef6-b8cfc8a085ad",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 524.5871794871773,
+                            "y": -11001.952820512823
+                        },
+                        {
+                            "x": 524.5871794871773,
+                            "y": -5460.976410256411
+                        },
+                        {
+                            "x": 459.66666666666674,
+                            "y": -5460.976410256411
+                        },
+                        {
+                            "x": 459.66666666666674,
+                            "y": 80
+                        }
+                    ],
+                    "sides": [
+                        "bottom",
+                        "top"
+                    ]
+                },
+                "hackoladeMeta": {},
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "83e01853-51e7-4624-9c8a-bc7445c554aa"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/relationships/New Relationship"
+            },
+            {
+                "code": "",
+                "name": "public",
+                "isActivated": true,
+                "backgroundColor": {
+                    "r": 216,
+                    "g": 0,
+                    "b": 115,
+                    "a": 1
+                },
+                "GUID": "722fe8f8-b411-47a0-af52-9e9fad0278d1",
+                "type": "bucket",
+                "collectionIds": [
+                    "18625b10-cb1b-455c-8d5c-82521cb182c0",
+                    "ceba9a0a-8941-44fe-8ffb-b87bf3154574"
+                ],
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "show": true,
+                "definitionEntityType": "bucket",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "0cc211d6-cb72-4d9a-9d0a-601ccae62f8e"
+                    ]
+                ],
+                "kind": "relativePath",
+                "link": "NEW MERGED model (Polyglot)_merged.hck.json",
+                "fieldRelativePath": "#/public"
+            }
+        ],
+        "GUID": "1a43ccb5-ab75-455b-9ebd-41e9bab9caa7"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "df333e01-b50e-45cd-a175-9ecd7b2a65d2"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2023-02-15T15:49:11.306Z",
+    "GUID": "11b1d89d-b85d-41f0-a27d-c12483abe13a",
+    "isLineageEnabled": false,
+    "polyglotModelPaths": [
+        {
+            "GUID": "9b6274e0-5d4a-4bee-bfdb-0fc920515c66",
+            "polyglotModelName": "NEW MERGED model (Polyglot)_merged.hck",
+            "polyglotModelPath": "NEW MERGED model (Polyglot)_merged.hck.json"
+        }
+    ],
+    "lastModifTS": "2023-02-15T15:53:29.919Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.109",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "7434ba42-12f7-4352-a8cb-a81fdea803ee",
+                        "x": 424.8378766140603,
+                        "y": 189.64610234337638,
+                        "width": 261,
+                        "height": 101,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "365d4344-f2c3-4133-99e0-fb1da2e12a2e",
+                        "x": 82.1712099473936,
+                        "y": 99.64610234337638,
+                        "width": 246,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 42.171209947393606,
+                        "y": 59.646102343376384,
+                        "GUID": "0cc211d6-cb72-4d9a-9d0a-601ccae62f8e"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "7e573457-c362-49b4-adc0-543744c823db",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
