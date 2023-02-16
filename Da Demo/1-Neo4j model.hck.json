@@ -165,45 +165,37 @@
             "type": "object",
             "properties": [
                 {
-                    "code": "",
                     "name": "Timeframe",
+                    "hackoladeMeta": {},
                     "isActivated": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
                     "primaryKey": false,
                     "unique": false,
-                    "childType": "number",
-                    "type": "numeric",
+                    "type": "string",
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
                     "compositeNodeKey": false,
-                    "mode": "integer",
-                    "sample": "?-heden",
-                    "GUID": "5edc898c-0d18-489b-930f-5d0762eb09a5",
+                    "code": "",
                     "required": true,
+                    "GUID": "5edc898c-0d18-489b-930f-5d0762eb09a5",
                     "error": {
                         "sample": true
                     }
                 },
                 {
-                    "code": "",
                     "name": "name",
+                    "hackoladeMeta": {},
                     "isActivated": true,
-                    "exclusiveMinimum": false,
-                    "exclusiveMaximum": false,
                     "primaryKey": false,
                     "unique": false,
-                    "childType": "number",
-                    "type": "numeric",
+                    "type": "string",
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
                     "compositeNodeKey": false,
-                    "mode": "integer",
-                    "sample": "KerstSmiske",
-                    "GUID": "9f9bb2f2-42f3-4c0b-be17-0886b8c8bcfb",
+                    "code": "",
                     "required": true,
+                    "GUID": "9f9bb2f2-42f3-4c0b-be17-0886b8c8bcfb",
                     "error": {
                         "sample": true
                     }
@@ -311,6 +303,21 @@
             "bucketId": "e5ce32af-504b-4ab8-ba8a-f3067b127d46",
             "lineSize": 2,
             "properties": []
+        },
+        {
+            "name": "SIMILAR_TO",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "b5f5c7af-72e6-415a-a3a1-4e25255071d8",
+            "childCollection": "b5f5c7af-72e6-415a-a3a1-4e25255071d8",
+            "level": "entity",
+            "GUID": "cc27ed3b-e3f6-4d1a-8aa6-27b7cc5be927",
+            "lineSize": 2,
+            "bucketId": "e5ce32af-504b-4ab8-ba8a-f3067b127d46",
+            "properties": []
         }
     ],
     "users": [],
@@ -328,7 +335,8 @@
         "b5f5c7af-72e6-415a-a3a1-4e25255071d8": "BeerBrand",
         "29601ad9-4e24-4e79-b928-48b03b9cfd44": "HAS_ALCOHOLPERCENTAGE",
         "bad8b8e7-b621-4e7c-960f-25a9daecdeaf": "BREWS",
-        "b45942e7-e449-48d0-8ff0-d3284114715c": "IS_A"
+        "b45942e7-e449-48d0-8ff0-d3284114715c": "IS_A",
+        "cc27ed3b-e3f6-4d1a-8aa6-27b7cc5be927": "SIMILAR_TO"
     },
     "definitions": {
         "type": "definitions",
@@ -353,7 +361,7 @@
     "creationTS": "2023-02-16T08:34:30.705Z",
     "GUID": "aacc12ff-c447-4b0c-a0dd-160733f3a6e0",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-02-16T08:34:46.210Z",
+    "lastModifTS": "2023-02-16T08:36:22.130Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -431,6 +439,16 @@
                         "width": 151,
                         "height": 30,
                         "color": {}
+                    },
+                    {
+                        "GUID": "cc27ed3b-e3f6-4d1a-8aa6-27b7cc5be927",
+                        "x": 40,
+                        "y": 40,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
                     }
                 ],
                 "erdDefinitions": {
@@ -441,8 +459,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 40,
-                        "y": 40,
+                        "x": 50,
+                        "y": 50,
                         "GUID": "e5ce32af-504b-4ab8-ba8a-f3067b127d46"
                     }
                 ],
@@ -483,8 +501,8 @@
                     ],
                     "buckets": [
                         {
-                            "x": 40,
-                            "y": 40,
+                            "x": 87.53143970034479,
+                            "y": 60,
                             "GUID": "e5ce32af-504b-4ab8-ba8a-f3067b127d46"
                         }
                     ],
