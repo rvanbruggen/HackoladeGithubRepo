@@ -1,0 +1,353 @@
+{
+    "modelName": "multiple document model",
+    "collections": [
+        {
+            "collectionName": "Accounts",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Property2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "fe20bd71-3495-4e29-9554-a9dd8cdab08c",
+                    "error": {}
+                },
+                {
+                    "name": "Owner",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "6650812c-62f7-4864-b849-a952232876e0",
+                    "error": {},
+                    "childRelationships": [
+                        "cd137af6-470c-4d8f-af5b-6c8b66b9c5cf"
+                    ]
+                },
+                {
+                    "name": "Property1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "01a63314-d381-4a5a-9d1b-8cd6b1fb6374",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "3d395d34-35a9-433d-9b9b-e181c662f3d6"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "bc84cbce-39a3-4063-8e25-8e9edef5df07"
+        },
+        {
+            "collectionName": "Locations",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "latlong",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "680a3b25-a22b-4387-931c-0cd8f9c9a55a",
+                    "error": {}
+                },
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "cd984be6-861d-4b70-8d52-adac7accf653",
+                    "error": {},
+                    "childRelationships": [
+                        "d06aa727-b1c8-450d-9067-aa7aa2dfc1ea"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "3005ae71-d136-4a43-8f34-ec9c34da4a8d"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "8be1cce2-90a4-44a0-bbd4-856156920269"
+        },
+        {
+            "collectionName": "Owners",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "location",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "3ad9ddce-b2e5-4bc6-aee9-643fda0e2f82",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "8be1cce2-90a4-44a0-bbd4-856156920269",
+                    "foreignField": [
+                        "8be1cce2-90a4-44a0-bbd4-856156920269",
+                        "cd984be6-861d-4b70-8d52-adac7accf653"
+                    ],
+                    "parentRelationship": "d06aa727-b1c8-450d-9067-aa7aa2dfc1ea"
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "8677ebb4-1125-4c9b-8158-8e4ac7d48092",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "bc84cbce-39a3-4063-8e25-8e9edef5df07",
+                    "foreignField": [
+                        "bc84cbce-39a3-4063-8e25-8e9edef5df07",
+                        "6650812c-62f7-4864-b849-a952232876e0"
+                    ],
+                    "parentRelationship": "cd137af6-470c-4d8f-af5b-6c8b66b9c5cf"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "271c2377-1b8c-459f-874d-217abffa8fe8"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "9f40408e-ddf9-498a-8ba4-a8ed1106fc99"
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Owners.location to Locations.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "8be1cce2-90a4-44a0-bbd4-856156920269",
+                    "cd984be6-861d-4b70-8d52-adac7accf653"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "9f40408e-ddf9-498a-8ba4-a8ed1106fc99",
+                    "3ad9ddce-b2e5-4bc6-aee9-643fda0e2f82"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "8be1cce2-90a4-44a0-bbd4-856156920269",
+            "childCollection": "9f40408e-ddf9-498a-8ba4-a8ed1106fc99",
+            "GUID": "d06aa727-b1c8-450d-9067-aa7aa2dfc1ea",
+            "hackoladeStyles": {
+                "GUID": "3ac14926-50e1-4511-8a6c-bbd72321a47e",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 500,
+                        "y": 192
+                    },
+                    {
+                        "x": 425.02941176470586,
+                        "y": 192
+                    },
+                    {
+                        "x": 425.02941176470586,
+                        "y": 444.52941176470586
+                    },
+                    {
+                        "x": 350.0588235294117,
+                        "y": 444.52941176470586
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Owners.name to Accounts.Owner",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "bc84cbce-39a3-4063-8e25-8e9edef5df07",
+                    "6650812c-62f7-4864-b849-a952232876e0"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "9f40408e-ddf9-498a-8ba4-a8ed1106fc99",
+                    "8677ebb4-1125-4c9b-8158-8e4ac7d48092"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "bc84cbce-39a3-4063-8e25-8e9edef5df07",
+            "childCollection": "9f40408e-ddf9-498a-8ba4-a8ed1106fc99",
+            "GUID": "cd137af6-470c-4d8f-af5b-6c8b66b9c5cf",
+            "hackoladeStyles": {
+                "GUID": "6ca9af47-63a2-48f7-81dd-88642d02a828",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 500,
+                        "y": 169
+                    },
+                    {
+                        "x": 357,
+                        "y": 169
+                    },
+                    {
+                        "x": 357,
+                        "y": 83.5
+                    },
+                    {
+                        "x": 214,
+                        "y": 83.5
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "bc84cbce-39a3-4063-8e25-8e9edef5df07": "Accounts",
+        "01a63314-d381-4a5a-9d1b-8cd6b1fb6374": "Property1",
+        "fe20bd71-3495-4e29-9554-a9dd8cdab08c": "Property2",
+        "9f40408e-ddf9-498a-8ba4-a8ed1106fc99": "Owners",
+        "8be1cce2-90a4-44a0-bbd4-856156920269": "Locations",
+        "6650812c-62f7-4864-b849-a952232876e0": "Owner",
+        "8677ebb4-1125-4c9b-8158-8e4ac7d48092": "name",
+        "3ad9ddce-b2e5-4bc6-aee9-643fda0e2f82": "location",
+        "cd984be6-861d-4b70-8d52-adac7accf653": "id",
+        "680a3b25-a22b-4387-931c-0cd8f9c9a55a": "latlong",
+        "d06aa727-b1c8-450d-9067-aa7aa2dfc1ea": "fk Owners.location to Locations.id",
+        "cd137af6-470c-4d8f-af5b-6c8b66b9c5cf": "fk Owners.name to Accounts.Owner"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "04cf0127-92b8-406e-80a3-cf9c3395b9ed"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "455eca6e-a041-44e7-9f2c-ca8eca3bb67d"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "00db3e00-36f2-48d6-be46-5e82db20204e"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "JSON",
+    "dbVersion": "2020-12",
+    "appTarget": "JSON",
+    "creationTS": "2023-02-28T16:53:11.556Z",
+    "GUID": "fe12d1e0-87c3-4597-a9f6-8e0101fe04bf",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "lastModifTS": "2023-02-28T16:57:32.050Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.3"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "bc84cbce-39a3-4063-8e25-8e9edef5df07",
+                        "x": 40,
+                        "y": 40,
+                        "width": 174,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9f40408e-ddf9-498a-8ba4-a8ed1106fc99",
+                        "x": 500,
+                        "y": 146,
+                        "width": 166,
+                        "height": 69,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8be1cce2-90a4-44a0-bbd4-856156920269",
+                        "x": 174.05882352941168,
+                        "y": 410.02941176470586,
+                        "width": 176,
+                        "height": 69,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

@@ -1,0 +1,4277 @@
+{
+    "modelName": "Polyglot model",
+    "collections": [
+        {
+            "collectionName": "actor",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "f1ec404d-388c-436e-9959-6d54527c463e",
+                    "constraintName": "actor_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "6c114ba3-434a-498e-808f-e5e41dd61546",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "actor_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('actor_actor_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "6c114ba3-434a-498e-808f-e5e41dd61546",
+                    "type": "numeric"
+                },
+                {
+                    "name": "first_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "b32b040b-e84a-4213-8ee8-448675b15384",
+                    "type": "string"
+                },
+                {
+                    "name": "last_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "4530cf96-5276-434e-ace6-3bb37fa94035",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "6c0ecb06-01e1-4edb-b138-154227619764",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d86ccaac-1ba0-4bab-90d2-017ca9ee0622",
+                "properties": []
+            },
+            "GUID": "0ae562f2-60c6-4929-9755-23e797455cad",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "address",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "04351447-4968-45e8-a295-e437872f9d46",
+                    "constraintName": "address_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('address_address_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf",
+                    "type": "numeric"
+                },
+                {
+                    "name": "address",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "ecf17769-89ef-4af9-a68b-d8d13a1935f5",
+                    "type": "string"
+                },
+                {
+                    "name": "address2",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "708316d2-d7d5-4488-ac5c-54b72e9b3ab2",
+                    "type": "string"
+                },
+                {
+                    "name": "district",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 20,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "c6373dc2-6390-43c4-848d-eb205927e2c4",
+                    "type": "string"
+                },
+                {
+                    "name": "city_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "e5613602-feb5-4ad6-936b-baad121610a0",
+                    "foreignField": [
+                        "e5613602-feb5-4ad6-936b-baad121610a0",
+                        "fcaa79ff-df9e-4ff5-b7c6-1807ac95d65a"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "9ddb1004-6a8f-49a5-9593-52b201df03e0",
+                    "type": "numeric"
+                },
+                {
+                    "name": "postal_code",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "0e9e8341-7684-4afd-a637-17ae2834fe35",
+                    "type": "string"
+                },
+                {
+                    "name": "phone",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 20,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "a64325d6-b0a1-4a5b-8849-da88192543bc",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "13f1ab25-eeb5-42a2-b0c5-6b9287a451e0",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "bdf117f2-2860-422c-90ec-3aca7991a7d2",
+                "properties": []
+            },
+            "GUID": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "category",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "6afd63db-1521-4513-bad2-dc505016aaa9",
+                    "constraintName": "category_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "0f1c738c-67d9-4d07-95a8-9beec53d80bc",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "category_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('category_category_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "0f1c738c-67d9-4d07-95a8-9beec53d80bc",
+                    "type": "numeric"
+                },
+                {
+                    "name": "name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 25,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "ab9ce7b6-9a94-4a15-8a15-5a09110c2741",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "25d9dc4a-816c-47ea-8c80-3883c54fe5ef",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "487c13ca-54e2-4f61-9970-1be701e5f322",
+                "properties": []
+            },
+            "GUID": "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "city",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "a5058023-56f6-4504-ae48-64104bb02a62",
+                    "constraintName": "city_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fcaa79ff-df9e-4ff5-b7c6-1807ac95d65a",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "city_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('city_city_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fcaa79ff-df9e-4ff5-b7c6-1807ac95d65a",
+                    "type": "numeric"
+                },
+                {
+                    "name": "city",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "92631d3a-f484-4d52-bd4e-2332b9bbcdc9",
+                    "type": "string"
+                },
+                {
+                    "name": "country_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                    "foreignField": [
+                        "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                        "2699aee9-77e4-4c2b-b1e2-f1239e273862"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "92a057ff-0053-438d-9fdc-09dd4f9d7178",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "16858dbb-52be-4f2a-b4a4-7defc2d20616",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "6510cc27-d1b9-4539-a5b4-83a991275a0d",
+                "properties": []
+            },
+            "GUID": "e5613602-feb5-4ad6-936b-baad121610a0",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "country",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "e00f6dde-2561-4bac-ab8d-51d9cb4a19c2",
+                    "constraintName": "country_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "2699aee9-77e4-4c2b-b1e2-f1239e273862",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "country_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('country_country_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "2699aee9-77e4-4c2b-b1e2-f1239e273862",
+                    "type": "numeric"
+                },
+                {
+                    "name": "country",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "60b7e2ff-5a48-4439-a80e-e2cbdc09e61a",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "dd444474-4b29-4fd3-8af6-78527fdec29d",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "dd99ea80-fdc9-41f8-b151-40165f4849cb",
+                "properties": []
+            },
+            "GUID": "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "customer",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "21b69d64-e433-4af2-8cb3-7d7cf890a83f",
+                    "constraintName": "customer_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "7e8b0ffd-00de-4846-9ee2-59b15f12eebf",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "customer_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('customer_customer_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "7e8b0ffd-00de-4846-9ee2-59b15f12eebf",
+                    "type": "numeric"
+                },
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "f3503e8a-ecf5-42f7-a89c-ebdec6e13457",
+                    "type": "numeric"
+                },
+                {
+                    "name": "first_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "4a72f4e9-aaea-41f6-a8fc-8de2a4b6360e",
+                    "type": "string"
+                },
+                {
+                    "name": "last_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "e8f823b1-462a-431c-b0d1-29e75476eb72",
+                    "type": "string"
+                },
+                {
+                    "name": "email",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "69811afa-64f3-42ea-b87d-0be87ec76a8a",
+                    "type": "string"
+                },
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                    "foreignField": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "054cafe3-1af9-4786-9f91-743802afb813",
+                    "type": "numeric"
+                },
+                {
+                    "name": "activebool",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "true",
+                    "GUID": "2d54cf62-2aeb-464a-9942-95b8348c98be",
+                    "type": "boolean"
+                },
+                {
+                    "name": "create_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "('now'::text)::date",
+                    "GUID": "0fd8786a-c519-4644-a298-fe080596a657",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "634a6f3d-55f0-42c8-aa7c-0d35b7f709e6",
+                    "type": "string"
+                },
+                {
+                    "name": "active",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "e740e083-4e4f-4ec7-8836-7fcfe18d5480",
+                    "type": "numeric"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "287e0e25-9110-436c-b987-a023806359c0",
+                "properties": []
+            },
+            "GUID": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "film",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "37101a76-2afc-48d0-ab9b-b24b8098a7e2",
+                    "constraintName": "film_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "f7265219-4002-410c-96cb-0b793812c717",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('film_film_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "f7265219-4002-410c-96cb-0b793812c717",
+                    "type": "numeric"
+                },
+                {
+                    "name": "title",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 255,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "1c456b9a-6a29-4f75-831a-ef0c8751ae63",
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "text",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "90c318b0-6a78-4e9e-9380-c6bc0a227030",
+                    "type": "string"
+                },
+                {
+                    "name": "release_year",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/year",
+                    "refType": "model",
+                    "refIdPath": [
+                        "a96fef65-9a56-4ebc-a573-cdfb04c361eb",
+                        "7aa50f62-7a70-4d22-9cdf-65c857cac9cf",
+                        "b1749797-2c7d-4580-8894-f6426377d66a"
+                    ],
+                    "ref": "b1749797-2c7d-4580-8894-f6426377d66a",
+                    "GUID": "84401fd6-9328-4d0f-821c-12314c0f93f7",
+                    "type": "reference"
+                },
+                {
+                    "name": "language_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "d8424007-9add-4650-a0b9-64a0685e2dac",
+                    "foreignField": [
+                        "d8424007-9add-4650-a0b9-64a0685e2dac",
+                        "0dc0da27-a597-4a7d-b602-78052b964ca5"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "68ad810f-fbc1-4a3b-a644-aaf26394eda1",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_duration",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "3",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "8b793966-364a-4455-b7ca-d44dcfc05a6e",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_rate",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "numeric",
+                    "precision": 4,
+                    "scale": 2,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "4.99",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "673cea26-7391-4e01-906e-9fa8032580f1",
+                    "type": "numeric"
+                },
+                {
+                    "name": "length",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "501a5469-3b5e-4818-a096-d07715d2e420",
+                    "type": "numeric"
+                },
+                {
+                    "name": "replacement_cost",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "numeric",
+                    "precision": 5,
+                    "scale": 2,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "19.99",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "cb169d1d-afc0-4e54-bb4a-e5a868f14e0a",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rating",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/mpaa_rating",
+                    "refType": "model",
+                    "refIdPath": [
+                        "a96fef65-9a56-4ebc-a573-cdfb04c361eb",
+                        "7aa50f62-7a70-4d22-9cdf-65c857cac9cf",
+                        "a9d065b0-dfbe-4ad6-ad25-8f1b2da1fcc5"
+                    ],
+                    "ref": "a9d065b0-dfbe-4ad6-ad25-8f1b2da1fcc5",
+                    "GUID": "de2edffc-4de0-4f65-9378-895e2e879cfd",
+                    "type": "reference"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "6156d18e-a02d-447d-a7ba-fffc085ec53a",
+                    "type": "string"
+                },
+                {
+                    "name": "special_features",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "text",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "df3dc984-b6a0-45cd-ab09-3b2c4825b56e",
+                    "type": "string"
+                },
+                {
+                    "name": "fulltext",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "7edeaf78-832c-45d0-b607-28edc3315082",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "1d951f77-36bd-4f37-b895-a37d4e61de5f",
+                "properties": []
+            },
+            "GUID": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "film_actor",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "abe82bf1-3720-4735-8146-8943ccd8b296",
+                    "constraintName": "film_actor_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "9c9c378f-dc82-4798-b005-1852b60ff6de",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "c3cd4570-cd57-416d-9360-2bb36d0bfec7",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "actor_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "0ae562f2-60c6-4929-9755-23e797455cad",
+                    "foreignField": [
+                        "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "6c114ba3-434a-498e-808f-e5e41dd61546"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "9c9c378f-dc82-4798-b005-1852b60ff6de",
+                    "type": "numeric"
+                },
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                    "foreignField": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "f7265219-4002-410c-96cb-0b793812c717"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "c3cd4570-cd57-416d-9360-2bb36d0bfec7",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "b948ca7d-4cda-4b32-85db-517a97353ef7",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "e17c74f0-4519-4dd0-9745-180d71b04ec0",
+                "properties": []
+            },
+            "GUID": "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "film_category",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "a71ec167-af65-4f82-975c-20aaf567506f",
+                    "constraintName": "film_category_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "bedd568d-a3d2-4b25-9d3c-48cc9a002a02",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "55c21157-c670-419e-a2e4-c80cf7e2c9e9",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                    "foreignField": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "f7265219-4002-410c-96cb-0b793812c717"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "bedd568d-a3d2-4b25-9d3c-48cc9a002a02",
+                    "type": "numeric"
+                },
+                {
+                    "name": "category_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                    "foreignField": [
+                        "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                        "0f1c738c-67d9-4d07-95a8-9beec53d80bc"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "55c21157-c670-419e-a2e4-c80cf7e2c9e9",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "bf7a3ad0-4b49-4d35-bd8f-0460d07df76f",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "145aa5b0-c98f-4389-aa59-de9ea4b33b10",
+                "properties": []
+            },
+            "GUID": "294d688e-ab1d-4f8c-a360-656607bdefba",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "inventory",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "68e98ed5-48c0-4bdc-8f4f-b6da9457428e",
+                    "constraintName": "inventory_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "ebecbb1d-a9ed-4fae-a8e7-f5a226efc9a4",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "inventory_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('inventory_inventory_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "ebecbb1d-a9ed-4fae-a8e7-f5a226efc9a4",
+                    "type": "numeric"
+                },
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                    "foreignField": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "f7265219-4002-410c-96cb-0b793812c717"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "d094a4b9-1bef-4cf2-81b3-e4fe9835c078",
+                    "type": "numeric"
+                },
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "2c37b9c7-76e8-4f3b-831b-3eee7c3e1007",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "4ab6aa40-faf2-423e-bb11-ca9dbb3d837a",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "5367acfd-c78b-460f-9f75-709f64f97f46",
+                "properties": []
+            },
+            "GUID": "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "language",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "3995405d-ff83-4a3c-a054-25e04c9cc20f",
+                    "constraintName": "language_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "0dc0da27-a597-4a7d-b602-78052b964ca5",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "language_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('language_language_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "0dc0da27-a597-4a7d-b602-78052b964ca5",
+                    "type": "numeric"
+                },
+                {
+                    "name": "name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 20,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "cbe0fb95-4013-4086-b224-fd692db7c5ec",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "0154e5e1-2345-4089-8753-213914606c7d",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "12f65dbe-3784-49f2-ab65-6de7853001ea",
+                "properties": []
+            },
+            "GUID": "d8424007-9add-4650-a0b9-64a0685e2dac",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "payment",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "47f9b97f-0fa8-4362-b6fe-628e016ad34b",
+                    "constraintName": "payment_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "1e0cc2d9-6e05-46d9-8a5f-d7636bb573ab",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "payment_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('payment_payment_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "1e0cc2d9-6e05-46d9-8a5f-d7636bb573ab",
+                    "type": "numeric"
+                },
+                {
+                    "name": "customer_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                    "foreignField": [
+                        "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                        "7e8b0ffd-00de-4846-9ee2-59b15f12eebf"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "0c7145fc-d73b-4af5-b669-a9f7d4009c52",
+                    "type": "numeric"
+                },
+                {
+                    "name": "staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                    "foreignField": [
+                        "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                        "2015440a-c6ad-4fe4-a850-da7cf6a0c433"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "3c69e11e-4b89-42da-87d3-01d4e1ff48ee",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                    "foreignField": [
+                        "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                        "a849eee5-781f-4148-9c66-f9fb1930313e"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "8f44ac9e-3040-4fdc-bf10-95813c87a81d",
+                    "type": "numeric"
+                },
+                {
+                    "name": "amount",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "numeric",
+                    "precision": 5,
+                    "scale": 2,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "1286c502-03a8-47a5-b6b8-7e6a4080cca4",
+                    "type": "numeric"
+                },
+                {
+                    "name": "payment_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "2400b26e-cfbd-4c8c-bfaf-e6d5667aa4a6",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "99401e76-215e-49c5-adaa-2ebba7c474ee",
+                "properties": []
+            },
+            "GUID": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "rental",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "5e84a077-c597-4a45-9d85-5f18ea743588",
+                    "constraintName": "rental_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "a849eee5-781f-4148-9c66-f9fb1930313e",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "rental_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('rental_rental_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "a849eee5-781f-4148-9c66-f9fb1930313e",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "9da52153-f21f-492e-866a-2dfbbf9015e3",
+                    "type": "string"
+                },
+                {
+                    "name": "inventory_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+                    "foreignField": [
+                        "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+                        "ebecbb1d-a9ed-4fae-a8e7-f5a226efc9a4"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "1edd68f1-0625-419e-aa2f-3b1ff58f93b0",
+                    "type": "numeric"
+                },
+                {
+                    "name": "customer_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                    "foreignField": [
+                        "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                        "7e8b0ffd-00de-4846-9ee2-59b15f12eebf"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "0a994205-636c-4b22-a25b-f812731e7592",
+                    "type": "numeric"
+                },
+                {
+                    "name": "return_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "a4bed72e-7d86-4af8-a3ba-02b8cbbd31d1",
+                    "type": "string"
+                },
+                {
+                    "name": "staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                    "foreignField": [
+                        "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                        "2015440a-c6ad-4fe4-a850-da7cf6a0c433"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "46d3b718-4e60-4d86-aed4-e0296a20be4a",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "7b6653cc-e1a3-4524-9ddf-d43a7e571d50",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "aab43afa-8414-4552-98b7-dc1aa4ae85d5",
+                "properties": []
+            },
+            "GUID": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "staff",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "9400e33b-99ba-4acc-b7c9-ad1b3debd4ad",
+                    "constraintName": "staff_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "2015440a-c6ad-4fe4-a850-da7cf6a0c433",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('staff_staff_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "2015440a-c6ad-4fe4-a850-da7cf6a0c433",
+                    "type": "numeric"
+                },
+                {
+                    "name": "first_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "a9498b43-8567-48de-8a41-3e99d6b4c396",
+                    "type": "string"
+                },
+                {
+                    "name": "last_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "45df74be-973b-488b-bc62-b063ae2ff936",
+                    "type": "string"
+                },
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                    "foreignField": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "194ccc70-e5d0-4b73-906d-ef334762a0d8",
+                    "type": "numeric"
+                },
+                {
+                    "name": "email",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "2dbefebf-008e-42c0-bfea-e46da76a72ff",
+                    "type": "string"
+                },
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "dbc9efbe-8fc8-4ca4-aded-55010165a4eb",
+                    "type": "numeric"
+                },
+                {
+                    "name": "active",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "true",
+                    "GUID": "0131ea97-bdbe-4810-bc9e-b404f1a64eb3",
+                    "type": "boolean"
+                },
+                {
+                    "name": "username",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 16,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "6d6c9905-81de-4df6-bcf9-0ff852e43f7f",
+                    "type": "string"
+                },
+                {
+                    "name": "password",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 40,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "e0f34afa-1dff-453b-9e41-48bc1a6d2761",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "f17e23cb-3126-4fc0-b584-6720b1613e46",
+                    "type": "string"
+                },
+                {
+                    "name": "picture",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "binary",
+                    "mode": "binary",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "324ef7e3-ed55-45d9-a8dd-d53c5c103176",
+                    "type": "binary"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "21988b90-c111-4824-9fb2-ea3f879e0481",
+                "properties": []
+            },
+            "GUID": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "store",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "7a2c3dd5-e568-4ffc-9f8a-dc64be535665",
+                    "constraintName": "store_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "1a5ae67f-c313-42ea-b9ef-ca9a79514353",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('store_store_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "1a5ae67f-c313-42ea-b9ef-ca9a79514353",
+                    "type": "numeric"
+                },
+                {
+                    "name": "manager_staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                    "foreignField": [
+                        "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                        "2015440a-c6ad-4fe4-a850-da7cf6a0c433"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "4a10bacc-9e33-4799-a130-80dc295c63aa",
+                    "type": "numeric"
+                },
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                    "foreignField": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "9e314c9f-b562-4e89-85d7-bd13c8cc6932",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "480c7701-772f-459a-bb5e-8977a3691020",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "dc1b3ba7-daaf-463f-9ce1-8b2ec5c4a3cc",
+                "properties": []
+            },
+            "GUID": "ffa1810e-0247-439a-bb85-fa793a5df590",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "public",
+            "code": "",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "type": "bucket",
+            "collectionIds": [
+                "0ae562f2-60c6-4929-9755-23e797455cad",
+                "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                "e5613602-feb5-4ad6-936b-baad121610a0",
+                "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+                "294d688e-ab1d-4f8c-a360-656607bdefba",
+                "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+                "d8424007-9add-4650-a0b9-64a0685e2dac",
+                "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                "ffa1810e-0247-439a-bb85-fa793a5df590"
+            ],
+            "hackoladeMeta": {},
+            "show": true
+        }
+    ],
+    "views": [
+        {
+            "name": "actor_info",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "viewOn": "0ae562f2-60c6-4929-9755-23e797455cad",
+            "properties": [
+                {
+                    "name": "actor_id",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/actor/actor_id",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "6c114ba3-434a-498e-808f-e5e41dd61546"
+                    ],
+                    "ref": "6c114ba3-434a-498e-808f-e5e41dd61546",
+                    "GUID": "788a2f1a-a2fd-40fc-b6d5-0fbfcd8cfe39",
+                    "type": "reference"
+                },
+                {
+                    "name": "first_name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/actor/first_name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "b32b040b-e84a-4213-8ee8-448675b15384"
+                    ],
+                    "ref": "b32b040b-e84a-4213-8ee8-448675b15384",
+                    "GUID": "e2bfdda9-322f-4773-acc6-d6e72eea51fd",
+                    "type": "reference"
+                },
+                {
+                    "name": "last_name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/actor/last_name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "4530cf96-5276-434e-ace6-3bb37fa94035"
+                    ],
+                    "ref": "4530cf96-5276-434e-ace6-3bb37fa94035",
+                    "GUID": "b8af1282-65a6-404f-83d3-cac3cd50fc70",
+                    "type": "reference"
+                },
+                {
+                    "name": "film_info",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/actor/film_info",
+                    "refType": "collectionReference",
+                    "refIdPath": [],
+                    "GUID": "65d587f3-946e-4a5a-81fc-44f942b95e7e",
+                    "type": "reference"
+                }
+            ],
+            "GUID": "50bdfa06-c6ae-4eb2-bf66-9a44e8ed2263",
+            "type": "object"
+        },
+        {
+            "name": "customer_list",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "viewOn": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+            "properties": [
+                {
+                    "name": "id",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/customer/customer_id",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                        "7e8b0ffd-00de-4846-9ee2-59b15f12eebf"
+                    ],
+                    "ref": "7e8b0ffd-00de-4846-9ee2-59b15f12eebf",
+                    "GUID": "0c94cfe5-cd43-404e-8596-4154c41da807",
+                    "type": "reference"
+                },
+                {
+                    "name": "name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/customer/first_name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                        "4a72f4e9-aaea-41f6-a8fc-8de2a4b6360e"
+                    ],
+                    "ref": "4a72f4e9-aaea-41f6-a8fc-8de2a4b6360e",
+                    "GUID": "031eeab8-00dd-499b-9413-c6434c227533",
+                    "type": "reference"
+                },
+                {
+                    "name": "address",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/address/address",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "ecf17769-89ef-4af9-a68b-d8d13a1935f5"
+                    ],
+                    "ref": "ecf17769-89ef-4af9-a68b-d8d13a1935f5",
+                    "GUID": "c362199c-9c0e-4f6a-87e8-592f439ee68b",
+                    "type": "reference"
+                },
+                {
+                    "name": "zip code",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/address/postal_code",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "0e9e8341-7684-4afd-a637-17ae2834fe35"
+                    ],
+                    "ref": "0e9e8341-7684-4afd-a637-17ae2834fe35",
+                    "GUID": "48d771ca-b107-45fe-83b3-8b66e36affc2",
+                    "type": "reference"
+                },
+                {
+                    "name": "phone",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/address/phone",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "a64325d6-b0a1-4a5b-8849-da88192543bc"
+                    ],
+                    "ref": "a64325d6-b0a1-4a5b-8849-da88192543bc",
+                    "GUID": "97e33205-3284-4c9a-91ed-8166afd8fc41",
+                    "type": "reference"
+                },
+                {
+                    "name": "city",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/city/city",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "e5613602-feb5-4ad6-936b-baad121610a0",
+                        "92631d3a-f484-4d52-bd4e-2332b9bbcdc9"
+                    ],
+                    "ref": "92631d3a-f484-4d52-bd4e-2332b9bbcdc9",
+                    "GUID": "fac432c9-11dd-49df-a070-660a92b169cc",
+                    "type": "reference"
+                },
+                {
+                    "name": "country",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/country/country",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                        "60b7e2ff-5a48-4439-a80e-e2cbdc09e61a"
+                    ],
+                    "ref": "60b7e2ff-5a48-4439-a80e-e2cbdc09e61a",
+                    "GUID": "ad7aacc4-9c26-4e67-931b-c846a53f8875",
+                    "type": "reference"
+                },
+                {
+                    "name": "notes",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/customer/activebool",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                        "2d54cf62-2aeb-464a-9942-95b8348c98be"
+                    ],
+                    "ref": "2d54cf62-2aeb-464a-9942-95b8348c98be",
+                    "GUID": "01de4179-97d1-4667-9c8a-f85892215b27",
+                    "type": "reference"
+                },
+                {
+                    "name": "sid",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/customer/store_id",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                        "f3503e8a-ecf5-42f7-a89c-ebdec6e13457"
+                    ],
+                    "ref": "f3503e8a-ecf5-42f7-a89c-ebdec6e13457",
+                    "GUID": "56d13c30-200c-4c07-9139-bf3b6e3e3452",
+                    "type": "reference"
+                }
+            ],
+            "GUID": "b01b758a-4d6d-4869-8f94-af89fae4db79",
+            "type": "object"
+        },
+        {
+            "name": "film_list",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "viewOn": "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+            "properties": [
+                {
+                    "name": "fid",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/film_id",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "f7265219-4002-410c-96cb-0b793812c717"
+                    ],
+                    "ref": "f7265219-4002-410c-96cb-0b793812c717",
+                    "GUID": "85fd91a4-5352-4627-9de8-69940d0c1818",
+                    "type": "reference"
+                },
+                {
+                    "name": "title",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/title",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "1c456b9a-6a29-4f75-831a-ef0c8751ae63"
+                    ],
+                    "ref": "1c456b9a-6a29-4f75-831a-ef0c8751ae63",
+                    "GUID": "6927c51d-fb3f-42e5-b630-35432182e903",
+                    "type": "reference"
+                },
+                {
+                    "name": "description",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/description",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "90c318b0-6a78-4e9e-9380-c6bc0a227030"
+                    ],
+                    "ref": "90c318b0-6a78-4e9e-9380-c6bc0a227030",
+                    "GUID": "127f6e57-51f2-44f6-add6-2618c03e0255",
+                    "type": "reference"
+                },
+                {
+                    "name": "category",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/category/name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                        "ab9ce7b6-9a94-4a15-8a15-5a09110c2741"
+                    ],
+                    "ref": "ab9ce7b6-9a94-4a15-8a15-5a09110c2741",
+                    "GUID": "55fe0ef2-41f2-4424-8a4a-d3007be892fd",
+                    "type": "reference"
+                },
+                {
+                    "name": "price",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/rental_rate",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "673cea26-7391-4e01-906e-9fa8032580f1"
+                    ],
+                    "ref": "673cea26-7391-4e01-906e-9fa8032580f1",
+                    "GUID": "57febc95-acdb-4c8d-8559-aed2fa7fc99c",
+                    "type": "reference"
+                },
+                {
+                    "name": "length",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/length",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "501a5469-3b5e-4818-a096-d07715d2e420"
+                    ],
+                    "ref": "501a5469-3b5e-4818-a096-d07715d2e420",
+                    "GUID": "fbb045ff-b594-4ca6-9cf8-4839c7e09e59",
+                    "type": "reference"
+                },
+                {
+                    "name": "rating",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/rating",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "de2edffc-4de0-4f65-9378-895e2e879cfd"
+                    ],
+                    "ref": "de2edffc-4de0-4f65-9378-895e2e879cfd",
+                    "GUID": "64f20a77-96a3-4eff-bc3b-ff382c9070e2",
+                    "type": "reference"
+                },
+                {
+                    "name": "actors",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/actor/first_name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "b32b040b-e84a-4213-8ee8-448675b15384"
+                    ],
+                    "ref": "b32b040b-e84a-4213-8ee8-448675b15384",
+                    "GUID": "74af92a5-81f9-48e4-9d22-743764b4958b",
+                    "type": "reference"
+                }
+            ],
+            "GUID": "b6f1c1b1-84d9-4932-895f-4e6b96ec36b9",
+            "type": "object"
+        },
+        {
+            "name": "nicer_but_slower_film_list",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "viewOn": "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+            "properties": [
+                {
+                    "name": "fid",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/film_id",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "f7265219-4002-410c-96cb-0b793812c717"
+                    ],
+                    "ref": "f7265219-4002-410c-96cb-0b793812c717",
+                    "GUID": "a8c71974-c74e-4032-8910-3d4c8516e66a",
+                    "type": "reference"
+                },
+                {
+                    "name": "title",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/title",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "1c456b9a-6a29-4f75-831a-ef0c8751ae63"
+                    ],
+                    "ref": "1c456b9a-6a29-4f75-831a-ef0c8751ae63",
+                    "GUID": "9956741c-15cd-46ba-b29d-73093aeeef1f",
+                    "type": "reference"
+                },
+                {
+                    "name": "description",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/description",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "90c318b0-6a78-4e9e-9380-c6bc0a227030"
+                    ],
+                    "ref": "90c318b0-6a78-4e9e-9380-c6bc0a227030",
+                    "GUID": "70435fa7-9daa-41af-a8f2-f35dc6432d49",
+                    "type": "reference"
+                },
+                {
+                    "name": "category",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/category/name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                        "ab9ce7b6-9a94-4a15-8a15-5a09110c2741"
+                    ],
+                    "ref": "ab9ce7b6-9a94-4a15-8a15-5a09110c2741",
+                    "GUID": "8c580879-60eb-44e7-93b2-7dd7320761b4",
+                    "type": "reference"
+                },
+                {
+                    "name": "price",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/rental_rate",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "673cea26-7391-4e01-906e-9fa8032580f1"
+                    ],
+                    "ref": "673cea26-7391-4e01-906e-9fa8032580f1",
+                    "GUID": "747c0a73-8a20-45c2-8672-17cd95bbdfd3",
+                    "type": "reference"
+                },
+                {
+                    "name": "length",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/length",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "501a5469-3b5e-4818-a096-d07715d2e420"
+                    ],
+                    "ref": "501a5469-3b5e-4818-a096-d07715d2e420",
+                    "GUID": "82380dd7-ed06-4597-987c-d8f82538313f",
+                    "type": "reference"
+                },
+                {
+                    "name": "rating",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/film/rating",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "de2edffc-4de0-4f65-9378-895e2e879cfd"
+                    ],
+                    "ref": "de2edffc-4de0-4f65-9378-895e2e879cfd",
+                    "GUID": "bce524a2-0057-44b6-a56a-1c219de828f8",
+                    "type": "reference"
+                },
+                {
+                    "name": "actors",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/actor/first_name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "b32b040b-e84a-4213-8ee8-448675b15384"
+                    ],
+                    "ref": "b32b040b-e84a-4213-8ee8-448675b15384",
+                    "GUID": "eab842e3-7597-4b7b-b934-cda74908f3ea",
+                    "type": "reference"
+                }
+            ],
+            "GUID": "3ef238f5-60fc-4a9d-98c8-c9951aa9cbf2",
+            "type": "object"
+        },
+        {
+            "name": "sales_by_film_category",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "viewOn": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+            "properties": [
+                {
+                    "name": "category",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/category/name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                        "ab9ce7b6-9a94-4a15-8a15-5a09110c2741"
+                    ],
+                    "ref": "ab9ce7b6-9a94-4a15-8a15-5a09110c2741",
+                    "GUID": "f6bcd329-7a07-4a04-ab2a-5e7a1c054634",
+                    "type": "reference"
+                },
+                {
+                    "name": "total_sales",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/payment/amount",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                        "1286c502-03a8-47a5-b6b8-7e6a4080cca4"
+                    ],
+                    "ref": "1286c502-03a8-47a5-b6b8-7e6a4080cca4",
+                    "GUID": "3320666e-6fb4-4115-99c5-588d4a96bafd",
+                    "type": "reference"
+                }
+            ],
+            "GUID": "539a427b-769e-46c4-a1a4-048d45f53fc0",
+            "type": "object"
+        },
+        {
+            "name": "sales_by_store",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "viewOn": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+            "properties": [
+                {
+                    "name": "store",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/city/city",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "e5613602-feb5-4ad6-936b-baad121610a0",
+                        "92631d3a-f484-4d52-bd4e-2332b9bbcdc9"
+                    ],
+                    "ref": "92631d3a-f484-4d52-bd4e-2332b9bbcdc9",
+                    "GUID": "a255efeb-b4d8-4d4a-bad3-c0cc7248dd39",
+                    "type": "reference"
+                },
+                {
+                    "name": "manager",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/actor/first_name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "b32b040b-e84a-4213-8ee8-448675b15384"
+                    ],
+                    "ref": "b32b040b-e84a-4213-8ee8-448675b15384",
+                    "GUID": "1cc5bef3-3604-4c8e-81ec-f53f29a38f00",
+                    "type": "reference"
+                },
+                {
+                    "name": "total_sales",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/payment/amount",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                        "1286c502-03a8-47a5-b6b8-7e6a4080cca4"
+                    ],
+                    "ref": "1286c502-03a8-47a5-b6b8-7e6a4080cca4",
+                    "GUID": "de4440ad-23ab-41c6-8c0f-bbf557f4a108",
+                    "type": "reference"
+                }
+            ],
+            "GUID": "fe229fe1-01a5-4a41-b166-59c1fcfa0b4c",
+            "type": "object"
+        },
+        {
+            "name": "staff_list",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "e80af6a3-5753-4a42-8139-100b547a313b",
+            "viewOn": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+            "properties": [
+                {
+                    "name": "id",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/staff/staff_id",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                        "2015440a-c6ad-4fe4-a850-da7cf6a0c433"
+                    ],
+                    "ref": "2015440a-c6ad-4fe4-a850-da7cf6a0c433",
+                    "GUID": "7ce6238b-c30b-41e3-9903-9986f7be2920",
+                    "type": "reference"
+                },
+                {
+                    "name": "name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/staff/first_name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                        "a9498b43-8567-48de-8a41-3e99d6b4c396"
+                    ],
+                    "ref": "a9498b43-8567-48de-8a41-3e99d6b4c396",
+                    "GUID": "092dc8b9-29e3-457d-b1d9-de7b4aba1f5f",
+                    "type": "reference"
+                },
+                {
+                    "name": "address",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/address/address",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "ecf17769-89ef-4af9-a68b-d8d13a1935f5"
+                    ],
+                    "ref": "ecf17769-89ef-4af9-a68b-d8d13a1935f5",
+                    "GUID": "8dbe8307-beda-416e-9267-b9092bf7da03",
+                    "type": "reference"
+                },
+                {
+                    "name": "zip code",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/address/postal_code",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "0e9e8341-7684-4afd-a637-17ae2834fe35"
+                    ],
+                    "ref": "0e9e8341-7684-4afd-a637-17ae2834fe35",
+                    "GUID": "21a22c34-0fa1-4b90-93f6-f5f21feed221",
+                    "type": "reference"
+                },
+                {
+                    "name": "phone",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/address/phone",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "a64325d6-b0a1-4a5b-8849-da88192543bc"
+                    ],
+                    "ref": "a64325d6-b0a1-4a5b-8849-da88192543bc",
+                    "GUID": "2aa9db23-2130-4309-99c7-9cdd8eeec163",
+                    "type": "reference"
+                },
+                {
+                    "name": "city",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/city/city",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "e5613602-feb5-4ad6-936b-baad121610a0",
+                        "92631d3a-f484-4d52-bd4e-2332b9bbcdc9"
+                    ],
+                    "ref": "92631d3a-f484-4d52-bd4e-2332b9bbcdc9",
+                    "GUID": "d09912fb-617f-4bdd-ac32-7e5350b50b2a",
+                    "type": "reference"
+                },
+                {
+                    "name": "country",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/country/country",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                        "60b7e2ff-5a48-4439-a80e-e2cbdc09e61a"
+                    ],
+                    "ref": "60b7e2ff-5a48-4439-a80e-e2cbdc09e61a",
+                    "GUID": "3aa9ef9a-dc8f-4d4f-901a-9420c496c4b1",
+                    "type": "reference"
+                },
+                {
+                    "name": "sid",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/staff/store_id",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                        "dbc9efbe-8fc8-4ca4-aded-55010165a4eb"
+                    ],
+                    "ref": "dbc9efbe-8fc8-4ca4-aded-55010165a4eb",
+                    "GUID": "178b6ff6-030f-47ca-a6d8-8dfb32c8f5b5",
+                    "type": "reference"
+                }
+            ],
+            "GUID": "9db558ed-1fb4-486c-9475-923d32efe97a",
+            "type": "object"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "fk_address_city",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e5613602-feb5-4ad6-936b-baad121610a0",
+            "parentField": [
+                [
+                    "e5613602-feb5-4ad6-936b-baad121610a0",
+                    "fcaa79ff-df9e-4ff5-b7c6-1807ac95d65a"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+            "childField": [
+                [
+                    "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                    "9ddb1004-6a8f-49a5-9593-52b201df03e0"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "3526ae49-242a-40ca-8256-ba482c391b1b",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1503.8514219268225,
+                        "y": 874.210662332067
+                    },
+                    {
+                        "x": 1503.8514219268225,
+                        "y": 820.460662332067
+                    },
+                    {
+                        "x": 1503.8514219268225,
+                        "y": 820.460662332067
+                    },
+                    {
+                        "x": 1503.8514219268225,
+                        "y": 766.710662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "845fcc2a-ba8c-4e35-8c5f-2a8c8ba201ab",
+            "level": "field"
+        },
+        {
+            "name": "fk_city",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+            "parentField": [
+                [
+                    "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                    "2699aee9-77e4-4c2b-b1e2-f1239e273862"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "e5613602-feb5-4ad6-936b-baad121610a0",
+            "childField": [
+                [
+                    "e5613602-feb5-4ad6-936b-baad121610a0",
+                    "92a057ff-0053-438d-9fdc-09dd4f9d7178"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "d3670b9a-2a78-4f92-8918-2482434ff6a3",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1650.8514219268225,
+                        "y": 715.710662332067
+                    },
+                    {
+                        "x": 1675.8514219268225,
+                        "y": 715.710662332067
+                    },
+                    {
+                        "x": 1675.8514219268225,
+                        "y": 582.710662332067
+                    },
+                    {
+                        "x": 1650.8514219268225,
+                        "y": 582.710662332067
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            },
+            "GUID": "c68d7ebd-bd52-43c1-beb3-c27bda00c25f",
+            "level": "field"
+        },
+        {
+            "name": "customer_address_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+            "parentField": [
+                [
+                    "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                    "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+            "childField": [
+                [
+                    "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                    "054cafe3-1af9-4786-9f91-743802afb813"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "a405b731-3976-43af-a1ad-b2c9d0442296",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1681.8514214499853,
+                        "y": 1138.7106613783926
+                    },
+                    {
+                        "x": 1681.8514214499853,
+                        "y": 1093.4606618552298
+                    },
+                    {
+                        "x": 1577.8514219268225,
+                        "y": 1093.4606618552298
+                    },
+                    {
+                        "x": 1577.8514219268225,
+                        "y": 1048.210662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "110d1d1e-e713-4ef0-b4df-fbd479847313",
+            "level": "field"
+        },
+        {
+            "name": "film_language_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "d8424007-9add-4650-a0b9-64a0685e2dac",
+            "parentField": [
+                [
+                    "d8424007-9add-4650-a0b9-64a0685e2dac",
+                    "0dc0da27-a597-4a7d-b602-78052b964ca5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+            "childField": [
+                [
+                    "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                    "68ad810f-fbc1-4a3b-a644-aaf26394eda1"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "1b0d463c-6c80-4d92-8af3-0b16852065f3",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 844.3514224036596,
+                        "y": 938.710662332067
+                    },
+                    {
+                        "x": 869.3514224036596,
+                        "y": 938.710662332067
+                    },
+                    {
+                        "x": 869.3514224036596,
+                        "y": 724.710662332067
+                    },
+                    {
+                        "x": 797.8514224036596,
+                        "y": 724.710662332067
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            },
+            "GUID": "51d498fe-239f-49ec-932c-39e5f4d4a7f5",
+            "level": "field"
+        },
+        {
+            "name": "film_actor_actor_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "0ae562f2-60c6-4929-9755-23e797455cad",
+            "parentField": [
+                [
+                    "0ae562f2-60c6-4929-9755-23e797455cad",
+                    "6c114ba3-434a-498e-808f-e5e41dd61546"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+            "childField": [
+                [
+                    "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+                    "9c9c378f-dc82-4798-b005-1852b60ff6de"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "ad718e45-1dab-4463-ac0e-8b4a329e93aa",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1040.8514224036594,
+                        "y": 1126.7106613783926
+                    },
+                    {
+                        "x": 1040.8514224036594,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 1040.8514224036594,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 1040.8514224036594,
+                        "y": 1070.710662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "617cfe18-5ed7-43f7-b413-1ff0d4598085",
+            "level": "field"
+        },
+        {
+            "name": "film_actor_film_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+            "parentField": [
+                [
+                    "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                    "f7265219-4002-410c-96cb-0b793812c717"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+            "childField": [
+                [
+                    "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+                    "c3cd4570-cd57-416d-9360-2bb36d0bfec7"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "1ef59c85-e8cf-4aaf-9fbf-751ef36dc607",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 939.8514224036595,
+                        "y": 1126.7106613783926
+                    },
+                    {
+                        "x": 939.8514224036595,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 747.8514224036596,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 747.8514224036596,
+                        "y": 1070.710662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "6d367fe9-ab43-4192-b1f3-93a6b2d72716",
+            "level": "field"
+        },
+        {
+            "name": "film_category_category_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+            "parentField": [
+                [
+                    "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                    "0f1c738c-67d9-4d07-95a8-9beec53d80bc"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "294d688e-ab1d-4f8c-a360-656607bdefba",
+            "childField": [
+                [
+                    "294d688e-ab1d-4f8c-a360-656607bdefba",
+                    "55c21157-c670-419e-a2e4-c80cf7e2c9e9"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "0d05a3de-b7b9-4a4f-ab91-2ae1fd999956",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 271.35142240365946,
+                        "y": 1126.7106613783926
+                    },
+                    {
+                        "x": 271.35142240365946,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 271.3514224036595,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 271.3514224036595,
+                        "y": 1070.710662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "6f7267df-b858-4239-98c4-99845695d207",
+            "level": "field"
+        },
+        {
+            "name": "film_category_film_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+            "parentField": [
+                [
+                    "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                    "f7265219-4002-410c-96cb-0b793812c717"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "294d688e-ab1d-4f8c-a360-656607bdefba",
+            "childField": [
+                [
+                    "294d688e-ab1d-4f8c-a360-656607bdefba",
+                    "bedd568d-a3d2-4b25-9d3c-48cc9a002a02"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "b2440118-30a3-44fc-ad7f-f329b5e932e7",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 363.68475573699277,
+                        "y": 1126.7106613783926
+                    },
+                    {
+                        "x": 363.68475573699277,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 554.8514224036596,
+                        "y": 1098.7106618552298
+                    },
+                    {
+                        "x": 554.8514224036596,
+                        "y": 1070.710662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "09a0f818-6d31-47c2-9651-727db977786f",
+            "level": "field"
+        },
+        {
+            "name": "inventory_film_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+            "parentField": [
+                [
+                    "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                    "f7265219-4002-410c-96cb-0b793812c717"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+            "childField": [
+                [
+                    "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+                    "d094a4b9-1bef-4cf2-81b3-e4fe9835c078"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "2fdefefd-ac97-4b17-80ef-4459890c5d9a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 651.3514224036596,
+                        "y": 1189.7106613783926
+                    },
+                    {
+                        "x": 651.3514224036596,
+                        "y": 1130.2106618552298
+                    },
+                    {
+                        "x": 651.3514224036596,
+                        "y": 1130.2106618552298
+                    },
+                    {
+                        "x": 651.3514224036596,
+                        "y": 1070.710662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "59fd1b0f-76cd-4458-847f-327f44d5775e",
+            "level": "field"
+        },
+        {
+            "name": "payment_customer_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+            "parentField": [
+                [
+                    "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                    "7e8b0ffd-00de-4846-9ee2-59b15f12eebf"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+            "childField": [
+                [
+                    "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                    "0c7145fc-d73b-4af5-b669-a9f7d4009c52"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "de85e38d-0a3d-4802-9a15-69eaf11fb501",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 780.6014228804968,
+                        "y": 1748.710659471044
+                    },
+                    {
+                        "x": 1156.726422165241,
+                        "y": 1748.710659471044
+                    },
+                    {
+                        "x": 1156.726422165241,
+                        "y": 1278.7106613783926
+                    },
+                    {
+                        "x": 1532.8514214499853,
+                        "y": 1278.7106613783926
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "GUID": "21d90030-a754-4342-bfe7-7dacad780933",
+            "level": "field"
+        },
+        {
+            "name": "payment_rental_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+            "parentField": [
+                [
+                    "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                    "a849eee5-781f-4148-9c66-f9fb1930313e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+            "childField": [
+                [
+                    "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                    "8f44ac9e-3040-4fdc-bf10-95813c87a81d"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "784f3824-ff61-49a2-babf-6fc89163440d",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 621.6014228804968,
+                        "y": 1702.710659471044
+                    },
+                    {
+                        "x": 621.6014228804968,
+                        "y": 1664.7106599478811
+                    },
+                    {
+                        "x": 731.6014224036595,
+                        "y": 1664.7106599478811
+                    },
+                    {
+                        "x": 731.6014224036595,
+                        "y": 1626.7106604247183
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "f2869573-aedd-4859-97b0-4583526e9e4f",
+            "level": "field"
+        },
+        {
+            "name": "payment_staff_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+            "parentField": [
+                [
+                    "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                    "2015440a-c6ad-4fe4-a850-da7cf6a0c433"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+            "childField": [
+                [
+                    "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                    "3c69e11e-4b89-42da-87d3-01d4e1ff48ee"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "e3c15bf3-6fcc-4fa5-841a-9a158b2d3324",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 780.6014228804968,
+                        "y": 1794.710659471044
+                    },
+                    {
+                        "x": 1020.4368904532294,
+                        "y": 1794.710659471044
+                    },
+                    {
+                        "x": 1020.4368904532294,
+                        "y": 1390.4010848404596
+                    },
+                    {
+                        "x": 1260.272358025962,
+                        "y": 1390.4010848404596
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "GUID": "27e431cf-8ef7-412b-92bb-2e4a26c02c3f",
+            "level": "field"
+        },
+        {
+            "name": "rental_customer_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+            "parentField": [
+                [
+                    "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                    "7e8b0ffd-00de-4846-9ee2-59b15f12eebf"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+            "childField": [
+                [
+                    "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                    "0a994205-636c-4b22-a25b-f812731e7592"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "43521c79-cbb6-47ce-a70a-bf051bd6a686",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 892.1014224036595,
+                        "y": 1522.7106604247183
+                    },
+                    {
+                        "x": 1212.4764219268225,
+                        "y": 1522.7106604247183
+                    },
+                    {
+                        "x": 1212.4764219268225,
+                        "y": 1208.7106613783926
+                    },
+                    {
+                        "x": 1532.8514214499853,
+                        "y": 1208.7106613783926
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "GUID": "00ca085c-54b1-49ec-bb22-7be499b12379",
+            "level": "field"
+        },
+        {
+            "name": "rental_inventory_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+            "parentField": [
+                [
+                    "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+                    "ebecbb1d-a9ed-4fae-a8e7-f5a226efc9a4"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+            "childField": [
+                [
+                    "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                    "1edd68f1-0625-419e-aa2f-3b1ff58f93b0"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "56cff207-db49-4cfb-b38e-251701b6203c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 731.6014224036595,
+                        "y": 1470.7106604247183
+                    },
+                    {
+                        "x": 731.6014224036595,
+                        "y": 1381.2106609015555
+                    },
+                    {
+                        "x": 651.3514224036596,
+                        "y": 1381.2106609015555
+                    },
+                    {
+                        "x": 651.3514224036596,
+                        "y": 1291.7106613783926
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "b3e1de29-2653-4c9c-9ad3-0c502a4206c8",
+            "level": "field"
+        },
+        {
+            "name": "rental_staff_id_key",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+            "parentField": [
+                [
+                    "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                    "2015440a-c6ad-4fe4-a850-da7cf6a0c433"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+            "childField": [
+                [
+                    "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                    "46d3b718-4e60-4d86-aed4-e0296a20be4a"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "8b70b170-be88-4af2-b691-4906ee9628ab",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 892.1014224036595,
+                        "y": 1574.7106604247183
+                    },
+                    {
+                        "x": 1076.1868902148108,
+                        "y": 1574.7106604247183
+                    },
+                    {
+                        "x": 1076.1868902148108,
+                        "y": 1314.4010848404596
+                    },
+                    {
+                        "x": 1260.272358025962,
+                        "y": 1314.4010848404596
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "GUID": "52d32f97-196d-4cb9-908d-d192b3921b1c",
+            "level": "field"
+        },
+        {
+            "name": "staff_address_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+            "parentField": [
+                [
+                    "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                    "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+            "childField": [
+                [
+                    "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                    "194ccc70-e5d0-4b73-906d-ef334762a0d8"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "6e845f14-c0be-4e2d-8946-dcd2d18e5996",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1407.272358025962,
+                        "y": 1238.4010848404596
+                    },
+                    {
+                        "x": 1407.272358025962,
+                        "y": 1143.3058735862633
+                    },
+                    {
+                        "x": 1429.8514219268225,
+                        "y": 1143.3058735862633
+                    },
+                    {
+                        "x": 1429.8514219268225,
+                        "y": 1048.210662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "2a2f41f6-2f80-463f-aef8-5381bf40495a",
+            "level": "field"
+        },
+        {
+            "name": "store_address_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+            "parentField": [
+                [
+                    "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                    "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ffa1810e-0247-439a-bb85-fa793a5df590",
+            "childField": [
+                [
+                    "ffa1810e-0247-439a-bb85-fa793a5df590",
+                    "9e314c9f-b562-4e89-85d7-bd13c8cc6932"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "0edcbddc-e5d0-4afc-a6db-d1e286e71704",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1450.3514219268225,
+                        "y": 1470.7106604247183
+                    },
+                    {
+                        "x": 1450.3514219268225,
+                        "y": 1259.4606613783926
+                    },
+                    {
+                        "x": 1503.8514219268225,
+                        "y": 1259.4606613783926
+                    },
+                    {
+                        "x": 1503.8514219268225,
+                        "y": 1048.210662332067
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "GUID": "b8cda9f2-8d6f-4263-9030-ceacb81cbbca",
+            "level": "field"
+        },
+        {
+            "name": "store_manager_staff_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+            "parentField": [
+                [
+                    "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                    "2015440a-c6ad-4fe4-a850-da7cf6a0c433"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ffa1810e-0247-439a-bb85-fa793a5df590",
+            "childField": [
+                [
+                    "ffa1810e-0247-439a-bb85-fa793a5df590",
+                    "4a10bacc-9e33-4799-a130-80dc295c63aa"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "58bb8d20-8e57-4c8c-9cf0-86dc37658edc",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1610.8514219268225,
+                        "y": 1521.7106604247183
+                    },
+                    {
+                        "x": 1635.8514219268225,
+                        "y": 1521.7106604247183
+                    },
+                    {
+                        "x": 1635.8514219268225,
+                        "y": 1352.4010848404596
+                    },
+                    {
+                        "x": 1554.272358025962,
+                        "y": 1352.4010848404596
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            },
+            "GUID": "0bf8cae9-89ef-4012-8030-b32c42e210ff",
+            "level": "field"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "0ae562f2-60c6-4929-9755-23e797455cad": "actor",
+        "6c114ba3-434a-498e-808f-e5e41dd61546": "actor_id",
+        "b32b040b-e84a-4213-8ee8-448675b15384": "first_name",
+        "4530cf96-5276-434e-ace6-3bb37fa94035": "last_name",
+        "6c0ecb06-01e1-4edb-b138-154227619764": "last_update",
+        "cb8c8b66-0142-401e-92c7-b30f413a9d1c": "address",
+        "3b58942b-6d18-4ef2-ba31-5942f7a4dfcf": "address_id",
+        "ecf17769-89ef-4af9-a68b-d8d13a1935f5": "address",
+        "708316d2-d7d5-4488-ac5c-54b72e9b3ab2": "address2",
+        "c6373dc2-6390-43c4-848d-eb205927e2c4": "district",
+        "9ddb1004-6a8f-49a5-9593-52b201df03e0": "city_id",
+        "0e9e8341-7684-4afd-a637-17ae2834fe35": "postal_code",
+        "a64325d6-b0a1-4a5b-8849-da88192543bc": "phone",
+        "13f1ab25-eeb5-42a2-b0c5-6b9287a451e0": "last_update",
+        "39c7036d-e2db-42a2-bbb1-f23d20186f47": "category",
+        "0f1c738c-67d9-4d07-95a8-9beec53d80bc": "category_id",
+        "ab9ce7b6-9a94-4a15-8a15-5a09110c2741": "name",
+        "25d9dc4a-816c-47ea-8c80-3883c54fe5ef": "last_update",
+        "e5613602-feb5-4ad6-936b-baad121610a0": "city",
+        "fcaa79ff-df9e-4ff5-b7c6-1807ac95d65a": "city_id",
+        "92631d3a-f484-4d52-bd4e-2332b9bbcdc9": "city",
+        "92a057ff-0053-438d-9fdc-09dd4f9d7178": "country_id",
+        "16858dbb-52be-4f2a-b4a4-7defc2d20616": "last_update",
+        "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec": "country",
+        "2699aee9-77e4-4c2b-b1e2-f1239e273862": "country_id",
+        "60b7e2ff-5a48-4439-a80e-e2cbdc09e61a": "country",
+        "dd444474-4b29-4fd3-8af6-78527fdec29d": "last_update",
+        "3f052ded-8ae4-4299-9bed-8ec00143bae9": "customer",
+        "7e8b0ffd-00de-4846-9ee2-59b15f12eebf": "customer_id",
+        "f3503e8a-ecf5-42f7-a89c-ebdec6e13457": "store_id",
+        "4a72f4e9-aaea-41f6-a8fc-8de2a4b6360e": "first_name",
+        "e8f823b1-462a-431c-b0d1-29e75476eb72": "last_name",
+        "69811afa-64f3-42ea-b87d-0be87ec76a8a": "email",
+        "054cafe3-1af9-4786-9f91-743802afb813": "address_id",
+        "2d54cf62-2aeb-464a-9942-95b8348c98be": "activebool",
+        "0fd8786a-c519-4644-a298-fe080596a657": "create_date",
+        "634a6f3d-55f0-42c8-aa7c-0d35b7f709e6": "last_update",
+        "e740e083-4e4f-4ec7-8836-7fcfe18d5480": "active",
+        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5": "film",
+        "f7265219-4002-410c-96cb-0b793812c717": "film_id",
+        "1c456b9a-6a29-4f75-831a-ef0c8751ae63": "title",
+        "90c318b0-6a78-4e9e-9380-c6bc0a227030": "description",
+        "84401fd6-9328-4d0f-821c-12314c0f93f7": "release_year",
+        "68ad810f-fbc1-4a3b-a644-aaf26394eda1": "language_id",
+        "8b793966-364a-4455-b7ca-d44dcfc05a6e": "rental_duration",
+        "673cea26-7391-4e01-906e-9fa8032580f1": "rental_rate",
+        "501a5469-3b5e-4818-a096-d07715d2e420": "length",
+        "cb169d1d-afc0-4e54-bb4a-e5a868f14e0a": "replacement_cost",
+        "de2edffc-4de0-4f65-9378-895e2e879cfd": "rating",
+        "6156d18e-a02d-447d-a7ba-fffc085ec53a": "last_update",
+        "df3dc984-b6a0-45cd-ab09-3b2c4825b56e": "special_features",
+        "7edeaf78-832c-45d0-b607-28edc3315082": "fulltext",
+        "07712c31-064f-49f0-9a8b-1c91ccd7f93c": "film_actor",
+        "9c9c378f-dc82-4798-b005-1852b60ff6de": "actor_id",
+        "c3cd4570-cd57-416d-9360-2bb36d0bfec7": "film_id",
+        "b948ca7d-4cda-4b32-85db-517a97353ef7": "last_update",
+        "294d688e-ab1d-4f8c-a360-656607bdefba": "film_category",
+        "bedd568d-a3d2-4b25-9d3c-48cc9a002a02": "film_id",
+        "55c21157-c670-419e-a2e4-c80cf7e2c9e9": "category_id",
+        "bf7a3ad0-4b49-4d35-bd8f-0460d07df76f": "last_update",
+        "f34003a0-5136-49ba-94a7-f697fb3a1fdf": "inventory",
+        "ebecbb1d-a9ed-4fae-a8e7-f5a226efc9a4": "inventory_id",
+        "d094a4b9-1bef-4cf2-81b3-e4fe9835c078": "film_id",
+        "2c37b9c7-76e8-4f3b-831b-3eee7c3e1007": "store_id",
+        "4ab6aa40-faf2-423e-bb11-ca9dbb3d837a": "last_update",
+        "d8424007-9add-4650-a0b9-64a0685e2dac": "language",
+        "0dc0da27-a597-4a7d-b602-78052b964ca5": "language_id",
+        "cbe0fb95-4013-4086-b224-fd692db7c5ec": "name",
+        "0154e5e1-2345-4089-8753-213914606c7d": "last_update",
+        "a5b837af-1dfb-4529-8e78-ee581a43cba5": "payment",
+        "1e0cc2d9-6e05-46d9-8a5f-d7636bb573ab": "payment_id",
+        "0c7145fc-d73b-4af5-b669-a9f7d4009c52": "customer_id",
+        "3c69e11e-4b89-42da-87d3-01d4e1ff48ee": "staff_id",
+        "8f44ac9e-3040-4fdc-bf10-95813c87a81d": "rental_id",
+        "1286c502-03a8-47a5-b6b8-7e6a4080cca4": "amount",
+        "2400b26e-cfbd-4c8c-bfaf-e6d5667aa4a6": "payment_date",
+        "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b": "rental",
+        "a849eee5-781f-4148-9c66-f9fb1930313e": "rental_id",
+        "9da52153-f21f-492e-866a-2dfbbf9015e3": "rental_date",
+        "1edd68f1-0625-419e-aa2f-3b1ff58f93b0": "inventory_id",
+        "0a994205-636c-4b22-a25b-f812731e7592": "customer_id",
+        "a4bed72e-7d86-4af8-a3ba-02b8cbbd31d1": "return_date",
+        "46d3b718-4e60-4d86-aed4-e0296a20be4a": "staff_id",
+        "7b6653cc-e1a3-4524-9ddf-d43a7e571d50": "last_update",
+        "4a659bfe-2289-4d9f-b628-fd37ac4176ba": "staff",
+        "2015440a-c6ad-4fe4-a850-da7cf6a0c433": "staff_id",
+        "a9498b43-8567-48de-8a41-3e99d6b4c396": "first_name",
+        "45df74be-973b-488b-bc62-b063ae2ff936": "last_name",
+        "194ccc70-e5d0-4b73-906d-ef334762a0d8": "address_id",
+        "2dbefebf-008e-42c0-bfea-e46da76a72ff": "email",
+        "dbc9efbe-8fc8-4ca4-aded-55010165a4eb": "store_id",
+        "0131ea97-bdbe-4810-bc9e-b404f1a64eb3": "active",
+        "6d6c9905-81de-4df6-bcf9-0ff852e43f7f": "username",
+        "e0f34afa-1dff-453b-9e41-48bc1a6d2761": "password",
+        "f17e23cb-3126-4fc0-b584-6720b1613e46": "last_update",
+        "324ef7e3-ed55-45d9-a8dd-d53c5c103176": "picture",
+        "ffa1810e-0247-439a-bb85-fa793a5df590": "store",
+        "1a5ae67f-c313-42ea-b9ef-ca9a79514353": "store_id",
+        "4a10bacc-9e33-4799-a130-80dc295c63aa": "manager_staff_id",
+        "9e314c9f-b562-4e89-85d7-bd13c8cc6932": "address_id",
+        "480c7701-772f-459a-bb5e-8977a3691020": "last_update",
+        "50bdfa06-c6ae-4eb2-bf66-9a44e8ed2263": "actor_info",
+        "788a2f1a-a2fd-40fc-b6d5-0fbfcd8cfe39": "actor_id",
+        "e2bfdda9-322f-4773-acc6-d6e72eea51fd": "first_name",
+        "b8af1282-65a6-404f-83d3-cac3cd50fc70": "last_name",
+        "65d587f3-946e-4a5a-81fc-44f942b95e7e": "film_info",
+        "b01b758a-4d6d-4869-8f94-af89fae4db79": "customer_list",
+        "0c94cfe5-cd43-404e-8596-4154c41da807": "id",
+        "031eeab8-00dd-499b-9413-c6434c227533": "name",
+        "c362199c-9c0e-4f6a-87e8-592f439ee68b": "address",
+        "48d771ca-b107-45fe-83b3-8b66e36affc2": "zip code",
+        "97e33205-3284-4c9a-91ed-8166afd8fc41": "phone",
+        "fac432c9-11dd-49df-a070-660a92b169cc": "city",
+        "ad7aacc4-9c26-4e67-931b-c846a53f8875": "country",
+        "01de4179-97d1-4667-9c8a-f85892215b27": "notes",
+        "56d13c30-200c-4c07-9139-bf3b6e3e3452": "sid",
+        "b6f1c1b1-84d9-4932-895f-4e6b96ec36b9": "film_list",
+        "85fd91a4-5352-4627-9de8-69940d0c1818": "fid",
+        "6927c51d-fb3f-42e5-b630-35432182e903": "title",
+        "127f6e57-51f2-44f6-add6-2618c03e0255": "description",
+        "55fe0ef2-41f2-4424-8a4a-d3007be892fd": "category",
+        "57febc95-acdb-4c8d-8559-aed2fa7fc99c": "price",
+        "fbb045ff-b594-4ca6-9cf8-4839c7e09e59": "length",
+        "64f20a77-96a3-4eff-bc3b-ff382c9070e2": "rating",
+        "74af92a5-81f9-48e4-9d22-743764b4958b": "actors",
+        "3ef238f5-60fc-4a9d-98c8-c9951aa9cbf2": "nicer_but_slower_film_list",
+        "a8c71974-c74e-4032-8910-3d4c8516e66a": "fid",
+        "9956741c-15cd-46ba-b29d-73093aeeef1f": "title",
+        "70435fa7-9daa-41af-a8f2-f35dc6432d49": "description",
+        "8c580879-60eb-44e7-93b2-7dd7320761b4": "category",
+        "747c0a73-8a20-45c2-8672-17cd95bbdfd3": "price",
+        "82380dd7-ed06-4597-987c-d8f82538313f": "length",
+        "bce524a2-0057-44b6-a56a-1c219de828f8": "rating",
+        "eab842e3-7597-4b7b-b934-cda74908f3ea": "actors",
+        "539a427b-769e-46c4-a1a4-048d45f53fc0": "sales_by_film_category",
+        "f6bcd329-7a07-4a04-ab2a-5e7a1c054634": "category",
+        "3320666e-6fb4-4115-99c5-588d4a96bafd": "total_sales",
+        "fe229fe1-01a5-4a41-b166-59c1fcfa0b4c": "sales_by_store",
+        "a255efeb-b4d8-4d4a-bad3-c0cc7248dd39": "store",
+        "1cc5bef3-3604-4c8e-81ec-f53f29a38f00": "manager",
+        "de4440ad-23ab-41c6-8c0f-bbf557f4a108": "total_sales",
+        "9db558ed-1fb4-486c-9475-923d32efe97a": "staff_list",
+        "7ce6238b-c30b-41e3-9903-9986f7be2920": "id",
+        "092dc8b9-29e3-457d-b1d9-de7b4aba1f5f": "name",
+        "8dbe8307-beda-416e-9267-b9092bf7da03": "address",
+        "21a22c34-0fa1-4b90-93f6-f5f21feed221": "zip code",
+        "2aa9db23-2130-4309-99c7-9cdd8eeec163": "phone",
+        "d09912fb-617f-4bdd-ac32-7e5350b50b2a": "city",
+        "3aa9ef9a-dc8f-4d4f-901a-9420c496c4b1": "country",
+        "178b6ff6-030f-47ca-a6d8-8dfb32c8f5b5": "sid",
+        "e80af6a3-5753-4a42-8139-100b547a313b": "public",
+        "845fcc2a-ba8c-4e35-8c5f-2a8c8ba201ab": "fk_address_city",
+        "c68d7ebd-bd52-43c1-beb3-c27bda00c25f": "fk_city",
+        "110d1d1e-e713-4ef0-b4df-fbd479847313": "customer_address_id_fkey",
+        "51d498fe-239f-49ec-932c-39e5f4d4a7f5": "film_language_id_fkey",
+        "617cfe18-5ed7-43f7-b413-1ff0d4598085": "film_actor_actor_id_fkey",
+        "6d367fe9-ab43-4192-b1f3-93a6b2d72716": "film_actor_film_id_fkey",
+        "6f7267df-b858-4239-98c4-99845695d207": "film_category_category_id_fkey",
+        "09a0f818-6d31-47c2-9651-727db977786f": "film_category_film_id_fkey",
+        "59fd1b0f-76cd-4458-847f-327f44d5775e": "inventory_film_id_fkey",
+        "21d90030-a754-4342-bfe7-7dacad780933": "payment_customer_id_fkey",
+        "f2869573-aedd-4859-97b0-4583526e9e4f": "payment_rental_id_fkey",
+        "27e431cf-8ef7-412b-92bb-2e4a26c02c3f": "payment_staff_id_fkey",
+        "00ca085c-54b1-49ec-bb22-7be499b12379": "rental_customer_id_fkey",
+        "b3e1de29-2653-4c9c-9ad3-0c502a4206c8": "rental_inventory_id_fkey",
+        "52d32f97-196d-4cb9-908d-d192b3921b1c": "rental_staff_id_key",
+        "2a2f41f6-2f80-463f-aef8-5381bf40495a": "staff_address_id_fkey",
+        "b8cda9f2-8d6f-4263-9030-ceacb81cbbca": "store_address_id_fkey",
+        "0bf8cae9-89ef-4012-8030-b32c42e210ff": "store_manager_staff_id_fkey",
+        "a9d065b0-dfbe-4ad6-ad25-8f1b2da1fcc5": "mpaa_rating",
+        "b1749797-2c7d-4580-8894-f6426377d66a": "year"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "name": "mpaa_rating",
+                "code": "",
+                "isActivated": true,
+                "childType": "enum",
+                "compositePrimaryKey": false,
+                "primaryKey": false,
+                "compositeUniqueKey": false,
+                "unique": false,
+                "enum": [
+                    "G",
+                    "PG",
+                    "PG-13",
+                    "R",
+                    "NC-17"
+                ],
+                "definitionRefs": [
+                    [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "de2edffc-4de0-4f65-9378-895e2e879cfd"
+                    ]
+                ],
+                "GUID": "a9d065b0-dfbe-4ad6-ad25-8f1b2da1fcc5",
+                "type": "string"
+            },
+            {
+                "name": "year",
+                "code": "",
+                "isActivated": true,
+                "childType": "varchar",
+                "mode": "",
+                "compositePrimaryKey": false,
+                "primaryKey": false,
+                "required": false,
+                "compositeUniqueKey": false,
+                "unique": false,
+                "default": "",
+                "definitionRefs": [
+                    [
+                        "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "84401fd6-9328-4d0f-821c-12314c0f93f7"
+                    ]
+                ],
+                "GUID": "b1749797-2c7d-4580-8894-f6426377d66a",
+                "type": "string"
+            }
+        ],
+        "GUID": "7aa50f62-7a70-4d22-9cdf-65c857cac9cf"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "b343c9cb-4d45-4d0c-b29f-c4c31a536d06"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "34415c81-fe1c-4e7b-8e2f-04c369455961"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Polyglot",
+    "appTarget": "Polyglot",
+    "creationTS": "2023-03-01T08:24:48.322Z",
+    "GUID": "a96fef65-9a56-4ebc-a573-cdfb04c361eb",
+    "isLineageEnabled": false,
+    "dbVersion": "v15.x",
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-03-02T16:11:26.849Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "6.9.3"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "0ae562f2-60c6-4929-9755-23e797455cad",
+                        "x": 893.8514224036595,
+                        "y": 968.7106623320669,
+                        "width": 294,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                        "x": 1355.8514219268225,
+                        "y": 874.210662332067,
+                        "width": 296,
+                        "height": 174,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                        "x": 124.3514224036595,
+                        "y": 986.7106623320669,
+                        "width": 294,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e5613602-feb5-4ad6-936b-baad121610a0",
+                        "x": 1356.8514219268225,
+                        "y": 664.710662332067,
+                        "width": 294,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                        "x": 1356.8514219268225,
+                        "y": 540.710662332067,
+                        "width": 294,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                        "x": 1532.8514214499853,
+                        "y": 1138.7106613783926,
+                        "width": 298,
+                        "height": 210,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                        "x": 458.35142240365957,
+                        "y": 806.710662332067,
+                        "width": 386,
+                        "height": 264,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+                        "x": 838.8514224036595,
+                        "y": 1126.7106613783926,
+                        "width": 303,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "294d688e-ab1d-4f8c-a360-656607bdefba",
+                        "x": 179.01808907032614,
+                        "y": 1126.7106613783926,
+                        "width": 277,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+                        "x": 503.85142240365957,
+                        "y": 1189.7106613783926,
+                        "width": 295,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d8424007-9add-4650-a0b9-64a0685e2dac",
+                        "x": 504.85142240365957,
+                        "y": 682.710662332067,
+                        "width": 293,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                        "x": 462.6014228804967,
+                        "y": 1702.710659471044,
+                        "width": 318,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                        "x": 571.1014224036595,
+                        "y": 1470.7106604247183,
+                        "width": 321,
+                        "height": 156,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                        "x": 1181.8514224036596,
+                        "y": 1126.7106613783926,
+                        "width": 294,
+                        "height": 228,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ffa1810e-0247-439a-bb85-fa793a5df590",
+                        "x": 1289.8514219268225,
+                        "y": 1470.7106604247183,
+                        "width": 321,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "50bdfa06-c6ae-4eb2-bf66-9a44e8ed2263",
+                        "x": 726.3514243110081,
+                        "y": 287.71066137839273,
+                        "width": 216,
+                        "height": 99,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b01b758a-4d6d-4869-8f94-af89fae4db79",
+                        "x": 1273.351426218357,
+                        "y": 287.71066137839273,
+                        "width": 203,
+                        "height": 189,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b6f1c1b1-84d9-4932-895f-4e6b96ec36b9",
+                        "x": 1540.3514271720312,
+                        "y": 287.71066137839273,
+                        "width": 230,
+                        "height": 171,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "3ef238f5-60fc-4a9d-98c8-c9951aa9cbf2",
+                        "x": 1834.3514281257055,
+                        "y": 287.71066137839273,
+                        "width": 264,
+                        "height": 171,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "539a427b-769e-46c4-a1a4-048d45f53fc0",
+                        "x": 124.3514224036595,
+                        "y": 287.71066137839273,
+                        "width": 248,
+                        "height": 63,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fe229fe1-01a5-4a41-b166-59c1fcfa0b4c",
+                        "x": 436.3514233573339,
+                        "y": 287.71066137839273,
+                        "width": 226,
+                        "height": 81,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9db558ed-1fb4-486c-9475-923d32efe97a",
+                        "x": 1006.3514252646825,
+                        "y": 287.71066137839273,
+                        "width": 203,
+                        "height": 171,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 84.3514224036595,
+                        "y": 247.7106613783927,
+                        "GUID": "e80af6a3-5753-4a42-8139-100b547a313b"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "0ae562f2-60c6-4929-9755-23e797455cad",
+                            "x": 859.5,
+                            "y": 771.0000009536743,
+                            "width": 294,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "cb8c8b66-0142-401e-92c7-b30f413a9d1c",
+                            "x": 1321.4999995231628,
+                            "y": 676.5000009536743,
+                            "width": 296,
+                            "height": 174,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "39c7036d-e2db-42a2-bbb1-f23d20186f47",
+                            "x": 90,
+                            "y": 789.0000009536743,
+                            "width": 294,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "e5613602-feb5-4ad6-936b-baad121610a0",
+                            "x": 1322.4999995231628,
+                            "y": 467.0000009536743,
+                            "width": 294,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "0be52ed3-6f4b-4a53-8389-ecabc5a7f9ec",
+                            "x": 1322.4999995231628,
+                            "y": 343.0000009536743,
+                            "width": 294,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "3f052ded-8ae4-4299-9bed-8ec00143bae9",
+                            "x": 1498.4999990463257,
+                            "y": 941,
+                            "width": 298,
+                            "height": 210,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "1b441d0b-836b-4e12-a9ef-e01e9936d7d5",
+                            "x": 424,
+                            "y": 609.0000009536743,
+                            "width": 386,
+                            "height": 264,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "07712c31-064f-49f0-9a8b-1c91ccd7f93c",
+                            "x": 804.5,
+                            "y": 929,
+                            "width": 303,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "294d688e-ab1d-4f8c-a360-656607bdefba",
+                            "x": 144.66666666666663,
+                            "y": 929,
+                            "width": 277,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "f34003a0-5136-49ba-94a7-f697fb3a1fdf",
+                            "x": 469.5,
+                            "y": 992,
+                            "width": 295,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "d8424007-9add-4650-a0b9-64a0685e2dac",
+                            "x": 470.5,
+                            "y": 485.0000009536743,
+                            "width": 293,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "a5b837af-1dfb-4529-8e78-ee581a43cba5",
+                            "x": 428.25000047683716,
+                            "y": 1504.9999980926514,
+                            "width": 318,
+                            "height": 138,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "e88a9ce7-3d26-4b4f-9e2b-ca19d7c7cd2b",
+                            "x": 536.75,
+                            "y": 1272.9999990463257,
+                            "width": 321,
+                            "height": 156,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "4a659bfe-2289-4d9f-b628-fd37ac4176ba",
+                            "x": 1147.5,
+                            "y": 929,
+                            "width": 294,
+                            "height": 228,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ffa1810e-0247-439a-bb85-fa793a5df590",
+                            "x": 1255.4999995231628,
+                            "y": 1272.9999990463257,
+                            "width": 321,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "50bdfa06-c6ae-4eb2-bf66-9a44e8ed2263",
+                            "x": 692.0000019073486,
+                            "y": 90,
+                            "width": 216,
+                            "height": 99,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "b01b758a-4d6d-4869-8f94-af89fae4db79",
+                            "x": 1239.0000038146973,
+                            "y": 90,
+                            "width": 203,
+                            "height": 189,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "b6f1c1b1-84d9-4932-895f-4e6b96ec36b9",
+                            "x": 1506.0000047683716,
+                            "y": 90,
+                            "width": 230,
+                            "height": 171,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "3ef238f5-60fc-4a9d-98c8-c9951aa9cbf2",
+                            "x": 1800.000005722046,
+                            "y": 90,
+                            "width": 264,
+                            "height": 171,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "539a427b-769e-46c4-a1a4-048d45f53fc0",
+                            "x": 90,
+                            "y": 90,
+                            "width": 248,
+                            "height": 63,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fe229fe1-01a5-4a41-b166-59c1fcfa0b4c",
+                            "x": 402.0000009536743,
+                            "y": 90,
+                            "width": 226,
+                            "height": 81,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "9db558ed-1fb4-486c-9475-923d32efe97a",
+                            "x": 972.000002861023,
+                            "y": 90,
+                            "width": 203,
+                            "height": 171,
+                            "color": {}
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 40,
+                            "y": 40,
+                            "GUID": "e80af6a3-5753-4a42-8139-100b547a313b"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "displayOptions": {
+                    "hideModelViews": true
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
