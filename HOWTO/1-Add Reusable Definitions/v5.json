@@ -1,0 +1,342 @@
+{
+    "modelName": "person",
+    "collections": [
+        {
+            "collectionName": "person",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "80ba39c3-3b53-4b7e-b60b-8276fd807199",
+                    "format": "uri",
+                    "error": {}
+                },
+                {
+                    "name": "firstName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "0d0d241c-8366-4266-b73f-e56ceaf1d222",
+                    "error": {}
+                },
+                {
+                    "name": "lastName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "e148e15e-d6e6-4cd5-97df-405b2071dcba",
+                    "error": {}
+                },
+                {
+                    "name": "address",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "houseNum",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "GUID": "1bd25a7f-8435-493f-9b84-fb22f04cd4a3",
+                            "error": {}
+                        },
+                        {
+                            "name": "street",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "GUID": "dd1e1477-d736-4c42-92a7-6ddead40001b",
+                            "error": {}
+                        },
+                        {
+                            "name": "city",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "GUID": "cc3e0bfa-4921-4460-8acb-5f878e09e51e",
+                            "error": {}
+                        },
+                        {
+                            "name": "state",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "GUID": "b70c06aa-18e3-4a2a-b87c-1715c58873f0",
+                            "error": {}
+                        },
+                        {
+                            "name": "zip",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "GUID": "347acc14-1058-4846-94e3-bef01f72df9f",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "error": {},
+                    "GUID": "972c3499-99f8-4aa4-961e-d885711e8c2f",
+                    "parentRelationship": "",
+                    "childRelationships": []
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "b4f879ae-7f9b-4bfe-8d1e-8ec27f2c1b00"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "5e3ca38c-ca6d-42fd-87e9-dd818977938b"
+        },
+        {
+            "collectionName": "company",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "9f50fdf9-2145-432a-8b28-9a01d77c7c5a",
+                    "format": "uri",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "97c8ba60-e76d-4904-aa2c-7e00036647e7",
+                    "name": "legalName",
+                    "error": {}
+                },
+                {
+                    "GUID": "84951a2b-0d57-450d-9239-200ac249d378",
+                    "name": "address",
+                    "type": "reference",
+                    "$ref": "#model/definitions/address",
+                    "refType": "model",
+                    "ref": "49e320ad-d51e-4b2d-80b4-e2271f4f9a42",
+                    "refIdPath": [
+                        "a228ca67-27e4-4c87-84ed-cbc5665856a7",
+                        "2085443e-a98e-4e57-88f6-9a694c42f8e9",
+                        "49e320ad-d51e-4b2d-80b4-e2271f4f9a42"
+                    ],
+                    "isActivated": true,
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "86ad71d7-1d37-4ee8-bb6b-a19970f28d66"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "188a9fe4-6842-4c4a-b9c3-6eecbb99a908"
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "5e3ca38c-ca6d-42fd-87e9-dd818977938b": "person",
+        "80ba39c3-3b53-4b7e-b60b-8276fd807199": "id",
+        "0d0d241c-8366-4266-b73f-e56ceaf1d222": "firstName",
+        "e148e15e-d6e6-4cd5-97df-405b2071dcba": "lastName",
+        "972c3499-99f8-4aa4-961e-d885711e8c2f": "address",
+        "49e320ad-d51e-4b2d-80b4-e2271f4f9a42": "address",
+        "188a9fe4-6842-4c4a-b9c3-6eecbb99a908": "company",
+        "9f50fdf9-2145-432a-8b28-9a01d77c7c5a": "id",
+        "97c8ba60-e76d-4904-aa2c-7e00036647e7": "legalName",
+        "84951a2b-0d57-450d-9239-200ac249d378": "address",
+        "1bd25a7f-8435-493f-9b84-fb22f04cd4a3": "houseNum",
+        "dd1e1477-d736-4c42-92a7-6ddead40001b": "street",
+        "cc3e0bfa-4921-4460-8acb-5f878e09e51e": "city",
+        "b70c06aa-18e3-4a2a-b87c-1715c58873f0": "state",
+        "347acc14-1058-4846-94e3-bef01f72df9f": "zip"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "name": "address",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "document",
+                "properties": [
+                    {
+                        "name": "houseNum",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "properties": [],
+                        "GUID": "f60e3117-5dac-403c-899f-439d567084ba",
+                        "error": {}
+                    },
+                    {
+                        "name": "street",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "properties": [],
+                        "GUID": "3a75122d-7b29-4a2d-bb30-9735a6b55293",
+                        "error": {}
+                    },
+                    {
+                        "name": "city",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "properties": [],
+                        "GUID": "756199a6-7b15-4894-a07b-085d46054979",
+                        "error": {}
+                    },
+                    {
+                        "name": "state",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "properties": [],
+                        "GUID": "d4ee2c6c-feb1-4664-a071-804cbfedb391",
+                        "error": {}
+                    },
+                    {
+                        "name": "zip",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "properties": [],
+                        "GUID": "c435f482-23b4-4638-ac00-9c40d71dd8ef",
+                        "error": {}
+                    }
+                ],
+                "additionalProperties": false,
+                "GUID": "49e320ad-d51e-4b2d-80b4-e2271f4f9a42",
+                "error": {},
+                "definitionRefs": [
+                    [
+                        "188a9fe4-6842-4c4a-b9c3-6eecbb99a908",
+                        "84951a2b-0d57-450d-9239-200ac249d378"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "2085443e-a98e-4e57-88f6-9a694c42f8e9"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "0ec87eb8-2563-48c9-8668-0280359701cf"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "cc6cda44-dc82-4cdc-a76b-6d33ed2ceff9"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "JSON",
+    "dbVersion": "2019-09",
+    "appTarget": "JSON",
+    "creationTS": "2023-03-06T15:43:08.223Z",
+    "GUID": "ce6b4069-1b4a-414e-99d5-a789c9738e95",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "lastModifTS": "2023-03-06T16:05:57.810Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.4"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "5e3ca38c-ca6d-42fd-87e9-dd818977938b",
+                        "x": 50,
+                        "y": 300,
+                        "width": 256,
+                        "height": 191,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "188a9fe4-6842-4c4a-b9c3-6eecbb99a908",
+                        "x": 48,
+                        "y": 101,
+                        "width": 232,
+                        "height": 173,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "GUID": ""
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "hideErdRelationshipsNames": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
