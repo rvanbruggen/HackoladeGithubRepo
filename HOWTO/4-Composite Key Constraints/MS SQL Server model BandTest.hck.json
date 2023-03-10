@@ -1,0 +1,707 @@
+{
+    "modelName": "BandTest",
+    "collections": [
+        {
+            "GUID": "d9505e60-91c1-11ea-8c37-97b621ee3439",
+            "collectionName": "Musician",
+            "code": "",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "c488c790-91c3-11ea-8c37-97b621ee3439"
+                    ],
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "d9ac6110-91c1-11ea-8c37-97b621ee3439",
+                    "name": "MusicianId",
+                    "code": "",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "primaryKeyOptions": {
+                        "GUID": "7793a870-91c2-11ea-8c37-97b621ee3439",
+                        "constraintName": "PK_Musician"
+                    },
+                    "isActivated": true
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "mode": "varchar",
+                    "length": 60,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "5bad2be0-91c2-11ea-8c37-97b621ee3439",
+                    "name": "FirstName",
+                    "code": "",
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "mode": "varchar",
+                    "length": 60,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "640f7900-91c2-11ea-8c37-97b621ee3439",
+                    "name": "LastName",
+                    "code": "",
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "d952f670-91c1-11ea-8c37-97b621ee3439"
+            },
+            "collectionUsers": [],
+            "collation": {},
+            "bucketId": "d915c660-91c1-11ea-8c37-97b621ee3439",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "2cc21ab0-91c3-11ea-8c37-97b621ee3439",
+            "collectionName": "Band",
+            "code": "",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "b595e010-91c3-11ea-8c37-97b621ee3439"
+                    ],
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "31df27e0-91c3-11ea-8c37-97b621ee3439",
+                    "name": "BandId",
+                    "code": "",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "primaryKeyOptions": {
+                        "GUID": "4e885830-91c3-11ea-8c37-97b621ee3439",
+                        "constraintName": "PK_Band"
+                    },
+                    "isActivated": true
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "mode": "varchar",
+                    "length": 255,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "3f9d38e0-91c3-11ea-8c37-97b621ee3439",
+                    "name": "BandName",
+                    "code": "",
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "2ccbb7a0-91c3-11ea-8c37-97b621ee3439"
+            },
+            "collectionUsers": [],
+            "collation": {},
+            "bucketId": "d915c660-91c1-11ea-8c37-97b621ee3439",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "5c400090-91c3-11ea-8c37-97b621ee3439",
+            "collectionName": "BandMember",
+            "code": "",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "c488c790-91c3-11ea-8c37-97b621ee3439",
+                    "foreignCollection": "d9505e60-91c1-11ea-8c37-97b621ee3439",
+                    "foreignField": [
+                        "d9505e60-91c1-11ea-8c37-97b621ee3439",
+                        "d9ac6110-91c1-11ea-8c37-97b621ee3439"
+                    ],
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "GUID": "6474fc20-91c3-11ea-8c37-97b621ee3439",
+                    "name": "MusicianId",
+                    "code": "",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                },
+                {
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "b595e010-91c3-11ea-8c37-97b621ee3439",
+                    "foreignCollection": "2cc21ab0-91c3-11ea-8c37-97b621ee3439",
+                    "foreignField": [
+                        "2cc21ab0-91c3-11ea-8c37-97b621ee3439",
+                        "31df27e0-91c3-11ea-8c37-97b621ee3439"
+                    ],
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "GUID": "6e65d880-91c3-11ea-8c37-97b621ee3439",
+                    "name": "BandId",
+                    "code": "",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "5c424a80-91c3-11ea-8c37-97b621ee3439"
+            },
+            "collectionUsers": [],
+            "collation": {},
+            "bucketId": "d915c660-91c1-11ea-8c37-97b621ee3439",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            },
+            "primaryKey": [
+                {
+                    "GUID": "780b05e0-91c3-11ea-8c37-97b621ee3439",
+                    "constraintName": "PK_BandMember",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "6474fc20-91c3-11ea-8c37-97b621ee3439",
+                            "type": "ascending"
+                        },
+                        {
+                            "keyId": "6e65d880-91c3-11ea-8c37-97b621ee3439",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "d971b720-91c3-11ea-8c37-97b621ee3439",
+            "collectionName": "MembershipPeriod",
+            "code": "",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "e52d4160-91c3-11ea-8c37-97b621ee3439",
+                    "name": "MembershipPeriodId",
+                    "code": "",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "primaryKeyOptions": {
+                        "GUID": "1c57b8f0-91c4-11ea-8c37-97b621ee3439",
+                        "constraintName": "PK_MembershipPeriod"
+                    },
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "edb20aa0-91c3-11ea-8c37-97b621ee3439",
+                    "name": "MusicianId ",
+                    "code": "",
+                    "required": false,
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "childRelationships": [],
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "f90e84f0-91c3-11ea-8c37-97b621ee3439",
+                    "name": "BandId ",
+                    "code": "",
+                    "required": false,
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "childRelationships": [],
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "date",
+                    "scale": 7,
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "00f03060-91c4-11ea-8c37-97b621ee3439",
+                    "name": "StartDate",
+                    "code": "",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "date",
+                    "scale": 7,
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "0a82c020-91c4-11ea-8c37-97b621ee3439",
+                    "name": "EndDate",
+                    "code": "",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "relationshipType": "",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "d974eb70-91c3-11ea-8c37-97b621ee3439"
+            },
+            "collectionUsers": [],
+            "collation": {},
+            "bucketId": "d915c660-91c1-11ea-8c37-97b621ee3439",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            },
+            "isActivated": true,
+            "primaryKey": [
+                {
+                    "GUID": "e6694aeb-4127-4b4d-92d0-8a277db94c34",
+                    "compositePrimaryKey": [],
+                    "constraintName": "CompositeKey"
+                }
+            ]
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "d915c660-91c1-11ea-8c37-97b621ee3439",
+            "name": "BandTest",
+            "code": "",
+            "type": "bucket",
+            "collectionIds": [
+                "d9505e60-91c1-11ea-8c37-97b621ee3439",
+                "2cc21ab0-91c3-11ea-8c37-97b621ee3439",
+                "5c400090-91c3-11ea-8c37-97b621ee3439",
+                "d971b720-91c3-11ea-8c37-97b621ee3439"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "name": false
+                }
+            },
+            "isActivated": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "b595e010-91c3-11ea-8c37-97b621ee3439",
+            "name": "FK_BandMember_Band",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "2cc21ab0-91c3-11ea-8c37-97b621ee3439",
+            "parentField": [
+                [
+                    "2cc21ab0-91c3-11ea-8c37-97b621ee3439",
+                    "31df27e0-91c3-11ea-8c37-97b621ee3439"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "5c400090-91c3-11ea-8c37-97b621ee3439",
+            "childField": [
+                [
+                    "5c400090-91c3-11ea-8c37-97b621ee3439",
+                    "6e65d880-91c3-11ea-8c37-97b621ee3439"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "20b341ab-629c-41ed-b9b1-9a0b85de3ee4",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 228.5,
+                        "y": 321
+                    },
+                    {
+                        "x": 228.5,
+                        "y": 360.5
+                    },
+                    {
+                        "x": 228.5,
+                        "y": 360.5
+                    },
+                    {
+                        "x": 228.5,
+                        "y": 400
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "GUID": "c488c790-91c3-11ea-8c37-97b621ee3439",
+            "name": "FK_BandMember_Musician",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "d9505e60-91c1-11ea-8c37-97b621ee3439",
+            "parentField": [
+                [
+                    "d9505e60-91c1-11ea-8c37-97b621ee3439",
+                    "d9ac6110-91c1-11ea-8c37-97b621ee3439"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "5c400090-91c3-11ea-8c37-97b621ee3439",
+            "childField": [
+                [
+                    "5c400090-91c3-11ea-8c37-97b621ee3439",
+                    "6474fc20-91c3-11ea-8c37-97b621ee3439"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "2f3681ef-54c3-4ada-bd99-d0dd68fa864b",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 228.5,
+                        "y": 252
+                    },
+                    {
+                        "x": 228.5,
+                        "y": 209.5
+                    },
+                    {
+                        "x": 228.5,
+                        "y": 209.5
+                    },
+                    {
+                        "x": 228.5,
+                        "y": 167
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "d915c660-91c1-11ea-8c37-97b621ee3439": "BandTest",
+        "d9505e60-91c1-11ea-8c37-97b621ee3439": "Musician",
+        "d9ac6110-91c1-11ea-8c37-97b621ee3439": "MusicianId",
+        "5bad2be0-91c2-11ea-8c37-97b621ee3439": "FirstName",
+        "640f7900-91c2-11ea-8c37-97b621ee3439": "LastName",
+        "2cc21ab0-91c3-11ea-8c37-97b621ee3439": "Band",
+        "31df27e0-91c3-11ea-8c37-97b621ee3439": "BandId",
+        "3f9d38e0-91c3-11ea-8c37-97b621ee3439": "BandName",
+        "5c400090-91c3-11ea-8c37-97b621ee3439": "BandMember",
+        "6474fc20-91c3-11ea-8c37-97b621ee3439": "MusicianId",
+        "6e65d880-91c3-11ea-8c37-97b621ee3439": "BandId",
+        "b595e010-91c3-11ea-8c37-97b621ee3439": "FK_BandMember_Band",
+        "c488c790-91c3-11ea-8c37-97b621ee3439": "FK_BandMember_Musician",
+        "d971b720-91c3-11ea-8c37-97b621ee3439": "MembershipPeriod",
+        "e52d4160-91c3-11ea-8c37-97b621ee3439": "MembershipPeriodId",
+        "edb20aa0-91c3-11ea-8c37-97b621ee3439": "MusicianId ",
+        "f90e84f0-91c3-11ea-8c37-97b621ee3439": "BandId ",
+        "00f03060-91c4-11ea-8c37-97b621ee3439": "StartDate",
+        "0a82c020-91c4-11ea-8c37-97b621ee3439": "EndDate",
+        "29db31f0-91c4-11ea-8c37-97b621ee3439": "FK_MembershipPeriod_BandMember",
+        "e9904b90-91fe-11ea-bffa-9597c39ba613": "BandTest(1)",
+        "91143800-9203-11ea-bffa-9597c39ba613": "BandTest(1)"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "c8b8eea1-91c1-11ea-8c37-97b621ee3439"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "ac5afcef-e833-49e2-bd7b-c1438ee04d61"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "c8b8eea2-91c1-11ea-8c37-97b621ee3439"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "2019",
+    "dbVendor": "MSSQLServer",
+    "appTarget": "MSSQLServer",
+    "creationTS": "2020-05-09T06:53:27.050Z",
+    "GUID": "1021ed3c-1cc7-479b-bb8d-38a663d95706",
+    "code": "",
+    "lastModifTS": "2023-03-10T12:59:10.845Z",
+    "persistenceSchemaVersion": "6",
+    "description": "Based on example: https://database.guide/how-to-create-composite-foreign-key-sql-server-t-sql-example/\n",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "SQLServer",
+        "pluginVersion": "0.1.54",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "compositeRelationships": [
+        {
+            "GUID": "29db31f0-91c4-11ea-8c37-97b621ee3439",
+            "name": "FK_MembershipPeriod_BandMember",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "5c400090-91c3-11ea-8c37-97b621ee3439",
+            "parentField": [
+                [
+                    "5c400090-91c3-11ea-8c37-97b621ee3439",
+                    "6474fc20-91c3-11ea-8c37-97b621ee3439"
+                ],
+                [
+                    "5c400090-91c3-11ea-8c37-97b621ee3439",
+                    "6e65d880-91c3-11ea-8c37-97b621ee3439"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "d971b720-91c3-11ea-8c37-97b621ee3439",
+            "childField": [
+                [
+                    "d971b720-91c3-11ea-8c37-97b621ee3439",
+                    "edb20aa0-91c3-11ea-8c37-97b621ee3439"
+                ],
+                [
+                    "d971b720-91c3-11ea-8c37-97b621ee3439",
+                    "f90e84f0-91c3-11ea-8c37-97b621ee3439"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        }
+    ],
+    "applicationInformation": {
+        "version": "6.9.4"
+    },
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "d9505e60-91c1-11ea-8c37-97b621ee3439",
+                        "x": 102,
+                        "y": 80,
+                        "width": 253,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "2cc21ab0-91c3-11ea-8c37-97b621ee3439",
+                        "x": 98,
+                        "y": 400,
+                        "width": 261,
+                        "height": 69,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "5c400090-91c3-11ea-8c37-97b621ee3439",
+                        "x": 127,
+                        "y": 252,
+                        "width": 203,
+                        "height": 69,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d971b720-91c3-11ea-8c37-97b621ee3439",
+                        "x": 527,
+                        "y": 231,
+                        "width": 271,
+                        "height": 123,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 58,
+                        "y": 40,
+                        "GUID": "d915c660-91c1-11ea-8c37-97b621ee3439"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

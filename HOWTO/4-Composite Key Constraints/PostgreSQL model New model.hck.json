@@ -1,0 +1,443 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "collectionName": "Demotable",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "db7bbf25-caee-4bfd-b856-05869a325db9",
+                    "primaryKeyOptions": [],
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "2499f88d-2700-4c4c-94ba-854e736b41ba"
+                    ]
+                },
+                {
+                    "name": "prop1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "d95c8583-0875-4ae3-a2f2-0a1f6139504c",
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "2499f88d-2700-4c4c-94ba-854e736b41ba"
+                    ]
+                },
+                {
+                    "name": "prop2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "821104ad-86d0-4cb0-af53-11d9299d82b7",
+                    "required": false,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "5b378fe8-2436-4d20-b30e-52e82d322f17"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+            "bucketId": "47effe07-3535-451b-ab6d-8c868f0882aa",
+            "uniqueKey": [],
+            "primaryKey": [
+                {
+                    "GUID": "3d2ee963-04d9-4e85-be6d-07006896d3e4",
+                    "constraintName": "Constraint",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "db7bbf25-caee-4bfd-b856-05869a325db9",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "d95c8583-0875-4ae3-a2f2-0a1f6139504c",
+                            "type": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "collectionName": "ConnectedTable",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "FK_property2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "9c822ba2-c19b-4269-b990-34a04b6f3313",
+                    "parentRelationship": "2499f88d-2700-4c4c-94ba-854e736b41ba",
+                    "foreignCollection": "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                    "foreignField": [
+                        "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                        "d95c8583-0875-4ae3-a2f2-0a1f6139504c"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "error": {}
+                },
+                {
+                    "name": "FK_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "284416c2-343c-4a07-8a82-0319af7df70a",
+                    "parentRelationship": "2499f88d-2700-4c4c-94ba-854e736b41ba",
+                    "foreignCollection": "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                    "foreignField": [
+                        "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                        "db7bbf25-caee-4bfd-b856-05869a325db9"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "error": {}
+                },
+                {
+                    "name": "attrib2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "6fd1f077-8c4c-4de8-bf91-8a9e098d2f21",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "fee4bfa5-68b3-48e3-9c8b-76cf7034af6a",
+                    "name": "attrib1",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ce04e30e-9824-4d27-8a76-643a03581389"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "a0edec1d-37a8-47a5-afac-b4311281d4d6",
+            "bucketId": "47effe07-3535-451b-ab6d-8c868f0882aa"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Demoschema",
+            "type": "bucket",
+            "collectionIds": [
+                "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                "a0edec1d-37a8-47a5-afac-b4311281d4d6"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "ifNotExist": true,
+            "GUID": "47effe07-3535-451b-ab6d-8c868f0882aa"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Demotable.id to ConnectedTable.FK_property1",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                    "db7bbf25-caee-4bfd-b856-05869a325db9"
+                ],
+                [
+                    "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                    "d95c8583-0875-4ae3-a2f2-0a1f6139504c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "a0edec1d-37a8-47a5-afac-b4311281d4d6",
+                    "284416c2-343c-4a07-8a82-0319af7df70a"
+                ],
+                [
+                    "a0edec1d-37a8-47a5-afac-b4311281d4d6",
+                    "9c822ba2-c19b-4269-b990-34a04b6f3313"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "parentCollection": "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+            "childCollection": "a0edec1d-37a8-47a5-afac-b4311281d4d6",
+            "GUID": "2499f88d-2700-4c4c-94ba-854e736b41ba",
+            "hackoladeStyles": {
+                "GUID": "d06ec915-18e7-4b21-b4b8-67579a99fcc7",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 331,
+                        "y": 637.5
+                    },
+                    {
+                        "x": 356,
+                        "y": 637.5
+                    },
+                    {
+                        "x": 356,
+                        "y": 501.5
+                    },
+                    {
+                        "x": 305,
+                        "y": 501.5
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "47effe07-3535-451b-ab6d-8c868f0882aa": "Demoschema",
+        "645f23f7-e4bf-4b94-a80c-ead092a7e94c": "Demotable",
+        "db7bbf25-caee-4bfd-b856-05869a325db9": "id",
+        "d95c8583-0875-4ae3-a2f2-0a1f6139504c": "prop1",
+        "821104ad-86d0-4cb0-af53-11d9299d82b7": "prop2",
+        "a0edec1d-37a8-47a5-afac-b4311281d4d6": "ConnectedTable",
+        "284416c2-343c-4a07-8a82-0319af7df70a": "FK_id",
+        "fee4bfa5-68b3-48e3-9c8b-76cf7034af6a": "attrib1",
+        "6fd1f077-8c4c-4de8-bf91-8a9e098d2f21": "attrib2",
+        "9c822ba2-c19b-4269-b990-34a04b6f3313": "FK_property2",
+        "2499f88d-2700-4c4c-94ba-854e736b41ba": "fk Demotable.id to ConnectedTable.FK_property1"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f094eec7-e6b8-4fa5-8691-1fe4fbe9af1f"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "d58077f7-cc65-48ca-9e95-74cbce843a83"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "ba733388-6e1a-476a-b6bb-148423324867"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v15.x",
+    "dbVendor": "PostgreSQL",
+    "tablespace_name": "pg_default",
+    "encoding": "UTF8",
+    "appTarget": "PostgreSQL",
+    "creationTS": "2023-03-10T11:07:53.239Z",
+    "GUID": "ae46221b-ec65-4c18-8de6-a670fff428ce",
+    "isLineageEnabled": false,
+    "lastModifTS": "2023-03-10T12:13:23.713Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "PostgreSQL",
+        "pluginVersion": "0.1.33",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.4"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "645f23f7-e4bf-4b94-a80c-ead092a7e94c",
+                        "x": 80,
+                        "y": 458,
+                        "width": 225,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "a0edec1d-37a8-47a5-afac-b4311281d4d6",
+                        "x": 89,
+                        "y": 585,
+                        "width": 242,
+                        "height": 105,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 418,
+                        "GUID": "47effe07-3535-451b-ab6d-8c868f0882aa"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
