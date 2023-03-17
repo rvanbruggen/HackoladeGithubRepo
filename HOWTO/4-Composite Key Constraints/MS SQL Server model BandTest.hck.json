@@ -270,7 +270,7 @@
                     "GUID": "e52d4160-91c3-11ea-8c37-97b621ee3439",
                     "name": "MembershipPeriodId",
                     "code": "",
-                    "required": true,
+                    "required": false,
                     "hackoladeMeta": {},
                     "primaryKeyOptions": {
                         "GUID": "1c57b8f0-91c4-11ea-8c37-97b621ee3439",
@@ -280,7 +280,7 @@
                     "error": {}
                 },
                 {
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "childType": "numeric",
                     "type": "numeric",
@@ -288,19 +288,19 @@
                         "compositePrimaryKey",
                         "compositeUniqueKey"
                     ],
-                    "compositePrimaryKey": false,
+                    "compositePrimaryKey": true,
                     "compositeUniqueKey": false,
                     "GUID": "edb20aa0-91c3-11ea-8c37-97b621ee3439",
                     "name": "MusicianId ",
                     "code": "",
-                    "required": false,
+                    "required": true,
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "childRelationships": [],
                     "error": {}
                 },
                 {
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "childType": "numeric",
                     "type": "numeric",
@@ -308,12 +308,12 @@
                         "compositePrimaryKey",
                         "compositeUniqueKey"
                     ],
-                    "compositePrimaryKey": false,
+                    "compositePrimaryKey": true,
                     "compositeUniqueKey": false,
                     "GUID": "f90e84f0-91c3-11ea-8c37-97b621ee3439",
                     "name": "BandId ",
                     "code": "",
-                    "required": false,
+                    "required": true,
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "childRelationships": [],
@@ -377,7 +377,16 @@
             "primaryKey": [
                 {
                     "GUID": "e6694aeb-4127-4b4d-92d0-8a277db94c34",
-                    "compositePrimaryKey": [],
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "edb20aa0-91c3-11ea-8c37-97b621ee3439",
+                            "type": "ascending"
+                        },
+                        {
+                            "keyId": "f90e84f0-91c3-11ea-8c37-97b621ee3439",
+                            "type": "ascending"
+                        }
+                    ],
                     "constraintName": "CompositeKey"
                 }
             ]
@@ -571,7 +580,7 @@
     "creationTS": "2020-05-09T06:53:27.050Z",
     "GUID": "1021ed3c-1cc7-479b-bb8d-38a663d95706",
     "code": "",
-    "lastModifTS": "2023-03-10T12:59:10.845Z",
+    "lastModifTS": "2023-03-13T08:37:05.977Z",
     "persistenceSchemaVersion": "6",
     "description": "Based on example: https://database.guide/how-to-create-composite-foreign-key-sql-server-t-sql-example/\n",
     "comments": "",
@@ -618,7 +627,7 @@
         }
     ],
     "applicationInformation": {
-        "version": "6.9.4"
+        "version": "6.9.6"
     },
     "hackoladeMeta": {
         "validationErrors": {
@@ -655,8 +664,8 @@
                     },
                     {
                         "GUID": "d971b720-91c3-11ea-8c37-97b621ee3439",
-                        "x": 527,
-                        "y": 231,
+                        "x": 500,
+                        "y": 216,
                         "width": 271,
                         "height": 123,
                         "color": {}

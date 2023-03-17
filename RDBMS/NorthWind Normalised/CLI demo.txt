@@ -1,0 +1,55 @@
+# Working with the Hackolade CLI to bring productivity to your data modeling pipelines
+
+
+## How to reverse engineer a Postgres model with the CLI
+
+```
+/Applications/Hackolade.app/Contents/MacOS/Hackolade revEng --target=POSTGRESQL --model=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-reveng.json --connectname=HackoladeLocalPostgres --selectedDB=dvdrental
+```
+
+
+## How to generate documentation with the CLI
+
+### Into HTML
+
+```
+/Applications/Hackolade.app/Contents/MacOS/Hackolade genDoc --format=HTML --model=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/NorthWind\ Normalised/PostgreSQL\ Northwind\ model.hck.json --doc=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/NorthWind\ Normalised/CLI-northwind-html;
+```
+
+### Into PDF
+```
+/Applications/Hackolade.app/Contents/MacOS/Hackolade genDoc --format=PDF --model=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/NorthWind\ Normalised/PostgreSQL\ Northwind\ model.hck.json --doc=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/NorthWind\ Normalised/CLI-northwind-pdf;
+```
+
+### Into Markdown
+```
+/Applications/Hackolade.app/Contents/MacOS/Hackolade genDoc --format=md --model=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/NorthWind\ Normalised/PostgreSQL\ Northwind\ model.hck.json --doc=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/NorthWind\ Normalised/CLI-northwind-md;
+```
+
+
+## How to Compare two models with the CLI
+
+Copied the model
+Modified the Model to take away the "Language" entity
+Now compare that new model with the old model
+Generate a deltamodel
+
+```
+/Applications/Hackolade.app/Contents/MacOS/Hackolade compMod --model1=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-reveng.json --model2=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-reveng-nolanguage.json --deltamodel=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-deltamodel.json
+```
+
+### How to Forward Engineer the deltamodel into a DDL script
+```
+/Applications/Hackolade.app/Contents/MacOS/Hackolade forwEng --model=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-deltamodel.json --outputtype=script --path=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-deltamodel.script
+```
+
+
+## How to forward engineer a model into an XLSX
+
+```/Applications/Hackolade.app/Contents/MacOS/Hackolade forwEngXLSX --model=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-reveng.json --path=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-forwEngXLSX.xlsx
+```
+
+## How to reverse engineer a modeified XLSX into a new model
+```
+/Applications/Hackolade.app/Contents/MacOS/Hackolade revEngXLSX --file=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-forwEngXLSX-nolanguage.xlsx --model=/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/RDBMS/DVDrental/CLI-revEngXLSX-nolanguage.json
+```
