@@ -1,0 +1,2783 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "collectionName": "comparisonModelCollection",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "containers",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "e22487dd-5258-47df-8902-563dd08e7c9b"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "1ce76b2b-21e7-4530-a9ae-c526aa7620b1"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "2b409688-1c1f-4d1d-be9e-dfbb3a5557cb"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "8904bd14-b1de-4083-a8d6-a556f7751885"
+                },
+                {
+                    "name": "entities",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "language",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "name": "language_id",
+                                                    "isActivated": true,
+                                                    "primaryKey": true,
+                                                    "unique": false,
+                                                    "exclusiveMinimum": false,
+                                                    "exclusiveMaximum": false,
+                                                    "mode": "integer",
+                                                    "childType": "numeric",
+                                                    "type": "numeric",
+                                                    "compositeKey": [
+                                                        "compositePartitionKey",
+                                                        "compositePrimaryKey",
+                                                        "compositeUniqueKey",
+                                                        "triggerUpdateColumns"
+                                                    ],
+                                                    "compositePartitionKey": false,
+                                                    "compositePrimaryKey": true,
+                                                    "compositeUniqueKey": false,
+                                                    "triggerUpdateColumns": false,
+                                                    "default": "nextval('language_language_id_seq'::regclass)",
+                                                    "precision": 32,
+                                                    "scale": 0,
+                                                    "udt_name": "int4",
+                                                    "numberOfArrayDimensions": 0,
+                                                    "timePrecision": "",
+                                                    "GUID": "c68d422e-cc59-4ae5-9abd-d481c4e664c8",
+                                                    "required": true,
+                                                    "childRelationships": [
+                                                        "24c86580-2134-49d5-8d49-c436942ac257"
+                                                    ],
+                                                    "error": {
+                                                        "default": true
+                                                    }
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "name": "name",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "unique": false,
+                                                    "mode": "char",
+                                                    "length": 20,
+                                                    "childType": "char",
+                                                    "type": "string",
+                                                    "compositeKey": [
+                                                        "compositePartitionKey",
+                                                        "compositePrimaryKey",
+                                                        "compositeUniqueKey",
+                                                        "triggerUpdateColumns"
+                                                    ],
+                                                    "compositePartitionKey": false,
+                                                    "compositePrimaryKey": false,
+                                                    "compositeUniqueKey": false,
+                                                    "triggerUpdateColumns": false,
+                                                    "udt_name": "bpchar",
+                                                    "numberOfArrayDimensions": 0,
+                                                    "timePrecision": "",
+                                                    "GUID": "9f26af86-9388-4b9e-ac81-9326825c4739",
+                                                    "required": true,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "name": "last_update",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "unique": false,
+                                                    "mode": "timestamp",
+                                                    "scale": 7,
+                                                    "childType": "datetime",
+                                                    "type": "string",
+                                                    "compositeKey": [
+                                                        "compositePartitionKey",
+                                                        "compositePrimaryKey",
+                                                        "compositeUniqueKey",
+                                                        "triggerUpdateColumns"
+                                                    ],
+                                                    "compositePartitionKey": false,
+                                                    "compositePrimaryKey": false,
+                                                    "compositeUniqueKey": false,
+                                                    "triggerUpdateColumns": false,
+                                                    "default": "now()",
+                                                    "timePrecision": "",
+                                                    "udt_name": "timestamp",
+                                                    "numberOfArrayDimensions": 0,
+                                                    "timezone": "WITHOUT TIME ZONE",
+                                                    "GUID": "2b4abfcd-3d85-4035-9c9d-47f1598eddd9",
+                                                    "required": true,
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "14b93801-eca0-4a0a-9304-efea3c272031",
+                                            "compMod": {
+                                                "keyspaceName": "public",
+                                                "bucketProperties": {
+                                                    "name": "public",
+                                                    "isActivated": true,
+                                                    "ifNotExist": true,
+                                                    "code": ""
+                                                },
+                                                "created": true,
+                                                "deleted": false
+                                            },
+                                            "role": {
+                                                "collectionName": "language",
+                                                "type": "object",
+                                                "isActivated": true,
+                                                "additionalProperties": true,
+                                                "memory_optimized": false,
+                                                "collectionUsers": [],
+                                                "ifNotExist": true,
+                                                "on_commit": "PRESERVE ROWS",
+                                                "table_tablespace_name": "pg_default",
+                                                "GUID": "a15f9ec1-10aa-4c5f-bde9-880ce6d05f7e",
+                                                "bucketId": "4baf3d7d-14c3-49b0-b19a-9c0d255f27e3",
+                                                "code": "",
+                                                "temporary": false,
+                                                "unlogged": false,
+                                                "inherits": [],
+                                                "primaryKey": [
+                                                    {
+                                                        "GUID": "b41a0518-4588-45c1-90d3-65f2917cc95e",
+                                                        "constraintName": "language_pkey",
+                                                        "compositePrimaryKey": [
+                                                            {
+                                                                "keyId": "c68d422e-cc59-4ae5-9abd-d481c4e664c8",
+                                                                "type": ""
+                                                            }
+                                                        ],
+                                                        "indexStorageParameters": "",
+                                                        "indexTablespace": null
+                                                    }
+                                                ],
+                                                "uniqueKey": [],
+                                                "Indxs": [
+                                                    {
+                                                        "isActivated": true,
+                                                        "index_method": "btree",
+                                                        "ifNotExist": true,
+                                                        "only": true,
+                                                        "index_tablespace_name": "",
+                                                        "GUID": "bd4117de-e22d-42d5-a189-985d76541595",
+                                                        "indxName": "language_pkey",
+                                                        "unique": true,
+                                                        "columns": [
+                                                            {
+                                                                "keyId": "c68d422e-cc59-4ae5-9abd-d481c4e664c8",
+                                                                "sortOrder": "ASC",
+                                                                "nullsOrder": "NULLS LAST",
+                                                                "collation": null,
+                                                                "opclass": "pg_catalog.int4_ops"
+                                                            }
+                                                        ],
+                                                        "include": [],
+                                                        "where": ""
+                                                    }
+                                                ],
+                                                "chkConstr": [],
+                                                "triggers": [
+                                                    {
+                                                        "triggerType": "BEFORE",
+                                                        "GUID": "587f09b3-844c-46b6-acff-5e4d0ee7d895",
+                                                        "name": "last_updated",
+                                                        "triggerDescription": null,
+                                                        "triggerConstraint": false,
+                                                        "triggerEvents": [
+                                                            {
+                                                                "GUID": "62b6d114-a9ba-4425-8d2a-d6cd82866a6b",
+                                                                "triggerEvent": "UPDATE"
+                                                            }
+                                                        ],
+                                                        "triggerUpdateColumns": [],
+                                                        "triggerReferencing": false,
+                                                        "triggerEachRowStatement": "FOR EACH ROW",
+                                                        "triggerCondition": null,
+                                                        "triggerFunction": "last_updated()"
+                                                    }
+                                                ],
+                                                "hackoladeMeta": {
+                                                    "validationErrors": {}
+                                                },
+                                                "compMod": {
+                                                    "keyspaceName": "public",
+                                                    "bucketProperties": {
+                                                        "name": "public",
+                                                        "isActivated": true,
+                                                        "ifNotExist": true,
+                                                        "code": ""
+                                                    },
+                                                    "created": true,
+                                                    "deleted": false
+                                                },
+                                                "name": "language",
+                                                "roleType": "entity"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "be0698a6-64b2-44fc-b670-a8eb8505e553",
+                                    "arrayItem": true
+                                }
+                            ],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "bd850dc0-8a60-47f0-aef8-c2c91b8e032c"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "71cbbb53-a6ec-4129-abd0-42c8a32eedc0"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "cb8ab1e3-2af5-477f-b230-977ab92fcf96"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "0b17b59b-663c-4d98-a14e-d71b71bbffd4"
+                },
+                {
+                    "name": "relationships",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "film_language_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "9c8dd0b9-a8d3-46f0-81d9-625a39bae571",
+                                            "role": {
+                                                "name": "film_language_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "a15f9ec1-10aa-4c5f-bde9-880ce6d05f7e",
+                                                        "c68d422e-cc59-4ae5-9abd-d481c4e664c8"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                        "e3f4143d-f113-44e1-b409-0c783e707a6a"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "24c86580-2134-49d5-8d49-c436942ac257",
+                                                "parentCollection": "a15f9ec1-10aa-4c5f-bde9-880ce6d05f7e",
+                                                "childCollection": "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "422fe726-c743-4cdd-8764-c0e7ed6001be",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 784,
+                                                            "y": 741.0000009536743
+                                                        },
+                                                        {
+                                                            "x": 809,
+                                                            "y": 741.0000009536743
+                                                        },
+                                                        {
+                                                            "x": 809,
+                                                            "y": 527.0000009536743
+                                                        },
+                                                        {
+                                                            "x": 737.5,
+                                                            "y": 527.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "right"
+                                                    ]
+                                                },
+                                                "compMod": {
+                                                    "created": true,
+                                                    "deleted": false
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "2b79c5b7-5c16-425d-8422-8234e316b0a1",
+                                    "arrayItem": true
+                                }
+                            ],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "c686fd83-ef24-4312-8d31-d24419a1d2ef"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "936bc495-db76-4e88-b29f-17db5d8d88af"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "store_address_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "92c6af63-ffc1-41f6-a739-5157dad80bba",
+                                            "role": {
+                                                "name": "store_address_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                        "365be1a5-f663-4b44-9607-d7d0dbf1c74c"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "94f16139-7ce2-412f-a6b2-60f050b3cfb7",
+                                                        "32cefe9a-52c2-4c59-a887-3f0c4fab16c6"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "0c247e0a-ac56-4502-ae1b-44ec073ef1c7",
+                                                "parentCollection": "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                "childCollection": "94f16139-7ce2-412f-a6b2-60f050b3cfb7",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "4919a5e8-3456-4ab8-93ec-794a8e81caae",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 1272.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 1061.75
+                                                        },
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 1061.75
+                                                        },
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 850.5000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "cb6ca925-b027-4cef-b08a-dbdff6ee122a",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "store_manager_staff_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "860b70cb-5f74-4987-807c-0515f17b3c13",
+                                            "role": {
+                                                "name": "store_manager_staff_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                        "8083485b-80d5-4319-8428-17e6387dbf7a"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "94f16139-7ce2-412f-a6b2-60f050b3cfb7",
+                                                        "27eab4ad-8161-4e13-ac6e-0559df062a69"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "8fd44133-6139-459e-9488-01d5ebf4d313",
+                                                "parentCollection": "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                "childCollection": "94f16139-7ce2-412f-a6b2-60f050b3cfb7",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "f95aa4e8-ff4d-4300-b6c0-ebaa7fcc98b1",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1314.8333328564963,
+                                                            "y": 1272.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 1314.8333328564963,
+                                                            "y": 1214.9999995231628
+                                                        },
+                                                        {
+                                                            "x": 1249,
+                                                            "y": 1214.9999995231628
+                                                        },
+                                                        {
+                                                            "x": 1249,
+                                                            "y": 1157
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "07085bbe-f939-41ac-aced-7dd33f6f89dc",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "fk_address_city",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "f709fbd1-5d4e-486a-be2b-188a5abb2d38",
+                                            "role": {
+                                                "name": "fk_address_city",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "9495c02f-83f2-46ef-ad0a-02d430607112",
+                                                        "7182b332-ed4e-4381-80c8-15403be13a51"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                        "75633a0d-e0c2-4fad-9f7f-0b743122caf8"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "226bee2b-78ae-4a69-a011-f3018f0f0e2e",
+                                                "parentCollection": "9495c02f-83f2-46ef-ad0a-02d430607112",
+                                                "childCollection": "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "NO ACTION",
+                                                    "relationshipOnUpdate": "NO ACTION",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "a07593a0-4a8c-4c9f-a96a-138c67c8af74",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 676.5000009536743
+                                                        },
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 622.7500009536743
+                                                        },
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 622.7500009536743
+                                                        },
+                                                        {
+                                                            "x": 1417.4999995231628,
+                                                            "y": 569.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "94585df1-4384-4979-acd9-a917f3b0409b",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "fk_city",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "7e8c9de2-8186-4709-8a05-8fe393c50c37",
+                                            "role": {
+                                                "name": "fk_city",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "c05bbff3-2747-4917-bef1-9eb939a89e20",
+                                                        "362ec404-e474-47e2-a644-817fb58563f7"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "9495c02f-83f2-46ef-ad0a-02d430607112",
+                                                        "43e0404e-f264-437f-9d5f-ce43dcb20033"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "97b75147-1655-45c7-aa18-51d81f0633a5",
+                                                "parentCollection": "c05bbff3-2747-4917-bef1-9eb939a89e20",
+                                                "childCollection": "9495c02f-83f2-46ef-ad0a-02d430607112",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "NO ACTION",
+                                                    "relationshipOnUpdate": "NO ACTION",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "7da65776-abb7-486b-a529-944dfb0f2523",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1557.9999995231628,
+                                                            "y": 518.0000009536743
+                                                        },
+                                                        {
+                                                            "x": 1582.9999995231628,
+                                                            "y": 518.0000009536743
+                                                        },
+                                                        {
+                                                            "x": 1582.9999995231628,
+                                                            "y": 385.0000009536743
+                                                        },
+                                                        {
+                                                            "x": 1557.9999995231628,
+                                                            "y": 385.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "right"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "b5b42f5c-dc54-4cf1-9281-1bb71b475f30",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "customer_address_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "50b46cbc-6699-4919-bc3b-be704509b9d9",
+                                            "role": {
+                                                "name": "customer_address_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                        "365be1a5-f663-4b44-9607-d7d0dbf1c74c"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "2d4945d7-9cac-45ac-9d02-c902499b82a7",
+                                                        "617e28bd-04f4-4b85-acf6-dcc24cdc3524"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "23fa4cfe-7dc9-4bab-9f68-2195f2f61fb9",
+                                                "parentCollection": "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                "childCollection": "2d4945d7-9cac-45ac-9d02-c902499b82a7",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "25ef1e0f-7c2f-434d-bf4e-c07721ff0a98",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1588.9999990463257,
+                                                            "y": 941
+                                                        },
+                                                        {
+                                                            "x": 1588.9999990463257,
+                                                            "y": 895.7500004768372
+                                                        },
+                                                        {
+                                                            "x": 1488.2499995231628,
+                                                            "y": 895.7500004768372
+                                                        },
+                                                        {
+                                                            "x": 1488.2499995231628,
+                                                            "y": 850.5000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "782cc796-e1d8-498d-8186-009c0147cc96",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "film_actor_actor_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "6f818b13-16ca-495e-9b2d-d664c4fc5719",
+                                            "role": {
+                                                "name": "film_actor_actor_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "5c8eb4dc-81db-419e-b0cb-ed35136451be",
+                                                        "ad071041-ce82-4867-a76b-a5b5014faae1"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "a3346fd4-22d9-47c7-b453-c179e294dfed",
+                                                        "f618daf6-128a-47c8-9492-368d0ea5019b"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "9124e2c9-80bf-44ae-8718-58aeea9c7d26",
+                                                "parentCollection": "5c8eb4dc-81db-419e-b0cb-ed35136451be",
+                                                "childCollection": "a3346fd4-22d9-47c7-b453-c179e294dfed",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "d9c16f7d-93dc-43ce-9196-fbb7d5129c52",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 971.8333333333334,
+                                                            "y": 929
+                                                        },
+                                                        {
+                                                            "x": 971.8333333333334,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 971.8333333333333,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 971.8333333333333,
+                                                            "y": 873.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "f6c19c7c-bd8b-450a-aaef-fc89f388d7d4",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "film_actor_film_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "258ec7f7-5412-4fce-baa5-03ad88b034ba",
+                                            "role": {
+                                                "name": "film_actor_film_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                        "dc3d8052-f4b7-42b2-bac9-34e3cb0a2fed"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "a3346fd4-22d9-47c7-b453-c179e294dfed",
+                                                        "0b660b93-22db-4a93-81f9-42b9a2dd54ae"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "cdfceddd-83c2-4f05-a0a3-adc1c1451875",
+                                                "parentCollection": "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                "childCollection": "a3346fd4-22d9-47c7-b453-c179e294dfed",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "c24f6041-b2f5-4c38-931a-b81a9985e35b",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 875.1666666666666,
+                                                            "y": 929
+                                                        },
+                                                        {
+                                                            "x": 875.1666666666666,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 690.75,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 690.75,
+                                                            "y": 873.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "3e9d9613-3f59-44eb-8e8f-a14103c65371",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "film_category_category_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "51229bf1-4e2f-4858-9fc2-2df4ac3f2eb4",
+                                            "role": {
+                                                "name": "film_category_category_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "4a2cbcbc-9a65-48f1-8d73-e2e031cc2bc2",
+                                                        "161054e3-0983-4668-9524-e87aa8212627"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "3f2f2821-7c2c-49f4-9bd1-11ff02261538",
+                                                        "875b7bbc-25cb-495c-af3d-22c71c4553ef"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "08143a7e-865b-4af6-80b3-7d4a9840dcd3",
+                                                "parentCollection": "4a2cbcbc-9a65-48f1-8d73-e2e031cc2bc2",
+                                                "childCollection": "3f2f2821-7c2c-49f4-9bd1-11ff02261538",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "e1d98c45-a35f-425e-8864-84cd0aae73ac",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 230.5,
+                                                            "y": 929
+                                                        },
+                                                        {
+                                                            "x": 230.5,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 230.5,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 230.5,
+                                                            "y": 873.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "64fbca8c-4723-4438-b7b3-33661fab58c4",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "film_category_film_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "dbbfb32d-da36-4c40-b996-b528ac35012a",
+                                            "role": {
+                                                "name": "film_category_film_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                        "dc3d8052-f4b7-42b2-bac9-34e3cb0a2fed"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "3f2f2821-7c2c-49f4-9bd1-11ff02261538",
+                                                        "4fae5df4-1669-49d2-bee6-a7143fc0b51d"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "94333e25-bfc9-47b8-80f3-37ae6adf17ad",
+                                                "parentCollection": "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                "childCollection": "3f2f2821-7c2c-49f4-9bd1-11ff02261538",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "e2eafb31-1d4b-445c-88bf-347b42f10139",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 318.5,
+                                                            "y": 929
+                                                        },
+                                                        {
+                                                            "x": 318.5,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 504.25,
+                                                            "y": 901.0000004768372
+                                                        },
+                                                        {
+                                                            "x": 504.25,
+                                                            "y": 873.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "b2b7b58b-6d5e-48f0-a1f5-76ef9019108f",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "inventory_film_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "61a34c56-5f69-4320-a263-572641fd20df",
+                                            "role": {
+                                                "name": "inventory_film_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                        "dc3d8052-f4b7-42b2-bac9-34e3cb0a2fed"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "88732eb7-7d9f-4e80-9444-36159d844e94",
+                                                        "6a4213de-2d19-4c17-8a49-e335c71649d6"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "c7e6e36a-07a2-492a-b9bb-c0e76ba0872c",
+                                                "parentCollection": "be5a2381-2b18-47da-a39c-c30357b53233",
+                                                "childCollection": "88732eb7-7d9f-4e80-9444-36159d844e94",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "4b7a32e1-e20e-4151-9eca-527d2fff9bbf",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 597.5,
+                                                            "y": 992
+                                                        },
+                                                        {
+                                                            "x": 597.5,
+                                                            "y": 932.5000004768372
+                                                        },
+                                                        {
+                                                            "x": 597.5,
+                                                            "y": 932.5000004768372
+                                                        },
+                                                        {
+                                                            "x": 597.5,
+                                                            "y": 873.0000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "d00b4bb8-da79-4572-846c-f11bbb6b021a",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "rental_customer_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "4fdf7667-d42e-4486-a2fa-3bc21e90afd8",
+                                            "role": {
+                                                "name": "rental_customer_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "2d4945d7-9cac-45ac-9d02-c902499b82a7",
+                                                        "6fb4cc2e-3a59-4f26-bef0-8531d99ecb46"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                        "59ef7917-e151-4a3f-9692-824a0f01a5fa"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "f2992084-1db2-4769-88cc-9232cb4d9ef8",
+                                                "parentCollection": "2d4945d7-9cac-45ac-9d02-c902499b82a7",
+                                                "childCollection": "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "ce9e1956-36bb-4f11-a702-74bede521960",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 828.5,
+                                                            "y": 1376.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 1137.4999995231628,
+                                                            "y": 1376.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 1137.4999995231628,
+                                                            "y": 1011
+                                                        },
+                                                        {
+                                                            "x": 1446.4999990463257,
+                                                            "y": 1011
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "left"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "fbdc4267-4f47-4739-8b9a-83a36c4917b1",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "rental_inventory_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "53deb3e4-4c91-487a-b50c-202ba40ddeb1",
+                                            "role": {
+                                                "name": "rental_inventory_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "88732eb7-7d9f-4e80-9444-36159d844e94",
+                                                        "8a34746a-0201-476f-a0e6-299bfc5c114c"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                        "2d9a672e-b733-4ea5-8d12-2e85f2edc072"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "c2f32d0b-bdb8-4bc1-9561-d8ab431049c7",
+                                                "parentCollection": "88732eb7-7d9f-4e80-9444-36159d844e94",
+                                                "childCollection": "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "cf121a62-157b-49b6-b3ea-aaaedf507d19",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 674.5,
+                                                            "y": 1272.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 674.5,
+                                                            "y": 1183.4999995231628
+                                                        },
+                                                        {
+                                                            "x": 597.5,
+                                                            "y": 1183.4999995231628
+                                                        },
+                                                        {
+                                                            "x": 597.5,
+                                                            "y": 1094
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "53b996d4-8360-420f-b133-d0d8526c828b",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "rental_staff_id_key",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "305d1926-6ac8-4f98-9113-8b55e1cd56d5",
+                                            "role": {
+                                                "name": "rental_staff_id_key",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                        "8083485b-80d5-4319-8428-17e6387dbf7a"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                        "685d241f-e93e-4d30-ae37-d48f337eba82"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "5b4cdf42-2bdf-453e-ba10-0e46a083cf5d",
+                                                "parentCollection": "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                "childCollection": "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "NO ACTION",
+                                                    "relationshipOnUpdate": "NO ACTION",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "eaef15bc-e53a-45d0-a3ed-885374a76bd0",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 828.5,
+                                                            "y": 1324.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 968.5,
+                                                            "y": 1324.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 968.5,
+                                                            "y": 1005
+                                                        },
+                                                        {
+                                                            "x": 1108.5,
+                                                            "y": 1005
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "left"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "f78d38b4-343a-40d7-9597-802ec5b11289",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "staff_address_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "27d6e699-43a4-4fe8-bb55-794b7ff99be5",
+                                            "role": {
+                                                "name": "staff_address_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                        "365be1a5-f663-4b44-9607-d7d0dbf1c74c"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                        "2dec43a9-33d2-4e42-9766-68dd972a5f72"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "7cd6b30f-fcc5-4640-9beb-a230dab71321",
+                                                "parentCollection": "f5a179b4-55ba-430b-8d4a-be25ab9982f2",
+                                                "childCollection": "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "6c42a790-84eb-47d0-97af-2c98eeb9551a",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1249,
+                                                            "y": 929
+                                                        },
+                                                        {
+                                                            "x": 1249,
+                                                            "y": 889.7500004768372
+                                                        },
+                                                        {
+                                                            "x": 1346.7499995231628,
+                                                            "y": 889.7500004768372
+                                                        },
+                                                        {
+                                                            "x": 1346.7499995231628,
+                                                            "y": 850.5000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "c80ff9a0-c79e-465a-8db9-4b0d33224957",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "payment_customer_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "b3894e3a-aba9-4b9c-96e0-990ad2d0bc78",
+                                            "role": {
+                                                "name": "payment_customer_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "2d4945d7-9cac-45ac-9d02-c902499b82a7",
+                                                        "6fb4cc2e-3a59-4f26-bef0-8531d99ecb46"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "f3ef8b2b-753c-4bd8-aaf9-9ce55e938233",
+                                                        "ba268e46-4d0e-4ad1-8e3a-fa830ce9c626"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "220df5b6-7ba7-4610-9117-d3724b2b2eff",
+                                                "parentCollection": "2d4945d7-9cac-45ac-9d02-c902499b82a7",
+                                                "childCollection": "f3ef8b2b-753c-4bd8-aaf9-9ce55e938233",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "9f04ced3-c6fc-4e19-85f1-e80aea251554",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 720.2500004768372,
+                                                            "y": 1596.9999980926514
+                                                        },
+                                                        {
+                                                            "x": 1083.3749997615814,
+                                                            "y": 1596.9999980926514
+                                                        },
+                                                        {
+                                                            "x": 1083.3749997615814,
+                                                            "y": 1081
+                                                        },
+                                                        {
+                                                            "x": 1446.4999990463257,
+                                                            "y": 1081
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "left"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "cdf416d7-9dc8-47c6-89e4-acd4716c5864",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "payment_rental_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "a872927d-6ad0-46ad-a226-56eda3cf57c7",
+                                            "role": {
+                                                "name": "payment_rental_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                        "d29146e0-cbde-4af3-a742-55c115fdb0c8"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "f3ef8b2b-753c-4bd8-aaf9-9ce55e938233",
+                                                        "a1c0381c-35dd-439f-9f9d-8cdb63bfbd05"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "d56c360d-b432-48d9-865e-758c8da5c801",
+                                                "parentCollection": "a37c1679-fcd3-46bd-bbaa-c44309202caf",
+                                                "childCollection": "f3ef8b2b-753c-4bd8-aaf9-9ce55e938233",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "SET NULL",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "6c34c3cb-c729-4565-8f26-7e4265b5ab18",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 567.7500004768372,
+                                                            "y": 1504.9999980926514
+                                                        },
+                                                        {
+                                                            "x": 567.7500004768372,
+                                                            "y": 1466.9999985694885
+                                                        },
+                                                        {
+                                                            "x": 674.5,
+                                                            "y": 1466.9999985694885
+                                                        },
+                                                        {
+                                                            "x": 674.5,
+                                                            "y": 1428.9999990463257
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "fa4c5c00-1b9b-4076-a215-49df3e490bb9",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "payment_staff_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "4eb4ce7c-9673-4416-bf14-8af22ad53f13",
+                                            "role": {
+                                                "name": "payment_staff_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                        "8083485b-80d5-4319-8428-17e6387dbf7a"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "f3ef8b2b-753c-4bd8-aaf9-9ce55e938233",
+                                                        "d17b8dd9-6524-491d-90da-1a083470d1df"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "370ce08f-5099-4ed0-a309-81690121a284",
+                                                "parentCollection": "06683f8f-76c5-468e-9566-13738b94d7a5",
+                                                "childCollection": "f3ef8b2b-753c-4bd8-aaf9-9ce55e938233",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "1eed04ab-ba23-4b61-a0da-cf1090209036",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 720.2500004768372,
+                                                            "y": 1550.9999980926514
+                                                        },
+                                                        {
+                                                            "x": 914.3750002384186,
+                                                            "y": 1550.9999980926514
+                                                        },
+                                                        {
+                                                            "x": 914.3750002384186,
+                                                            "y": 1081
+                                                        },
+                                                        {
+                                                            "x": 1108.5,
+                                                            "y": 1081
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "left"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "f5c80b71-f012-404d-8f0a-792e63381412",
+                                    "arrayItem": true
+                                }
+                            ],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "16e2e0db-fec1-469f-a37a-b6c843c5d8e2"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "0e044992-fc93-4522-849b-b527cd76b402"
+                },
+                {
+                    "name": "views",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "e3199422-c58a-4e57-b291-92addf83f529"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "e781c405-587f-48ac-a744-1ce2b02b8e02"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "5aa07f9a-ea6c-4992-959e-25be2aadef2b"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "e3a93f23-961f-4773-b2bc-ae331f42babf"
+                },
+                {
+                    "name": "modelDefinitions",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "e1f94a75-0e03-4c20-b03c-7746fbab56cc"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "474b7131-e362-4ea4-8866-da5cf7de62e1"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "c30e7de8-9b63-4665-925c-38c977c47172"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "9de1c6b7-99c4-41ef-8ec6-036f2b3688dd"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "36f0d86e-e613-41a5-b8ee-b1cc24094e37"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "a662f81a-5fca-4153-9e4a-681d771546b6"
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "e22487dd-5258-47df-8902-563dd08e7c9b": "added",
+        "1ce76b2b-21e7-4530-a9ae-c526aa7620b1": "deleted",
+        "2b409688-1c1f-4d1d-be9e-dfbb3a5557cb": "modified",
+        "95656025-3fda-44dc-a76d-869482c8a2b9": "public",
+        "4baf3d7d-14c3-49b0-b19a-9c0d255f27e3": "public",
+        "bd850dc0-8a60-47f0-aef8-c2c91b8e032c": "added",
+        "71cbbb53-a6ec-4129-abd0-42c8a32eedc0": "deleted",
+        "cb8ab1e3-2af5-477f-b230-977ab92fcf96": "modified",
+        "8557db8b-02b6-49dc-82f3-19c66b867b94": "actor",
+        "7d998a7a-e19d-4394-bffd-8d8b88e4b74a": "address",
+        "c829bdce-0930-4001-8469-3f5a55d10038": "category",
+        "e83bd1ba-2c2c-467b-a456-e254b05de278": "city",
+        "900ddd22-976d-491c-83ad-c441b6160c3b": "country",
+        "5cc5a7c4-5298-46f6-a665-db311ac43105": "customer",
+        "872ae568-80a6-4ec6-88c3-264648adc19b": "film",
+        "c199abb4-e928-45ba-b06c-c0511a4ab62d": "film_actor",
+        "7e9ba36b-2eee-4a7c-b98f-667ebb69c5b5": "film_category",
+        "b0e183ff-d222-4989-b854-751c05e41988": "inventory",
+        "ad7714c7-5187-4130-aed0-120094e4617e": "payment",
+        "824267af-cd8a-4a43-95bd-c8f045970b09": "rental",
+        "df30903a-0b99-481c-a3ed-049313223a79": "staff",
+        "e13296ef-9eb3-428c-a5c9-7d3c2ebd5128": "store",
+        "5c8eb4dc-81db-419e-b0cb-ed35136451be": "actor",
+        "f5a179b4-55ba-430b-8d4a-be25ab9982f2": "address",
+        "4a2cbcbc-9a65-48f1-8d73-e2e031cc2bc2": "category",
+        "9495c02f-83f2-46ef-ad0a-02d430607112": "city",
+        "c05bbff3-2747-4917-bef1-9eb939a89e20": "country",
+        "2d4945d7-9cac-45ac-9d02-c902499b82a7": "customer",
+        "be5a2381-2b18-47da-a39c-c30357b53233": "film",
+        "a3346fd4-22d9-47c7-b453-c179e294dfed": "film_actor",
+        "3f2f2821-7c2c-49f4-9bd1-11ff02261538": "film_category",
+        "88732eb7-7d9f-4e80-9444-36159d844e94": "inventory",
+        "a15f9ec1-10aa-4c5f-bde9-880ce6d05f7e": "language",
+        "f3ef8b2b-753c-4bd8-aaf9-9ce55e938233": "payment",
+        "a37c1679-fcd3-46bd-bbaa-c44309202caf": "rental",
+        "06683f8f-76c5-468e-9566-13738b94d7a5": "staff",
+        "94f16139-7ce2-412f-a6b2-60f050b3cfb7": "store",
+        "14b93801-eca0-4a0a-9304-efea3c272031": "language",
+        "c686fd83-ef24-4312-8d31-d24419a1d2ef": "added",
+        "936bc495-db76-4e88-b29f-17db5d8d88af": "deleted",
+        "16e2e0db-fec1-469f-a37a-b6c843c5d8e2": "modified",
+        "bc0efa12-1cc1-4fa2-b83b-9163bc110869": "store_address_id_fkey",
+        "084c4f06-8731-4efb-adf6-9f6c665217f6": "store_manager_staff_id_fkey",
+        "78302df5-48ff-4c96-bdbc-f42cf5ed792f": "fk_address_city",
+        "7a2d69f9-b993-4d53-8e23-1be2729cd2e0": "fk_city",
+        "bad31c7e-25bf-4aad-874a-484da9544665": "customer_address_id_fkey",
+        "f8b62d4e-3056-40fb-8452-399d2cf14480": "film_actor_actor_id_fkey",
+        "df3a8c59-6662-4c07-9f6c-e577dadc5dcf": "film_actor_film_id_fkey",
+        "61bc7559-6493-4840-a64c-9c4e54793158": "film_category_category_id_fkey",
+        "57d24073-e993-4035-9b96-5403c41408d1": "film_category_film_id_fkey",
+        "04b92159-5f78-4374-aa66-e3a487ae548f": "inventory_film_id_fkey",
+        "2f996a54-66c0-4160-b6d7-4ceb7b1ed095": "rental_customer_id_fkey",
+        "7a56d0ae-45f3-47f9-a055-e43c61f980e9": "rental_inventory_id_fkey",
+        "a242cbb8-143c-4d0b-bd57-a5dddb50a6a3": "rental_staff_id_key",
+        "26351b69-97bd-4ca7-89d5-104f8c2f67dd": "staff_address_id_fkey",
+        "f9045059-e01a-46ac-8e48-6b69b4bebd77": "payment_customer_id_fkey",
+        "d17e2110-8921-4449-b8e5-a87ada7373c8": "payment_rental_id_fkey",
+        "225cc396-508a-4e04-a511-1989081b9eeb": "payment_staff_id_fkey",
+        "0c247e0a-ac56-4502-ae1b-44ec073ef1c7": "store_address_id_fkey",
+        "8fd44133-6139-459e-9488-01d5ebf4d313": "store_manager_staff_id_fkey",
+        "226bee2b-78ae-4a69-a011-f3018f0f0e2e": "fk_address_city",
+        "97b75147-1655-45c7-aa18-51d81f0633a5": "fk_city",
+        "23fa4cfe-7dc9-4bab-9f68-2195f2f61fb9": "customer_address_id_fkey",
+        "9124e2c9-80bf-44ae-8718-58aeea9c7d26": "film_actor_actor_id_fkey",
+        "cdfceddd-83c2-4f05-a0a3-adc1c1451875": "film_actor_film_id_fkey",
+        "08143a7e-865b-4af6-80b3-7d4a9840dcd3": "film_category_category_id_fkey",
+        "94333e25-bfc9-47b8-80f3-37ae6adf17ad": "film_category_film_id_fkey",
+        "c7e6e36a-07a2-492a-b9bb-c0e76ba0872c": "inventory_film_id_fkey",
+        "f2992084-1db2-4769-88cc-9232cb4d9ef8": "rental_customer_id_fkey",
+        "c2f32d0b-bdb8-4bc1-9561-d8ab431049c7": "rental_inventory_id_fkey",
+        "5b4cdf42-2bdf-453e-ba10-0e46a083cf5d": "rental_staff_id_key",
+        "7cd6b30f-fcc5-4640-9beb-a230dab71321": "staff_address_id_fkey",
+        "220df5b6-7ba7-4610-9117-d3724b2b2eff": "payment_customer_id_fkey",
+        "d56c360d-b432-48d9-865e-758c8da5c801": "payment_rental_id_fkey",
+        "370ce08f-5099-4ed0-a309-81690121a284": "payment_staff_id_fkey",
+        "24c86580-2134-49d5-8d49-c436942ac257": "film_language_id_fkey",
+        "e3f4143d-f113-44e1-b409-0c783e707a6a": "language_id",
+        "c68d422e-cc59-4ae5-9abd-d481c4e664c8": "language_id",
+        "32cefe9a-52c2-4c59-a887-3f0c4fab16c6": "address_id",
+        "365be1a5-f663-4b44-9607-d7d0dbf1c74c": "address_id",
+        "27eab4ad-8161-4e13-ac6e-0559df062a69": "manager_staff_id",
+        "8083485b-80d5-4319-8428-17e6387dbf7a": "staff_id",
+        "75633a0d-e0c2-4fad-9f7f-0b743122caf8": "city_id",
+        "7182b332-ed4e-4381-80c8-15403be13a51": "city_id",
+        "43e0404e-f264-437f-9d5f-ce43dcb20033": "country_id",
+        "362ec404-e474-47e2-a644-817fb58563f7": "country_id",
+        "617e28bd-04f4-4b85-acf6-dcc24cdc3524": "address_id",
+        "f618daf6-128a-47c8-9492-368d0ea5019b": "actor_id",
+        "ad071041-ce82-4867-a76b-a5b5014faae1": "actor_id",
+        "0b660b93-22db-4a93-81f9-42b9a2dd54ae": "film_id",
+        "dc3d8052-f4b7-42b2-bac9-34e3cb0a2fed": "film_id",
+        "875b7bbc-25cb-495c-af3d-22c71c4553ef": "category_id",
+        "161054e3-0983-4668-9524-e87aa8212627": "category_id",
+        "4fae5df4-1669-49d2-bee6-a7143fc0b51d": "film_id",
+        "6a4213de-2d19-4c17-8a49-e335c71649d6": "film_id",
+        "59ef7917-e151-4a3f-9692-824a0f01a5fa": "customer_id",
+        "6fb4cc2e-3a59-4f26-bef0-8531d99ecb46": "customer_id",
+        "2d9a672e-b733-4ea5-8d12-2e85f2edc072": "inventory_id",
+        "8a34746a-0201-476f-a0e6-299bfc5c114c": "inventory_id",
+        "685d241f-e93e-4d30-ae37-d48f337eba82": "staff_id",
+        "2dec43a9-33d2-4e42-9766-68dd972a5f72": "address_id",
+        "ba268e46-4d0e-4ad1-8e3a-fa830ce9c626": "customer_id",
+        "a1c0381c-35dd-439f-9f9d-8cdb63bfbd05": "rental_id",
+        "d29146e0-cbde-4af3-a742-55c115fdb0c8": "rental_id",
+        "d17b8dd9-6524-491d-90da-1a083470d1df": "staff_id",
+        "9c8dd0b9-a8d3-46f0-81d9-625a39bae571": "film_language_id_fkey",
+        "92c6af63-ffc1-41f6-a739-5157dad80bba": "store_address_id_fkey",
+        "860b70cb-5f74-4987-807c-0515f17b3c13": "store_manager_staff_id_fkey",
+        "f709fbd1-5d4e-486a-be2b-188a5abb2d38": "fk_address_city",
+        "7e8c9de2-8186-4709-8a05-8fe393c50c37": "fk_city",
+        "50b46cbc-6699-4919-bc3b-be704509b9d9": "customer_address_id_fkey",
+        "6f818b13-16ca-495e-9b2d-d664c4fc5719": "film_actor_actor_id_fkey",
+        "258ec7f7-5412-4fce-baa5-03ad88b034ba": "film_actor_film_id_fkey",
+        "51229bf1-4e2f-4858-9fc2-2df4ac3f2eb4": "film_category_category_id_fkey",
+        "dbbfb32d-da36-4c40-b996-b528ac35012a": "film_category_film_id_fkey",
+        "61a34c56-5f69-4320-a263-572641fd20df": "inventory_film_id_fkey",
+        "4fdf7667-d42e-4486-a2fa-3bc21e90afd8": "rental_customer_id_fkey",
+        "53deb3e4-4c91-487a-b50c-202ba40ddeb1": "rental_inventory_id_fkey",
+        "305d1926-6ac8-4f98-9113-8b55e1cd56d5": "rental_staff_id_key",
+        "27d6e699-43a4-4fe8-bb55-794b7ff99be5": "staff_address_id_fkey",
+        "b3894e3a-aba9-4b9c-96e0-990ad2d0bc78": "payment_customer_id_fkey",
+        "a872927d-6ad0-46ad-a226-56eda3cf57c7": "payment_rental_id_fkey",
+        "4eb4ce7c-9673-4416-bf14-8af22ad53f13": "payment_staff_id_fkey",
+        "e3199422-c58a-4e57-b291-92addf83f529": "added",
+        "e781c405-587f-48ac-a744-1ce2b02b8e02": "deleted",
+        "5aa07f9a-ea6c-4992-959e-25be2aadef2b": "modified",
+        "2dea219e-4ed6-4dcd-9615-c067d4930559": "actor_info",
+        "69f99218-07f1-4391-94ed-6436717ccf3c": "customer_list",
+        "0004e2a4-8509-4201-b08e-a459b05eaa67": "film_list",
+        "8b205070-6f88-448d-93ed-ef76117fb640": "nicer_but_slower_film_list",
+        "67a07c98-f305-4ead-872b-4e59c47c237f": "sales_by_film_category",
+        "0733b07e-1291-485c-9e48-fcbe820e195b": "sales_by_store",
+        "e15879df-9cb1-4d05-a754-a9024ad9045b": "staff_list",
+        "82ec76d9-65c1-481d-9e04-2c43867f6999": "actor_info",
+        "193eaba7-d1c2-478c-afd9-b510de51f294": "customer_list",
+        "f050f7e9-6bbf-4df3-8899-5aebcd617f1c": "film_list",
+        "18a65366-cd5e-4550-8042-87da85c69042": "nicer_but_slower_film_list",
+        "e79d2190-20eb-4485-8181-96c32e6b0245": "sales_by_film_category",
+        "b088e399-7e4a-465c-a36e-2d0faff08f06": "sales_by_store",
+        "d0f16907-2c1a-4fcd-beeb-d12a33b299f4": "staff_list",
+        "e1f94a75-0e03-4c20-b03c-7746fbab56cc": "added",
+        "474b7131-e362-4ea4-8866-da5cf7de62e1": "deleted",
+        "c30e7de8-9b63-4665-925c-38c977c47172": "modified",
+        "b9023c2f-8b9a-41d8-916d-e239cba5ada2": "mpaa_rating",
+        "ccd4f212-16d5-4fb8-8472-e707ee2c12ff": "year",
+        "745ef68b-44c8-451a-9fa0-47d8619b53d7": "mpaa_rating",
+        "e3c14327-3943-4406-9c48-5820944d2c54": "year",
+        "a662f81a-5fca-4153-9e4a-681d771546b6": "comparisonModelCollection",
+        "8904bd14-b1de-4083-a8d6-a556f7751885": "containers",
+        "0b17b59b-663c-4d98-a14e-d71b71bbffd4": "entities",
+        "0e044992-fc93-4522-849b-b527cd76b402": "relationships",
+        "e3a93f23-961f-4773-b2bc-ae331f42babf": "views",
+        "9de1c6b7-99c4-41ef-8ec6-036f2b3688dd": "modelDefinitions"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "70c90ab5-4721-4262-96e5-9be92dcd1f87"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "9c6bbd8e-52d6-4f0c-90e6-9e3c67674876"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "9c040a2e-115c-46b2-b280-45490ab37b7b"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "dbVendor": "PostgreSQL",
+    "tablespace_name": "pg_default",
+    "encoding": "UTF8",
+    "appTarget": "PostgreSQL",
+    "creationTS": "2023-03-28T13:04:27.553Z",
+    "GUID": "0264f952-0a6e-4c79-b1a5-76e750a70cd2",
+    "compMode": true,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "PostgreSQL",
+        "pluginVersion": "0.1.35",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-03-28T13:04:27.603Z",
+    "persistenceSchemaVersion": "6",
+    "applicationInformation": {
+        "version": "6.9.8"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "a662f81a-5fca-4153-9e4a-681d771546b6",
+                        "x": 50,
+                        "y": 50,
+                        "width": 200,
+                        "height": 100,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

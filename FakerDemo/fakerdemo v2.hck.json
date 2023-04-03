@@ -1,0 +1,486 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Employee",
+            "type": "object",
+            "properties": [
+                {
+                    "GUID": "75383af5-b108-4d51-8555-df571f2417b4",
+                    "name": "name",
+                    "type": "reference",
+                    "$ref": "#model/definitions/name",
+                    "refType": "model",
+                    "ref": "227efd77-f531-49f3-b1cd-7d4a3d8125d2",
+                    "refIdPath": [
+                        "3443d721-21ce-43c2-a625-f971c881c78f",
+                        "6a7ce922-dd90-4e25-a104-25587fca812d",
+                        "227efd77-f531-49f3-b1cd-7d4a3d8125d2"
+                    ],
+                    "isActivated": true,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "prefix",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "982c418a-586e-4b7e-9fde-cf910157683e",
+                    "fakerFunction": "faker.name.prefix()",
+                    "error": {}
+                },
+                {
+                    "name": "company",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1b1b7c1e-886f-4ee7-92f1-eddb7d96756c",
+                    "fakerFunction": "faker.company.name()",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "jobtitle",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "bd5a14aa-de5c-4e35-a49c-dfe24879ad4a",
+                    "fakerFunction": "faker.name.jobTitle()",
+                    "error": {}
+                },
+                {
+                    "name": "jobtype",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1137e22f-4306-4cef-97d4-6b5cddf680f0",
+                    "fakerFunction": "faker.name.jobType()",
+                    "error": {}
+                },
+                {
+                    "name": "seniority",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "4107146a-7bad-4d54-b526-4e0a9c7578ed",
+                    "fakerFunction": "faker.name.jobDescriptor()",
+                    "error": {}
+                },
+                {
+                    "name": "startdate",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "494e07d4-9e79-43e5-b99c-b1fb84d88daa",
+                    "fakerFunction": "faker.date.past(5,'2020-01-01T00:00:00.000Z')",
+                    "error": {}
+                },
+                {
+                    "name": "phone",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "601832bc-9ac4-451f-8171-bab1d8da299e",
+                    "fakerFunction": "faker.phone.number('+32 ### ## ## ##')",
+                    "error": {}
+                },
+                {
+                    "name": "address",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "street",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "4324354b-4f9b-4fb7-bfad-d20b1ae6f009",
+                            "fakerFunction": "faker.address.streetName()",
+                            "error": {}
+                        },
+                        {
+                            "name": "houseNr",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "60cbe82e-b5d4-4a22-ab45-71609709cc16",
+                            "fakerFunction": "faker.address.buildingNumber()",
+                            "error": {}
+                        },
+                        {
+                            "name": "zipCode",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "5dbf51e0-6faf-4179-a4c4-5b61c6b83d78",
+                            "fakerFunction": "faker.address.zipCode()",
+                            "error": {}
+                        },
+                        {
+                            "name": "city",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "77fabf98-8d55-46ae-8c27-3a96767aed8d",
+                            "fakerFunction": "faker.address.cityName()",
+                            "error": {}
+                        },
+                        {
+                            "name": "country",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "e2ab145b-582a-44fe-bc39-18fc6034aa7c",
+                            "fakerFunction": "faker.address.country()",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "7a47b467-0126-4c63-9d72-1fcc3c3b3cb6",
+                    "error": {}
+                },
+                {
+                    "name": "family",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "Partner",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "GUID": "4391d80b-0688-40c6-a633-cfa61f6d3716",
+                                    "name": "name",
+                                    "type": "reference",
+                                    "$ref": "#model/definitions/name",
+                                    "refType": "model",
+                                    "ref": "227efd77-f531-49f3-b1cd-7d4a3d8125d2",
+                                    "refIdPath": [
+                                        "3443d721-21ce-43c2-a625-f971c881c78f",
+                                        "6a7ce922-dd90-4e25-a104-25587fca812d",
+                                        "227efd77-f531-49f3-b1cd-7d4a3d8125d2"
+                                    ],
+                                    "isActivated": true,
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false,
+                                        "code": false
+                                    }
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "dd487c4b-cb1c-4891-bed1-4ff3886a41f8",
+                            "error": {}
+                        },
+                        {
+                            "name": "Children",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "GUID": "26019b96-5ea1-48ef-8b29-eaf51815914c",
+                                    "name": "name",
+                                    "type": "reference",
+                                    "$ref": "#model/definitions/name",
+                                    "refType": "model",
+                                    "ref": "227efd77-f531-49f3-b1cd-7d4a3d8125d2",
+                                    "refIdPath": [
+                                        "3443d721-21ce-43c2-a625-f971c881c78f",
+                                        "6a7ce922-dd90-4e25-a104-25587fca812d",
+                                        "227efd77-f531-49f3-b1cd-7d4a3d8125d2"
+                                    ],
+                                    "isActivated": true,
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false,
+                                        "code": false
+                                    }
+                                },
+                                {
+                                    "GUID": "1327056a-392a-4fce-bff7-483cde0f66b3",
+                                    "name": "name(1)",
+                                    "type": "reference",
+                                    "$ref": "#model/definitions/name",
+                                    "refType": "model",
+                                    "ref": "227efd77-f531-49f3-b1cd-7d4a3d8125d2",
+                                    "refIdPath": [
+                                        "3443d721-21ce-43c2-a625-f971c881c78f",
+                                        "6a7ce922-dd90-4e25-a104-25587fca812d",
+                                        "227efd77-f531-49f3-b1cd-7d4a3d8125d2"
+                                    ],
+                                    "isActivated": true,
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "hackoladeMeta": {},
+                                    "error": {
+                                        "name": false,
+                                        "code": false
+                                    }
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "bafdfb14-5327-4a41-9cf7-fdd67eb58793",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "ed761146-4d0d-401a-879d-2762f674256d",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "bd1e2b28-eea6-4f95-b724-9df55c086289"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "GUID": "508246dd-3cfb-4bf4-9d81-ef509505b2ca",
+                    "name": "nameindex",
+                    "isActivated": true,
+                    "key": [
+                        {
+                            "keyId": "1a9660b1-1827-4f5f-88d9-cb5f4b18d7ae",
+                            "type": "ascending"
+                        }
+                    ],
+                    "unique": false,
+                    "dropDups": false,
+                    "sparse": false,
+                    "expireAfterSeconds": "",
+                    "background": false,
+                    "weights": "",
+                    "min": -180,
+                    "max": 180,
+                    "bits": 26,
+                    "language_override": "language",
+                    "storageEngineName": "WiredTiger",
+                    "collation": {}
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+            "bucketId": "60482942-f772-4ed8-bab8-fcc4adcc8a08",
+            "error": {},
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "FakerDemo",
+            "type": "bucket",
+            "collectionIds": [
+                "5f6a2e81-e9a5-414b-a5a9-db01958e5039"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "60482942-f772-4ed8-bab8-fcc4adcc8a08"
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "60482942-f772-4ed8-bab8-fcc4adcc8a08": "FakerDemo",
+        "5f6a2e81-e9a5-414b-a5a9-db01958e5039": "Employee",
+        "982c418a-586e-4b7e-9fde-cf910157683e": "prefix",
+        "1b1b7c1e-886f-4ee7-92f1-eddb7d96756c": "company",
+        "bd5a14aa-de5c-4e35-a49c-dfe24879ad4a": "jobtitle",
+        "1137e22f-4306-4cef-97d4-6b5cddf680f0": "jobtype",
+        "4107146a-7bad-4d54-b526-4e0a9c7578ed": "seniority",
+        "494e07d4-9e79-43e5-b99c-b1fb84d88daa": "startdate",
+        "7a47b467-0126-4c63-9d72-1fcc3c3b3cb6": "address",
+        "e2ab145b-582a-44fe-bc39-18fc6034aa7c": "country",
+        "601832bc-9ac4-451f-8171-bab1d8da299e": "phone",
+        "ed761146-4d0d-401a-879d-2762f674256d": "family",
+        "dd487c4b-cb1c-4891-bed1-4ff3886a41f8": "Partner",
+        "bafdfb14-5327-4a41-9cf7-fdd67eb58793": "Children",
+        "4324354b-4f9b-4fb7-bfad-d20b1ae6f009": "street",
+        "60cbe82e-b5d4-4a22-ab45-71609709cc16": "houseNr",
+        "5dbf51e0-6faf-4179-a4c4-5b61c6b83d78": "zipCode",
+        "77fabf98-8d55-46ae-8c27-3a96767aed8d": "city",
+        "75383af5-b108-4d51-8555-df571f2417b4": "name",
+        "227efd77-f531-49f3-b1cd-7d4a3d8125d2": "name",
+        "4391d80b-0688-40c6-a633-cfa61f6d3716": "name",
+        "26019b96-5ea1-48ef-8b29-eaf51815914c": "name",
+        "1327056a-392a-4fce-bff7-483cde0f66b3": "name(1)"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "name": "name",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "type": "document",
+                "properties": [
+                    {
+                        "name": "firstName",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "GUID": "3d2d1320-f5ef-4ba4-afdf-588bebe98957",
+                        "fakerFunction": "faker.name.firstName()",
+                        "error": {}
+                    },
+                    {
+                        "name": "lastName",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "type": "string",
+                        "GUID": "5bbea1e0-04f7-4e20-86ef-4c91a4a686ee",
+                        "fakerFunction": "faker.name.lastName()",
+                        "error": {}
+                    }
+                ],
+                "additionalProperties": false,
+                "GUID": "227efd77-f531-49f3-b1cd-7d4a3d8125d2",
+                "error": {},
+                "definitionRefs": [
+                    [
+                        "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+                        "75383af5-b108-4d51-8555-df571f2417b4"
+                    ],
+                    [
+                        "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+                        "ed761146-4d0d-401a-879d-2762f674256d",
+                        "dd487c4b-cb1c-4891-bed1-4ff3886a41f8",
+                        "4391d80b-0688-40c6-a633-cfa61f6d3716"
+                    ],
+                    [
+                        "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+                        "ed761146-4d0d-401a-879d-2762f674256d",
+                        "bafdfb14-5327-4a41-9cf7-fdd67eb58793",
+                        "26019b96-5ea1-48ef-8b29-eaf51815914c"
+                    ],
+                    [
+                        "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+                        "ed761146-4d0d-401a-879d-2762f674256d",
+                        "bafdfb14-5327-4a41-9cf7-fdd67eb58793",
+                        "1327056a-392a-4fce-bff7-483cde0f66b3"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "6a7ce922-dd90-4e25-a104-25587fca812d"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "1e879485-4bce-47de-a0fd-5508035d216b"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "8b113832-a1f8-4776-a720-ed09058a46db"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-03-19T11:06:14.271Z",
+    "GUID": "3443d721-21ce-43c2-a625-f971c881c78f",
+    "isLineageEnabled": false,
+    "lastModifTS": "2023-03-30T14:00:17.641Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.8"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+                        "x": 139.00736377025038,
+                        "y": 233.96612665684836,
+                        "width": 273,
+                        "height": 537,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 99.00736377025038,
+                        "y": 193.96612665684836,
+                        "GUID": "60482942-f772-4ed8-bab8-fcc4adcc8a08"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false,
+                    "hideAnnotations": true,
+                    "hideErdRelationshipsNames": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

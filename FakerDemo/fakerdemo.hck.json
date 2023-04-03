@@ -1,0 +1,363 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Company",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "CompanyName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "00a3c353-418f-4711-bad7-a2fb12de258a",
+                    "fakerFunction": "faker.company.name()",
+                    "primaryKey": true,
+                    "childRelationships": [
+                        "d999905d-62b4-499a-89a8-c203f2176c00"
+                    ],
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "45890925-d884-41c6-8f26-c6b6632f37ed"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "a5d659a8-330c-4010-8d95-a6d118df690a",
+            "bucketId": "60482942-f772-4ed8-bab8-fcc4adcc8a08"
+        },
+        {
+            "collectionName": "Employee",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1a9660b1-1827-4f5f-88d9-cb5f4b18d7ae",
+                    "fakerFunction": "faker.name.fullName()",
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "prefix",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "982c418a-586e-4b7e-9fde-cf910157683e",
+                    "fakerFunction": "faker.name.prefix()",
+                    "error": {}
+                },
+                {
+                    "name": "company",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1b1b7c1e-886f-4ee7-92f1-eddb7d96756c",
+                    "fakerFunction": "faker.company.name()",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "a5d659a8-330c-4010-8d95-a6d118df690a",
+                    "foreignField": [
+                        "a5d659a8-330c-4010-8d95-a6d118df690a",
+                        "00a3c353-418f-4711-bad7-a2fb12de258a"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "jobtitle",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "bd5a14aa-de5c-4e35-a49c-dfe24879ad4a",
+                    "fakerFunction": "faker.name.jobTitle()",
+                    "error": {}
+                },
+                {
+                    "name": "jobtype",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1137e22f-4306-4cef-97d4-6b5cddf680f0",
+                    "fakerFunction": "faker.name.jobType()",
+                    "error": {}
+                },
+                {
+                    "name": "seniority",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "4107146a-7bad-4d54-b526-4e0a9c7578ed",
+                    "fakerFunction": "faker.name.jobDescriptor()",
+                    "error": {}
+                },
+                {
+                    "name": "startdate",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "494e07d4-9e79-43e5-b99c-b1fb84d88daa",
+                    "fakerFunction": "faker.date.past(5)",
+                    "error": {}
+                },
+                {
+                    "name": "phone",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "601832bc-9ac4-451f-8171-bab1d8da299e",
+                    "fakerFunction": "faker.phone.number('+32 ### ## ## ##')",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "bd1e2b28-eea6-4f95-b724-9df55c086289"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "GUID": "508246dd-3cfb-4bf4-9d81-ef509505b2ca",
+                    "name": "nameindex",
+                    "isActivated": true,
+                    "key": [
+                        {
+                            "keyId": "1a9660b1-1827-4f5f-88d9-cb5f4b18d7ae",
+                            "type": "ascending"
+                        }
+                    ],
+                    "unique": false,
+                    "dropDups": false,
+                    "sparse": false,
+                    "expireAfterSeconds": "",
+                    "background": false,
+                    "weights": "",
+                    "min": -180,
+                    "max": 180,
+                    "bits": 26,
+                    "language_override": "language",
+                    "storageEngineName": "WiredTiger",
+                    "collation": {}
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+            "bucketId": "60482942-f772-4ed8-bab8-fcc4adcc8a08",
+            "error": {}
+        }
+    ],
+    "buckets": [
+        {
+            "name": "FakerDemo",
+            "type": "bucket",
+            "collectionIds": [
+                "a5d659a8-330c-4010-8d95-a6d118df690a",
+                "5f6a2e81-e9a5-414b-a5a9-db01958e5039"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "60482942-f772-4ed8-bab8-fcc4adcc8a08"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Company.id to Employee.company",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "a5d659a8-330c-4010-8d95-a6d118df690a",
+                    "00a3c353-418f-4711-bad7-a2fb12de258a"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+                    "1b1b7c1e-886f-4ee7-92f1-eddb7d96756c"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "parentCollection": "a5d659a8-330c-4010-8d95-a6d118df690a",
+            "childCollection": "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+            "GUID": "d999905d-62b4-499a-89a8-c203f2176c00",
+            "hackoladeStyles": {
+                "GUID": "4d5b56b2-553b-4f14-bb7c-597120492cea",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 299,
+                        "y": 424
+                    },
+                    {
+                        "x": 299,
+                        "y": 387.5
+                    },
+                    {
+                        "x": 195.5,
+                        "y": 387.5
+                    },
+                    {
+                        "x": 195.5,
+                        "y": 351
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "60482942-f772-4ed8-bab8-fcc4adcc8a08": "FakerDemo",
+        "a5d659a8-330c-4010-8d95-a6d118df690a": "Company",
+        "00a3c353-418f-4711-bad7-a2fb12de258a": "CompanyName",
+        "5f6a2e81-e9a5-414b-a5a9-db01958e5039": "Employee",
+        "601832bc-9ac4-451f-8171-bab1d8da299e": "phone",
+        "1a9660b1-1827-4f5f-88d9-cb5f4b18d7ae": "name",
+        "982c418a-586e-4b7e-9fde-cf910157683e": "prefix",
+        "1b1b7c1e-886f-4ee7-92f1-eddb7d96756c": "company",
+        "bd5a14aa-de5c-4e35-a49c-dfe24879ad4a": "jobtitle",
+        "1137e22f-4306-4cef-97d4-6b5cddf680f0": "jobtype",
+        "4107146a-7bad-4d54-b526-4e0a9c7578ed": "seniority",
+        "494e07d4-9e79-43e5-b99c-b1fb84d88daa": "startdate",
+        "d999905d-62b4-499a-89a8-c203f2176c00": "fk Company.id to Employee.company"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "6a7ce922-dd90-4e25-a104-25587fca812d"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "1e879485-4bce-47de-a0fd-5508035d216b"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "8b113832-a1f8-4776-a720-ed09058a46db"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-03-19T11:06:14.271Z",
+    "GUID": "3443d721-21ce-43c2-a625-f971c881c78f",
+    "isLineageEnabled": false,
+    "lastModifTS": "2023-03-20T07:41:38.662Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.7"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "a5d659a8-330c-4010-8d95-a6d118df690a",
+                        "x": 80,
+                        "y": 300,
+                        "width": 231,
+                        "height": 51,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "5f6a2e81-e9a5-414b-a5a9-db01958e5039",
+                        "x": 193,
+                        "y": 424,
+                        "width": 212,
+                        "height": 177,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 260,
+                        "GUID": "60482942-f772-4ed8-bab8-fcc4adcc8a08"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "hideAnnotations": true,
+                    "hideErdRelationshipsNames": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

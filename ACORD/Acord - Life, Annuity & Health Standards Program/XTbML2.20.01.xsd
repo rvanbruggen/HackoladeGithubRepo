@@ -1,0 +1,302 @@
+<!--
+
+
+IMPORTANT NOTE:      This document contains or relates to ACORD Standard Life, Annuity &amp; Health. You are 
+       not authorized to use the ACORD Standard contained in this document unless you have accepted the terms and 
+       conditions of the Standards License accessible at http://legal.acord.org/standards_license.htm. To gain such 
+       authorization, please go to that site and, if you agree with the terms and conditions of the Standards License, 
+       enter whatever information is called for, if any, and click on "Accept".
+
+
+
+        ACORD XTbML Business Message/Transaction Specification
+        Revision: 2.20.01
+        Date: Monday, February 23, 2009
+        (c) ACORD Corporation, 2000-2003 All Rights Reserved - www.acord.org
+        For Use Only by ACORD Members and parties obtaining written ACORD permission
+        under the ACORD Standards Terms and Conditions of Use
+        Produced by Blue Frog ADMServer - www.bluefrogsolutions.com
+
+-->
+<xsd:schema targetNamespace="http://ACORD.org/Standards/Life/2" xmlns="http://ACORD.org/Standards/Life/2" elementFormDefault="unqualified" attributeFormDefault="unqualified" version="2.20.01" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <xsd:include schemaLocation="XlifeBase2.20.01.xsd" />
+ <xsd:element name="Axis" type="Axis_Type" />
+ <xsd:complexType name="Axis_Type">
+  <xsd:choice>
+   <xsd:element ref="Axis" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:sequence>
+    <xsd:element ref="Y" minOccurs="0" maxOccurs="unbounded" />
+    <xsd:element ref="Extension" minOccurs="0" maxOccurs="unbounded" />
+   </xsd:sequence>
+  </xsd:choice>
+  <xsd:attribute name="T" type="xsd:string" />
+  <xsd:attribute name="DT" type="xsd:date" />
+  <xsd:attribute name="AxisDefID" type="xsd:IDREF" />
+ </xsd:complexType>
+ <xsd:element name="AxisDef" type="AxisDef_Type" />
+ <xsd:complexType name="AxisDef_Type">
+  <xsd:sequence>
+   <xsd:element ref="ScaleType" minOccurs="0" />
+   <xsd:element ref="ScaleSubType" minOccurs="0" />
+   <xsd:element ref="BandingType" minOccurs="0" />
+   <xsd:element ref="AxisName" minOccurs="0" />
+   <xsd:element ref="DimensionSequence" minOccurs="0" />
+   <xsd:choice>
+    <xsd:sequence>
+     <xsd:element ref="MinScaleDate" minOccurs="0" />
+     <xsd:element ref="MaxScaleDate" minOccurs="0" />
+    </xsd:sequence>
+    <xsd:sequence>
+     <xsd:element ref="MinScaleValue" minOccurs="0" />
+     <xsd:element ref="MaxScaleValue" minOccurs="0" />
+    </xsd:sequence>
+   </xsd:choice>
+   <xsd:element ref="Increment" minOccurs="0" />
+   <xsd:element ref="Mode" minOccurs="0" />
+   <xsd:element ref="Continuous" minOccurs="0" />
+   <xsd:element ref="AgeCalculationType" minOccurs="0" />
+   <xsd:element ref="TimingOption" minOccurs="0" />
+   <xsd:element ref="EnumeratedValue" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:element ref="Extension" minOccurs="0" maxOccurs="unbounded" />
+  </xsd:sequence>
+  <xsd:attribute name="id" type="xsd:ID" />
+ </xsd:complexType>
+ <xsd:element name="ComplexContentDescriptor" type="ComplexContentDescriptor_Type" />
+ <xsd:complexType name="ComplexContentDescriptor_Type">
+  <xsd:sequence>
+   <xsd:element ref="ComplexContentDescriptorKey" minOccurs="0" />
+   <xsd:element ref="ComplexContentDescriptorSysKey" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:element ref="ComplexContentCode" minOccurs="0" />
+   <xsd:element ref="ContentSubType" minOccurs="0" />
+   <xsd:element ref="ScalingFactor" minOccurs="0" />
+   <xsd:element ref="DataType" minOccurs="0" />
+   <xsd:element ref="CurrencyTypeCode" minOccurs="0" />
+   <xsd:element ref="Mode" minOccurs="0" />
+   <xsd:element ref="OLifEExtension" minOccurs="0" maxOccurs="unbounded" />
+  </xsd:sequence>
+  <xsd:attribute name="id" type="xsd:ID" />
+  <xsd:attribute name="DataRep" type="DATAREP_TYPES" />
+ </xsd:complexType>
+ <xsd:element name="ContentClassification" type="ContentClassification_Type" />
+ <xsd:complexType name="ContentClassification_Type">
+  <xsd:sequence>
+   <xsd:element ref="ContentClassificationKey" minOccurs="0" />
+   <xsd:element ref="TableIdentity" minOccurs="0" />
+   <xsd:element ref="ProviderDomain" minOccurs="0" />
+   <xsd:element ref="ProviderName" minOccurs="0" />
+   <xsd:element ref="TableURL" minOccurs="0" />
+   <xsd:element ref="TableReference" minOccurs="0" />
+   <xsd:element ref="ContentType" />
+   <xsd:element ref="TableName" minOccurs="0" />
+   <xsd:element ref="TableDescription" minOccurs="0" />
+   <xsd:element ref="EffDate" minOccurs="0" />
+   <xsd:element ref="Comments" minOccurs="0" />
+   <xsd:element ref="KeyWord" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:element ref="MortalityOrMorbidityTable" minOccurs="0" />
+   <xsd:element ref="ContentSubType" minOccurs="0" />
+   <xsd:element ref="ComplexContentInd" minOccurs="0" />
+   <xsd:element ref="Extension" minOccurs="0" maxOccurs="unbounded" />
+  </xsd:sequence>
+ </xsd:complexType>
+ <xsd:element name="Extension" type="Extension_Type" />
+ <xsd:complexType mixed="true" name="Extension_Type">
+  <xsd:sequence>
+   <xsd:any processContents="skip" maxOccurs="unbounded" />
+  </xsd:sequence>
+  <xsd:attribute name="VendorCode" type="xsd:string" use="required" />
+  <xsd:attribute name="ExtensionCode" type="xsd:string" />
+ </xsd:complexType>
+ <xsd:element name="Key" type="Key_Type" />
+ <xsd:complexType name="Key_Type">
+  <xsd:choice>
+   <xsd:element ref="Key" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:element ref="Axis" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:sequence>
+    <xsd:element ref="Y" minOccurs="0" maxOccurs="unbounded" />
+    <xsd:element ref="Extension" minOccurs="0" maxOccurs="unbounded" />
+   </xsd:sequence>
+  </xsd:choice>
+  <xsd:attribute name="tc" use="optional">
+   <xsd:simpleType>
+    <xsd:restriction base="XTbML_DEFAULT_TYPE_CODE" />
+   </xsd:simpleType>
+  </xsd:attribute>
+  <xsd:attribute name="KeyIs" type="xsd:string" />
+  <xsd:attribute name="KeyDefID" type="xsd:IDREF" />
+ </xsd:complexType>
+ <xsd:element name="KeyDef" type="KeyDef_Type" />
+ <xsd:complexType name="KeyDef_Type">
+  <xsd:sequence>
+   <xsd:element ref="KeyType" />
+   <xsd:element ref="KeySubType" minOccurs="0" />
+   <xsd:element ref="KeySubClassType" minOccurs="0" />
+   <xsd:element ref="KeySubClass" minOccurs="0" />
+   <xsd:element ref="KeyName" minOccurs="0" />
+   <xsd:element ref="DimensionSequence" minOccurs="0" />
+   <xsd:choice>
+    <xsd:element ref="EnumeratedTypeCodeValue" minOccurs="0" maxOccurs="unbounded" />
+    <xsd:element ref="EnumeratedStringValue" minOccurs="0" maxOccurs="unbounded" />
+   </xsd:choice>
+   <xsd:element ref="KeyCodeType" minOccurs="0" />
+   <xsd:element ref="Extension" minOccurs="0" maxOccurs="unbounded" />
+  </xsd:sequence>
+  <xsd:attribute name="id" type="xsd:ID" />
+ </xsd:complexType>
+ <xsd:element name="MetaData" type="MetaData_Type" />
+ <xsd:complexType name="MetaData_Type">
+  <xsd:sequence>
+   <xsd:element ref="ScalingFactor" minOccurs="0" />
+   <xsd:element ref="DataType" minOccurs="0" />
+   <xsd:element ref="CurrencyTypeCode" minOccurs="0" />
+   <xsd:element ref="Nation" minOccurs="0" />
+   <xsd:element ref="JurisdictionCC" minOccurs="0" />
+   <xsd:element ref="TableDescription" minOccurs="0" />
+   <xsd:element ref="StructureType" minOccurs="0" />
+   <xsd:element ref="Mode" minOccurs="0" />
+   <xsd:element ref="KeyDef" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:element ref="AxisDef" minOccurs="0" maxOccurs="unbounded" />
+   <xsd:element ref="ComplexContentDescriptor" minOccurs="0" maxOccurs="unbounded" />
+  </xsd:sequence>
+ </xsd:complexType>
+ <xsd:element name="Table" type="Table_Type" />
+ <xsd:complexType name="Table_Type">
+  <xsd:sequence>
+   <xsd:element ref="MetaData" />
+   <xsd:element ref="Values" />
+  </xsd:sequence>
+ </xsd:complexType>
+ <xsd:element name="Values" type="Values_Type" />
+ <xsd:complexType name="Values_Type">
+  <xsd:sequence>
+   <xsd:choice>
+    <xsd:element ref="Key" minOccurs="0" maxOccurs="unbounded" />
+    <xsd:element ref="Axis" minOccurs="0" maxOccurs="unbounded" />
+    <xsd:sequence>
+     <xsd:element ref="Y" minOccurs="0" maxOccurs="unbounded" />
+     <xsd:element ref="Extension" minOccurs="0" maxOccurs="unbounded" />
+    </xsd:sequence>
+   </xsd:choice>
+  </xsd:sequence>
+ </xsd:complexType>
+ <xsd:element name="XTbML" type="XTbML_Type" />
+ <xsd:complexType name="XTbML_Type">
+  <xsd:sequence>
+   <xsd:element ref="ContentClassification" />
+   <xsd:element ref="Table" minOccurs="0" maxOccurs="unbounded" />
+  </xsd:sequence>
+  <xsd:attribute name="Version" type="xsd:string" />
+  <xsd:attribute name="id" type="xsd:ID" />
+ </xsd:complexType>
+ <!-- ********** PROPERTIES ********** -->
+ <xsd:element name="AxisName" type="xsd:string" />
+ <xsd:element name="BandingType" type="BANDINGTYPE_TYPE" />
+ <xsd:element name="Comments" type="xsd:string" />
+ <xsd:element name="ComplexContentDescriptorKey" type="PERSISTKEY" />
+ <xsd:element name="ComplexContentDescriptorSysKey" type="SYSKEY" />
+ <xsd:element name="ComplexContentInd" type="OLI_LU_BOOLEAN" />
+ <xsd:element name="ContentClassificationKey" type="PERSISTKEY" />
+ <xsd:element name="DataType" type="OLI_LU_DATATYPE" />
+ <xsd:element name="DimensionSequence" type="xsd:integer" />
+ <xsd:element name="EnumeratedStringValue" type="xsd:string" />
+ <xsd:element name="EnumeratedTypeCodeValue" type="ENUMERATEDTYPECODEVALUE_TYPE" />
+ <xsd:element name="Increment" type="xsd:integer" />
+ <xsd:element name="KeyCodeType" type="OLI_LU_LOOKUP" />
+ <xsd:element name="KeySubClass" type="xsd:string" />
+ <xsd:element name="KeySubClassType" type="OLI_LU_OBJECTTYPE" />
+ <xsd:element name="KeySubType" type="KEYSUBTYPE_TYPE" />
+ <xsd:element name="KeyType" type="KEYTYPE_TYPE" />
+ <xsd:element name="KeyWord" type="xsd:string" />
+ <xsd:element name="MaxScaleDate" type="xsd:string" />
+ <xsd:element name="MaxScaleValue" type="xsd:string" />
+ <xsd:element name="MinScaleDate" type="xsd:string" />
+ <xsd:element name="MinScaleValue" type="xsd:string" />
+ <xsd:element name="MortalityOrMorbidityTable" type="OLI_LU_MORTALITYTBL" />
+ <xsd:element name="ProviderName" type="xsd:string" />
+ <xsd:element name="ScaleSubType" type="SCALESUBTYPE_TYPE" />
+ <xsd:element name="ScaleType" type="SCALETYPE_TYPE" />
+ <xsd:element name="ScalingFactor" type="xsd:integer" />
+ <xsd:element name="StructureType" type="OLI_LU_STRUCTURETYPE" />
+ <xsd:element name="TableDescription" type="xsd:string" />
+ <xsd:element name="TableReference" type="xsd:string" />
+ <xsd:element name="TableURL" type="xsd:string" />
+ <xsd:element name="Y">
+  <xsd:complexType>
+   <xsd:simpleContent>
+    <xsd:extension base="xsd:string">
+     <xsd:attribute name="ComplexContentDescriptorID" type="xsd:IDREF" use="optional"/>
+    </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+ <!-- ********** LOOKUPS ********** -->
+ <xsd:complexType name="BANDINGTYPE_TYPE">
+  <xsd:simpleContent>
+   <xsd:extension base="xsd:string">
+    <xsd:attribute name="tc" use="required" type="BANDINGTYPE_TYPE_TC" />
+   </xsd:extension>
+  </xsd:simpleContent>
+ </xsd:complexType>
+ <xsd:simpleType name="BANDINGTYPE_TYPE_TC">
+  <xsd:restriction base="ACORD_TYPE_CODE" />
+ </xsd:simpleType>
+ <xsd:complexType name="KEYSUBTYPE_TYPE">
+  <xsd:simpleContent>
+   <xsd:extension base="xsd:string">
+    <xsd:attribute name="tc" use="required" type="KEYSUBTYPE_TYPE_TC" />
+   </xsd:extension>
+  </xsd:simpleContent>
+ </xsd:complexType>
+ <xsd:simpleType name="KEYSUBTYPE_TYPE_TC">
+  <xsd:restriction base="ACORD_TYPE_CODE" />
+ </xsd:simpleType>
+ <xsd:complexType name="KEYTYPE_TYPE">
+  <xsd:simpleContent>
+   <xsd:extension base="xsd:string">
+    <xsd:attribute name="tc" use="required" type="KEYTYPE_TYPE_TC" />
+   </xsd:extension>
+  </xsd:simpleContent>
+ </xsd:complexType>
+ <xsd:simpleType name="KEYTYPE_TYPE_TC">
+  <xsd:restriction base="ACORD_TYPE_CODE" />
+ </xsd:simpleType>
+ <xsd:complexType name="OLI_LU_MORTALITYTBL">
+  <xsd:simpleContent>
+   <xsd:extension base="xsd:string">
+    <xsd:attribute name="tc" use="required" type="OLI_LU_MORTALITYTBL_TC" />
+   </xsd:extension>
+  </xsd:simpleContent>
+ </xsd:complexType>
+ <xsd:simpleType name="OLI_LU_MORTALITYTBL_TC">
+  <xsd:restriction base="ACORD_TYPE_CODE" />
+ </xsd:simpleType>
+ <xsd:complexType name="OLI_LU_STRUCTURETYPE">
+  <xsd:simpleContent>
+   <xsd:extension base="xsd:string">
+    <xsd:attribute name="tc" use="required" type="OLI_LU_STRUCTURETYPE_TC" />
+   </xsd:extension>
+  </xsd:simpleContent>
+ </xsd:complexType>
+ <xsd:simpleType name="OLI_LU_STRUCTURETYPE_TC">
+  <xsd:restriction base="ACORD_TYPE_CODE" />
+ </xsd:simpleType>
+ <xsd:complexType name="SCALESUBTYPE_TYPE">
+  <xsd:simpleContent>
+   <xsd:extension base="xsd:string">
+    <xsd:attribute name="tc" use="required" type="SCALESUBTYPE_TYPE_TC" />
+   </xsd:extension>
+  </xsd:simpleContent>
+ </xsd:complexType>
+ <xsd:simpleType name="SCALESUBTYPE_TYPE_TC">
+  <xsd:restriction base="ACORD_TYPE_CODE" />
+ </xsd:simpleType>
+ <xsd:complexType name="SCALETYPE_TYPE">
+  <xsd:simpleContent>
+   <xsd:extension base="xsd:string">
+    <xsd:attribute name="tc" use="required" type="SCALETYPE_TYPE_TC" />
+   </xsd:extension>
+  </xsd:simpleContent>
+ </xsd:complexType>
+ <xsd:simpleType name="SCALETYPE_TYPE_TC">
+  <xsd:restriction base="ACORD_TYPE_CODE" />
+ </xsd:simpleType>
+</xsd:schema>
