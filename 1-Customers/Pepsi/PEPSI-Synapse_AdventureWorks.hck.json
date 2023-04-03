@@ -8,7 +8,7 @@
             "additionalProperties": false,
             "properties": [
                 {
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "nvarchar",
                     "length": 50,
                     "subtype": "string",
@@ -32,8 +32,8 @@
                     "relationshipType": "",
                     "sample": "10.00.3590.01",
                     "GUID": "b6231055-9db0-41a3-9606-19c5efd8cb92",
-                    "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "error": {}
                 },
                 {
                     "primaryKey": false,
@@ -316,7 +316,9 @@
                     "GUID": "53809284-a3ec-439b-8d0f-2d852b04f822",
                     "error": {},
                     "childRelationships": [
-                        "1dbf802b-6267-46bd-9fc7-870046d0c8ea"
+                        "1dbf802b-6267-46bd-9fc7-870046d0c8ea",
+                        "bbf01675-b424-4e54-a88e-85412c19af0f",
+                        "022c86e0-c36d-4937-a0b8-1a933fd4eefa"
                     ],
                     "hackoladeMeta": {}
                 },
@@ -341,11 +343,17 @@
                     "name": "ParentAccountKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 51,
                     "GUID": "7286b31f-6cce-444f-8939-850715d574f5",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                    "foreignField": [
+                        "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                        "53809284-a3ec-439b-8d0f-2d852b04f822"
+                    ],
+                    "parentRelationship": "bbf01675-b424-4e54-a88e-85412c19af0f"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -395,11 +403,17 @@
                     "name": "ParentAccountCodeAlternateKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 4110,
                     "GUID": "54c70347-8f18-4786-b43d-389dbfc4b171",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                    "foreignField": [
+                        "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                        "53809284-a3ec-439b-8d0f-2d852b04f822"
+                    ],
+                    "parentRelationship": "022c86e0-c36d-4937-a0b8-1a933fd4eefa"
                 },
                 {
                     "primaryKey": false,
@@ -608,7 +622,10 @@
                     "GUID": "0a29a157-e350-4a31-a428-418263822adc",
                     "error": {},
                     "childRelationships": [
-                        "64ba0147-f64f-469f-8328-0187641433d3"
+                        "64ba0147-f64f-469f-8328-0187641433d3",
+                        "e91aedcc-ae3f-4ca6-bc3d-4e1db3951ace",
+                        "e68664f3-f50d-4e5a-9d4b-c40aa5481591",
+                        "44e7483d-e23c-4ac1-8f0a-13f65641ec04"
                     ],
                     "hackoladeMeta": {}
                 },
@@ -713,7 +730,11 @@
                     "sample": 17900,
                     "GUID": "8bcb94f7-3da8-490f-99a9-1c9f06759c86",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "9cd28887-e0ee-4798-a805-9d939e4a30a3",
+                        "12e8e3a0-1cb1-4d71-a0a1-3919c99278c3"
+                    ]
                 },
                 {
                     "exclusiveMinimum": false,
@@ -736,11 +757,17 @@
                     "name": "GeographyKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 204,
                     "GUID": "6abf7b71-f6d1-4d9c-8004-9ff8daf46c8f",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                    "foreignField": [
+                        "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                        "ee721453-f6c4-4056-8b48-64ec645d9b56"
+                    ],
+                    "parentRelationship": "1027e391-7bc9-478f-9350-259e7d799b29"
                 },
                 {
                     "primaryKey": false,
@@ -1513,7 +1540,13 @@
                     "childRelationships": [
                         "a6dd1784-1c41-4b8e-8f5a-7d2a6c89e6b7",
                         "a977635a-435d-45ea-a3ac-8d3392bef479",
-                        "3d75398e-a1a8-4c0d-8800-4b06bbac9851"
+                        "3d75398e-a1a8-4c0d-8800-4b06bbac9851",
+                        "821f5be3-9911-4745-8fdd-fed66c9bdfe8",
+                        "30a07813-f1c2-4d47-bc60-dbd50df7a177",
+                        "24d1e863-fd23-48c4-98ea-6638d569b7ca",
+                        "be1e6e66-09fd-4e30-8723-7463ed2c8332",
+                        "1d5834db-97e0-4f1c-8ab6-35d4b38d69e9",
+                        "41950770-123b-4b66-800d-e2d48c01efc8"
                     ],
                     "hackoladeMeta": {}
                 },
@@ -2174,7 +2207,12 @@
                     "sample": 274,
                     "GUID": "886648bb-7298-450a-8a36-71d4bd421030",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "7699a66a-d53e-406e-b575-b4899090b6ef",
+                        "3e1c937d-ec59-45c9-97ee-6704b6df1352",
+                        "5f1ba94e-2ee2-4f39-9efa-8416816ad593"
+                    ]
                 },
                 {
                     "exclusiveMinimum": false,
@@ -2197,11 +2235,17 @@
                     "name": "ParentEmployeeKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 3,
                     "GUID": "f6095982-8a90-430f-80d6-b77b03bad61d",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "foreignField": [
+                        "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                        "886648bb-7298-450a-8a36-71d4bd421030"
+                    ],
+                    "parentRelationship": "5f1ba94e-2ee2-4f39-9efa-8416816ad593"
                 },
                 {
                     "primaryKey": false,
@@ -2277,11 +2321,17 @@
                     "name": "SalesTerritoryKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 11,
                     "GUID": "a80a0f04-5068-41c8-82e9-b45c2d1a6840",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "foreignField": [
+                        "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                        "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                    ],
+                    "parentRelationship": "befe6cd1-6b79-499c-887b-2dfd40c0e470"
                 },
                 {
                     "primaryKey": false,
@@ -2996,7 +3046,11 @@
                     "sample": 654,
                     "GUID": "ee721453-f6c4-4056-8b48-64ec645d9b56",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "1027e391-7bc9-478f-9350-259e7d799b29",
+                        "45c8accc-b946-42f1-9880-ba444b64a166"
+                    ]
                 },
                 {
                     "primaryKey": false,
@@ -3235,11 +3289,17 @@
                     "name": "SalesTerritoryKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 1,
                     "GUID": "bbd6c7aa-02c3-4569-9664-30866d7625c9",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "foreignField": [
+                        "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                        "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                    ],
+                    "parentRelationship": "1ab5ee6b-e83f-4807-b242-2817254c3fe8"
                 }
             ],
             "definitions": {
@@ -3287,7 +3347,8 @@
                     "GUID": "fbe4bbe4-f61a-4b01-829d-e24046bcd7e8",
                     "error": {},
                     "childRelationships": [
-                        "cafd1cff-12a4-4abf-b7da-1e6278e7905a"
+                        "cafd1cff-12a4-4abf-b7da-1e6278e7905a",
+                        "7397554e-1527-4bf1-ac11-546a3ed9e061"
                     ],
                     "hackoladeMeta": {}
                 },
@@ -3312,11 +3373,17 @@
                     "name": "ParentOrganizationKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 14,
                     "GUID": "e49aac8a-f267-4a08-904d-061418da44a3",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "e3a41453-c68e-4527-9425-3def0477e394",
+                    "foreignField": [
+                        "e3a41453-c68e-4527-9425-3def0477e394",
+                        "fbe4bbe4-f61a-4b01-829d-e24046bcd7e8"
+                    ],
+                    "parentRelationship": "7397554e-1527-4bf1-ac11-546a3ed9e061"
                 },
                 {
                     "primaryKey": false,
@@ -3393,11 +3460,17 @@
                     "name": "CurrencyKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 100,
                     "GUID": "28677a15-f34f-4aaf-a429-27b0057f34c7",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "f53ae30c-0660-4665-be76-e05949b18cc4",
+                    "foreignField": [
+                        "f53ae30c-0660-4665-be76-e05949b18cc4",
+                        "0a29a157-e350-4a31-a428-418263822adc"
+                    ],
+                    "parentRelationship": "44e7483d-e23c-4ac1-8f0a-13f65641ec04"
                 }
             ],
             "definitions": {
@@ -3494,11 +3567,17 @@
                     "name": "ProductSubcategoryKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 1,
                     "GUID": "ebcc898d-6363-40d3-a9ea-6acc700d984c",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                    "foreignField": [
+                        "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                        "6f58a396-7daa-4c73-ae53-24366c0e8427"
+                    ],
+                    "parentRelationship": "c5350377-2df9-4a31-be50-111788bbce1f"
                 },
                 {
                     "primaryKey": false,
@@ -4406,7 +4485,11 @@
                     "sample": 4,
                     "GUID": "8e376c46-c863-4a4a-b07d-7b70d5f6a29c",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "62d22107-4382-4d6d-9d05-ae7d9f0cabf7",
+                        "b355f63a-6e2b-4ec8-be4b-f0f500be7066"
+                    ]
                 },
                 {
                     "exclusiveMinimum": false,
@@ -4564,7 +4647,11 @@
                     "sample": 33,
                     "GUID": "6f58a396-7daa-4c73-ae53-24366c0e8427",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "c5350377-2df9-4a31-be50-111788bbce1f",
+                        "0967bcf4-4528-4a2c-8103-863fc1da66c7"
+                    ]
                 },
                 {
                     "exclusiveMinimum": false,
@@ -4698,11 +4785,17 @@
                     "name": "ProductCategoryKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 4,
                     "GUID": "5508ce52-1112-4b73-8dd1-4a3099530755",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+                    "foreignField": [
+                        "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+                        "8e376c46-c863-4a4a-b07d-7b70d5f6a29c"
+                    ],
+                    "parentRelationship": "b355f63a-6e2b-4ec8-be4b-f0f500be7066"
                 }
             ],
             "definitions": {
@@ -4749,7 +4842,11 @@
                     "sample": 16,
                     "GUID": "11147c39-2088-43f8-bbb3-de18d94f3d25",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "184de0bd-8c9b-4195-9d55-81197ad332fc",
+                        "d4a8c3f0-9df7-4c13-959a-6e54fbc2a215"
+                    ]
                 },
                 {
                     "exclusiveMinimum": false,
@@ -5196,7 +5293,10 @@
                     "sample": 687,
                     "GUID": "0574ce91-d063-4ca8-bc9b-485a53ba7966",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "025b066c-93d1-4ea3-901a-11e8ff2a1f30"
+                    ]
                 },
                 {
                     "exclusiveMinimum": false,
@@ -5219,11 +5319,17 @@
                     "name": "GeographyKey",
                     "code": "",
                     "isActivated": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 159,
                     "GUID": "a4ef8a0c-40bf-4dd4-a515-fd9e40e75e5d",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                    "foreignField": [
+                        "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                        "ee721453-f6c4-4056-8b48-64ec645d9b56"
+                    ],
+                    "parentRelationship": "45c8accc-b946-42f1-9880-ba444b64a166"
                 },
                 {
                     "primaryKey": false,
@@ -5758,7 +5864,10 @@
                     "sample": 4,
                     "GUID": "a5501d16-b065-4d65-bcdf-3332cf0e9b8d",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "4bbb9575-d8eb-4cf8-b379-c583a758576f"
+                    ]
                 },
                 {
                     "exclusiveMinimum": false,
@@ -5866,7 +5975,7 @@
                 {
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "alternateKey": false,
                     "childType": "numeric",
@@ -5888,8 +5997,14 @@
                     "relationshipType": "",
                     "sample": 4,
                     "GUID": "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992",
-                    "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "e51a26ed-d440-49ae-87b2-5b6ac0bf87b7",
+                        "1ab5ee6b-e83f-4807-b242-2817254c3fe8",
+                        "befe6cd1-6b79-499c-887b-2dfd40c0e470",
+                        "e3066784-a1d3-465a-9866-538c02c47453"
+                    ],
+                    "error": {}
                 },
                 {
                     "exclusiveMinimum": false,
@@ -6489,7 +6604,7 @@
                 {
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "alternateKey": false,
                     "childType": "numeric",
@@ -6516,9 +6631,9 @@
                     "relationshipType": "Foreign Key",
                     "sample": 103,
                     "GUID": "760a87c0-a314-4619-8122-e3f4514e8611",
-                    "error": {},
                     "parentRelationship": "64ba0147-f64f-469f-8328-0187641433d3",
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "error": {}
                 },
                 {
                     "exclusiveMinimum": false,
@@ -6877,7 +6992,7 @@
                 {
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "alternateKey": false,
                     "childType": "numeric",
@@ -6899,8 +7014,8 @@
                     "relationshipType": "",
                     "sample": 373,
                     "GUID": "3589d984-7803-46d2-a805-41f7f9a36025",
-                    "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "error": {}
                 },
                 {
                     "exclusiveMinimum": false,
@@ -6952,11 +7067,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 20020815,
                     "GUID": "ebbc0284-1a58-47bf-b1b0-0ec488da2e7e",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "foreignField": [
+                        "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                        "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                    ],
+                    "parentRelationship": "be1e6e66-09fd-4e30-8723-7463ed2c8332"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -6980,11 +7101,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 20020810,
                     "GUID": "7f7cf372-98bb-4fdf-b5d1-ac0b1de90e29",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "foreignField": [
+                        "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                        "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                    ],
+                    "parentRelationship": "41950770-123b-4b66-800d-e2d48c01efc8"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7008,11 +7135,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 13378,
                     "GUID": "afd538d2-1661-48c1-9bef-79a3ec0ac9d6",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                    "foreignField": [
+                        "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                        "8bcb94f7-3da8-490f-99a9-1c9f06759c86"
+                    ],
+                    "parentRelationship": "12e8e3a0-1cb1-4d71-a0a1-3919c99278c3"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7036,11 +7169,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 1,
                     "GUID": "2ccf701a-5200-4581-a186-3b00a8c2500d",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+                    "foreignField": [
+                        "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+                        "11147c39-2088-43f8-bbb3-de18d94f3d25"
+                    ],
+                    "parentRelationship": "d4a8c3f0-9df7-4c13-959a-6e54fbc2a215"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7064,11 +7203,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 100,
                     "GUID": "2e44f221-09fa-4286-aaf2-485d5458b4ac",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "f53ae30c-0660-4665-be76-e05949b18cc4",
+                    "foreignField": [
+                        "f53ae30c-0660-4665-be76-e05949b18cc4",
+                        "0a29a157-e350-4a31-a428-418263822adc"
+                    ],
+                    "parentRelationship": "e91aedcc-ae3f-4ca6-bc3d-4e1db3951ace"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7092,11 +7237,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 4,
                     "GUID": "6f87db96-eb38-4d34-9091-5a470d8eee65",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "foreignField": [
+                        "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                        "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                    ],
+                    "parentRelationship": "e3066784-a1d3-465a-9866-538c02c47453"
                 },
                 {
                     "primaryKey": false,
@@ -7120,11 +7271,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": "SO47086",
                     "GUID": "e6d3ad02-7bd7-40b3-b6e8-2aa76fa2f5bc",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                    "foreignField": [
+                        "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                        "6e6ec79f-f9ff-458a-ab10-8210f2a5e9e5"
+                    ],
+                    "parentRelationship": "888bd294-38b6-4576-bc60-6d10cf7bede5"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7611,7 +7768,7 @@
             "additionalProperties": false,
             "properties": [
                 {
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "nvarchar",
                     "length": 20,
                     "subtype": "string",
@@ -7635,8 +7792,12 @@
                     "relationshipType": "",
                     "sample": "SO44461",
                     "GUID": "6e6ec79f-f9ff-458a-ab10-8210f2a5e9e5",
-                    "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "childRelationships": [
+                        "888bd294-38b6-4576-bc60-6d10cf7bede5",
+                        "ead7c28f-49e3-4055-8ed0-547bc83f83bb"
+                    ],
+                    "error": {}
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7688,11 +7849,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 5,
                     "GUID": "83d4b6b6-3ee4-49d0-a5e8-6ed9fbb0929a",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "d2e7d92b-0088-4939-8c72-43592fc7a972",
+                    "foreignField": [
+                        "d2e7d92b-0088-4939-8c72-43592fc7a972",
+                        "a5501d16-b065-4d65-bcdf-3332cf0e9b8d"
+                    ],
+                    "parentRelationship": "4bbb9575-d8eb-4cf8-b379-c583a758576f"
                 }
             ],
             "definitions": {
@@ -7791,11 +7958,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 20020713,
                     "GUID": "1f5e0d77-4c7f-4977-9696-5889a858e7c1",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "foreignField": [
+                        "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                        "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                    ],
+                    "parentRelationship": "1d5834db-97e0-4f1c-8ab6-35d4b38d69e9"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7819,11 +7992,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 20020708,
                     "GUID": "b4a4d8de-acc2-4d59-9fe3-461de3232447",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "foreignField": [
+                        "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                        "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                    ],
+                    "parentRelationship": "24d1e863-fd23-48c4-98ea-6638d569b7ca"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7847,11 +8026,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 618,
                     "GUID": "fc49cec6-202c-4d7b-98f4-e412bf787245",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "9bb78135-d154-41ec-a435-d678cca4bdb5",
+                    "foreignField": [
+                        "9bb78135-d154-41ec-a435-d678cca4bdb5",
+                        "0574ce91-d063-4ca8-bc9b-485a53ba7966"
+                    ],
+                    "parentRelationship": "025b066c-93d1-4ea3-901a-11e8ff2a1f30"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7875,11 +8060,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 281,
                     "GUID": "8b68c795-f056-4fa2-9e0c-6ddb9f8868f2",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "foreignField": [
+                        "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                        "886648bb-7298-450a-8a36-71d4bd421030"
+                    ],
+                    "parentRelationship": "7699a66a-d53e-406e-b575-b4899090b6ef"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7903,11 +8094,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 1,
                     "GUID": "f9e28f6d-bb63-459b-a4b5-70797dc64884",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+                    "foreignField": [
+                        "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+                        "11147c39-2088-43f8-bbb3-de18d94f3d25"
+                    ],
+                    "parentRelationship": "184de0bd-8c9b-4195-9d55-81197ad332fc"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7931,11 +8128,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 100,
                     "GUID": "05f52700-0744-48b6-9f35-593cb25126a4",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "f53ae30c-0660-4665-be76-e05949b18cc4",
+                    "foreignField": [
+                        "f53ae30c-0660-4665-be76-e05949b18cc4",
+                        "0a29a157-e350-4a31-a428-418263822adc"
+                    ],
+                    "parentRelationship": "e68664f3-f50d-4e5a-9d4b-c40aa5481591"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -7959,11 +8162,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 2,
                     "GUID": "d04fe22c-75b4-4a6c-8ec3-bca542fe6254",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "foreignField": [
+                        "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                        "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                    ],
+                    "parentRelationship": "e51a26ed-d440-49ae-87b2-5b6ac0bf87b7"
                 },
                 {
                     "primaryKey": false,
@@ -7987,11 +8196,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": "SO46620",
                     "GUID": "f02e5909-2202-4943-b197-7970f2dcf5a3",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                    "foreignField": [
+                        "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                        "6e6ec79f-f9ff-458a-ab10-8210f2a5e9e5"
+                    ],
+                    "parentRelationship": "ead7c28f-49e3-4055-8ed0-547bc83f83bb"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -8394,7 +8609,7 @@
                 {
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "alternateKey": false,
                     "childType": "numeric",
@@ -8416,8 +8631,8 @@
                     "relationshipType": "",
                     "sample": 135,
                     "GUID": "bf1a3410-1c09-4a94-8415-ee1a018f2e15",
-                    "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "error": {}
                 },
                 {
                     "exclusiveMinimum": false,
@@ -8441,11 +8656,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 285,
                     "GUID": "bd7ec7fd-e16f-4d09-ad9d-619a063e321f",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "foreignField": [
+                        "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                        "886648bb-7298-450a-8a36-71d4bd421030"
+                    ],
+                    "parentRelationship": "3e1c937d-ec59-45c9-97ee-6704b6df1352"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -8469,11 +8690,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 20040101,
                     "GUID": "629fc713-f3c9-4049-b291-44b4fc0fe085",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "foreignField": [
+                        "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                        "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                    ],
+                    "parentRelationship": "30a07813-f1c2-4d47-bc60-dbd50df7a177"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -8581,7 +8808,7 @@
                 {
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "alternateKey": false,
                     "childType": "numeric",
@@ -8603,8 +8830,8 @@
                     "relationshipType": "",
                     "sample": 527,
                     "GUID": "3702248b-5cb5-416b-b958-203d8c714ef1",
-                    "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "error": {}
                 },
                 {
                     "exclusiveMinimum": false,
@@ -8628,11 +8855,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 20020906,
                     "GUID": "7daa949c-2b3c-427e-b9a8-2fce9cf36621",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "foreignField": [
+                        "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                        "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                    ],
+                    "parentRelationship": "821f5be3-9911-4745-8fdd-fed66c9bdfe8"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -8656,11 +8889,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 16032,
                     "GUID": "ae1328fd-2a1e-41e3-a9de-a0c8948eedcb",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                    "foreignField": [
+                        "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                        "8bcb94f7-3da8-490f-99a9-1c9f06759c86"
+                    ],
+                    "parentRelationship": "9cd28887-e0ee-4798-a805-9d939e4a30a3"
                 },
                 {
                     "exclusiveMinimum": false,
@@ -8684,11 +8923,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 4,
                     "GUID": "236383ba-bdf0-4b21-9923-c93ec7d76750",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+                    "foreignField": [
+                        "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+                        "8e376c46-c863-4a4a-b07d-7b70d5f6a29c"
+                    ],
+                    "parentRelationship": "62d22107-4382-4d6d-9d05-ae7d9f0cabf7"
                 },
                 {
                     "primaryKey": false,
@@ -8740,11 +8985,17 @@
                     "code": "",
                     "isActivated": true,
                     "required": true,
-                    "relationshipType": "",
+                    "relationshipType": "Foreign Key",
                     "sample": 26,
                     "GUID": "b2dbb32a-f6fe-4476-92d0-bcfd68bf6791",
                     "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "foreignCollection": "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                    "foreignField": [
+                        "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                        "6f58a396-7daa-4c73-ae53-24366c0e8427"
+                    ],
+                    "parentRelationship": "0967bcf4-4528-4a2c-8103-863fc1da66c7"
                 },
                 {
                     "primaryKey": false,
@@ -8796,7 +9047,7 @@
                 {
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
+                    "primaryKey": true,
                     "mode": "int",
                     "alternateKey": false,
                     "childType": "numeric",
@@ -8818,8 +9069,8 @@
                     "relationshipType": "",
                     "sample": 291,
                     "GUID": "4edbafe3-49df-4bba-ad77-687c4ef6d88a",
-                    "error": {},
-                    "hackoladeMeta": {}
+                    "hackoladeMeta": {},
+                    "error": {}
                 },
                 {
                     "primaryKey": false,
@@ -10399,20 +10650,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 3215.6201775378236,
-                        "y": 2426.57566910469
+                        "x": 12139.5,
+                        "y": 11773.000000953674
                     },
                     {
-                        "x": 3215.6201775378236,
-                        "y": 2378.075669581527
+                        "x": 12139.5,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 3215.6201775378236,
-                        "y": 2378.075669581527
+                        "x": 12086,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 3215.6201775378236,
-                        "y": 2329.5756700583643
+                        "x": 12086,
+                        "y": 11677.000001907349
                     }
                 ],
                 "sides": [
@@ -10453,20 +10704,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 2611.120178491498,
-                        "y": 2479.57566910469
+                        "x": 11525.000000953674,
+                        "y": 11825.000000953674
                     },
                     {
-                        "x": 2827.6201780146607,
-                        "y": 2479.57566910469
+                        "x": 11752.000000476837,
+                        "y": 11825.000000953674
                     },
                     {
-                        "x": 2827.6201780146607,
-                        "y": 2182.0756700583643
+                        "x": 11752.000000476837,
+                        "y": 11584.000001907349
                     },
                     {
-                        "x": 3044.1201775378236,
-                        "y": 2182.0756700583643
+                        "x": 11979,
+                        "y": 11584.000001907349
                     }
                 ],
                 "sides": [
@@ -10507,20 +10758,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 2426.4535118248314,
-                        "y": 2426.57566910469
+                        "x": 11354.333334287008,
+                        "y": 11773.000000953674
                     },
                     {
-                        "x": 2426.4535118248314,
-                        "y": 2390.075669581527
+                        "x": 11354.333334287008,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 2162.620178491498,
-                        "y": 2390.075669581527
+                        "x": 11086.500000953674,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 2162.620178491498,
-                        "y": 2353.5756700583643
+                        "x": 11086.500000953674,
+                        "y": 11677.000001907349
                     }
                 ],
                 "sides": [
@@ -10561,20 +10812,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 2518.7868451581644,
-                        "y": 2426.57566910469
+                        "x": 11439.66666762034,
+                        "y": 11773.000000953674
                     },
                     {
-                        "x": 2518.7868451581644,
-                        "y": 2324.742336248194
+                        "x": 11439.66666762034,
+                        "y": 11677.000001430511
                     },
                     {
-                        "x": 2471.620178491498,
-                        "y": 2324.742336248194
+                        "x": 11453.500000953674,
+                        "y": 11677.000001430511
                     },
                     {
-                        "x": 2471.620178491498,
-                        "y": 2222.9090033916978
+                        "x": 11453.500000953674,
+                        "y": 11581.000001907349
                     }
                 ],
                 "sides": [
@@ -10615,24 +10866,24 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 2471.620178491498,
-                        "y": 2135.9090033916978
+                        "x": 11453.500000953674,
+                        "y": 11497.000001907349
                     },
                     {
-                        "x": 2471.620178491498,
-                        "y": 2110.9090033916978
+                        "x": 11453.500000953674,
+                        "y": 11472.000001907349
                     },
                     {
-                        "x": 2677.120178491498,
-                        "y": 2110.9090033916978
+                        "x": 11648.000000953674,
+                        "y": 11472.000001907349
                     },
                     {
-                        "x": 2677.120178491498,
-                        "y": 2179.4090033916978
+                        "x": 11648.000000953674,
+                        "y": 11539.000001907349
                     },
                     {
-                        "x": 2652.120178491498,
-                        "y": 2179.4090033916978
+                        "x": 11623.000000953674,
+                        "y": 11539.000001907349
                     }
                 ],
                 "sides": [
@@ -10673,20 +10924,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 3633.897708573486,
-                        "y": 2429.497884277138
+                        "x": 12490.000000000002,
+                        "y": 11773.000000953674
                     },
                     {
-                        "x": 3633.897708573486,
-                        "y": 2383.15345440908
+                        "x": 12490.000000000002,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 3634.3311265041157,
-                        "y": 2383.15345440908
+                        "x": 12490,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 3634.3311265041157,
-                        "y": 2336.809024541022
+                        "x": 12490,
+                        "y": 11677.000001907349
                     }
                 ],
                 "sides": [
@@ -10727,25 +10978,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 3516.397708573486,
-                        "y": 2481.997884277138
+                        "x": 12416.333333333334,
+                        "y": 11773.000000953674
                     },
                     {
-                        "x": 3451.7589430556545,
-                        "y": 2481.997884277138
+                        "x": 12416.333333333334,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 3451.7589430556545,
-                        "y": 2182.0756700583643
+                        "x": 12193,
+                        "y": 11725.000001430511
                     },
                     {
-                        "x": 3387.1201775378236,
-                        "y": 2182.0756700583643
+                        "x": 12193,
+                        "y": 11677.000001907349
                     }
                 ],
                 "sides": [
-                    "left",
-                    "right"
+                    "top",
+                    "bottom"
                 ]
             },
             "hackoladeMeta": {},
@@ -10781,20 +11032,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 2611.120178491498,
-                        "y": 2532.57566910469
+                        "x": 11525.000000953674,
+                        "y": 11877.000000953674
                     },
                     {
-                        "x": 2660.286844681328,
-                        "y": 2532.57566910469
+                        "x": 11602.000000476837,
+                        "y": 11877.000000953674
                     },
                     {
-                        "x": 2660.286844681328,
-                        "y": 2559.0756700583643
+                        "x": 11602.000000476837,
+                        "y": 11644.000001907349
                     },
                     {
-                        "x": 2709.453510871158,
-                        "y": 2559.0756700583643
+                        "x": 11679,
+                        "y": 11644.000001907349
                     }
                 ],
                 "sides": [
@@ -10835,20 +11086,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 2334.120178491498,
-                        "y": 2506.07566910469
+                        "x": 11269.000000953674,
+                        "y": 11851.000000953674
                     },
                     {
-                        "x": 2158.620178491498,
-                        "y": 2506.07566910469
+                        "x": 11079.000000953674,
+                        "y": 11851.000000953674
                     },
                     {
-                        "x": 2158.620178491498,
-                        "y": 2513.0756700583643
+                        "x": 11079.000000953674,
+                        "y": 11624.500001907349
                     },
                     {
-                        "x": 1983.1201784914979,
-                        "y": 2513.0756700583643
+                        "x": 10889.000000953674,
+                        "y": 11624.500001907349
                     }
                 ],
                 "sides": [
@@ -10858,6 +11109,1705 @@
             },
             "hackoladeMeta": {},
             "GUID": "1dbf802b-6267-46bd-9fc7-870046d0c8ea"
+        },
+        {
+            "GUID": "7699a66a-d53e-406e-b575-b4899090b6ef",
+            "name": "fk FactResellerSales.EmployeeKey to DimEmployee.EmployeeKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+            "parentField": [
+                [
+                    "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "886648bb-7298-450a-8a36-71d4bd421030"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "8b68c795-f056-4fa2-9e0c-6ddb9f8868f2"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "b5f7a711-9892-4e66-9a67-bd8234732fa2",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11215.000002861023,
+                        "y": 10871.500001907349
+                    },
+                    {
+                        "x": 10836.000001430511,
+                        "y": 10871.500001907349
+                    },
+                    {
+                        "x": 10836.000001430511,
+                        "y": 11676.500002861023
+                    },
+                    {
+                        "x": 10457,
+                        "y": 11676.500002861023
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "3e1c937d-ec59-45c9-97ee-6704b6df1352",
+            "name": "fk FactSalesQuota.EmployeeKey to DimEmployee.EmployeeKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+            "parentField": [
+                [
+                    "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "886648bb-7298-450a-8a36-71d4bd421030"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "305635cb-5fba-47ee-93e4-0530bbad5e5c",
+            "childField": [
+                [
+                    "305635cb-5fba-47ee-93e4-0530bbad5e5c",
+                    "bd7ec7fd-e16f-4d09-ad9d-619a063e321f"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "7faab120-47ee-4424-adf2-39034f3867d8",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12502.00000667572,
+                        "y": 10141.333333333334
+                    },
+                    {
+                        "x": 11479.50000333786,
+                        "y": 10141.333333333334
+                    },
+                    {
+                        "x": 11479.50000333786,
+                        "y": 11391.500002861023
+                    },
+                    {
+                        "x": 10457,
+                        "y": 11391.500002861023
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "c5350377-2df9-4a31-be50-111788bbce1f",
+            "name": "fk DimProduct.ProductSubcategoryKey to DimProductSubcategory.ProductSubcategoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+            "parentField": [
+                [
+                    "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                    "6f58a396-7daa-4c73-ae53-24366c0e8427"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "871923e5-fbaa-465d-8d54-69107180e747",
+            "childField": [
+                [
+                    "871923e5-fbaa-465d-8d54-69107180e747",
+                    "ebcc898d-6363-40d3-a9ea-6acc700d984c"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "3ff45a60-3408-414d-9269-a3d6935d3469",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12743.00000667572,
+                        "y": 10855.000001907349
+                    },
+                    {
+                        "x": 12337.000005245209,
+                        "y": 10855.000001907349
+                    },
+                    {
+                        "x": 12337.000005245209,
+                        "y": 10343.000000953674
+                    },
+                    {
+                        "x": 11931.000003814697,
+                        "y": 10343.000000953674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "62d22107-4382-4d6d-9d05-ae7d9f0cabf7",
+            "name": "fk FactSurveyResponse.ProductCategoryKey to DimProductCategory.ProductCategoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+            "parentField": [
+                [
+                    "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+                    "8e376c46-c863-4a4a-b07d-7b70d5f6a29c"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+            "childField": [
+                [
+                    "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+                    "236383ba-bdf0-4b21-9923-c93ec7d76750"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "1b1c4c23-7909-4aea-b6a7-9c98d39d2e78",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11995.000004768372,
+                        "y": 10302.66666762034
+                    },
+                    {
+                        "x": 11577.00000333786,
+                        "y": 10302.66666762034
+                    },
+                    {
+                        "x": 11577.00000333786,
+                        "y": 10331.000000953674
+                    },
+                    {
+                        "x": 11159.000001907349,
+                        "y": 10331.000000953674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "0967bcf4-4528-4a2c-8103-863fc1da66c7",
+            "name": "fk FactSurveyResponse.ProductSubcategoryKey to DimProductSubcategory.ProductSubcategoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+            "parentField": [
+                [
+                    "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                    "6f58a396-7daa-4c73-ae53-24366c0e8427"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+            "childField": [
+                [
+                    "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+                    "b2dbb32a-f6fe-4476-92d0-bcfd68bf6791"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "2eabbb1f-a19d-43c6-8d1b-218048ecc48a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11995.000004768372,
+                        "y": 10354.333334287008
+                    },
+                    {
+                        "x": 11963.000004291534,
+                        "y": 10354.333334287008
+                    },
+                    {
+                        "x": 11963.000004291534,
+                        "y": 10297.000000953674
+                    },
+                    {
+                        "x": 11931.000003814697,
+                        "y": 10297.000000953674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "184de0bd-8c9b-4195-9d55-81197ad332fc",
+            "name": "fk FactResellerSales.PromotionKey to DimPromotion.PromotionKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+            "parentField": [
+                [
+                    "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+                    "11147c39-2088-43f8-bbb3-de18d94f3d25"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "f9e28f6d-bb63-459b-a4b5-70797dc64884"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "90aa902f-8279-407e-b5c8-554bde3102d2",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11215.000002861023,
+                        "y": 10756.000001907349
+                    },
+                    {
+                        "x": 11004.500001907349,
+                        "y": 10756.000001907349
+                    },
+                    {
+                        "x": 11004.500001907349,
+                        "y": 10631.000001907349
+                    },
+                    {
+                        "x": 10794.000000953674,
+                        "y": 10631.000001907349
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "821f5be3-9911-4745-8fdd-fed66c9bdfe8",
+            "name": "fk FactSurveyResponse.DateKey to DimDate.DateKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+            "parentField": [
+                [
+                    "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+            "childField": [
+                [
+                    "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+                    "7daa949c-2b3c-427e-b9a8-2fce9cf36621"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "fbec52df-8c0c-4e31-82df-57971716d460",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12116.333338101706,
+                        "y": 10406.000000953674
+                    },
+                    {
+                        "x": 12116.333338101706,
+                        "y": 10855.500001430511
+                    },
+                    {
+                        "x": 12219.75,
+                        "y": 10855.500001430511
+                    },
+                    {
+                        "x": 12219.75,
+                        "y": 11305.000001907349
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "GUID": "9cd28887-e0ee-4798-a805-9d939e4a30a3",
+            "name": "fk FactSurveyResponse.CustomerKey to DimCustomer.CustomerKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+            "parentField": [
+                [
+                    "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                    "8bcb94f7-3da8-490f-99a9-1c9f06759c86"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+            "childField": [
+                [
+                    "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+                    "ae1328fd-2a1e-41e3-a9de-a0c8948eedcb"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "9baac53c-418e-406d-8e81-f1794b33850a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12237.666671435038,
+                        "y": 10406.000000953674
+                    },
+                    {
+                        "x": 12237.666671435038,
+                        "y": 10465.500001430511
+                    },
+                    {
+                        "x": 12463.000005722046,
+                        "y": 10465.500001430511
+                    },
+                    {
+                        "x": 12463.000005722046,
+                        "y": 10525.000001907349
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "GUID": "d4a8c3f0-9df7-4c13-959a-6e54fbc2a215",
+            "name": "fk FactInternetSales.PromotionKey to DimPromotion.PromotionKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+            "parentField": [
+                [
+                    "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+                    "11147c39-2088-43f8-bbb3-de18d94f3d25"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+            "childField": [
+                [
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "2ccf701a-5200-4581-a186-3b00a8c2500d"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "6280efd1-e666-46d1-aa3c-601a1bd41f0f",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11976.000004768372,
+                        "y": 10897.750001907349
+                    },
+                    {
+                        "x": 11385.000002861023,
+                        "y": 10897.750001907349
+                    },
+                    {
+                        "x": 11385.000002861023,
+                        "y": 10737.000001907349
+                    },
+                    {
+                        "x": 10794.000000953674,
+                        "y": 10737.000001907349
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "e51a26ed-d440-49ae-87b2-5b6ac0bf87b7",
+            "name": "fk FactResellerSales.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+            "parentField": [
+                [
+                    "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "d04fe22c-75b4-4a6c-8ec3-bca542fe6254"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "b19ed183-7107-441d-94c2-ba829251dd87",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11215.000002861023,
+                        "y": 10640.500001907349
+                    },
+                    {
+                        "x": 10980.500001907349,
+                        "y": 10640.500001907349
+                    },
+                    {
+                        "x": 10980.500001907349,
+                        "y": 10310.500000953674
+                    },
+                    {
+                        "x": 10746.000000953674,
+                        "y": 10310.500000953674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "1ab5ee6b-e83f-4807-b242-2817254c3fe8",
+            "name": "fk DimGeography.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+            "parentField": [
+                [
+                    "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "6a9a8f5a-b689-4438-807e-bb14536051a2",
+            "childField": [
+                [
+                    "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                    "bbd6c7aa-02c3-4569-9664-30866d7625c9"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "999875c1-4cf0-4584-8862-1ac913c74b6d",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12423.000005722046,
+                        "y": 10356.000000953674
+                    },
+                    {
+                        "x": 11584.50000333786,
+                        "y": 10356.000000953674
+                    },
+                    {
+                        "x": 11584.50000333786,
+                        "y": 10280.750000953674
+                    },
+                    {
+                        "x": 10746.000000953674,
+                        "y": 10280.750000953674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "12e8e3a0-1cb1-4d71-a0a1-3919c99278c3",
+            "name": "fk FactInternetSales.CustomerKey to DimCustomer.CustomerKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+            "parentField": [
+                [
+                    "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                    "8bcb94f7-3da8-490f-99a9-1c9f06759c86"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+            "childField": [
+                [
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "afd538d2-1661-48c1-9bef-79a3ec0ac9d6"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "3321400a-dab7-4f87-84fe-d1bea43a96aa",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12291.000004768372,
+                        "y": 10773.500001907349
+                    },
+                    {
+                        "x": 12323.000005245209,
+                        "y": 10773.500001907349
+                    },
+                    {
+                        "x": 12323.000005245209,
+                        "y": 10801.000001907349
+                    },
+                    {
+                        "x": 12355.000005722046,
+                        "y": 10801.000001907349
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "GUID": "e91aedcc-ae3f-4ca6-bc3d-4e1db3951ace",
+            "name": "fk FactInternetSales.CurrencyKey to DimCurrency.CurrencyKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "f53ae30c-0660-4665-be76-e05949b18cc4",
+            "parentField": [
+                [
+                    "f53ae30c-0660-4665-be76-e05949b18cc4",
+                    "0a29a157-e350-4a31-a428-418263822adc"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+            "childField": [
+                [
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "2e44f221-09fa-4286-aaf2-485d5458b4ac"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "129452ae-496d-47f2-99bc-ee4c85da2b22",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12212.250004768372,
+                        "y": 11022.000001907349
+                    },
+                    {
+                        "x": 12212.250004768372,
+                        "y": 11307.500001907349
+                    },
+                    {
+                        "x": 12490,
+                        "y": 11307.500001907349
+                    },
+                    {
+                        "x": 12490,
+                        "y": 11593.000001907349
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "GUID": "e68664f3-f50d-4e5a-9d4b-c40aa5481591",
+            "name": "fk FactResellerSales.CurrencyKey to DimCurrency.CurrencyKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "f53ae30c-0660-4665-be76-e05949b18cc4",
+            "parentField": [
+                [
+                    "f53ae30c-0660-4665-be76-e05949b18cc4",
+                    "0a29a157-e350-4a31-a428-418263822adc"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "05f52700-0744-48b6-9f35-593cb25126a4"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "87187444-04cc-45ab-9446-b3d1fd38ff6a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11524.000002861023,
+                        "y": 10871.500001907349
+                    },
+                    {
+                        "x": 11932.000001430511,
+                        "y": 10871.500001907349
+                    },
+                    {
+                        "x": 11932.000001430511,
+                        "y": 11621.000001907349
+                    },
+                    {
+                        "x": 12340,
+                        "y": 11621.000001907349
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "GUID": "44e7483d-e23c-4ac1-8f0a-13f65641ec04",
+            "name": "fk DimOrganization.CurrencyKey to DimCurrency.CurrencyKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "f53ae30c-0660-4665-be76-e05949b18cc4",
+            "parentField": [
+                [
+                    "f53ae30c-0660-4665-be76-e05949b18cc4",
+                    "0a29a157-e350-4a31-a428-418263822adc"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "e3a41453-c68e-4527-9425-3def0477e394",
+            "childField": [
+                [
+                    "e3a41453-c68e-4527-9425-3def0477e394",
+                    "28677a15-f34f-4aaf-a429-27b0057f34c7"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "6ca7f0d5-23d7-43e6-a7d4-94c34a955bed",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11244.000000953674,
+                        "y": 11617.000001907349
+                    },
+                    {
+                        "x": 11792.000000476837,
+                        "y": 11617.000001907349
+                    },
+                    {
+                        "x": 11792.000000476837,
+                        "y": 11649.000001907349
+                    },
+                    {
+                        "x": 12340,
+                        "y": 11649.000001907349
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "GUID": "befe6cd1-6b79-499c-887b-2dfd40c0e470",
+            "name": "fk DimEmployee.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+            "parentField": [
+                [
+                    "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+            "childField": [
+                [
+                    "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "a80a0f04-5068-41c8-82e9-b45c2d1a6840"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "daed0af5-d4dc-42c4-bab6-32f8bb128ddf",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10185.666666666666,
+                        "y": 11249.000002861023
+                    },
+                    {
+                        "x": 10185.666666666666,
+                        "y": 10809.500001907349
+                    },
+                    {
+                        "x": 10583.000000953674,
+                        "y": 10809.500001907349
+                    },
+                    {
+                        "x": 10583.000000953674,
+                        "y": 10370.000000953674
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "GUID": "e3066784-a1d3-465a-9866-538c02c47453",
+            "name": "fk FactInternetSales.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+            "parentField": [
+                [
+                    "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "f97ccb29-dcf4-4918-9b5f-6c6c3d74b992"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+            "childField": [
+                [
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "6f87db96-eb38-4d34-9091-5a470d8eee65"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "24651a4a-bdd1-4482-b4a6-9fcc8d3cdcee",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11976.000004768372,
+                        "y": 10773.500001907349
+                    },
+                    {
+                        "x": 11361.000002861023,
+                        "y": 10773.500001907349
+                    },
+                    {
+                        "x": 11361.000002861023,
+                        "y": 10340.250000953674
+                    },
+                    {
+                        "x": 10746.000000953674,
+                        "y": 10340.250000953674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "30a07813-f1c2-4d47-bc60-dbd50df7a177",
+            "name": "fk FactSalesQuota.DateKey to DimDate.DateKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+            "parentField": [
+                [
+                    "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "305635cb-5fba-47ee-93e4-0530bbad5e5c",
+            "childField": [
+                [
+                    "305635cb-5fba-47ee-93e4-0530bbad5e5c",
+                    "629fc713-f3c9-4049-b291-44b4fc0fe085"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "f2927caf-5cc6-4ede-8f2a-07ab3dd77f00",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12502.00000667572,
+                        "y": 10095.666666666666
+                    },
+                    {
+                        "x": 12401.00000333786,
+                        "y": 10095.666666666666
+                    },
+                    {
+                        "x": 12401.00000333786,
+                        "y": 11491.000001907349
+                    },
+                    {
+                        "x": 12300,
+                        "y": 11491.000001907349
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "1027e391-7bc9-478f-9350-259e7d799b29",
+            "name": "fk DimCustomer.GeographyKey to DimGeography.GeographyKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "6a9a8f5a-b689-4438-807e-bb14536051a2",
+            "parentField": [
+                [
+                    "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                    "ee721453-f6c4-4056-8b48-64ec645d9b56"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+            "childField": [
+                [
+                    "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                    "6abf7b71-f6d1-4d9c-8004-9ff8daf46c8f"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "549ad81f-ee8c-49d1-bb35-138538126caa",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12571.000005722046,
+                        "y": 10525.000001907349
+                    },
+                    {
+                        "x": 12571.000005722046,
+                        "y": 10493.000001430511
+                    },
+                    {
+                        "x": 12592.000005722046,
+                        "y": 10493.000001430511
+                    },
+                    {
+                        "x": 12592.000005722046,
+                        "y": 10461.000000953674
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "GUID": "45c8accc-b946-42f1-9880-ba444b64a166",
+            "name": "fk DimReseller.GeographyKey to DimGeography.GeographyKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "6a9a8f5a-b689-4438-807e-bb14536051a2",
+            "parentField": [
+                [
+                    "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                    "ee721453-f6c4-4056-8b48-64ec645d9b56"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "9bb78135-d154-41ec-a435-d678cca4bdb5",
+            "childField": [
+                [
+                    "9bb78135-d154-41ec-a435-d678cca4bdb5",
+                    "a4ef8a0c-40bf-4dd4-a515-fd9e40e75e5d"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "19c800ba-ec77-4f9a-a93a-2c05a994b35a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11173.000001907349,
+                        "y": 10721.500001907349
+                    },
+                    {
+                        "x": 11798.000003814697,
+                        "y": 10721.500001907349
+                    },
+                    {
+                        "x": 11798.000003814697,
+                        "y": 10391.000000953674
+                    },
+                    {
+                        "x": 12423.000005722046,
+                        "y": 10391.000000953674
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "GUID": "b355f63a-6e2b-4ec8-be4b-f0f500be7066",
+            "name": "fk DimProductSubcategory.ProductCategoryKey to DimProductCategory.ProductCategoryKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+            "parentField": [
+                [
+                    "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+                    "8e376c46-c863-4a4a-b07d-7b70d5f6a29c"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+            "childField": [
+                [
+                    "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                    "5508ce52-1112-4b73-8dd1-4a3099530755"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "00f19bad-f85a-4ab3-a823-43dce107b3a6",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11563.000003814697,
+                        "y": 10320.000000953674
+                    },
+                    {
+                        "x": 11361.000002861023,
+                        "y": 10320.000000953674
+                    },
+                    {
+                        "x": 11361.000002861023,
+                        "y": 10291.000000953674
+                    },
+                    {
+                        "x": 11159.000001907349,
+                        "y": 10291.000000953674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "5f1ba94e-2ee2-4f39-9efa-8416816ad593",
+            "name": "fk DimEmployee.ParentEmployeeKey to DimEmployee.EmployeeKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+            "parentField": [
+                [
+                    "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "886648bb-7298-450a-8a36-71d4bd421030"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+            "childField": [
+                [
+                    "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "f6095982-8a90-430f-80d6-b77b03bad61d"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "1d84eb43-52e4-45ab-a455-6e1d9953acd9",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10253.5,
+                        "y": 11249.000002861023
+                    },
+                    {
+                        "x": 10253.5,
+                        "y": 11224.000002861023
+                    },
+                    {
+                        "x": 10482,
+                        "y": 11224.000002861023
+                    },
+                    {
+                        "x": 10482,
+                        "y": 11534.000002861023
+                    },
+                    {
+                        "x": 10457,
+                        "y": 11534.000002861023
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "025b066c-93d1-4ea3-901a-11e8ff2a1f30",
+            "name": "fk FactResellerSales.ResellerKey to DimReseller.ResellerKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "9bb78135-d154-41ec-a435-d678cca4bdb5",
+            "parentField": [
+                [
+                    "9bb78135-d154-41ec-a435-d678cca4bdb5",
+                    "0574ce91-d063-4ca8-bc9b-485a53ba7966"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "fc49cec6-202c-4d7b-98f4-e412bf787245"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "394dfb91-9568-4e89-aa88-1f4b5ec9b576",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11318.000002861023,
+                        "y": 10525.000001907349
+                    },
+                    {
+                        "x": 11318.000002861023,
+                        "y": 10500.000001907349
+                    },
+                    {
+                        "x": 11015.500001907349,
+                        "y": 10500.000001907349
+                    },
+                    {
+                        "x": 11015.500001907349,
+                        "y": 10525.000001907349
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "top"
+                ]
+            }
+        },
+        {
+            "GUID": "4bbb9575-d8eb-4cf8-b379-c583a758576f",
+            "name": "fk FactInternetSalesReason.SalesReasonKey to DimSalesReason.SalesReasonKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "d2e7d92b-0088-4939-8c72-43592fc7a972",
+            "parentField": [
+                [
+                    "d2e7d92b-0088-4939-8c72-43592fc7a972",
+                    "a5501d16-b065-4d65-bcdf-3332cf0e9b8d"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+            "childField": [
+                [
+                    "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                    "83d4b6b6-3ee4-49d0-a5e8-6ed9fbb0929a"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "699b51ca-6dff-44b9-84ef-9c1ea54430ec",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11719.000003814697,
+                        "y": 10077.666666666666
+                    },
+                    {
+                        "x": 11919.000004768372,
+                        "y": 10077.666666666666
+                    },
+                    {
+                        "x": 11919.000004768372,
+                        "y": 10101
+                    },
+                    {
+                        "x": 12119.000005722046,
+                        "y": 10101
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "GUID": "24d1e863-fd23-48c4-98ea-6638d569b7ca",
+            "name": "fk FactResellerSales.ShipDateKey to DimDate.DateKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+            "parentField": [
+                [
+                    "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "b4a4d8de-acc2-4d59-9fe3-461de3232447"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "e6e9dba4-65bd-4556-954e-a3ed04e74c44",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11524.000002861023,
+                        "y": 10756.000001907349
+                    },
+                    {
+                        "x": 11751.500001430511,
+                        "y": 10756.000001907349
+                    },
+                    {
+                        "x": 11751.500001430511,
+                        "y": 11553.000001907349
+                    },
+                    {
+                        "x": 11979,
+                        "y": 11553.000001907349
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "GUID": "be1e6e66-09fd-4e30-8723-7463ed2c8332",
+            "name": "fk FactInternetSales.DueDateKey to DimDate.DateKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+            "parentField": [
+                [
+                    "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+            "childField": [
+                [
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "ebbc0284-1a58-47bf-b1b0-0ec488da2e7e"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "d84e960c-845d-45ed-8a4f-a1d7df64f737",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12133.500004768372,
+                        "y": 11022.000001907349
+                    },
+                    {
+                        "x": 12133.500004768372,
+                        "y": 11163.500001907349
+                    },
+                    {
+                        "x": 12139.5,
+                        "y": 11163.500001907349
+                    },
+                    {
+                        "x": 12139.5,
+                        "y": 11305.000001907349
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "GUID": "1d5834db-97e0-4f1c-8ab6-35d4b38d69e9",
+            "name": "fk FactResellerSales.DueDateKey to DimDate.DateKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+            "parentField": [
+                [
+                    "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "1f5e0d77-4c7f-4977-9696-5889a858e7c1"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "ad6cbe46-7692-40a8-942a-7e7a10488e46",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11524.000002861023,
+                        "y": 10640.500001907349
+                    },
+                    {
+                        "x": 11751.500001430511,
+                        "y": 10640.500001907349
+                    },
+                    {
+                        "x": 11751.500001430511,
+                        "y": 11429.000001907349
+                    },
+                    {
+                        "x": 11979,
+                        "y": 11429.000001907349
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "GUID": "41950770-123b-4b66-800d-e2d48c01efc8",
+            "name": "fk FactInternetSales.ShipDateKey to DimDate.DateKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "decc7973-398b-4c56-8e2a-6251a819c3b8",
+            "parentField": [
+                [
+                    "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "ec8da33f-fdfb-4be4-9005-6a7548cc7868"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+            "childField": [
+                [
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "7f7cf372-98bb-4fdf-b5d1-ac0b1de90e29"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "9b003d2a-8751-4188-86d1-ebfd1e2e9e93",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 12054.750004768372,
+                        "y": 11022.000001907349
+                    },
+                    {
+                        "x": 12054.750004768372,
+                        "y": 11163.500001907349
+                    },
+                    {
+                        "x": 12059.25,
+                        "y": 11163.500001907349
+                    },
+                    {
+                        "x": 12059.25,
+                        "y": 11305.000001907349
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "GUID": "bbf01675-b424-4e54-a88e-85412c19af0f",
+            "name": "fk DimAccount.ParentAccountKey to DimAccount.AccountKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+            "parentField": [
+                [
+                    "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                    "53809284-a3ec-439b-8d0f-2d852b04f822"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+            "childField": [
+                [
+                    "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                    "7286b31f-6cce-444f-8939-850715d574f5"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "e21918be-e6df-45fc-905f-d133d46178f3",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10766.333334287008,
+                        "y": 11467.000001907349
+                    },
+                    {
+                        "x": 10766.333334287008,
+                        "y": 11442.000001907349
+                    },
+                    {
+                        "x": 10914.000000953674,
+                        "y": 11442.000001907349
+                    },
+                    {
+                        "x": 10914.000000953674,
+                        "y": 11572.000001907349
+                    },
+                    {
+                        "x": 10889.000000953674,
+                        "y": 11572.000001907349
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "7397554e-1527-4bf1-ac11-546a3ed9e061",
+            "name": "fk DimOrganization.ParentOrganizationKey to DimOrganization.OrganizationKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "e3a41453-c68e-4527-9425-3def0477e394",
+            "parentField": [
+                [
+                    "e3a41453-c68e-4527-9425-3def0477e394",
+                    "fbe4bbe4-f61a-4b01-829d-e24046bcd7e8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "e3a41453-c68e-4527-9425-3def0477e394",
+            "childField": [
+                [
+                    "e3a41453-c68e-4527-9425-3def0477e394",
+                    "e49aac8a-f267-4a08-904d-061418da44a3"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "8fd6771f-b62d-4483-b7d2-6c346fcb5655",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11086.500000953674,
+                        "y": 11557.000001907349
+                    },
+                    {
+                        "x": 11086.500000953674,
+                        "y": 11532.000001907349
+                    },
+                    {
+                        "x": 11269.000000953674,
+                        "y": 11532.000001907349
+                    },
+                    {
+                        "x": 11269.000000953674,
+                        "y": 11597.000001907349
+                    },
+                    {
+                        "x": 11244.000000953674,
+                        "y": 11597.000001907349
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "888bd294-38b6-4576-bc60-6d10cf7bede5",
+            "name": "fk FactInternetSales.SalesOrderNumber to FactInternetSalesReason.SalesOrderNumber",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+            "parentField": [
+                [
+                    "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                    "6e6ec79f-f9ff-458a-ab10-8210f2a5e9e5"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+            "childField": [
+                [
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "e6d3ad02-7bd7-40b3-b6e8-2aa76fa2f5bc"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "3e274924-ac2a-420b-a30b-67f55c753f60",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11976.000004768372,
+                        "y": 10649.250001907349
+                    },
+                    {
+                        "x": 11847.500004291534,
+                        "y": 10649.250001907349
+                    },
+                    {
+                        "x": 11847.500004291534,
+                        "y": 10105.333333333334
+                    },
+                    {
+                        "x": 11719.000003814697,
+                        "y": 10105.333333333334
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "GUID": "ead7c28f-49e3-4055-8ed0-547bc83f83bb",
+            "name": "fk FactResellerSales.SalesOrderNumber to FactInternetSalesReason.SalesOrderNumber",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+            "parentField": [
+                [
+                    "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                    "6e6ec79f-f9ff-458a-ab10-8210f2a5e9e5"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "33499ce6-766b-4578-a049-c16e901a5958",
+            "childField": [
+                [
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "f02e5909-2202-4943-b197-7970f2dcf5a3"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "c0c71bcc-ae2f-420a-8c6c-705195de6ed0",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11421.000002861023,
+                        "y": 10525.000001907349
+                    },
+                    {
+                        "x": 11421.000002861023,
+                        "y": 10329.000000953674
+                    },
+                    {
+                        "x": 11564.500003814697,
+                        "y": 10329.000000953674
+                    },
+                    {
+                        "x": 11564.500003814697,
+                        "y": 10133
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "GUID": "022c86e0-c36d-4937-a0b8-1a933fd4eefa",
+            "name": "fk DimAccount.ParentAccountCodeAlternateKey to DimAccount.AccountKey",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+            "parentField": [
+                [
+                    "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                    "53809284-a3ec-439b-8d0f-2d852b04f822"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+            "childField": [
+                [
+                    "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                    "54c70347-8f18-4786-b43d-389dbfc4b171"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "f1e0d975-70e7-4414-89d5-a7a33a256610",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10643.66666762034,
+                        "y": 11467.000001907349
+                    },
+                    {
+                        "x": 10643.66666762034,
+                        "y": 11442.000001907349
+                    },
+                    {
+                        "x": 10914.000000953674,
+                        "y": 11442.000001907349
+                    },
+                    {
+                        "x": 10914.000000953674,
+                        "y": 11519.500001907349
+                    },
+                    {
+                        "x": 10889.000000953674,
+                        "y": 11519.500001907349
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "right"
+                ]
+            }
         }
     ],
     "users": [],
@@ -11707,7 +13657,40 @@
         "f1b2eab0-4eef-4ad3-9d3a-8e8cc1e191db": "PostalCode",
         "b78e632b-615f-43b4-992e-9fdd052df690": "StateProvinceCode",
         "706524be-8bba-4dee-aef2-74ccfa57bc43": "SalesAmount",
-        "a28225b2-9d3f-4a0e-919d-4565d2d2e481": "ProductLine"
+        "a28225b2-9d3f-4a0e-919d-4565d2d2e481": "ProductLine",
+        "7699a66a-d53e-406e-b575-b4899090b6ef": "fk FactResellerSales.EmployeeKey to DimEmployee.EmployeeKey",
+        "3e1c937d-ec59-45c9-97ee-6704b6df1352": "fk FactSalesQuota.EmployeeKey to DimEmployee.EmployeeKey",
+        "c5350377-2df9-4a31-be50-111788bbce1f": "fk DimProduct.ProductSubcategoryKey to DimProductSubcategory.ProductSubcategoryKey",
+        "62d22107-4382-4d6d-9d05-ae7d9f0cabf7": "fk FactSurveyResponse.ProductCategoryKey to DimProductCategory.ProductCategoryKey",
+        "0967bcf4-4528-4a2c-8103-863fc1da66c7": "fk FactSurveyResponse.ProductSubcategoryKey to DimProductSubcategory.ProductSubcategoryKey",
+        "184de0bd-8c9b-4195-9d55-81197ad332fc": "fk FactResellerSales.PromotionKey to DimPromotion.PromotionKey",
+        "821f5be3-9911-4745-8fdd-fed66c9bdfe8": "fk FactSurveyResponse.DateKey to DimDate.DateKey",
+        "9cd28887-e0ee-4798-a805-9d939e4a30a3": "fk FactSurveyResponse.CustomerKey to DimCustomer.CustomerKey",
+        "d4a8c3f0-9df7-4c13-959a-6e54fbc2a215": "fk FactInternetSales.PromotionKey to DimPromotion.PromotionKey",
+        "e51a26ed-d440-49ae-87b2-5b6ac0bf87b7": "fk FactResellerSales.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+        "1ab5ee6b-e83f-4807-b242-2817254c3fe8": "fk DimGeography.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+        "12e8e3a0-1cb1-4d71-a0a1-3919c99278c3": "fk FactInternetSales.CustomerKey to DimCustomer.CustomerKey",
+        "e91aedcc-ae3f-4ca6-bc3d-4e1db3951ace": "fk FactInternetSales.CurrencyKey to DimCurrency.CurrencyKey",
+        "e68664f3-f50d-4e5a-9d4b-c40aa5481591": "fk FactResellerSales.CurrencyKey to DimCurrency.CurrencyKey",
+        "44e7483d-e23c-4ac1-8f0a-13f65641ec04": "fk DimOrganization.CurrencyKey to DimCurrency.CurrencyKey",
+        "befe6cd1-6b79-499c-887b-2dfd40c0e470": "fk DimEmployee.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+        "e3066784-a1d3-465a-9866-538c02c47453": "fk FactInternetSales.SalesTerritoryKey to DimSalesTerritory.SalesTerritoryKey",
+        "30a07813-f1c2-4d47-bc60-dbd50df7a177": "fk FactSalesQuota.DateKey to DimDate.DateKey",
+        "1027e391-7bc9-478f-9350-259e7d799b29": "fk DimCustomer.GeographyKey to DimGeography.GeographyKey",
+        "45c8accc-b946-42f1-9880-ba444b64a166": "fk DimReseller.GeographyKey to DimGeography.GeographyKey",
+        "b355f63a-6e2b-4ec8-be4b-f0f500be7066": "fk DimProductSubcategory.ProductCategoryKey to DimProductCategory.ProductCategoryKey",
+        "5f1ba94e-2ee2-4f39-9efa-8416816ad593": "fk DimEmployee.ParentEmployeeKey to DimEmployee.EmployeeKey",
+        "025b066c-93d1-4ea3-901a-11e8ff2a1f30": "fk FactResellerSales.ResellerKey to DimReseller.ResellerKey",
+        "4bbb9575-d8eb-4cf8-b379-c583a758576f": "fk FactInternetSalesReason.SalesReasonKey to DimSalesReason.SalesReasonKey",
+        "24d1e863-fd23-48c4-98ea-6638d569b7ca": "fk FactResellerSales.ShipDateKey to DimDate.DateKey",
+        "be1e6e66-09fd-4e30-8723-7463ed2c8332": "fk FactInternetSales.DueDateKey to DimDate.DateKey",
+        "1d5834db-97e0-4f1c-8ab6-35d4b38d69e9": "fk FactResellerSales.DueDateKey to DimDate.DateKey",
+        "41950770-123b-4b66-800d-e2d48c01efc8": "fk FactInternetSales.ShipDateKey to DimDate.DateKey",
+        "bbf01675-b424-4e54-a88e-85412c19af0f": "fk DimAccount.ParentAccountKey to DimAccount.AccountKey",
+        "7397554e-1527-4bf1-ac11-546a3ed9e061": "fk DimOrganization.ParentOrganizationKey to DimOrganization.OrganizationKey",
+        "888bd294-38b6-4576-bc60-6d10cf7bede5": "fk FactInternetSales.SalesOrderNumber to FactInternetSalesReason.SalesOrderNumber",
+        "ead7c28f-49e3-4055-8ed0-547bc83f83bb": "fk FactResellerSales.SalesOrderNumber to FactInternetSalesReason.SalesOrderNumber",
+        "022c86e0-c36d-4937-a0b8-1a933fd4eefa": "fk DimAccount.ParentAccountCodeAlternateKey to DimAccount.AccountKey"
     },
     "definitions": {
         "type": "definitions",
@@ -11900,7 +13883,7 @@
     "creationTS": "2020-07-01T14:12:26.539Z",
     "GUID": "e42cbfb0-bba4-11ea-91a7-efa8d96c78e7",
     "code": "",
-    "lastModifTS": "2023-04-03T10:12:38.796Z",
+    "lastModifTS": "2023-04-03T11:01:47.751Z",
     "persistenceSchemaVersion": "6",
     "description": "Model based on the AdventureWorks sample databases\n\nhttps://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms",
     "comments": "",
@@ -11929,266 +13912,266 @@
                 "erd": [
                     {
                         "GUID": "83c27d58-b9fe-4b3e-b412-b305667677e8",
-                        "x": 1345.3041552648347,
-                        "y": 1040,
+                        "x": 10345.000000953674,
+                        "y": 10050,
                         "width": 307,
-                        "height": 69,
+                        "height": 65,
                         "color": {}
                     },
                     {
                         "GUID": "0c308e51-f73a-4b99-b083-9ae92564b567",
-                        "x": 2223.3041571721833,
-                        "y": 1217.0000009536743,
-                        "width": 297,
-                        "height": 159,
+                        "x": 11223.000002861023,
+                        "y": 10251.000000953674,
+                        "width": 276,
+                        "height": 156,
                         "color": {}
                     },
                     {
                         "GUID": "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
-                        "x": 1594.1201784914979,
-                        "y": 2406.5756700583643,
-                        "width": 389,
-                        "height": 213,
+                        "x": 10521.000000953674,
+                        "y": 11467.000001907349,
+                        "width": 368,
+                        "height": 210,
                         "color": {}
                     },
                     {
                         "GUID": "f53ae30c-0660-4665-be76-e05949b18cc4",
-                        "x": 3473.3311265041157,
-                        "y": 2249.809024541022,
-                        "width": 322,
-                        "height": 87,
+                        "x": 12340,
+                        "y": 11593.000001907349,
+                        "width": 300,
+                        "height": 84,
                         "color": {}
                     },
                     {
                         "GUID": "dcc1ccc9-36b6-4895-bd81-ef661356a616",
-                        "x": 3351.3041600332062,
-                        "y": 1451.0000019073486,
-                        "width": 358,
-                        "height": 555,
+                        "x": 12355.000005722046,
+                        "y": 10525.000001907349,
+                        "width": 324,
+                        "height": 552,
                         "color": {}
                     },
                     {
                         "GUID": "decc7973-398b-4c56-8e2a-6251a819c3b8",
-                        "x": 3044.1201775378236,
-                        "y": 2034.5756700583645,
-                        "width": 343,
-                        "height": 295,
+                        "x": 11979,
+                        "y": 11305.000001907349,
+                        "width": 321,
+                        "height": 372,
                         "color": {}
                     },
                     {
                         "GUID": "537e68bf-2953-4010-9337-da97453ad282",
-                        "x": 2291.120178491498,
-                        "y": 2135.9090033916978,
-                        "width": 361,
-                        "height": 87,
+                        "x": 11284.000000953674,
+                        "y": 11497.000001907349,
+                        "width": 339,
+                        "height": 84,
                         "color": {}
                     },
                     {
                         "GUID": "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
-                        "x": 1428.0000009536743,
-                        "y": 1810.1765606084982,
-                        "width": 429,
-                        "height": 573,
+                        "x": 10050,
+                        "y": 11249.000002861023,
+                        "width": 407,
+                        "height": 570,
                         "color": {}
                     },
                     {
                         "GUID": "6a9a8f5a-b689-4438-807e-bb14536051a2",
-                        "x": 3423.3041600332062,
-                        "y": 1217.0000009536743,
-                        "width": 359,
-                        "height": 213,
+                        "x": 12423.000005722046,
+                        "y": 10251.000000953674,
+                        "width": 338,
+                        "height": 210,
                         "color": {}
                     },
                     {
                         "GUID": "e3a41453-c68e-4527-9425-3def0477e394",
-                        "x": 1994.1201784914979,
-                        "y": 2230.5756700583643,
-                        "width": 337,
-                        "height": 123,
+                        "x": 10929.000000953674,
+                        "y": 11557.000001907349,
+                        "width": 315,
+                        "height": 120,
                         "color": {}
                     },
                     {
                         "GUID": "871923e5-fbaa-465d-8d54-69107180e747",
-                        "x": 1040,
-                        "y": 1810.1765606084982,
-                        "width": 346,
-                        "height": 663,
+                        "x": 12743.00000667572,
+                        "y": 10525.000001907349,
+                        "width": 324,
+                        "height": 660,
                         "color": {}
                     },
                     {
                         "GUID": "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
-                        "x": 1810.304156218509,
-                        "y": 1217.0000009536743,
-                        "width": 370,
-                        "height": 123,
+                        "x": 10810.000001907349,
+                        "y": 10251.000000953674,
+                        "width": 349,
+                        "height": 120,
                         "color": {}
                     },
                     {
                         "GUID": "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
-                        "x": 2563.3041581258576,
-                        "y": 1217.0000009536743,
-                        "width": 390,
-                        "height": 141,
+                        "x": 11563.000003814697,
+                        "y": 10251.000000953674,
+                        "width": 368,
+                        "height": 138,
                         "color": {}
                     },
                     {
                         "GUID": "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
-                        "x": 1457.3041552648347,
-                        "y": 1451.0000019073486,
-                        "width": 359,
-                        "height": 321,
+                        "x": 10456.000000953674,
+                        "y": 10525.000001907349,
+                        "width": 338,
+                        "height": 318,
                         "color": {}
                     },
                     {
                         "GUID": "9bb78135-d154-41ec-a435-d678cca4bdb5",
-                        "x": 1859.304156218509,
-                        "y": 1451.0000019073486,
-                        "width": 314,
+                        "x": 10858.000001907349,
+                        "y": 10525.000001907349,
+                        "width": 315,
                         "height": 393,
                         "color": {}
                     },
                     {
                         "GUID": "d2e7d92b-0088-4939-8c72-43592fc7a972",
-                        "x": 3079.3041600332062,
-                        "y": 1040,
+                        "x": 12119.000005722046,
+                        "y": 10050,
                         "width": 319,
-                        "height": 86,
+                        "height": 102,
                         "color": {}
                     },
                     {
                         "GUID": "6f7d7554-0f83-4c0b-abb5-df7f06099604",
-                        "x": 1420.3041552648347,
-                        "y": 1217.0000009536743,
-                        "width": 348,
-                        "height": 123,
+                        "x": 10420.000000953674,
+                        "y": 10251.000000953674,
+                        "width": 326,
+                        "height": 119,
                         "color": {}
                     },
                     {
                         "GUID": "23a81542-b54b-4eb7-b93f-fb8c660c2b94",
-                        "x": 2709.453510871158,
-                        "y": 2524.5756700583643,
-                        "width": 281,
-                        "height": 69,
+                        "x": 11679,
+                        "y": 11611.000001907349,
+                        "width": 260,
+                        "height": 66,
                         "color": {}
                     },
                     {
                         "GUID": "82584be7-af0f-4f44-9fa0-020baa395177",
-                        "x": 3056.1201775378236,
-                        "y": 2426.57566910469,
-                        "width": 319,
-                        "height": 267,
+                        "x": 11990.5,
+                        "y": 11773.000000953674,
+                        "width": 298,
+                        "height": 264,
                         "color": {}
                     },
                     {
                         "GUID": "92b3e163-f759-4792-882c-305e7e3cdedd",
-                        "x": 3516.397708573486,
-                        "y": 2429.497884277138,
-                        "width": 235,
-                        "height": 105,
+                        "x": 12342.666666666668,
+                        "y": 11773.000000953674,
+                        "width": 221,
+                        "height": 101,
                         "color": {}
                     },
                     {
                         "GUID": "6244507e-1391-418e-9282-6f359ff8eb7c",
-                        "x": 2334.120178491498,
-                        "y": 2426.57566910469,
-                        "width": 277,
-                        "height": 159,
+                        "x": 11269.000000953674,
+                        "y": 11773.000000953674,
+                        "width": 256,
+                        "height": 156,
                         "color": {}
                     },
                     {
                         "GUID": "ba83f8be-8797-48e8-bf80-587f8dabeecc",
-                        "x": 2216.3041571721833,
-                        "y": 1451.0000019073486,
-                        "width": 337,
-                        "height": 501,
+                        "x": 11976.000004768372,
+                        "y": 10525.000001907349,
+                        "width": 315,
+                        "height": 497,
                         "color": {}
                     },
                     {
                         "GUID": "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
-                        "x": 2371.3041581258576,
-                        "y": 1040,
-                        "width": 330,
-                        "height": 87,
+                        "x": 11410.000003814697,
+                        "y": 10050,
+                        "width": 309,
+                        "height": 83,
                         "color": {}
                     },
                     {
                         "GUID": "33499ce6-766b-4578-a049-c16e901a5958",
-                        "x": 2590.3041581258576,
-                        "y": 1451.0000019073486,
-                        "width": 310,
-                        "height": 365,
+                        "x": 11215.000002861023,
+                        "y": 10525.000001907349,
+                        "width": 309,
+                        "height": 462,
                         "color": {}
                     },
                     {
                         "GUID": "305635cb-5fba-47ee-93e4-0530bbad5e5c",
-                        "x": 3462.3041609868806,
-                        "y": 1040,
-                        "width": 281,
-                        "height": 141,
+                        "x": 12502.00000667572,
+                        "y": 10050,
+                        "width": 260,
+                        "height": 137,
                         "color": {}
                     },
                     {
                         "GUID": "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
-                        "x": 2995.304159079532,
-                        "y": 1217.0000009536743,
-                        "width": 385,
-                        "height": 159,
+                        "x": 11995.000004768372,
+                        "y": 10251.000000953674,
+                        "width": 364,
+                        "height": 155,
                         "color": {}
                     },
                     {
                         "GUID": "01d4c13a-1314-4342-848b-5ba7d68fb15c",
-                        "x": 2964.304159079532,
-                        "y": 1451.0000019073486,
-                        "width": 345,
-                        "height": 465,
+                        "x": 11588.000003814697,
+                        "y": 10525.000001907349,
+                        "width": 324,
+                        "height": 461,
                         "color": {}
                     },
                     {
                         "GUID": "b9615b69-a3bb-4855-bfbd-1b7cc5987c76",
-                        "x": 2744.304159079532,
-                        "y": 1040,
-                        "width": 295,
-                        "height": 105,
+                        "x": 11783.000004768372,
+                        "y": 10050,
+                        "width": 272,
+                        "height": 99,
                         "color": {}
                     },
                     {
                         "GUID": "f80c9ee7-c2c7-4fff-832a-0054bc328ae3",
-                        "x": 1050.3041543111603,
-                        "y": 1217.0000009536743,
-                        "width": 329,
-                        "height": 123,
+                        "x": 10050,
+                        "y": 10251.000000953674,
+                        "width": 306,
+                        "height": 117,
                         "color": {}
                     },
                     {
                         "GUID": "eabd951d-002c-4d09-b66c-eeca1400123e",
-                        "x": 1050.3041543111603,
-                        "y": 1451.0000019073486,
-                        "width": 366,
-                        "height": 267,
+                        "x": 10050,
+                        "y": 10525.000001907349,
+                        "width": 342,
+                        "height": 261,
                         "color": {}
                     },
                     {
                         "GUID": "8e5e3d29-e84d-42aa-bc11-192c56527b7f",
-                        "x": 2021.3041571721833,
-                        "y": 1040,
-                        "width": 309,
-                        "height": 87,
+                        "x": 11061.000002861023,
+                        "y": 10050,
+                        "width": 285,
+                        "height": 81,
                         "color": {}
                     },
                     {
                         "GUID": "96d945e3-455a-46cf-a30d-97f86ce70472",
-                        "x": 1676.304156218509,
-                        "y": 1040,
-                        "width": 304,
-                        "height": 87,
+                        "x": 10716.000001907349,
+                        "y": 10050,
+                        "width": 281,
+                        "height": 81,
                         "color": {}
                     },
                     {
                         "GUID": "a0c6af14-5c21-4b74-9faf-b570305647f9",
-                        "x": 1050.3041543111603,
-                        "y": 1040,
-                        "width": 254,
-                        "height": 69,
+                        "x": 10050,
+                        "y": 10050,
+                        "width": 231,
+                        "height": 63,
                         "color": {}
                     }
                 ],
@@ -12200,8 +14183,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1000,
-                        "y": 1000,
+                        "x": 10010,
+                        "y": 10010,
                         "GUID": "70a306e3-f48a-42eb-9c5d-33f2a7f159d1"
                     }
                 ],
@@ -12211,7 +14194,41 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
+                "selectedCollections": [
+                    "83c27d58-b9fe-4b3e-b412-b305667677e8",
+                    "0c308e51-f73a-4b99-b083-9ae92564b567",
+                    "f4fd5321-4e05-4a33-b8bf-7a754ac940c6",
+                    "f53ae30c-0660-4665-be76-e05949b18cc4",
+                    "dcc1ccc9-36b6-4895-bd81-ef661356a616",
+                    "decc7973-398b-4c56-8e2a-6251a819c3b8",
+                    "537e68bf-2953-4010-9337-da97453ad282",
+                    "a26eb3a9-41bc-4697-88be-c9d4942a09e6",
+                    "6a9a8f5a-b689-4438-807e-bb14536051a2",
+                    "e3a41453-c68e-4527-9425-3def0477e394",
+                    "871923e5-fbaa-465d-8d54-69107180e747",
+                    "c365ab3f-ab9a-4dcd-86c6-4d4f88644f2d",
+                    "3c0a4cbd-442c-4063-94c1-35ba3a75539f",
+                    "1f0f7f47-79aa-4ad2-9695-4b05617f0e4e",
+                    "9bb78135-d154-41ec-a435-d678cca4bdb5",
+                    "d2e7d92b-0088-4939-8c72-43592fc7a972",
+                    "6f7d7554-0f83-4c0b-abb5-df7f06099604",
+                    "23a81542-b54b-4eb7-b93f-fb8c660c2b94",
+                    "82584be7-af0f-4f44-9fa0-020baa395177",
+                    "92b3e163-f759-4792-882c-305e7e3cdedd",
+                    "6244507e-1391-418e-9282-6f359ff8eb7c",
+                    "ba83f8be-8797-48e8-bf80-587f8dabeecc",
+                    "a33e4cf4-8266-4f1a-ac31-9a40b8e739eb",
+                    "33499ce6-766b-4578-a049-c16e901a5958",
+                    "305635cb-5fba-47ee-93e4-0530bbad5e5c",
+                    "9c8e38b8-e23a-420e-9f72-9d5ad3d9560e",
+                    "01d4c13a-1314-4342-848b-5ba7d68fb15c",
+                    "b9615b69-a3bb-4855-bfbd-1b7cc5987c76",
+                    "f80c9ee7-c2c7-4fff-832a-0054bc328ae3",
+                    "eabd951d-002c-4d09-b66c-eeca1400123e",
+                    "8e5e3d29-e84d-42aa-bc11-192c56527b7f",
+                    "96d945e3-455a-46cf-a30d-97f86ce70472",
+                    "a0c6af14-5c21-4b74-9faf-b570305647f9"
+                ],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
