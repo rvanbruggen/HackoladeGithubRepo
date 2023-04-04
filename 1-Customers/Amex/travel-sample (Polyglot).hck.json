@@ -1,0 +1,1861 @@
+{
+    "modelName": "travel-sample (Polyglot)",
+    "description": "",
+    "author": "",
+    "version": "",
+    "dbVendor": "Polyglot",
+    "comments": "",
+    "sources": [],
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "name": "geo",
+                "isActivated": true,
+                "childType": "object",
+                "primaryKey": false,
+                "required": true,
+                "additionalProperties": true,
+                "definitionRefs": [
+                    [
+                        "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                        "68e443a0-2b1f-11e7-bde4-57d99ab8fafb"
+                    ],
+                    [
+                        "ac283961-2b1e-11e7-bde4-57d99ab8fafb",
+                        "cc2d7080-2b1f-11e7-bde4-57d99ab8fafb"
+                    ]
+                ],
+                "properties": [
+                    {
+                        "name": "lat",
+                        "isActivated": true,
+                        "childType": "number",
+                        "mode": "",
+                        "primaryKey": false,
+                        "required": true,
+                        "unit": "Decimal degrees",
+                        "minimum": -90,
+                        "maximum": 90,
+                        "sample": 43.2054,
+                        "GUID": "ac277623-2b1e-11e7-bde4-57d99ab8fafb",
+                        "type": "numeric"
+                    },
+                    {
+                        "name": "lon",
+                        "isActivated": true,
+                        "childType": "number",
+                        "mode": "",
+                        "primaryKey": false,
+                        "required": true,
+                        "unit": "Decimal degrees",
+                        "minimum": -90,
+                        "maximum": 90,
+                        "sample": 6.482,
+                        "GUID": "ac277624-2b1e-11e7-bde4-57d99ab8fafb",
+                        "type": "numeric"
+                    },
+                    {
+                        "name": "alt",
+                        "isActivated": true,
+                        "childType": "number",
+                        "mode": "",
+                        "primaryKey": false,
+                        "required": true,
+                        "sample": 59,
+                        "GUID": "ac277625-2b1e-11e7-bde4-57d99ab8fafb",
+                        "type": "numeric"
+                    },
+                    {
+                        "name": "accuracy",
+                        "isActivated": true,
+                        "childType": "varchar",
+                        "mode": "string",
+                        "primaryKey": false,
+                        "required": true,
+                        "enum": [
+                            "ROOFTOP",
+                            "RANGE_APPROXIMATION",
+                            "INTERPOLATION"
+                        ],
+                        "sample": "ROOFTOP",
+                        "GUID": "12e00ab0-2b20-11e7-bde4-57d99ab8fafb",
+                        "type": "string"
+                    }
+                ],
+                "GUID": "ac277622-2b1e-11e7-bde4-57d99ab8fafb",
+                "type": "document"
+            }
+        ],
+        "GUID": "9b23fe11-2b1e-11e7-bde4-57d99ab8fafb"
+    },
+    "GUID": "2f6e6284-15f2-48d2-a9b6-9f6c6ab104c2",
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "d561a182-a02c-11e7-9bd5-d7b5bcfc30f7"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "6a62cf93-affd-11ec-ab49-f732172fe980"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb": "airline",
+        "ac2700e9-2b1e-11e7-bde4-57d99ab8fafb": "KEY",
+        "ac2700e3-2b1e-11e7-bde4-57d99ab8fafb": "type",
+        "ac2700e2-2b1e-11e7-bde4-57d99ab8fafb": "id",
+        "ac2700e4-2b1e-11e7-bde4-57d99ab8fafb": "name",
+        "ac2700e5-2b1e-11e7-bde4-57d99ab8fafb": "iata",
+        "ac2700e6-2b1e-11e7-bde4-57d99ab8fafb": "icao",
+        "ac2700e7-2b1e-11e7-bde4-57d99ab8fafb": "callsign",
+        "ac2700e8-2b1e-11e7-bde4-57d99ab8fafb": "country",
+        "ac277619-2b1e-11e7-bde4-57d99ab8fafb": "airport",
+        "ac277626-2b1e-11e7-bde4-57d99ab8fafb": "KEY",
+        "ac27761b-2b1e-11e7-bde4-57d99ab8fafb": "type",
+        "ac27761a-2b1e-11e7-bde4-57d99ab8fafb": "id",
+        "ac27761c-2b1e-11e7-bde4-57d99ab8fafb": "airportname",
+        "ac27761d-2b1e-11e7-bde4-57d99ab8fafb": "city",
+        "ac27761e-2b1e-11e7-bde4-57d99ab8fafb": "country",
+        "ac27761f-2b1e-11e7-bde4-57d99ab8fafb": "faa",
+        "ac277620-2b1e-11e7-bde4-57d99ab8fafb": "icao",
+        "ac277621-2b1e-11e7-bde4-57d99ab8fafb": "tz",
+        "68e443a0-2b1f-11e7-bde4-57d99ab8fafb": "geo",
+        "ac283961-2b1e-11e7-bde4-57d99ab8fafb": "hotel",
+        "ac28608d-2b1e-11e7-bde4-57d99ab8fafb": "KEY",
+        "ac283972-2b1e-11e7-bde4-57d99ab8fafb": "type",
+        "ac283962-2b1e-11e7-bde4-57d99ab8fafb": "title",
+        "ac283963-2b1e-11e7-bde4-57d99ab8fafb": "name",
+        "ac283964-2b1e-11e7-bde4-57d99ab8fafb": "address",
+        "ac283965-2b1e-11e7-bde4-57d99ab8fafb": "directions",
+        "ac283966-2b1e-11e7-bde4-57d99ab8fafb": "phone",
+        "ac283967-2b1e-11e7-bde4-57d99ab8fafb": "tollfree",
+        "ac283968-2b1e-11e7-bde4-57d99ab8fafb": "email",
+        "ac283969-2b1e-11e7-bde4-57d99ab8fafb": "fax",
+        "ac28396a-2b1e-11e7-bde4-57d99ab8fafb": "url",
+        "ac28396b-2b1e-11e7-bde4-57d99ab8fafb": "checkin",
+        "ac28396c-2b1e-11e7-bde4-57d99ab8fafb": "checkout",
+        "ac28396d-2b1e-11e7-bde4-57d99ab8fafb": "price",
+        "cc2d7080-2b1f-11e7-bde4-57d99ab8fafb": "geo",
+        "ac286070-2b1e-11e7-bde4-57d99ab8fafb": "id",
+        "ac286071-2b1e-11e7-bde4-57d99ab8fafb": "country",
+        "ac286072-2b1e-11e7-bde4-57d99ab8fafb": "city",
+        "ac286073-2b1e-11e7-bde4-57d99ab8fafb": "state",
+        "ac286074-2b1e-11e7-bde4-57d99ab8fafb": "reviews",
+        "ac286076-2b1e-11e7-bde4-57d99ab8fafb": "author",
+        "ac286077-2b1e-11e7-bde4-57d99ab8fafb": "content",
+        "ac286078-2b1e-11e7-bde4-57d99ab8fafb": "date",
+        "ac286079-2b1e-11e7-bde4-57d99ab8fafb": "ratings",
+        "ac28607a-2b1e-11e7-bde4-57d99ab8fafb": "Internet access",
+        "ac28607b-2b1e-11e7-bde4-57d99ab8fafb": "Business service",
+        "ac28607c-2b1e-11e7-bde4-57d99ab8fafb": "Check in / front desk",
+        "ac28607d-2b1e-11e7-bde4-57d99ab8fafb": "Cleanliness",
+        "ac28607e-2b1e-11e7-bde4-57d99ab8fafb": "Location",
+        "ac28607f-2b1e-11e7-bde4-57d99ab8fafb": "Overall",
+        "ac286080-2b1e-11e7-bde4-57d99ab8fafb": "Rooms",
+        "ac286081-2b1e-11e7-bde4-57d99ab8fafb": "Service",
+        "ac286082-2b1e-11e7-bde4-57d99ab8fafb": "Sleep Quality",
+        "ac286083-2b1e-11e7-bde4-57d99ab8fafb": "Value",
+        "ac286084-2b1e-11e7-bde4-57d99ab8fafb": "public_likes",
+        "ac286086-2b1e-11e7-bde4-57d99ab8fafb": "vacancy",
+        "ac286087-2b1e-11e7-bde4-57d99ab8fafb": "description",
+        "ac286088-2b1e-11e7-bde4-57d99ab8fafb": "alias",
+        "ac286089-2b1e-11e7-bde4-57d99ab8fafb": "pets_ok",
+        "ac28608a-2b1e-11e7-bde4-57d99ab8fafb": "free_breakfast",
+        "ac28608b-2b1e-11e7-bde4-57d99ab8fafb": "free_internet",
+        "ac28608c-2b1e-11e7-bde4-57d99ab8fafb": "free_parking",
+        "ac28aeaa-2b1e-11e7-bde4-57d99ab8fafb": "landmark",
+        "ac28d5ab-2b1e-11e7-bde4-57d99ab8fafb": "KEY",
+        "ac28d5a5-2b1e-11e7-bde4-57d99ab8fafb": "type",
+        "ac28aeab-2b1e-11e7-bde4-57d99ab8fafb": "title",
+        "ac28aeac-2b1e-11e7-bde4-57d99ab8fafb": "name",
+        "ac28aead-2b1e-11e7-bde4-57d99ab8fafb": "alt",
+        "ac28aeae-2b1e-11e7-bde4-57d99ab8fafb": "address",
+        "ac28aeaf-2b1e-11e7-bde4-57d99ab8fafb": "directions",
+        "ac28aeb0-2b1e-11e7-bde4-57d99ab8fafb": "phone",
+        "ac28aeb1-2b1e-11e7-bde4-57d99ab8fafb": "tollfree",
+        "ac28aeb2-2b1e-11e7-bde4-57d99ab8fafb": "email",
+        "ac28aeb3-2b1e-11e7-bde4-57d99ab8fafb": "url",
+        "ac28aeb4-2b1e-11e7-bde4-57d99ab8fafb": "hours",
+        "ac28aeb5-2b1e-11e7-bde4-57d99ab8fafb": "image",
+        "ac28aeb6-2b1e-11e7-bde4-57d99ab8fafb": "price",
+        "ac28aeb7-2b1e-11e7-bde4-57d99ab8fafb": "content",
+        "ac28d5a0-2b1e-11e7-bde4-57d99ab8fafb": "geo",
+        "ac28d5a1-2b1e-11e7-bde4-57d99ab8fafb": "lat",
+        "ac28d5a2-2b1e-11e7-bde4-57d99ab8fafb": "lon",
+        "ac28d5a3-2b1e-11e7-bde4-57d99ab8fafb": "accuracy",
+        "ac28d5a4-2b1e-11e7-bde4-57d99ab8fafb": "activity",
+        "ac28d5a6-2b1e-11e7-bde4-57d99ab8fafb": "id",
+        "ac28d5a7-2b1e-11e7-bde4-57d99ab8fafb": "country",
+        "ac28d5a8-2b1e-11e7-bde4-57d99ab8fafb": "city",
+        "ac28d5a9-2b1e-11e7-bde4-57d99ab8fafb": "state",
+        "ac28d5aa-2b1e-11e7-bde4-57d99ab8fafb": "image_direct_url",
+        "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb": "route",
+        "ac2923d0-2b1e-11e7-bde4-57d99ab8fafb": "KEY",
+        "ac2923c2-2b1e-11e7-bde4-57d99ab8fafb": "id",
+        "ac2923c3-2b1e-11e7-bde4-57d99ab8fafb": "type",
+        "ac2923c4-2b1e-11e7-bde4-57d99ab8fafb": "airline",
+        "ac2923c5-2b1e-11e7-bde4-57d99ab8fafb": "airlineid",
+        "ac2923c6-2b1e-11e7-bde4-57d99ab8fafb": "sourceairport",
+        "ac2923c7-2b1e-11e7-bde4-57d99ab8fafb": "destinationairport",
+        "ac2923c8-2b1e-11e7-bde4-57d99ab8fafb": "stops",
+        "ac2923c9-2b1e-11e7-bde4-57d99ab8fafb": "equipment",
+        "ac2923ca-2b1e-11e7-bde4-57d99ab8fafb": "schedule",
+        "ac2923cc-2b1e-11e7-bde4-57d99ab8fafb": "day",
+        "ac2923cd-2b1e-11e7-bde4-57d99ab8fafb": "flight",
+        "ac2923ce-2b1e-11e7-bde4-57d99ab8fafb": "utc",
+        "ac2923cf-2b1e-11e7-bde4-57d99ab8fafb": "distance",
+        "ac3be870-2b1e-11e7-bde4-57d99ab8fafb": "travel-sample",
+        "0b6776c0-2b1f-11e7-bde4-57d99ab8fafb": "New Relationship",
+        "1dff4a60-2b1f-11e7-bde4-57d99ab8fafb": "fk airport.KEY to route.sourceairport",
+        "25f87570-2b1f-11e7-bde4-57d99ab8fafb": "fk airport.KEY to route.destinationairport",
+        "ac277622-2b1e-11e7-bde4-57d99ab8fafb": "geo",
+        "ac277623-2b1e-11e7-bde4-57d99ab8fafb": "lat",
+        "ac277624-2b1e-11e7-bde4-57d99ab8fafb": "lon",
+        "ac277625-2b1e-11e7-bde4-57d99ab8fafb": "alt",
+        "12e00ab0-2b20-11e7-bde4-57d99ab8fafb": "accuracy"
+    },
+    "collections": [
+        {
+            "collectionName": "airline",
+            "isActivated": true,
+            "bucketId": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "KEY",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "airline_9833",
+                    "GUID": "ac2700e9-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "airline",
+                    "GUID": "ac2700e3-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 9833,
+                    "GUID": "ac2700e2-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "numeric"
+                },
+                {
+                    "name": "name",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Epic Holiday",
+                    "GUID": "ac2700e4-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "iata",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "FA",
+                    "GUID": "ac2700e5-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "icao",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "4AA",
+                    "GUID": "ac2700e6-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "callsign",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Epic",
+                    "GUID": "ac2700e7-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "country",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "United States",
+                    "GUID": "ac2700e8-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ac2700e0-2b1e-11e7-bde4-57d99ab8fafb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "airport",
+            "isActivated": true,
+            "bucketId": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "KEY",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "airport_5786",
+                    "GUID": "ac277626-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "airport",
+                    "GUID": "ac27761b-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 5786,
+                    "GUID": "ac27761a-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "numeric"
+                },
+                {
+                    "name": "airportname",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "La M√¥le Airport",
+                    "GUID": "ac27761c-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "city",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "La M√¥le",
+                    "GUID": "ac27761d-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "country",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "France",
+                    "GUID": "ac27761e-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "faa",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "LTT",
+                    "GUID": "ac27761f-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "icao",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "LFTZ",
+                    "GUID": "ac277620-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "tz",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Europe/Paris",
+                    "GUID": "ac277621-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "geo",
+                    "isActivated": true,
+                    "$ref": "#/definitions/geo",
+                    "refType": "model",
+                    "refIdPath": [
+                        "2f6e6284-15f2-48d2-a9b6-9f6c6ab104c2",
+                        "9b23fe11-2b1e-11e7-bde4-57d99ab8fafb",
+                        "ac277622-2b1e-11e7-bde4-57d99ab8fafb"
+                    ],
+                    "ref": "ac277622-2b1e-11e7-bde4-57d99ab8fafb",
+                    "GUID": "68e443a0-2b1f-11e7-bde4-57d99ab8fafb",
+                    "type": "reference"
+                }
+            ],
+            "definitions": {
+                "GUID": "ac277618-2b1e-11e7-bde4-57d99ab8fafb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "hotel",
+            "isActivated": true,
+            "bucketId": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "KEY",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "hotel_9905",
+                    "GUID": "ac28608d-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "hotel",
+                    "GUID": "ac283972-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Geneva",
+                    "GUID": "ac283962-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Hotel Formule 1",
+                    "GUID": "ac283963-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "address",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Route de Meyrin, 01210 Ferney Voltaire, France",
+                    "GUID": "ac283964-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "directions",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac283965-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "phone",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "+33 891 705 254",
+                    "GUID": "ac283966-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "tollfree",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac283967-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "email",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac283968-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "fax",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac283969-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "http://www.accorhotels.com/gb/hotel-2257-formule-1-hotelf1-geneve-aeroport-ferney-voltaire/index.shtml",
+                    "GUID": "ac28396a-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "checkin",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28396b-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "checkout",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28396c-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "31€",
+                    "GUID": "ac28396d-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "geo",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/geo",
+                    "refType": "model",
+                    "refIdPath": [
+                        "2f6e6284-15f2-48d2-a9b6-9f6c6ab104c2",
+                        "9b23fe11-2b1e-11e7-bde4-57d99ab8fafb",
+                        "ac277622-2b1e-11e7-bde4-57d99ab8fafb"
+                    ],
+                    "ref": "ac277622-2b1e-11e7-bde4-57d99ab8fafb",
+                    "GUID": "cc2d7080-2b1f-11e7-bde4-57d99ab8fafb",
+                    "type": "reference"
+                },
+                {
+                    "name": "id",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 9905,
+                    "GUID": "ac286070-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "numeric"
+                },
+                {
+                    "name": "country",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "France",
+                    "GUID": "ac286071-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "city",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Ferney-Voltaire",
+                    "GUID": "ac286072-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "state",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Rhône-Alpes",
+                    "GUID": "ac286073-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "reviews",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": true,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "object",
+                            "primaryKey": false,
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "author",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "sample": "Aaron Schmidt II",
+                                    "GUID": "ac286076-2b1e-11e7-bde4-57d99ab8fafb",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "content",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "sample": "As a newer hotel that's close to the corporate offices of a business I visit regularly, I was excited to stay here for the first time last month. The hotel gets very high marks for staff enthusiasm, courtesy, friendlieness, and helpfulness. Being a newer hotel, it was spotlessly clean. I liked the breakfast area, although it did get a bit noisy when the \"rush\" hit about 8:00 a.m. on a Saturday morning. The room was similarly clean and comfortable. The wireless internet connection (free) was useful. I also liked their simply-put, straight-forward internet privacy policy (\"You have no expectation of privacy...). No beating around the bush there--wish others would spare us the jibberish and just come out and say what is obvious: on an unsecured, free wireless internet network connection, you don't have any privacy! There was just one problem, and I discovered later that a colleague who has stayed here twice experienced both times on this visit. I did not get my wake-up call, which made me late for a meeting. That is unaccetable, especially when I asked the front desk about the reliability of their wake-up calls. My back-up system for awakening (the hotel's very cheap alarm clocks) proved equally inadequate. The alarm did go off, but was so quiet that it couldn't be heard and didn't do the job. I'm not that heavy of a sleeper, either! It may be a little problem to some, but it's enough to put them on my \"one more chance\" list. I'd like to stay here again.",
+                                    "GUID": "ac286077-2b1e-11e7-bde4-57d99ab8fafb",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "date",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "sample": "2015-03-19 03:17:18 +0300",
+                                    "GUID": "ac286078-2b1e-11e7-bde4-57d99ab8fafb",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "ratings",
+                                    "isActivated": true,
+                                    "childType": "object",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "additionalProperties": true,
+                                    "properties": [
+                                        {
+                                            "name": "Internet access",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "GUID": "ac28607a-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Business service",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "GUID": "ac28607b-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Check in / front desk",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "GUID": "ac28607c-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Cleanliness",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "sample": 5,
+                                            "GUID": "ac28607d-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Location",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "sample": 5,
+                                            "GUID": "ac28607e-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Overall",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "relationshipType": "",
+                                            "sample": 4,
+                                            "GUID": "ac28607f-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Rooms",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "sample": 5,
+                                            "GUID": "ac286080-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Service",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "sample": 4,
+                                            "GUID": "ac286081-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Sleep Quality",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "GUID": "ac286082-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "Value",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "sample": 5,
+                                            "GUID": "ac286083-2b1e-11e7-bde4-57d99ab8fafb",
+                                            "type": "numeric"
+                                        }
+                                    ],
+                                    "GUID": "ac286079-2b1e-11e7-bde4-57d99ab8fafb",
+                                    "type": "document"
+                                }
+                            ],
+                            "GUID": "ac286075-2b1e-11e7-bde4-57d99ab8fafb",
+                            "type": "document",
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "ac286074-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "array"
+                },
+                {
+                    "name": "public_likes",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": true,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "sample": "Lorena Hansen",
+                            "GUID": "ac286085-2b1e-11e7-bde4-57d99ab8fafb",
+                            "type": "string",
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "ac286084-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "array"
+                },
+                {
+                    "name": "vacancy",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": false,
+                    "GUID": "ac286086-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "boolean"
+                },
+                {
+                    "name": "description",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Right behind the airport on the French side. Inexpensive but still a good standard since it belongs to the Accor hotel chain.",
+                    "GUID": "ac286087-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "alias",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac286088-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "pets_ok",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": false,
+                    "GUID": "ac286089-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "boolean"
+                },
+                {
+                    "name": "free_breakfast",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": false,
+                    "GUID": "ac28608a-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "boolean"
+                },
+                {
+                    "name": "free_internet",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": true,
+                    "GUID": "ac28608b-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "boolean"
+                },
+                {
+                    "name": "free_parking",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": false,
+                    "GUID": "ac28608c-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "boolean"
+                }
+            ],
+            "definitions": {
+                "GUID": "ac283960-2b1e-11e7-bde4-57d99ab8fafb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ac283961-2b1e-11e7-bde4-57d99ab8fafb",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "landmark",
+            "isActivated": true,
+            "bucketId": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "KEY",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "landmark_17400",
+                    "GUID": "ac28d5ab-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "landmark",
+                    "GUID": "ac28d5a5-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Manchester/Victoria-Shopping District",
+                    "GUID": "ac28aeab-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Royal Exchange",
+                    "GUID": "ac28aeac-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "alt",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28aead-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "address",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "St. Ann's Square",
+                    "GUID": "ac28aeae-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "directions",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28aeaf-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "phone",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "+44 161 833-9833",
+                    "GUID": "ac28aeb0-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "tollfree",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28aeb1-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "email",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28aeb2-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "http://www.royalexchange.co.uk",
+                    "GUID": "ac28aeb3-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "hours",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Mon-Sat 9:30 AM - Late (depending on length of evening's performance)",
+                    "GUID": "ac28aeb4-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "image",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28aeb5-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Free entry to theatre building, theatre tickets vary",
+                    "GUID": "ac28aeb6-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "content",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "The neo-classical Royal Exchange was the commercial heart of Manchester's and therefore the world's cotton trade. The main trading hall, essentially a neo-Roman basilica, was at one time the largest commercial room in the world. It fell into disuse in the 1960s, but was rescued in the 1970s by the restoration of the building and the addition of an ultra-modern theatre in-the-round for Sir Robert D.H. Scott's '69 (now Royal Exchange) theatre Company. It stands in the centre of the main trading floor, squatting like an alien invader's spaceship, but is actually supported on the hall's load bearing columns. Ill-disposed members of the audience sitting in the theatre's surrounding on-stage banquette seats are well-placed to trip the actors up physically. Extensive wine merchant cellars have now been converted into a shopping centre and the wings surrounding the theatre hall contain offices and Barristers' chambers. Pop in during the day for a coffee or something stronger at the tranquil and elegant licensed cafe in the main hall: the entrance is up the stairs in St. Ann's Square or on Cross Street. As well as the wonderfully-restored interior and three dramatic coloured-glass domes, you can admire the trading board, which still shows the price of cotton around the world on the last day of trading in 1969. There is also a small, expensive craft shop inside.",
+                    "GUID": "ac28aeb7-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "geo",
+                    "isActivated": true,
+                    "childType": "object",
+                    "primaryKey": false,
+                    "required": true,
+                    "additionalProperties": true,
+                    "properties": [
+                        {
+                            "name": "lat",
+                            "isActivated": true,
+                            "childType": "number",
+                            "mode": "",
+                            "primaryKey": false,
+                            "required": true,
+                            "relationshipType": "",
+                            "sample": 53.4825,
+                            "GUID": "ac28d5a1-2b1e-11e7-bde4-57d99ab8fafb",
+                            "type": "numeric"
+                        },
+                        {
+                            "name": "lon",
+                            "isActivated": true,
+                            "childType": "number",
+                            "mode": "",
+                            "primaryKey": false,
+                            "required": true,
+                            "relationshipType": "",
+                            "sample": -2.24482,
+                            "GUID": "ac28d5a2-2b1e-11e7-bde4-57d99ab8fafb",
+                            "type": "numeric"
+                        },
+                        {
+                            "name": "accuracy",
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "primaryKey": false,
+                            "required": true,
+                            "relationshipType": "",
+                            "sample": "APPROXIMATE",
+                            "GUID": "ac28d5a3-2b1e-11e7-bde4-57d99ab8fafb",
+                            "type": "string"
+                        }
+                    ],
+                    "GUID": "ac28d5a0-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "document"
+                },
+                {
+                    "name": "activity",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "see",
+                    "GUID": "ac28d5a4-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 17400,
+                    "GUID": "ac28d5a6-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "numeric"
+                },
+                {
+                    "name": "country",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "United Kingdom",
+                    "GUID": "ac28d5a7-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "city",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Manchester",
+                    "GUID": "ac28d5a8-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "state",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28d5a9-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "image_direct_url",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "ac28d5aa-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ac28aea9-2b1e-11e7-bde4-57d99ab8fafb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ac28aeaa-2b1e-11e7-bde4-57d99ab8fafb",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "route",
+            "isActivated": true,
+            "bucketId": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "KEY",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "route_12514",
+                    "GUID": "ac2923d0-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 12514,
+                    "GUID": "ac2923c2-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "numeric"
+                },
+                {
+                    "name": "type",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "route",
+                    "GUID": "ac2923c3-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "airline",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "AV",
+                    "GUID": "ac2923c4-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "airlineid",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                    "foreignField": [
+                        "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "ac2700e9-2b1e-11e7-bde4-57d99ab8fafb"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": "airline_515",
+                    "GUID": "ac2923c5-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "sourceairport",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                    "foreignField": [
+                        "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                        "ac277626-2b1e-11e7-bde4-57d99ab8fafb"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": "SAL",
+                    "GUID": "ac2923c6-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "destinationairport",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                    "foreignField": [
+                        "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                        "ac277626-2b1e-11e7-bde4-57d99ab8fafb"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": "EWR",
+                    "GUID": "ac2923c7-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "stops",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 0,
+                    "GUID": "ac2923c8-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "numeric"
+                },
+                {
+                    "name": "equipment",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "320 738",
+                    "GUID": "ac2923c9-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "string"
+                },
+                {
+                    "name": "schedule",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": true,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "object",
+                            "primaryKey": false,
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "day",
+                                    "isActivated": true,
+                                    "childType": "number",
+                                    "mode": "",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "sample": 6,
+                                    "GUID": "ac2923cc-2b1e-11e7-bde4-57d99ab8fafb",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "flight",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "sample": "AV502",
+                                    "GUID": "ac2923cd-2b1e-11e7-bde4-57d99ab8fafb",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "utc",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "sample": "06:36:00",
+                                    "GUID": "ac2923ce-2b1e-11e7-bde4-57d99ab8fafb",
+                                    "type": "string"
+                                }
+                            ],
+                            "GUID": "ac2923cb-2b1e-11e7-bde4-57d99ab8fafb",
+                            "type": "document",
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "ac2923ca-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "array"
+                },
+                {
+                    "name": "distance",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 3358.381839978378,
+                    "GUID": "ac2923cf-2b1e-11e7-bde4-57d99ab8fafb",
+                    "type": "numeric"
+                }
+            ],
+            "definitions": {
+                "GUID": "bbfd13c0-c17c-11e7-971b-01ea50e50211",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "buckets": [
+        {
+            "name": "travel-sample",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 33,
+                "g": 150,
+                "b": 243,
+                "a": 1
+            },
+            "GUID": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb",
+            "type": "bucket",
+            "collectionIds": [
+                "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                "ac283961-2b1e-11e7-bde4-57d99ab8fafb",
+                "ac28aeaa-2b1e-11e7-bde4-57d99ab8fafb",
+                "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb"
+            ],
+            "show": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "New Relationship",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+            "parentField": [
+                [
+                    "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                    "ac2700e9-2b1e-11e7-bde4-57d99ab8fafb"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+            "childField": [
+                [
+                    "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                    "ac2923c5-2b1e-11e7-bde4-57d99ab8fafb"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "0b6776c0-2b1f-11e7-bde4-57d99ab8fafb",
+            "level": "field"
+        },
+        {
+            "name": "fk airport.KEY to route.sourceairport",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+            "parentField": [
+                [
+                    "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                    "ac277626-2b1e-11e7-bde4-57d99ab8fafb"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+            "childField": [
+                [
+                    "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                    "ac2923c6-2b1e-11e7-bde4-57d99ab8fafb"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "1dff4a60-2b1f-11e7-bde4-57d99ab8fafb",
+            "level": "field"
+        },
+        {
+            "name": "fk airport.KEY to route.destinationairport",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+            "parentField": [
+                [
+                    "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                    "ac277626-2b1e-11e7-bde4-57d99ab8fafb"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+            "childField": [
+                [
+                    "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                    "ac2923c7-2b1e-11e7-bde4-57d99ab8fafb"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "25f87570-2b1f-11e7-bde4-57d99ab8fafb",
+            "level": "field"
+        }
+    ],
+    "appTarget": "Polyglot",
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-04-04T15:05:59.354Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "6.9.9"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 1056.6305637982196,
+                        "y": 1409.7833827893173,
+                        "width": 197,
+                        "height": 177,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 1040,
+                        "y": 1040,
+                        "width": 254,
+                        "height": 285,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac283961-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 1701,
+                        "y": 1054,
+                        "width": 308,
+                        "height": 697
+                    },
+                    {
+                        "GUID": "ac28aeaa-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 1361.5385756676558,
+                        "y": 1397.6913946587538,
+                        "width": 264,
+                        "height": 380
+                    },
+                    {
+                        "GUID": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 1361,
+                        "y": 1056,
+                        "width": 255,
+                        "height": 303,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1000,
+                        "y": 1000,
+                        "GUID": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                            "x": 1056.6305637982196,
+                            "y": 1409.7833827893173,
+                            "width": 197,
+                            "height": 177,
+                            "color": {
+                                "hsl": {
+                                    "h": 339.7058823529412,
+                                    "s": 0.8292682926829267,
+                                    "l": 0.5176470588235293,
+                                    "a": 1
+                                },
+                                "hex": "#ea1e63",
+                                "rgb": {
+                                    "r": 234,
+                                    "g": 30,
+                                    "b": 99,
+                                    "a": 1
+                                },
+                                "hsv": {
+                                    "h": 339.7058823529412,
+                                    "s": 0.8717948717948718,
+                                    "v": 0.9176470588235294,
+                                    "a": 1
+                                },
+                                "oldHue": 339.7058823529412,
+                                "source": "hex"
+                            }
+                        },
+                        {
+                            "GUID": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                            "x": 1040,
+                            "y": 1040,
+                            "width": 254,
+                            "height": 285,
+                            "color": {
+                                "hsl": {
+                                    "h": 339.7058823529412,
+                                    "s": 0.8292682926829267,
+                                    "l": 0.5176470588235293,
+                                    "a": 1
+                                },
+                                "hex": "#ea1e63",
+                                "rgb": {
+                                    "r": 234,
+                                    "g": 30,
+                                    "b": 99,
+                                    "a": 1
+                                },
+                                "hsv": {
+                                    "h": 339.7058823529412,
+                                    "s": 0.8717948717948718,
+                                    "v": 0.9176470588235294,
+                                    "a": 1
+                                },
+                                "oldHue": 339.7058823529412,
+                                "source": "hex"
+                            }
+                        },
+                        {
+                            "GUID": "ac283961-2b1e-11e7-bde4-57d99ab8fafb",
+                            "x": 1701,
+                            "y": 1054,
+                            "width": 308,
+                            "height": 697
+                        },
+                        {
+                            "GUID": "ac28aeaa-2b1e-11e7-bde4-57d99ab8fafb",
+                            "x": 1361.5385756676558,
+                            "y": 1397.6913946587538,
+                            "width": 264,
+                            "height": 380
+                        },
+                        {
+                            "GUID": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                            "x": 1361,
+                            "y": 1056,
+                            "width": 255,
+                            "height": 303,
+                            "color": {
+                                "hsl": {
+                                    "h": 339.7058823529412,
+                                    "s": 0.8292682926829267,
+                                    "l": 0.5176470588235293,
+                                    "a": 1
+                                },
+                                "hex": "#ea1e63",
+                                "rgb": {
+                                    "r": 234,
+                                    "g": 30,
+                                    "b": 99,
+                                    "a": 1
+                                },
+                                "hsv": {
+                                    "h": 339.7058823529412,
+                                    "s": 0.8717948717948718,
+                                    "v": 0.9176470588235294,
+                                    "a": 1
+                                },
+                                "oldHue": 339.7058823529412,
+                                "source": "hex"
+                            }
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 1000,
+                            "y": 1000,
+                            "GUID": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
