@@ -1,0 +1,1560 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "description",
+                    "GUID": "9d7e50e2-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Seaweed and fish",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "categoryName",
+                    "GUID": "9d7e50e3-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Seafood",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "picture",
+                    "GUID": "9d7e50e4-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "0x151C2F00020000000D000E0014002100FFFFFFFF4269746D617020496D616765005061696E742E5069637475726500010500000200000007000000504272757368000000000000000000A0290000424D98290000000000005600000028000000AC00000078000000010004000000000000000000880B0000880B0000080000",
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "categoryID",
+                    "childType": "number",
+                    "GUID": "9d7e50e5-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 8,
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "9d7e50e1-6da6-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "9d7e50e0-6da6-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Category",
+            "index": [
+                {
+                    "GUID": "9d8332e0-6da6-11e8-977e-574156f5cc39",
+                    "name": ":Category.[categoryID]",
+                    "key": [
+                        {
+                            "keyId": "9d7e50e5-6da6-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_label_property",
+                    "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
+                    "description": "",
+                    "storedProcComments": "",
+                    "isActivated": true
+                }
+            ],
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
+        },
+        {
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "country",
+                    "GUID": "9d7eed22-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Poland",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "contactTitle",
+                    "GUID": "9d7eed23-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Owner",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "address",
+                    "GUID": "9d7eed24-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "ul. Filtrowa 68",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "phone",
+                    "GUID": "9d7eed25-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "(26) 642-7012",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "city",
+                    "GUID": "9d7eed26-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Warszawa",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "contactName",
+                    "GUID": "9d7eed27-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Zbyszek Piestrzeniewicz",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "companyName",
+                    "GUID": "9d7eed28-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Wolski  Zajazd",
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "postalCode",
+                    "GUID": "9d7eed29-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d7e9f00-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        },
+                        {
+                            "GUID": "9d7ec610-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "customerID",
+                    "GUID": "9d7eed2a-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "WOLZA",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "fax",
+                    "GUID": "9d7eed2b-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "(26) 642-7012",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "region",
+                    "GUID": "9d7eed2c-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "NULL",
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "9d7eed21-6da6-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "9d7eed20-6da6-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Customer",
+            "index": [
+                {
+                    "GUID": "9d8359f0-6da6-11e8-977e-574156f5cc39",
+                    "name": ":Customer.[customerID]",
+                    "key": [
+                        {
+                            "keyId": "9d7eed2a-6da6-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_label_property",
+                    "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
+                    "description": "",
+                    "storedProcComments": "",
+                    "isActivated": true
+                }
+            ],
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
+        },
+        {
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "shipCity",
+                    "GUID": "9d80e8f2-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d8073c1-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d8073c2-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "orderID",
+                    "childType": "number",
+                    "GUID": "9d80e8f3-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 11077,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "freight",
+                    "childType": "number",
+                    "GUID": "9d80e8f4-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 8.53,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "requiredDate",
+                    "GUID": "9d80e8f5-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "1998-06-03 00:00:00.000",
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "employeeID",
+                    "childType": "number",
+                    "GUID": "9d80e8f6-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "shipName",
+                    "GUID": "9d80e8f7-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Rattlesnake Canyon Grocery",
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "shipPostalCode",
+                    "GUID": "9d80e8f8-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d80c1e0-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        },
+                        {
+                            "GUID": "9d80c1e1-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "shipCountry",
+                    "GUID": "9d80e8f9-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d80c1e2-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d80c1e3-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "shipAddress",
+                    "GUID": "9d80e8fa-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d80c1e4-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d80c1e5-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "shipVia",
+                    "childType": "number",
+                    "GUID": "9d80e8fb-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 2,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "customerID",
+                    "GUID": "9d80e8fc-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "RATTC",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "shippedDate",
+                    "GUID": "9d80e8fd-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "NULL",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "shipRegion",
+                    "GUID": "9d80e8fe-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "NM",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "orderDate",
+                    "GUID": "9d80e8ff-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "1998-05-06 00:00:00.000",
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "9d80e8f1-6da6-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "9d80e8f0-6da6-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Order",
+            "index": [
+                {
+                    "GUID": "9d8359f3-6da6-11e8-977e-574156f5cc39",
+                    "name": ":Order.[orderID]",
+                    "key": [
+                        {
+                            "keyId": "9d80e8f3-6da6-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_label_property",
+                    "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
+                    "description": "",
+                    "storedProcComments": "",
+                    "isActivated": true
+                }
+            ],
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
+        },
+        {
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "reorderLevel",
+                    "childType": "number",
+                    "GUID": "9d804cb2-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 15,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "unitsInStock",
+                    "childType": "number",
+                    "GUID": "9d804cb3-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 32,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "unitPrice",
+                    "childType": "number",
+                    "GUID": "9d804cb4-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 13,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "supplierID",
+                    "childType": "number",
+                    "GUID": "9d804cb5-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 12,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "productID",
+                    "childType": "number",
+                    "GUID": "9d804cb6-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 77,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "quantityPerUnit",
+                    "GUID": "9d804cb7-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "12 boxes",
+                    "isActivated": true
+                },
+                {
+                    "type": "boolean",
+                    "primaryKey": false,
+                    "name": "discontinued",
+                    "childType": "boolean",
+                    "GUID": "9d804cb8-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": false,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "productName",
+                    "GUID": "9d804cb9-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Original Frankfurter grüne Soße",
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "unitsOnOrder",
+                    "childType": "number",
+                    "GUID": "9d804cba-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 0,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "categoryID",
+                    "childType": "number",
+                    "GUID": "9d804cbb-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 2,
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "9d804cb1-6da6-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "9d804cb0-6da6-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Product",
+            "index": [
+                {
+                    "GUID": "9d8359f2-6da6-11e8-977e-574156f5cc39",
+                    "name": ":Product.[productID]",
+                    "key": [
+                        {
+                            "keyId": "9d804cb6-6da6-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_label_property",
+                    "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
+                    "description": "",
+                    "storedProcComments": "",
+                    "isActivated": true
+                }
+            ],
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
+        },
+        {
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "country",
+                    "GUID": "9d7ffe94-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d7f6251-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d7f6252-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "contactTitle",
+                    "GUID": "9d7ffe95-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Accounting Manager",
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "address",
+                    "GUID": "9d7ffe96-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d7fb070-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d7fb071-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "supplierID",
+                    "childType": "number",
+                    "GUID": "9d7ffe97-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 29,
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "phone",
+                    "GUID": "9d7ffe98-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d7fb072-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d7fb073-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "city",
+                    "GUID": "9d7ffe99-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d7fd780-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d7fd781-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "contactName",
+                    "GUID": "9d7ffe9a-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Chantal Goulet",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "companyName",
+                    "GUID": "9d7ffe9b-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Forêts d'érables",
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "postalCode",
+                    "GUID": "9d7ffe9c-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d7fd782-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d7fd783-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "region",
+                    "GUID": "9d7ffe9d-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Québec",
+                    "isActivated": true
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "fax",
+                    "GUID": "9d7ffe9e-6da6-11e8-977e-574156f5cc39",
+                    "multipleTypes": [
+                        {
+                            "GUID": "9d7ffe90-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        },
+                        {
+                            "GUID": "9d7ffe91-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "homePage",
+                    "GUID": "9d7ffe9f-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "NULL",
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "9d7ffe93-6da6-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "9d7ffe92-6da6-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Supplier",
+            "index": [
+                {
+                    "GUID": "9d8359f1-6da6-11e8-977e-574156f5cc39",
+                    "name": ":Supplier.[supplierID]",
+                    "key": [
+                        {
+                            "keyId": "9d7ffe97-6da6-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_label_property",
+                    "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
+                    "description": "",
+                    "storedProcComments": "",
+                    "isActivated": true
+                }
+            ],
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "name": "graph.db",
+            "type": "bucket",
+            "collectionIds": [
+                "9d7e50e1-6da6-11e8-977e-574156f5cc39",
+                "9d7eed21-6da6-11e8-977e-574156f5cc39",
+                "9d7ffe93-6da6-11e8-977e-574156f5cc39",
+                "9d804cb1-6da6-11e8-977e-574156f5cc39",
+                "9d80e8f1-6da6-11e8-977e-574156f5cc39"
+            ],
+            "backgroundColor": {
+                "r": 187,
+                "g": 187,
+                "b": 187,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "addFieldsToBucket": true,
+            "isPlugin": true,
+            "isActivated": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "9d913ca0-6da6-11e8-977e-574156f5cc39",
+            "name": "ORDERS",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "9d80e8f1-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "9d804cb1-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
+            "properties": [
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "unitPrice",
+                    "childType": "number",
+                    "GUID": "9d83a812-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 18,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "discount",
+                    "childType": "number",
+                    "GUID": "9d83a813-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 0,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "quantity",
+                    "childType": "number",
+                    "GUID": "9d83a814-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 28,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "productID",
+                    "childType": "number",
+                    "GUID": "9d83a815-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 39,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "orderID",
+                    "childType": "number",
+                    "GUID": "9d83a816-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 10830,
+                    "isActivated": true
+                }
+            ]
+        },
+        {
+            "GUID": "9d913ca1-6da6-11e8-977e-574156f5cc39",
+            "name": "PART_OF",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "9d804cb1-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "9d7e50e1-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
+            "properties": []
+        },
+        {
+            "GUID": "9d913ca2-6da6-11e8-977e-574156f5cc39",
+            "name": "PURCHASED",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "9d7eed21-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "9d80e8f1-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
+            "properties": []
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "9d7e50e2-6da6-11e8-977e-574156f5cc39": "description",
+        "9d7e50e3-6da6-11e8-977e-574156f5cc39": "categoryName",
+        "9d7e50e4-6da6-11e8-977e-574156f5cc39": "picture",
+        "9d7e50e5-6da6-11e8-977e-574156f5cc39": "categoryID",
+        "9d7e50e1-6da6-11e8-977e-574156f5cc39": "Category",
+        "9d7eed22-6da6-11e8-977e-574156f5cc39": "country",
+        "9d7eed23-6da6-11e8-977e-574156f5cc39": "contactTitle",
+        "9d7eed24-6da6-11e8-977e-574156f5cc39": "address",
+        "9d7eed25-6da6-11e8-977e-574156f5cc39": "phone",
+        "9d7eed26-6da6-11e8-977e-574156f5cc39": "city",
+        "9d7eed27-6da6-11e8-977e-574156f5cc39": "contactName",
+        "9d7eed28-6da6-11e8-977e-574156f5cc39": "companyName",
+        "9d7eed29-6da6-11e8-977e-574156f5cc39": "postalCode",
+        "9d7eed2a-6da6-11e8-977e-574156f5cc39": "customerID",
+        "9d7eed2b-6da6-11e8-977e-574156f5cc39": "fax",
+        "9d7eed2c-6da6-11e8-977e-574156f5cc39": "region",
+        "9d7eed21-6da6-11e8-977e-574156f5cc39": "Customer",
+        "9d7ffe94-6da6-11e8-977e-574156f5cc39": "country",
+        "9d7ffe95-6da6-11e8-977e-574156f5cc39": "contactTitle",
+        "9d7ffe96-6da6-11e8-977e-574156f5cc39": "address",
+        "9d7ffe97-6da6-11e8-977e-574156f5cc39": "supplierID",
+        "9d7ffe98-6da6-11e8-977e-574156f5cc39": "phone",
+        "9d7ffe99-6da6-11e8-977e-574156f5cc39": "city",
+        "9d7ffe9a-6da6-11e8-977e-574156f5cc39": "contactName",
+        "9d7ffe9b-6da6-11e8-977e-574156f5cc39": "companyName",
+        "9d7ffe9c-6da6-11e8-977e-574156f5cc39": "postalCode",
+        "9d7ffe9d-6da6-11e8-977e-574156f5cc39": "region",
+        "9d7ffe9e-6da6-11e8-977e-574156f5cc39": "fax",
+        "9d7ffe9f-6da6-11e8-977e-574156f5cc39": "homePage",
+        "9d7ffe93-6da6-11e8-977e-574156f5cc39": "Supplier",
+        "9d804cb2-6da6-11e8-977e-574156f5cc39": "reorderLevel",
+        "9d804cb3-6da6-11e8-977e-574156f5cc39": "unitsInStock",
+        "9d804cb4-6da6-11e8-977e-574156f5cc39": "unitPrice",
+        "9d804cb5-6da6-11e8-977e-574156f5cc39": "supplierID",
+        "9d804cb6-6da6-11e8-977e-574156f5cc39": "productID",
+        "9d804cb7-6da6-11e8-977e-574156f5cc39": "quantityPerUnit",
+        "9d804cb8-6da6-11e8-977e-574156f5cc39": "discontinued",
+        "9d804cb9-6da6-11e8-977e-574156f5cc39": "productName",
+        "9d804cba-6da6-11e8-977e-574156f5cc39": "unitsOnOrder",
+        "9d804cbb-6da6-11e8-977e-574156f5cc39": "categoryID",
+        "9d804cb1-6da6-11e8-977e-574156f5cc39": "Product",
+        "9d80e8f2-6da6-11e8-977e-574156f5cc39": "shipCity",
+        "9d80e8f3-6da6-11e8-977e-574156f5cc39": "orderID",
+        "9d80e8f4-6da6-11e8-977e-574156f5cc39": "freight",
+        "9d80e8f5-6da6-11e8-977e-574156f5cc39": "requiredDate",
+        "9d80e8f6-6da6-11e8-977e-574156f5cc39": "employeeID",
+        "9d80e8f7-6da6-11e8-977e-574156f5cc39": "shipName",
+        "9d80e8f8-6da6-11e8-977e-574156f5cc39": "shipPostalCode",
+        "9d80e8f9-6da6-11e8-977e-574156f5cc39": "shipCountry",
+        "9d80e8fa-6da6-11e8-977e-574156f5cc39": "shipAddress",
+        "9d80e8fb-6da6-11e8-977e-574156f5cc39": "shipVia",
+        "9d80e8fc-6da6-11e8-977e-574156f5cc39": "customerID",
+        "9d80e8fd-6da6-11e8-977e-574156f5cc39": "shippedDate",
+        "9d80e8fe-6da6-11e8-977e-574156f5cc39": "shipRegion",
+        "9d80e8ff-6da6-11e8-977e-574156f5cc39": "orderDate",
+        "9d80e8f1-6da6-11e8-977e-574156f5cc39": "Order",
+        "9d913ca0-6da6-11e8-977e-574156f5cc39": "ORDERS",
+        "9d913ca1-6da6-11e8-977e-574156f5cc39": "PART_OF",
+        "9d913ca2-6da6-11e8-977e-574156f5cc39": "PURCHASED",
+        "9d911590-6da6-11e8-977e-574156f5cc39": "graph.db",
+        "9d83a812-6da6-11e8-977e-574156f5cc39": "unitPrice",
+        "9d83a813-6da6-11e8-977e-574156f5cc39": "discount",
+        "9d83a814-6da6-11e8-977e-574156f5cc39": "quantity",
+        "9d83a815-6da6-11e8-977e-574156f5cc39": "productID",
+        "9d83a816-6da6-11e8-977e-574156f5cc39": "orderID"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "7b9d3861-6da6-11e8-977e-574156f5cc39"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "b45dc4b2-b002-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "7b9d3862-6da6-11e8-977e-574156f5cc39"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "3.x",
+    "dbVendor": "Neo4j",
+    "appTarget": "NEO4J",
+    "creationTS": "2018-06-11T18:37:24.070Z",
+    "GUID": "7b9d3860-6da6-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:23:54.348Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "9d7e50e1-6da6-11e8-977e-574156f5cc39",
+                        "x": 654,
+                        "y": 594,
+                        "width": 243,
+                        "height": 85,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9d7eed21-6da6-11e8-977e-574156f5cc39",
+                        "x": 654,
+                        "y": 111,
+                        "width": 243,
+                        "height": 183,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9d7ffe93-6da6-11e8-977e-574156f5cc39",
+                        "x": 90,
+                        "y": 791,
+                        "width": 243,
+                        "height": 197,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9d804cb1-6da6-11e8-977e-574156f5cc39",
+                        "x": 90,
+                        "y": 552,
+                        "width": 243,
+                        "height": 169,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9d80e8f1-6da6-11e8-977e-574156f5cc39",
+                        "x": 90,
+                        "y": 90,
+                        "width": 243,
+                        "height": 225,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9d913ca0-6da6-11e8-977e-574156f5cc39",
+                        "x": 91,
+                        "y": 385,
+                        "width": 241,
+                        "height": 97,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "9d913ca1-6da6-11e8-977e-574156f5cc39",
+                        "x": 430,
+                        "y": 622,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "9d913ca2-6da6-11e8-977e-574156f5cc39",
+                        "x": 417,
+                        "y": 188,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "9d911590-6da6-11e8-977e-574156f5cc39"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [
+                    "9d7ffe93-6da6-11e8-977e-574156f5cc39"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "9d7e50e1-6da6-11e8-977e-574156f5cc39",
+                            "x": 486.3765317638937,
+                            "y": 455.40637144290986,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d7eed21-6da6-11e8-977e-574156f5cc39",
+                            "x": 463.3102817599892,
+                            "y": 100,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d7ffe93-6da6-11e8-977e-574156f5cc39",
+                            "x": 743.5139990023068,
+                            "y": 218.5703768115563,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d804cb1-6da6-11e8-977e-574156f5cc39",
+                            "x": 186.68951940067822,
+                            "y": 474.0322766488535,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d80e8f1-6da6-11e8-977e-574156f5cc39",
+                            "x": 172.26533534166572,
+                            "y": 173.7463299714124,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 132.26533534166572,
+                            "y": 60,
+                            "GUID": "9d911590-6da6-11e8-977e-574156f5cc39"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

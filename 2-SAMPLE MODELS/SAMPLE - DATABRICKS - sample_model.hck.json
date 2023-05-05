@@ -1,0 +1,1331 @@
+{
+    "modelName": "DataCo",
+    "collections": [
+        {
+            "collectionName": "categories",
+            "type": "object",
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "category_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "a23f5030-ae7f-11eb-b8d3-533823b921f5",
+                    "required": true,
+                    "childRelationships": [
+                        "ae7efe90-ae7f-11eb-b8d3-533823b921f5"
+                    ]
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "category_department_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "b8cb4160-ae7f-11eb-b8d3-533823b921f5",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+                    "foreignField": [
+                        "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+                        "840d9450-b483-11eb-a042-db7f7008a2f8"
+                    ],
+                    "parentRelationship": "ac1f4ce0-b483-11eb-a042-db7f7008a2f8"
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "category_name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "cbc8dbb0-ae7f-11eb-b8d3-533823b921f5",
+                    "maxLength": 45
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "9c566780-ae7f-11eb-b8d3-533823b921f5"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "tableIfNotExists": true,
+            "GUID": "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+            "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "SecIndxs": [],
+            "additionalProperties": true
+        },
+        {
+            "collectionName": "customers",
+            "type": "object",
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "customer_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "9b2d1d80-b484-11eb-a042-db7f7008a2f8",
+                    "required": true,
+                    "childRelationships": [
+                        "2a0039c0-b485-11eb-a042-db7f7008a2f8"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "customer_fname",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "a59e7480-b484-11eb-a042-db7f7008a2f8",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "maxLength": 45
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "customer_lname",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "b08ee690-b484-11eb-a042-db7f7008a2f8",
+                    "maxLength": 45
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "customer_email",
+                    "hackoladeMeta": {},
+                    "isActivated": false,
+                    "GUID": "ba4292e0-b484-11eb-a042-db7f7008a2f8",
+                    "maxLength": 45
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "customer_password",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "c8a5e490-b484-11eb-a042-db7f7008a2f8",
+                    "maxLength": 45
+                },
+                {
+                    "GUID": "18cfe560-b485-11eb-a042-db7f7008a2f8",
+                    "name": "customer_address",
+                    "type": "reference",
+                    "$ref": "#model/definitions/customer_address",
+                    "refType": "model",
+                    "ref": "ff6628a0-b484-11eb-a042-db7f7008a2f8",
+                    "refIdPath": [
+                        "9ae13e90-ae7d-11eb-b8d3-533823b921f5",
+                        "9ae13e91-ae7d-11eb-b8d3-533823b921f5",
+                        "ff6628a0-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "8f771180-b484-11eb-a042-db7f7008a2f8"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "tableIfNotExists": true,
+            "GUID": "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+            "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "SecIndxs": [],
+            "additionalProperties": true
+        },
+        {
+            "collectionName": "departments",
+            "type": "object",
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "department_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "840d9450-b483-11eb-a042-db7f7008a2f8",
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "ac1f4ce0-b483-11eb-a042-db7f7008a2f8"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "department_name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "9d070310-b483-11eb-a042-db7f7008a2f8",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "7dd37e60-b483-11eb-a042-db7f7008a2f8"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "tableIfNotExists": true,
+            "GUID": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+            "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "additionalProperties": true
+        },
+        {
+            "collectionName": "order_items",
+            "type": "object",
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_item_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "c90e86e0-b483-11eb-a042-db7f7008a2f8",
+                    "required": true
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_item_order_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "d9008ee0-b483-11eb-a042-db7f7008a2f8",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                    "foreignField": [
+                        "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                        "46f05390-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "parentRelationship": "79111ee0-b484-11eb-a042-db7f7008a2f8"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_item_product_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "ed371e60-b483-11eb-a042-db7f7008a2f8",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "378a4420-ae7f-11eb-b8d3-533823b921f5",
+                    "foreignField": [
+                        "378a4420-ae7f-11eb-b8d3-533823b921f5",
+                        "3b6d23a0-ae7f-11eb-b8d3-533823b921f5"
+                    ],
+                    "parentRelationship": "f3c0daf0-b483-11eb-a042-db7f7008a2f8"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "tinyint",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_item_quantity",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "06805ad0-b484-11eb-a042-db7f7008a2f8",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "float",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_item_subtotal",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "0fe0b700-b484-11eb-a042-db7f7008a2f8",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "float",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_item_product_price",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "199c79a0-b484-11eb-a042-db7f7008a2f8",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "bffd8330-b483-11eb-a042-db7f7008a2f8"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "tableIfNotExists": true,
+            "GUID": "bffb6050-b483-11eb-a042-db7f7008a2f8",
+            "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "additionalProperties": true
+        },
+        {
+            "collectionName": "orders",
+            "type": "object",
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "46f05390-b484-11eb-a042-db7f7008a2f8",
+                    "required": true,
+                    "childRelationships": [
+                        "79111ee0-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "childType": "date",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "4c65b9f0-b484-11eb-a042-db7f7008a2f8",
+                    "check": "order_date > '1900-01-01'",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_customer_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "6fc275f0-b484-11eb-a042-db7f7008a2f8",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                    "foreignField": [
+                        "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                        "9b2d1d80-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "parentRelationship": "2a0039c0-b485-11eb-a042-db7f7008a2f8"
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "order_status",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "860c2e00-b484-11eb-a042-db7f7008a2f8",
+                    "maxLength": 45
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "211418a0-b484-11eb-a042-db7f7008a2f8"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "tableIfNotExists": true,
+            "GUID": "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+            "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "description": "Table holding customer orders",
+            "additionalProperties": true
+        },
+        {
+            "collectionName": "products",
+            "type": "object",
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "product_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "3b6d23a0-ae7f-11eb-b8d3-533823b921f5",
+                    "required": true,
+                    "childRelationships": [
+                        "f3c0daf0-b483-11eb-a042-db7f7008a2f8"
+                    ]
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "product_category_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "40660700-ae7f-11eb-b8d3-533823b921f5",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+                    "foreignField": [
+                        "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+                        "a23f5030-ae7f-11eb-b8d3-533823b921f5"
+                    ],
+                    "parentRelationship": "ae7efe90-ae7f-11eb-b8d3-533823b921f5"
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "char",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "product_name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "471796e0-ae7f-11eb-b8d3-533823b921f5",
+                    "maxLength": 45
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "product_description",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "8126b7d0-ae7f-11eb-b8d3-533823b921f5",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "float",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "product_price",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "88fb43e0-ae7f-11eb-b8d3-533823b921f5",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "name": "product_image",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "923c3130-ae7f-11eb-b8d3-533823b921f5",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "378bf1d0-ae7f-11eb-b8d3-533823b921f5"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "tableIfNotExists": true,
+            "GUID": "378a4420-ae7f-11eb-b8d3-533823b921f5",
+            "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "additionalProperties": true
+        }
+    ],
+    "buckets": [
+        {
+            "name": "DataCo",
+            "type": "bucket",
+            "collectionIds": [
+                "378a4420-ae7f-11eb-b8d3-533823b921f5",
+                "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+                "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+                "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                "8f753cc0-b484-11eb-a042-db7f7008a2f8"
+            ],
+            "backgroundColor": {
+                "r": 63,
+                "g": 81,
+                "b": 181,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "indexes": [],
+            "GUID": "06ca6860-ae7f-11eb-b8d3-533823b921f5"
+        }
+    ],
+    "views": [
+        {
+            "name": "orders_view",
+            "type": "object",
+            "properties": [
+                {
+                    "GUID": "02a4bc60-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_id",
+                    "ref": "46f05390-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                        "46f05390-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a558a0-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_date",
+                    "ref": "4c65b9f0-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                        "4c65b9f0-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a5cdd0-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_status",
+                    "ref": "860c2e00-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                        "860c2e00-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a5a6c0-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_customer_id",
+                    "ref": "6fc275f0-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                        "6fc275f0-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a72d60-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "customer_fname",
+                    "ref": "a59e7480-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                        "a59e7480-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a77b80-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "customer_lname",
+                    "ref": "b08ee690-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                        "b08ee690-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a817c0-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "customer_address",
+                    "ref": "ff6628a0-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                        "18cfe560-b485-11eb-a042-db7f7008a2f8",
+                        "ff6628a0-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a61bf0-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_item_id",
+                    "ref": "c90e86e0-b483-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                        "c90e86e0-b483-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a64300-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_item_product_id",
+                    "ref": "ed371e60-b483-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                        "ed371e60-b483-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a7f0b0-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "product_name",
+                    "ref": "471796e0-ae7f-11eb-b8d3-533823b921f5",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "378a4420-ae7f-11eb-b8d3-533823b921f5",
+                        "471796e0-ae7f-11eb-b8d3-533823b921f5"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a69120-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_item_quantity",
+                    "ref": "06805ad0-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                        "06805ad0-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a6b830-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_item_subtotal",
+                    "ref": "0fe0b700-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                        "0fe0b700-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "02a70650-b486-11eb-a042-db7f7008a2f8",
+                    "type": "reference",
+                    "name": "order_item_product_price",
+                    "ref": "199c79a0-b484-11eb-a042-db7f7008a2f8",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                        "199c79a0-b484-11eb-a042-db7f7008a2f8"
+                    ],
+                    "isActivated": true,
+                    "error": {}
+                }
+            ],
+            "isActivated": true,
+            "viewIfNotExist": true,
+            "GUID": "dfb73cf0-b485-11eb-a042-db7f7008a2f8",
+            "pipeline": "[\n    {\n        \"$project\": {}\n    }\n]",
+            "viewOn": "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+            "bucketId": "06ca6860-ae7f-11eb-b8d3-533823b921f5",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "name": false,
+                    "code": false
+                }
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "name": "fk categories.category_id to products.product_category_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+                    "a23f5030-ae7f-11eb-b8d3-533823b921f5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "378a4420-ae7f-11eb-b8d3-533823b921f5",
+                    "40660700-ae7f-11eb-b8d3-533823b921f5"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "customProperties": {
+                "disableNoValidate": true
+            },
+            "parentCollection": "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+            "childCollection": "378a4420-ae7f-11eb-b8d3-533823b921f5",
+            "GUID": "ae7efe90-ae7f-11eb-b8d3-533823b921f5"
+        },
+        {
+            "name": "fk departments.department_id to categories.category_department_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+                    "840d9450-b483-11eb-a042-db7f7008a2f8"
+                ]
+            ],
+            "parentCardinality": "0..1",
+            "childField": [
+                [
+                    "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+                    "b8cb4160-ae7f-11eb-b8d3-533823b921f5"
+                ]
+            ],
+            "childCardinality": "1",
+            "customProperties": {
+                "disableNoValidate": true
+            },
+            "parentCollection": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+            "childCollection": "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+            "GUID": "ac1f4ce0-b483-11eb-a042-db7f7008a2f8"
+        },
+        {
+            "name": "fk products.product_id to order_items.order_item_product_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "378a4420-ae7f-11eb-b8d3-533823b921f5",
+                    "3b6d23a0-ae7f-11eb-b8d3-533823b921f5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                    "ed371e60-b483-11eb-a042-db7f7008a2f8"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "customProperties": {
+                "disableNoValidate": true
+            },
+            "parentCollection": "378a4420-ae7f-11eb-b8d3-533823b921f5",
+            "childCollection": "bffb6050-b483-11eb-a042-db7f7008a2f8",
+            "GUID": "f3c0daf0-b483-11eb-a042-db7f7008a2f8"
+        },
+        {
+            "name": "fk orders.order_id to order_items.order_item_order_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                    "46f05390-b484-11eb-a042-db7f7008a2f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                    "d9008ee0-b483-11eb-a042-db7f7008a2f8"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "customProperties": {
+                "disableNoValidate": true
+            },
+            "parentCollection": "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+            "childCollection": "bffb6050-b483-11eb-a042-db7f7008a2f8",
+            "GUID": "79111ee0-b484-11eb-a042-db7f7008a2f8"
+        },
+        {
+            "name": "fk customers.customer_id to orders.order_customer_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                    "9b2d1d80-b484-11eb-a042-db7f7008a2f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                    "6fc275f0-b484-11eb-a042-db7f7008a2f8"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "customProperties": {
+                "disableNoValidate": true
+            },
+            "parentCollection": "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+            "childCollection": "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+            "GUID": "2a0039c0-b485-11eb-a042-db7f7008a2f8"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "cf679831-ae7d-11eb-b8d3-533823b921f5": "name",
+        "cf679832-ae7d-11eb-b8d3-533823b921f5": "age",
+        "cf677122-ae7d-11eb-b8d3-533823b921f5": "girl_view",
+        "06ca6860-ae7f-11eb-b8d3-533823b921f5": "DataCo",
+        "378a4420-ae7f-11eb-b8d3-533823b921f5": "products",
+        "3b6d23a0-ae7f-11eb-b8d3-533823b921f5": "product_id",
+        "40660700-ae7f-11eb-b8d3-533823b921f5": "product_category_id",
+        "471796e0-ae7f-11eb-b8d3-533823b921f5": "product_name",
+        "8126b7d0-ae7f-11eb-b8d3-533823b921f5": "product_description",
+        "88fb43e0-ae7f-11eb-b8d3-533823b921f5": "product_price",
+        "923c3130-ae7f-11eb-b8d3-533823b921f5": "product_image",
+        "9c546bb0-ae7f-11eb-b8d3-533823b921f5": "categories",
+        "a23f5030-ae7f-11eb-b8d3-533823b921f5": "category_id",
+        "ae7efe90-ae7f-11eb-b8d3-533823b921f5": "fk categories.category_id to products.product_category_id",
+        "b8cb4160-ae7f-11eb-b8d3-533823b921f5": "category_department_id",
+        "cbc8dbb0-ae7f-11eb-b8d3-533823b921f5": "category_name",
+        "7dd0e650-b483-11eb-a042-db7f7008a2f8": "departments",
+        "840d9450-b483-11eb-a042-db7f7008a2f8": "department_id",
+        "9d070310-b483-11eb-a042-db7f7008a2f8": "department_name",
+        "ac1f4ce0-b483-11eb-a042-db7f7008a2f8": "fk departments.department_id to categories.category_department_id",
+        "bffb6050-b483-11eb-a042-db7f7008a2f8": "order_items",
+        "c90e86e0-b483-11eb-a042-db7f7008a2f8": "order_item_id",
+        "d9008ee0-b483-11eb-a042-db7f7008a2f8": "order_item_order_id",
+        "ed371e60-b483-11eb-a042-db7f7008a2f8": "order_item_product_id",
+        "f3c0daf0-b483-11eb-a042-db7f7008a2f8": "fk products.product_id to order_items.order_item_product_id",
+        "06805ad0-b484-11eb-a042-db7f7008a2f8": "order_item_quantity",
+        "0fe0b700-b484-11eb-a042-db7f7008a2f8": "order_item_subtotal",
+        "199c79a0-b484-11eb-a042-db7f7008a2f8": "order_item_product_price",
+        "2111a7a0-b484-11eb-a042-db7f7008a2f8": "orders",
+        "46f05390-b484-11eb-a042-db7f7008a2f8": "order_id",
+        "4c65b9f0-b484-11eb-a042-db7f7008a2f8": "order_date",
+        "6fc275f0-b484-11eb-a042-db7f7008a2f8": "order_customer_id",
+        "79111ee0-b484-11eb-a042-db7f7008a2f8": "fk orders.order_id to order_items.order_item_order_id",
+        "860c2e00-b484-11eb-a042-db7f7008a2f8": "order_status",
+        "8f753cc0-b484-11eb-a042-db7f7008a2f8": "customers",
+        "9b2d1d80-b484-11eb-a042-db7f7008a2f8": "customer_id",
+        "a59e7480-b484-11eb-a042-db7f7008a2f8": "customer_fname",
+        "b08ee690-b484-11eb-a042-db7f7008a2f8": "customer_lname",
+        "ba4292e0-b484-11eb-a042-db7f7008a2f8": "customer_email",
+        "c8a5e490-b484-11eb-a042-db7f7008a2f8": "customer_password",
+        "18cfe560-b485-11eb-a042-db7f7008a2f8": "customer_address",
+        "2a0039c0-b485-11eb-a042-db7f7008a2f8": "fk customers.customer_id to orders.order_customer_id",
+        "dfb73cf0-b485-11eb-a042-db7f7008a2f8": "orders_view",
+        "02a4bc60-b486-11eb-a042-db7f7008a2f8": "order_id",
+        "02a558a0-b486-11eb-a042-db7f7008a2f8": "order_date",
+        "02a5a6c0-b486-11eb-a042-db7f7008a2f8": "order_customer_id",
+        "02a5cdd0-b486-11eb-a042-db7f7008a2f8": "order_status",
+        "02a61bf0-b486-11eb-a042-db7f7008a2f8": "order_item_id",
+        "02a64300-b486-11eb-a042-db7f7008a2f8": "order_item_product_id",
+        "02a69120-b486-11eb-a042-db7f7008a2f8": "order_item_quantity",
+        "02a6b830-b486-11eb-a042-db7f7008a2f8": "order_item_subtotal",
+        "02a70650-b486-11eb-a042-db7f7008a2f8": "order_item_product_price",
+        "02a72d60-b486-11eb-a042-db7f7008a2f8": "customer_fname",
+        "02a77b80-b486-11eb-a042-db7f7008a2f8": "customer_lname",
+        "02a7f0b0-b486-11eb-a042-db7f7008a2f8": "product_name",
+        "02a817c0-b486-11eb-a042-db7f7008a2f8": "customer_address",
+        "ff6628a0-b484-11eb-a042-db7f7008a2f8": "customer_address",
+        "d15f5260-b484-11eb-a042-db7f7008a2f8": "customer_street",
+        "d66d4460-b484-11eb-a042-db7f7008a2f8": "customer_city",
+        "e98e6c40-b484-11eb-a042-db7f7008a2f8": "customer_state",
+        "f5815a30-b484-11eb-a042-db7f7008a2f8": "customer_zipcode"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "subtype": "struct<str>",
+                "keyType": "string",
+                "primaryKey": false,
+                "properties": [
+                    {
+                        "primaryKey": false,
+                        "mode": "varchar",
+                        "childType": "text",
+                        "type": "string",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "name": "customer_street",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "d15f5260-b484-11eb-a042-db7f7008a2f8",
+                        "maxLength": 45,
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "varchar",
+                        "childType": "text",
+                        "type": "string",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "name": "customer_city",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "d66d4460-b484-11eb-a042-db7f7008a2f8",
+                        "maxLength": 45,
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "varchar",
+                        "childType": "text",
+                        "type": "string",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "name": "customer_state",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "e98e6c40-b484-11eb-a042-db7f7008a2f8",
+                        "maxLength": 45,
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "varchar",
+                        "childType": "text",
+                        "type": "string",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "name": "customer_zipcode",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "f5815a30-b484-11eb-a042-db7f7008a2f8",
+                        "maxLength": 45,
+                        "error": {}
+                    }
+                ],
+                "additionalProperties": false,
+                "childType": "struct",
+                "type": "document",
+                "compositeKey": [
+                    "compositePartitionKey",
+                    "compositeClusteringKey"
+                ],
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "name": "customer_address",
+                "hackoladeMeta": {},
+                "isActivated": true,
+                "GUID": "ff6628a0-b484-11eb-a042-db7f7008a2f8",
+                "error": {},
+                "definitionRefs": [
+                    [
+                        "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                        "18cfe560-b485-11eb-a042-db7f7008a2f8"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "9ae13e91-ae7d-11eb-b8d3-533823b921f5"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "027afaac-6f88-4748-988a-bbc420938325"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "9ae13e92-ae7d-11eb-b8d3-533823b921f5"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "Runtime 8",
+    "dbVendor": "Delta Lake",
+    "appTarget": "DeltaLake",
+    "creationTS": "2021-05-06T15:13:25.753Z",
+    "GUID": "9ae13e90-ae7d-11eb-b8d3-533823b921f5",
+    "isLineageEnabled": false,
+    "author": "Pascal",
+    "host": "https://adb-3740024737713417.17.azuredatabricks.net",
+    "port": 10000,
+    "cluster_name": "test",
+    "min_workers": 0,
+    "max_workers": 0,
+    "spark_version": "8.1.x-scala2.12",
+    "spark_conf": "{\"spark.databricks.delta.preview.enabled\":\"true\",\"spark.master\":\"local[*]\",\"spark.databricks.cluster.profile\":\"singleNode\"}",
+    "node_type_id": "Standard_DS3_v2",
+    "driver_node_type_id": "Standard_DS3_v2",
+    "custom_tags": [
+        {
+            "customTagKey": "ResourceClass",
+            "customtagvalue": "SingleNode",
+            "GUID": "cf6d8ba0-ae7d-11eb-b8d3-533823b921f5"
+        }
+    ],
+    "autotermination_minutes": 0,
+    "enable_elastic_disk": true,
+    "lastModifTS": "2022-09-15T07:26:37.975Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "DeltaLake",
+        "pluginVersion": "0.1.66",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.5.0"
+    },
+    "hackoladeMeta": {
+        "validationErrors": {
+            "dbVersion": false
+        }
+    },
+    "description": "Inspired from tutorial: https://www.cloudera.com/content/dam/www/marketing/documents/partners/ungated/cloudera-msazure-hadoop-deployment-guide.pdf",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "378a4420-ae7f-11eb-b8d3-533823b921f5",
+                        "x": 140,
+                        "y": 254,
+                        "width": 285,
+                        "height": 141,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9c546bb0-ae7f-11eb-b8d3-533823b921f5",
+                        "x": 547,
+                        "y": 143,
+                        "width": 308,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7dd0e650-b483-11eb-a042-db7f7008a2f8",
+                        "x": 145,
+                        "y": 143,
+                        "width": 276,
+                        "height": 69,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bffb6050-b483-11eb-a042-db7f7008a2f8",
+                        "x": 547,
+                        "y": 254,
+                        "width": 308,
+                        "height": 141,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "2111a7a0-b484-11eb-a042-db7f7008a2f8",
+                        "x": 562,
+                        "y": 472,
+                        "width": 277,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8f753cc0-b484-11eb-a042-db7f7008a2f8",
+                        "x": 122,
+                        "y": 430,
+                        "width": 322,
+                        "height": 213,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "dfb73cf0-b485-11eb-a042-db7f7008a2f8",
+                        "x": 901.8511356701248,
+                        "y": 193.92726686257907,
+                        "width": 291,
+                        "height": 339,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 82,
+                        "y": 103,
+                        "GUID": "06ca6860-ae7f-11eb-b8d3-533823b921f5"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
