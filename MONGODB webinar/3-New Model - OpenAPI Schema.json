@@ -1151,11 +1151,11 @@
           },
           "name": {
             "type": "string",
-            "example": "Bran Stark"
+            "example": "Morgan Smith"
           },
           "email": {
             "type": "string",
-            "example": "isaac_hempstead_wright@gameofthron.es"
+            "example": "morgan_smith@fakegmail.com"
           },
           "movie_id": {
             "type": "string",
@@ -1163,7 +1163,7 @@
           },
           "text": {
             "type": "string",
-            "example": "Quas illo placeat veniam provident. Exercitationem amet magni ab ipsum hic harum. Quisquam inventore necessitatibus assumenda amet perferendis. Praesentium quam debitis nam non."
+            "example": "Porro expedita iusto quod maiores velit quo nostrum. Fugit tempore aspernatur nesciunt totam. Aperiam voluptatum nisi ad ea natus vitae. Amet accusamus tempora ut debitis rem."
           },
           "date": {
             "type": "string",
@@ -1192,45 +1192,49 @@
           },
           "plot": {
             "type": "string",
-            "example": "A graphic documentary on both sides of the abortion debate."
+            "example": "Seven people in a therapy group are forced to find new ways of coping with their problems when their therapist dies in the middle of a session."
           },
           "genres": {
             "type": "array",
             "items": {
               "type": "string",
-              "example": "Biography"
+              "example": "Comedy"
             },
             "nullable": false
           },
           "runtime": {
             "type": "integer",
-            "example": 460
+            "example": 382
           },
           "cast": {
             "type": "array",
             "items": {
               "type": "string",
-              "example": "Aaron Taylor-Johnson"
+              "example": "Stella Stevens"
             },
             "nullable": false
           },
           "num_mflix_comments": {
             "type": "integer",
-            "example": 153
+            "example": 144
+          },
+          "poster": {
+            "type": "string",
+            "example": "https://m.media-amazon.com/images/M/MV5BMjExNDQ1Mjg5OV5BMl5BanBnXkFtZTcwODI0NDQzMQ@@._V1_SY1000_SX677_AL_.jpg"
           },
           "title": {
             "type": "string",
-            "example": "Lyubov 2 Morkov"
+            "example": "What Fault Is It of Ours?"
           },
           "fullplot": {
             "type": "string",
-            "example": "A graphic documentary on both sides of the abortion debate."
+            "example": "Seven people in a therapy group are forced to find new ways of coping with their problems when their therapist dies in the middle of a session."
           },
-          "countries": {
+          "languages": {
             "type": "array",
             "items": {
               "type": "string",
-              "example": "UK"
+              "example": "English"
             },
             "nullable": false
           },
@@ -1242,13 +1246,17 @@
             "type": "array",
             "items": {
               "type": "string",
-              "example": "Sam Taylor-Johnson"
+              "example": "Georg Fenady"
             },
             "nullable": false
           },
-          "rated": {
-            "type": "string",
-            "example": "UNRATED"
+          "writers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "Jameson Brewer"
+            },
+            "nullable": false
           },
           "awards": {
             "type": "object",
@@ -1260,15 +1268,15 @@
             "properties": {
               "wins": {
                 "type": "integer",
-                "example": 145
+                "example": 185
               },
               "nominations": {
                 "type": "integer",
-                "example": 154
+                "example": 161
               },
               "text": {
                 "type": "string",
-                "example": "6 nominations."
+                "example": "1 win & 4 nominations."
               }
             },
             "additionalProperties": true,
@@ -1277,11 +1285,11 @@
           "lastupdated": {
             "type": "string",
             "format": "date",
-            "example": "ISODate(\"2015-06-26 00:48:33.563000000\")"
+            "example": "ISODate(\"2015-08-15 00:43:30.083000000\")"
           },
           "year": {
-            "type": "number",
-            "format": "double"
+            "type": "integer",
+            "example": 2015
           },
           "imdb": {
             "type": "object",
@@ -1301,10 +1309,18 @@
               },
               "id": {
                 "type": "integer",
-                "example": 4636046
+                "example": 4613272
               }
             },
             "additionalProperties": true,
+            "nullable": false
+          },
+          "countries": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "USA"
+            },
             "nullable": false
           },
           "type": {
@@ -1321,14 +1337,13 @@
               "viewer": {
                 "type": "object",
                 "required": [
-                  "rating",
                   "numReviews"
                 ],
                 "properties": {
                   "rating": {
                     "type": "number",
                     "format": "double",
-                    "example": 3.6
+                    "example": 3.5
                   },
                   "numReviews": {
                     "type": "integer",
@@ -1348,17 +1363,14 @@
               },
               "boxOffice": {
                 "type": "string",
-                "example": "$110.5M"
+                "example": "$4.3M"
               },
               "consensus": {
                 "type": "string",
-                "example": "Lake of Fire's engaging interviews and powerful black-and-white visuals make for a riveting and honest documentary about a very controversial topic."
+                "example": "Despite a couple of electrifying action sequences, Octopussy is a formulaic, anachronistic Bond outing."
               },
               "critic": {
                 "type": "object",
-                "required": [
-                  "numReviews"
-                ],
                 "properties": {
                   "meter": {
                     "type": "integer",
@@ -1366,12 +1378,12 @@
                   },
                   "numReviews": {
                     "type": "integer",
-                    "example": 315
+                    "example": 271
                   },
                   "rating": {
                     "type": "number",
                     "format": "double",
-                    "example": 6.9
+                    "example": 7.3
                   }
                 },
                 "additionalProperties": true,
@@ -1383,47 +1395,31 @@
               },
               "fresh": {
                 "type": "integer",
-                "example": 289
+                "example": 261
               },
               "production": {
                 "type": "string",
-                "example": "Image Entertainment Inc."
+                "example": "Twentieth Century Fox Home Entertainment"
               },
               "rotten": {
                 "type": "integer",
-                "example": 195
+                "example": 157
               },
               "website": {
                 "type": "string",
-                "example": "http://namyeongdong1985.co.kr/"
+                "example": "http://www.catchafiremovie.com/"
               }
             },
             "additionalProperties": true,
-            "nullable": false
-          },
-          "languages": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "example": "English"
-            },
             "nullable": false
           },
           "metacritic": {
             "type": "integer",
             "example": 100
           },
-          "poster": {
+          "rated": {
             "type": "string",
-            "example": "https://m.media-amazon.com/images/M/MV5BMTc4NTQxMTEzNF5BMl5BanBnXkFtZTcwMTQ4NTI1MQ@@._V1_SY1000_SX677_AL_.jpg"
-          },
-          "writers": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "example": "Matt Greenhalgh (screenplay)"
-            },
-            "nullable": false
+            "example": "PG"
           }
         },
         "additionalProperties": true,
@@ -1487,19 +1483,19 @@
                 "properties": {
                   "street1": {
                     "type": "string",
-                    "example": "10 McKenna Rd"
+                    "example": "4620 Garth Rd"
                   },
                   "city": {
                     "type": "string",
-                    "example": "Arden"
+                    "example": "Baytown"
                   },
                   "state": {
                     "type": "string",
-                    "example": "NC"
+                    "example": "TX"
                   },
                   "zipcode": {
                     "type": "string",
-                    "example": "28704"
+                    "example": "77521"
                   },
                   "street2": {
                     "type": "string"
@@ -1524,7 +1520,7 @@
                     "items": {
                       "type": "number",
                       "format": "double",
-                      "example": -86.642662
+                      "example": -93.24565
                     },
                     "nullable": false
                   }
@@ -1555,15 +1551,15 @@
           },
           "name": {
             "type": "string",
-            "example": "foo"
+            "example": "Magical Mr. Mistoffelees"
           },
           "email": {
             "type": "string",
-            "example": "foobaz@bar.com"
+            "example": "magicz@cats.com"
           },
           "password": {
             "type": "string",
-            "example": "foobar"
+            "example": "somehashedpw"
           },
           "preferences": {
             "type": "object",
