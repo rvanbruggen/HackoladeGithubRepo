@@ -1,0 +1,1630 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "2eb82478-f4f9-4734-b5c7-418a57283084",
+            "type": "reference",
+            "$ref": "#external/definitions/movies",
+            "refType": "polyglot",
+            "ref": "9eb25bae-80b4-40d0-a10d-5f68ff444ae3",
+            "refIdPath": [
+                "d22635b8-927a-4d35-a6e2-59af45ba4469",
+                "cc9bbbd8-fd11-4274-97d8-1c4d32c9240e",
+                "9eb25bae-80b4-40d0-a10d-5f68ff444ae3"
+            ],
+            "isActivated": true,
+            "collectionName": "movies",
+            "code": "",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "981cc2fc-bd7f-4c4b-bedb-96784f72aaef"
+            },
+            "sources": [
+                {
+                    "GUID": "444c35ad-1263-4d53-a011-061baf43f9c9",
+                    "lineageSourceGUID": "a156f2ea-4e31-4b29-bc9d-a994772d341e",
+                    "lineageSourceAttrBusName": "",
+                    "lineageSourceAttrTechName": "",
+                    "lineageSrcEntityBusName": "movies",
+                    "lineageSrcEntityTechName": "",
+                    "lineageSourceContainerBusName": "",
+                    "lineageSourceContainerTechName": ""
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "2eb82478-f4f9-4734-b5c7-418a57283084": "movies",
+        "a156f2ea-4e31-4b29-bc9d-a994772d341e": "Derived from Polyglot"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d8b8a723-7b07-4759-8cf9-137dee092ac5"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "movies",
+                "code": "",
+                "isActivated": true,
+                "bucketId": "ecab61cb-b5b0-49f5-ba0c-64211501b938",
+                "additionalProperties": true,
+                "properties": [
+                    {
+                        "required": true,
+                        "primaryKey": true,
+                        "type": "string",
+                        "name": "_id",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "09964402-7f54-47b8-98e8-398f9ca5ec31",
+                        "pattern": "^[a-fA-F0-9]{24}$",
+                        "error": {}
+                    },
+                    {
+                        "name": "plot",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "9ac44a13-fe4c-49d4-89fd-7d050580d5b6"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "An angel must show a mother the true meaning of Christmas. It's not just presents and materialistic things, but the people she cares about.",
+                                "sources": [
+                                    {
+                                        "GUID": "129a205a-665e-4cc0-b752-a465cc406f68",
+                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                        "lineageSourceAttrBusName": "plot",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "movies",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "sample_mflix",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "color": "#555555",
+                                "GUID": "54d78cfd-5ee4-469b-9ec1-a3d1dd1fbe30",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "000e2920-de02-4d09-a102-7532e34d8367",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "genres",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "39f292c8-61c7-5267-9cb8-8037c8b61a12",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "1cd64fb7-a150-5d5a-af57-b37fdc6eb996",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Action",
+                                                "GUID": "5fbd6175-7491-460b-9589-b63bbc078f42",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "genres",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "f7c8bfbc-6fb2-482d-8531-5ca7c5cba467",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "284aad05-feb9-5cc8-9b60-8159ed38a88d",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "genres",
+                        "code": "",
+                        "GUID": "b3fc7d94-692a-5943-bf93-2cfa70d01550",
+                        "error": {}
+                    },
+                    {
+                        "name": "runtime",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "5d12d187-5960-4935-8b61-5da8e53652c1"
+                            },
+                            {
+                                "childType": "number",
+                                "mode": "int",
+                                "sample": 910,
+                                "sources": [
+                                    {
+                                        "GUID": "d47e37f8-df21-4192-9382-8f6b385a6ba8",
+                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                        "lineageSourceAttrBusName": "runtime",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "movies",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "sample_mflix",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "color": "#555555",
+                                "GUID": "0a18322d-50e7-4454-b741-a3657449b4a9",
+                                "type": "numeric"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "c6cc1f61-02bb-4515-9220-cd33c57076fb",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "cast",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "f4db37c6-9b11-5e55-abda-a413f7913b7e",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "0aa575da-79db-5071-ad8a-0dcd3ed0aae6",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Ruby Lin",
+                                                "GUID": "801a61ed-bf99-4126-8697-dd60a94aaf66",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "cast",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "b12771fa-8763-4437-a936-3f2cbc877878",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "6ca64351-136c-509b-abf4-d0cac5cef1fd",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "cast",
+                        "code": "",
+                        "GUID": "d8fcf6e7-f84c-5bfc-80c5-f2ed82acdf79",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "num_mflix_comments",
+                        "code": "",
+                        "isActivated": true,
+                        "sample": 141,
+                        "GUID": "9d8ba7d0-2cea-4882-8992-ea7901f2265e",
+                        "error": {}
+                    },
+                    {
+                        "name": "poster",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "623b65e6-e52e-4a56-8507-e4817fcf793b"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "https://m.media-amazon.com/images/M/MV5BOGE0NWRkNTUtMTliMi00OGY4LWFhODUtYzUzZTVmYWRkZmYzXkEyXkFqcGdeQXVyMTQ3Njg3MQ@@._V1_SY1000_SX677_AL_.jpg",
+                                "sources": [
+                                    {
+                                        "GUID": "cbef77cc-6b81-487f-9b4b-f3663de1361c",
+                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                        "lineageSourceAttrBusName": "poster",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "movies",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "sample_mflix",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "color": "#555555",
+                                "GUID": "61219248-eba9-4c0a-b788-d36b5fdac84c",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "b4792834-5d38-4c9e-b893-460e322116ed",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "type": "string",
+                        "name": "title",
+                        "code": "",
+                        "isActivated": true,
+                        "sample": "One Magic Christmas",
+                        "GUID": "4e2cc61d-9c4a-42d1-8347-4e3fccf246f0",
+                        "error": {}
+                    },
+                    {
+                        "name": "fullplot",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "3cb9e957-fac6-4197-a4a4-7ccac64d9ebe"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "From opposing ethnicities, Ngabo and Sangwa are tested when old-timers warn, \"Hutus and Tutsis should not be friends.\" An intense and inspiring portrait of youth in Rwanda, 'Munyurangabo' features Poet Laureate Edouard Uwayo delivering a moving poem about his healing country. Rwanda. Kinyarwanda with English subtitles.",
+                                "sources": [
+                                    {
+                                        "GUID": "a85ce950-489e-42f3-a9df-590043852027",
+                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                        "lineageSourceAttrBusName": "fullplot",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "movies",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "sample_mflix",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "color": "#555555",
+                                "GUID": "0bc48cc8-7c71-47e3-aefb-6e1d11314d7c",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "a3ced1b3-906e-4bb7-a168-77ffc761c328",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "languages",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "24a4f2f8-14a0-5fd0-908e-4a93e3b07413",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "1f81d46d-1133-5039-803a-72ad06453269",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Mandarin",
+                                                "GUID": "b26e4555-edd6-403c-a7b8-5312e73d3376",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "languages",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "6df186e8-c8f9-4085-b2f1-82c26764a7f3",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "a9682d48-876f-57c3-9361-e17a4e551ec3",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "languages",
+                        "code": "",
+                        "GUID": "4db71d99-11f8-527c-a894-5a807d81c756",
+                        "error": {}
+                    },
+                    {
+                        "name": "released",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "d06a91f9-2ca2-4f09-8fcc-b1fa16bc9e8d"
+                            },
+                            {
+                                "childType": "number",
+                                "sources": [
+                                    {
+                                        "GUID": "f1f1f7c1-b683-429e-b153-0ce3a3ed4653",
+                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                        "lineageSourceAttrBusName": "released",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "movies",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "sample_mflix",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "color": "#555555",
+                                "GUID": "2777773a-78d8-4704-ae2c-e2c955229240",
+                                "type": "numeric",
+                                "mode": "int",
+                                "logicalType": "date"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "c0f29800-503b-4371-a539-c405a9930330",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "directors",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "c8289915-b14b-5a41-8266-1b64407d1f6e",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "9c4ea570-f26b-5782-bf22-1c6013d14601",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Huang Hong",
+                                                "GUID": "90e37102-7f02-43a4-8279-316107aa803b",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "directors",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "82800f06-793f-49dd-9a87-8062b57ec125",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "3eb79a69-bf3b-54ee-94e1-13318c8bac42",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "directors",
+                        "code": "",
+                        "GUID": "ce676ec1-3f4d-5ee4-88d3-ddcfc7852938",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "writers",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "678e6f31-d4c8-57d9-b563-5144f3970749",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "65f7fc6d-9331-5b27-9b15-0713159c4524",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Huang Hong",
+                                                "GUID": "ef5e35fa-d3dc-4949-ab1a-235bf6a052d6",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "writers",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "3b334ea3-5583-4a5c-acf8-a2d3f6f91e88",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "bf98d7d3-04f1-5c36-83ca-3d7137bad924",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "writers",
+                        "code": "",
+                        "GUID": "682a482f-1831-5889-afa3-170c37a2b8b9",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "wins",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 138,
+                                "GUID": "8d5ac6cc-f83a-4132-b0f1-da7b2b6b4d7f",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "nominations",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 114,
+                                "GUID": "87798ec1-42ac-4691-9ea8-35e80a1a9b06",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "name": "text",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": "2 wins & 7 nominations.",
+                                "GUID": "41fff0c4-dec1-4106-9781-55636b358135",
+                                "error": {}
+                            }
+                        ],
+                        "childType": "record",
+                        "type": "document",
+                        "name": "awards",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "379e7172-d5cc-4b5d-9e7f-20968f7b9485",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "lastupdated",
+                        "code": "",
+                        "isActivated": true,
+                        "sample": "ISODate(\"2015-09-17 03:00:10.497000000\")",
+                        "GUID": "2ff410ba-c375-43a2-a939-add6142cea33",
+                        "logicalType": "date",
+                        "error": {}
+                    },
+                    {
+                        "name": "year",
+                        "code": "",
+                        "isActivated": true,
+                        "type": "multiple",
+                        "required": true,
+                        "primaryKey": false,
+                        "sources": [
+                            {
+                                "GUID": "7e959009-29ed-472b-958c-3a500a851d07",
+                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                "lineageSourceAttrBusName": "year",
+                                "lineageSourceAttrTechName": "",
+                                "lineageSrcEntityBusName": "movies",
+                                "lineageSrcEntityTechName": "",
+                                "lineageSourceContainerBusName": "sample_mflix",
+                                "lineageSourceContainerTechName": ""
+                            }
+                        ],
+                        "color": "#555555",
+                        "GUID": "64b96db0-ef13-42b6-8ccc-e3b0f0543af2",
+                        "multipleTypes": [
+                            {
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "type": "string",
+                                "color": "#555555",
+                                "GUID": "88dc87c7-31bd-4ba2-aa56-3bdcc31619f6",
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "bytes",
+                                "subtype": "decimal"
+                            },
+                            {
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "type": "string",
+                                "color": "#555555",
+                                "GUID": "689c83a3-184f-48cd-a980-6ab58555bace",
+                                "primaryKey": false,
+                                "childType": "string"
+                            }
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "double",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "rating",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 7.3,
+                                "GUID": "11223696-2ce2-4fe4-8927-25dd0c1f4260",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "votes",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 1087227,
+                                "GUID": "a70effbb-40eb-485c-b310-4c6791eac153",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "id",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 4355574,
+                                "GUID": "81f1cceb-83f4-484f-9067-7ca85f5da86e",
+                                "error": {}
+                            }
+                        ],
+                        "childType": "record",
+                        "type": "document",
+                        "name": "imdb",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "684d799e-960b-4380-8a45-6ae6599f8fde",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "isActivated": true,
+                                "sample": "China",
+                                "GUID": "b4f965aa-42dc-4886-98ee-8fa018d5cd4c",
+                                "hackoladeMeta": {},
+                                "arrayItem": true,
+                                "error": {}
+                            }
+                        ],
+                        "primaryKey": false,
+                        "uniqueItems": false,
+                        "childType": "array",
+                        "type": "array",
+                        "name": "countries",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "0901c1eb-8a50-4514-bd20-ca6fb9ea9236",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "type": "string",
+                        "name": "type",
+                        "code": "",
+                        "isActivated": true,
+                        "sample": "movie",
+                        "GUID": "d1680808-9d25-441a-97e7-dee36b89740f",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "tomatoes",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "0e74dbc6-e367-5175-94ae-19b61c52a9f6",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "9f9b6612-42c3-5ac3-9044-050d4b7f9161",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "primaryKey": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "properties": [
+                                                    {
+                                                        "required": true,
+                                                        "exclusiveMinimum": false,
+                                                        "exclusiveMaximum": false,
+                                                        "primaryKey": false,
+                                                        "mode": "double",
+                                                        "childType": "number",
+                                                        "type": "numeric",
+                                                        "name": "rating",
+                                                        "code": "",
+                                                        "isActivated": true,
+                                                        "sample": 2.6,
+                                                        "GUID": "71979ddb-4528-4968-93f7-6da3da63dd73",
+                                                        "error": {}
+                                                    },
+                                                    {
+                                                        "required": true,
+                                                        "exclusiveMinimum": false,
+                                                        "exclusiveMaximum": false,
+                                                        "primaryKey": false,
+                                                        "mode": "int",
+                                                        "childType": "number",
+                                                        "type": "numeric",
+                                                        "name": "numReviews",
+                                                        "code": "",
+                                                        "isActivated": true,
+                                                        "sample": 32747579,
+                                                        "GUID": "370031ef-10d7-4698-ae7e-0d1753283884",
+                                                        "error": {}
+                                                    },
+                                                    {
+                                                        "name": "meter",
+                                                        "type": "multiple",
+                                                        "properties": [],
+                                                        "multipleTypes": [
+                                                            {
+                                                                "type": "null",
+                                                                "GUID": "142d98ba-d66e-4e5d-be54-ba3ab6019c27"
+                                                            },
+                                                            {
+                                                                "childType": "number",
+                                                                "mode": "int",
+                                                                "sample": 100,
+                                                                "sources": [
+                                                                    {
+                                                                        "GUID": "0d13fceb-c148-4f99-8a71-92bcc7432afe",
+                                                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                        "lineageSourceAttrBusName": "tomatoes.viewer.meter",
+                                                                        "lineageSourceAttrTechName": "",
+                                                                        "lineageSrcEntityBusName": "movies",
+                                                                        "lineageSrcEntityTechName": "",
+                                                                        "lineageSourceContainerBusName": "sample_mflix",
+                                                                        "lineageSourceContainerTechName": ""
+                                                                    }
+                                                                ],
+                                                                "color": "#555555",
+                                                                "GUID": "5b4d5b9b-8a2b-4d33-a105-d57e4ada3017",
+                                                                "type": "numeric"
+                                                            }
+                                                        ],
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "code": "",
+                                                        "required": true,
+                                                        "default": null,
+                                                        "GUID": "b1960d33-fc05-4b27-86ef-21e421b28c93",
+                                                        "error": {}
+                                                    }
+                                                ],
+                                                "childType": "record",
+                                                "type": "document",
+                                                "name": "viewer",
+                                                "code": "",
+                                                "isActivated": true,
+                                                "GUID": "86904e3d-fc6a-4d48-9ade-e9de59f6af4f",
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "exclusiveMinimum": false,
+                                                "exclusiveMaximum": false,
+                                                "primaryKey": false,
+                                                "mode": "int",
+                                                "childType": "number",
+                                                "type": "numeric",
+                                                "name": "lastUpdated",
+                                                "code": "",
+                                                "isActivated": true,
+                                                "GUID": "d8bd5ac7-f7f7-4f09-af68-33b2832efa85",
+                                                "logicalType": "date",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "boxOffice",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "a5fb56aa-1c3a-4857-8a8d-8852e67c7627"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "$35.1M",
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "54956b2f-0009-4d34-84a3-f3be006963d3",
+                                                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                "lineageSourceAttrBusName": "tomatoes.boxOffice",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "movies",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "sample_mflix",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "color": "#555555",
+                                                        "GUID": "4b55b48b-fd1b-44c0-b8f0-1d47577354a5",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": true,
+                                                "default": null,
+                                                "GUID": "78278d6f-6f3d-4e7a-92eb-08170fcc1340",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "consensus",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "3930c287-7f3e-41ad-a8d9-25d42669268e"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "Though more mainstream than other Coen films, there are still funny oddball touches, and Clooney and Zeta-Jones sizzle like old-time movie stars.",
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "a936a74c-e084-4d63-bb2c-8854301b08d0",
+                                                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                "lineageSourceAttrBusName": "tomatoes.consensus",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "movies",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "sample_mflix",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "color": "#555555",
+                                                        "GUID": "09375f2d-8221-401a-8729-7288780be56b",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": true,
+                                                "default": null,
+                                                "GUID": "e9491a45-a2cb-4ca1-aa49-ae202cb94c3d",
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "type": "choice",
+                                                "properties": [
+                                                    {
+                                                        "required": true,
+                                                        "primaryKey": false,
+                                                        "properties": [
+                                                            {
+                                                                "default": null,
+                                                                "type": "null",
+                                                                "primaryKey": false,
+                                                                "name": "critic",
+                                                                "hackoladeMeta": {},
+                                                                "isActivated": true,
+                                                                "required": false,
+                                                                "GUID": "1672478c-af24-5fa1-8485-88355f6fcfe1",
+                                                                "code": "",
+                                                                "error": {}
+                                                            }
+                                                        ],
+                                                        "childType": "record",
+                                                        "type": "document",
+                                                        "subschema": true,
+                                                        "isActivated": true,
+                                                        "GUID": "f7b77c77-422b-5d81-a974-51da8889978e",
+                                                        "error": {}
+                                                    },
+                                                    {
+                                                        "required": true,
+                                                        "primaryKey": false,
+                                                        "properties": [
+                                                            {
+                                                                "required": false,
+                                                                "primaryKey": false,
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "meter",
+                                                                        "type": "multiple",
+                                                                        "properties": [],
+                                                                        "multipleTypes": [
+                                                                            {
+                                                                                "type": "null",
+                                                                                "GUID": "4591a1b8-6af1-4f22-ac8c-f44686b27bcd"
+                                                                            },
+                                                                            {
+                                                                                "childType": "number",
+                                                                                "mode": "int",
+                                                                                "sample": 100,
+                                                                                "sources": [
+                                                                                    {
+                                                                                        "GUID": "65eeeaa7-c539-4986-a35b-d5af6688a0fd",
+                                                                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                                        "lineageSourceAttrBusName": "tomatoes.critic.meter",
+                                                                                        "lineageSourceAttrTechName": "",
+                                                                                        "lineageSrcEntityBusName": "movies",
+                                                                                        "lineageSrcEntityTechName": "",
+                                                                                        "lineageSourceContainerBusName": "sample_mflix",
+                                                                                        "lineageSourceContainerTechName": ""
+                                                                                    }
+                                                                                ],
+                                                                                "color": "#555555",
+                                                                                "GUID": "ce65cd3f-d184-4e43-919e-997bb0425ae6",
+                                                                                "type": "numeric"
+                                                                            }
+                                                                        ],
+                                                                        "isActivated": true,
+                                                                        "primaryKey": false,
+                                                                        "code": "",
+                                                                        "required": true,
+                                                                        "default": null,
+                                                                        "GUID": "f94fbe17-06bf-4ad9-aa10-0b327957de59",
+                                                                        "error": {}
+                                                                    },
+                                                                    {
+                                                                        "required": true,
+                                                                        "exclusiveMinimum": false,
+                                                                        "exclusiveMaximum": false,
+                                                                        "primaryKey": false,
+                                                                        "mode": "int",
+                                                                        "childType": "number",
+                                                                        "type": "numeric",
+                                                                        "name": "numReviews",
+                                                                        "code": "",
+                                                                        "isActivated": true,
+                                                                        "sample": 308,
+                                                                        "GUID": "67616b4f-6ccb-48fa-a5d1-4c732c764cf9",
+                                                                        "error": {}
+                                                                    },
+                                                                    {
+                                                                        "name": "rating",
+                                                                        "type": "multiple",
+                                                                        "properties": [],
+                                                                        "multipleTypes": [
+                                                                            {
+                                                                                "type": "null",
+                                                                                "GUID": "541415e2-9677-488d-adbd-11a174e429eb"
+                                                                            },
+                                                                            {
+                                                                                "childType": "number",
+                                                                                "mode": "double",
+                                                                                "sample": 4.7,
+                                                                                "sources": [
+                                                                                    {
+                                                                                        "GUID": "18033ea5-6bda-41f4-b42c-0228f8c3c171",
+                                                                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                                        "lineageSourceAttrBusName": "tomatoes.critic.rating",
+                                                                                        "lineageSourceAttrTechName": "",
+                                                                                        "lineageSrcEntityBusName": "movies",
+                                                                                        "lineageSrcEntityTechName": "",
+                                                                                        "lineageSourceContainerBusName": "sample_mflix",
+                                                                                        "lineageSourceContainerTechName": ""
+                                                                                    }
+                                                                                ],
+                                                                                "color": "#555555",
+                                                                                "GUID": "89748b2e-0afe-4d94-924e-643b59257a5a",
+                                                                                "type": "numeric"
+                                                                            }
+                                                                        ],
+                                                                        "isActivated": true,
+                                                                        "primaryKey": false,
+                                                                        "code": "",
+                                                                        "required": true,
+                                                                        "default": null,
+                                                                        "GUID": "9ccb24bb-d4f7-4702-a998-af34712deb0d",
+                                                                        "error": {}
+                                                                    }
+                                                                ],
+                                                                "childType": "record",
+                                                                "type": "document",
+                                                                "name": "critic",
+                                                                "code": "",
+                                                                "isActivated": true,
+                                                                "GUID": "6b872c31-d3f1-4e44-9dbe-2b97180badd7",
+                                                                "error": {}
+                                                            }
+                                                        ],
+                                                        "childType": "record",
+                                                        "type": "document",
+                                                        "subschema": true,
+                                                        "isActivated": true,
+                                                        "GUID": "badec6dc-c897-53d8-b794-d00bb953b0e3",
+                                                        "error": {}
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "choice": "oneOf",
+                                                "default": null,
+                                                "name": "critic",
+                                                "code": "",
+                                                "GUID": "e5d30f43-d376-512a-9962-cebda5c7ab67",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "dvd",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "b3b3308b-a8db-4360-97c3-b276693645ab"
+                                                    },
+                                                    {
+                                                        "childType": "number",
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "5f6b33ad-8f0f-4244-859e-bb02e19fe92d",
+                                                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                "lineageSourceAttrBusName": "tomatoes.dvd",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "movies",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "sample_mflix",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "color": "#555555",
+                                                        "GUID": "c8177bfc-3a98-476d-ae91-93c75814f443",
+                                                        "type": "numeric",
+                                                        "mode": "int",
+                                                        "logicalType": "date"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": true,
+                                                "default": null,
+                                                "GUID": "daabfc3d-b66d-445c-a352-c22c7df7b43f",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "fresh",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "08217ec8-372e-444d-89ea-cccbdeabf08a"
+                                                    },
+                                                    {
+                                                        "childType": "number",
+                                                        "mode": "int",
+                                                        "sample": 284,
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "6b1d8751-9968-44b4-87f7-b52fba0433ce",
+                                                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                "lineageSourceAttrBusName": "tomatoes.fresh",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "movies",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "sample_mflix",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "color": "#555555",
+                                                        "GUID": "7f66c730-19fa-463a-a9af-bbfac24d9705",
+                                                        "type": "numeric"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": true,
+                                                "default": null,
+                                                "GUID": "db08a42f-dee1-4d53-8e60-a20b54746c21",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "production",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "05b83db9-fd08-42cf-a638-5a61ed2ba570"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "Film Movement",
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "654f9dfe-2297-4391-8a38-d84240ba1feb",
+                                                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                "lineageSourceAttrBusName": "tomatoes.production",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "movies",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "sample_mflix",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "color": "#555555",
+                                                        "GUID": "387753ac-d5b7-49ef-9d29-1418a6bdd428",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": true,
+                                                "default": null,
+                                                "GUID": "c4d8255d-ac99-4a88-8dfb-ec217249d132",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "rotten",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "446c42df-40df-45fb-8d5f-9daf7074b747"
+                                                    },
+                                                    {
+                                                        "childType": "number",
+                                                        "mode": "int",
+                                                        "sample": 148,
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "c7b0c9e5-a646-4591-b920-441b8125005b",
+                                                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                "lineageSourceAttrBusName": "tomatoes.rotten",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "movies",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "sample_mflix",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "color": "#555555",
+                                                        "GUID": "949d9f23-7b0c-432e-a239-200492edf999",
+                                                        "type": "numeric"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": true,
+                                                "default": null,
+                                                "GUID": "6070d065-dc41-447a-951b-9ff4e84b4639",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "website",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "71daa8a0-dad8-4a08-afa7-4919f159c499"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "http://www.almondtreefilms.com/",
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "81e4d7ea-50c2-412d-ac1c-52b34bde1678",
+                                                                "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                                                "lineageSourceAttrBusName": "tomatoes.website",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "movies",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "sample_mflix",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "color": "#555555",
+                                                        "GUID": "735a7fa2-17e9-4480-93b5-a462d33b9c3e",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": true,
+                                                "default": null,
+                                                "GUID": "88e49e05-a147-4647-89aa-3d8d1c6a9c56",
+                                                "error": {}
+                                            }
+                                        ],
+                                        "childType": "record",
+                                        "type": "document",
+                                        "name": "tomatoes",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "de8ce981-797e-41b4-8b9a-fc4ed7eaf8b7",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "764e50ce-8bb8-5621-a4a7-2eeae7734331",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "tomatoes",
+                        "code": "",
+                        "GUID": "37f6d067-a86a-5671-b9ae-e6cc9768e7ed",
+                        "error": {}
+                    },
+                    {
+                        "name": "metacritic",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "c4aa378e-6a72-4764-998d-2efb815c1b44"
+                            },
+                            {
+                                "childType": "number",
+                                "mode": "int",
+                                "sample": 96,
+                                "sources": [
+                                    {
+                                        "GUID": "496bb8e3-a91a-4e80-b164-8daa1da2bca5",
+                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                        "lineageSourceAttrBusName": "metacritic",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "movies",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "sample_mflix",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "color": "#555555",
+                                "GUID": "a7aa0e36-f738-4dba-a175-3c9abcd516bc",
+                                "type": "numeric"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "3806823d-40c9-449e-9dad-8ed4979d93bb",
+                        "error": {}
+                    },
+                    {
+                        "name": "rated",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "c9878bbe-8302-421d-927f-3d7940fc4b1f"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "G",
+                                "sources": [
+                                    {
+                                        "GUID": "4f3c663c-b2ea-4559-a1e8-009847fa9750",
+                                        "lineageSourceGUID": "b8d4c32e-aad5-4ea5-b829-a2cd87c47929",
+                                        "lineageSourceAttrBusName": "rated",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "movies",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "sample_mflix",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "color": "#555555",
+                                "GUID": "5600ded9-1562-47d5-a32d-9e4ca1afd7d5",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "8b8187c6-b2a9-4676-9603-fbcf661621c3",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "324b6570-89f2-4db6-a0d4-5bf92b0da1e1",
+                    "properties": []
+                },
+                "GUID": "9eb25bae-80b4-40d0-a10d-5f68ff444ae3",
+                "type": "object",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "link": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/MONGODB webinar/3-New Model (Polyglot).hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/sample_mflix/movies",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "2eb82478-f4f9-4734-b5c7-418a57283084"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "cc9bbbd8-fd11-4274-97d8-1c4d32c9240e"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "4c6c3df3-9aa1-408b-90a4-33ba2eff3aca"
+    },
+    "sources": [
+        {
+            "GUID": "a156f2ea-4e31-4b29-bc9d-a994772d341e",
+            "sourceName": "Derived from Polyglot",
+            "lineageTimestamp": "2023-05-11 15:49:49 CEST",
+            "lineageSourceType": "Polyglot",
+            "lineageSourceFormat": "File",
+            "lineageFilePathName": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/MONGODB webinar/3-New Model (Polyglot).hck.json"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2023-05-11T13:49:31.313Z",
+    "GUID": "d22635b8-927a-4d35-a6e2-59af45ba4469",
+    "isLineageEnabled": true,
+    "polyglotModelPaths": [
+        {
+            "GUID": "2125e608-02f6-45e7-9f05-415af666edf2",
+            "polyglotModelName": "3-New Model (Polyglot).hck",
+            "polyglotModelPath": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/MONGODB webinar/3-New Model (Polyglot).hck.json",
+            "normalization": false
+        }
+    ],
+    "lastModifTS": "2023-05-11T13:49:54.101Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.113",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "2eb82478-f4f9-4734-b5c7-418a57283084",
+                        "x": 1400,
+                        "y": 1350,
+                        "width": 337,
+                        "height": 930,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
