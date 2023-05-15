@@ -1,0 +1,1867 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Entities API",
+    "description": "This API provides access to Entity data.",
+    "termsOfService": "https://hackolade.com",
+    "contact": {
+      "name": "Pascal",
+      "url": "https://hackolade.com",
+      "email": "info@hackolade.com"
+    },
+    "license": {
+      "name": "License Terms",
+      "url": "https://hackolade.com/eulas.html"
+    },
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://www.prod.com/data/0.1",
+      "description": "Production server"
+    },
+    {
+      "url": "http://www.beta.com/data/0.1",
+      "description": "Beta server"
+    },
+    {
+      "url": "http://www.other.com/data/0.1",
+      "description": "Some other server"
+    }
+  ],
+  "paths": {
+    "/comments": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/comments"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/comments_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/comments/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/comments_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/comments"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/comments_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/comments_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/movies": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/movies"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/movies_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/movies/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/movies_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/movies"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/movies_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/movies_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/sessions": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sessions"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/sessions_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/sessions/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/sessions_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sessions"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/sessions_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/sessions_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/theaters": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/theaters"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/theaters_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/theaters/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/theaters_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/theaters"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/theaters_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/theaters_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/users": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/users"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/users_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/users_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/users"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/users_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/users_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/animals": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/animals"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/animals_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/animals/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/animals_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/animals"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/animals_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/animals_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Error code",
+            "example": "500"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the error",
+            "example": "A downstream system is not responding correctly."
+          }
+        }
+      },
+      "comments": {
+        "type": "object",
+        "required": [
+          "_id",
+          "name",
+          "email",
+          "movie_id",
+          "text",
+          "date"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "name": {
+            "type": "string",
+            "example": "Barristan Selmy"
+          },
+          "email": {
+            "type": "string",
+            "example": "ian_mcelhinney@gameofthron.es"
+          },
+          "movie_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "text": {
+            "type": "string",
+            "example": "Quibusdam cupiditate commodi laudantium itaque maxime molestiae. Occaecati eligendi sed non impedit id. Soluta accusantium perspiciatis nostrum nisi debitis quia."
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": true,
+        "nullable": false
+      },
+      "movies": {
+        "type": "object",
+        "required": [
+          "_id",
+          "num_mflix_comments",
+          "title",
+          "awards",
+          "lastupdated",
+          "year",
+          "imdb",
+          "type"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "plot": {
+            "type": "string",
+            "example": "The story of a terminally ill teenage girl who falls for a boy who likes to attend funerals and their encounters with the ghost of a Japanese kamikaze pilot from WWII."
+          },
+          "genres": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "Documentary"
+            },
+            "nullable": false
+          },
+          "runtime": {
+            "type": "integer",
+            "example": 551
+          },
+          "cast": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "Anwar Congo"
+            },
+            "nullable": false
+          },
+          "num_mflix_comments": {
+            "type": "integer",
+            "example": 144
+          },
+          "poster": {
+            "type": "string",
+            "example": "https://m.media-amazon.com/images/M/MV5BMTg0OTk5MjY1NV5BMl5BanBnXkFtZTcwNjkzNjQ4NQ@@._V1_SY1000_SX677_AL_.jpg"
+          },
+          "title": {
+            "type": "string",
+            "example": "Restless"
+          },
+          "fullplot": {
+            "type": "string",
+            "example": "Annabel is a terminally ill cancer patient and is quietly awaiting her death spending her time studying nature. Enoch is struggling to recover from the death of his parents and spends his time attending funerals with his only friend - a ghost named Hiroshi who was a WWII Japanese kamikaze pilot. Just as Annabel's sister is trying to cope with Annabel's impending death, Annabel and Enoch fall in love. They both finally have a reason to live, but is it too late to have a life together?"
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "Indonesian"
+            },
+            "nullable": false
+          },
+          "released": {
+            "type": "string",
+            "format": "date"
+          },
+          "directors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "Joshua Oppenheimer"
+            },
+            "nullable": false
+          },
+          "writers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "Ki-duk Kim"
+            },
+            "nullable": false
+          },
+          "awards": {
+            "type": "object",
+            "required": [
+              "wins",
+              "nominations",
+              "text"
+            ],
+            "properties": {
+              "wins": {
+                "type": "integer",
+                "example": 127
+              },
+              "nominations": {
+                "type": "integer",
+                "example": 194
+              },
+              "text": {
+                "type": "string",
+                "example": "1 nomination."
+              }
+            },
+            "additionalProperties": true,
+            "nullable": false
+          },
+          "lastupdated": {
+            "type": "string",
+            "format": "date",
+            "example": "ISODate(\"2015-09-15 02:50:46.667000000\")"
+          },
+          "year": {
+            "type": "number",
+            "format": "double"
+          },
+          "imdb": {
+            "type": "object",
+            "required": [
+              "rating",
+              "votes",
+              "id"
+            ],
+            "properties": {
+              "rating": {
+                "type": "number",
+                "format": "double"
+              },
+              "votes": {
+                "type": "number",
+                "format": "double"
+              },
+              "id": {
+                "type": "integer",
+                "example": 4377864
+              }
+            },
+            "additionalProperties": true,
+            "nullable": false
+          },
+          "countries": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "Denmark"
+            },
+            "nullable": false
+          },
+          "type": {
+            "type": "string",
+            "example": "movie"
+          },
+          "tomatoes": {
+            "type": "object",
+            "required": [
+              "lastUpdated"
+            ],
+            "properties": {
+              "viewer": {
+                "type": "object",
+                "required": [
+                  "rating",
+                  "numReviews"
+                ],
+                "properties": {
+                  "rating": {
+                    "type": "number",
+                    "format": "double",
+                    "example": 4.1
+                  },
+                  "numReviews": {
+                    "type": "integer",
+                    "example": 32102606
+                  },
+                  "meter": {
+                    "type": "integer",
+                    "example": 100
+                  }
+                },
+                "additionalProperties": true,
+                "nullable": false
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date"
+              },
+              "boxOffice": {
+                "type": "string",
+                "example": "$0.2M"
+              },
+              "consensus": {
+                "type": "string",
+                "example": "Mia Wasikowska puts in a nuanced performance but nobody else, actors and directors included, are capable of finding a compelling angle beneath the twee veneer."
+              },
+              "critic": {
+                "type": "object",
+                "required": [
+                  "numReviews"
+                ],
+                "properties": {
+                  "meter": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "numReviews": {
+                    "type": "integer",
+                    "example": 294
+                  },
+                  "rating": {
+                    "type": "number",
+                    "format": "double",
+                    "example": 8.7
+                  }
+                },
+                "additionalProperties": true,
+                "nullable": false
+              },
+              "dvd": {
+                "type": "string",
+                "format": "date"
+              },
+              "fresh": {
+                "type": "integer",
+                "example": 261
+              },
+              "production": {
+                "type": "string",
+                "example": "Sony Pictures"
+              },
+              "rotten": {
+                "type": "integer",
+                "example": 149
+              },
+              "website": {
+                "type": "string",
+                "example": "http://www.sonyclassics.com/restless"
+              }
+            },
+            "additionalProperties": true,
+            "nullable": false
+          },
+          "metacritic": {
+            "type": "integer",
+            "example": 94
+          },
+          "rated": {
+            "type": "string",
+            "example": "PG-13"
+          }
+        },
+        "additionalProperties": true,
+        "nullable": false
+      },
+      "sessions": {
+        "type": "object",
+        "required": [
+          "_id",
+          "user_id",
+          "jwt"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "user_id": {
+            "type": "string",
+            "example": "t3qulfeem@kwiv5.6ur"
+          },
+          "jwt": {
+            "type": "string",
+            "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTk5MDkzMjEsIm5iZiI6MTUxOTkwOTMyMSwianRpIjoiNmJlZDAwMWYtNTFiYi00NzVhLTgxZDAtMDcwNGE5Mjk0MWZlIiwiZXhwIjoxNTE5OTEwMjIxLCJpZGVudGl0eSI6eyJlbWFpbCI6InQzcXVsZmVlbUBrd2l2NS42dXIiLCJuYW1lIjoiM2lveHJtZnF4IiwicGFzc3dvcmQiOm51bGx9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJ1c2VyIjp7ImVtYWlsIjoidDNxdWxmZWVtQGt3aXY1LjZ1ciIsIm5hbWUiOiIzaW94cm1mcXgiLCJwYXNzd29yZCI6bnVsbH19fQ.ejtr_NyZyBronWMKuE0RFTjWej--T0zGrdc_iymGtVs"
+          }
+        },
+        "additionalProperties": true,
+        "nullable": false
+      },
+      "theaters": {
+        "type": "object",
+        "required": [
+          "_id",
+          "theaterId",
+          "location"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "theaterId": {
+            "type": "integer",
+            "example": 8920
+          },
+          "location": {
+            "type": "object",
+            "required": [
+              "address",
+              "geo"
+            ],
+            "properties": {
+              "address": {
+                "type": "object",
+                "required": [
+                  "street1",
+                  "city",
+                  "state",
+                  "zipcode"
+                ],
+                "properties": {
+                  "street1": {
+                    "type": "string",
+                    "example": "2651 S Rochester Rd"
+                  },
+                  "city": {
+                    "type": "string",
+                    "example": "Rochester Hills"
+                  },
+                  "state": {
+                    "type": "string",
+                    "example": "MI"
+                  },
+                  "zipcode": {
+                    "type": "string",
+                    "example": "48307"
+                  },
+                  "street2": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true,
+                "nullable": false
+              },
+              "geo": {
+                "type": "object",
+                "required": [
+                  "type",
+                  "coordinates"
+                ],
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "Point"
+                  },
+                  "coordinates": {
+                    "type": "array",
+                    "items": {
+                      "type": "number",
+                      "format": "double",
+                      "example": -93.24565
+                    },
+                    "nullable": false
+                  }
+                },
+                "additionalProperties": true,
+                "nullable": false
+              }
+            },
+            "additionalProperties": true,
+            "nullable": false
+          }
+        },
+        "additionalProperties": true,
+        "nullable": false
+      },
+      "users": {
+        "type": "object",
+        "required": [
+          "_id",
+          "name",
+          "email",
+          "password"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "name": {
+            "type": "string",
+            "example": "Magical Mr. Mistoffelees"
+          },
+          "email": {
+            "type": "string",
+            "example": "magicz@cats.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "somehashedpw"
+          },
+          "preferences": {
+            "type": "object",
+            "additionalProperties": true,
+            "nullable": false
+          }
+        },
+        "additionalProperties": true,
+        "nullable": false
+      },
+      "animals": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "movie_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+          }
+        },
+        "nullable": false
+      }
+    },
+    "responses": {
+      "No_content": {
+        "description": ""
+      },
+      "Bad_request": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Unauthorized": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Forbidden": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Not_found": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Internal_server_error": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "comments_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "comments": {
+                  "$ref": "#/components/schemas/comments"
+                }
+              }
+            }
+          }
+        }
+      },
+      "comments_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "comments": {
+                  "$ref": "#/components/schemas/comments"
+                }
+              }
+            }
+          }
+        }
+      },
+      "movies_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "movies": {
+                  "$ref": "#/components/schemas/movies"
+                }
+              }
+            }
+          }
+        }
+      },
+      "movies_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "movies": {
+                  "$ref": "#/components/schemas/movies"
+                }
+              }
+            }
+          }
+        }
+      },
+      "sessions_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "sessions": {
+                  "$ref": "#/components/schemas/sessions"
+                }
+              }
+            }
+          }
+        }
+      },
+      "sessions_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "sessions": {
+                  "$ref": "#/components/schemas/sessions"
+                }
+              }
+            }
+          }
+        }
+      },
+      "theaters_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "theaters": {
+                  "$ref": "#/components/schemas/theaters"
+                }
+              }
+            }
+          }
+        }
+      },
+      "theaters_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "theaters": {
+                  "$ref": "#/components/schemas/theaters"
+                }
+              }
+            }
+          }
+        }
+      },
+      "users_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "users": {
+                  "$ref": "#/components/schemas/users"
+                }
+              }
+            }
+          }
+        }
+      },
+      "users_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "users": {
+                  "$ref": "#/components/schemas/users"
+                }
+              }
+            }
+          }
+        }
+      },
+      "animals_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "animals": {
+                  "$ref": "#/components/schemas/animals"
+                }
+              }
+            }
+          }
+        }
+      },
+      "animals_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "animals": {
+                  "$ref": "#/components/schemas/animals"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "basic_auth": {
+        "scheme": "basic",
+        "type": "http"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Entity resource template",
+      "description": "CRUD to manage the Entity resources."
+    }
+  ]
+}
