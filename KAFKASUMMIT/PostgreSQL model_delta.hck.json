@@ -1,0 +1,2513 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "collectionName": "comparisonModelCollection",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "containers",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "dd73dc51-9a3c-480b-ac8f-e33623092c30"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "7a6ab9bc-270a-4ffd-83d2-44ecdc5182a2"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "882af18a-1c41-4a1a-86ce-504e371054ab"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "3b5684bd-d3d1-4967-a365-7040a00e6091"
+                },
+                {
+                    "name": "entities",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "customer",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [
+                                                {
+                                                    "name": "Kafkaproperty",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "unique": false,
+                                                    "mode": "varchar",
+                                                    "length": 10,
+                                                    "childType": "char",
+                                                    "type": "string",
+                                                    "compositeKey": [
+                                                        "compositePartitionKey",
+                                                        "compositePrimaryKey",
+                                                        "compositeUniqueKey",
+                                                        "triggerUpdateColumns"
+                                                    ],
+                                                    "compositePartitionKey": false,
+                                                    "compositePrimaryKey": false,
+                                                    "compositeUniqueKey": false,
+                                                    "triggerUpdateColumns": false,
+                                                    "GUID": "cb0f5af0-93e3-4db4-a1d1-b236e8641bf8",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "ebe7c1df-c828-49d9-8bff-f06ddfd54cfd",
+                                            "role": {
+                                                "collectionName": "customer",
+                                                "type": "object",
+                                                "properties": [
+                                                    {
+                                                        "code": "",
+                                                        "name": "customer_id",
+                                                        "isActivated": true,
+                                                        "primaryKey": true,
+                                                        "unique": false,
+                                                        "exclusiveMinimum": false,
+                                                        "exclusiveMaximum": false,
+                                                        "mode": "integer",
+                                                        "childType": "numeric",
+                                                        "type": "numeric",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "default": "nextval('customer_customer_id_seq'::regclass)",
+                                                        "precision": 32,
+                                                        "scale": 0,
+                                                        "udt_name": "int4",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "primaryKeyOptions": [
+                                                            {
+                                                                "constraintName": "customer_pkey",
+                                                                "indexStorageParameters": "",
+                                                                "indexTablespace": null,
+                                                                "GUID": "7f2c9073-ce95-4a23-9694-d493a09c9d18"
+                                                            }
+                                                        ],
+                                                        "GUID": "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7",
+                                                        "required": true,
+                                                        "childRelationships": [
+                                                            "c7c9a17c-a97c-4caf-a836-04dd41706de6",
+                                                            "42dfd5e1-3e0e-4999-858c-18994a57d557"
+                                                        ],
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "8939fb14-5968-4166-beea-1bcffd75d2d2",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "customer_id",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "customer_id",
+                                                                "type": "numeric",
+                                                                "mode": "integer"
+                                                            },
+                                                            "newField": {
+                                                                "name": "customer_id",
+                                                                "type": "numeric",
+                                                                "mode": "integer"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "store_id",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "exclusiveMinimum": false,
+                                                        "exclusiveMaximum": false,
+                                                        "mode": "smallint",
+                                                        "childType": "numeric",
+                                                        "type": "numeric",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "precision": 16,
+                                                        "scale": 0,
+                                                        "udt_name": "int2",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "GUID": "515adbc4-f994-48aa-b291-1d2a16822e4b",
+                                                        "required": true,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "1e3ce060-026e-4bd4-ab28-c2138a210196",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "store_id",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "store_id",
+                                                                "type": "numeric",
+                                                                "mode": "smallint"
+                                                            },
+                                                            "newField": {
+                                                                "name": "store_id",
+                                                                "type": "numeric",
+                                                                "mode": "smallint"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "first_name",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "mode": "varchar",
+                                                        "length": 45,
+                                                        "childType": "char",
+                                                        "type": "string",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "udt_name": "varchar",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "GUID": "74550b80-e476-4d46-8e57-dd87336276ac",
+                                                        "required": true,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "c57024cd-f4af-44f0-aa52-40df73a9e9ec",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "first_name",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "first_name",
+                                                                "type": "char",
+                                                                "mode": "varchar"
+                                                            },
+                                                            "newField": {
+                                                                "name": "first_name",
+                                                                "type": "char",
+                                                                "mode": "varchar"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "last_name",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "mode": "varchar",
+                                                        "length": 45,
+                                                        "childType": "char",
+                                                        "type": "string",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "udt_name": "varchar",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "GUID": "5c7252b2-4a63-415d-ac8a-97b2a24703f0",
+                                                        "required": true,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "c5f49294-a876-40c2-b864-c7a2b92ce1cc",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "last_name",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "last_name",
+                                                                "type": "char",
+                                                                "mode": "varchar"
+                                                            },
+                                                            "newField": {
+                                                                "name": "last_name",
+                                                                "type": "char",
+                                                                "mode": "varchar"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "email",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "mode": "varchar",
+                                                        "length": 50,
+                                                        "childType": "char",
+                                                        "type": "string",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "udt_name": "varchar",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "GUID": "3e1edbc5-2516-48b7-b330-b6292585ebf9",
+                                                        "required": false,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "35052384-a76c-4508-8505-5a36b02ef1d0",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "email",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "email",
+                                                                "type": "char",
+                                                                "mode": "varchar"
+                                                            },
+                                                            "newField": {
+                                                                "name": "email",
+                                                                "type": "char",
+                                                                "mode": "varchar"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "address_id",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "exclusiveMinimum": false,
+                                                        "exclusiveMaximum": false,
+                                                        "mode": "smallint",
+                                                        "childType": "numeric",
+                                                        "type": "numeric",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "precision": 16,
+                                                        "scale": 0,
+                                                        "udt_name": "int2",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "GUID": "6c25aa0e-8a59-45e3-b215-c47a07b3f3a8",
+                                                        "required": true,
+                                                        "relationshipType": "Foreign Key",
+                                                        "foreignCollection": "71dc64ef-3c13-4f2a-a15b-ea903196c91e",
+                                                        "foreignField": [
+                                                            "71dc64ef-3c13-4f2a-a15b-ea903196c91e",
+                                                            "f30fad83-3857-41dc-975d-ccaf71468602"
+                                                        ],
+                                                        "parentRelationship": "1c14568a-2ea5-4f13-b4d5-71ad17cf5948",
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "2965050f-ba2d-424f-882c-cbcf9b81acb9",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "address_id",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "address_id",
+                                                                "type": "numeric",
+                                                                "mode": "smallint"
+                                                            },
+                                                            "newField": {
+                                                                "name": "address_id",
+                                                                "type": "numeric",
+                                                                "mode": "smallint"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "activebool",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "childType": "boolean",
+                                                        "type": "boolean",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "default": "true",
+                                                        "udt_name": "bool",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "GUID": "26a05952-4aeb-48c7-bbc8-8c1375c5425d",
+                                                        "required": true,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "af4904dd-7fab-41f7-8069-22041ccc7514",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "activebool",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "activebool",
+                                                                "type": "boolean"
+                                                            },
+                                                            "newField": {
+                                                                "name": "activebool",
+                                                                "type": "boolean"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "create_date",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "mode": "date",
+                                                        "scale": 7,
+                                                        "childType": "datetime",
+                                                        "type": "string",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "default": "('now'::text)::date",
+                                                        "timePrecision": "",
+                                                        "udt_name": "date",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "GUID": "4c107570-756c-441a-ac1d-da6c88d8c8a9",
+                                                        "required": true,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "31de2c10-c363-4bbe-b90a-98e836b542d2",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "create_date",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "create_date",
+                                                                "type": "datetime",
+                                                                "mode": "date"
+                                                            },
+                                                            "newField": {
+                                                                "name": "create_date",
+                                                                "type": "datetime",
+                                                                "mode": "date"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "last_update",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "mode": "timestamp",
+                                                        "scale": 7,
+                                                        "childType": "datetime",
+                                                        "type": "string",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "default": "now()",
+                                                        "timePrecision": "",
+                                                        "udt_name": "timestamp",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timezone": "WITHOUT TIME ZONE",
+                                                        "GUID": "ebfa9709-4153-44a8-b0de-5a467b2b0a9d",
+                                                        "required": false,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "2191ad1c-5148-4457-bcc9-ea4056596df5",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "last_update",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "last_update",
+                                                                "type": "datetime",
+                                                                "mode": "timestamp"
+                                                            },
+                                                            "newField": {
+                                                                "name": "last_update",
+                                                                "type": "datetime",
+                                                                "mode": "timestamp"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "code": "",
+                                                        "name": "active",
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "exclusiveMinimum": false,
+                                                        "exclusiveMaximum": false,
+                                                        "mode": "integer",
+                                                        "childType": "numeric",
+                                                        "type": "numeric",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "precision": 32,
+                                                        "scale": 0,
+                                                        "udt_name": "int4",
+                                                        "numberOfArrayDimensions": 0,
+                                                        "timePrecision": "",
+                                                        "GUID": "c383a932-8480-4c48-b001-58612e7c8bc6",
+                                                        "required": false,
+                                                        "error": {},
+                                                        "sources": [
+                                                            {
+                                                                "GUID": "8004e20c-f372-4591-914b-ef3a8df8d5d2",
+                                                                "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                "lineageSourceAttrBusName": "active",
+                                                                "lineageSourceAttrTechName": "",
+                                                                "lineageSrcEntityBusName": "customer",
+                                                                "lineageSrcEntityTechName": "",
+                                                                "lineageSourceContainerBusName": "public",
+                                                                "lineageSourceContainerTechName": ""
+                                                            }
+                                                        ],
+                                                        "compMod": {
+                                                            "oldField": {
+                                                                "name": "active",
+                                                                "type": "numeric",
+                                                                "mode": "integer"
+                                                            },
+                                                            "newField": {
+                                                                "name": "active",
+                                                                "type": "numeric",
+                                                                "mode": "integer"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "Kafkaproperty",
+                                                        "hackoladeMeta": {},
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "unique": false,
+                                                        "mode": "varchar",
+                                                        "length": 10,
+                                                        "childType": "char",
+                                                        "type": "string",
+                                                        "compositeKey": [
+                                                            "compositePartitionKey",
+                                                            "compositePrimaryKey",
+                                                            "compositeUniqueKey",
+                                                            "triggerUpdateColumns"
+                                                        ],
+                                                        "compositePartitionKey": false,
+                                                        "compositePrimaryKey": false,
+                                                        "compositeUniqueKey": false,
+                                                        "triggerUpdateColumns": false,
+                                                        "GUID": "cb0f5af0-93e3-4db4-a1d1-b236e8641bf8",
+                                                        "error": {}
+                                                    }
+                                                ],
+                                                "definitions": {
+                                                    "type": "definitions",
+                                                    "GUID": "02c6782b-7a1e-4a47-8d34-4a8fbc7d9604",
+                                                    "properties": []
+                                                },
+                                                "isActivated": true,
+                                                "additionalProperties": true,
+                                                "memory_optimized": false,
+                                                "collectionUsers": [],
+                                                "ifNotExist": true,
+                                                "on_commit": "PRESERVE ROWS",
+                                                "table_tablespace_name": "pg_default",
+                                                "GUID": "dbabe6bb-a908-4ca4-894a-ebfa13004356",
+                                                "bucketId": "d9d08ac6-8c2a-4e91-a60f-084973c5ffb1",
+                                                "code": "",
+                                                "temporary": false,
+                                                "unlogged": false,
+                                                "inherits": [],
+                                                "primaryKey": [],
+                                                "uniqueKey": [],
+                                                "Indxs": [
+                                                    {
+                                                        "isActivated": true,
+                                                        "index_method": "btree",
+                                                        "ifNotExist": true,
+                                                        "only": true,
+                                                        "index_tablespace_name": "",
+                                                        "GUID": "e0bfc3a5-dcd2-4274-ac97-4ee1ea576b89",
+                                                        "indxName": "customer_pkey",
+                                                        "unique": true,
+                                                        "columns": [
+                                                            {
+                                                                "keyId": "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7",
+                                                                "sortOrder": "ASC",
+                                                                "nullsOrder": "NULLS LAST",
+                                                                "collation": null,
+                                                                "opclass": "pg_catalog.int4_ops"
+                                                            }
+                                                        ],
+                                                        "include": [],
+                                                        "where": ""
+                                                    },
+                                                    {
+                                                        "isActivated": true,
+                                                        "index_method": "btree",
+                                                        "ifNotExist": true,
+                                                        "only": true,
+                                                        "index_tablespace_name": "",
+                                                        "GUID": "de73d109-3265-415f-953e-d41b7c17f659",
+                                                        "indxName": "idx_fk_address_id",
+                                                        "unique": false,
+                                                        "columns": [
+                                                            {
+                                                                "keyId": "6c25aa0e-8a59-45e3-b215-c47a07b3f3a8",
+                                                                "sortOrder": "ASC",
+                                                                "nullsOrder": "NULLS LAST",
+                                                                "collation": null,
+                                                                "opclass": "pg_catalog.int2_ops"
+                                                            }
+                                                        ],
+                                                        "include": [],
+                                                        "where": ""
+                                                    },
+                                                    {
+                                                        "isActivated": true,
+                                                        "index_method": "btree",
+                                                        "ifNotExist": true,
+                                                        "only": true,
+                                                        "index_tablespace_name": "",
+                                                        "GUID": "70a47ae2-e0cc-4348-9543-b2dc1c9a7b19",
+                                                        "indxName": "idx_fk_store_id",
+                                                        "unique": false,
+                                                        "columns": [
+                                                            {
+                                                                "keyId": "515adbc4-f994-48aa-b291-1d2a16822e4b",
+                                                                "sortOrder": "ASC",
+                                                                "nullsOrder": "NULLS LAST",
+                                                                "collation": null,
+                                                                "opclass": "pg_catalog.int2_ops"
+                                                            }
+                                                        ],
+                                                        "include": [],
+                                                        "where": ""
+                                                    },
+                                                    {
+                                                        "isActivated": true,
+                                                        "index_method": "btree",
+                                                        "ifNotExist": true,
+                                                        "only": true,
+                                                        "index_tablespace_name": "",
+                                                        "GUID": "e4772604-7115-47b6-b5e9-95c1d05b6af9",
+                                                        "indxName": "idx_last_name",
+                                                        "unique": false,
+                                                        "columns": [
+                                                            {
+                                                                "keyId": "5c7252b2-4a63-415d-ac8a-97b2a24703f0",
+                                                                "sortOrder": "ASC",
+                                                                "nullsOrder": "NULLS LAST",
+                                                                "collation": "pg_catalog.\"default\"",
+                                                                "opclass": "pg_catalog.text_ops"
+                                                            }
+                                                        ],
+                                                        "include": [],
+                                                        "where": ""
+                                                    }
+                                                ],
+                                                "chkConstr": [],
+                                                "triggers": [
+                                                    {
+                                                        "triggerType": "BEFORE",
+                                                        "GUID": "fa4cf11a-c791-4bc8-b099-7ea0be120d70",
+                                                        "name": "last_updated",
+                                                        "triggerDescription": null,
+                                                        "triggerConstraint": false,
+                                                        "triggerEvents": [
+                                                            {
+                                                                "GUID": "db78a6ab-1bf5-4321-b369-823d3fc328fd",
+                                                                "triggerEvent": "UPDATE"
+                                                            }
+                                                        ],
+                                                        "triggerUpdateColumns": [],
+                                                        "triggerReferencing": false,
+                                                        "triggerEachRowStatement": "FOR EACH ROW",
+                                                        "triggerCondition": null,
+                                                        "triggerFunction": "last_updated()"
+                                                    }
+                                                ],
+                                                "hackoladeMeta": {
+                                                    "validationErrors": {}
+                                                },
+                                                "compMod": {
+                                                    "keyspaceName": "public",
+                                                    "bucketProperties": {
+                                                        "name": "public",
+                                                        "isActivated": true,
+                                                        "ifNotExist": true,
+                                                        "code": ""
+                                                    },
+                                                    "collectionName": {
+                                                        "new": "customer",
+                                                        "old": "customer"
+                                                    },
+                                                    "isActivated": {
+                                                        "new": true,
+                                                        "old": true
+                                                    },
+                                                    "bucketId": {
+                                                        "new": "d9d08ac6-8c2a-4e91-a60f-084973c5ffb1",
+                                                        "old": "d9d08ac6-8c2a-4e91-a60f-084973c5ffb1"
+                                                    },
+                                                    "additionalProperties": {
+                                                        "new": true,
+                                                        "old": true
+                                                    },
+                                                    "ifNotExist": {
+                                                        "new": true,
+                                                        "old": true
+                                                    },
+                                                    "inherits": {
+                                                        "new": [],
+                                                        "old": []
+                                                    },
+                                                    "on_commit": {
+                                                        "new": "PRESERVE ROWS",
+                                                        "old": "PRESERVE ROWS"
+                                                    },
+                                                    "table_tablespace_name": {
+                                                        "new": "pg_default",
+                                                        "old": "pg_default"
+                                                    },
+                                                    "primaryKey": {
+                                                        "new": [],
+                                                        "old": []
+                                                    },
+                                                    "uniqueKey": {
+                                                        "new": [],
+                                                        "old": []
+                                                    },
+                                                    "Indxs": {
+                                                        "new": [
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "e0bfc3a5-dcd2-4274-ac97-4ee1ea576b89",
+                                                                "indxName": "customer_pkey",
+                                                                "unique": true,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": null,
+                                                                        "opclass": "pg_catalog.int4_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            },
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "de73d109-3265-415f-953e-d41b7c17f659",
+                                                                "indxName": "idx_fk_address_id",
+                                                                "unique": false,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "6c25aa0e-8a59-45e3-b215-c47a07b3f3a8",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": null,
+                                                                        "opclass": "pg_catalog.int2_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            },
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "70a47ae2-e0cc-4348-9543-b2dc1c9a7b19",
+                                                                "indxName": "idx_fk_store_id",
+                                                                "unique": false,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "515adbc4-f994-48aa-b291-1d2a16822e4b",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": null,
+                                                                        "opclass": "pg_catalog.int2_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            },
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "e4772604-7115-47b6-b5e9-95c1d05b6af9",
+                                                                "indxName": "idx_last_name",
+                                                                "unique": false,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "5c7252b2-4a63-415d-ac8a-97b2a24703f0",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": "pg_catalog.\"default\"",
+                                                                        "opclass": "pg_catalog.text_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            }
+                                                        ],
+                                                        "old": [
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "e0bfc3a5-dcd2-4274-ac97-4ee1ea576b89",
+                                                                "indxName": "customer_pkey",
+                                                                "unique": true,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": null,
+                                                                        "opclass": "pg_catalog.int4_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            },
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "de73d109-3265-415f-953e-d41b7c17f659",
+                                                                "indxName": "idx_fk_address_id",
+                                                                "unique": false,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "6c25aa0e-8a59-45e3-b215-c47a07b3f3a8",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": null,
+                                                                        "opclass": "pg_catalog.int2_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            },
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "70a47ae2-e0cc-4348-9543-b2dc1c9a7b19",
+                                                                "indxName": "idx_fk_store_id",
+                                                                "unique": false,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "515adbc4-f994-48aa-b291-1d2a16822e4b",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": null,
+                                                                        "opclass": "pg_catalog.int2_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            },
+                                                            {
+                                                                "isActivated": true,
+                                                                "index_method": "btree",
+                                                                "ifNotExist": true,
+                                                                "only": true,
+                                                                "index_tablespace_name": "",
+                                                                "GUID": "e4772604-7115-47b6-b5e9-95c1d05b6af9",
+                                                                "indxName": "idx_last_name",
+                                                                "unique": false,
+                                                                "columns": [
+                                                                    {
+                                                                        "keyId": "5c7252b2-4a63-415d-ac8a-97b2a24703f0",
+                                                                        "sortOrder": "ASC",
+                                                                        "nullsOrder": "NULLS LAST",
+                                                                        "collation": "pg_catalog.\"default\"",
+                                                                        "opclass": "pg_catalog.text_ops"
+                                                                    }
+                                                                ],
+                                                                "include": [],
+                                                                "where": ""
+                                                            }
+                                                        ]
+                                                    },
+                                                    "chkConstr": {
+                                                        "new": [],
+                                                        "old": []
+                                                    },
+                                                    "triggers": {
+                                                        "new": [
+                                                            {
+                                                                "triggerType": "BEFORE",
+                                                                "GUID": "fa4cf11a-c791-4bc8-b099-7ea0be120d70",
+                                                                "name": "last_updated",
+                                                                "triggerDescription": null,
+                                                                "triggerConstraint": false,
+                                                                "triggerEvents": [
+                                                                    {
+                                                                        "GUID": "db78a6ab-1bf5-4321-b369-823d3fc328fd",
+                                                                        "triggerEvent": "UPDATE"
+                                                                    }
+                                                                ],
+                                                                "triggerUpdateColumns": [],
+                                                                "triggerReferencing": false,
+                                                                "triggerEachRowStatement": "FOR EACH ROW",
+                                                                "triggerCondition": null,
+                                                                "triggerFunction": "last_updated()"
+                                                            }
+                                                        ],
+                                                        "old": [
+                                                            {
+                                                                "triggerType": "BEFORE",
+                                                                "GUID": "fa4cf11a-c791-4bc8-b099-7ea0be120d70",
+                                                                "name": "last_updated",
+                                                                "triggerDescription": null,
+                                                                "triggerConstraint": false,
+                                                                "triggerEvents": [
+                                                                    {
+                                                                        "GUID": "db78a6ab-1bf5-4321-b369-823d3fc328fd",
+                                                                        "triggerEvent": "UPDATE"
+                                                                    }
+                                                                ],
+                                                                "triggerUpdateColumns": [],
+                                                                "triggerReferencing": false,
+                                                                "triggerEachRowStatement": "FOR EACH ROW",
+                                                                "triggerCondition": null,
+                                                                "triggerFunction": "last_updated()"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "oldProperties": [
+                                                        {
+                                                            "code": "",
+                                                            "name": "customer_id",
+                                                            "isActivated": true,
+                                                            "primaryKey": true,
+                                                            "unique": false,
+                                                            "exclusiveMinimum": false,
+                                                            "exclusiveMaximum": false,
+                                                            "mode": "integer",
+                                                            "childType": "numeric",
+                                                            "type": "numeric",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "default": "nextval('customer_customer_id_seq'::regclass)",
+                                                            "precision": 32,
+                                                            "scale": 0,
+                                                            "udt_name": "int4",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "primaryKeyOptions": [
+                                                                {
+                                                                    "constraintName": "customer_pkey",
+                                                                    "indexStorageParameters": "",
+                                                                    "indexTablespace": null,
+                                                                    "GUID": "7f2c9073-ce95-4a23-9694-d493a09c9d18"
+                                                                }
+                                                            ],
+                                                            "GUID": "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7",
+                                                            "required": true,
+                                                            "childRelationships": [
+                                                                "c7c9a17c-a97c-4caf-a836-04dd41706de6",
+                                                                "42dfd5e1-3e0e-4999-858c-18994a57d557"
+                                                            ],
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "8939fb14-5968-4166-beea-1bcffd75d2d2",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "customer_id",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "customer_id",
+                                                                    "type": "numeric",
+                                                                    "mode": "integer"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "customer_id",
+                                                                    "type": "numeric",
+                                                                    "mode": "integer"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "store_id",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "exclusiveMinimum": false,
+                                                            "exclusiveMaximum": false,
+                                                            "mode": "smallint",
+                                                            "childType": "numeric",
+                                                            "type": "numeric",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "precision": 16,
+                                                            "scale": 0,
+                                                            "udt_name": "int2",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "GUID": "515adbc4-f994-48aa-b291-1d2a16822e4b",
+                                                            "required": true,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "1e3ce060-026e-4bd4-ab28-c2138a210196",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "store_id",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "store_id",
+                                                                    "type": "numeric",
+                                                                    "mode": "smallint"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "store_id",
+                                                                    "type": "numeric",
+                                                                    "mode": "smallint"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "first_name",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "mode": "varchar",
+                                                            "length": 45,
+                                                            "childType": "char",
+                                                            "type": "string",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "udt_name": "varchar",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "GUID": "74550b80-e476-4d46-8e57-dd87336276ac",
+                                                            "required": true,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "c57024cd-f4af-44f0-aa52-40df73a9e9ec",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "first_name",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "first_name",
+                                                                    "type": "char",
+                                                                    "mode": "varchar"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "first_name",
+                                                                    "type": "char",
+                                                                    "mode": "varchar"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "last_name",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "mode": "varchar",
+                                                            "length": 45,
+                                                            "childType": "char",
+                                                            "type": "string",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "udt_name": "varchar",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "GUID": "5c7252b2-4a63-415d-ac8a-97b2a24703f0",
+                                                            "required": true,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "c5f49294-a876-40c2-b864-c7a2b92ce1cc",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "last_name",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "last_name",
+                                                                    "type": "char",
+                                                                    "mode": "varchar"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "last_name",
+                                                                    "type": "char",
+                                                                    "mode": "varchar"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "email",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "mode": "varchar",
+                                                            "length": 50,
+                                                            "childType": "char",
+                                                            "type": "string",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "udt_name": "varchar",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "GUID": "3e1edbc5-2516-48b7-b330-b6292585ebf9",
+                                                            "required": false,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "35052384-a76c-4508-8505-5a36b02ef1d0",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "email",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "email",
+                                                                    "type": "char",
+                                                                    "mode": "varchar"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "email",
+                                                                    "type": "char",
+                                                                    "mode": "varchar"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "address_id",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "exclusiveMinimum": false,
+                                                            "exclusiveMaximum": false,
+                                                            "mode": "smallint",
+                                                            "childType": "numeric",
+                                                            "type": "numeric",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "precision": 16,
+                                                            "scale": 0,
+                                                            "udt_name": "int2",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "GUID": "6c25aa0e-8a59-45e3-b215-c47a07b3f3a8",
+                                                            "required": true,
+                                                            "relationshipType": "Foreign Key",
+                                                            "foreignCollection": "71dc64ef-3c13-4f2a-a15b-ea903196c91e",
+                                                            "foreignField": [
+                                                                "71dc64ef-3c13-4f2a-a15b-ea903196c91e",
+                                                                "f30fad83-3857-41dc-975d-ccaf71468602"
+                                                            ],
+                                                            "parentRelationship": "1c14568a-2ea5-4f13-b4d5-71ad17cf5948",
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "2965050f-ba2d-424f-882c-cbcf9b81acb9",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "address_id",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "address_id",
+                                                                    "type": "numeric",
+                                                                    "mode": "smallint"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "address_id",
+                                                                    "type": "numeric",
+                                                                    "mode": "smallint"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "activebool",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "childType": "boolean",
+                                                            "type": "boolean",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "default": "true",
+                                                            "udt_name": "bool",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "GUID": "26a05952-4aeb-48c7-bbc8-8c1375c5425d",
+                                                            "required": true,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "af4904dd-7fab-41f7-8069-22041ccc7514",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "activebool",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "activebool",
+                                                                    "type": "boolean"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "activebool",
+                                                                    "type": "boolean"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "create_date",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "mode": "date",
+                                                            "scale": 7,
+                                                            "childType": "datetime",
+                                                            "type": "string",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "default": "('now'::text)::date",
+                                                            "timePrecision": "",
+                                                            "udt_name": "date",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "GUID": "4c107570-756c-441a-ac1d-da6c88d8c8a9",
+                                                            "required": true,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "31de2c10-c363-4bbe-b90a-98e836b542d2",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "create_date",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "create_date",
+                                                                    "type": "datetime",
+                                                                    "mode": "date"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "create_date",
+                                                                    "type": "datetime",
+                                                                    "mode": "date"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "last_update",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "mode": "timestamp",
+                                                            "scale": 7,
+                                                            "childType": "datetime",
+                                                            "type": "string",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "default": "now()",
+                                                            "timePrecision": "",
+                                                            "udt_name": "timestamp",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timezone": "WITHOUT TIME ZONE",
+                                                            "GUID": "ebfa9709-4153-44a8-b0de-5a467b2b0a9d",
+                                                            "required": false,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "2191ad1c-5148-4457-bcc9-ea4056596df5",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "last_update",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "last_update",
+                                                                    "type": "datetime",
+                                                                    "mode": "timestamp"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "last_update",
+                                                                    "type": "datetime",
+                                                                    "mode": "timestamp"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "name": "active",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "unique": false,
+                                                            "exclusiveMinimum": false,
+                                                            "exclusiveMaximum": false,
+                                                            "mode": "integer",
+                                                            "childType": "numeric",
+                                                            "type": "numeric",
+                                                            "compositeKey": [
+                                                                "compositePartitionKey",
+                                                                "compositePrimaryKey",
+                                                                "compositeUniqueKey",
+                                                                "triggerUpdateColumns"
+                                                            ],
+                                                            "compositePartitionKey": false,
+                                                            "compositePrimaryKey": false,
+                                                            "compositeUniqueKey": false,
+                                                            "triggerUpdateColumns": false,
+                                                            "precision": 32,
+                                                            "scale": 0,
+                                                            "udt_name": "int4",
+                                                            "numberOfArrayDimensions": 0,
+                                                            "timePrecision": "",
+                                                            "GUID": "c383a932-8480-4c48-b001-58612e7c8bc6",
+                                                            "required": false,
+                                                            "error": {},
+                                                            "sources": [
+                                                                {
+                                                                    "GUID": "8004e20c-f372-4591-914b-ef3a8df8d5d2",
+                                                                    "lineageSourceGUID": "4be5d00b-c653-42dd-b7b2-7ba07b7e9077",
+                                                                    "lineageSourceAttrBusName": "active",
+                                                                    "lineageSourceAttrTechName": "",
+                                                                    "lineageSrcEntityBusName": "customer",
+                                                                    "lineageSrcEntityTechName": "",
+                                                                    "lineageSourceContainerBusName": "public",
+                                                                    "lineageSourceContainerTechName": ""
+                                                                }
+                                                            ],
+                                                            "compMod": {
+                                                                "oldField": {
+                                                                    "name": "active",
+                                                                    "type": "numeric",
+                                                                    "mode": "integer"
+                                                                },
+                                                                "newField": {
+                                                                    "name": "active",
+                                                                    "type": "numeric",
+                                                                    "mode": "integer"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "name": "customer",
+                                                "roleType": "entity"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "cda29067-825e-41d6-a9d1-4b59e85baab2",
+                                    "arrayItem": true
+                                }
+                            ],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "6e1e647b-14dd-4876-87a5-d62ad577aa5a"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "c6314ca3-b194-423d-9467-df5a0946668d"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "0fd3cdf3-66b9-4ab6-b802-4b19c515758d"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "8dadc6d0-6c84-4b31-8e77-aa3043a5437b"
+                },
+                {
+                    "name": "relationships",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "9ee46ae8-f6dc-46d3-b2d0-0438f2f72ec4"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "bde0c7d5-5c1b-4c15-b226-6970b721bb5c"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "customer_address_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "c234ae05-0483-4071-9894-e9f6d0c2b0ed",
+                                            "role": {
+                                                "name": "customer_address_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "71dc64ef-3c13-4f2a-a15b-ea903196c91e",
+                                                        "f30fad83-3857-41dc-975d-ccaf71468602"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "dbabe6bb-a908-4ca4-894a-ebfa13004356",
+                                                        "6c25aa0e-8a59-45e3-b215-c47a07b3f3a8"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "1c14568a-2ea5-4f13-b4d5-71ad17cf5948",
+                                                "parentCollection": "71dc64ef-3c13-4f2a-a15b-ea903196c91e",
+                                                "childCollection": "dbabe6bb-a908-4ca4-894a-ebfa13004356",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "6c205bd3-419f-420b-a29a-1e56d3bf39a2",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 2519.4999990463257,
+                                                            "y": 1901
+                                                        },
+                                                        {
+                                                            "x": 2519.4999990463257,
+                                                            "y": 1855.7500004768372
+                                                        },
+                                                        {
+                                                            "x": 2405.999999523163,
+                                                            "y": 1855.7500004768372
+                                                        },
+                                                        {
+                                                            "x": 2405.999999523163,
+                                                            "y": 1810.5000009536743
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "top",
+                                                        "bottom"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "e2518238-3221-4984-9314-7bdd0a5f1681",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "payment_customer_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "317dc923-2317-4166-a7f2-e09f7c2912cc",
+                                            "role": {
+                                                "name": "payment_customer_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "dbabe6bb-a908-4ca4-894a-ebfa13004356",
+                                                        "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "ef1a4198-21ec-444a-b6f8-0f0b6f2d331d",
+                                                        "7b2bc3bf-9e2c-476b-943f-0ed2bff54973"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "c7c9a17c-a97c-4caf-a836-04dd41706de6",
+                                                "parentCollection": "dbabe6bb-a908-4ca4-894a-ebfa13004356",
+                                                "childCollection": "ef1a4198-21ec-444a-b6f8-0f0b6f2d331d",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "b0712c88-ab8d-4a7a-9d33-57d036ccbab3",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1654.2500004768372,
+                                                            "y": 2556.9999980926514
+                                                        },
+                                                        {
+                                                            "x": 2010.8749997615814,
+                                                            "y": 2556.9999980926514
+                                                        },
+                                                        {
+                                                            "x": 2010.8749997615814,
+                                                            "y": 2055
+                                                        },
+                                                        {
+                                                            "x": 2367.4999990463257,
+                                                            "y": 2055
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "left"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "d0a88fbf-d005-4a19-8183-7ed0c8f1e5ef",
+                                    "arrayItem": true
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "subtype": "object",
+                                    "properties": [
+                                        {
+                                            "name": "rental_customer_id_fkey",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "subtype": "object",
+                                            "properties": [],
+                                            "childType": "object",
+                                            "type": "document",
+                                            "compositeKey": [
+                                                "compositePartitionKey",
+                                                "compositePrimaryKey",
+                                                "compositeUniqueKey",
+                                                "triggerUpdateColumns"
+                                            ],
+                                            "compositePartitionKey": false,
+                                            "compositePrimaryKey": false,
+                                            "compositeUniqueKey": false,
+                                            "triggerUpdateColumns": false,
+                                            "GUID": "d7e1a141-db34-4006-bd74-ea0927a93d10",
+                                            "role": {
+                                                "name": "rental_customer_id_fkey",
+                                                "relationshipType": "Foreign Key",
+                                                "parentField": [
+                                                    [
+                                                        "dbabe6bb-a908-4ca4-894a-ebfa13004356",
+                                                        "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7"
+                                                    ]
+                                                ],
+                                                "parentCardinality": "1",
+                                                "childField": [
+                                                    [
+                                                        "0e92b0ef-0108-4c9d-8905-cdc8c6fe4ddb",
+                                                        "d0fbf96d-33b0-437c-889e-6db10115ae57"
+                                                    ]
+                                                ],
+                                                "childCardinality": "0..n",
+                                                "GUID": "42dfd5e1-3e0e-4999-858c-18994a57d557",
+                                                "parentCollection": "dbabe6bb-a908-4ca4-894a-ebfa13004356",
+                                                "childCollection": "0e92b0ef-0108-4c9d-8905-cdc8c6fe4ddb",
+                                                "customProperties": {
+                                                    "relationshipOnDelete": "RESTRICT",
+                                                    "relationshipOnUpdate": "CASCADE",
+                                                    "relationshipMatch": "SIMPLE"
+                                                },
+                                                "hackoladeStyles": {
+                                                    "GUID": "bab8a47b-dbea-4747-99ad-a7dfd045a053",
+                                                    "autoPositioning": true,
+                                                    "type": "Orthogonal",
+                                                    "thickness": 2,
+                                                    "color": "#79c4ff",
+                                                    "dataType": "",
+                                                    "shape": [
+                                                        {
+                                                            "x": 1759.25,
+                                                            "y": 2336.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 2063.374999523163,
+                                                            "y": 2336.9999990463257
+                                                        },
+                                                        {
+                                                            "x": 2063.374999523163,
+                                                            "y": 1978
+                                                        },
+                                                        {
+                                                            "x": 2367.4999990463257,
+                                                            "y": 1978
+                                                        }
+                                                    ],
+                                                    "sides": [
+                                                        "right",
+                                                        "left"
+                                                    ]
+                                                },
+                                                "roleType": "relationship"
+                                            }
+                                        }
+                                    ],
+                                    "childType": "object",
+                                    "type": "document",
+                                    "compositeKey": [
+                                        "compositePartitionKey",
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey",
+                                        "triggerUpdateColumns"
+                                    ],
+                                    "compositePartitionKey": false,
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "triggerUpdateColumns": false,
+                                    "GUID": "55ddec46-d0c1-450f-a767-a9ac5751a48e",
+                                    "arrayItem": true
+                                }
+                            ],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "670dd9be-058d-4cdf-9586-e71a8aed8402"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "bfac732b-51cb-48b0-a5ee-a24cb358068f"
+                },
+                {
+                    "name": "views",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "e9041e2e-d9d9-43b0-b608-47eaf8c803cc"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "8733f3b8-6baa-4f57-9304-d708d05d1581"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "e44fef42-5f04-43a7-b0ec-2a7f15b99c61"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "11873996-5a3e-4128-94b5-7431c2493b32"
+                },
+                {
+                    "name": "modelDefinitions",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "name": "added",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "88c0746c-25d4-47e1-a314-ba2bd3ed012d"
+                        },
+                        {
+                            "name": "deleted",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "1c6184e4-67ba-4f51-82e9-daf8380a3b75"
+                        },
+                        {
+                            "name": "modified",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "array",
+                            "properties": [],
+                            "additionalItems": true,
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositePrimaryKey",
+                                "compositeUniqueKey",
+                                "triggerUpdateColumns"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositePrimaryKey": false,
+                            "compositeUniqueKey": false,
+                            "triggerUpdateColumns": false,
+                            "GUID": "5be399e5-faef-46c7-bed3-528acab68332"
+                        }
+                    ],
+                    "childType": "object",
+                    "type": "document",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "16a2837e-50e6-4a56-baab-899fa146c500"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "c411b1c0-01e3-4540-8026-2787083deead"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "93c28bab-d8e3-4c8d-aff3-5b133942b28f"
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "dd73dc51-9a3c-480b-ac8f-e33623092c30": "added",
+        "7a6ab9bc-270a-4ffd-83d2-44ecdc5182a2": "deleted",
+        "882af18a-1c41-4a1a-86ce-504e371054ab": "modified",
+        "d9d08ac6-8c2a-4e91-a60f-084973c5ffb1": "public",
+        "6e1e647b-14dd-4876-87a5-d62ad577aa5a": "added",
+        "c6314ca3-b194-423d-9467-df5a0946668d": "deleted",
+        "0fd3cdf3-66b9-4ab6-b802-4b19c515758d": "modified",
+        "a9dc8fa3-018c-4031-abe4-32415d9a6ad9": "actor",
+        "71dc64ef-3c13-4f2a-a15b-ea903196c91e": "address",
+        "5a3a92d0-11af-4c8f-9452-c32c9cd593f4": "category",
+        "552ea11a-4f2f-47de-a2a1-fed21ce92f19": "city",
+        "745fd466-bf6c-4e83-ac5c-6f99fc225de0": "country",
+        "dbabe6bb-a908-4ca4-894a-ebfa13004356": "customer",
+        "53d3be9e-562a-4b6f-8f9d-22852a8f1614": "film",
+        "30a429d5-0e67-44d5-90d0-1b9f553cbe56": "film_actor",
+        "823712e3-dd48-46f6-8d20-ce25d3c0e35b": "film_category",
+        "929ae194-a9ff-46da-af81-e8f05c336dca": "inventory",
+        "baff6ec9-b988-4e95-ba5d-396597ab6f5d": "language",
+        "ef1a4198-21ec-444a-b6f8-0f0b6f2d331d": "payment",
+        "0e92b0ef-0108-4c9d-8905-cdc8c6fe4ddb": "rental",
+        "4de4dcff-ffb6-4372-8122-02d129aa3cc6": "staff",
+        "685025dc-d356-46c1-b6c1-06494375d6ad": "store",
+        "cb0f5af0-93e3-4db4-a1d1-b236e8641bf8": "Kafkaproperty",
+        "ebe7c1df-c828-49d9-8bff-f06ddfd54cfd": "customer",
+        "9ee46ae8-f6dc-46d3-b2d0-0438f2f72ec4": "added",
+        "bde0c7d5-5c1b-4c15-b226-6970b721bb5c": "deleted",
+        "670dd9be-058d-4cdf-9586-e71a8aed8402": "modified",
+        "04db621e-60fb-4f34-be24-4cb03a2105b7": "fk_address_city",
+        "72a20892-da85-45d6-baa0-466061256f4d": "fk_city",
+        "1c14568a-2ea5-4f13-b4d5-71ad17cf5948": "customer_address_id_fkey",
+        "ad048843-fd22-47a4-8fc7-3efcf71f7c7d": "film_language_id_fkey",
+        "ddb6e79a-9cb6-4fb7-8e0e-45a1a1d7811b": "film_actor_actor_id_fkey",
+        "ee3b09ac-c68d-4469-895e-4d2a2b8822cc": "film_actor_film_id_fkey",
+        "1ccd0058-2c83-414d-9d2c-74f8429f540e": "film_category_category_id_fkey",
+        "4246ef8f-2a10-4b4d-a9da-9bb95f8af3ff": "film_category_film_id_fkey",
+        "b492c540-de33-43eb-94cc-0b9e687b5a4f": "inventory_film_id_fkey",
+        "c7c9a17c-a97c-4caf-a836-04dd41706de6": "payment_customer_id_fkey",
+        "909efebe-3156-4b2e-879c-8c045340ed35": "payment_rental_id_fkey",
+        "0381c37b-4dc3-4b28-adf8-f0b908b345ef": "payment_staff_id_fkey",
+        "42dfd5e1-3e0e-4999-858c-18994a57d557": "rental_customer_id_fkey",
+        "515fe47a-dc68-4c47-88c7-7c2c8bc092b5": "rental_inventory_id_fkey",
+        "659041ad-b6d9-4b94-a9b1-76258f7dbac2": "rental_staff_id_key",
+        "b9ecac6d-391c-475d-9ec3-e299fcd8548f": "staff_address_id_fkey",
+        "86d5fac5-e3c1-452e-87fe-50501093ea71": "store_address_id_fkey",
+        "9234c077-bf5a-4772-ab21-be9273c99e6b": "store_manager_staff_id_fkey",
+        "6c25aa0e-8a59-45e3-b215-c47a07b3f3a8": "address_id",
+        "f30fad83-3857-41dc-975d-ccaf71468602": "address_id",
+        "7b2bc3bf-9e2c-476b-943f-0ed2bff54973": "customer_id",
+        "8bfd300f-c3c6-48f9-863e-f0a0eb72e4f7": "customer_id",
+        "d0fbf96d-33b0-437c-889e-6db10115ae57": "customer_id",
+        "c234ae05-0483-4071-9894-e9f6d0c2b0ed": "customer_address_id_fkey",
+        "317dc923-2317-4166-a7f2-e09f7c2912cc": "payment_customer_id_fkey",
+        "d7e1a141-db34-4006-bd74-ea0927a93d10": "rental_customer_id_fkey",
+        "e9041e2e-d9d9-43b0-b608-47eaf8c803cc": "added",
+        "8733f3b8-6baa-4f57-9304-d708d05d1581": "deleted",
+        "e44fef42-5f04-43a7-b0ec-2a7f15b99c61": "modified",
+        "762d2fe9-4dec-4bfe-bd30-8c7363c7d3fc": "actor_info",
+        "2bfb1d7b-da05-46bc-b6fa-37c9ca19a979": "customer_list",
+        "b4eb2e87-c1b3-4bbc-953e-6ae7062d7abb": "film_list",
+        "3792aa3c-c1af-422d-b11a-03722766dad6": "nicer_but_slower_film_list",
+        "dc2b34fd-db69-408c-8145-8fedc546756c": "sales_by_film_category",
+        "dc37732e-a5be-421d-afc9-df7521aac80c": "sales_by_store",
+        "364b3019-83a7-48fa-b566-27bbbb6c4210": "staff_list",
+        "88c0746c-25d4-47e1-a314-ba2bd3ed012d": "added",
+        "1c6184e4-67ba-4f51-82e9-daf8380a3b75": "deleted",
+        "5be399e5-faef-46c7-bed3-528acab68332": "modified",
+        "cc1570bc-dc44-4e25-8226-4b51e4866b0f": "mpaa_rating",
+        "c659d5e6-d9d9-4d5e-8283-b49facd18006": "year",
+        "93c28bab-d8e3-4c8d-aff3-5b133942b28f": "comparisonModelCollection",
+        "3b5684bd-d3d1-4967-a365-7040a00e6091": "containers",
+        "8dadc6d0-6c84-4b31-8e77-aa3043a5437b": "entities",
+        "bfac732b-51cb-48b0-a5ee-a24cb358068f": "relationships",
+        "11873996-5a3e-4128-94b5-7431c2493b32": "views",
+        "16a2837e-50e6-4a56-baab-899fa146c500": "modelDefinitions"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "48075a36-adb0-4b60-b1eb-d818dad26f12"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "e27eaf03-d48e-4d90-bac5-6723bb488000"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "79bd0206-53b4-415a-9460-a2bf61d236df"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v15.x",
+    "dbVendor": "PostgreSQL",
+    "tablespace_name": "pg_default",
+    "encoding": "UTF8",
+    "appTarget": "PostgreSQL",
+    "creationTS": "2023-05-17T10:28:46.815Z",
+    "GUID": "96338ddb-4a60-4c2a-b589-6d1370854cc2",
+    "compMode": true,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "PostgreSQL",
+        "pluginVersion": "0.1.42",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "93c28bab-d8e3-4c8d-aff3-5b133942b28f",
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 284,
+                        "height": 551,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    },
+    "lastModifTS": "2023-05-17T10:28:50.837Z",
+    "persistenceSchemaVersion": "6",
+    "applicationInformation": {
+        "version": "6.10.1"
+    }
+}
