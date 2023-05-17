@@ -17,7 +17,10 @@
                     "name": "Identifier",
                     "code": "",
                     "hackoladeMeta": {},
-                    "isActivated": true
+                    "isActivated": true,
+                    "childRelationships": [
+                        "aa7b52b2-0827-41fc-939c-2bed132792ec"
+                    ]
                 },
                 {
                     "required": true,
@@ -768,7 +771,70 @@
             "collectionUsers": [],
             "collation": {},
             "bucketId": "38a5abe0-cbed-11e9-ae66-f7db59c7febc",
-            "isActivated": true
+            "isActivated": true,
+            "schemaNameStrategy": "TopicNameStrategy",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "New_record(1)",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "New_field",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "primaryKey": false,
+                    "type": "string",
+                    "GUID": "4bb3f5b5-5b91-4e6b-8a39-c5583abff5c2",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                    "foreignField": [
+                        "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                        "707bfd60-cbf9-11e9-ae66-f7db59c7febc"
+                    ],
+                    "parentRelationship": "aa7b52b2-0827-41fc-939c-2bed132792ec"
+                },
+                {
+                    "name": "New_field(1)",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "primaryKey": false,
+                    "type": "string",
+                    "GUID": "cce1d8e9-e421-45e0-8475-81e0312a223b"
+                },
+                {
+                    "name": "New_field(2)",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "primaryKey": false,
+                    "type": "string",
+                    "GUID": "52f5bd52-96b5-46cf-820b-f8151970a58b"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f13be902-8201-47cc-a2a5-7ac96c60e308"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "606832ca-b0aa-425e-812f-7502dab719b6",
+            "bucketId": "38a5abe0-cbed-11e9-ae66-f7db59c7febc",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": true
+                }
+            }
         }
     ],
     "buckets": [
@@ -778,7 +844,8 @@
             "code": "",
             "type": "bucket",
             "collectionIds": [
-                "38e85a30-cbed-11e9-ae66-f7db59c7febc"
+                "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                "606832ca-b0aa-425e-812f-7502dab719b6"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -793,7 +860,59 @@
         }
     ],
     "views": [],
-    "relationships": [],
+    "relationships": [
+        {
+            "name": "fk New_record(1).New_field to New_record.Identifier",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                    "707bfd60-cbf9-11e9-ae66-f7db59c7febc"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "606832ca-b0aa-425e-812f-7502dab719b6",
+                    "4bb3f5b5-5b91-4e6b-8a39-c5583abff5c2"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+            "childCollection": "606832ca-b0aa-425e-812f-7502dab719b6",
+            "GUID": "aa7b52b2-0827-41fc-939c-2bed132792ec",
+            "hackoladeStyles": {
+                "GUID": "d283075a-eacf-4120-89ce-b5631cdede6f",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1538,
+                        "y": 1400.5
+                    },
+                    {
+                        "x": 1475.5,
+                        "y": 1400.5
+                    },
+                    {
+                        "x": 1475.5,
+                        "y": 1342.5
+                    },
+                    {
+                        "x": 1413,
+                        "y": 1342.5
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
     "users": [],
     "diagramViews": [],
     "idToNameHashTable": {
@@ -834,7 +953,12 @@
         "e1718800-cbf9-11e9-ae66-f7db59c7febc": "New_field",
         "f6007b40-cbfa-11e9-ae66-f7db59c7febc": "VendorRecord",
         "fbaef300-cbfa-11e9-ae66-f7db59c7febc": "Identifier",
-        "028f8220-cbfb-11e9-ae66-f7db59c7febc": "Name"
+        "028f8220-cbfb-11e9-ae66-f7db59c7febc": "Name",
+        "606832ca-b0aa-425e-812f-7502dab719b6": "New_record(1)",
+        "4bb3f5b5-5b91-4e6b-8a39-c5583abff5c2": "New_field",
+        "cce1d8e9-e421-45e0-8475-81e0312a223b": "New_field(1)",
+        "52f5bd52-96b5-46cf-820b-f8151970a58b": "New_field(2)",
+        "aa7b52b2-0827-41fc-939c-2bed132792ec": "fk New_record(1).New_field to New_record.Identifier"
     },
     "definitions": {
         "type": "definitions",
@@ -859,8 +983,8 @@
     "creationTS": "2019-08-31T12:45:31.541Z",
     "GUID": "37cd7450-cbed-11e9-ae66-f7db59c7febc",
     "code": "",
-    "lastModifTS": "2022-02-08T07:45:41.021Z",
-    "persistenceSchemaVersion": "5",
+    "lastModifTS": "2023-05-16T15:17:38.069Z",
+    "persistenceSchemaVersion": "6",
     "description": "",
     "comments": "",
     "author": "",
@@ -869,30 +993,45 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Avro",
-        "pluginVersion": "0.1.84",
+        "pluginVersion": "0.1.113",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "5.4.3"
+        "version": "6.10.1"
     },
     "hackoladeMeta": {},
+    "schemaRegistryType": "Confluent Schema Registry",
     "settings": {
         "centralPane": {
             "dbLevel": {
                 "erd": [
                     {
                         "GUID": "38e85a30-cbed-11e9-ae66-f7db59c7febc",
-                        "x": 80,
-                        "y": 80,
-                        "width": 361,
+                        "x": 1040,
+                        "y": 1040,
+                        "width": 373,
                         "height": 605,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "606832ca-b0aa-425e-812f-7502dab719b6",
+                        "x": 1538,
+                        "y": 1357,
+                        "width": 211,
+                        "height": 87,
                         "color": {}
                     }
                 ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
                 "buckets": [
                     {
-                        "x": 40,
-                        "y": 40,
+                        "x": 1000,
+                        "y": 1000,
                         "GUID": "38a5abe0-cbed-11e9-ae66-f7db59c7febc"
                     }
                 ],
@@ -914,7 +1053,8 @@
                 "diagramViews": [],
                 "decorativeSymbols": [],
                 "nestedCollectionsLayout": "horizontal",
-                "options": []
+                "options": [],
+                "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
             "changed": false

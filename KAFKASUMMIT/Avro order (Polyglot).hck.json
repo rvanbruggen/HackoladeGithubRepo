@@ -1,0 +1,372 @@
+{
+    "modelName": "Avro order (Polyglot)",
+    "description": "",
+    "author": "",
+    "version": "",
+    "dbVendor": "Polyglot",
+    "comments": "",
+    "sources": [],
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f8009c31-dc64-11e8-8b1b-d5a8e735dace"
+    },
+    "GUID": "ba95ed78-0254-48d5-93eb-fae51c8d5fe0",
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "f8009c32-dc64-11e8-8b1b-d5a8e735dace"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "964ed193-affc-11ec-ab49-f732172fe980"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "",
+    "hackoladeMeta": {},
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "fddb7b20-dc64-11e8-8b1b-d5a8e735dace": "Order",
+        "fddbc940-dc64-11e8-8b1b-d5a8e735dace": "order_id",
+        "fddbf050-dc64-11e8-8b1b-d5a8e735dace": "customer_id",
+        "fddbf051-dc64-11e8-8b1b-d5a8e735dace": "total",
+        "fddbf052-dc64-11e8-8b1b-d5a8e735dace": "order_details",
+        "fddbf053-dc64-11e8-8b1b-d5a8e735dace": "OrderDetail",
+        "fddbf054-dc64-11e8-8b1b-d5a8e735dace": "quantity",
+        "fddbf055-dc64-11e8-8b1b-d5a8e735dace": "total",
+        "fddbf056-dc64-11e8-8b1b-d5a8e735dace": "product_detail",
+        "fddbf057-dc64-11e8-8b1b-d5a8e735dace": "product_id",
+        "fddc1760-dc64-11e8-8b1b-d5a8e735dace": "product_name",
+        "e142e992-8670-11eb-8318-378b02c75a97": "New_field",
+        "fddc3e70-dc64-11e8-8b1b-d5a8e735dace": "product_status",
+        "fddc3e71-dc64-11e8-8b1b-d5a8e735dace": "product_category",
+        "fddc3e72-dc64-11e8-8b1b-d5a8e735dace": "New field",
+        "fddc3e73-dc64-11e8-8b1b-d5a8e735dace": "price",
+        "fddc3e74-dc64-11e8-8b1b-d5a8e735dace": "product_hash",
+        "fdece040-dc64-11e8-8b1b-d5a8e735dace": "com.hackolade.db.model.container"
+    },
+    "collections": [
+        {
+            "collectionName": "Order",
+            "isActivated": true,
+            "description": "This Schema describes about Order -- from http://www.treselle.com/blog/advanced-avro-schema-design-reuse/",
+            "bucketId": "fdece040-dc64-11e8-8b1b-d5a8e735dace",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "order_id",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "long",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "GUID": "fddbc940-dc64-11e8-8b1b-d5a8e735dace",
+                    "type": "numeric"
+                },
+                {
+                    "name": "customer_id",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "long",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "GUID": "fddbf050-dc64-11e8-8b1b-d5a8e735dace",
+                    "type": "numeric"
+                },
+                {
+                    "name": "total",
+                    "isActivated": true,
+                    "childType": "float",
+                    "mode": "",
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "GUID": "fddbf051-dc64-11e8-8b1b-d5a8e735dace",
+                    "type": "numeric"
+                },
+                {
+                    "name": "order_details",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": true,
+                    "properties": [
+                        {
+                            "name": "OrderDetail",
+                            "displayName": "OrderDetail",
+                            "isActivated": true,
+                            "childType": "object",
+                            "primaryKey": false,
+                            "required": true,
+                            "additionalProperties": false,
+                            "properties": [
+                                {
+                                    "name": "quantity",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "GUID": "fddbf054-dc64-11e8-8b1b-d5a8e735dace",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "total",
+                                    "isActivated": true,
+                                    "childType": "float",
+                                    "mode": "",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "relationshipType": "",
+                                    "GUID": "fddbf055-dc64-11e8-8b1b-d5a8e735dace",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "product_detail",
+                                    "isActivated": true,
+                                    "childType": "object",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "additionalProperties": false,
+                                    "properties": [
+                                        {
+                                            "name": "product_id",
+                                            "isActivated": true,
+                                            "childType": "integer",
+                                            "mode": "long",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "relationshipType": "",
+                                            "GUID": "fddbf057-dc64-11e8-8b1b-d5a8e735dace",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "product_name",
+                                            "isActivated": true,
+                                            "childType": "varchar",
+                                            "mode": "string",
+                                            "description": "This is the name of the product",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "relationshipType": "",
+                                            "GUID": "fddc1760-dc64-11e8-8b1b-d5a8e735dace",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "New_field",
+                                            "isActivated": true,
+                                            "type": "multiple",
+                                            "description": "This is the description of the product",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "default": null,
+                                            "properties": [],
+                                            "GUID": "e142e992-8670-11eb-8318-378b02c75a97",
+                                            "hackoladeMeta": {},
+                                            "multipleTypes": [
+                                                {
+                                                    "type": "null",
+                                                    "id": "e142e991-8670-11eb-8318-378b02c75a97",
+                                                    "childType": "null"
+                                                },
+                                                {
+                                                    "type": "string",
+                                                    "GUID": "fddc1761-dc64-11e8-8b1b-d5a8e735dace",
+                                                    "id": "e142e990-8670-11eb-8318-378b02c75a97",
+                                                    "mode": "string",
+                                                    "childType": "varchar"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "product_status",
+                                            "isActivated": true,
+                                            "childType": "enum",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "relationshipType": "",
+                                            "GUID": "fddc3e70-dc64-11e8-8b1b-d5a8e735dace",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "product_category",
+                                            "isActivated": true,
+                                            "description": "This contains array of categories",
+                                            "childType": "array",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "properties": [
+                                                {
+                                                    "name": "New field",
+                                                    "displayName": "New field",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "relationshipType": "",
+                                                    "GUID": "fddc3e72-dc64-11e8-8b1b-d5a8e735dace",
+                                                    "type": "string",
+                                                    "arrayItem": true,
+                                                    "arrayParentType": "array"
+                                                }
+                                            ],
+                                            "GUID": "fddc3e71-dc64-11e8-8b1b-d5a8e735dace",
+                                            "type": "array"
+                                        },
+                                        {
+                                            "name": "price",
+                                            "isActivated": true,
+                                            "childType": "float",
+                                            "mode": "",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "relationshipType": "",
+                                            "GUID": "fddc3e73-dc64-11e8-8b1b-d5a8e735dace",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "product_hash",
+                                            "isActivated": true,
+                                            "childType": "number",
+                                            "mode": "fixed",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "relationshipType": "",
+                                            "GUID": "fddc3e74-dc64-11e8-8b1b-d5a8e735dace",
+                                            "type": "numeric"
+                                        }
+                                    ],
+                                    "GUID": "fddbf056-dc64-11e8-8b1b-d5a8e735dace",
+                                    "type": "document"
+                                }
+                            ],
+                            "GUID": "fddbf053-dc64-11e8-8b1b-d5a8e735dace",
+                            "type": "document",
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "GUID": "fddbf052-dc64-11e8-8b1b-d5a8e735dace",
+                    "type": "array"
+                }
+            ],
+            "definitions": {
+                "GUID": "fddc6580-dc64-11e8-8b1b-d5a8e735dace",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "fddb7b20-dc64-11e8-8b1b-d5a8e735dace",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "buckets": [
+        {
+            "name": "com.hackolade.db.model.container",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 0,
+                "g": 188,
+                "b": 213,
+                "a": 1
+            },
+            "GUID": "fdece040-dc64-11e8-8b1b-d5a8e735dace",
+            "type": "bucket",
+            "collectionIds": [
+                "fddb7b20-dc64-11e8-8b1b-d5a8e735dace"
+            ],
+            "show": true
+        }
+    ],
+    "relationships": [],
+    "appTarget": "Polyglot",
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-05-16T16:00:04.420Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "6.10.1"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "fddb7b20-dc64-11e8-8b1b-d5a8e735dace",
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 293,
+                        "height": 317,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1010,
+                        "y": 1010,
+                        "GUID": "fdece040-dc64-11e8-8b1b-d5a8e735dace"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "fddb7b20-dc64-11e8-8b1b-d5a8e735dace",
+                            "x": 1050,
+                            "y": 1050,
+                            "width": 293,
+                            "height": 317,
+                            "color": {}
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 1010,
+                            "y": 1010,
+                            "GUID": "fdece040-dc64-11e8-8b1b-d5a8e735dace"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
