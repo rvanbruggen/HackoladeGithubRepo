@@ -1,27 +1,69 @@
 {
-    "modelName": "New model",
+    "modelName": "New model (Polyglot)",
+    "dbVendor": "Polyglot",
+    "isLineageEnabled": true,
+    "sources": [
+        {
+            "GUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
+            "sourceName": "RE'd from Confluent",
+            "lineageTimestamp": "2023-05-18 13:26:55 CEST",
+            "lineageSourceFormat": "Instance",
+            "lineageSourceConnectionName": "RixKafkaRegistry"
+        }
+    ],
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "baf79b4a-c2ed-459f-9702-567dcd7ad85b"
+    },
+    "GUID": "e829d2ef-dd67-40d2-94bb-ba3b9506686b",
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "246f5747-b598-4783-9633-15da116e0b54"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "7e9c2d8c-02ea-4b3e-8fc8-019db65dc8e0"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "7a7563aa-7294-4ee5-b4aa-142c94758921": "rentalMessageRecord",
+        "a6429f4e-58a3-49d7-8b39-8070508e6074": "id",
+        "acd19632-f247-48a5-ae1b-fba1910e7940": "rentaldate",
+        "eed9e252-9101-46f6-ae33-235e64227774": "inventoryId",
+        "a2e9e67a-bb77-47c8-97bf-7f418b2a65f5": "customerId",
+        "b3c6931d-0f16-4824-84ef-ec1a45d3e587": "returnDate",
+        "7bfc4186-84a0-4808-9b0f-d36395cc4480": "staffId",
+        "f8cae164-df3c-4e6b-b5ab-60aaeadfbe12": "lastUpdated",
+        "69033e9b-ff81-4f8c-8477-e1a4e28e8a5f": "demoproperty",
+        "5df88e74-d88d-4dcc-b81b-d7886de0d2f1": "rentalmessage"
+    },
     "collections": [
         {
             "collectionName": "rentalMessageRecord",
-            "type": "object",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "5df88e74-d88d-4dcc-b81b-d7886de0d2f1",
+            "additionalProperties": true,
             "properties": [
                 {
-                    "code": "",
                     "name": "id",
+                    "code": "",
                     "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
                     "required": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int",
-                    "childType": "number",
-                    "type": "numeric",
-                    "GUID": "843c9489-2d51-46a1-92a3-e9654128ba09",
-                    "error": {},
                     "sources": [
                         {
-                            "GUID": "13465b57-81eb-405a-85b3-0ad4519183a2",
-                            "lineageSourceGUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
+                            "GUID": "f1767be9-e52b-49c4-98e3-2b89cc562c43",
+                            "lineageSourceGUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
                             "lineageSourceAttrBusName": "id",
                             "lineageSourceAttrTechName": "",
                             "lineageSrcEntityBusName": "rentalMessageRecord",
@@ -29,26 +71,24 @@
                             "lineageSourceContainerBusName": "rentalmessage",
                             "lineageSourceContainerTechName": ""
                         }
-                    ]
+                    ],
+                    "GUID": "a6429f4e-58a3-49d7-8b39-8070508e6074",
+                    "type": "numeric"
                 },
                 {
-                    "code": "",
                     "name": "rentaldate",
+                    "code": "",
                     "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
                     "required": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int",
-                    "childType": "number",
-                    "type": "numeric",
-                    "logicalType": "date",
-                    "GUID": "de53a912-5de5-4c61-85e9-57002f0183a7",
-                    "error": {},
                     "sources": [
                         {
-                            "GUID": "c1a484d9-312d-4400-bdea-d78c7b40b8e2",
-                            "lineageSourceGUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
+                            "GUID": "df78a6c1-a4c4-4bd8-9beb-fc821224ac36",
+                            "lineageSourceGUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
                             "lineageSourceAttrBusName": "rentaldate",
                             "lineageSourceAttrTechName": "",
                             "lineageSrcEntityBusName": "rentalMessageRecord",
@@ -56,25 +96,24 @@
                             "lineageSourceContainerBusName": "rentalmessage",
                             "lineageSourceContainerTechName": ""
                         }
-                    ]
+                    ],
+                    "GUID": "acd19632-f247-48a5-ae1b-fba1910e7940",
+                    "type": "numeric"
                 },
                 {
-                    "code": "",
                     "name": "inventoryId",
+                    "code": "",
                     "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
                     "required": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int",
-                    "childType": "number",
-                    "type": "numeric",
-                    "GUID": "41e5d15d-1079-48bc-b489-ece2814b5b57",
-                    "error": {},
                     "sources": [
                         {
-                            "GUID": "e93d2f56-8978-44da-a5df-5c08decd0f3b",
-                            "lineageSourceGUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
+                            "GUID": "64b5d729-60c5-4a02-8c5e-1648971e055d",
+                            "lineageSourceGUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
                             "lineageSourceAttrBusName": "inventoryId",
                             "lineageSourceAttrTechName": "",
                             "lineageSrcEntityBusName": "rentalMessageRecord",
@@ -82,25 +121,24 @@
                             "lineageSourceContainerBusName": "rentalmessage",
                             "lineageSourceContainerTechName": ""
                         }
-                    ]
+                    ],
+                    "GUID": "eed9e252-9101-46f6-ae33-235e64227774",
+                    "type": "numeric"
                 },
                 {
-                    "code": "",
                     "name": "customerId",
+                    "code": "",
                     "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
                     "required": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int",
-                    "childType": "number",
-                    "type": "numeric",
-                    "GUID": "65f90787-222d-4ad1-9aa2-f7e2f7937366",
-                    "error": {},
                     "sources": [
                         {
-                            "GUID": "40f7ff44-285f-4c86-a438-a879d043a75e",
-                            "lineageSourceGUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
+                            "GUID": "e3c9c258-049d-4354-b7cb-7f58ea5162ce",
+                            "lineageSourceGUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
                             "lineageSourceAttrBusName": "customerId",
                             "lineageSourceAttrTechName": "",
                             "lineageSrcEntityBusName": "rentalMessageRecord",
@@ -108,26 +146,24 @@
                             "lineageSourceContainerBusName": "rentalmessage",
                             "lineageSourceContainerTechName": ""
                         }
-                    ]
+                    ],
+                    "GUID": "a2e9e67a-bb77-47c8-97bf-7f418b2a65f5",
+                    "type": "numeric"
                 },
                 {
-                    "code": "",
                     "name": "returnDate",
+                    "code": "",
                     "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
                     "required": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int",
-                    "childType": "number",
-                    "type": "numeric",
-                    "logicalType": "date",
-                    "GUID": "f033ccfd-f771-45e9-ac6c-19ad99e535f7",
-                    "error": {},
                     "sources": [
                         {
-                            "GUID": "970df600-2846-4f27-943a-425786387b30",
-                            "lineageSourceGUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
+                            "GUID": "9eddb543-b1e5-4e0d-b857-e9a09c38c68a",
+                            "lineageSourceGUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
                             "lineageSourceAttrBusName": "returnDate",
                             "lineageSourceAttrTechName": "",
                             "lineageSrcEntityBusName": "rentalMessageRecord",
@@ -135,25 +171,24 @@
                             "lineageSourceContainerBusName": "rentalmessage",
                             "lineageSourceContainerTechName": ""
                         }
-                    ]
+                    ],
+                    "GUID": "b3c6931d-0f16-4824-84ef-ec1a45d3e587",
+                    "type": "numeric"
                 },
                 {
-                    "code": "",
                     "name": "staffId",
+                    "code": "",
                     "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
                     "required": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int",
-                    "childType": "number",
-                    "type": "numeric",
-                    "GUID": "9b28703a-41d8-4cc9-8bc6-86a66be5144f",
-                    "error": {},
                     "sources": [
                         {
-                            "GUID": "78b39fd1-f80d-4b84-87db-b9622754c405",
-                            "lineageSourceGUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
+                            "GUID": "14202579-4202-48ee-8930-81fc1e09f839",
+                            "lineageSourceGUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
                             "lineageSourceAttrBusName": "staffId",
                             "lineageSourceAttrTechName": "",
                             "lineageSrcEntityBusName": "rentalMessageRecord",
@@ -161,26 +196,24 @@
                             "lineageSourceContainerBusName": "rentalmessage",
                             "lineageSourceContainerTechName": ""
                         }
-                    ]
+                    ],
+                    "GUID": "7bfc4186-84a0-4808-9b0f-d36395cc4480",
+                    "type": "numeric"
                 },
                 {
-                    "code": "",
                     "name": "lastUpdated",
+                    "code": "",
                     "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
                     "required": true,
                     "exclusiveMinimum": false,
                     "exclusiveMaximum": false,
-                    "primaryKey": false,
-                    "mode": "int",
-                    "childType": "number",
-                    "type": "numeric",
-                    "logicalType": "date",
-                    "GUID": "dcfcd942-f65a-428f-abf4-1c6f0f72eaea",
-                    "error": {},
                     "sources": [
                         {
-                            "GUID": "f56da8b9-bab8-474a-bffd-fbc2580417ea",
-                            "lineageSourceGUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
+                            "GUID": "365be46f-c478-44df-98a3-14061b73e15e",
+                            "lineageSourceGUID": "b61fb35c-a927-4c6b-ba4b-a750a1a0d987",
                             "lineageSourceAttrBusName": "lastUpdated",
                             "lineageSourceAttrTechName": "",
                             "lineageSrcEntityBusName": "rentalMessageRecord",
@@ -188,109 +221,67 @@
                             "lineageSourceContainerBusName": "rentalmessage",
                             "lineageSourceContainerTechName": ""
                         }
-                    ]
+                    ],
+                    "GUID": "f8cae164-df3c-4e6b-b5ab-60aaeadfbe12",
+                    "type": "numeric"
+                },
+                {
+                    "name": "demoproperty",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "69033e9b-ff81-4f8c-8477-e1a4e28e8a5f",
+                    "type": "string",
+                    "hackoladeMeta": {}
                 }
             ],
             "definitions": {
                 "type": "definitions",
-                "GUID": "6019e139-a4ce-4f27-a237-eaa548393c03",
+                "GUID": "6ea7c004-99a6-427b-aeb0-b15ed1dfcbc5",
                 "properties": []
             },
-            "isActivated": true,
-            "additionalProperties": true,
-            "collectionUsers": [],
-            "GUID": "9487951d-1029-493d-9f33-926003387914",
-            "code": "",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "confluentSubjectName": "rentalMessageRecord",
-            "confluentVersion": 1,
-            "schemaNameStrategy": "RecordNameStrategy",
+            "GUID": "7a7563aa-7294-4ee5-b4aa-142c94758921",
+            "type": "object",
             "hackoladeMeta": {
                 "validationErrors": {}
-            },
-            "bucketId": "a07ce91e-e266-41d7-994f-88e521b403d4"
+            }
         }
     ],
+    "views": [],
     "buckets": [
         {
             "name": "rentalmessage",
-            "type": "bucket",
-            "collectionIds": [
-                "9487951d-1029-493d-9f33-926003387914"
-            ],
+            "code": "",
+            "isActivated": true,
             "backgroundColor": {
                 "r": 216,
                 "g": 0,
                 "b": 115,
                 "a": 1
             },
-            "show": true,
-            "isActivated": true,
-            "indexes": [],
-            "GUID": "a07ce91e-e266-41d7-994f-88e521b403d4",
+            "GUID": "5df88e74-d88d-4dcc-b81b-d7886de0d2f1",
+            "type": "bucket",
+            "collectionIds": [
+                "7a7563aa-7294-4ee5-b4aa-142c94758921"
+            ],
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "code": ""
+            "show": true
         }
     ],
-    "views": [],
     "relationships": [],
-    "users": [],
-    "diagramViews": [],
-    "idToNameHashTable": {
-        "c85a7f54-4032-4129-851a-fd0c239d8135": "RE'd from Confluent",
-        "a07ce91e-e266-41d7-994f-88e521b403d4": "rentalmessage",
-        "843c9489-2d51-46a1-92a3-e9654128ba09": "id",
-        "de53a912-5de5-4c61-85e9-57002f0183a7": "rentaldate",
-        "41e5d15d-1079-48bc-b489-ece2814b5b57": "inventoryId",
-        "65f90787-222d-4ad1-9aa2-f7e2f7937366": "customerId",
-        "f033ccfd-f771-45e9-ac6c-19ad99e535f7": "returnDate",
-        "9b28703a-41d8-4cc9-8bc6-86a66be5144f": "staffId",
-        "dcfcd942-f65a-428f-abf4-1c6f0f72eaea": "lastUpdated",
-        "9487951d-1029-493d-9f33-926003387914": "rentalMessageRecord"
-    },
-    "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "f58e921b-3475-427d-b271-0afe206f4e67"
-    },
-    "polyglotDefinitions": {
-        "type": "polyglotDefinitions",
-        "properties": [],
-        "GUID": "67e38237-e2a7-4e79-89da-bafc1bbd6687"
-    },
-    "externalDefinitions": {
-        "type": "externalDefinitions",
-        "properties": [],
-        "GUID": "f0042df9-ebc4-450f-9afd-955467c7ef5c"
-    },
-    "sources": [
-        {
-            "GUID": "c85a7f54-4032-4129-851a-fd0c239d8135",
-            "sourceName": "RE'd from Confluent",
-            "lineageTimestamp": "2023-05-18 14:41:19 CEST",
-            "lineageSourceFormat": "Instance",
-            "lineageSourceConnectionName": "RixKafkaRegistry"
-        }
-    ],
-    "decorativeSymbols": [],
-    "dbVendor": "Avro",
-    "schemaNameStrategy": "TopicNameStrategy",
-    "appTarget": "Avro",
-    "creationTS": "2023-05-18T12:40:55.608Z",
-    "GUID": "e8cfb26e-55f8-4c37-8950-7ad4095c7dfe",
-    "isLineageEnabled": true,
-    "schemaRegistryType": "Confluent Schema Registry",
-    "schemaRegistryUrl": "https://psrc-30dr2.us-central1.gcp.confluent.cloud",
-    "lastModifTS": "2023-05-18T12:41:30.136Z",
-    "persistenceSchemaVersion": "6",
-    "isCreatedByPlugin": true,
+    "appTarget": "Polyglot",
     "pluginInformation": {
-        "pluginName": "Avro",
-        "pluginVersion": "0.1.113",
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
         "pluginEngineVersion": "1.0.0"
     },
+    "lastModifTS": "2023-05-18T11:30:28.130Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
     "applicationInformation": {
         "version": "6.10.1"
     },
@@ -299,11 +290,11 @@
             "dbLevel": {
                 "erd": [
                     {
-                        "GUID": "9487951d-1029-493d-9f33-926003387914",
-                        "x": 1050,
-                        "y": 1050,
+                        "GUID": "7a7563aa-7294-4ee5-b4aa-142c94758921",
+                        "x": 1156,
+                        "y": 1121,
                         "width": 244,
-                        "height": 155,
+                        "height": 177,
                         "color": {}
                     }
                 ],
@@ -315,9 +306,9 @@
                 },
                 "buckets": [
                     {
-                        "x": 1010,
-                        "y": 1010,
-                        "GUID": "a07ce91e-e266-41d7-994f-88e521b403d4"
+                        "x": 1116,
+                        "y": 1081,
+                        "GUID": "5df88e74-d88d-4dcc-b81b-d7886de0d2f1"
                     }
                 ],
                 "collapsedNodes": [],
@@ -329,8 +320,23 @@
                 "selectedCollections": [],
                 "displayColorPicker": false,
                 "graphView": {
-                    "erd": [],
-                    "buckets": [],
+                    "erd": [
+                        {
+                            "GUID": "7a7563aa-7294-4ee5-b4aa-142c94758921",
+                            "x": 1156,
+                            "y": 1121,
+                            "width": 244,
+                            "height": 177,
+                            "color": {}
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 1116,
+                            "y": 1081,
+                            "GUID": "5df88e74-d88d-4dcc-b81b-d7886de0d2f1"
+                        }
+                    ],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300

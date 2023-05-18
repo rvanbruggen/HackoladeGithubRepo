@@ -1,0 +1,3172 @@
+{
+    "modelName": "DVDrental (Polyglot)",
+    "description": "Derived from https://www.postgresqltutorial.com/postgresql-sample-database/",
+    "dbVendor": "Polyglot",
+    "isLineageEnabled": false,
+    "sources": [],
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "name": "mpaa_rating",
+                "code": "",
+                "isActivated": true,
+                "childType": "enum",
+                "compositePrimaryKey": false,
+                "primaryKey": false,
+                "required": false,
+                "compositeUniqueKey": false,
+                "unique": false,
+                "enum": [
+                    "G",
+                    "PG",
+                    "PG-13",
+                    "R",
+                    "NC-17"
+                ],
+                "definitionRefs": [
+                    [
+                        "fed43860-37d7-11ec-8866-8b7656a20503",
+                        "fed4386b-37d7-11ec-8866-8b7656a20503"
+                    ]
+                ],
+                "GUID": "fed08ee2-37d7-11ec-8866-8b7656a20503",
+                "type": "string"
+            },
+            {
+                "name": "year",
+                "code": "",
+                "isActivated": true,
+                "childType": "varchar",
+                "mode": "",
+                "compositePrimaryKey": false,
+                "primaryKey": false,
+                "required": false,
+                "compositeUniqueKey": false,
+                "unique": false,
+                "default": "",
+                "definitionRefs": [
+                    [
+                        "fed43860-37d7-11ec-8866-8b7656a20503",
+                        "fed43865-37d7-11ec-8866-8b7656a20503"
+                    ]
+                ],
+                "GUID": "fed08ee3-37d7-11ec-8866-8b7656a20503",
+                "type": "string"
+            }
+        ],
+        "GUID": "7c045dc1-37d7-11ec-8866-8b7656a20503"
+    },
+    "GUID": "9b825778-fe36-4746-876f-20ced88fbc37",
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "7c045dc2-37d7-11ec-8866-8b7656a20503"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "7c045dc3-37d7-11ec-8866-8b7656a20503"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v13.x",
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "fec28520-37d7-11ec-8866-8b7656a20503": "store",
+        "fec2ac30-37d7-11ec-8866-8b7656a20503": "store_id",
+        "fec2ac31-37d7-11ec-8866-8b7656a20503": "manager_staff_id",
+        "fec2ac32-37d7-11ec-8866-8b7656a20503": "address_id",
+        "fec2ac33-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed0b5f1-37d7-11ec-8866-8b7656a20503": "staff",
+        "fed0b5f3-37d7-11ec-8866-8b7656a20503": "staff_id",
+        "fed0b5f4-37d7-11ec-8866-8b7656a20503": "first_name",
+        "fed0b5f5-37d7-11ec-8866-8b7656a20503": "last_name",
+        "fed0b5f6-37d7-11ec-8866-8b7656a20503": "address_id",
+        "fed0b5f7-37d7-11ec-8866-8b7656a20503": "email",
+        "fed0b5f8-37d7-11ec-8866-8b7656a20503": "store_id",
+        "fed0b5f9-37d7-11ec-8866-8b7656a20503": "active",
+        "fed0b5fa-37d7-11ec-8866-8b7656a20503": "username",
+        "fed0b5fb-37d7-11ec-8866-8b7656a20503": "password",
+        "fed0b5fc-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed0dd00-37d7-11ec-8866-8b7656a20503": "picture",
+        "fed1a055-37d7-11ec-8866-8b7656a20503": "rental",
+        "fed1c761-37d7-11ec-8866-8b7656a20503": "rental_id",
+        "fed1c762-37d7-11ec-8866-8b7656a20503": "rental_date",
+        "fed1c763-37d7-11ec-8866-8b7656a20503": "inventory_id",
+        "fed1c764-37d7-11ec-8866-8b7656a20503": "customer_id",
+        "fed1c765-37d7-11ec-8866-8b7656a20503": "return_date",
+        "fed1c766-37d7-11ec-8866-8b7656a20503": "staff_id",
+        "fed1c767-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed263a0-37d7-11ec-8866-8b7656a20503": "payment",
+        "fed263a2-37d7-11ec-8866-8b7656a20503": "payment_id",
+        "fed263a3-37d7-11ec-8866-8b7656a20503": "customer_id",
+        "fed263a4-37d7-11ec-8866-8b7656a20503": "staff_id",
+        "fed263a5-37d7-11ec-8866-8b7656a20503": "rental_id",
+        "fed263a6-37d7-11ec-8866-8b7656a20503": "amount",
+        "fed263a7-37d7-11ec-8866-8b7656a20503": "payment_date",
+        "fed2d8d0-37d7-11ec-8866-8b7656a20503": "language",
+        "fed2d8d2-37d7-11ec-8866-8b7656a20503": "language_id",
+        "fed2d8d3-37d7-11ec-8866-8b7656a20503": "name",
+        "fed2d8d4-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed326f0-37d7-11ec-8866-8b7656a20503": "inventory",
+        "fed326f2-37d7-11ec-8866-8b7656a20503": "inventory_id",
+        "fed326f3-37d7-11ec-8866-8b7656a20503": "film_id",
+        "fed326f4-37d7-11ec-8866-8b7656a20503": "store_id",
+        "fed326f5-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed37511-37d7-11ec-8866-8b7656a20503": "film_category",
+        "fed37513-37d7-11ec-8866-8b7656a20503": "film_id",
+        "fed37514-37d7-11ec-8866-8b7656a20503": "category_id",
+        "fed37515-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed3c331-37d7-11ec-8866-8b7656a20503": "film_actor",
+        "fed3ea40-37d7-11ec-8866-8b7656a20503": "actor_id",
+        "fed3ea41-37d7-11ec-8866-8b7656a20503": "film_id",
+        "fed3ea42-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed43860-37d7-11ec-8866-8b7656a20503": "film",
+        "fed43862-37d7-11ec-8866-8b7656a20503": "film_id",
+        "fed43863-37d7-11ec-8866-8b7656a20503": "title",
+        "fed43864-37d7-11ec-8866-8b7656a20503": "description",
+        "fed43865-37d7-11ec-8866-8b7656a20503": "release_year",
+        "fed43866-37d7-11ec-8866-8b7656a20503": "language_id",
+        "fed43867-37d7-11ec-8866-8b7656a20503": "rental_duration",
+        "fed43868-37d7-11ec-8866-8b7656a20503": "rental_rate",
+        "fed43869-37d7-11ec-8866-8b7656a20503": "length",
+        "fed4386a-37d7-11ec-8866-8b7656a20503": "replacement_cost",
+        "fed4386b-37d7-11ec-8866-8b7656a20503": "rating",
+        "fed4386c-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed4386d-37d7-11ec-8866-8b7656a20503": "special_features",
+        "fed4386e-37d7-11ec-8866-8b7656a20503": "fulltext",
+        "fed570e1-37d7-11ec-8866-8b7656a20503": "customer",
+        "fed570e3-37d7-11ec-8866-8b7656a20503": "customer_id",
+        "fed570e4-37d7-11ec-8866-8b7656a20503": "store_id",
+        "fed570e5-37d7-11ec-8866-8b7656a20503": "first_name",
+        "fed570e6-37d7-11ec-8866-8b7656a20503": "last_name",
+        "fed570e7-37d7-11ec-8866-8b7656a20503": "email",
+        "fed570e8-37d7-11ec-8866-8b7656a20503": "address_id",
+        "fed570e9-37d7-11ec-8866-8b7656a20503": "activebool",
+        "fed570ea-37d7-11ec-8866-8b7656a20503": "create_date",
+        "fed570eb-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed570ec-37d7-11ec-8866-8b7656a20503": "active",
+        "fed68250-37d7-11ec-8866-8b7656a20503": "country",
+        "fed68252-37d7-11ec-8866-8b7656a20503": "country_id",
+        "fed68253-37d7-11ec-8866-8b7656a20503": "country",
+        "fed68254-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed6f780-37d7-11ec-8866-8b7656a20503": "city",
+        "fed6f782-37d7-11ec-8866-8b7656a20503": "city_id",
+        "fed6f783-37d7-11ec-8866-8b7656a20503": "city",
+        "fed6f784-37d7-11ec-8866-8b7656a20503": "country_id",
+        "fed6f785-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed793c0-37d7-11ec-8866-8b7656a20503": "category",
+        "fed793c2-37d7-11ec-8866-8b7656a20503": "category_id",
+        "fed793c3-37d7-11ec-8866-8b7656a20503": "name",
+        "fed793c4-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed808f1-37d7-11ec-8866-8b7656a20503": "address",
+        "fed808f3-37d7-11ec-8866-8b7656a20503": "address_id",
+        "fed808f4-37d7-11ec-8866-8b7656a20503": "address",
+        "fed808f5-37d7-11ec-8866-8b7656a20503": "address2",
+        "fed808f6-37d7-11ec-8866-8b7656a20503": "district",
+        "fed808f7-37d7-11ec-8866-8b7656a20503": "city_id",
+        "fed808f8-37d7-11ec-8866-8b7656a20503": "postal_code",
+        "fed808f9-37d7-11ec-8866-8b7656a20503": "phone",
+        "fed83000-37d7-11ec-8866-8b7656a20503": "last_update",
+        "fed87e25-37d7-11ec-8866-8b7656a20503": "actor",
+        "fed8a530-37d7-11ec-8866-8b7656a20503": "actor_id",
+        "fed8a531-37d7-11ec-8866-8b7656a20503": "first_name",
+        "fed8a532-37d7-11ec-8866-8b7656a20503": "last_name",
+        "fed8a533-37d7-11ec-8866-8b7656a20503": "last_update",
+        "feddfc60-37d7-11ec-8866-8b7656a20503": "actor_info",
+        "fedf34e0-37d7-11ec-8866-8b7656a20503": "customer_list",
+        "fedf8300-37d7-11ec-8866-8b7656a20503": "film_list",
+        "fee04650-37d7-11ec-8866-8b7656a20503": "nicer_but_slower_film_list",
+        "fee09470-37d7-11ec-8866-8b7656a20503": "sales_by_film_category",
+        "fee0bb80-37d7-11ec-8866-8b7656a20503": "sales_by_store",
+        "fee109a0-37d7-11ec-8866-8b7656a20503": "staff_list",
+        "feda79f0-37d7-11ec-8866-8b7656a20503": "public",
+        "feda2bd0-37d7-11ec-8866-8b7656a20503": "fk_address_city",
+        "feda2bd1-37d7-11ec-8866-8b7656a20503": "fk_city",
+        "feda2bd2-37d7-11ec-8866-8b7656a20503": "customer_address_id_fkey",
+        "feda2bd3-37d7-11ec-8866-8b7656a20503": "film_language_id_fkey",
+        "feda2bd4-37d7-11ec-8866-8b7656a20503": "film_actor_actor_id_fkey",
+        "feda2bd5-37d7-11ec-8866-8b7656a20503": "film_actor_film_id_fkey",
+        "feda2bd6-37d7-11ec-8866-8b7656a20503": "film_category_category_id_fkey",
+        "feda2bd7-37d7-11ec-8866-8b7656a20503": "film_category_film_id_fkey",
+        "feda2bd8-37d7-11ec-8866-8b7656a20503": "inventory_film_id_fkey",
+        "feda2bd9-37d7-11ec-8866-8b7656a20503": "payment_customer_id_fkey",
+        "feda2bda-37d7-11ec-8866-8b7656a20503": "payment_rental_id_fkey",
+        "feda2bdb-37d7-11ec-8866-8b7656a20503": "payment_staff_id_fkey",
+        "feda2bdc-37d7-11ec-8866-8b7656a20503": "rental_customer_id_fkey",
+        "feda52e0-37d7-11ec-8866-8b7656a20503": "rental_inventory_id_fkey",
+        "feda52e1-37d7-11ec-8866-8b7656a20503": "rental_staff_id_key",
+        "feda52e2-37d7-11ec-8866-8b7656a20503": "staff_address_id_fkey",
+        "feda52e3-37d7-11ec-8866-8b7656a20503": "store_address_id_fkey",
+        "feda52e4-37d7-11ec-8866-8b7656a20503": "store_manager_staff_id_fkey",
+        "fed08ee2-37d7-11ec-8866-8b7656a20503": "mpaa_rating",
+        "fed08ee3-37d7-11ec-8866-8b7656a20503": "year"
+    },
+    "collections": [
+        {
+            "collectionName": "store",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed91a60-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "store_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fec2ac30-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('store_store_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fec2ac30-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "manager_staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                        "fed0b5f3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fec2ac31-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed808f1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed808f1-37d7-11ec-8866-8b7656a20503",
+                        "fed808f3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fec2ac32-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fec2ac33-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fec28521-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fec28520-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "staff",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed94174-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "staff_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed0b5f3-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('staff_staff_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed0b5f3-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "first_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed0b5f4-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed0b5f5-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed808f1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed808f1-37d7-11ec-8866-8b7656a20503",
+                        "fed808f3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed0b5f6-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "email",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed0b5f7-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed0b5f8-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "active",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "true",
+                    "GUID": "fed0b5f9-37d7-11ec-8866-8b7656a20503",
+                    "type": "boolean"
+                },
+                {
+                    "name": "username",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 16,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed0b5fa-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "password",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 40,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed0b5fb-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed0b5fc-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "picture",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "binary",
+                    "mode": "binary",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed0dd00-37d7-11ec-8866-8b7656a20503",
+                    "type": "binary"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed0b5f2-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "rental",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed96884-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "rental_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed1c761-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "rental_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('rental_rental_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed1c761-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed1c762-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "inventory_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed326f0-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed326f0-37d7-11ec-8866-8b7656a20503",
+                        "fed326f2-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed1c763-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "customer_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed570e1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed570e1-37d7-11ec-8866-8b7656a20503",
+                        "fed570e3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed1c764-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "return_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed1c765-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                        "fed0b5f3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed1c766-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed1c767-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed1c760-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed1a055-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "payment",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed9688d-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "payment_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed263a2-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "payment_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('payment_payment_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed263a2-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "customer_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed570e1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed570e1-37d7-11ec-8866-8b7656a20503",
+                        "fed570e3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed263a3-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "staff_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                        "fed0b5f3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed263a4-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed1a055-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed1a055-37d7-11ec-8866-8b7656a20503",
+                        "fed1c761-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed263a5-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "amount",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "numeric",
+                    "precision": 5,
+                    "scale": 2,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed263a6-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "payment_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed263a7-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed263a1-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed263a0-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "language",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed98f93-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "language_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed2d8d2-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "language_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('language_language_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed2d8d2-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 20,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed2d8d3-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed2d8d4-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed2d8d1-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "inventory",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed98f98-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "inventory_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed326f2-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "inventory_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('inventory_inventory_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed326f2-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed43860-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed43860-37d7-11ec-8866-8b7656a20503",
+                        "fed43862-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed326f3-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed326f4-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed326f5-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed326f1-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed326f0-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "film_category",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed98f9d-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "film_category_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed37513-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "fed37514-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed43860-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed43860-37d7-11ec-8866-8b7656a20503",
+                        "fed43862-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed37513-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "category_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed793c0-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed793c0-37d7-11ec-8866-8b7656a20503",
+                        "fed793c2-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed37514-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed37515-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed37512-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed37511-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "film_actor",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed98fa2-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "film_actor_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed3ea40-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "fed3ea41-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "actor_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed87e25-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed87e25-37d7-11ec-8866-8b7656a20503",
+                        "fed8a530-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed3ea40-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed43860-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed43860-37d7-11ec-8866-8b7656a20503",
+                        "fed43862-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed3ea41-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed3ea42-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed3c332-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed3c331-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "film",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed9b6a8-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "film_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed43862-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "film_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('film_film_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed43862-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "title",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 255,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed43863-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "text",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed43864-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "release_year",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/year",
+                    "refType": "model",
+                    "refIdPath": [
+                        "9b825778-fe36-4746-876f-20ced88fbc37",
+                        "7c045dc1-37d7-11ec-8866-8b7656a20503",
+                        "fed08ee3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "ref": "fed08ee3-37d7-11ec-8866-8b7656a20503",
+                    "GUID": "fed43865-37d7-11ec-8866-8b7656a20503",
+                    "type": "reference"
+                },
+                {
+                    "name": "language_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+                        "fed2d8d2-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed43866-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_duration",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "3",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed43867-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rental_rate",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "numeric",
+                    "precision": 4,
+                    "scale": 2,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "4.99",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed43868-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "length",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed43869-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "replacement_cost",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "numeric",
+                    "precision": 5,
+                    "scale": 2,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "19.99",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed4386a-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "rating",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/mpaa_rating",
+                    "refType": "model",
+                    "refIdPath": [
+                        "9b825778-fe36-4746-876f-20ced88fbc37",
+                        "7c045dc1-37d7-11ec-8866-8b7656a20503",
+                        "fed08ee2-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "ref": "fed08ee2-37d7-11ec-8866-8b7656a20503",
+                    "GUID": "fed4386b-37d7-11ec-8866-8b7656a20503",
+                    "type": "reference"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed4386c-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "special_features",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "text",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed4386d-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "fulltext",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "char",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed4386e-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed43861-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed43860-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "customer",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed9b6b2-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "customer_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed570e3-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "customer_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('customer_customer_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed570e3-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "store_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed570e4-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "first_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed570e5-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed570e6-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "email",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed570e7-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed808f1-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed808f1-37d7-11ec-8866-8b7656a20503",
+                        "fed808f3-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed570e8-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "activebool",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "boolean",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "true",
+                    "GUID": "fed570e9-37d7-11ec-8866-8b7656a20503",
+                    "type": "boolean"
+                },
+                {
+                    "name": "create_date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "('now'::text)::date",
+                    "GUID": "fed570ea-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed570eb-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "active",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed570ec-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed570e2-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed570e1-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "country",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed9ddb2-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "country_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed68252-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "country_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('country_country_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed68252-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "country",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed68253-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed68254-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed68251-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed68250-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "city",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed9ddb7-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "city_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed6f782-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "city_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('city_city_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed6f782-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "city",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed6f783-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "country_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed68250-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed68250-37d7-11ec-8866-8b7656a20503",
+                        "fed68252-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed6f784-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed6f785-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed6f781-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed6f780-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "category",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed9ddbc-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "category_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed793c2-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "category_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('category_category_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed793c2-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed793c3-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed793c4-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed793c1-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed793c0-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "address",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "fed9ddc1-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "address_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed808f3-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "address_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('address_address_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed808f3-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "address",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed808f4-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "address2",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 50,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed808f5-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "district",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 20,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed808f6-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "city_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "smallint",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "foreignCollection": "fed6f780-37d7-11ec-8866-8b7656a20503",
+                    "foreignField": [
+                        "fed6f780-37d7-11ec-8866-8b7656a20503",
+                        "fed6f782-37d7-11ec-8866-8b7656a20503"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed808f7-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "postal_code",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 10,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": false,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed808f8-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "phone",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 20,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed808f9-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed83000-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed808f2-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed808f1-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "actor",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "additionalProperties": true,
+            "primaryKey": [
+                {
+                    "GUID": "feda04c5-37d7-11ec-8866-8b7656a20503",
+                    "constraintName": "actor_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fed8a530-37d7-11ec-8866-8b7656a20503",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "properties": [
+                {
+                    "name": "actor_id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "",
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "nextval('actor_actor_id_seq'::regclass)",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "fed8a530-37d7-11ec-8866-8b7656a20503",
+                    "type": "numeric"
+                },
+                {
+                    "name": "first_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed8a531-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 45,
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "GUID": "fed8a532-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                },
+                {
+                    "name": "last_update",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "timestamp_ntz",
+                    "mode": "timestamp",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "required": true,
+                    "compositeUniqueKey": false,
+                    "unique": false,
+                    "default": "now()",
+                    "GUID": "fed8a533-37d7-11ec-8866-8b7656a20503",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "fed87e26-37d7-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "GUID": "fed87e25-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [
+        {
+            "name": "actor_info",
+            "code": "",
+            "isActivated": true,
+            "description": "",
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "viewOn": "",
+            "properties": [],
+            "GUID": "feddfc60-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "customer_list",
+            "code": "",
+            "isActivated": true,
+            "description": "",
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "viewOn": "",
+            "properties": [],
+            "GUID": "fedf34e0-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "film_list",
+            "code": "",
+            "isActivated": true,
+            "description": "",
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "viewOn": "",
+            "properties": [],
+            "GUID": "fedf8300-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "nicer_but_slower_film_list",
+            "code": "",
+            "isActivated": true,
+            "description": "",
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "viewOn": "",
+            "properties": [],
+            "GUID": "fee04650-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "sales_by_film_category",
+            "code": "",
+            "isActivated": true,
+            "description": "",
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "viewOn": "",
+            "properties": [],
+            "GUID": "fee09470-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "sales_by_store",
+            "code": "",
+            "isActivated": true,
+            "description": "",
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "viewOn": "",
+            "properties": [],
+            "GUID": "fee0bb80-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "staff_list",
+            "code": "",
+            "isActivated": true,
+            "description": "",
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "viewOn": "",
+            "properties": [],
+            "GUID": "fee109a0-37d7-11ec-8866-8b7656a20503",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "public",
+            "code": "",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "type": "bucket",
+            "collectionIds": [
+                "fec28520-37d7-11ec-8866-8b7656a20503",
+                "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                "fed1a055-37d7-11ec-8866-8b7656a20503",
+                "fed263a0-37d7-11ec-8866-8b7656a20503",
+                "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+                "fed326f0-37d7-11ec-8866-8b7656a20503",
+                "fed37511-37d7-11ec-8866-8b7656a20503",
+                "fed3c331-37d7-11ec-8866-8b7656a20503",
+                "fed43860-37d7-11ec-8866-8b7656a20503",
+                "fed570e1-37d7-11ec-8866-8b7656a20503",
+                "fed68250-37d7-11ec-8866-8b7656a20503",
+                "fed6f780-37d7-11ec-8866-8b7656a20503",
+                "fed793c0-37d7-11ec-8866-8b7656a20503",
+                "fed808f1-37d7-11ec-8866-8b7656a20503",
+                "fed87e25-37d7-11ec-8866-8b7656a20503"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "show": true
+        }
+    ],
+    "relationships": [
+        {
+            "name": "fk_address_city",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed6f780-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed6f780-37d7-11ec-8866-8b7656a20503",
+                    "fed6f782-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed808f1-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed808f1-37d7-11ec-8866-8b7656a20503",
+                    "fed808f7-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd0-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "fk_city",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed68250-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed68250-37d7-11ec-8866-8b7656a20503",
+                    "fed68252-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed6f780-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed6f780-37d7-11ec-8866-8b7656a20503",
+                    "fed6f784-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd1-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "customer_address_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed808f1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed808f1-37d7-11ec-8866-8b7656a20503",
+                    "fed808f3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed570e1-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed570e1-37d7-11ec-8866-8b7656a20503",
+                    "fed570e8-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd2-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "film_language_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+                    "fed2d8d2-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed43860-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed43860-37d7-11ec-8866-8b7656a20503",
+                    "fed43866-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd3-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "film_actor_actor_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed87e25-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed87e25-37d7-11ec-8866-8b7656a20503",
+                    "fed8a530-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed3c331-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed3c331-37d7-11ec-8866-8b7656a20503",
+                    "fed3ea40-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd4-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "film_actor_film_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed43860-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed43860-37d7-11ec-8866-8b7656a20503",
+                    "fed43862-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed3c331-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed3c331-37d7-11ec-8866-8b7656a20503",
+                    "fed3ea41-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd5-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "film_category_category_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed793c0-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed793c0-37d7-11ec-8866-8b7656a20503",
+                    "fed793c2-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed37511-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed37511-37d7-11ec-8866-8b7656a20503",
+                    "fed37514-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd6-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "film_category_film_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed43860-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed43860-37d7-11ec-8866-8b7656a20503",
+                    "fed43862-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed37511-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed37511-37d7-11ec-8866-8b7656a20503",
+                    "fed37513-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd7-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "inventory_film_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed43860-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed43860-37d7-11ec-8866-8b7656a20503",
+                    "fed43862-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed326f0-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed326f0-37d7-11ec-8866-8b7656a20503",
+                    "fed326f3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd8-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "payment_customer_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed570e1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed570e1-37d7-11ec-8866-8b7656a20503",
+                    "fed570e3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed263a0-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed263a0-37d7-11ec-8866-8b7656a20503",
+                    "fed263a3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bd9-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "payment_rental_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed1a055-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed1a055-37d7-11ec-8866-8b7656a20503",
+                    "fed1c761-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed263a0-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed263a0-37d7-11ec-8866-8b7656a20503",
+                    "fed263a5-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bda-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "payment_staff_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                    "fed0b5f3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed263a0-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed263a0-37d7-11ec-8866-8b7656a20503",
+                    "fed263a4-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bdb-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "rental_customer_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed570e1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed570e1-37d7-11ec-8866-8b7656a20503",
+                    "fed570e3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed1a055-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed1a055-37d7-11ec-8866-8b7656a20503",
+                    "fed1c764-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda2bdc-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "rental_inventory_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed326f0-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed326f0-37d7-11ec-8866-8b7656a20503",
+                    "fed326f2-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed1a055-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed1a055-37d7-11ec-8866-8b7656a20503",
+                    "fed1c763-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda52e0-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "rental_staff_id_key",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                    "fed0b5f3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed1a055-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed1a055-37d7-11ec-8866-8b7656a20503",
+                    "fed1c766-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda52e1-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "staff_address_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed808f1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed808f1-37d7-11ec-8866-8b7656a20503",
+                    "fed808f3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                    "fed0b5f6-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda52e2-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "store_address_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed808f1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed808f1-37d7-11ec-8866-8b7656a20503",
+                    "fed808f3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fec28520-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fec28520-37d7-11ec-8866-8b7656a20503",
+                    "fec2ac32-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda52e3-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        },
+        {
+            "name": "store_manager_staff_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+            "parentField": [
+                [
+                    "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                    "fed0b5f3-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "fec28520-37d7-11ec-8866-8b7656a20503",
+            "childField": [
+                [
+                    "fec28520-37d7-11ec-8866-8b7656a20503",
+                    "fec2ac31-37d7-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {},
+            "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+            "GUID": "feda52e4-37d7-11ec-8866-8b7656a20503",
+            "level": "field"
+        }
+    ],
+    "appTarget": "Polyglot",
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-05-18T11:32:17.725Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "6.10.1"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "fec28520-37d7-11ec-8866-8b7656a20503",
+                        "x": 2277.058852031135,
+                        "y": 1821.9080112129013,
+                        "width": 308,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                        "x": 1880.3056379793657,
+                        "y": 1713.0830860619037,
+                        "width": 281,
+                        "height": 228,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed1a055-37d7-11ec-8866-8b7656a20503",
+                        "x": 1438,
+                        "y": 1757.3501477906539,
+                        "width": 308,
+                        "height": 156,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed263a0-37d7-11ec-8866-8b7656a20503",
+                        "x": 1439,
+                        "y": 2017.0178025893715,
+                        "width": 305,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+                        "x": 1041,
+                        "y": 1156,
+                        "width": 279,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed326f0-37d7-11ec-8866-8b7656a20503",
+                        "x": 1451,
+                        "y": 1559.3531160015013,
+                        "width": 282,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed37511-37d7-11ec-8866-8b7656a20503",
+                        "x": 1042,
+                        "y": 1337.264095425252,
+                        "width": 277,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed3c331-37d7-11ec-8866-8b7656a20503",
+                        "x": 1867,
+                        "y": 1560.9109794237493,
+                        "width": 303,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed43860-37d7-11ec-8866-8b7656a20503",
+                        "x": 1415,
+                        "y": 1156,
+                        "width": 354,
+                        "height": 264,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed570e1-37d7-11ec-8866-8b7656a20503",
+                        "x": 2526,
+                        "y": 1951.0356080397664,
+                        "width": 285,
+                        "height": 210,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed68250-37d7-11ec-8866-8b7656a20503",
+                        "x": 2528,
+                        "y": 1156,
+                        "width": 281,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed6f780-37d7-11ec-8866-8b7656a20503",
+                        "x": 2528,
+                        "y": 1315.640950437823,
+                        "width": 281,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed793c0-37d7-11ec-8866-8b7656a20503",
+                        "x": 1040,
+                        "y": 1566.166173077478,
+                        "width": 281,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed808f1-37d7-11ec-8866-8b7656a20503",
+                        "x": 2527,
+                        "y": 1497.473294685432,
+                        "width": 283,
+                        "height": 174,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fed87e25-37d7-11ec-8866-8b7656a20503",
+                        "x": 1878,
+                        "y": 1156,
+                        "width": 281,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "feddfc60-37d7-11ec-8866-8b7656a20503",
+                        "x": 1509.0000019073486,
+                        "y": 1040,
+                        "width": 177,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fedf34e0-37d7-11ec-8866-8b7656a20503",
+                        "x": 1750.000002861023,
+                        "y": 1040,
+                        "width": 195,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fedf8300-37d7-11ec-8866-8b7656a20503",
+                        "x": 1051,
+                        "y": 1040,
+                        "width": 163,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fee04650-37d7-11ec-8866-8b7656a20503",
+                        "x": 2587.000005722046,
+                        "y": 1040,
+                        "width": 263,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fee09470-37d7-11ec-8866-8b7656a20503",
+                        "x": 2275.0000047683716,
+                        "y": 1040,
+                        "width": 248,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fee0bb80-37d7-11ec-8866-8b7656a20503",
+                        "x": 2009.0000038146973,
+                        "y": 1040,
+                        "width": 202,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fee109a0-37d7-11ec-8866-8b7656a20503",
+                        "x": 1278.0000009536743,
+                        "y": 1040,
+                        "width": 167,
+                        "height": 30,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1000,
+                        "y": 1000,
+                        "GUID": "feda79f0-37d7-11ec-8866-8b7656a20503"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "fec28520-37d7-11ec-8866-8b7656a20503",
+                            "x": 2277.058852031135,
+                            "y": 1821.9080112129013,
+                            "width": 308,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                            "x": 1880.3056379793657,
+                            "y": 1713.0830860619037,
+                            "width": 281,
+                            "height": 228,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed1a055-37d7-11ec-8866-8b7656a20503",
+                            "x": 1438,
+                            "y": 1757.3501477906539,
+                            "width": 308,
+                            "height": 156,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed263a0-37d7-11ec-8866-8b7656a20503",
+                            "x": 1439,
+                            "y": 2017.0178025893715,
+                            "width": 305,
+                            "height": 138,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed2d8d0-37d7-11ec-8866-8b7656a20503",
+                            "x": 1041,
+                            "y": 1156,
+                            "width": 279,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed326f0-37d7-11ec-8866-8b7656a20503",
+                            "x": 1451,
+                            "y": 1559.3531160015013,
+                            "width": 282,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed37511-37d7-11ec-8866-8b7656a20503",
+                            "x": 1042,
+                            "y": 1337.264095425252,
+                            "width": 277,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed3c331-37d7-11ec-8866-8b7656a20503",
+                            "x": 1867,
+                            "y": 1560.9109794237493,
+                            "width": 303,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed43860-37d7-11ec-8866-8b7656a20503",
+                            "x": 1415,
+                            "y": 1156,
+                            "width": 354,
+                            "height": 264,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed570e1-37d7-11ec-8866-8b7656a20503",
+                            "x": 2526,
+                            "y": 1951.0356080397664,
+                            "width": 285,
+                            "height": 210,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed68250-37d7-11ec-8866-8b7656a20503",
+                            "x": 2528,
+                            "y": 1156,
+                            "width": 281,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed6f780-37d7-11ec-8866-8b7656a20503",
+                            "x": 2528,
+                            "y": 1315.640950437823,
+                            "width": 281,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed793c0-37d7-11ec-8866-8b7656a20503",
+                            "x": 1040,
+                            "y": 1566.166173077478,
+                            "width": 281,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed808f1-37d7-11ec-8866-8b7656a20503",
+                            "x": 2527,
+                            "y": 1497.473294685432,
+                            "width": 283,
+                            "height": 174,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fed87e25-37d7-11ec-8866-8b7656a20503",
+                            "x": 1878,
+                            "y": 1156,
+                            "width": 281,
+                            "height": 102,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "feddfc60-37d7-11ec-8866-8b7656a20503",
+                            "x": 1509.0000019073486,
+                            "y": 1040,
+                            "width": 177,
+                            "height": 30,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fedf34e0-37d7-11ec-8866-8b7656a20503",
+                            "x": 1750.000002861023,
+                            "y": 1040,
+                            "width": 195,
+                            "height": 30,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fedf8300-37d7-11ec-8866-8b7656a20503",
+                            "x": 1051,
+                            "y": 1040,
+                            "width": 163,
+                            "height": 30,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fee04650-37d7-11ec-8866-8b7656a20503",
+                            "x": 2587.000005722046,
+                            "y": 1040,
+                            "width": 263,
+                            "height": 30,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fee09470-37d7-11ec-8866-8b7656a20503",
+                            "x": 2275.0000047683716,
+                            "y": 1040,
+                            "width": 248,
+                            "height": 30,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fee0bb80-37d7-11ec-8866-8b7656a20503",
+                            "x": 2009.0000038146973,
+                            "y": 1040,
+                            "width": 202,
+                            "height": 30,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "fee109a0-37d7-11ec-8866-8b7656a20503",
+                            "x": 1278.0000009536743,
+                            "y": 1040,
+                            "width": 167,
+                            "height": 30,
+                            "color": {}
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 1000,
+                            "y": 1000,
+                            "GUID": "feda79f0-37d7-11ec-8866-8b7656a20503"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
