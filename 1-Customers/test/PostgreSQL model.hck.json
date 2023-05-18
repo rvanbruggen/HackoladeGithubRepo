@@ -5276,6 +5276,49 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "testtable",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "testcolumn",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey",
+                        "triggerUpdateColumns"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "triggerUpdateColumns": false,
+                    "GUID": "db80b01e-7bef-4798-a61f-1e48a86a48ab",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0e45545f-1fdb-48b6-ab62-86b71019a385"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "25abca0e-a4b6-44ba-9003-ad04a2b906a1",
+            "bucketId": "9e5ca1d2-b8e2-40d4-b0f8-3be415da48cc"
         }
     ],
     "buckets": [
@@ -5297,7 +5340,8 @@
                 "8046d79d-ed4f-4969-93ab-aa9d565d4f2b",
                 "b88e7677-9462-4531-8099-cc27c70edfbc",
                 "a3d84fc9-6adf-428d-b3fe-621bb72a68cc",
-                "01aecf99-a3ec-4f98-867c-a186cb1c91ab"
+                "01aecf99-a3ec-4f98-867c-a186cb1c91ab",
+                "25abca0e-a4b6-44ba-9003-ad04a2b906a1"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -7602,7 +7646,9 @@
         "15c36974-1d73-496f-adb1-1b9cef004e9d": "city",
         "e1da735f-6a40-4e8c-b2dc-00ea103310fc": "country",
         "6703e468-671a-44c2-9893-0a7e615bdcbe": "sid",
-        "be76d132-1603-4dbb-865a-0c8e7be775ba": "staff_list"
+        "be76d132-1603-4dbb-865a-0c8e7be775ba": "staff_list",
+        "25abca0e-a4b6-44ba-9003-ad04a2b906a1": "testtable",
+        "db80b01e-7bef-4798-a61f-1e48a86a48ab": "testcolumn"
     },
     "definitions": {
         "type": "definitions",
@@ -7737,7 +7783,7 @@
     "database_name": "dvdrental",
     "LC_COLLATE": "en_US.UTF-8",
     "LC_CTYPE": "en_US.UTF-8",
-    "lastModifTS": "2023-05-18T16:52:48.256Z",
+    "lastModifTS": "2023-05-18T16:54:13.041Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -7927,6 +7973,14 @@
                         "width": 190,
                         "height": 171,
                         "color": {}
+                    },
+                    {
+                        "GUID": "25abca0e-a4b6-44ba-9003-ad04a2b906a1",
+                        "x": 2701.5151515151515,
+                        "y": 1681.8181818181818,
+                        "width": 300,
+                        "height": 100,
+                        "color": {}
                     }
                 ],
                 "erdDefinitions": {
@@ -7937,8 +7991,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1000,
-                        "y": 1000,
+                        "x": 1010,
+                        "y": 1010,
                         "GUID": "9e5ca1d2-b8e2-40d4-b0f8-3be415da48cc"
                     }
                 ],
