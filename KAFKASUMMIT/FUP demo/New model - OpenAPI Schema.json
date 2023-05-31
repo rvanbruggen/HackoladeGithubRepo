@@ -1,0 +1,401 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Entities API",
+    "description": "This API provides access to Entity data.",
+    "termsOfService": "https://hackolade.com",
+    "contact": {
+      "name": "Pascal",
+      "url": "https://hackolade.com",
+      "email": "info@hackolade.com"
+    },
+    "license": {
+      "name": "License Terms",
+      "url": "https://hackolade.com/eulas.html"
+    },
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://www.prod.com/data/0.1",
+      "description": "Production server"
+    },
+    {
+      "url": "http://www.beta.com/data/0.1",
+      "description": "Beta server"
+    },
+    {
+      "url": "http://www.other.com/data/0.1",
+      "description": "Some other server"
+    }
+  ],
+  "paths": {
+    "/rentalMessageRecords": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rentalMessageRecord"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/rentalMessageRecord_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/rentalMessageRecords/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/rentalMessageRecord_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rentalMessageRecord"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/rentalMessageRecord_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/rentalMessageRecord_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Error code",
+            "example": "500"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the error",
+            "example": "A downstream system is not responding correctly."
+          }
+        }
+      },
+      "rentalMessageRecord": {
+        "type": "object",
+        "required": [
+          "id",
+          "rentaldate",
+          "inventoryId",
+          "customerId",
+          "returnDate",
+          "staffId",
+          "lastUpdated",
+          "newprop"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "rentaldate": {
+            "type": "integer"
+          },
+          "inventoryId": {
+            "type": "integer"
+          },
+          "customerId": {
+            "type": "integer"
+          },
+          "returnDate": {
+            "type": "integer"
+          },
+          "staffId": {
+            "type": "integer"
+          },
+          "lastUpdated": {
+            "type": "integer"
+          },
+          "newprop": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": false
+          }
+        },
+        "additionalProperties": true,
+        "nullable": false
+      }
+    },
+    "responses": {
+      "No_content": {
+        "description": ""
+      },
+      "Bad_request": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Unauthorized": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Forbidden": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Not_found": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Internal_server_error": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rentalMessageRecord_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "rentalMessageRecord": {
+                  "$ref": "#/components/schemas/rentalMessageRecord"
+                }
+              }
+            }
+          }
+        }
+      },
+      "rentalMessageRecord_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "rentalMessageRecord": {
+                  "$ref": "#/components/schemas/rentalMessageRecord"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "basic_auth": {
+        "scheme": "basic",
+        "type": "http"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Entity resource template",
+      "description": "CRUD to manage the Entity resources."
+    }
+  ]
+}

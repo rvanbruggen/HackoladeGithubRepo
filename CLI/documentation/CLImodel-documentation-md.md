@@ -19,7 +19,7 @@ File name: CLImodel.json
 
 File path: /Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/CLI/CLImodel.json
 
-Printed On: Tue Mar 28 2023 15:05:35 GMT+0200 (Central European Summer Time)
+Printed On: Tue May 23 2023 16:24:00 GMT+0200 (Central European Summer Time)
 
 Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for NoSQL databases, storage formats, REST APIs, and JSON in RDBMS
 
@@ -28,59 +28,59 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 *   [Table of Contents](#contents)
 *   [1\. Model](#model)
 *   [2\. Schemas](#containers)
-    *   [2.1 public](#8c92a9ee-e2d3-4c06-a29d-bf68772389f9)
+    *   [2.1 public](#897ddcc7-43d1-4aea-9274-7a9f48b816ca)
         
-        [2.1.2. Tables](#8c92a9ee-e2d3-4c06-a29d-bf68772389f9-children)
+        [2.1.2. Tables](#897ddcc7-43d1-4aea-9274-7a9f48b816ca-children)
         
-        [2.1.2.1 actor](#a644f8c2-15e5-4846-8225-ed306ba5873f)
+        [2.1.2.1 actor](#12995ec4-0703-49c1-b60e-6440c746e21f)
         
-        [2.1.2.2 address](#7ea5a23c-a658-43f0-93f0-c4743a53cd24)
+        [2.1.2.2 address](#a0171d40-f35b-479b-add1-83772c27e67e)
         
-        [2.1.2.3 category](#789cf183-cc88-4c3d-a501-e33917d0eb01)
+        [2.1.2.3 category](#d17516ae-889d-409e-bc10-70c3b1681a80)
         
-        [2.1.2.4 city](#c05d2c42-e00e-415a-971f-22c18d55f97f)
+        [2.1.2.4 city](#5457ff81-7248-4bfd-9830-198cbd70a4cb)
         
-        [2.1.2.5 country](#7925937e-7fea-4e3a-863f-77665f19d042)
+        [2.1.2.5 country](#85a84cc3-2e3d-4317-9413-ed527375c353)
         
-        [2.1.2.6 customer](#700edd0e-9437-429b-bb95-b915ece3c9ef)
+        [2.1.2.6 customer](#7cbbdbd3-a215-4250-9c07-7da2e7ee6350)
         
-        [2.1.2.7 film](#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0)
+        [2.1.2.7 film](#dd7e2b9a-2697-4b19-9958-f09736a6605b)
         
-        [2.1.2.8 film\_actor](#cb5b2c61-95d8-4da0-bcc3-880a3892f328)
+        [2.1.2.8 film\_actor](#de167e83-3ecf-4e27-a2f3-ec97e767f700)
         
-        [2.1.2.9 film\_category](#1e3cb3bc-7344-4ae0-b6ae-2cacfd023eed)
+        [2.1.2.9 film\_category](#fc0f7abe-ed0a-45eb-b0f8-a57067d76d7b)
         
-        [2.1.2.10 inventory](#3d0ca03e-2684-4b5f-a3f3-2b65010b8684)
+        [2.1.2.10 inventory](#64b84fd9-1d30-4358-a6cc-686b94391027)
         
-        [2.1.2.11 language](#fff3a07a-ee38-4160-bd2f-e74e5e81e21b)
+        [2.1.2.11 language](#3fda4fa5-1a52-4a1d-b115-c4942abc41af)
         
-        [2.1.2.12 payment](#d3acf652-5a65-4c88-9417-70f10f475419)
+        [2.1.2.12 payment](#2f15a28f-b928-44dd-9d7e-db4d339d1c4c)
         
-        [2.1.2.13 rental](#21074556-24a9-4dfa-8c7f-928f8d6eacdf)
+        [2.1.2.13 rental](#1bb3d421-a527-4bdb-8b11-f700b692a221)
         
-        [2.1.2.14 staff](#334f4020-0e8d-48db-b236-2b42475abd3f)
+        [2.1.2.14 staff](#8153c88a-99e3-41ed-9185-2b63f90ecc48)
         
-        [2.1.2.15 store](#85f75ef5-c06a-4f48-82af-def4d5f19ce0)
+        [2.1.2.15 store](#8176821a-9094-4225-bcaa-f9dac12ad71c)
         
 *   [3\. Relationships](#relationships)
-    *   [3.1 customer\_address\_id\_fkey](#2bd3bded-9738-4e03-a35c-058a75f98379)
-    *   [3.2 film\_actor\_actor\_id\_fkey](#ead6efd9-0eb4-4a72-8b8b-607c60e5da5f)
-    *   [3.3 film\_actor\_film\_id\_fkey](#7ac79d1b-7017-4b32-8a88-fa7eb5687837)
-    *   [3.4 film\_category\_category\_id\_fkey](#dbb171f0-2483-4fff-be6a-c38df6ac58f0)
-    *   [3.5 film\_category\_film\_id\_fkey](#b254801a-2220-4155-b0f4-0923485cb61d)
-    *   [3.6 film\_language\_id\_fkey](#c84ca40b-d570-474b-bf75-6f7e618e86f7)
-    *   [3.7 fk\_address\_city](#e67131b8-d77b-45c5-afde-ed9544260a89)
-    *   [3.8 fk\_city](#5750e06d-6f1b-4d9e-8423-08f608d94d82)
-    *   [3.9 inventory\_film\_id\_fkey](#cb7b9221-6da1-43e9-b03c-98092b7bd635)
-    *   [3.10 payment\_customer\_id\_fkey](#dc60def2-1fc6-411e-8ea1-919c1bfc97b6)
-    *   [3.11 payment\_rental\_id\_fkey](#84673b66-8c66-40e8-891d-1d71a5f1956a)
-    *   [3.12 payment\_staff\_id\_fkey](#72735993-f024-46bc-b633-be42fb418d86)
-    *   [3.13 rental\_customer\_id\_fkey](#cb124150-9276-45ac-83db-63bdab50e297)
-    *   [3.14 rental\_inventory\_id\_fkey](#acc86a22-cbeb-482d-ac4b-8cccdc1cfe92)
-    *   [3.15 rental\_staff\_id\_key](#c4fb3a4e-d570-4527-901f-cf78a9c19dd0)
-    *   [3.16 staff\_address\_id\_fkey](#a5f091b6-e482-417f-aaf8-639db8f6b287)
-    *   [3.17 store\_address\_id\_fkey](#74720a08-2c9d-431e-b66d-2a87f01ae5dc)
-    *   [3.18 store\_manager\_staff\_id\_fkey](#aff31717-6bee-4ef6-9994-039fcc203adb)
+    *   [3.1 customer\_address\_id\_fkey](#7c0679bd-9ada-4392-a42c-5ed9728ddf1f)
+    *   [3.2 film\_actor\_actor\_id\_fkey](#99f1a9f3-4a81-4870-8364-cbe8786a8845)
+    *   [3.3 film\_actor\_film\_id\_fkey](#16132864-a2f6-4f4f-9e06-3b417729e299)
+    *   [3.4 film\_category\_category\_id\_fkey](#edfe7bed-9753-49cc-bd26-2a0b463a8f25)
+    *   [3.5 film\_category\_film\_id\_fkey](#58c19d23-e09d-488c-ad6a-1491745924c1)
+    *   [3.6 film\_language\_id\_fkey](#280bcf32-9bfd-436f-a0c8-62ca9a012bac)
+    *   [3.7 fk\_address\_city](#58004f89-2a8b-4b38-a09f-daab5a7086be)
+    *   [3.8 fk\_city](#38fbad69-758b-405b-97b5-3ca956a2c9a4)
+    *   [3.9 inventory\_film\_id\_fkey](#469adc8a-d5c1-4e04-a7d1-124261fe7547)
+    *   [3.10 payment\_customer\_id\_fkey](#c5f1bf31-40be-4908-adbf-67dd79cc8491)
+    *   [3.11 payment\_rental\_id\_fkey](#ac640273-37ce-4e9a-a25f-45e4313bca75)
+    *   [3.12 payment\_staff\_id\_fkey](#21031f2d-062f-4291-b80b-5cb49cfedcad)
+    *   [3.13 rental\_customer\_id\_fkey](#bf1793fa-cf18-4f5f-86a6-b6e54a501105)
+    *   [3.14 rental\_inventory\_id\_fkey](#b5982f5b-d641-43fb-a687-9f81b780a7c2)
+    *   [3.15 rental\_staff\_id\_key](#e9b40a66-d56c-4654-b5e5-329ee05f0199)
+    *   [3.16 staff\_address\_id\_fkey](#a1c344df-f791-459a-86c7-0651c571b2c6)
+    *   [3.17 store\_address\_id\_fkey](#8102478d-dcda-467f-90a5-8e5d314cf29a)
+    *   [3.18 store\_manager\_staff\_id\_fkey](#157654f9-feaf-4eb9-8cc0-ee79caf27581)
 
 ### <a id="model"></a>
 
@@ -100,7 +100,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 1.1.3 **CLImodel** User-Defined Types
 
-### <a id="f25fa24b-f053-4e58-aaa1-4f579baab1d6"></a>1.1.3.1 Column **mpaa\_rating**
+### <a id="2f4bdd45-2b58-4bbe-b6f6-f7fe33dd4a1a"></a>1.1.3.1 Column **mpaa\_rating**
 
 ##### 1.1.3.1.1 **mpaa\_rating** Tree Diagram
 
@@ -110,7 +110,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>mpaa_rating</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>enum</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Not null</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Default</td><td></td></tr><tr><td>Enum</td><td>G,PG,PG-13,R,NC-17</td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="0410ba0b-fb16-4572-8c3c-d6383a153403"></a>1.1.3.2 Column **year**
+### <a id="1e123a3c-1d7e-4c08-ba46-509194440346"></a>1.1.3.2 Column **year**
 
 ##### 1.1.3.2.1 **year** Tree Diagram
 
@@ -124,7 +124,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2\. Schemas
 
-### <a id="8c92a9ee-e2d3-4c06-a29d-bf68772389f9"></a>2.1 Schema **public**
+### <a id="897ddcc7-43d1-4aea-9274-7a9f48b816ca"></a>2.1 Schema **public**
 
 ![Hackolade image](/CLImodel-documentation-md/image5.png?raw=true)
 
@@ -132,19 +132,19 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 <table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Schema name</td><td>public</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>If not exist</td><td>true</td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="8c92a9ee-e2d3-4c06-a29d-bf68772389f9-children"></a>2.1.2 **public** Tables
+### <a id="897ddcc7-43d1-4aea-9274-7a9f48b816ca-children"></a>2.1.2 **public** Tables
 
-### <a id="a644f8c2-15e5-4846-8225-ed306ba5873f"></a>2.1.2.1 Table **actor**
+### <a id="12995ec4-0703-49c1-b60e-6440c746e21f"></a>2.1.2.1 Table **actor**
 
 ##### 2.1.2.1.1 **actor** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>actor</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>actor</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.1.2 **actor** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#acedbe6a-40a4-4189-9485-342803c49a66 class="margin-0">actor_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1bae3e6a-2b40-4d41-bddf-97fe97da73e8 class="margin-0">first_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9642662a-0439-4532-abf5-ebab6de41eba class="margin-0">last_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#3847fc9d-a9cf-41cd-8151-771f325c6b2e class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#c316c0d1-2b53-4ab8-b647-39adaf76bcdb class="margin-0">actor_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1a0210ce-62cd-4352-86c7-0d3e245d433b class="margin-0">first_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0eb6e71f-61e5-4c7f-abe7-dfd0067046bf class="margin-0">last_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#a0867106-03eb-4f01-b1bc-6c9d39208218 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="acedbe6a-40a4-4189-9485-342803c49a66"></a>2.1.2.1.2.1 Column **actor\_id**
+### <a id="c316c0d1-2b53-4ab8-b647-39adaf76bcdb"></a>2.1.2.1.2.1 Column **actor\_id**
 
 ##### 2.1.2.1.2.1.1 **actor\_id** Tree Diagram
 
@@ -152,9 +152,9 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.2.1.2 **actor\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>actor_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('actor_actor_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>actor_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('actor_actor_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>actor_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="1bae3e6a-2b40-4d41-bddf-97fe97da73e8"></a>2.1.2.1.2.2 Column **first\_name**
+### <a id="1a0210ce-62cd-4352-86c7-0d3e245d433b"></a>2.1.2.1.2.2 Column **first\_name**
 
 ##### 2.1.2.1.2.2.1 **first\_name** Tree Diagram
 
@@ -164,7 +164,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>first_name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>45</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="9642662a-0439-4532-abf5-ebab6de41eba"></a>2.1.2.1.2.3 Column **last\_name**
+### <a id="0eb6e71f-61e5-4c7f-abe7-dfd0067046bf"></a>2.1.2.1.2.3 Column **last\_name**
 
 ##### 2.1.2.1.2.3.1 **last\_name** Tree Diagram
 
@@ -174,7 +174,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>last_name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>45</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="3847fc9d-a9cf-41cd-8151-771f325c6b2e"></a>2.1.2.1.2.4 Column **last\_update**
+### <a id="a0867106-03eb-4f01-b1bc-6c9d39208218"></a>2.1.2.1.2.4 Column **last\_update**
 
 ##### 2.1.2.1.2.4.1 **last\_update** Tree Diagram
 
@@ -186,7 +186,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3 **actor** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>actor_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>actor_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.1.4 **actor** Indexes
 
@@ -213,7 +213,8 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
     "title": "actor",
     "properties": {
         "actor_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('actor_actor_id_seq'::regclass)"
         },
         "first_name": {
             "type": "string"
@@ -240,7 +241,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ```
 {
-    "actor_id": 58,
+    "actor_id": "nextval('actor_actor_id_seq'::regclass)",
     "first_name": "Lorem",
     "last_name": "Lorem",
     "last_update": "now()"
@@ -259,14 +260,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.actor (
-	actor_id integer NOT NULL,
+	actor_id integer DEFAULT nextval('actor_actor_id_seq'::regclass) NOT NULL,
 	first_name varchar(45) NOT NULL,
 	last_name varchar(45) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -285,17 +291,17 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
  ON ONLY public.actor USING BTREE (last_name COLLATE pg_catalog."default" pg_catalog.text_ops ASC NULLS LAST) ;
 ```
 
-### <a id="7ea5a23c-a658-43f0-93f0-c4743a53cd24"></a>2.1.2.2 Table **address**
+### <a id="a0171d40-f35b-479b-add1-83772c27e67e"></a>2.1.2.2 Table **address**
 
 ##### 2.1.2.2.1 **address** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>address</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>address</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.2.2 **address** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932 class="margin-0">address_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#efff1567-e418-4e76-b2c9-145c44eca30f class="margin-0">address</a></td><td class="no-break-word">varchar(50)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9f4a03d9-65d6-4b9b-a4fa-944d8065bc58 class="margin-0">address2</a></td><td class="no-break-word">varchar(50)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#04339f76-4e65-4714-8242-18cf1147fad8 class="margin-0">district</a></td><td class="no-break-word">varchar(20)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8c62655c-1b38-49d4-8c4c-3a343a660b77 class="margin-0">city_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#46e02615-638a-4c5a-a0cb-1178fd9d55d1 class="margin-0">postal_code</a></td><td class="no-break-word">varchar(10)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#ae7742b4-cbe9-4432-ac98-ee25ba1911a1 class="margin-0">phone</a></td><td class="no-break-word">varchar(20)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#743424f9-0425-48e5-9689-823955debc39 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14 class="margin-0">address_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#673ba3c1-b236-486a-bb1f-5b481b2dfaee class="margin-0">address</a></td><td class="no-break-word">varchar(50)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#f9c6db27-aced-4107-a4df-845f5d10bc49 class="margin-0">address2</a></td><td class="no-break-word">varchar(50)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#13f8196b-acad-4def-bf56-6f469a4855a0 class="margin-0">district</a></td><td class="no-break-word">varchar(20)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#058ed3cb-3777-40b3-a099-3fd84ba3266e class="margin-0">city_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#ea084be0-671d-4315-9119-9b85c4b12de7 class="margin-0">postal_code</a></td><td class="no-break-word">varchar(10)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#3cc63ed2-4fb3-4c67-80ca-fd656a5b8eb8 class="margin-0">phone</a></td><td class="no-break-word">varchar(20)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8e0df76e-536d-4236-a1fd-ef67003994a3 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="5e470a92-5a46-48a4-8cf3-6918f6ef8932"></a>2.1.2.2.2.1 Column **address\_id**
+### <a id="75e11297-d3ad-4cee-aaf9-37d08a9cfc14"></a>2.1.2.2.2.1 Column **address\_id**
 
 ##### 2.1.2.2.2.1.1 **address\_id** Tree Diagram
 
@@ -303,9 +309,9 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 ##### 2.1.2.2.2.1.2 **address\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('address_address_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('address_address_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>address_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="efff1567-e418-4e76-b2c9-145c44eca30f"></a>2.1.2.2.2.2 Column **address**
+### <a id="673ba3c1-b236-486a-bb1f-5b481b2dfaee"></a>2.1.2.2.2.2 Column **address**
 
 ##### 2.1.2.2.2.2.1 **address** Tree Diagram
 
@@ -315,7 +321,7 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>50</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="9f4a03d9-65d6-4b9b-a4fa-944d8065bc58"></a>2.1.2.2.2.3 Column **address2**
+### <a id="f9c6db27-aced-4107-a4df-845f5d10bc49"></a>2.1.2.2.2.3 Column **address2**
 
 ##### 2.1.2.2.2.3.1 **address2** Tree Diagram
 
@@ -325,7 +331,7 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address2</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>50</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="04339f76-4e65-4714-8242-18cf1147fad8"></a>2.1.2.2.2.4 Column **district**
+### <a id="13f8196b-acad-4def-bf56-6f469a4855a0"></a>2.1.2.2.2.4 Column **district**
 
 ##### 2.1.2.2.2.4.1 **district** Tree Diagram
 
@@ -335,7 +341,7 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>district</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>20</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="8c62655c-1b38-49d4-8c4c-3a343a660b77"></a>2.1.2.2.2.5 Column **city\_id**
+### <a id="058ed3cb-3777-40b3-a099-3fd84ba3266e"></a>2.1.2.2.2.5 Column **city\_id**
 
 ##### 2.1.2.2.2.5.1 **city\_id** Tree Diagram
 
@@ -343,9 +349,9 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 ##### 2.1.2.2.2.5.2 **city\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>city_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#c05d2c42-e00e-415a-971f-22c18d55f97f>city</a></td></tr><tr><td>Foreign field</td><td><a href=#871554ba-67e9-4832-b04f-60bdff8215aa>city_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>fk_address_city</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>city_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#5457ff81-7248-4bfd-9830-198cbd70a4cb>city</a></td></tr><tr><td>Foreign field</td><td><a href=#5896f6c3-f8a5-47ba-959e-60116fbe2a10>city_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>fk_address_city</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="46e02615-638a-4c5a-a0cb-1178fd9d55d1"></a>2.1.2.2.2.6 Column **postal\_code**
+### <a id="ea084be0-671d-4315-9119-9b85c4b12de7"></a>2.1.2.2.2.6 Column **postal\_code**
 
 ##### 2.1.2.2.2.6.1 **postal\_code** Tree Diagram
 
@@ -355,7 +361,7 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>postal_code</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>10</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="ae7742b4-cbe9-4432-ac98-ee25ba1911a1"></a>2.1.2.2.2.7 Column **phone**
+### <a id="3cc63ed2-4fb3-4c67-80ca-fd656a5b8eb8"></a>2.1.2.2.2.7 Column **phone**
 
 ##### 2.1.2.2.2.7.1 **phone** Tree Diagram
 
@@ -365,7 +371,7 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>phone</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>20</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="743424f9-0425-48e5-9689-823955debc39"></a>2.1.2.2.2.8 Column **last\_update**
+### <a id="8e0df76e-536d-4236-a1fd-ef67003994a3"></a>2.1.2.2.2.8 Column **last\_update**
 
 ##### 2.1.2.2.2.8.1 **last\_update** Tree Diagram
 
@@ -377,7 +383,7 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 ##### 2.1.2.2.3 **address** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>address_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>address_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.2.4 **address** Indexes
 
@@ -404,7 +410,8 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
     "title": "address",
     "properties": {
         "address_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('address_address_id_seq'::regclass)"
         },
         "address": {
             "type": "string"
@@ -445,11 +452,11 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
 
 ```
 {
-    "address_id": -8,
+    "address_id": "nextval('address_address_id_seq'::regclass)",
     "address": "Lorem",
     "address2": "Lorem",
     "district": "Lorem",
-    "city_id": 19,
+    "city_id": 29,
     "postal_code": "Lorem",
     "phone": "Lorem",
     "last_update": "now()"
@@ -468,14 +475,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.address (
-	address_id integer NOT NULL,
+	address_id integer DEFAULT nextval('address_address_id_seq'::regclass) NOT NULL,
 	address varchar(50) NOT NULL,
 	address2 varchar(50),
 	district varchar(20) NOT NULL,
@@ -499,17 +511,17 @@ CREATE INDEX IF NOT EXISTS idx_fk_city_id
  ON ONLY public.address USING BTREE (city_id pg_catalog.int2_ops ASC NULLS LAST) ;
 ```
 
-### <a id="789cf183-cc88-4c3d-a501-e33917d0eb01"></a>2.1.2.3 Table **category**
+### <a id="d17516ae-889d-409e-bc10-70c3b1681a80"></a>2.1.2.3 Table **category**
 
 ##### 2.1.2.3.1 **category** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>category</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>category</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.3.2 **category** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#2c49bd48-b57b-4899-b016-5a7d7e80ab68 class="margin-0">category_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#aa8e5717-ee47-4694-81c2-7cee6be4cd1d class="margin-0">name</a></td><td class="no-break-word">varchar(25)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#02b7aef6-4b93-4aa4-8f62-8840114b9b2c class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#8165529f-228d-4c69-9827-4e30b6154ab1 class="margin-0">category_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8237a2e8-9c62-47cf-9957-6eefd34ba25a class="margin-0">name</a></td><td class="no-break-word">varchar(25)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#6a298bbc-714a-42b7-bce3-1276402332bb class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="2c49bd48-b57b-4899-b016-5a7d7e80ab68"></a>2.1.2.3.2.1 Column **category\_id**
+### <a id="8165529f-228d-4c69-9827-4e30b6154ab1"></a>2.1.2.3.2.1 Column **category\_id**
 
 ##### 2.1.2.3.2.1.1 **category\_id** Tree Diagram
 
@@ -517,9 +529,9 @@ CREATE INDEX IF NOT EXISTS idx_fk_city_id
 
 ##### 2.1.2.3.2.1.2 **category\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>category_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('category_category_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>category_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('category_category_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>category_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="aa8e5717-ee47-4694-81c2-7cee6be4cd1d"></a>2.1.2.3.2.2 Column **name**
+### <a id="8237a2e8-9c62-47cf-9957-6eefd34ba25a"></a>2.1.2.3.2.2 Column **name**
 
 ##### 2.1.2.3.2.2.1 **name** Tree Diagram
 
@@ -529,7 +541,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_city_id
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>25</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="02b7aef6-4b93-4aa4-8f62-8840114b9b2c"></a>2.1.2.3.2.3 Column **last\_update**
+### <a id="6a298bbc-714a-42b7-bce3-1276402332bb"></a>2.1.2.3.2.3 Column **last\_update**
 
 ##### 2.1.2.3.2.3.1 **last\_update** Tree Diagram
 
@@ -541,7 +553,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_city_id
 
 ##### 2.1.2.3.3 **category** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>category_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>category_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.3.4 **category** Indexes
 
@@ -564,7 +576,8 @@ CREATE INDEX IF NOT EXISTS idx_fk_city_id
     "title": "category",
     "properties": {
         "category_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('category_category_id_seq'::regclass)"
         },
         "name": {
             "type": "string"
@@ -587,7 +600,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_city_id
 
 ```
 {
-    "category_id": -43,
+    "category_id": "nextval('category_category_id_seq'::regclass)",
     "name": "Lorem",
     "last_update": "now()"
 }
@@ -605,14 +618,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.category (
-	category_id integer NOT NULL,
+	category_id integer DEFAULT nextval('category_category_id_seq'::regclass) NOT NULL,
 	name varchar(25) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
 	CONSTRAINT category_pkey PRIMARY KEY (category_id)
@@ -627,17 +645,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
  ON ONLY public.category USING BTREE (category_id pg_catalog.int4_ops ASC NULLS LAST) ;
 ```
 
-### <a id="c05d2c42-e00e-415a-971f-22c18d55f97f"></a>2.1.2.4 Table **city**
+### <a id="5457ff81-7248-4bfd-9830-198cbd70a4cb"></a>2.1.2.4 Table **city**
 
 ##### 2.1.2.4.1 **city** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>city</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>city</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.4.2 **city** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#871554ba-67e9-4832-b04f-60bdff8215aa class="margin-0">city_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#59026307-0ec3-42d8-90a4-895f3c3d757b class="margin-0">city</a></td><td class="no-break-word">varchar(50)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#685ea6f7-66d5-48ac-9745-377a942046d2 class="margin-0">country_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c9e8c1ab-442a-42f9-9a7b-05a7a43f7528 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#5896f6c3-f8a5-47ba-959e-60116fbe2a10 class="margin-0">city_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c015a2de-e695-4630-9c45-8db12e967fc0 class="margin-0">city</a></td><td class="no-break-word">varchar(50)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#77cf6bae-c268-4424-adc9-1f2c30d5ffb3 class="margin-0">country_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#56e3f37c-d892-44c0-9ea2-899b4ccc0466 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="871554ba-67e9-4832-b04f-60bdff8215aa"></a>2.1.2.4.2.1 Column **city\_id**
+### <a id="5896f6c3-f8a5-47ba-959e-60116fbe2a10"></a>2.1.2.4.2.1 Column **city\_id**
 
 ##### 2.1.2.4.2.1.1 **city\_id** Tree Diagram
 
@@ -645,9 +663,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
 
 ##### 2.1.2.4.2.1.2 **city\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>city_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('city_city_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>city_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('city_city_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>city_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="59026307-0ec3-42d8-90a4-895f3c3d757b"></a>2.1.2.4.2.2 Column **city**
+### <a id="c015a2de-e695-4630-9c45-8db12e967fc0"></a>2.1.2.4.2.2 Column **city**
 
 ##### 2.1.2.4.2.2.1 **city** Tree Diagram
 
@@ -657,7 +675,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>city</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>50</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="685ea6f7-66d5-48ac-9745-377a942046d2"></a>2.1.2.4.2.3 Column **country\_id**
+### <a id="77cf6bae-c268-4424-adc9-1f2c30d5ffb3"></a>2.1.2.4.2.3 Column **country\_id**
 
 ##### 2.1.2.4.2.3.1 **country\_id** Tree Diagram
 
@@ -665,9 +683,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
 
 ##### 2.1.2.4.2.3.2 **country\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>country_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#7925937e-7fea-4e3a-863f-77665f19d042>country</a></td></tr><tr><td>Foreign field</td><td><a href=#7323fbe8-8a33-4446-9fc4-031ce2854d70>country_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>fk_city</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>country_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#85a84cc3-2e3d-4317-9413-ed527375c353>country</a></td></tr><tr><td>Foreign field</td><td><a href=#56407eae-cd6b-42f8-b88f-b71761f84771>country_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>fk_city</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="c9e8c1ab-442a-42f9-9a7b-05a7a43f7528"></a>2.1.2.4.2.4 Column **last\_update**
+### <a id="56e3f37c-d892-44c0-9ea2-899b4ccc0466"></a>2.1.2.4.2.4 Column **last\_update**
 
 ##### 2.1.2.4.2.4.1 **last\_update** Tree Diagram
 
@@ -679,7 +697,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
 
 ##### 2.1.2.4.3 **city** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>city_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>city_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.4.4 **city** Indexes
 
@@ -706,7 +724,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
     "title": "city",
     "properties": {
         "city_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('city_city_id_seq'::regclass)"
         },
         "city": {
             "type": "string"
@@ -733,9 +752,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
 
 ```
 {
-    "city_id": 93,
+    "city_id": "nextval('city_city_id_seq'::regclass)",
     "city": "Lorem",
-    "country_id": 78,
+    "country_id": -79,
     "last_update": "now()"
 }
 ```
@@ -752,14 +771,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.city (
-	city_id integer NOT NULL,
+	city_id integer DEFAULT nextval('city_city_id_seq'::regclass) NOT NULL,
 	city varchar(50) NOT NULL,
 	country_id smallint NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -779,17 +803,17 @@ CREATE INDEX IF NOT EXISTS idx_fk_country_id
  ON ONLY public.city USING BTREE (country_id pg_catalog.int2_ops ASC NULLS LAST) ;
 ```
 
-### <a id="7925937e-7fea-4e3a-863f-77665f19d042"></a>2.1.2.5 Table **country**
+### <a id="85a84cc3-2e3d-4317-9413-ed527375c353"></a>2.1.2.5 Table **country**
 
 ##### 2.1.2.5.1 **country** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>country</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>country</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.5.2 **country** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#7323fbe8-8a33-4446-9fc4-031ce2854d70 class="margin-0">country_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8a2c7318-8345-4ccb-885d-7cde44a65a65 class="margin-0">country</a></td><td class="no-break-word">varchar(50)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#04fa657e-02f0-4785-b5e9-41e15715cb8f class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#56407eae-cd6b-42f8-b88f-b71761f84771 class="margin-0">country_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#10f5315f-9dcc-4060-bd12-0a24efc6490d class="margin-0">country</a></td><td class="no-break-word">varchar(50)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#f19cddb8-5b95-483a-beb8-3d301e9d7102 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="7323fbe8-8a33-4446-9fc4-031ce2854d70"></a>2.1.2.5.2.1 Column **country\_id**
+### <a id="56407eae-cd6b-42f8-b88f-b71761f84771"></a>2.1.2.5.2.1 Column **country\_id**
 
 ##### 2.1.2.5.2.1.1 **country\_id** Tree Diagram
 
@@ -797,9 +821,9 @@ CREATE INDEX IF NOT EXISTS idx_fk_country_id
 
 ##### 2.1.2.5.2.1.2 **country\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>country_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('country_country_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>country_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('country_country_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>country_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="8a2c7318-8345-4ccb-885d-7cde44a65a65"></a>2.1.2.5.2.2 Column **country**
+### <a id="10f5315f-9dcc-4060-bd12-0a24efc6490d"></a>2.1.2.5.2.2 Column **country**
 
 ##### 2.1.2.5.2.2.1 **country** Tree Diagram
 
@@ -809,7 +833,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_country_id
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>country</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>50</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="04fa657e-02f0-4785-b5e9-41e15715cb8f"></a>2.1.2.5.2.3 Column **last\_update**
+### <a id="f19cddb8-5b95-483a-beb8-3d301e9d7102"></a>2.1.2.5.2.3 Column **last\_update**
 
 ##### 2.1.2.5.2.3.1 **last\_update** Tree Diagram
 
@@ -821,7 +845,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_country_id
 
 ##### 2.1.2.5.3 **country** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>country_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>country_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.5.4 **country** Indexes
 
@@ -844,7 +868,8 @@ CREATE INDEX IF NOT EXISTS idx_fk_country_id
     "title": "country",
     "properties": {
         "country_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('country_country_id_seq'::regclass)"
         },
         "country": {
             "type": "string"
@@ -867,7 +892,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_country_id
 
 ```
 {
-    "country_id": 35,
+    "country_id": "nextval('country_country_id_seq'::regclass)",
     "country": "Lorem",
     "last_update": "now()"
 }
@@ -885,14 +910,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.country (
-	country_id integer NOT NULL,
+	country_id integer DEFAULT nextval('country_country_id_seq'::regclass) NOT NULL,
 	country varchar(50) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
 	CONSTRAINT country_pkey PRIMARY KEY (country_id)
@@ -907,17 +937,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
  ON ONLY public.country USING BTREE (country_id pg_catalog.int4_ops ASC NULLS LAST) ;
 ```
 
-### <a id="700edd0e-9437-429b-bb95-b915ece3c9ef"></a>2.1.2.6 Table **customer**
+### <a id="7cbbdbd3-a215-4250-9c07-7da2e7ee6350"></a>2.1.2.6 Table **customer**
 
 ##### 2.1.2.6.1 **customer** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>customer</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>customer</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.6.2 **customer** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#bc300628-33b0-4b3c-8ea1-6bbb1197af37 class="margin-0">customer_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#2425a2c4-a25c-427e-bce1-e6a48ed4b486 class="margin-0">store_id</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#215ea5d8-48fd-4d0e-90ec-a1ced977639b class="margin-0">first_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1335fb10-0340-42e1-a753-b2fdb3d900fb class="margin-0">last_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#78da525a-b2b1-4aa3-9e22-3e0979985326 class="margin-0">email</a></td><td class="no-break-word">varchar(50)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#ffa2b116-1fb8-4382-8a76-fd997a062702 class="margin-0">address_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#d73b8374-c7a0-4b7f-b4f3-86cea2efb59a class="margin-0">activebool</a></td><td class="no-break-word">boolean</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#add164ca-ed8e-4e5c-8b8f-7c137cfadae4 class="margin-0">create_date</a></td><td class="no-break-word">date</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#541c0c60-1caf-44bd-9c13-c055b498e277 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#162c15aa-8403-4360-b108-a4cf48b789a2 class="margin-0">active</a></td><td class="no-break-word">integer</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#38df9cbb-3969-4c5e-a2fe-07ae7d34bbca class="margin-0">customer_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#2fd292da-3acc-4f41-8732-cfcd6ff653e5 class="margin-0">store_id</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#5f05399a-50e6-47a8-aaee-fb296d242e90 class="margin-0">first_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#09f76980-2269-414c-85df-c7f01e54db60 class="margin-0">last_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#818790d8-53f7-42d8-a2af-3daeeba36107 class="margin-0">email</a></td><td class="no-break-word">varchar(50)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#d619a0bf-f31e-4e12-953f-a98678814a79 class="margin-0">address_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b4aad5b7-bff3-40d0-ada1-77a95e5402d3 class="margin-0">activebool</a></td><td class="no-break-word">boolean</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#a04847da-03f1-4873-bdde-6ec64d42ef71 class="margin-0">create_date</a></td><td class="no-break-word">date</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b5f18601-2702-422f-94ab-bb9a12b88d9c class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c16aca49-c572-4e30-8b97-8423df149701 class="margin-0">active</a></td><td class="no-break-word">integer</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="bc300628-33b0-4b3c-8ea1-6bbb1197af37"></a>2.1.2.6.2.1 Column **customer\_id**
+### <a id="38df9cbb-3969-4c5e-a2fe-07ae7d34bbca"></a>2.1.2.6.2.1 Column **customer\_id**
 
 ##### 2.1.2.6.2.1.1 **customer\_id** Tree Diagram
 
@@ -925,9 +955,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 ##### 2.1.2.6.2.1.2 **customer\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>customer_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('customer_customer_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>customer_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('customer_customer_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>customer_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="2425a2c4-a25c-427e-bce1-e6a48ed4b486"></a>2.1.2.6.2.2 Column **store\_id**
+### <a id="2fd292da-3acc-4f41-8732-cfcd6ff653e5"></a>2.1.2.6.2.2 Column **store\_id**
 
 ##### 2.1.2.6.2.2.1 **store\_id** Tree Diagram
 
@@ -937,7 +967,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>store_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="215ea5d8-48fd-4d0e-90ec-a1ced977639b"></a>2.1.2.6.2.3 Column **first\_name**
+### <a id="5f05399a-50e6-47a8-aaee-fb296d242e90"></a>2.1.2.6.2.3 Column **first\_name**
 
 ##### 2.1.2.6.2.3.1 **first\_name** Tree Diagram
 
@@ -947,7 +977,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>first_name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>45</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="1335fb10-0340-42e1-a753-b2fdb3d900fb"></a>2.1.2.6.2.4 Column **last\_name**
+### <a id="09f76980-2269-414c-85df-c7f01e54db60"></a>2.1.2.6.2.4 Column **last\_name**
 
 ##### 2.1.2.6.2.4.1 **last\_name** Tree Diagram
 
@@ -957,7 +987,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>last_name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>45</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="78da525a-b2b1-4aa3-9e22-3e0979985326"></a>2.1.2.6.2.5 Column **email**
+### <a id="818790d8-53f7-42d8-a2af-3daeeba36107"></a>2.1.2.6.2.5 Column **email**
 
 ##### 2.1.2.6.2.5.1 **email** Tree Diagram
 
@@ -967,7 +997,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>email</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>50</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="ffa2b116-1fb8-4382-8a76-fd997a062702"></a>2.1.2.6.2.6 Column **address\_id**
+### <a id="d619a0bf-f31e-4e12-953f-a98678814a79"></a>2.1.2.6.2.6 Column **address\_id**
 
 ##### 2.1.2.6.2.6.1 **address\_id** Tree Diagram
 
@@ -975,9 +1005,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 ##### 2.1.2.6.2.6.2 **address\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td></tr><tr><td>Foreign field</td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>customer_address_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td></tr><tr><td>Foreign field</td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>customer_address_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="d73b8374-c7a0-4b7f-b4f3-86cea2efb59a"></a>2.1.2.6.2.7 Column **activebool**
+### <a id="b4aad5b7-bff3-40d0-ada1-77a95e5402d3"></a>2.1.2.6.2.7 Column **activebool**
 
 ##### 2.1.2.6.2.7.1 **activebool** Tree Diagram
 
@@ -987,7 +1017,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>activebool</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>boolean</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>true</td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="add164ca-ed8e-4e5c-8b8f-7c137cfadae4"></a>2.1.2.6.2.8 Column **create\_date**
+### <a id="a04847da-03f1-4873-bdde-6ec64d42ef71"></a>2.1.2.6.2.8 Column **create\_date**
 
 ##### 2.1.2.6.2.8.1 **create\_date** Tree Diagram
 
@@ -997,7 +1027,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>create_date</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>datetime</td></tr><tr><td>Subtype</td><td>date</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>('now'::text)::date</td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="541c0c60-1caf-44bd-9c13-c055b498e277"></a>2.1.2.6.2.9 Column **last\_update**
+### <a id="b5f18601-2702-422f-94ab-bb9a12b88d9c"></a>2.1.2.6.2.9 Column **last\_update**
 
 ##### 2.1.2.6.2.9.1 **last\_update** Tree Diagram
 
@@ -1007,7 +1037,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>last_update</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>datetime</td></tr><tr><td>Subtype</td><td>timestamp</td></tr><tr><td>Precision</td><td></td></tr><tr><td>Timezone</td><td>WITHOUT TIME ZONE</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td>now()</td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="162c15aa-8403-4360-b108-a4cf48b789a2"></a>2.1.2.6.2.10 Column **active**
+### <a id="c16aca49-c572-4e30-8b97-8423df149701"></a>2.1.2.6.2.10 Column **active**
 
 ##### 2.1.2.6.2.10.1 **active** Tree Diagram
 
@@ -1019,7 +1049,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 ##### 2.1.2.6.3 **customer** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>customer_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>customer_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.6.4 **customer** Indexes
 
@@ -1054,7 +1084,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
     "title": "customer",
     "properties": {
         "customer_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('customer_customer_id_seq'::regclass)"
         },
         "store_id": {
             "type": "number"
@@ -1104,16 +1135,16 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
 
 ```
 {
-    "customer_id": -47,
-    "store_id": 79,
+    "customer_id": "nextval('customer_customer_id_seq'::regclass)",
+    "store_id": 7,
     "first_name": "Lorem",
     "last_name": "Lorem",
     "email": "Lorem",
-    "address_id": 59,
+    "address_id": -39,
     "activebool": true,
     "create_date": "('now'::text)::date",
     "last_update": "now()",
-    "active": -90
+    "active": 75
 }
 ```
 
@@ -1129,14 +1160,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.customer (
-	customer_id integer NOT NULL,
+	customer_id integer DEFAULT nextval('customer_customer_id_seq'::regclass) NOT NULL,
 	store_id smallint NOT NULL,
 	first_name varchar(45) NOT NULL,
 	last_name varchar(45) NOT NULL,
@@ -1168,17 +1204,17 @@ CREATE INDEX IF NOT EXISTS idx_last_name
  ON ONLY public.customer USING BTREE (last_name COLLATE pg_catalog."default" pg_catalog.text_ops ASC NULLS LAST) ;
 ```
 
-### <a id="fb72e0b7-8b07-454c-9e0d-1d58af79c2f0"></a>2.1.2.7 Table **film**
+### <a id="dd7e2b9a-2697-4b19-9958-f09736a6605b"></a>2.1.2.7 Table **film**
 
 ##### 2.1.2.7.1 **film** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>film</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>film</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.7.2 **film** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4 class="margin-0">film_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#071b6450-bdb6-401f-a0a0-66f9063e265a class="margin-0">title</a></td><td class="no-break-word">varchar(255)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#6e9067eb-ab12-42ea-a290-64f837579e10 class="margin-0">description</a></td><td class="no-break-word">text</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#ede8836b-d11f-48ec-8697-3dfd52cc3a70 class="margin-0">release_year</a></td><td class="no-break-word">domain</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#946555bb-041a-49bb-8467-346a4545e632 class="margin-0">language_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#ded46fbd-3d7c-49fe-bc86-f04ab873641b class="margin-0">rental_duration</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#55b5c84d-c7e9-40a2-9c32-db318f8e83f6 class="margin-0">rental_rate</a></td><td class="no-break-word">numeric(4, 2)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9ff25718-cd79-4b49-a0b6-dfe2d77fff61 class="margin-0">length</a></td><td class="no-break-word">smallint</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0ab33fc1-9488-442c-817c-7fe1197677c6 class="margin-0">replacement_cost</a></td><td class="no-break-word">numeric(5, 2)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#f0757580-ea1b-47ee-b373-dc1b32715618 class="margin-0">rating</a></td><td class="no-break-word">enum</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#a8f713c1-dfdc-476d-b8e8-f1448aabe516 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#3d927e3c-f77d-4fc0-95b0-61ef9bd4eacd class="margin-0">special_features</a></td><td class="no-break-word">text</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1c793d61-1244-430e-a041-db7c9350bbf3 class="margin-0">fulltext</a></td><td class="no-break-word">tsvector</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34 class="margin-0">film_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#f1342e13-b14c-4ff5-8316-1ba0133b948a class="margin-0">title</a></td><td class="no-break-word">varchar(255)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#2fcf21eb-f85a-44cd-b90d-d87e4c06cf5a class="margin-0">description</a></td><td class="no-break-word">text</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1f3c6cc7-ab49-4d41-818d-65435e67b35c class="margin-0">release_year</a></td><td class="no-break-word">domain</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b564bc8a-cdc9-4519-9040-c5208eaf62bc class="margin-0">language_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#27d4d737-965e-46f1-84aa-59b2ccc64943 class="margin-0">rental_duration</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#237ad7b1-a25e-4b8c-b038-1d931c929770 class="margin-0">rental_rate</a></td><td class="no-break-word">numeric(4, 2)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#02268040-f980-4255-891c-815177d91c13 class="margin-0">length</a></td><td class="no-break-word">smallint</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#23c614a7-a170-4687-bbee-0744df8dd773 class="margin-0">replacement_cost</a></td><td class="no-break-word">numeric(5, 2)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#3facf415-4a43-4cae-8e9a-96b95c650ed4 class="margin-0">rating</a></td><td class="no-break-word">enum</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#5c526f59-ba7e-4837-b128-d278640edbad class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8daacb3b-6a25-451b-8653-a5afed6ba45f class="margin-0">special_features</a></td><td class="no-break-word">text</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#434bb512-9cf3-4515-a2b4-86457fafc469 class="margin-0">fulltext</a></td><td class="no-break-word">tsvector</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="ad18fc8e-08f8-46ed-8521-60338aa009d4"></a>2.1.2.7.2.1 Column **film\_id**
+### <a id="87dce482-6de0-48a1-bf94-fc333d024b34"></a>2.1.2.7.2.1 Column **film\_id**
 
 ##### 2.1.2.7.2.1.1 **film\_id** Tree Diagram
 
@@ -1186,9 +1222,9 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 ##### 2.1.2.7.2.1.2 **film\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('film_film_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('film_film_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>film_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="071b6450-bdb6-401f-a0a0-66f9063e265a"></a>2.1.2.7.2.2 Column **title**
+### <a id="f1342e13-b14c-4ff5-8316-1ba0133b948a"></a>2.1.2.7.2.2 Column **title**
 
 ##### 2.1.2.7.2.2.1 **title** Tree Diagram
 
@@ -1198,7 +1234,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>title</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>255</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="6e9067eb-ab12-42ea-a290-64f837579e10"></a>2.1.2.7.2.3 Column **description**
+### <a id="2fcf21eb-f85a-44cd-b90d-d87e4c06cf5a"></a>2.1.2.7.2.3 Column **description**
 
 ##### 2.1.2.7.2.3.1 **description** Tree Diagram
 
@@ -1208,7 +1244,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>description</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>text</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="ede8836b-d11f-48ec-8697-3dfd52cc3a70"></a>2.1.2.7.2.4 Column **release\_year**
+### <a id="1f3c6cc7-ab49-4d41-818d-65435e67b35c"></a>2.1.2.7.2.4 Column **release\_year**
 
 ##### 2.1.2.7.2.4.1 **release\_year** Tree Diagram
 
@@ -1216,9 +1252,9 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 ##### 2.1.2.7.2.4.2 **release\_year** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>release_year</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>$ref</td><td>#model/definitions/year</td></tr><tr><td>Reference type</td><td>model</td></tr><tr><td>Reference description</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>release_year</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Reference type</td><td>model</td></tr><tr><td>Reference description</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="946555bb-041a-49bb-8467-346a4545e632"></a>2.1.2.7.2.5 Column **language\_id**
+### <a id="b564bc8a-cdc9-4519-9040-c5208eaf62bc"></a>2.1.2.7.2.5 Column **language\_id**
 
 ##### 2.1.2.7.2.5.1 **language\_id** Tree Diagram
 
@@ -1226,9 +1262,9 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 ##### 2.1.2.7.2.5.2 **language\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>language_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#fff3a07a-ee38-4160-bd2f-e74e5e81e21b>language</a></td></tr><tr><td>Foreign field</td><td><a href=#f18d93f4-f811-4655-8c76-bd6809b17ce5>language_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_language_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>language_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#3fda4fa5-1a52-4a1d-b115-c4942abc41af>language</a></td></tr><tr><td>Foreign field</td><td><a href=#8cb3cd01-a8b4-437e-af5f-47f834b426de>language_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_language_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="ded46fbd-3d7c-49fe-bc86-f04ab873641b"></a>2.1.2.7.2.6 Column **rental\_duration**
+### <a id="27d4d737-965e-46f1-84aa-59b2ccc64943"></a>2.1.2.7.2.6 Column **rental\_duration**
 
 ##### 2.1.2.7.2.6.1 **rental\_duration** Tree Diagram
 
@@ -1238,7 +1274,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rental_duration</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>3</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="55b5c84d-c7e9-40a2-9c32-db318f8e83f6"></a>2.1.2.7.2.7 Column **rental\_rate**
+### <a id="237ad7b1-a25e-4b8c-b038-1d931c929770"></a>2.1.2.7.2.7 Column **rental\_rate**
 
 ##### 2.1.2.7.2.7.1 **rental\_rate** Tree Diagram
 
@@ -1248,7 +1284,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rental_rate</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>numeric</td></tr><tr><td>Precision</td><td>4</td></tr><tr><td>Scale</td><td>2</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>4.99</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="9ff25718-cd79-4b49-a0b6-dfe2d77fff61"></a>2.1.2.7.2.8 Column **length**
+### <a id="02268040-f980-4255-891c-815177d91c13"></a>2.1.2.7.2.8 Column **length**
 
 ##### 2.1.2.7.2.8.1 **length** Tree Diagram
 
@@ -1258,7 +1294,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>length</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="0ab33fc1-9488-442c-817c-7fe1197677c6"></a>2.1.2.7.2.9 Column **replacement\_cost**
+### <a id="23c614a7-a170-4687-bbee-0744df8dd773"></a>2.1.2.7.2.9 Column **replacement\_cost**
 
 ##### 2.1.2.7.2.9.1 **replacement\_cost** Tree Diagram
 
@@ -1268,7 +1304,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>replacement_cost</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>numeric</td></tr><tr><td>Precision</td><td>5</td></tr><tr><td>Scale</td><td>2</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>19.99</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="f0757580-ea1b-47ee-b373-dc1b32715618"></a>2.1.2.7.2.10 Column **rating**
+### <a id="3facf415-4a43-4cae-8e9a-96b95c650ed4"></a>2.1.2.7.2.10 Column **rating**
 
 ##### 2.1.2.7.2.10.1 **rating** Tree Diagram
 
@@ -1276,9 +1312,9 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 ##### 2.1.2.7.2.10.2 **rating** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rating</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>$ref</td><td>#model/definitions/mpaa_rating</td></tr><tr><td>Reference type</td><td>model</td></tr><tr><td>Reference description</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rating</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Reference type</td><td>model</td></tr><tr><td>Reference description</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="a8f713c1-dfdc-476d-b8e8-f1448aabe516"></a>2.1.2.7.2.11 Column **last\_update**
+### <a id="5c526f59-ba7e-4837-b128-d278640edbad"></a>2.1.2.7.2.11 Column **last\_update**
 
 ##### 2.1.2.7.2.11.1 **last\_update** Tree Diagram
 
@@ -1288,7 +1324,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>last_update</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>datetime</td></tr><tr><td>Subtype</td><td>timestamp</td></tr><tr><td>Precision</td><td></td></tr><tr><td>Timezone</td><td>WITHOUT TIME ZONE</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>now()</td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="3d927e3c-f77d-4fc0-95b0-61ef9bd4eacd"></a>2.1.2.7.2.12 Column **special\_features**
+### <a id="8daacb3b-6a25-451b-8653-a5afed6ba45f"></a>2.1.2.7.2.12 Column **special\_features**
 
 ##### 2.1.2.7.2.12.1 **special\_features** Tree Diagram
 
@@ -1298,7 +1334,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>special_features</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>text</td></tr><tr><td colspan="2"><b><span>Array type</span></b></td></tr><tr><td><span><span>[1] Size limit</span></span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="1c793d61-1244-430e-a041-db7c9350bbf3"></a>2.1.2.7.2.13 Column **fulltext**
+### <a id="434bb512-9cf3-4515-a2b4-86457fafc469"></a>2.1.2.7.2.13 Column **fulltext**
 
 ##### 2.1.2.7.2.13.1 **fulltext** Tree Diagram
 
@@ -1310,7 +1346,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 ##### 2.1.2.7.3 **film** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>film_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>film_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.7.4 **film** Indexes
 
@@ -1349,7 +1385,8 @@ CREATE INDEX IF NOT EXISTS idx_last_name
     "title": "film",
     "properties": {
         "film_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('film_film_id_seq'::regclass)"
         },
         "title": {
             "type": "string"
@@ -1410,14 +1447,14 @@ CREATE INDEX IF NOT EXISTS idx_last_name
 
 ```
 {
-    "film_id": 42,
+    "film_id": "nextval('film_film_id_seq'::regclass)",
     "title": "Lorem",
     "description": "Lorem",
     "release_year": "Lorem",
-    "language_id": -52,
+    "language_id": -56,
     "rental_duration": "3",
     "rental_rate": "4.99",
-    "length": 39,
+    "length": -25,
     "replacement_cost": "19.99",
     "rating": "NC-17",
     "last_update": "now()",
@@ -1445,7 +1482,7 @@ CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
 CREATE TABLE IF NOT EXISTS public.film (
-	film_id integer NOT NULL,
+	film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL,
 	title varchar(255) NOT NULL,
 	description text,
 	release_year year,
@@ -1485,17 +1522,17 @@ CREATE INDEX IF NOT EXISTS idx_title
  ON ONLY public.film USING BTREE (title COLLATE pg_catalog."default" pg_catalog.text_ops ASC NULLS LAST) ;
 ```
 
-### <a id="cb5b2c61-95d8-4da0-bcc3-880a3892f328"></a>2.1.2.8 Table **film\_actor**
+### <a id="de167e83-3ecf-4e27-a2f3-ec97e767f700"></a>2.1.2.8 Table **film\_actor**
 
 ##### 2.1.2.8.1 **film\_actor** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>film_actor</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>film_actor</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.8.2 **film\_actor** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#695c4084-c299-48b1-86e7-21474443dc3a class="margin-0">actor_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#001c6082-1bb8-4fbc-8fa7-e941ac988ad6 class="margin-0">film_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#5f4452a5-0086-473e-9ea0-b67b0bd2bb61 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#42c2015b-6272-4b2e-8f6b-21520268d6a9 class="margin-0">actor_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#24e4c1d6-739e-4568-bdc6-b7876bc233f5 class="margin-0">film_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#de23dc00-20cf-418b-965e-9e4310231a63 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="695c4084-c299-48b1-86e7-21474443dc3a"></a>2.1.2.8.2.1 Column **actor\_id**
+### <a id="42c2015b-6272-4b2e-8f6b-21520268d6a9"></a>2.1.2.8.2.1 Column **actor\_id**
 
 ##### 2.1.2.8.2.1.1 **actor\_id** Tree Diagram
 
@@ -1503,9 +1540,9 @@ CREATE INDEX IF NOT EXISTS idx_title
 
 ##### 2.1.2.8.2.1.2 **actor\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>actor_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#a644f8c2-15e5-4846-8225-ed306ba5873f>actor</a></td></tr><tr><td>Foreign field</td><td><a href=#acedbe6a-40a4-4189-9485-342803c49a66>actor_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_actor_actor_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>actor_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#12995ec4-0703-49c1-b60e-6440c746e21f>actor</a></td></tr><tr><td>Foreign field</td><td><a href=#c316c0d1-2b53-4ab8-b647-39adaf76bcdb>actor_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_actor_actor_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="001c6082-1bb8-4fbc-8fa7-e941ac988ad6"></a>2.1.2.8.2.2 Column **film\_id**
+### <a id="24e4c1d6-739e-4568-bdc6-b7876bc233f5"></a>2.1.2.8.2.2 Column **film\_id**
 
 ##### 2.1.2.8.2.2.1 **film\_id** Tree Diagram
 
@@ -1513,9 +1550,9 @@ CREATE INDEX IF NOT EXISTS idx_title
 
 ##### 2.1.2.8.2.2.2 **film\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td></tr><tr><td>Foreign field</td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_actor_film_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td></tr><tr><td>Foreign field</td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_actor_film_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="5f4452a5-0086-473e-9ea0-b67b0bd2bb61"></a>2.1.2.8.2.3 Column **last\_update**
+### <a id="de23dc00-20cf-418b-965e-9e4310231a63"></a>2.1.2.8.2.3 Column **last\_update**
 
 ##### 2.1.2.8.2.3.1 **last\_update** Tree Diagram
 
@@ -1577,8 +1614,8 @@ CREATE INDEX IF NOT EXISTS idx_title
 
 ```
 {
-    "actor_id": 59,
-    "film_id": -80,
+    "actor_id": -28,
+    "film_id": 63,
     "last_update": "now()"
 }
 ```
@@ -1595,11 +1632,16 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
+
+ */
 
 CREATE TABLE IF NOT EXISTS public.film_actor (
 	actor_id smallint NOT NULL,
@@ -1622,17 +1664,17 @@ CREATE INDEX IF NOT EXISTS idx_fk_film_id
  ON ONLY public.film_actor USING BTREE (film_id pg_catalog.int2_ops ASC NULLS LAST) ;
 ```
 
-### <a id="1e3cb3bc-7344-4ae0-b6ae-2cacfd023eed"></a>2.1.2.9 Table **film\_category**
+### <a id="fc0f7abe-ed0a-45eb-b0f8-a57067d76d7b"></a>2.1.2.9 Table **film\_category**
 
 ##### 2.1.2.9.1 **film\_category** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>film_category</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>film_category</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.9.2 **film\_category** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#1a80a849-aba6-40d9-a32d-a18348ba2860 class="margin-0">film_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#75bba600-3af8-4867-a557-d2097c6d3893 class="margin-0">category_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9564500b-7181-4b6b-924f-2fe28fb41591 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#62aac23d-b5f4-470e-b561-1acf10b41d8b class="margin-0">film_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#dbf8f011-75fe-4af8-9a4f-2e71751aea5b class="margin-0">category_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>pk, fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#3aa8e3d2-6fcb-4ae2-af15-13e0f3cd9a78 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="1a80a849-aba6-40d9-a32d-a18348ba2860"></a>2.1.2.9.2.1 Column **film\_id**
+### <a id="62aac23d-b5f4-470e-b561-1acf10b41d8b"></a>2.1.2.9.2.1 Column **film\_id**
 
 ##### 2.1.2.9.2.1.1 **film\_id** Tree Diagram
 
@@ -1640,9 +1682,9 @@ CREATE INDEX IF NOT EXISTS idx_fk_film_id
 
 ##### 2.1.2.9.2.1.2 **film\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td></tr><tr><td>Foreign field</td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_category_film_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td></tr><tr><td>Foreign field</td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_category_film_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="75bba600-3af8-4867-a557-d2097c6d3893"></a>2.1.2.9.2.2 Column **category\_id**
+### <a id="dbf8f011-75fe-4af8-9a4f-2e71751aea5b"></a>2.1.2.9.2.2 Column **category\_id**
 
 ##### 2.1.2.9.2.2.1 **category\_id** Tree Diagram
 
@@ -1650,9 +1692,9 @@ CREATE INDEX IF NOT EXISTS idx_fk_film_id
 
 ##### 2.1.2.9.2.2.2 **category\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>category_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#789cf183-cc88-4c3d-a501-e33917d0eb01>category</a></td></tr><tr><td>Foreign field</td><td><a href=#2c49bd48-b57b-4899-b016-5a7d7e80ab68>category_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_category_category_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>category_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td><a href=#d17516ae-889d-409e-bc10-70c3b1681a80>category</a></td></tr><tr><td>Foreign field</td><td><a href=#8165529f-228d-4c69-9827-4e30b6154ab1>category_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>film_category_category_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="9564500b-7181-4b6b-924f-2fe28fb41591"></a>2.1.2.9.2.3 Column **last\_update**
+### <a id="3aa8e3d2-6fcb-4ae2-af15-13e0f3cd9a78"></a>2.1.2.9.2.3 Column **last\_update**
 
 ##### 2.1.2.9.2.3.1 **last\_update** Tree Diagram
 
@@ -1710,8 +1752,8 @@ CREATE INDEX IF NOT EXISTS idx_fk_film_id
 
 ```
 {
-    "film_id": 98,
-    "category_id": 60,
+    "film_id": -100,
+    "category_id": 33,
     "last_update": "now()"
 }
 ```
@@ -1728,11 +1770,16 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
+
+ */
 
 CREATE TABLE IF NOT EXISTS public.film_category (
 	film_id smallint NOT NULL,
@@ -1752,17 +1799,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
  ON ONLY public.film_category USING BTREE (film_id pg_catalog.int2_ops ASC NULLS LAST, category_id pg_catalog.int2_ops ASC NULLS LAST) ;
 ```
 
-### <a id="3d0ca03e-2684-4b5f-a3f3-2b65010b8684"></a>2.1.2.10 Table **inventory**
+### <a id="64b84fd9-1d30-4358-a6cc-686b94391027"></a>2.1.2.10 Table **inventory**
 
 ##### 2.1.2.10.1 **inventory** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>inventory</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>inventory</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.10.2 **inventory** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#05067534-cf9c-4292-9bc8-b3ab58a917eb class="margin-0">inventory_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8c8dacde-03b4-4c29-bd62-c478acf1ff64 class="margin-0">film_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7b712757-3415-4d71-8628-e0dd1ca4ae3b class="margin-0">store_id</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b8777959-9855-414e-88ce-e4aa8e908224 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#b00dadb0-34ed-4cb8-b010-c044638ef710 class="margin-0">inventory_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#2f984ed4-7b99-410c-bcab-f21c6e3ab3cf class="margin-0">film_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#09454756-5582-4cee-80ab-b8a20940d89e class="margin-0">store_id</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#30e8abbe-2111-434c-a3f1-6e7589588dea class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="05067534-cf9c-4292-9bc8-b3ab58a917eb"></a>2.1.2.10.2.1 Column **inventory\_id**
+### <a id="b00dadb0-34ed-4cb8-b010-c044638ef710"></a>2.1.2.10.2.1 Column **inventory\_id**
 
 ##### 2.1.2.10.2.1.1 **inventory\_id** Tree Diagram
 
@@ -1770,9 +1817,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
 
 ##### 2.1.2.10.2.1.2 **inventory\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>inventory_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('inventory_inventory_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>inventory_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('inventory_inventory_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>inventory_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="8c8dacde-03b4-4c29-bd62-c478acf1ff64"></a>2.1.2.10.2.2 Column **film\_id**
+### <a id="2f984ed4-7b99-410c-bcab-f21c6e3ab3cf"></a>2.1.2.10.2.2 Column **film\_id**
 
 ##### 2.1.2.10.2.2.1 **film\_id** Tree Diagram
 
@@ -1780,9 +1827,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
 
 ##### 2.1.2.10.2.2.2 **film\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td></tr><tr><td>Foreign field</td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>inventory_film_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>film_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td></tr><tr><td>Foreign field</td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>inventory_film_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="7b712757-3415-4d71-8628-e0dd1ca4ae3b"></a>2.1.2.10.2.3 Column **store\_id**
+### <a id="09454756-5582-4cee-80ab-b8a20940d89e"></a>2.1.2.10.2.3 Column **store\_id**
 
 ##### 2.1.2.10.2.3.1 **store\_id** Tree Diagram
 
@@ -1792,7 +1839,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>store_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="b8777959-9855-414e-88ce-e4aa8e908224"></a>2.1.2.10.2.4 Column **last\_update**
+### <a id="30e8abbe-2111-434c-a3f1-6e7589588dea"></a>2.1.2.10.2.4 Column **last\_update**
 
 ##### 2.1.2.10.2.4.1 **last\_update** Tree Diagram
 
@@ -1804,7 +1851,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
 
 ##### 2.1.2.10.3 **inventory** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>inventory_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>inventory_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.10.4 **inventory** Indexes
 
@@ -1831,7 +1878,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
     "title": "inventory",
     "properties": {
         "inventory_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('inventory_inventory_id_seq'::regclass)"
         },
         "film_id": {
             "type": "number"
@@ -1858,9 +1906,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
 
 ```
 {
-    "inventory_id": 37,
-    "film_id": -74,
-    "store_id": -9,
+    "inventory_id": "nextval('inventory_inventory_id_seq'::regclass)",
+    "film_id": -80,
+    "store_id": 64,
     "last_update": "now()"
 }
 ```
@@ -1877,14 +1925,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.inventory (
-	inventory_id integer NOT NULL,
+	inventory_id integer DEFAULT nextval('inventory_inventory_id_seq'::regclass) NOT NULL,
 	film_id smallint NOT NULL,
 	store_id smallint NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -1904,17 +1957,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS inventory_pkey
  ON ONLY public.inventory USING BTREE (inventory_id pg_catalog.int4_ops ASC NULLS LAST) ;
 ```
 
-### <a id="fff3a07a-ee38-4160-bd2f-e74e5e81e21b"></a>2.1.2.11 Table **language**
+### <a id="3fda4fa5-1a52-4a1d-b115-c4942abc41af"></a>2.1.2.11 Table **language**
 
 ##### 2.1.2.11.1 **language** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>language</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>language</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.11.2 **language** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#f18d93f4-f811-4655-8c76-bd6809b17ce5 class="margin-0">language_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8c20cce0-24d0-4812-9d5d-cf2f7969cfa7 class="margin-0">name</a></td><td class="no-break-word">char(20)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#cc6cfc2a-c0c9-4e34-95fb-7df8db5ae164 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#8cb3cd01-a8b4-437e-af5f-47f834b426de class="margin-0">language_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#5c036cb8-573c-41d6-8aa1-c049cfd1a67d class="margin-0">name</a></td><td class="no-break-word">char(20)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1578ff5-093a-4ac4-8876-d44fef5c5e14 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="f18d93f4-f811-4655-8c76-bd6809b17ce5"></a>2.1.2.11.2.1 Column **language\_id**
+### <a id="8cb3cd01-a8b4-437e-af5f-47f834b426de"></a>2.1.2.11.2.1 Column **language\_id**
 
 ##### 2.1.2.11.2.1.1 **language\_id** Tree Diagram
 
@@ -1922,9 +1975,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS inventory_pkey
 
 ##### 2.1.2.11.2.1.2 **language\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>language_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('language_language_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>language_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('language_language_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>language_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="8c20cce0-24d0-4812-9d5d-cf2f7969cfa7"></a>2.1.2.11.2.2 Column **name**
+### <a id="5c036cb8-573c-41d6-8aa1-c049cfd1a67d"></a>2.1.2.11.2.2 Column **name**
 
 ##### 2.1.2.11.2.2.1 **name** Tree Diagram
 
@@ -1934,7 +1987,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS inventory_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>char</td></tr><tr><td>Length</td><td>20</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="cc6cfc2a-c0c9-4e34-95fb-7df8db5ae164"></a>2.1.2.11.2.3 Column **last\_update**
+### <a id="c1578ff5-093a-4ac4-8876-d44fef5c5e14"></a>2.1.2.11.2.3 Column **last\_update**
 
 ##### 2.1.2.11.2.3.1 **last\_update** Tree Diagram
 
@@ -1946,7 +1999,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS inventory_pkey
 
 ##### 2.1.2.11.3 **language** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>language_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>language_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.11.4 **language** Indexes
 
@@ -1969,7 +2022,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS inventory_pkey
     "title": "language",
     "properties": {
         "language_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('language_language_id_seq'::regclass)"
         },
         "name": {
             "type": "string"
@@ -1992,7 +2046,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS inventory_pkey
 
 ```
 {
-    "language_id": -19,
+    "language_id": "nextval('language_language_id_seq'::regclass)",
     "name": "Lorem",
     "last_update": "now()"
 }
@@ -2010,14 +2064,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.language (
-	language_id integer NOT NULL,
+	language_id integer DEFAULT nextval('language_language_id_seq'::regclass) NOT NULL,
 	name char(20) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
 	CONSTRAINT language_pkey PRIMARY KEY (language_id)
@@ -2032,17 +2091,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
  ON ONLY public.language USING BTREE (language_id pg_catalog.int4_ops ASC NULLS LAST) ;
 ```
 
-### <a id="d3acf652-5a65-4c88-9417-70f10f475419"></a>2.1.2.12 Table **payment**
+### <a id="2f15a28f-b928-44dd-9d7e-db4d339d1c4c"></a>2.1.2.12 Table **payment**
 
 ##### 2.1.2.12.1 **payment** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>payment</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>payment</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.12.2 **payment** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#1af0fe74-5c0e-4f96-a015-46c71dce7303 class="margin-0">payment_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#4e271486-9924-408e-a1d4-dff2a00bd44a class="margin-0">customer_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#63fea071-2e5e-4310-aedc-5c3e3e18d8d0 class="margin-0">staff_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#377bff0d-ff72-410a-ade6-60c20d2718cf class="margin-0">rental_id</a></td><td class="no-break-word">integer</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#78652718-e740-4c84-b4d2-74f86113dec1 class="margin-0">amount</a></td><td class="no-break-word">numeric(5, 2)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#a0b4a3e6-d142-41ce-a5dc-15743951bebb class="margin-0">payment_date</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#1446dc9e-7765-4215-87b6-5de2e49b9f5d class="margin-0">payment_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#393701ae-e3f3-4201-9eb6-7891a108a1cf class="margin-0">customer_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7bdcfd8b-fb0d-4282-a0da-eefb9657301e class="margin-0">staff_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#3f501879-4293-4050-8103-cffa690842f9 class="margin-0">rental_id</a></td><td class="no-break-word">integer</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9197c547-06d5-40cc-b020-928a99cbe4f4 class="margin-0">amount</a></td><td class="no-break-word">numeric(5, 2)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#6656ab26-391a-423a-9131-5be9925e4cd3 class="margin-0">payment_date</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="1af0fe74-5c0e-4f96-a015-46c71dce7303"></a>2.1.2.12.2.1 Column **payment\_id**
+### <a id="1446dc9e-7765-4215-87b6-5de2e49b9f5d"></a>2.1.2.12.2.1 Column **payment\_id**
 
 ##### 2.1.2.12.2.1.1 **payment\_id** Tree Diagram
 
@@ -2050,9 +2109,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
 
 ##### 2.1.2.12.2.1.2 **payment\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>payment_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('payment_payment_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>payment_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('payment_payment_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>payment_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="4e271486-9924-408e-a1d4-dff2a00bd44a"></a>2.1.2.12.2.2 Column **customer\_id**
+### <a id="393701ae-e3f3-4201-9eb6-7891a108a1cf"></a>2.1.2.12.2.2 Column **customer\_id**
 
 ##### 2.1.2.12.2.2.1 **customer\_id** Tree Diagram
 
@@ -2060,9 +2119,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
 
 ##### 2.1.2.12.2.2.2 **customer\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>customer_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td></tr><tr><td>Foreign field</td><td><a href=#bc300628-33b0-4b3c-8ea1-6bbb1197af37>customer_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>payment_customer_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>customer_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td></tr><tr><td>Foreign field</td><td><a href=#38df9cbb-3969-4c5e-a2fe-07ae7d34bbca>customer_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>payment_customer_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="63fea071-2e5e-4310-aedc-5c3e3e18d8d0"></a>2.1.2.12.2.3 Column **staff\_id**
+### <a id="7bdcfd8b-fb0d-4282-a0da-eefb9657301e"></a>2.1.2.12.2.3 Column **staff\_id**
 
 ##### 2.1.2.12.2.3.1 **staff\_id** Tree Diagram
 
@@ -2070,9 +2129,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
 
 ##### 2.1.2.12.2.3.2 **staff\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td></tr><tr><td>Foreign field</td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>payment_staff_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td></tr><tr><td>Foreign field</td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>payment_staff_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="377bff0d-ff72-410a-ade6-60c20d2718cf"></a>2.1.2.12.2.4 Column **rental\_id**
+### <a id="3f501879-4293-4050-8103-cffa690842f9"></a>2.1.2.12.2.4 Column **rental\_id**
 
 ##### 2.1.2.12.2.4.1 **rental\_id** Tree Diagram
 
@@ -2080,9 +2139,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
 
 ##### 2.1.2.12.2.4.2 **rental\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rental_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td></tr><tr><td>Foreign field</td><td><a href=#ce587fc8-b34c-4958-9c74-b3816e1296a5>rental_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>payment_rental_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rental_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td></tr><tr><td>Foreign field</td><td><a href=#652636cc-6c05-47b5-a8e1-cc307d8900a6>rental_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>payment_rental_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="78652718-e740-4c84-b4d2-74f86113dec1"></a>2.1.2.12.2.5 Column **amount**
+### <a id="9197c547-06d5-40cc-b020-928a99cbe4f4"></a>2.1.2.12.2.5 Column **amount**
 
 ##### 2.1.2.12.2.5.1 **amount** Tree Diagram
 
@@ -2092,7 +2151,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>amount</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>numeric</td></tr><tr><td>Precision</td><td>5</td></tr><tr><td>Scale</td><td>2</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="a0b4a3e6-d142-41ce-a5dc-15743951bebb"></a>2.1.2.12.2.6 Column **payment\_date**
+### <a id="6656ab26-391a-423a-9131-5be9925e4cd3"></a>2.1.2.12.2.6 Column **payment\_date**
 
 ##### 2.1.2.12.2.6.1 **payment\_date** Tree Diagram
 
@@ -2104,7 +2163,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
 
 ##### 2.1.2.12.3 **payment** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>payment_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>payment_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.12.4 **payment** Indexes
 
@@ -2133,7 +2192,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
     "title": "payment",
     "properties": {
         "payment_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('payment_payment_id_seq'::regclass)"
         },
         "customer_id": {
             "type": "number"
@@ -2167,11 +2227,11 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
 
 ```
 {
-    "payment_id": 34,
-    "customer_id": -74,
-    "staff_id": 85,
-    "rental_id": 57,
-    "amount": -71,
+    "payment_id": "nextval('payment_payment_id_seq'::regclass)",
+    "customer_id": 52,
+    "staff_id": -7,
+    "rental_id": 54,
+    "amount": 63,
     "payment_date": "2011-02-03 04:05:00+0000"
 }
 ```
@@ -2188,14 +2248,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.payment (
-	payment_id integer NOT NULL,
+	payment_id integer DEFAULT nextval('payment_payment_id_seq'::regclass) NOT NULL,
 	customer_id smallint NOT NULL,
 	staff_id smallint NOT NULL,
 	rental_id integer NOT NULL,
@@ -2220,17 +2285,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
  ON ONLY public.payment USING BTREE (payment_id pg_catalog.int4_ops ASC NULLS LAST) ;
 ```
 
-### <a id="21074556-24a9-4dfa-8c7f-928f8d6eacdf"></a>2.1.2.13 Table **rental**
+### <a id="1bb3d421-a527-4bdb-8b11-f700b692a221"></a>2.1.2.13 Table **rental**
 
 ##### 2.1.2.13.1 **rental** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>rental</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>rental</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.13.2 **rental** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#ce587fc8-b34c-4958-9c74-b3816e1296a5 class="margin-0">rental_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#e0e89357-2d17-4cb7-a095-2aa19a6b2589 class="margin-0">rental_date</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b8ae6a3f-6c4c-42c6-94a1-13d4dd453613 class="margin-0">inventory_id</a></td><td class="no-break-word">integer</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#819ecf15-b6a1-4481-af77-35fcf6f25f06 class="margin-0">customer_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#eb9f10ab-9d35-4de4-ab8d-7574300ec4b7 class="margin-0">return_date</a></td><td class="no-break-word">timestamp</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1eb6e509-ad78-4099-9a75-d1b629b5b6f0 class="margin-0">staff_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#f9acacd4-799a-4d0e-9dd3-4b6d4c04ef5d class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#652636cc-6c05-47b5-a8e1-cc307d8900a6 class="margin-0">rental_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#d2cb0329-2d7f-49e4-a52c-2777d6cf2710 class="margin-0">rental_date</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1e919eb3-6548-4245-9949-cdf999f02f98 class="margin-0">inventory_id</a></td><td class="no-break-word">integer</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8488d139-6ead-4fb7-af5f-4b6cd8c7444c class="margin-0">customer_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#f556b2c6-4957-48ca-b424-ac23dbe8f04a class="margin-0">return_date</a></td><td class="no-break-word">timestamp</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#43e64f0c-8bdb-4ae6-b5d1-0e186182fdde class="margin-0">staff_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#3d0865f2-81ab-4805-b5da-59a9feb2408b class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="ce587fc8-b34c-4958-9c74-b3816e1296a5"></a>2.1.2.13.2.1 Column **rental\_id**
+### <a id="652636cc-6c05-47b5-a8e1-cc307d8900a6"></a>2.1.2.13.2.1 Column **rental\_id**
 
 ##### 2.1.2.13.2.1.1 **rental\_id** Tree Diagram
 
@@ -2238,9 +2303,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 ##### 2.1.2.13.2.1.2 **rental\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rental_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('rental_rental_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rental_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('rental_rental_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>rental_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="e0e89357-2d17-4cb7-a095-2aa19a6b2589"></a>2.1.2.13.2.2 Column **rental\_date**
+### <a id="d2cb0329-2d7f-49e4-a52c-2777d6cf2710"></a>2.1.2.13.2.2 Column **rental\_date**
 
 ##### 2.1.2.13.2.2.1 **rental\_date** Tree Diagram
 
@@ -2250,7 +2315,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>rental_date</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>datetime</td></tr><tr><td>Subtype</td><td>timestamp</td></tr><tr><td>Precision</td><td></td></tr><tr><td>Timezone</td><td>WITHOUT TIME ZONE</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="b8ae6a3f-6c4c-42c6-94a1-13d4dd453613"></a>2.1.2.13.2.3 Column **inventory\_id**
+### <a id="1e919eb3-6548-4245-9949-cdf999f02f98"></a>2.1.2.13.2.3 Column **inventory\_id**
 
 ##### 2.1.2.13.2.3.1 **inventory\_id** Tree Diagram
 
@@ -2258,9 +2323,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 ##### 2.1.2.13.2.3.2 **inventory\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>inventory_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#3d0ca03e-2684-4b5f-a3f3-2b65010b8684>inventory</a></td></tr><tr><td>Foreign field</td><td><a href=#05067534-cf9c-4292-9bc8-b3ab58a917eb>inventory_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>rental_inventory_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>inventory_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#64b84fd9-1d30-4358-a6cc-686b94391027>inventory</a></td></tr><tr><td>Foreign field</td><td><a href=#b00dadb0-34ed-4cb8-b010-c044638ef710>inventory_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>rental_inventory_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="819ecf15-b6a1-4481-af77-35fcf6f25f06"></a>2.1.2.13.2.4 Column **customer\_id**
+### <a id="8488d139-6ead-4fb7-af5f-4b6cd8c7444c"></a>2.1.2.13.2.4 Column **customer\_id**
 
 ##### 2.1.2.13.2.4.1 **customer\_id** Tree Diagram
 
@@ -2268,9 +2333,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 ##### 2.1.2.13.2.4.2 **customer\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>customer_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td></tr><tr><td>Foreign field</td><td><a href=#bc300628-33b0-4b3c-8ea1-6bbb1197af37>customer_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>rental_customer_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>customer_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td></tr><tr><td>Foreign field</td><td><a href=#38df9cbb-3969-4c5e-a2fe-07ae7d34bbca>customer_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>rental_customer_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="eb9f10ab-9d35-4de4-ab8d-7574300ec4b7"></a>2.1.2.13.2.5 Column **return\_date**
+### <a id="f556b2c6-4957-48ca-b424-ac23dbe8f04a"></a>2.1.2.13.2.5 Column **return\_date**
 
 ##### 2.1.2.13.2.5.1 **return\_date** Tree Diagram
 
@@ -2280,7 +2345,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>return_date</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>datetime</td></tr><tr><td>Subtype</td><td>timestamp</td></tr><tr><td>Precision</td><td></td></tr><tr><td>Timezone</td><td>WITHOUT TIME ZONE</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="1eb6e509-ad78-4099-9a75-d1b629b5b6f0"></a>2.1.2.13.2.6 Column **staff\_id**
+### <a id="43e64f0c-8bdb-4ae6-b5d1-0e186182fdde"></a>2.1.2.13.2.6 Column **staff\_id**
 
 ##### 2.1.2.13.2.6.1 **staff\_id** Tree Diagram
 
@@ -2288,9 +2353,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 ##### 2.1.2.13.2.6.2 **staff\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td></tr><tr><td>Foreign field</td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>rental_staff_id_key</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td></tr><tr><td>Foreign field</td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>rental_staff_id_key</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="f9acacd4-799a-4d0e-9dd3-4b6d4c04ef5d"></a>2.1.2.13.2.7 Column **last\_update**
+### <a id="3d0865f2-81ab-4805-b5da-59a9feb2408b"></a>2.1.2.13.2.7 Column **last\_update**
 
 ##### 2.1.2.13.2.7.1 **last\_update** Tree Diagram
 
@@ -2302,7 +2367,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 ##### 2.1.2.13.3 **rental** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>rental_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>rental_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.13.4 **rental** Indexes
 
@@ -2333,7 +2398,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
     "title": "rental",
     "properties": {
         "rental_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('rental_rental_id_seq'::regclass)"
         },
         "rental_date": {
             "type": "string"
@@ -2371,12 +2437,12 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
 
 ```
 {
-    "rental_id": 52,
+    "rental_id": "nextval('rental_rental_id_seq'::regclass)",
     "rental_date": "2011-02-03 04:05:00+0000",
-    "inventory_id": 84,
-    "customer_id": 49,
+    "inventory_id": -44,
+    "customer_id": -9,
     "return_date": "2011-02-03 04:05:00+0000",
-    "staff_id": -91,
+    "staff_id": 58,
     "last_update": "now()"
 }
 ```
@@ -2393,14 +2459,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.rental (
-	rental_id integer NOT NULL,
+	rental_id integer DEFAULT nextval('rental_rental_id_seq'::regclass) NOT NULL,
 	rental_date timestamp WITHOUT TIME ZONE NOT NULL,
 	inventory_id integer NOT NULL,
 	customer_id smallint NOT NULL,
@@ -2428,17 +2499,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
  ON ONLY public.rental USING BTREE (rental_id pg_catalog.int4_ops ASC NULLS LAST) ;
 ```
 
-### <a id="334f4020-0e8d-48db-b236-2b42475abd3f"></a>2.1.2.14 Table **staff**
+### <a id="8153c88a-99e3-41ed-9185-2b63f90ecc48"></a>2.1.2.14 Table **staff**
 
 ##### 2.1.2.14.1 **staff** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>staff</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>staff</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.14.2 **staff** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b class="margin-0">staff_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#e52f6f1e-7b48-4a05-b32a-7535562442ee class="margin-0">first_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#1ac3b2fa-459c-4082-b719-9a0e3aa7a31d class="margin-0">last_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#cc17f266-01e7-412c-8b8a-c72e60749b3a class="margin-0">address_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c4dc2685-3ebb-42b0-963f-2fa1a665bd40 class="margin-0">email</a></td><td class="no-break-word">varchar(50)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#a4659132-d91b-4677-8723-c83ab78bd23b class="margin-0">store_id</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#2dd91f53-acbb-49c6-84a7-90d04e4e7357 class="margin-0">active</a></td><td class="no-break-word">boolean</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#34abe8f0-951b-44b7-9ae3-20aa2628b091 class="margin-0">username</a></td><td class="no-break-word">varchar(16)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#d91ed7c3-5bec-4b36-979a-6251f743a232 class="margin-0">password</a></td><td class="no-break-word">varchar(40)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#058f39eb-a9b4-449a-b227-24faa06313f2 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#360f2ade-4ada-441b-a985-d65912204249 class="margin-0">picture</a></td><td class="no-break-word">bytea</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6 class="margin-0">staff_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk, dk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b8c76e28-af63-4e5d-ad73-8eaee0358636 class="margin-0">first_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#45e8d09b-0e2f-4be0-8b25-769966841b24 class="margin-0">last_name</a></td><td class="no-break-word">varchar(45)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b27cccbf-ed29-4fad-9078-af52e32592bb class="margin-0">address_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#beaf6fc0-bc6c-4d1c-8bdb-5ae6917f61c4 class="margin-0">email</a></td><td class="no-break-word">varchar(50)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#f3e61a6d-0004-472b-9851-0ada995edb21 class="margin-0">store_id</a></td><td class="no-break-word">smallint</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#eff9b0c8-3b1b-41da-8001-f783f24472e4 class="margin-0">active</a></td><td class="no-break-word">boolean</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#23119200-26f6-4d9d-ba2c-6cd1ce4b15da class="margin-0">username</a></td><td class="no-break-word">varchar(16)</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#18525dfd-00a9-4551-ac0b-29553335f313 class="margin-0">password</a></td><td class="no-break-word">varchar(40)</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#fecaf95f-5fcc-41f5-b47b-535927eff81e class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9b111c85-357c-45ec-bb11-9352aa248165 class="margin-0">picture</a></td><td class="no-break-word">bytea</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="560c7e58-38d3-4940-8fbb-e06ef1bf7f5b"></a>2.1.2.14.2.1 Column **staff\_id**
+### <a id="a51e34fa-1206-40ee-826d-2e3c727e86a6"></a>2.1.2.14.2.1 Column **staff\_id**
 
 ##### 2.1.2.14.2.1.1 **staff\_id** Tree Diagram
 
@@ -2446,9 +2517,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 ##### 2.1.2.14.2.1.2 **staff\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('staff_staff_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('staff_staff_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>staff_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="e52f6f1e-7b48-4a05-b32a-7535562442ee"></a>2.1.2.14.2.2 Column **first\_name**
+### <a id="b8c76e28-af63-4e5d-ad73-8eaee0358636"></a>2.1.2.14.2.2 Column **first\_name**
 
 ##### 2.1.2.14.2.2.1 **first\_name** Tree Diagram
 
@@ -2458,7 +2529,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>first_name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>45</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="1ac3b2fa-459c-4082-b719-9a0e3aa7a31d"></a>2.1.2.14.2.3 Column **last\_name**
+### <a id="45e8d09b-0e2f-4be0-8b25-769966841b24"></a>2.1.2.14.2.3 Column **last\_name**
 
 ##### 2.1.2.14.2.3.1 **last\_name** Tree Diagram
 
@@ -2468,7 +2539,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>last_name</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>45</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="cc17f266-01e7-412c-8b8a-c72e60749b3a"></a>2.1.2.14.2.4 Column **address\_id**
+### <a id="b27cccbf-ed29-4fad-9078-af52e32592bb"></a>2.1.2.14.2.4 Column **address\_id**
 
 ##### 2.1.2.14.2.4.1 **address\_id** Tree Diagram
 
@@ -2476,9 +2547,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 ##### 2.1.2.14.2.4.2 **address\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td></tr><tr><td>Foreign field</td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>staff_address_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td></tr><tr><td>Foreign field</td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>staff_address_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="c4dc2685-3ebb-42b0-963f-2fa1a665bd40"></a>2.1.2.14.2.5 Column **email**
+### <a id="beaf6fc0-bc6c-4d1c-8bdb-5ae6917f61c4"></a>2.1.2.14.2.5 Column **email**
 
 ##### 2.1.2.14.2.5.1 **email** Tree Diagram
 
@@ -2488,7 +2559,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>email</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>50</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="a4659132-d91b-4677-8723-c83ab78bd23b"></a>2.1.2.14.2.6 Column **store\_id**
+### <a id="f3e61a6d-0004-472b-9851-0ada995edb21"></a>2.1.2.14.2.6 Column **store\_id**
 
 ##### 2.1.2.14.2.6.1 **store\_id** Tree Diagram
 
@@ -2498,7 +2569,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>store_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="2dd91f53-acbb-49c6-84a7-90d04e4e7357"></a>2.1.2.14.2.7 Column **active**
+### <a id="eff9b0c8-3b1b-41da-8001-f783f24472e4"></a>2.1.2.14.2.7 Column **active**
 
 ##### 2.1.2.14.2.7.1 **active** Tree Diagram
 
@@ -2508,7 +2579,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>active</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>boolean</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>true</td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="34abe8f0-951b-44b7-9ae3-20aa2628b091"></a>2.1.2.14.2.8 Column **username**
+### <a id="23119200-26f6-4d9d-ba2c-6cd1ce4b15da"></a>2.1.2.14.2.8 Column **username**
 
 ##### 2.1.2.14.2.8.1 **username** Tree Diagram
 
@@ -2518,7 +2589,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>username</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>16</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="d91ed7c3-5bec-4b36-979a-6251f743a232"></a>2.1.2.14.2.9 Column **password**
+### <a id="18525dfd-00a9-4551-ac0b-29553335f313"></a>2.1.2.14.2.9 Column **password**
 
 ##### 2.1.2.14.2.9.1 **password** Tree Diagram
 
@@ -2528,7 +2599,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>password</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>char</td></tr><tr><td>Subtype</td><td>varchar</td></tr><tr><td>Length</td><td>40</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Collation rule</td><td></td></tr><tr><td>Not null</td><td>false</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Format</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="058f39eb-a9b4-449a-b227-24faa06313f2"></a>2.1.2.14.2.10 Column **last\_update**
+### <a id="fecaf95f-5fcc-41f5-b47b-535927eff81e"></a>2.1.2.14.2.10 Column **last\_update**
 
 ##### 2.1.2.14.2.10.1 **last\_update** Tree Diagram
 
@@ -2538,7 +2609,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>last_update</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>datetime</td></tr><tr><td>Subtype</td><td>timestamp</td></tr><tr><td>Precision</td><td></td></tr><tr><td>Timezone</td><td>WITHOUT TIME ZONE</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>now()</td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="360f2ade-4ada-441b-a985-d65912204249"></a>2.1.2.14.2.11 Column **picture**
+### <a id="9b111c85-357c-45ec-bb11-9352aa248165"></a>2.1.2.14.2.11 Column **picture**
 
 ##### 2.1.2.14.2.11.1 **picture** Tree Diagram
 
@@ -2550,7 +2621,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 ##### 2.1.2.14.3 **staff** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>staff_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>staff_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.14.4 **staff** Indexes
 
@@ -2573,7 +2644,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
     "title": "staff",
     "properties": {
         "staff_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('staff_staff_id_seq'::regclass)"
         },
         "first_name": {
             "type": "string"
@@ -2626,12 +2698,12 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
 
 ```
 {
-    "staff_id": -51,
+    "staff_id": "nextval('staff_staff_id_seq'::regclass)",
     "first_name": "Lorem",
     "last_name": "Lorem",
-    "address_id": 53,
+    "address_id": -43,
     "email": "Lorem",
-    "store_id": 4,
+    "store_id": 49,
     "active": true,
     "username": "Lorem",
     "password": "Lorem",
@@ -2651,14 +2723,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.staff (
-	staff_id integer NOT NULL,
+	staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL,
 	first_name varchar(45) NOT NULL,
 	last_name varchar(45) NOT NULL,
 	address_id smallint NOT NULL,
@@ -2682,17 +2759,17 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
  ON ONLY public.staff USING BTREE (staff_id pg_catalog.int4_ops ASC NULLS LAST) ;
 ```
 
-### <a id="85f75ef5-c06a-4f48-82af-def4d5f19ce0"></a>2.1.2.15 Table **store**
+### <a id="8176821a-9094-4225-bcaa-f9dac12ad71c"></a>2.1.2.15 Table **store**
 
 ##### 2.1.2.15.1 **store** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>store</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#8c92a9ee-e2d3-4c06-a29d-bf68772389f9><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Table</td><td>store</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Schema</td><td><a href=#897ddcc7-43d1-4aea-9274-7a9f48b816ca><span class="name-container">public</span></a></td></tr><tr><td>Additional properties</td><td>true</td></tr><tr><td>$ref</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Temporary</td><td>false</td></tr><tr><td>Unlogged</td><td>false</td></tr><tr><td>If not exists</td><td>true</td></tr><tr><td colspan="2"><b>Inherits parent tables</b></td></tr><tr><td>[1] Table name</td><td></td></tr><tr><td>Partition of</td><td></td></tr><tr><td>Partition bounds</td><td></td></tr><tr><td colspan="2"><b>Partitioning</b></td></tr><tr><td>[1] Partition method</td><td></td></tr><tr><td>Partition by</td><td></td></tr><tr><td>Partition key</td><td></td></tr><tr><td>Expression</td><td></td></tr><tr><td>Using method</td><td></td></tr><tr><td colspan="2"><b>Storage parameters</b></td></tr><tr><td>[1] Fill factor</td><td></td></tr><tr><td>Parallel workers</td><td></td></tr><tr><td>Enable autovacuum</td><td></td></tr><tr><td>Autovacuum params</td><td></td></tr><tr><td>Enable TOAST autovacuum</td><td></td></tr><tr><td>TOAST parameters</td><td></td></tr><tr><td>User catalog table</td><td></td></tr><tr><td>Tablespace</td><td>pg_default</td></tr><tr><td>As Select statement</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.15.2 **store** Column
 
-<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#a80b00e0-2640-45e0-86d5-148f9b942049 class="margin-0">store_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c8f5ab3e-076b-4f8c-8acc-33dd88423646 class="margin-0">manager_staff_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c2e6d966-0dd4-4986-8caf-1c2e6090a2c2 class="margin-0">address_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#5c6217f2-f20c-494b-b68f-f920d906790c class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Column</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#54407cd6-5b90-4cb1-8191-f04769f2ab66 class="margin-0">store_id</a></td><td class="no-break-word">integer</td><td>true</td><td>pk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#20367e10-8bc5-4077-8d52-a997510c6955 class="margin-0">manager_staff_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#6cb9296a-f35a-4d66-88b5-82603556ca6f class="margin-0">address_id</a></td><td class="no-break-word">smallint</td><td>true</td><td>fk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b77d288b-9532-431a-b58d-d84d9445fde0 class="margin-0">last_update</a></td><td class="no-break-word">timestamp</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="a80b00e0-2640-45e0-86d5-148f9b942049"></a>2.1.2.15.2.1 Column **store\_id**
+### <a id="54407cd6-5b90-4cb1-8191-f04769f2ab66"></a>2.1.2.15.2.1 Column **store\_id**
 
 ##### 2.1.2.15.2.1.1 **store\_id** Tree Diagram
 
@@ -2700,9 +2777,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
 
 ##### 2.1.2.15.2.1.2 **store\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>store_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('store_store_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>store_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>integer</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td>nextval('store_store_id_seq'::regclass)</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td colspan="2"><b><span>Primary key options</span></b></td></tr><tr><td><span><span>[1] Constraint name</span></span></td><td>store_pkey</td></tr><tr><td><span><span>Include non-key columns</span></span></td><td></td></tr><tr><td><span><span>With storage parameters</span></span></td><td></td></tr><tr><td><span><span>Tablespace</span></span></td><td></td></tr><tr><td><span><span>Comment</span></span></td><td><div class="docs-markdown"></div></td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="c8f5ab3e-076b-4f8c-8acc-33dd88423646"></a>2.1.2.15.2.2 Column **manager\_staff\_id**
+### <a id="20367e10-8bc5-4077-8d52-a997510c6955"></a>2.1.2.15.2.2 Column **manager\_staff\_id**
 
 ##### 2.1.2.15.2.2.1 **manager\_staff\_id** Tree Diagram
 
@@ -2710,9 +2787,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
 
 ##### 2.1.2.15.2.2.2 **manager\_staff\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>manager_staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td></tr><tr><td>Foreign field</td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>store_manager_staff_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>manager_staff_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td></tr><tr><td>Foreign field</td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>store_manager_staff_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="c2e6d966-0dd4-4986-8caf-1c2e6090a2c2"></a>2.1.2.15.2.3 Column **address\_id**
+### <a id="6cb9296a-f35a-4d66-88b5-82603556ca6f"></a>2.1.2.15.2.3 Column **address\_id**
 
 ##### 2.1.2.15.2.3.1 **address\_id** Tree Diagram
 
@@ -2720,9 +2797,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
 
 ##### 2.1.2.15.2.3.2 **address\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td></tr><tr><td>Foreign field</td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>store_address_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Business Name</td><td>address_id</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Subtype</td><td>smallint</td></tr><tr><td><span>Array type</span></td><td></td></tr><tr><td>Not null</td><td>true</td></tr><tr><td>Default</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Unique</td><td>false</td></tr><tr><td>Foreign table</td><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td></tr><tr><td>Foreign field</td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Relationship name</td><td>store_address_id_fkey</td></tr><tr><td>Cardinality</td><td>0..n</td></tr><tr><td>Unit</td><td></td></tr><tr><td>Min value</td><td></td></tr><tr><td>Excl min</td><td>false</td></tr><tr><td>Max value</td><td></td></tr><tr><td>Excl max</td><td>false</td></tr><tr><td>Multiple of</td><td></td></tr><tr><td>Divisible by</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Faker function</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Remarks</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
-### <a id="5c6217f2-f20c-494b-b68f-f920d906790c"></a>2.1.2.15.2.4 Column **last\_update**
+### <a id="b77d288b-9532-431a-b58d-d84d9445fde0"></a>2.1.2.15.2.4 Column **last\_update**
 
 ##### 2.1.2.15.2.4.1 **last\_update** Tree Diagram
 
@@ -2734,7 +2811,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
 
 ##### 2.1.2.15.3 **store** Composite keys
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td>store_pkey</td></tr><tr><td colspan="2"><b>Key</b></td></tr><tr><td></td><td>store_id</td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td colspan="2"><b>Primary key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td colspan="2"><b>Unique key</b></td></tr><tr><td>[1] Constraint name</td><td></td></tr><tr><td>Key</td><td></td></tr><tr><td>Include non-key columns</td><td></td></tr><tr><td>With storage parameters</td><td></td></tr><tr><td>Index tablespace</td><td></td></tr><tr><td>Comment</td><td></td></tr><tr><td>Nulls Distinct</td><td></td></tr></tbody></table>
 
 ##### 2.1.2.15.4 **store** Indexes
 
@@ -2761,7 +2838,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
     "title": "store",
     "properties": {
         "store_id": {
-            "type": "number"
+            "type": "number",
+            "default": "nextval('store_store_id_seq'::regclass)"
         },
         "manager_staff_id": {
             "type": "number"
@@ -2788,9 +2866,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
 
 ```
 {
-    "store_id": -63,
-    "manager_staff_id": 73,
-    "address_id": 64,
+    "store_id": "nextval('store_store_id_seq'::regclass)",
+    "manager_staff_id": 21,
+    "address_id": -91,
     "last_update": "now()"
 }
 ```
@@ -2807,14 +2885,19 @@ CREATE DATABASE dvdrental
 CREATE SCHEMA IF NOT EXISTS public;
 SET search_path TO public;
 
+/*
 CREATE TYPE public.mpaa_rating AS ENUM ('G', 'PG', 'PG-13', 'R', 'NC-17');
 
+ */
 
+/*
 CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
+ */
+
 CREATE TABLE IF NOT EXISTS public.store (
-	store_id integer NOT NULL,
+	store_id integer DEFAULT nextval('store_store_id_seq'::regclass) NOT NULL,
 	manager_staff_id smallint NOT NULL,
 	address_id smallint NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -3153,7 +3236,7 @@ CREATE DOMAIN public.year AS integer
 	CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
 
 CREATE TABLE IF NOT EXISTS public.actor (
-	actor_id integer NOT NULL,
+	actor_id integer DEFAULT nextval('actor_actor_id_seq'::regclass) NOT NULL,
 	first_name varchar(45) NOT NULL,
 	last_name varchar(45) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -3172,7 +3255,7 @@ CREATE INDEX IF NOT EXISTS idx_actor_last_name
  ON ONLY public.actor USING BTREE (last_name COLLATE pg_catalog."default" pg_catalog.text_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.country (
-	country_id integer NOT NULL,
+	country_id integer DEFAULT nextval('country_country_id_seq'::regclass) NOT NULL,
 	country varchar(50) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
 	CONSTRAINT country_pkey PRIMARY KEY (country_id)
@@ -3187,7 +3270,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS country_pkey
  ON ONLY public.country USING BTREE (country_id pg_catalog.int4_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.city (
-	city_id integer NOT NULL,
+	city_id integer DEFAULT nextval('city_city_id_seq'::regclass) NOT NULL,
 	city varchar(50) NOT NULL,
 	country_id smallint NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -3207,7 +3290,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_country_id
  ON ONLY public.city USING BTREE (country_id pg_catalog.int2_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.address (
-	address_id integer NOT NULL,
+	address_id integer DEFAULT nextval('address_address_id_seq'::regclass) NOT NULL,
 	address varchar(50) NOT NULL,
 	address2 varchar(50),
 	district varchar(20) NOT NULL,
@@ -3231,7 +3314,7 @@ CREATE INDEX IF NOT EXISTS idx_fk_city_id
  ON ONLY public.address USING BTREE (city_id pg_catalog.int2_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.category (
-	category_id integer NOT NULL,
+	category_id integer DEFAULT nextval('category_category_id_seq'::regclass) NOT NULL,
 	name varchar(25) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
 	CONSTRAINT category_pkey PRIMARY KEY (category_id)
@@ -3246,7 +3329,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS category_pkey
  ON ONLY public.category USING BTREE (category_id pg_catalog.int4_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.customer (
-	customer_id integer NOT NULL,
+	customer_id integer DEFAULT nextval('customer_customer_id_seq'::regclass) NOT NULL,
 	store_id smallint NOT NULL,
 	first_name varchar(45) NOT NULL,
 	last_name varchar(45) NOT NULL,
@@ -3278,7 +3361,7 @@ CREATE INDEX IF NOT EXISTS idx_last_name
  ON ONLY public.customer USING BTREE (last_name COLLATE pg_catalog."default" pg_catalog.text_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.language (
-	language_id integer NOT NULL,
+	language_id integer DEFAULT nextval('language_language_id_seq'::regclass) NOT NULL,
 	name char(20) NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
 	CONSTRAINT language_pkey PRIMARY KEY (language_id)
@@ -3293,7 +3376,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS language_pkey
  ON ONLY public.language USING BTREE (language_id pg_catalog.int4_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.film (
-	film_id integer NOT NULL,
+	film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL,
 	title varchar(255) NOT NULL,
 	description text,
 	release_year year,
@@ -3370,7 +3453,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS film_category_pkey
  ON ONLY public.film_category USING BTREE (film_id pg_catalog.int2_ops ASC NULLS LAST, category_id pg_catalog.int2_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.inventory (
-	inventory_id integer NOT NULL,
+	inventory_id integer DEFAULT nextval('inventory_inventory_id_seq'::regclass) NOT NULL,
 	film_id smallint NOT NULL,
 	store_id smallint NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -3390,7 +3473,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS inventory_pkey
  ON ONLY public.inventory USING BTREE (inventory_id pg_catalog.int4_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.staff (
-	staff_id integer NOT NULL,
+	staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL,
 	first_name varchar(45) NOT NULL,
 	last_name varchar(45) NOT NULL,
 	address_id smallint NOT NULL,
@@ -3414,7 +3497,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS staff_pkey
  ON ONLY public.staff USING BTREE (staff_id pg_catalog.int4_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.rental (
-	rental_id integer NOT NULL,
+	rental_id integer DEFAULT nextval('rental_rental_id_seq'::regclass) NOT NULL,
 	rental_date timestamp WITHOUT TIME ZONE NOT NULL,
 	inventory_id integer NOT NULL,
 	customer_id smallint NOT NULL,
@@ -3442,7 +3525,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS rental_pkey
  ON ONLY public.rental USING BTREE (rental_id pg_catalog.int4_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.payment (
-	payment_id integer NOT NULL,
+	payment_id integer DEFAULT nextval('payment_payment_id_seq'::regclass) NOT NULL,
 	customer_id smallint NOT NULL,
 	staff_id smallint NOT NULL,
 	rental_id integer NOT NULL,
@@ -3467,7 +3550,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS payment_pkey
  ON ONLY public.payment USING BTREE (payment_id pg_catalog.int4_ops ASC NULLS LAST) ;
 
 CREATE TABLE IF NOT EXISTS public.store (
-	store_id integer NOT NULL,
+	store_id integer DEFAULT nextval('store_store_id_seq'::regclass) NOT NULL,
 	manager_staff_id smallint NOT NULL,
 	address_id smallint NOT NULL,
 	last_update timestamp WITHOUT TIME ZONE DEFAULT E'now()' NOT NULL,
@@ -3599,256 +3682,256 @@ AS SELECT s.staff_id AS id,
 
 ##### 3\. Relationships
 
-### <a id="2bd3bded-9738-4e03-a35c-058a75f98379"></a>3.1 Relationship **customer\_address\_id\_fkey**
+### <a id="7c0679bd-9ada-4392-a42c-5ed9728ddf1f"></a>3.1 Relationship **customer\_address\_id\_fkey**
 
 ##### 3.1.1 **customer\_address\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image92.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image93.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td><td><a href=#ffa2b116-1fb8-4382-8a76-fd997a062702>address_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td><td><a href=#d619a0bf-f31e-4e12-953f-a98678814a79>address_id</a></td></tr></tbody></table>
 
 ##### 3.1.2 **customer\_address\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>customer_address_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td></tr><tr><td>Parent Column</td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td></tr><tr><td>Child Column</td><td><a href=#ffa2b116-1fb8-4382-8a76-fd997a062702>address_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>customer_address_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td></tr><tr><td>Parent Column</td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td></tr><tr><td>Child Column</td><td><a href=#d619a0bf-f31e-4e12-953f-a98678814a79>address_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="ead6efd9-0eb4-4a72-8b8b-607c60e5da5f"></a>3.2 Relationship **film\_actor\_actor\_id\_fkey**
+### <a id="99f1a9f3-4a81-4870-8364-cbe8786a8845"></a>3.2 Relationship **film\_actor\_actor\_id\_fkey**
 
 ##### 3.2.1 **film\_actor\_actor\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#a644f8c2-15e5-4846-8225-ed306ba5873f>actor</a></td><td><a href=#acedbe6a-40a4-4189-9485-342803c49a66>actor_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#12995ec4-0703-49c1-b60e-6440c746e21f>actor</a></td><td><a href=#c316c0d1-2b53-4ab8-b647-39adaf76bcdb>actor_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image94.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image95.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#cb5b2c61-95d8-4da0-bcc3-880a3892f328>film_actor</a></td><td><a href=#695c4084-c299-48b1-86e7-21474443dc3a>actor_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#de167e83-3ecf-4e27-a2f3-ec97e767f700>film_actor</a></td><td><a href=#42c2015b-6272-4b2e-8f6b-21520268d6a9>actor_id</a></td></tr></tbody></table>
 
 ##### 3.2.2 **film\_actor\_actor\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_actor_actor_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#a644f8c2-15e5-4846-8225-ed306ba5873f>actor</a></td></tr><tr><td>Parent Column</td><td><a href=#acedbe6a-40a4-4189-9485-342803c49a66>actor_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#cb5b2c61-95d8-4da0-bcc3-880a3892f328>film_actor</a></td></tr><tr><td>Child Column</td><td><a href=#695c4084-c299-48b1-86e7-21474443dc3a>actor_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_actor_actor_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#12995ec4-0703-49c1-b60e-6440c746e21f>actor</a></td></tr><tr><td>Parent Column</td><td><a href=#c316c0d1-2b53-4ab8-b647-39adaf76bcdb>actor_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#de167e83-3ecf-4e27-a2f3-ec97e767f700>film_actor</a></td></tr><tr><td>Child Column</td><td><a href=#42c2015b-6272-4b2e-8f6b-21520268d6a9>actor_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="7ac79d1b-7017-4b32-8a88-fa7eb5687837"></a>3.3 Relationship **film\_actor\_film\_id\_fkey**
+### <a id="16132864-a2f6-4f4f-9e06-3b417729e299"></a>3.3 Relationship **film\_actor\_film\_id\_fkey**
 
 ##### 3.3.1 **film\_actor\_film\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image96.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image97.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#cb5b2c61-95d8-4da0-bcc3-880a3892f328>film_actor</a></td><td><a href=#001c6082-1bb8-4fbc-8fa7-e941ac988ad6>film_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#de167e83-3ecf-4e27-a2f3-ec97e767f700>film_actor</a></td><td><a href=#24e4c1d6-739e-4568-bdc6-b7876bc233f5>film_id</a></td></tr></tbody></table>
 
 ##### 3.3.2 **film\_actor\_film\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_actor_film_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td></tr><tr><td>Parent Column</td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#cb5b2c61-95d8-4da0-bcc3-880a3892f328>film_actor</a></td></tr><tr><td>Child Column</td><td><a href=#001c6082-1bb8-4fbc-8fa7-e941ac988ad6>film_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_actor_film_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td></tr><tr><td>Parent Column</td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#de167e83-3ecf-4e27-a2f3-ec97e767f700>film_actor</a></td></tr><tr><td>Child Column</td><td><a href=#24e4c1d6-739e-4568-bdc6-b7876bc233f5>film_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="dbb171f0-2483-4fff-be6a-c38df6ac58f0"></a>3.4 Relationship **film\_category\_category\_id\_fkey**
+### <a id="edfe7bed-9753-49cc-bd26-2a0b463a8f25"></a>3.4 Relationship **film\_category\_category\_id\_fkey**
 
 ##### 3.4.1 **film\_category\_category\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#789cf183-cc88-4c3d-a501-e33917d0eb01>category</a></td><td><a href=#2c49bd48-b57b-4899-b016-5a7d7e80ab68>category_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#d17516ae-889d-409e-bc10-70c3b1681a80>category</a></td><td><a href=#8165529f-228d-4c69-9827-4e30b6154ab1>category_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image98.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image99.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#1e3cb3bc-7344-4ae0-b6ae-2cacfd023eed>film_category</a></td><td><a href=#75bba600-3af8-4867-a557-d2097c6d3893>category_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#fc0f7abe-ed0a-45eb-b0f8-a57067d76d7b>film_category</a></td><td><a href=#dbf8f011-75fe-4af8-9a4f-2e71751aea5b>category_id</a></td></tr></tbody></table>
 
 ##### 3.4.2 **film\_category\_category\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_category_category_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#789cf183-cc88-4c3d-a501-e33917d0eb01>category</a></td></tr><tr><td>Parent Column</td><td><a href=#2c49bd48-b57b-4899-b016-5a7d7e80ab68>category_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#1e3cb3bc-7344-4ae0-b6ae-2cacfd023eed>film_category</a></td></tr><tr><td>Child Column</td><td><a href=#75bba600-3af8-4867-a557-d2097c6d3893>category_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_category_category_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#d17516ae-889d-409e-bc10-70c3b1681a80>category</a></td></tr><tr><td>Parent Column</td><td><a href=#8165529f-228d-4c69-9827-4e30b6154ab1>category_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#fc0f7abe-ed0a-45eb-b0f8-a57067d76d7b>film_category</a></td></tr><tr><td>Child Column</td><td><a href=#dbf8f011-75fe-4af8-9a4f-2e71751aea5b>category_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="b254801a-2220-4155-b0f4-0923485cb61d"></a>3.5 Relationship **film\_category\_film\_id\_fkey**
+### <a id="58c19d23-e09d-488c-ad6a-1491745924c1"></a>3.5 Relationship **film\_category\_film\_id\_fkey**
 
 ##### 3.5.1 **film\_category\_film\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image100.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image101.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#1e3cb3bc-7344-4ae0-b6ae-2cacfd023eed>film_category</a></td><td><a href=#1a80a849-aba6-40d9-a32d-a18348ba2860>film_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#fc0f7abe-ed0a-45eb-b0f8-a57067d76d7b>film_category</a></td><td><a href=#62aac23d-b5f4-470e-b561-1acf10b41d8b>film_id</a></td></tr></tbody></table>
 
 ##### 3.5.2 **film\_category\_film\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_category_film_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td></tr><tr><td>Parent Column</td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#1e3cb3bc-7344-4ae0-b6ae-2cacfd023eed>film_category</a></td></tr><tr><td>Child Column</td><td><a href=#1a80a849-aba6-40d9-a32d-a18348ba2860>film_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_category_film_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td></tr><tr><td>Parent Column</td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#fc0f7abe-ed0a-45eb-b0f8-a57067d76d7b>film_category</a></td></tr><tr><td>Child Column</td><td><a href=#62aac23d-b5f4-470e-b561-1acf10b41d8b>film_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="c84ca40b-d570-474b-bf75-6f7e618e86f7"></a>3.6 Relationship **film\_language\_id\_fkey**
+### <a id="280bcf32-9bfd-436f-a0c8-62ca9a012bac"></a>3.6 Relationship **film\_language\_id\_fkey**
 
 ##### 3.6.1 **film\_language\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#fff3a07a-ee38-4160-bd2f-e74e5e81e21b>language</a></td><td><a href=#f18d93f4-f811-4655-8c76-bd6809b17ce5>language_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#3fda4fa5-1a52-4a1d-b115-c4942abc41af>language</a></td><td><a href=#8cb3cd01-a8b4-437e-af5f-47f834b426de>language_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image102.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image103.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td><td><a href=#946555bb-041a-49bb-8467-346a4545e632>language_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td><td><a href=#b564bc8a-cdc9-4519-9040-c5208eaf62bc>language_id</a></td></tr></tbody></table>
 
 ##### 3.6.2 **film\_language\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_language_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#fff3a07a-ee38-4160-bd2f-e74e5e81e21b>language</a></td></tr><tr><td>Parent Column</td><td><a href=#f18d93f4-f811-4655-8c76-bd6809b17ce5>language_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td></tr><tr><td>Child Column</td><td><a href=#946555bb-041a-49bb-8467-346a4545e632>language_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>film_language_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#3fda4fa5-1a52-4a1d-b115-c4942abc41af>language</a></td></tr><tr><td>Parent Column</td><td><a href=#8cb3cd01-a8b4-437e-af5f-47f834b426de>language_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td></tr><tr><td>Child Column</td><td><a href=#b564bc8a-cdc9-4519-9040-c5208eaf62bc>language_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="e67131b8-d77b-45c5-afde-ed9544260a89"></a>3.7 Relationship **fk\_address\_city**
+### <a id="58004f89-2a8b-4b38-a09f-daab5a7086be"></a>3.7 Relationship **fk\_address\_city**
 
 ##### 3.7.1 **fk\_address\_city** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#c05d2c42-e00e-415a-971f-22c18d55f97f>city</a></td><td><a href=#871554ba-67e9-4832-b04f-60bdff8215aa>city_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#5457ff81-7248-4bfd-9830-198cbd70a4cb>city</a></td><td><a href=#5896f6c3-f8a5-47ba-959e-60116fbe2a10>city_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image104.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image105.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td><td><a href=#8c62655c-1b38-49d4-8c4c-3a343a660b77>city_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td><td><a href=#058ed3cb-3777-40b3-a099-3fd84ba3266e>city_id</a></td></tr></tbody></table>
 
 ##### 3.7.2 **fk\_address\_city** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_address_city</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#c05d2c42-e00e-415a-971f-22c18d55f97f>city</a></td></tr><tr><td>Parent Column</td><td><a href=#871554ba-67e9-4832-b04f-60bdff8215aa>city_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td></tr><tr><td>Child Column</td><td><a href=#8c62655c-1b38-49d4-8c4c-3a343a660b77>city_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>NO ACTION</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_address_city</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#5457ff81-7248-4bfd-9830-198cbd70a4cb>city</a></td></tr><tr><td>Parent Column</td><td><a href=#5896f6c3-f8a5-47ba-959e-60116fbe2a10>city_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td></tr><tr><td>Child Column</td><td><a href=#058ed3cb-3777-40b3-a099-3fd84ba3266e>city_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>NO ACTION</td></tr></tbody></table>
 
-### <a id="5750e06d-6f1b-4d9e-8423-08f608d94d82"></a>3.8 Relationship **fk\_city**
+### <a id="38fbad69-758b-405b-97b5-3ca956a2c9a4"></a>3.8 Relationship **fk\_city**
 
 ##### 3.8.1 **fk\_city** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#7925937e-7fea-4e3a-863f-77665f19d042>country</a></td><td><a href=#7323fbe8-8a33-4446-9fc4-031ce2854d70>country_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#85a84cc3-2e3d-4317-9413-ed527375c353>country</a></td><td><a href=#56407eae-cd6b-42f8-b88f-b71761f84771>country_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image106.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image107.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#c05d2c42-e00e-415a-971f-22c18d55f97f>city</a></td><td><a href=#685ea6f7-66d5-48ac-9745-377a942046d2>country_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#5457ff81-7248-4bfd-9830-198cbd70a4cb>city</a></td><td><a href=#77cf6bae-c268-4424-adc9-1f2c30d5ffb3>country_id</a></td></tr></tbody></table>
 
 ##### 3.8.2 **fk\_city** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_city</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#7925937e-7fea-4e3a-863f-77665f19d042>country</a></td></tr><tr><td>Parent Column</td><td><a href=#7323fbe8-8a33-4446-9fc4-031ce2854d70>country_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#c05d2c42-e00e-415a-971f-22c18d55f97f>city</a></td></tr><tr><td>Child Column</td><td><a href=#685ea6f7-66d5-48ac-9745-377a942046d2>country_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>NO ACTION</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_city</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#85a84cc3-2e3d-4317-9413-ed527375c353>country</a></td></tr><tr><td>Parent Column</td><td><a href=#56407eae-cd6b-42f8-b88f-b71761f84771>country_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#5457ff81-7248-4bfd-9830-198cbd70a4cb>city</a></td></tr><tr><td>Child Column</td><td><a href=#77cf6bae-c268-4424-adc9-1f2c30d5ffb3>country_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>NO ACTION</td></tr></tbody></table>
 
-### <a id="cb7b9221-6da1-43e9-b03c-98092b7bd635"></a>3.9 Relationship **inventory\_film\_id\_fkey**
+### <a id="469adc8a-d5c1-4e04-a7d1-124261fe7547"></a>3.9 Relationship **inventory\_film\_id\_fkey**
 
 ##### 3.9.1 **inventory\_film\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image108.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image109.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#3d0ca03e-2684-4b5f-a3f3-2b65010b8684>inventory</a></td><td><a href=#8c8dacde-03b4-4c29-bd62-c478acf1ff64>film_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#64b84fd9-1d30-4358-a6cc-686b94391027>inventory</a></td><td><a href=#2f984ed4-7b99-410c-bcab-f21c6e3ab3cf>film_id</a></td></tr></tbody></table>
 
 ##### 3.9.2 **inventory\_film\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>inventory_film_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#fb72e0b7-8b07-454c-9e0d-1d58af79c2f0>film</a></td></tr><tr><td>Parent Column</td><td><a href=#ad18fc8e-08f8-46ed-8521-60338aa009d4>film_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#3d0ca03e-2684-4b5f-a3f3-2b65010b8684>inventory</a></td></tr><tr><td>Child Column</td><td><a href=#8c8dacde-03b4-4c29-bd62-c478acf1ff64>film_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>inventory_film_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#dd7e2b9a-2697-4b19-9958-f09736a6605b>film</a></td></tr><tr><td>Parent Column</td><td><a href=#87dce482-6de0-48a1-bf94-fc333d024b34>film_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#64b84fd9-1d30-4358-a6cc-686b94391027>inventory</a></td></tr><tr><td>Child Column</td><td><a href=#2f984ed4-7b99-410c-bcab-f21c6e3ab3cf>film_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="dc60def2-1fc6-411e-8ea1-919c1bfc97b6"></a>3.10 Relationship **payment\_customer\_id\_fkey**
+### <a id="c5f1bf31-40be-4908-adbf-67dd79cc8491"></a>3.10 Relationship **payment\_customer\_id\_fkey**
 
 ##### 3.10.1 **payment\_customer\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td><td><a href=#bc300628-33b0-4b3c-8ea1-6bbb1197af37>customer_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td><td><a href=#38df9cbb-3969-4c5e-a2fe-07ae7d34bbca>customer_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image110.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image111.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#d3acf652-5a65-4c88-9417-70f10f475419>payment</a></td><td><a href=#4e271486-9924-408e-a1d4-dff2a00bd44a>customer_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#2f15a28f-b928-44dd-9d7e-db4d339d1c4c>payment</a></td><td><a href=#393701ae-e3f3-4201-9eb6-7891a108a1cf>customer_id</a></td></tr></tbody></table>
 
 ##### 3.10.2 **payment\_customer\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>payment_customer_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td></tr><tr><td>Parent Column</td><td><a href=#bc300628-33b0-4b3c-8ea1-6bbb1197af37>customer_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#d3acf652-5a65-4c88-9417-70f10f475419>payment</a></td></tr><tr><td>Child Column</td><td><a href=#4e271486-9924-408e-a1d4-dff2a00bd44a>customer_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>payment_customer_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td></tr><tr><td>Parent Column</td><td><a href=#38df9cbb-3969-4c5e-a2fe-07ae7d34bbca>customer_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#2f15a28f-b928-44dd-9d7e-db4d339d1c4c>payment</a></td></tr><tr><td>Child Column</td><td><a href=#393701ae-e3f3-4201-9eb6-7891a108a1cf>customer_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="84673b66-8c66-40e8-891d-1d71a5f1956a"></a>3.11 Relationship **payment\_rental\_id\_fkey**
+### <a id="ac640273-37ce-4e9a-a25f-45e4313bca75"></a>3.11 Relationship **payment\_rental\_id\_fkey**
 
 ##### 3.11.1 **payment\_rental\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td><td><a href=#ce587fc8-b34c-4958-9c74-b3816e1296a5>rental_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td><td><a href=#652636cc-6c05-47b5-a8e1-cc307d8900a6>rental_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image112.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image113.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#d3acf652-5a65-4c88-9417-70f10f475419>payment</a></td><td><a href=#377bff0d-ff72-410a-ade6-60c20d2718cf>rental_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#2f15a28f-b928-44dd-9d7e-db4d339d1c4c>payment</a></td><td><a href=#3f501879-4293-4050-8103-cffa690842f9>rental_id</a></td></tr></tbody></table>
 
 ##### 3.11.2 **payment\_rental\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>payment_rental_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td></tr><tr><td>Parent Column</td><td><a href=#ce587fc8-b34c-4958-9c74-b3816e1296a5>rental_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#d3acf652-5a65-4c88-9417-70f10f475419>payment</a></td></tr><tr><td>Child Column</td><td><a href=#377bff0d-ff72-410a-ade6-60c20d2718cf>rental_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>SET NULL</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>payment_rental_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td></tr><tr><td>Parent Column</td><td><a href=#652636cc-6c05-47b5-a8e1-cc307d8900a6>rental_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#2f15a28f-b928-44dd-9d7e-db4d339d1c4c>payment</a></td></tr><tr><td>Child Column</td><td><a href=#3f501879-4293-4050-8103-cffa690842f9>rental_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>SET NULL</td></tr></tbody></table>
 
-### <a id="72735993-f024-46bc-b633-be42fb418d86"></a>3.12 Relationship **payment\_staff\_id\_fkey**
+### <a id="21031f2d-062f-4291-b80b-5cb49cfedcad"></a>3.12 Relationship **payment\_staff\_id\_fkey**
 
 ##### 3.12.1 **payment\_staff\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image114.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image115.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#d3acf652-5a65-4c88-9417-70f10f475419>payment</a></td><td><a href=#63fea071-2e5e-4310-aedc-5c3e3e18d8d0>staff_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#2f15a28f-b928-44dd-9d7e-db4d339d1c4c>payment</a></td><td><a href=#7bdcfd8b-fb0d-4282-a0da-eefb9657301e>staff_id</a></td></tr></tbody></table>
 
 ##### 3.12.2 **payment\_staff\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>payment_staff_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td></tr><tr><td>Parent Column</td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#d3acf652-5a65-4c88-9417-70f10f475419>payment</a></td></tr><tr><td>Child Column</td><td><a href=#63fea071-2e5e-4310-aedc-5c3e3e18d8d0>staff_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>payment_staff_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td></tr><tr><td>Parent Column</td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#2f15a28f-b928-44dd-9d7e-db4d339d1c4c>payment</a></td></tr><tr><td>Child Column</td><td><a href=#7bdcfd8b-fb0d-4282-a0da-eefb9657301e>staff_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="cb124150-9276-45ac-83db-63bdab50e297"></a>3.13 Relationship **rental\_customer\_id\_fkey**
+### <a id="bf1793fa-cf18-4f5f-86a6-b6e54a501105"></a>3.13 Relationship **rental\_customer\_id\_fkey**
 
 ##### 3.13.1 **rental\_customer\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td><td><a href=#bc300628-33b0-4b3c-8ea1-6bbb1197af37>customer_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td><td><a href=#38df9cbb-3969-4c5e-a2fe-07ae7d34bbca>customer_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image116.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image117.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td><td><a href=#819ecf15-b6a1-4481-af77-35fcf6f25f06>customer_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td><td><a href=#8488d139-6ead-4fb7-af5f-4b6cd8c7444c>customer_id</a></td></tr></tbody></table>
 
 ##### 3.13.2 **rental\_customer\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>rental_customer_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#700edd0e-9437-429b-bb95-b915ece3c9ef>customer</a></td></tr><tr><td>Parent Column</td><td><a href=#bc300628-33b0-4b3c-8ea1-6bbb1197af37>customer_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td></tr><tr><td>Child Column</td><td><a href=#819ecf15-b6a1-4481-af77-35fcf6f25f06>customer_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>rental_customer_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#7cbbdbd3-a215-4250-9c07-7da2e7ee6350>customer</a></td></tr><tr><td>Parent Column</td><td><a href=#38df9cbb-3969-4c5e-a2fe-07ae7d34bbca>customer_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td></tr><tr><td>Child Column</td><td><a href=#8488d139-6ead-4fb7-af5f-4b6cd8c7444c>customer_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="acc86a22-cbeb-482d-ac4b-8cccdc1cfe92"></a>3.14 Relationship **rental\_inventory\_id\_fkey**
+### <a id="b5982f5b-d641-43fb-a687-9f81b780a7c2"></a>3.14 Relationship **rental\_inventory\_id\_fkey**
 
 ##### 3.14.1 **rental\_inventory\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#3d0ca03e-2684-4b5f-a3f3-2b65010b8684>inventory</a></td><td><a href=#05067534-cf9c-4292-9bc8-b3ab58a917eb>inventory_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#64b84fd9-1d30-4358-a6cc-686b94391027>inventory</a></td><td><a href=#b00dadb0-34ed-4cb8-b010-c044638ef710>inventory_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image118.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image119.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td><td><a href=#b8ae6a3f-6c4c-42c6-94a1-13d4dd453613>inventory_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td><td><a href=#1e919eb3-6548-4245-9949-cdf999f02f98>inventory_id</a></td></tr></tbody></table>
 
 ##### 3.14.2 **rental\_inventory\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>rental_inventory_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#3d0ca03e-2684-4b5f-a3f3-2b65010b8684>inventory</a></td></tr><tr><td>Parent Column</td><td><a href=#05067534-cf9c-4292-9bc8-b3ab58a917eb>inventory_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td></tr><tr><td>Child Column</td><td><a href=#b8ae6a3f-6c4c-42c6-94a1-13d4dd453613>inventory_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>rental_inventory_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#64b84fd9-1d30-4358-a6cc-686b94391027>inventory</a></td></tr><tr><td>Parent Column</td><td><a href=#b00dadb0-34ed-4cb8-b010-c044638ef710>inventory_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td></tr><tr><td>Child Column</td><td><a href=#1e919eb3-6548-4245-9949-cdf999f02f98>inventory_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="c4fb3a4e-d570-4527-901f-cf78a9c19dd0"></a>3.15 Relationship **rental\_staff\_id\_key**
+### <a id="e9b40a66-d56c-4654-b5e5-329ee05f0199"></a>3.15 Relationship **rental\_staff\_id\_key**
 
 ##### 3.15.1 **rental\_staff\_id\_key** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image120.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image121.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td><td><a href=#1eb6e509-ad78-4099-9a75-d1b629b5b6f0>staff_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td><td><a href=#43e64f0c-8bdb-4ae6-b5d1-0e186182fdde>staff_id</a></td></tr></tbody></table>
 
 ##### 3.15.2 **rental\_staff\_id\_key** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>rental_staff_id_key</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td></tr><tr><td>Parent Column</td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#21074556-24a9-4dfa-8c7f-928f8d6eacdf>rental</a></td></tr><tr><td>Child Column</td><td><a href=#1eb6e509-ad78-4099-9a75-d1b629b5b6f0>staff_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>NO ACTION</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>rental_staff_id_key</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td></tr><tr><td>Parent Column</td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#1bb3d421-a527-4bdb-8b11-f700b692a221>rental</a></td></tr><tr><td>Child Column</td><td><a href=#43e64f0c-8bdb-4ae6-b5d1-0e186182fdde>staff_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>NO ACTION</td></tr></tbody></table>
 
-### <a id="a5f091b6-e482-417f-aaf8-639db8f6b287"></a>3.16 Relationship **staff\_address\_id\_fkey**
+### <a id="a1c344df-f791-459a-86c7-0651c571b2c6"></a>3.16 Relationship **staff\_address\_id\_fkey**
 
 ##### 3.16.1 **staff\_address\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image122.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image123.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td><td><a href=#cc17f266-01e7-412c-8b8a-c72e60749b3a>address_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td><td><a href=#b27cccbf-ed29-4fad-9078-af52e32592bb>address_id</a></td></tr></tbody></table>
 
 ##### 3.16.2 **staff\_address\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>staff_address_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td></tr><tr><td>Parent Column</td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td></tr><tr><td>Child Column</td><td><a href=#cc17f266-01e7-412c-8b8a-c72e60749b3a>address_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>staff_address_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td></tr><tr><td>Parent Column</td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td></tr><tr><td>Child Column</td><td><a href=#b27cccbf-ed29-4fad-9078-af52e32592bb>address_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="74720a08-2c9d-431e-b66d-2a87f01ae5dc"></a>3.17 Relationship **store\_address\_id\_fkey**
+### <a id="8102478d-dcda-467f-90a5-8e5d314cf29a"></a>3.17 Relationship **store\_address\_id\_fkey**
 
 ##### 3.17.1 **store\_address\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image124.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image125.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#85f75ef5-c06a-4f48-82af-def4d5f19ce0>store</a></td><td><a href=#c2e6d966-0dd4-4986-8caf-1c2e6090a2c2>address_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#8176821a-9094-4225-bcaa-f9dac12ad71c>store</a></td><td><a href=#6cb9296a-f35a-4d66-88b5-82603556ca6f>address_id</a></td></tr></tbody></table>
 
 ##### 3.17.2 **store\_address\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>store_address_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#7ea5a23c-a658-43f0-93f0-c4743a53cd24>address</a></td></tr><tr><td>Parent Column</td><td><a href=#5e470a92-5a46-48a4-8cf3-6918f6ef8932>address_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#85f75ef5-c06a-4f48-82af-def4d5f19ce0>store</a></td></tr><tr><td>Child Column</td><td><a href=#c2e6d966-0dd4-4986-8caf-1c2e6090a2c2>address_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>store_address_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#a0171d40-f35b-479b-add1-83772c27e67e>address</a></td></tr><tr><td>Parent Column</td><td><a href=#75e11297-d3ad-4cee-aaf9-37d08a9cfc14>address_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#8176821a-9094-4225-bcaa-f9dac12ad71c>store</a></td></tr><tr><td>Child Column</td><td><a href=#6cb9296a-f35a-4d66-88b5-82603556ca6f>address_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
-### <a id="aff31717-6bee-4ef6-9994-039fcc203adb"></a>3.18 Relationship **store\_manager\_staff\_id\_fkey**
+### <a id="157654f9-feaf-4eb9-8cc0-ee79caf27581"></a>3.18 Relationship **store\_manager\_staff\_id\_fkey**
 
 ##### 3.18.1 **store\_manager\_staff\_id\_fkey** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent Column</td></tr></thead><tbody><tr><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr></tbody></table>
 
 ![Hackolade image](/CLImodel-documentation-md/image126.png?raw=true)![Hackolade image](/CLImodel-documentation-md/image127.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#85f75ef5-c06a-4f48-82af-def4d5f19ce0>store</a></td><td><a href=#c8f5ab3e-076b-4f8c-8acc-33dd88423646>manager_staff_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child Column</td></tr></thead><tbody><tr><td><a href=#8176821a-9094-4225-bcaa-f9dac12ad71c>store</a></td><td><a href=#20367e10-8bc5-4077-8d52-a997510c6955>manager_staff_id</a></td></tr></tbody></table>
 
 ##### 3.18.2 **store\_manager\_staff\_id\_fkey** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>store_manager_staff_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#334f4020-0e8d-48db-b236-2b42475abd3f>staff</a></td></tr><tr><td>Parent Column</td><td><a href=#560c7e58-38d3-4940-8fbb-e06ef1bf7f5b>staff_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#85f75ef5-c06a-4f48-82af-def4d5f19ce0>store</a></td></tr><tr><td>Child Column</td><td><a href=#c8f5ab3e-076b-4f8c-8acc-33dd88423646>manager_staff_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>store_manager_staff_id_fkey</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Table</td><td><a href=#8153c88a-99e3-41ed-9185-2b63f90ecc48>staff</a></td></tr><tr><td>Parent Column</td><td><a href=#a51e34fa-1206-40ee-826d-2e3c727e86a6>staff_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Table</td><td><a href=#8176821a-9094-4225-bcaa-f9dac12ad71c>store</a></td></tr><tr><td>Child Column</td><td><a href=#20367e10-8bc5-4077-8d52-a997510c6955>manager_staff_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr><tr><td>relationshipOnDelete</td><td>RESTRICT</td></tr></tbody></table>
 
 ### <a id="edges"></a>
