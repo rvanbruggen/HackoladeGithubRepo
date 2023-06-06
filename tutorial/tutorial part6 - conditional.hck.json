@@ -1,0 +1,213 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "conditional1",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "country",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "dfadc69d-6bf8-41f6-bf88-d04bd9cdfbf0",
+                    "error": {}
+                },
+                {
+                    "name": "street_address",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "4e0e2d73-9dc5-43f4-9907-e8877c825a17",
+                    "error": {}
+                },
+                {
+                    "isActivated": true,
+                    "GUID": "2d577136-dcce-47dc-a9b6-81f3b35140c1",
+                    "name": "<conditional>",
+                    "type": "conditional",
+                    "properties": [
+                        {
+                            "GUID": "d5fbfd3d-67dd-4ccb-b5c3-5223a48244c5",
+                            "name": "if",
+                            "type": "conditionalItem",
+                            "conditional": "if",
+                            "properties": [
+                                {
+                                    "name": "country",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "7afbd093-7468-4272-80a9-4805d86fbe8d",
+                                    "const": "United States",
+                                    "error": {}
+                                }
+                            ],
+                            "hackoladeMeta": {
+                                "disableDelete": true
+                            }
+                        },
+                        {
+                            "GUID": "767e11bb-68b5-4042-8648-69c37f13dd70",
+                            "name": "then",
+                            "type": "conditionalItem",
+                            "conditional": "then",
+                            "properties": [
+                                {
+                                    "name": "postal_code",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "4fd58e7f-3d03-4aa3-a103-ff8a39fc4bc2",
+                                    "pattern": "[0-9]{5}(-[0-9]{4})?",
+                                    "error": {}
+                                }
+                            ],
+                            "hackoladeMeta": {
+                                "disableDelete": true
+                            }
+                        },
+                        {
+                            "GUID": "681cb0df-720d-4ca3-85e7-c114936d07cc",
+                            "name": "else",
+                            "type": "conditionalItem",
+                            "conditional": "else",
+                            "properties": [
+                                {
+                                    "name": "postal_code",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "7579b59e-07a5-4464-b769-e82504261a4e",
+                                    "pattern": "[A-Z][0-9][A-Z] [0-9][A-Z][0-9]",
+                                    "error": {}
+                                }
+                            ],
+                            "hackoladeMeta": {
+                                "disableDelete": true
+                            }
+                        }
+                    ],
+                    "displayName": "Conditional1",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "14e19efe-e87a-4e8e-9b59-98d4c5cdaf02"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "GUID": "37133a25-cce2-4b86-b6e1-720a5b148a3b",
+            "error": {}
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "37133a25-cce2-4b86-b6e1-720a5b148a3b": "conditional1",
+        "7afbd093-7468-4272-80a9-4805d86fbe8d": "country",
+        "4fd58e7f-3d03-4aa3-a103-ff8a39fc4bc2": "postal_code",
+        "7579b59e-07a5-4464-b769-e82504261a4e": "postal_code",
+        "4e0e2d73-9dc5-43f4-9907-e8877c825a17": "street_address",
+        "dfadc69d-6bf8-41f6-bf88-d04bd9cdfbf0": "country"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cea2eca9-90e0-410d-95da-f2a7281d156b"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "c9178741-9521-4d58-9351-2e548c004734"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "05b43eb9-0f87-4746-ab94-65fc15749188"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "JSON",
+    "dbVersion": "2020-12",
+    "appTarget": "JSON",
+    "creationTS": "2023-06-05T10:13:40.976Z",
+    "GUID": "d9e8de02-392e-4300-9bb6-4e5d25d12344",
+    "isLineageEnabled": true,
+    "lastModifTS": "2023-06-05T10:19:27.896Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.5"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "37133a25-cce2-4b86-b6e1-720a5b148a3b",
+                        "x": 1485,
+                        "y": 1506,
+                        "width": 275,
+                        "height": 159,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    }
+}

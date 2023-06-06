@@ -1,0 +1,318 @@
+{
+    "modelName": "Tutorial model 2",
+    "collections": [
+        {
+            "collectionName": "polymorphism / choices",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "color": "#555555",
+                    "GUID": "c8335fdb-8301-4c62-a471-2eeb247b61f5",
+                    "encrypt": false,
+                    "error": {}
+                },
+                {
+                    "name": "firstName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "GUID": "30f0b9a3-e286-42ee-9b4a-ec3dc5e6856d",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "GUID": "9bb77427-6c38-492b-b3f1-191470b57363",
+                    "name": "lastName",
+                    "error": {}
+                },
+                {
+                    "name": "addresses",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "billing",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "streetname",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "GUID": "9d918378-5b5d-41cf-8f83-69ea9d54a257",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "housenum",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "GUID": "672193e4-f020-4722-a4a4-ca3cdbd499c7",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "city",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "GUID": "25ce34de-765e-43e3-bd95-45196d91aba9",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "state",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "GUID": "7a99ea5b-08cb-40b6-a0b8-c84c2d215dd9",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "color": "#555555",
+                            "GUID": "aa47e6d0-18fa-41dd-be48-1b7d268c5863",
+                            "error": {}
+                        },
+                        {
+                            "type": "choice",
+                            "properties": [
+                                {
+                                    "subschema": true,
+                                    "isActivated": true,
+                                    "type": "document",
+                                    "GUID": "767fc7f9-cc20-456e-b7ab-270723ac218a",
+                                    "properties": [
+                                        {
+                                            "name": "streetname",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "color": "#555555",
+                                            "GUID": "cf0a8df4-a9a3-4579-b886-9b7930c14bf1",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "housenum",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "color": "#555555",
+                                            "GUID": "4c0c4f52-55d7-4ed5-84aa-690c224230f4",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "city",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "color": "#555555",
+                                            "GUID": "8333634a-47df-4b5b-a7c6-9e096c4e0338",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "state",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "color": "#555555",
+                                            "GUID": "18e31885-c9fa-4b09-8afc-9ed08d4757a0",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalProperties": true,
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "subschema": true,
+                                    "isActivated": true,
+                                    "type": "document",
+                                    "GUID": "95ca80a1-0a1a-4cd5-b2c1-59bf1eb3baa0",
+                                    "properties": [
+                                        {
+                                            "name": "shipping",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "color": "#555555",
+                                            "GUID": "77ca7834-541c-4128-bfc0-c9608d2e8ad8",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalProperties": true
+                                }
+                            ],
+                            "isActivated": true,
+                            "choice": "oneOf",
+                            "GUID": "8da8a1fe-bf05-46b5-9af6-9ac59567be4f",
+                            "hackoladeMeta": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "color": "#555555",
+                    "GUID": "3498711c-a51d-4bef-9cbd-741560c09e7f",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ad063223-1bf2-4ab4-b935-3718ae1edfcf"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "ff2f36c7-826e-4a82-b627-54ee834f11e2"
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "ff2f36c7-826e-4a82-b627-54ee834f11e2": "polymorphism / choices",
+        "c8335fdb-8301-4c62-a471-2eeb247b61f5": "id",
+        "30f0b9a3-e286-42ee-9b4a-ec3dc5e6856d": "firstName",
+        "9bb77427-6c38-492b-b3f1-191470b57363": "lastName",
+        "3498711c-a51d-4bef-9cbd-741560c09e7f": "addresses",
+        "aa47e6d0-18fa-41dd-be48-1b7d268c5863": "billing",
+        "9d918378-5b5d-41cf-8f83-69ea9d54a257": "streetname",
+        "672193e4-f020-4722-a4a4-ca3cdbd499c7": "housenum",
+        "25ce34de-765e-43e3-bd95-45196d91aba9": "city",
+        "7a99ea5b-08cb-40b6-a0b8-c84c2d215dd9": "state",
+        "cf0a8df4-a9a3-4579-b886-9b7930c14bf1": "streetname",
+        "4c0c4f52-55d7-4ed5-84aa-690c224230f4": "housenum",
+        "8333634a-47df-4b5b-a7c6-9e096c4e0338": "city",
+        "18e31885-c9fa-4b09-8afc-9ed08d4757a0": "state",
+        "77ca7834-541c-4128-bfc0-c9608d2e8ad8": "shipping",
+        "9aafaf2b-f4fb-4fa5-9a27-3ca81f1ad36c": "Copied from model",
+        "cbba2221-7267-45d0-990b-0dd8628dfdd5": "Copied from model(1)"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d3847dd8-d6d7-4f6d-ae69-46704bad1cde"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "3d6a1339-24cc-4ed8-8b38-c60dbba4961e"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "169f62bb-3379-4c19-85df-9835aea41807"
+    },
+    "sources": [
+        {
+            "GUID": "9aafaf2b-f4fb-4fa5-9a27-3ca81f1ad36c",
+            "sourceName": "Copied from model",
+            "lineageTimestamp": "2023-06-05 12:07:26 CEST",
+            "lineageSourceType": "Copy/Paste/Duplicate",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        },
+        {
+            "GUID": "cbba2221-7267-45d0-990b-0dd8628dfdd5",
+            "sourceName": "Copied from model(1)",
+            "lineageTimestamp": "2023-06-05 12:11:51 CEST",
+            "lineageSourceType": "Copy/Paste/Duplicate",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-06-05T09:58:20.179Z",
+    "GUID": "7e276bdc-1fd1-407f-b8b1-1b3dfc3dca78",
+    "isLineageEnabled": true,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        },
+        "customPropertiesUpdated": true
+    },
+    "lastModifTS": "2023-06-05T10:13:21.534Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.5"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "ff2f36c7-826e-4a82-b627-54ee834f11e2",
+                        "x": 1545,
+                        "y": 1669,
+                        "width": 256,
+                        "height": 339,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
