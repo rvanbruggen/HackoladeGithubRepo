@@ -1,0 +1,193 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "orders",
+    "additionalProperties": false,
+    "properties": {
+        "order_id": {
+            "type": "number",
+            "description": "unique order number.",
+            "examples": [
+                10440
+            ]
+        },
+        "customer_id": {
+            "type": "number",
+            "description": "same entry as in customers table.",
+            "examples": [
+                10
+            ]
+        },
+        "employee_id": {
+            "type": "number",
+            "description": "same entry as in employees table.",
+            "examples": [
+                4
+            ]
+        },
+        "order_date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "required_date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "shipped_date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "ship_via": {
+            "type": "number",
+            "description": "same as shipper id in shippers table.",
+            "examples": [
+                2
+            ]
+        },
+        "freight": {
+            "type": "number",
+            "examples": [
+                86.53
+            ]
+        },
+        "ship_name": {
+            "type": "string",
+            "description": "name of person or company to receive the shipment.",
+            "maxLength": 40,
+            "examples": [
+                "Save-a-lot Markets"
+            ]
+        },
+        "ship_address": {
+            "type": "string",
+            "description": "street address only -- no post-office box allowed.",
+            "maxLength": 60,
+            "examples": [
+                "187 Suffolk Ln."
+            ]
+        },
+        "ship_city": {
+            "type": "string",
+            "maxLength": 15,
+            "examples": [
+                "Boise"
+            ]
+        },
+        "ship_region": {
+            "type": "string",
+            "description": "state or province.",
+            "maxLength": 15,
+            "examples": [
+                "ID"
+            ]
+        },
+        "ship_postal_code": {
+            "type": "string",
+            "maxLength": 10,
+            "examples": [
+                "83720"
+            ]
+        },
+        "ship_country": {
+            "type": "string",
+            "maxLength": 15,
+            "examples": [
+                "USA"
+            ]
+        },
+        "order_details": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "unit_price": {
+                        "type": "number",
+                        "examples": [
+                            35.1
+                        ]
+                    },
+                    "quantity": {
+                        "type": "number",
+                        "examples": [
+                            15
+                        ]
+                    },
+                    "discount": {
+                        "type": "number",
+                        "examples": [
+                            0.25
+                        ]
+                    },
+                    "products": {
+                        "type": "object",
+                        "properties": {
+                            "product_id": {
+                                "type": "number",
+                                "description": "number automatically assigned to new product.",
+                                "examples": [
+                                    8
+                                ]
+                            },
+                            "product_name": {
+                                "type": "string",
+                                "maxLength": 40,
+                                "examples": [
+                                    "Northwoods Cranberry Sauce"
+                                ]
+                            },
+                            "supplier_id": {
+                                "type": "number",
+                                "description": "same entry as in suppliers table.",
+                                "examples": [
+                                    3
+                                ]
+                            },
+                            "category_id": {
+                                "type": "number",
+                                "description": "same entry as in categories table.",
+                                "examples": [
+                                    2
+                                ]
+                            },
+                            "quantity_per_unit": {
+                                "type": "string",
+                                "description": "(e.g., 24-count case, 1-liter bottle).",
+                                "maxLength": 20,
+                                "examples": [
+                                    "12 - 12 oz jars"
+                                ]
+                            },
+                            "unit_price": {
+                                "type": "number",
+                                "examples": [
+                                    40
+                                ]
+                            }
+                        },
+                        "additionalProperties": true,
+                        "required": [
+                            "product_id",
+                            "product_name",
+                            "supplier_id",
+                            "category_id",
+                            "unit_price"
+                        ]
+                    }
+                },
+                "additionalProperties": true,
+                "required": [
+                    "unit_price",
+                    "quantity",
+                    "discount",
+                    "products"
+                ]
+            }
+        }
+    },
+    "required": [
+        "order_id",
+        "customer_id",
+        "employee_id",
+        "order_date"
+    ]
+}

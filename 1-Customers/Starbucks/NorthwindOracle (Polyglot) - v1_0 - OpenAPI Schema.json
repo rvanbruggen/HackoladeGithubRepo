@@ -1,0 +1,2149 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Entities API",
+    "description": "This API provides access to Entity data.",
+    "termsOfService": "https://hackolade.com",
+    "contact": {
+      "name": "Pascal",
+      "url": "https://hackolade.com",
+      "email": "info@hackolade.com"
+    },
+    "license": {
+      "name": "License Terms",
+      "url": "https://hackolade.com/eulas.html"
+    },
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://www.prod.com/data/0.1",
+      "description": "Production server"
+    },
+    {
+      "url": "http://www.beta.com/data/0.1",
+      "description": "Beta server"
+    },
+    {
+      "url": "http://www.other.com/data/0.1",
+      "description": "Some other server"
+    }
+  ],
+  "paths": {
+    "/categories": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/categories"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/categories_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/categories/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/categories_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/categories"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/categories_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/categories_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/customers": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/customers"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/customers_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/customers/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/customers_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/customers"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/customers_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/customers_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/employees": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/employees"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/employees_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/employees/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/employees_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/employees"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/employees_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/employees_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/orders": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orders"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/orders_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/orders/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/orders_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orders"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/orders_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/orders_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/products": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/products"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/products_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/products_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/products"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/products_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/products_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/shippers": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/shippers"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/shippers_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/shippers/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/shippers_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/shippers"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/shippers_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/shippers_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/suppliers": {
+      "post": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create entity.",
+        "description": "Create a new entity resource.",
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/suppliers"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/suppliers_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/components/responses/Not_found"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    },
+    "/suppliers/{id}": {
+      "get": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Retrieve entity.",
+        "description": "Retrieve all the data for the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to retrieve",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/suppliers_-_OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Create or Update entity.",
+        "description": "Create a new or update an existing template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to create/update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Required input.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/suppliers"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/suppliers_-_OK"
+          },
+          "201": {
+            "$ref": "#/components/responses/suppliers_-_Created"
+          },
+          "400": {
+            "$ref": "#/components/responses/Bad_request"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Entity resource"
+        ],
+        "summary": "Delete entity.",
+        "description": "Delete the template resource.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the template to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/No_content"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/Not_found"
+          },
+          "500": {
+            "$ref": "#/components/responses/Internal_server_error"
+          }
+        },
+        "security": [
+          {
+            "basic_auth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Error code",
+            "example": "500"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the error",
+            "example": "A downstream system is not responding correctly."
+          }
+        }
+      },
+      "categories": {
+        "type": "object",
+        "required": [
+          "category_id",
+          "category_name"
+        ],
+        "properties": {
+          "category_id": {
+            "type": "number",
+            "format": "double",
+            "description": "number automatically assigned to a new category.",
+            "example": 2
+          },
+          "category_name": {
+            "type": "string",
+            "description": "name of food category.",
+            "maxLength": 15,
+            "example": "Beverages"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 2000,
+            "example": "Soft drinks, coffees, teas, beers, and ales"
+          },
+          "picture": {
+            "type": "string",
+            "description": "a picture representing the food category.",
+            "maxLength": 255,
+            "example": "beverages.gif"
+          }
+        },
+        "nullable": false
+      },
+      "customers": {
+        "type": "object",
+        "required": [
+          "customer_id",
+          "customer_code",
+          "company_name"
+        ],
+        "properties": {
+          "customer_id": {
+            "type": "number",
+            "format": "double",
+            "description": "unique five-character code based on customer name.",
+            "example": 10
+          },
+          "customer_code": {
+            "type": "string",
+            "maxLength": 5,
+            "example": "BOTTM"
+          },
+          "company_name": {
+            "type": "string",
+            "maxLength": 40,
+            "example": "Bottom-Dollar Markets"
+          },
+          "contact_name": {
+            "type": "string",
+            "maxLength": 30,
+            "example": "Elizabeth Lincoln"
+          },
+          "contact_title": {
+            "type": "string",
+            "maxLength": 30,
+            "example": "Accounting Manager"
+          },
+          "address": {
+            "type": "string",
+            "description": "street or post-office box.",
+            "maxLength": 60,
+            "example": "23 Tsawassen Blvd."
+          },
+          "city": {
+            "type": "string",
+            "maxLength": 15,
+            "example": "Tsawassen"
+          },
+          "region": {
+            "type": "string",
+            "description": "state or province.",
+            "maxLength": 15,
+            "example": "BC"
+          },
+          "postal_code": {
+            "type": "string",
+            "maxLength": 10,
+            "example": "T2F 8M4"
+          },
+          "country": {
+            "type": "string",
+            "maxLength": 15,
+            "example": "Canada"
+          },
+          "phone": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24,
+            "example": "(604) 555-4729"
+          },
+          "fax": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24,
+            "example": "(604) 555-3745"
+          }
+        },
+        "nullable": false
+      },
+      "employees": {
+        "type": "object",
+        "required": [
+          "employee_id",
+          "lastname",
+          "firstname"
+        ],
+        "properties": {
+          "employee_id": {
+            "type": "number",
+            "format": "double",
+            "description": "number automatically assigned to new employee."
+          },
+          "lastname": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "firstname": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "title": {
+            "type": "string",
+            "description": "employee",
+            "maxLength": 30
+          },
+          "title_of_courtesy": {
+            "type": "string",
+            "description": "title used in salutations.",
+            "maxLength": 25
+          },
+          "birthdate": {
+            "type": "string",
+            "format": "date"
+          },
+          "hiredate": {
+            "type": "string",
+            "format": "date"
+          },
+          "address": {
+            "type": "string",
+            "description": "street or post-office box.",
+            "maxLength": 60
+          },
+          "city": {
+            "type": "string",
+            "maxLength": 15
+          },
+          "region": {
+            "type": "string",
+            "description": "state or province.",
+            "maxLength": 15
+          },
+          "postal_code": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "country": {
+            "type": "string",
+            "maxLength": 15
+          },
+          "home_phone": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24
+          },
+          "extension": {
+            "type": "string",
+            "description": "internal telephone extension number.",
+            "maxLength": 4
+          },
+          "photo": {
+            "type": "string",
+            "description": "picture of employee.",
+            "maxLength": 255
+          },
+          "notes": {
+            "type": "string",
+            "description": "general information about employee",
+            "maxLength": 2000
+          },
+          "reports_to": {
+            "type": "number",
+            "format": "double",
+            "description": "employee"
+          }
+        },
+        "nullable": false
+      },
+      "orders": {
+        "type": "object",
+        "required": [
+          "order_id",
+          "customer_id",
+          "employee_id",
+          "order_date"
+        ],
+        "properties": {
+          "order_id": {
+            "type": "number",
+            "format": "double",
+            "description": "unique order number.",
+            "example": 10440
+          },
+          "customer_id": {
+            "type": "number",
+            "format": "double",
+            "description": "same entry as in customers table.",
+            "example": 10
+          },
+          "employee_id": {
+            "type": "number",
+            "format": "double",
+            "description": "same entry as in employees table.",
+            "example": 4
+          },
+          "order_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "required_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "shipped_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "ship_via": {
+            "type": "number",
+            "format": "double",
+            "description": "same as shipper id in shippers table.",
+            "example": 2
+          },
+          "freight": {
+            "type": "number",
+            "format": "double",
+            "example": 86.53
+          },
+          "ship_name": {
+            "type": "string",
+            "description": "name of person or company to receive the shipment.",
+            "maxLength": 40,
+            "example": "Save-a-lot Markets"
+          },
+          "ship_address": {
+            "type": "string",
+            "description": "street address only -- no post-office box allowed.",
+            "maxLength": 60,
+            "example": "187 Suffolk Ln."
+          },
+          "ship_city": {
+            "type": "string",
+            "maxLength": 15,
+            "example": "Boise"
+          },
+          "ship_region": {
+            "type": "string",
+            "description": "state or province.",
+            "maxLength": 15,
+            "example": "ID"
+          },
+          "ship_postal_code": {
+            "type": "string",
+            "maxLength": 10,
+            "example": "83720"
+          },
+          "ship_country": {
+            "type": "string",
+            "maxLength": 15,
+            "example": "USA"
+          },
+          "order_details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "unit_price",
+                "quantity",
+                "discount",
+                "products"
+              ],
+              "properties": {
+                "unit_price": {
+                  "type": "number",
+                  "format": "double",
+                  "example": 35.1
+                },
+                "quantity": {
+                  "type": "number",
+                  "format": "double",
+                  "example": 15
+                },
+                "discount": {
+                  "type": "number",
+                  "format": "double",
+                  "example": 0.25
+                },
+                "products": {
+                  "type": "object",
+                  "required": [
+                    "product_id",
+                    "product_name",
+                    "supplier_id",
+                    "category_id",
+                    "unit_price"
+                  ],
+                  "properties": {
+                    "product_id": {
+                      "type": "number",
+                      "format": "double",
+                      "description": "number automatically assigned to new product.",
+                      "example": 8
+                    },
+                    "product_name": {
+                      "type": "string",
+                      "maxLength": 40,
+                      "example": "Northwoods Cranberry Sauce"
+                    },
+                    "supplier_id": {
+                      "type": "number",
+                      "format": "double",
+                      "description": "same entry as in suppliers table.",
+                      "example": 3
+                    },
+                    "category_id": {
+                      "type": "number",
+                      "format": "double",
+                      "description": "same entry as in categories table.",
+                      "example": 2
+                    },
+                    "quantity_per_unit": {
+                      "type": "string",
+                      "description": "(e.g., 24-count case, 1-liter bottle).",
+                      "maxLength": 20,
+                      "example": "12 - 12 oz jars"
+                    },
+                    "unit_price": {
+                      "type": "number",
+                      "format": "double",
+                      "example": 40
+                    }
+                  },
+                  "additionalProperties": true,
+                  "nullable": false
+                }
+              },
+              "additionalProperties": true,
+              "nullable": false
+            },
+            "nullable": false
+          }
+        },
+        "nullable": false
+      },
+      "products": {
+        "type": "object",
+        "required": [
+          "product_id",
+          "product_name",
+          "supplier_id",
+          "category_id",
+          "unit_price",
+          "units_in_stock",
+          "units_on_order",
+          "reorder_level",
+          "discontinued"
+        ],
+        "properties": {
+          "product_id": {
+            "type": "number",
+            "format": "double",
+            "description": "number automatically assigned to new product.",
+            "example": 8
+          },
+          "product_name": {
+            "type": "string",
+            "maxLength": 40,
+            "example": "Northwoods Cranberry Sauce"
+          },
+          "supplier_id": {
+            "type": "number",
+            "format": "double",
+            "description": "same entry as in suppliers table.",
+            "example": 3
+          },
+          "category_id": {
+            "type": "number",
+            "format": "double",
+            "description": "same entry as in categories table.",
+            "example": 2
+          },
+          "quantity_per_unit": {
+            "type": "string",
+            "description": "(e.g., 24-count case, 1-liter bottle).",
+            "maxLength": 20,
+            "example": "12 - 12 oz jars"
+          },
+          "unit_price": {
+            "type": "number",
+            "format": "double",
+            "example": 40
+          },
+          "units_in_stock": {
+            "type": "number",
+            "format": "double",
+            "example": 6
+          },
+          "units_on_order": {
+            "type": "number",
+            "format": "double",
+            "example": 0
+          },
+          "reorder_level": {
+            "type": "number",
+            "format": "double",
+            "description": "minimum units to maintain in stock.",
+            "example": 0
+          },
+          "discontinued": {
+            "type": "string",
+            "description": "yes means item is no longer available.",
+            "default": "n",
+            "maxLength": 1,
+            "example": "N"
+          }
+        },
+        "nullable": false
+      },
+      "shippers": {
+        "type": "object",
+        "required": [
+          "shipper_id",
+          "company_name"
+        ],
+        "properties": {
+          "shipper_id": {
+            "type": "number",
+            "format": "double",
+            "description": "number automatically assigned to new shipper."
+          },
+          "company_name": {
+            "type": "string",
+            "description": "name of shipping company.",
+            "maxLength": 40
+          },
+          "phone": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24
+          }
+        },
+        "nullable": false
+      },
+      "suppliers": {
+        "type": "object",
+        "required": [
+          "supplier_id",
+          "company_name"
+        ],
+        "properties": {
+          "supplier_id": {
+            "type": "number",
+            "format": "double",
+            "description": "number automatically assigned to new supplier."
+          },
+          "company_name": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "contact_name": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "contact_title": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "address": {
+            "type": "string",
+            "description": "street or post-office box.",
+            "maxLength": 60
+          },
+          "city": {
+            "type": "string",
+            "maxLength": 15
+          },
+          "region": {
+            "type": "string",
+            "description": "state or province.",
+            "maxLength": 15
+          },
+          "postal_code": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "country": {
+            "type": "string",
+            "maxLength": 15
+          },
+          "phone": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24
+          },
+          "fax": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24
+          },
+          "home_page": {
+            "type": "string",
+            "description": "supplier",
+            "maxLength": 500
+          }
+        },
+        "nullable": false
+      }
+    },
+    "responses": {
+      "No_content": {
+        "description": ""
+      },
+      "Bad_request": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Unauthorized": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Forbidden": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Not_found": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Internal_server_error": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Error": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "categories_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "$ref": "#/components/schemas/categories"
+                }
+              }
+            }
+          }
+        }
+      },
+      "categories_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "$ref": "#/components/schemas/categories"
+                }
+              }
+            }
+          }
+        }
+      },
+      "customers_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customers": {
+                  "$ref": "#/components/schemas/customers"
+                }
+              }
+            }
+          }
+        }
+      },
+      "customers_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customers": {
+                  "$ref": "#/components/schemas/customers"
+                }
+              }
+            }
+          }
+        }
+      },
+      "employees_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "employees": {
+                  "$ref": "#/components/schemas/employees"
+                }
+              }
+            }
+          }
+        }
+      },
+      "employees_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "employees": {
+                  "$ref": "#/components/schemas/employees"
+                }
+              }
+            }
+          }
+        }
+      },
+      "orders_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "orders": {
+                  "$ref": "#/components/schemas/orders"
+                }
+              }
+            }
+          }
+        }
+      },
+      "orders_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "orders": {
+                  "$ref": "#/components/schemas/orders"
+                }
+              }
+            }
+          }
+        }
+      },
+      "products_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "products": {
+                  "$ref": "#/components/schemas/products"
+                }
+              }
+            }
+          }
+        }
+      },
+      "products_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "products": {
+                  "$ref": "#/components/schemas/products"
+                }
+              }
+            }
+          }
+        }
+      },
+      "shippers_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "shippers": {
+                  "$ref": "#/components/schemas/shippers"
+                }
+              }
+            }
+          }
+        }
+      },
+      "shippers_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "shippers": {
+                  "$ref": "#/components/schemas/shippers"
+                }
+              }
+            }
+          }
+        }
+      },
+      "suppliers_-_OK": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "suppliers": {
+                  "$ref": "#/components/schemas/suppliers"
+                }
+              }
+            }
+          }
+        }
+      },
+      "suppliers_-_Created": {
+        "description": "",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "suppliers": {
+                  "$ref": "#/components/schemas/suppliers"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "basic_auth": {
+        "scheme": "basic",
+        "type": "http"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Entity resource template",
+      "description": "CRUD to manage the Entity resources."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "products",
+    "additionalProperties": false,
+    "properties": {
+        "product_id": {
+            "type": "number",
+            "description": "number automatically assigned to new product.",
+            "examples": [
+                8
+            ]
+        },
+        "product_name": {
+            "type": "string",
+            "maxLength": 40,
+            "examples": [
+                "Northwoods Cranberry Sauce"
+            ]
+        },
+        "supplier_id": {
+            "type": "number",
+            "description": "same entry as in suppliers table.",
+            "examples": [
+                3
+            ]
+        },
+        "category_id": {
+            "type": "number",
+            "description": "same entry as in categories table.",
+            "examples": [
+                2
+            ]
+        },
+        "quantity_per_unit": {
+            "type": "string",
+            "description": "(e.g., 24-count case, 1-liter bottle).",
+            "maxLength": 20,
+            "examples": [
+                "12 - 12 oz jars"
+            ]
+        },
+        "unit_price": {
+            "type": "number",
+            "examples": [
+                40
+            ]
+        },
+        "units_in_stock": {
+            "type": "number",
+            "examples": [
+                6
+            ]
+        },
+        "units_on_order": {
+            "type": "number",
+            "examples": [
+                0
+            ]
+        },
+        "reorder_level": {
+            "type": "number",
+            "description": "minimum units to maintain in stock.",
+            "examples": [
+                0
+            ]
+        },
+        "discontinued": {
+            "type": "string",
+            "description": "yes means item is no longer available.",
+            "maxLength": 1,
+            "default": "n",
+            "examples": [
+                "N"
+            ]
+        }
+    },
+    "required": [
+        "product_id",
+        "product_name",
+        "supplier_id",
+        "category_id",
+        "unit_price",
+        "units_in_stock",
+        "units_on_order",
+        "reorder_level",
+        "discontinued"
+    ]
+}

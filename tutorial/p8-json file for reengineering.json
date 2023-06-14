@@ -1,0 +1,325 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "example4",
+    "properties": {
+        "web-app": {
+            "type": "object",
+            "properties": {
+                "servlet": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "servlet-name": {
+                                "type": "string",
+                                "examples": [
+                                    "cofaxTools"
+                                ]
+                            },
+                            "servlet-class": {
+                                "type": "string",
+                                "examples": [
+                                    "org.cofax.cms.CofaxToolsServlet"
+                                ]
+                            },
+                            "init-param": {
+                                "type": "object",
+                                "properties": {
+                                    "templatePath": {
+                                        "type": "string",
+                                        "examples": [
+                                            "toolstemplates/"
+                                        ]
+                                    },
+                                    "log": {
+                                        "type": "number",
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "logLocation": {
+                                        "type": "string",
+                                        "examples": [
+                                            "/usr/local/tomcat/logs/CofaxTools.log"
+                                        ]
+                                    },
+                                    "logMaxSize": {
+                                        "type": "string",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    },
+                                    "dataLog": {
+                                        "type": "number",
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "dataLogLocation": {
+                                        "type": "string",
+                                        "examples": [
+                                            "/usr/local/tomcat/logs/dataLog.log"
+                                        ]
+                                    },
+                                    "dataLogMaxSize": {
+                                        "type": "string",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    },
+                                    "removePageCache": {
+                                        "type": "string",
+                                        "examples": [
+                                            "/content/admin/remove?cache=pages&id="
+                                        ]
+                                    },
+                                    "removeTemplateCache": {
+                                        "type": "string",
+                                        "examples": [
+                                            "/content/admin/remove?cache=templates&id="
+                                        ]
+                                    },
+                                    "fileTransferFolder": {
+                                        "type": "string",
+                                        "examples": [
+                                            "/usr/local/tomcat/webapps/content/fileTransferFolder"
+                                        ]
+                                    },
+                                    "lookInContext": {
+                                        "type": "number",
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "adminGroupID": {
+                                        "type": "number",
+                                        "examples": [
+                                            4
+                                        ]
+                                    },
+                                    "betaServer": {
+                                        "type": "boolean",
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "jspFileTemplate": {
+                                        "type": "string"
+                                    },
+                                    "cachePackageTagsTrack": {
+                                        "type": "number"
+                                    },
+                                    "cachePackageTagsStore": {
+                                        "type": "number"
+                                    },
+                                    "cachePackageTagsRefresh": {
+                                        "type": "number"
+                                    },
+                                    "cacheTemplatesTrack": {
+                                        "type": "number"
+                                    },
+                                    "cacheTemplatesStore": {
+                                        "type": "number"
+                                    },
+                                    "cacheTemplatesRefresh": {
+                                        "type": "number"
+                                    },
+                                    "cachePagesTrack": {
+                                        "type": "number"
+                                    },
+                                    "cachePagesStore": {
+                                        "type": "number"
+                                    },
+                                    "cachePagesRefresh": {
+                                        "type": "number"
+                                    },
+                                    "cachePagesDirtyRead": {
+                                        "type": "number"
+                                    },
+                                    "searchEngineListTemplate": {
+                                        "type": "string"
+                                    },
+                                    "searchEngineFileTemplate": {
+                                        "type": "string"
+                                    },
+                                    "searchEngineRobotsDb": {
+                                        "type": "string"
+                                    },
+                                    "useDataStore": {
+                                        "type": "boolean"
+                                    },
+                                    "dataStoreClass": {
+                                        "type": "string"
+                                    },
+                                    "redirectionClass": {
+                                        "type": "string"
+                                    },
+                                    "dataStoreName": {
+                                        "type": "string"
+                                    },
+                                    "dataStoreDriver": {
+                                        "type": "string"
+                                    },
+                                    "dataStoreUrl": {
+                                        "type": "string"
+                                    },
+                                    "dataStoreUser": {
+                                        "type": "string"
+                                    },
+                                    "dataStorePassword": {
+                                        "type": "string"
+                                    },
+                                    "dataStoreTestQuery": {
+                                        "type": "string"
+                                    },
+                                    "dataStoreLogFile": {
+                                        "type": "string"
+                                    },
+                                    "dataStoreInitConns": {
+                                        "type": "number"
+                                    },
+                                    "dataStoreMaxConns": {
+                                        "type": "number"
+                                    },
+                                    "dataStoreConnUsageLimit": {
+                                        "type": "number"
+                                    },
+                                    "dataStoreLogLevel": {
+                                        "type": "string"
+                                    },
+                                    "maxUrlLength": {
+                                        "type": "number"
+                                    },
+                                    "configGlossary:adminEmail": {
+                                        "type": "string"
+                                    },
+                                    "configGlossary:installationAt": {
+                                        "type": "string"
+                                    },
+                                    "configGlossary:poweredBy": {
+                                        "type": "string"
+                                    },
+                                    "configGlossary:poweredByIcon": {
+                                        "type": "string"
+                                    },
+                                    "configGlossary:staticPath": {
+                                        "type": "string"
+                                    },
+                                    "defaultFileTemplate": {
+                                        "type": "string"
+                                    },
+                                    "defaultListTemplate": {
+                                        "type": "string"
+                                    },
+                                    "jspListTemplate": {
+                                        "type": "string"
+                                    },
+                                    "mailHost": {
+                                        "type": "string"
+                                    },
+                                    "mailHostOverride": {
+                                        "type": "string"
+                                    },
+                                    "templateLoaderClass": {
+                                        "type": "string"
+                                    },
+                                    "templateOverridePath": {
+                                        "type": "string"
+                                    },
+                                    "templateProcessorClass": {
+                                        "type": "string"
+                                    },
+                                    "useJSP": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true,
+                        "required": [
+                            "servlet-name",
+                            "servlet-class"
+                        ]
+                    }
+                },
+                "servlet-mapping": {
+                    "type": "object",
+                    "properties": {
+                        "cofaxCDS": {
+                            "type": "string",
+                            "examples": [
+                                "/"
+                            ]
+                        },
+                        "cofaxEmail": {
+                            "type": "string",
+                            "examples": [
+                                "/cofaxutil/aemail/*"
+                            ]
+                        },
+                        "cofaxAdmin": {
+                            "type": "string",
+                            "examples": [
+                                "/admin/*"
+                            ]
+                        },
+                        "fileServlet": {
+                            "type": "string",
+                            "examples": [
+                                "/static/*"
+                            ]
+                        },
+                        "cofaxTools": {
+                            "type": "string",
+                            "examples": [
+                                "/tools/*"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                        "cofaxCDS",
+                        "cofaxEmail",
+                        "cofaxAdmin",
+                        "fileServlet",
+                        "cofaxTools"
+                    ]
+                },
+                "taglib": {
+                    "type": "object",
+                    "properties": {
+                        "taglib-uri": {
+                            "type": "string",
+                            "examples": [
+                                "cofax.tld"
+                            ]
+                        },
+                        "taglib-location": {
+                            "type": "string",
+                            "examples": [
+                                "/WEB-INF/tlds/cofax.tld"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true,
+                    "required": [
+                        "taglib-uri",
+                        "taglib-location"
+                    ]
+                }
+            },
+            "additionalProperties": true,
+            "required": [
+                "servlet",
+                "servlet-mapping",
+                "taglib"
+            ]
+        }
+    },
+    "additionalProperties": true,
+    "required": [
+        "web-app"
+    ]
+}
