@@ -1,0 +1,48 @@
+type: object
+description: "This object will contain all phone and email information."
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This object indicates ways to communicate with a party."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    $ref: './enums/communication-type.yaml'
+  phoneNumber:
+    type: string
+    description: "This is the number used for the associated communication"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "555-555-5555"
+  phoneExtension:
+    type: string
+    description: "A phone extension is a short number, usually between one and five digits, that is assigned to a specific area of a business. It uses the main business number as the source number and then extends to other employees and departments. Many large businesses with multiple employees and departments utilize phone extensions."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "12345"
+  phoneTypeCode:
+    type: string
+    description: "This is the type of phone number provided (ie mobile, fax, residential, etc)"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Residential"
+    enum:
+      - Business
+      - Fax
+      - Mobile
+      - Residential
+  emailAddress:
+    type: string
+    description: "This is an electronic address"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "test@libertymutual.com"
+  allowedForMarketing:
+    type: boolean
+    description: "Indicates whether this contact method can be used for Marketing purposes. If '1' (TRUE) the contact method can be used for marketing purposes."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD

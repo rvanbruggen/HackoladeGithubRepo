@@ -1,0 +1,26 @@
+type: object
+description: "This object depicts about the course information details for drivers. This helps with providing discounts to the driver."
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS_NEXT_VERSION
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific training instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  courseName:
+    type: string
+    description: "Name of the course."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    example: ""
+  completedDate:
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-02-23"
+    description: "Date of completion, of the certificate."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION

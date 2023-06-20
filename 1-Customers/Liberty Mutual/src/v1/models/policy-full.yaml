@@ -1,0 +1,37 @@
+description: This object defines the details of a policy.
+allOf:
+  - $ref: './base-policy.yaml'
+  - type: object
+    properties:
+      lineOfBusinessCode:
+        $ref: './components/enums/lob.yaml'
+      building:
+        description: ""
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        $ref: './components/building.yaml'
+      additionalLocations:
+        type: array
+        description: "Locations covered under this policy that are not the primary building or dwelling"
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './components/location.yaml'
+      driver:
+        type: array
+        description: "This object will contain all driver information."
+        x-lob: AUTO
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './components/driver.yaml'
+      vehicle:
+        type: array
+        description: "This object will contain all vehicle information."
+        x-lob: AUTO
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './components/vehicle.yaml'
+
+

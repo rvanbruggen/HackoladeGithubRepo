@@ -1,0 +1,54 @@
+type: object
+description: heating
+title: heating
+properties:
+  typeCode:
+    description: A code defining in more detail the specific type of structure defined by the structure type code
+    type: string
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Primary
+      - Supplemental
+    example: Primary
+  constructionTypeCode:
+    description: A code indicating the type of material used in this structure
+    type: string
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Additional Furnace
+      - Ceiling Heat Electric Radiant
+      - Electric General
+      - Electric Thermal Storage Unit
+      - Forced Air with Returns Multi Zoned
+      - Freestanding Wood Pellet Coal Stove
+      - Gas Forced Air
+      - Gas General
+      - Gas Hot Water
+      - Geothermal System Closed Loop
+      - Geothermal System Open Loop
+      - Heating Electric Baseboard
+      - Heating System Avg Cost
+      - Heat Pump
+      - Hydronic Heat Multi Zoned
+      - None
+      - Oil Forced Air
+      - Oil General
+      - Oil Hot Water
+      - Propane Forced Air
+      - Propane Hot Water
+      - Radiant Water
+      - Solar Heating Device
+      - Unit Gas Heater
+    example: Additional Furnace
+  installationTypeCode:
+    description: A code indicating the type of installation method in this structure
+    type: string
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Non Professional
+      - Professional
+      - Unknown
+    example: Professional

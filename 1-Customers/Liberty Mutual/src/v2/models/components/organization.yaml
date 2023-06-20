@@ -1,0 +1,30 @@
+type: object
+description: "This is the high level party object that other party/roles will inherit."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific party instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  address:
+    $ref: './address.yaml'
+  communications:
+    type: array
+    description: "This object will contain all phone and email information."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './communication.yaml'
+  legalEntityName:
+    type: string
+    description: "The legal designated name of this company or organization."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: TRUSTCO INC
+  commonName:
+    type: string
+    description: "The commonly used name of this company or organization"
+    x-lam-status: 
+    x-acord-status: NON_ACORD
+    example: "TrustCo"

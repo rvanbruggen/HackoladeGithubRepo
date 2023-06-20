@@ -1,0 +1,38 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific scheduled item."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "a7a61451-5bd0-4953-83cb-f0f125245a42"
+  typeCode:
+    $ref: './enums/scheduled-item-type.yaml'
+  description:
+    type: string
+    description: "Description of scheduled item."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Chicago"
+  fullPremium:
+    type: number
+    description: "The total gross amount that is for the current term, including premiums, plus taxes, fees, discounts, surcharges, etc."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "98"
+  limit:
+    description: "Limit contains elements that are used to describe the amount, and how it is applied, for the extent of the scheduled item."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    $ref: './limit.yaml'
+  purchasedDate:
+    description: "The date that this item was purchased"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2022-02-01"
+  valuation:
+    $ref: './valuation.yaml'

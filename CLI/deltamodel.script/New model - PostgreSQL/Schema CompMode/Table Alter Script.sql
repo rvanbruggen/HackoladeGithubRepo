@@ -1,5 +1,3 @@
-
-
 CREATE TABLE IF NOT EXISTS public.language (
 	language_id integer DEFAULT nextval('language_language_id_seq'::regclass) NOT NULL,
 	name char(20) NOT NULL,
@@ -11,6 +9,38 @@ CREATE TRIGGER last_updated BEFORE UPDATE
 	ON public.language
 	FOR EACH ROW
 	EXECUTE FUNCTION last_updated();
+
+-- ALTER TABLE IF EXISTS public.actor DROP CONSTRAINT IF EXISTS actor_pkey;
+
+-- ALTER TABLE IF EXISTS public.address DROP CONSTRAINT IF EXISTS address_pkey;
+
+-- ALTER TABLE IF EXISTS public.category DROP CONSTRAINT IF EXISTS category_pkey;
+
+-- ALTER TABLE IF EXISTS public.city DROP CONSTRAINT IF EXISTS city_pkey;
+
+-- ALTER TABLE IF EXISTS public.country DROP CONSTRAINT IF EXISTS country_pkey;
+
+-- ALTER TABLE IF EXISTS public.customer DROP CONSTRAINT IF EXISTS customer_pkey;
+
+-- ALTER TABLE IF EXISTS public.film DROP CONSTRAINT IF EXISTS film_pkey;
+
+-- ALTER TABLE IF EXISTS public.film_actor DROP CONSTRAINT IF EXISTS film_actor_pkey;
+
+ALTER TABLE IF EXISTS public.film_actor ADD CONSTRAINT film_actor_pkey PRIMARY KEY;
+
+-- ALTER TABLE IF EXISTS public.film_category DROP CONSTRAINT IF EXISTS film_category_pkey;
+
+ALTER TABLE IF EXISTS public.film_category ADD CONSTRAINT film_category_pkey PRIMARY KEY;
+
+-- ALTER TABLE IF EXISTS public.inventory DROP CONSTRAINT IF EXISTS inventory_pkey;
+
+-- ALTER TABLE IF EXISTS public.payment DROP CONSTRAINT IF EXISTS payment_pkey;
+
+-- ALTER TABLE IF EXISTS public.rental DROP CONSTRAINT IF EXISTS rental_pkey;
+
+-- ALTER TABLE IF EXISTS public.staff DROP CONSTRAINT IF EXISTS staff_pkey;
+
+-- ALTER TABLE IF EXISTS public.store DROP CONSTRAINT IF EXISTS store_pkey;
 
 ALTER TABLE IF EXISTS public.actor ALTER COLUMN actor_id SET DATA TYPE integer(32);
 
@@ -121,3 +151,5 @@ ALTER TABLE IF EXISTS public.store ALTER COLUMN manager_staff_id SET DATA TYPE s
 ALTER TABLE IF EXISTS public.store ALTER COLUMN address_id SET DATA TYPE smallint(16);
 
 ALTER TABLE IF EXISTS public.store ALTER COLUMN last_update SET DATA TYPE timestamp;
+
+ALTER TABLE IF EXISTS public.film ADD CONSTRAINT film_language_id_fkey FOREIGN KEY (language_id) REFERENCES public.language(language_id) MATCH SIMPLE ON DELETE RESTRICT ON UPDATE CASCADE;

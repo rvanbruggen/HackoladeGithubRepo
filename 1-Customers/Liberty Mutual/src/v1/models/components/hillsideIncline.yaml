@@ -1,0 +1,25 @@
+type: object
+x-lob:
+  - HOME
+  - RENTER
+description: "If the dwelling is on a hillside, this element identifies the degree of the incline."
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS_NEXT_VERSION
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific hillside instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "33fc21eb-7bb7-4af7-a56e-1df61e709dbc"
+  typeCode:
+    description: A code defining in more detail the specific type of hillside.
+    type: string
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Moderate
+      - Slight
+      - Steep
+    example: Steep

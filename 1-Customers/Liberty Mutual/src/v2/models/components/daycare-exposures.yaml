@@ -1,0 +1,53 @@
+type: object
+description: "On Premises Daycare Exposures"
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific daycare exposure instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  operatingHours:
+    type: string
+    description: "Represents operating hours when daycare services are provided on the premises"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Evenings
+      - Full Day
+      - Partial Day
+      - Twenty Four Hours
+    example: Full Day
+  questionAnswers:
+    type: array
+    description: "This indicates the questions required at the business exposure."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: "This is a unique identifier for this specific business exposure question answer instance."
+          x-lam-status: APPROVED
+          x-acord-status: ACORD_NGDS
+          example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+        questionCode:
+          type: string
+          description: "Questions of the Daycare Exposures"
+          x-lam-status: APPROVED
+          x-acord-status: ACORD_NGDS
+          enum:
+            - Exceeded Children Or Adults Limit
+            - Non Domesticated Animals
+            - Owned Dogs
+            - Licensed Provider
+            - Supplies Medications
+            - Transportation
+          example: Supplies Medications
+        answerCode:
+          $ref: './enums/answer-code.yaml'

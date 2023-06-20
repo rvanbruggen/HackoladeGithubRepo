@@ -1,0 +1,15 @@
+type: object
+description: "This object will contain information regarding identification associated to a specific party"
+properties:
+  typeCode:
+    type: string
+    description: "A code identifying individual type of unique identification. For example, in the USA: SSN or FEIN."
+    x-acord-status: ACORD_NGDS
+    enum:
+      - SSN
+    example: "SSN"
+  typeId:
+    type: string
+    description: "This is the unique Identifier for the party with whom partyIdentity is associated."
+    x-acord-status: ACORD_NGDS
+    example: "A89763547"

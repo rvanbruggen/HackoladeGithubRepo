@@ -1,0 +1,33 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    description: "This object provides information regarding building improvements."
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "Types of improvement."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Electrial
+      - Heating
+      - Plumbing
+      - Roof
+    example: plumbing
+  description:
+    type: string
+    description: "This briefs about the selected typeCode i.e. type of improvement expected."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Reason for change"
+  yearCompleted:
+    type: integer
+    description: "Briefs about the year of completion for the specific improvement."
+    pattern: '\d{4}'
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: 2009

@@ -1,0 +1,339 @@
+openapi: 3.1.0
+info:
+  title: Liberty Acord Model (LAM)
+  description: Liberty take of acord NGDS
+  version: 1.75.2
+  contact:
+    name: LM Next Gen Digital Standards Policy Team
+paths: {}
+
+tags:
+  - name: gettingstarted
+    x-displayName: Getting Started
+    description: "todo: getting info from LAM team"
+  - name: versionHistory
+    x-displayName: Version History
+    description: "Coming Soon"
+  - name: legend
+    x-displayName: Image Legend
+    description: " |
+    <table>
+      <tr>
+        <td>Image</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td>![LAM Approved](/images/rubberstamp.png 'Approved from LAM team')</td>
+        <td>Approved from LAM team</td>
+      </tr>
+      <tr>
+        <td>![In Acord NGDS](/images/ok.png 'In Acord NGDS')</td>
+        <td>In Acord NGDS</td>
+      </tr>
+      <tr>
+        <td>![In Acord PC XML](/images/warning.png 'Not in NGDS, but in PC XML. Guessing field in NGDS.')</td>
+        <td>Not in NGDS, but in PC XML. Guessing field in NGDS.</td>
+      </tr>
+      <tr>
+        <td>![Not in Acord](/images/error.png 'Not in NGDS and PC XML. Custom extension')</td>
+        <td>Not in NGDS and PC XML. Custom extension</td>
+      </tr>
+      <tr>
+        <td>![Acord NGDS Next Version](/images/new.png 'In next version of NGDS standards')</td>
+        <td>In next version of NGDS standards</td>
+      </tr>
+      <tr>
+        <td>![Auto Icon](/images/auto.png 'Auto - Line of Business')</td>
+        <td>Auto - Line of Business</td>
+      </tr>
+       <tr>
+        <td>![Home Icon](/images/home.png 'Home - Line of Business')</td>
+        <td>Home - Line of Business</td>
+      </tr>
+      <tr>
+        <td>![Auto Icon](/images/auto.png 'Motorcycle - Line of Business')</td>
+        <td>Motorcycle - Line of Business</td>
+      </tr>
+      <tr>
+        <td>![Auto Icon](/images/auto.png 'Recreational Vehicle - Line of Business')</td>
+        <td>Recreational Vehicle - Line of Business</td>
+      </tr>
+      <tr>
+        <td>![Renters Icon](/images/renters.png 'Render - Line of Business')</td>
+        <td>Renter - Line of Business</td>
+      </tr>
+      <tr>
+        <td>![Auto Icon](/images/auto.png 'Watercraft - Line of Business')</td>
+        <td>Watercraft - Line of Business</td>
+      </tr>
+    </table>"
+  - name: building
+    x-displayName: building
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/building" />
+  - name: driver
+    x-displayName: driver
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/driver" />
+  - name: license
+    x-displayName: license
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/license" />
+  - name: address
+    x-displayName: address
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/address" />
+  - name: vehicle
+    x-displayName: vehicle
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/vehicle" />
+  - name: coverage
+    x-displayName: coverage
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/coverage" />
+  - name: coverageAvailable
+    x-displayName: coverageAvailable
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/coverage-available" />
+  - name: limit
+    x-displayName: limit
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/limit" />
+  - name: deductible
+    x-displayName: deductible
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/deductible" />
+  - name: insured
+    x-displayName: insured
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/insured" />
+  - name: insurer
+    x-displayName: insurer
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/insurer" />
+  - name: communication
+    x-displayName: communication
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/communication" />
+  - name: contact
+    x-displayName: contact
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/contact" />
+  - name: claim
+    x-displayName: claim
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/claim-full" />
+  - name: party
+    x-displayName: party
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/party-full" />
+  - name: additionalInterests
+    x-displayName: additionalInterests
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/additionalInterests" />
+  - name: additionalExposures
+    x-displayName: additionalExposures
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/additionalExposures" />
+  - name: employee
+    x-displayName: employee
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/employee" />
+  - name: loss
+    x-displayName: loss
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/loss" />
+  - name: partyRole
+    x-displayName: partyRole
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/party-role" />
+  - name: person
+    x-displayName: person
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/person" />
+  - name: producer
+    x-displayName: producer
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/producer" />
+  - name: note
+    x-displayName: note
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/note" />
+  - name: underwritingDecision
+    x-displayName: underwritingDecision
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/underwriting-decision" />
+  - name: accident
+    x-displayName: accident
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/accident" />
+  - name: violation
+    x-displayName: violation
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/violation" />
+  - name: form
+    x-displayName: form
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/form" />
+  - name: otherOrPriorPolicy
+    x-displayName: otherOrPriorPolicy
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/otherOrPriorPolicy" />
+  - name: policy
+    x-displayName: policy
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/policy-full" />
+  - name: quote
+    x-displayName: quote
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/quote-full" />
+  - name: auto
+    x-displayName: auto
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/policy-auto" />
+  - name: home
+    x-displayName: home
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/policy-home" />
+  - name: motorcycle
+    x-displayName: motorcycle
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/policy-motorcycle" />
+  - name: recreationalVehicle
+    x-displayName: recreationalVehicle
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/policy-recreational-vehicle" />
+  - name: renters
+    x-displayName: renters
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/policy-renters" />
+  - name: watercraft
+    x-displayName: watercraft
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/policy-watercraft" />
+  - name: amountItem
+    x-displayName: amountItem
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/amount-item" />
+  - name: hillsideIncline
+    x-displayName: hillsideIncline
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/hillsideIncline" />
+  - name: structure
+    x-displayName: structure
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/structure" />
+  - name: improvement
+    x-displayName: improvement
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/improvement" />
+  - name: lessor
+    x-displayName: lessor
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/lessor" />
+  - name: payee
+    x-displayName: payee
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/payee" />
+  - name: scheduledItem
+    x-displayName: scheduledItem
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/scheduled-item" />
+  - name: training
+    x-displayName: training
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/training" />
+  - name: creditScore
+    x-displayName: creditScore
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/creditScore" />
+  - name: transaction
+    x-displayName: transaction
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/transaction" />
+x-tagGroups:
+  - name: Basic Information
+    tags:
+      - gettingstarted
+      - versionHistory
+      - legend
+  - name: Domain Model
+    tags:
+      - claim
+      - party
+      - policy
+  - name: LOB Models
+    tags:
+      - auto
+      - home
+      - motorcycle
+      - recreationalVehicle
+      - renters
+      - watercraft
+  - name: Data Dictionary
+    tags:
+      - accident
+      - address
+      - additionalExposures
+      - additionalInterests
+      - amountItem
+      - building
+      - communication
+      - contact
+      - coverage
+      - coverageAvailable
+      - creditScore
+      - deductible
+      - driver
+      - employee
+      - form
+      - hillsideIncline
+      - improvement
+      - insured
+      - insurer
+      - lessor
+      - loss
+      - license
+      - limit
+      - note
+      - otherOrPriorPolicy
+      - partyRole
+      - payee
+      - person
+      - producer
+      - reference
+      - scheduledItem
+      - structure
+      - training
+      - transaction
+      - underwritingDecision
+      - vehicle
+      - violation
+components:
+  schemas:
+    quote:
+      $ref: './models/quote-full.yaml'
+    policy:
+      $ref: './models/policy-full.yaml'
+    claim:
+      $ref: './models/claim-full.yaml'
+    renters:
+      $ref: './models/policy-renters.yaml'
+    home:
+      $ref: './models/policy-home.yaml'
+    auto:
+      $ref: './models/policy-auto.yaml'
+    motorcycle:
+      $ref: './models/policy-motorcycle.yaml'
+    recreationalVehicle:
+      $ref: './models/policy-recreational-vehicle.yaml'
+    watercraft:
+      $ref: './models/policy-watercraft.yaml'
+    party:
+      $ref: './models/party-full.yaml'
+    producer:
+      $ref: './models/components/producer-full.yaml'
+    additionalInterests:
+      $ref: './models/components/additional-interests.yaml'
+    additionalExposures:
+      $ref: './models/components/additional-exposures.yaml'

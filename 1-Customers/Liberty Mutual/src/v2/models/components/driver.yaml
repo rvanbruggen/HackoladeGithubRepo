@@ -1,0 +1,49 @@
+allOf:
+  - $ref: './person.yaml'
+  - type: object
+    properties:
+      id:
+        type: string
+        format: uuid
+        description: "This is the unique identifier for this specific driver instance."
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+      typeCode:
+        $ref: './enums/driver-type.yaml'
+      accidents:
+        type: array
+        description: "This holds information about accidents/violations and automobile losses, whether related to an accident or violation or not. The aggregate should be repeated for describing multiple accidents, violations and/or losses."
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_PC_XML
+        items:
+          $ref: './accident.yaml'
+      courses:
+        type: array
+        description: "This object depicts about the course information details for drivers. This helps with providing discounts to the driver."
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS_NEXT_VERSION
+        items:
+          $ref: './training.yaml'
+      coverages:
+        type: array
+        description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits. This is selected coverages."
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './coverage.yaml'
+      licenses:
+        type: array
+        x-lob: AUTO
+        description: "The license information for each license for a producer or a product provider.Licenses are issued by state. Some states require separate licensing for soliciting and selling. It is not uncommon for an agent in one state to also be licensed in bordering states."
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './license.yaml'
+      violations:
+        type: array
+        description: "This holds information about accidents/violations and automobile losses, whether related to an accident or violation or not. The aggregate should be repeated for describing multiple accidents, violations and/or losses."
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_PC_XML
+        items:
+          $ref: './violation.yaml'

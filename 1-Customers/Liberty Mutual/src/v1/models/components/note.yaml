@@ -1,0 +1,43 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific note instance."
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "Indicates about types of notes."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    enum:
+      - Billing
+      - Policy
+      - Underwriting
+      - Mail
+      - Underwriting Flag
+    example: Policy
+  entryBy:
+    description: "This object depicts about the employee details."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './employee.yaml'
+  description:
+    description: "Description about the note type selected."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    example: "Note Content goes here."
+  entryDateTime:
+    description: "Entry date of the note. Effective date of the policy in UTC. Format: see date-time rule in RFC 3339"
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date-time
+    example: "2020-11-18T17:30:09Z"
+  subject:
+    description: "The title of the note."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    example: "Note Title goes here."

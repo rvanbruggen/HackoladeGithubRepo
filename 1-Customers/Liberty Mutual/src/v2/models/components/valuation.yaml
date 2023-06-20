@@ -1,0 +1,33 @@
+type: object
+description: "Represents the outcome of a monetary value determination of a scheduled item"
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific valuation instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "This method used to determine the item's value"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    x-extensible-enum:
+      - Appraisal
+      - Sales Receipt
+      - Catalogue or Trade Book
+      - Prior Carrier
+  effectiveDate:
+    description: "The date on which this valuation was made."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  value:
+    $ref: "./amount-item.yaml" 
+    description: "A dollar amount representing the value of the item"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS

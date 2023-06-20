@@ -1,0 +1,18 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific affinity client."
+    x-lam-status: 
+    x-acord-status: NON_ACORD
+    example: "a7a61451-5bd0-4953-83cb-f0f125245a42"
+  number:
+    type: string
+    description: "This is the unique client number for this specific affinity client assigned by the carrier"
+    x-lam-status: 
+    x-acord-status: NON_ACORD
+  organization:
+    description: "This is the organization details for the affinity client"
+    x-lam-status: 
+    $ref: './organization.yaml'

@@ -1,0 +1,156 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific address instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "a7a61451-5bd0-4953-83cb-f0f125245a42"
+  typeCode:
+    $ref: './enums/address-type.yaml'
+  city:
+    type: string
+    description: "This is the City name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Chicago"
+  countryName:
+    type: string
+    description: "The name of the specific country of the postal address. The specific values may be name/description of country"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "USA"
+  latitude:
+    type: string
+    description: "Angular distance north or south from the earth's equator measured through 90 degrees."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "43.98"
+  line1:
+    type: string
+    description: "This is the first line of the address in free form text."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "1 Maple St."
+  line2:
+    type: string
+    description: "This is the second line of the address in free form text."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Apt 3"
+  line3:
+    type: string
+    description: "This is the third line of the address in free form text."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: ""
+  line4:
+    type: string
+    description: "This is the fourth line of the address in free form text."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: ""
+  longitude:
+    type: string
+    description: "The arc or portion of the earth's equator intersected between the meridian of a given place and the prime meridian and expressed in degrees."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "54.98"
+  postalCode:
+    type: string
+    description: "This is a series of letters or digits or both, sometimes including spaces or punctuation, included in a postal address for the purpose of sorting mail."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "60629-2717"
+  rateTerritory:
+    type: string
+    description: "6-digit rate territory value used in pricing which are specific to each jurisdiction"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    pattern: '\d{6}'
+    example: "041245"
+  rateTerritorySourceCode:
+    type: string
+    description: "Rate territory value pertaining to a geographic location for the source.<br />
+    <ul>
+    <li>Vendor: Results returned from Vendor. </li>
+    <li>Overridden: User overridden value </li></ul>"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    enum:
+      - Overidden
+      - Vendor
+    example: Vendor
+  stateOrProvinceCode:
+    $ref: './enums/jurisdiction-us.yaml'
+  streetName:
+    type: string
+    description: "This is the name of the street on which this property is located."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Maple"
+  streetNumber:
+    type: string
+    description: "This is the numbered or lettered location of this property on a specific street."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "1"
+  streetTypeCode:
+    type: string
+    description: "A code indicating the type of street. The source of the code list is the USPS Suffix List or the ISO Street Type abbreviations list."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Ave
+      - Dr
+      - Ln
+      - St
+  subRegionCode:
+    type: string
+    description: "This is used to further group geographical areas. This is the county code."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "04"
+  subRegionSourceCode:
+    type: string
+    description: "This defines the source of where the information for the subregion code. This is used for the county code <br />
+    <ul>
+    <li>Vendor: Results returned from Vendor. </li>
+    <li>Overridden: User overridden value </li></ul>"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    enum:
+      - Overidden
+      - Vendor
+    example: Vendor
+  subRegionName:
+    type: string
+    description: "This is used to further group geographical areas. This fields is used to store the county"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "McLean"
+  taxTerritory:
+    type: string
+    description: "TaxTerritory pertaining to a geographic location"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "04"
+  taxTerritorySourceCode:
+    type: string
+    description: "TaxTerritory pertaining to a geographic location is the information where it came from. <br />
+    <ul>
+    <li>Vendor: Results returned from Vendor. </li>
+    <li>Overridden: User overridden value </li></ul>"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    enum:
+      - Overidden
+      - Vendor
+    example: Vendor
+  unitNumber:
+    type: string
+    description: "The apartment number, condo unit number, office suite number, or other such identifier for a building or a portion thereof."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "125"

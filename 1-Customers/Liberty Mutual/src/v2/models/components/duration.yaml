@@ -1,0 +1,13 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "Duration represents the amount of time a task is expected to take. "
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  number:
+    type: integer
+    description: "The number of units, the meaning of which is implied by its usage."
+    example: "60"
+  unitCode:
+    $ref: './enums/interval.yaml'

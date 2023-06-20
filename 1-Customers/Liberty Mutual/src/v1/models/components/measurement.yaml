@@ -1,0 +1,43 @@
+type: object
+x-lob:
+  - HOME
+  - RENTER
+description: "This depicts about the actual area's of the premises."
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "Unique identifier for a specific measurement, instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "33fc21eb-7bb7-4af7-a56e-1df61e709dbc"
+  number:
+    type: integer
+    description: "The number of units, the meaning of which is implied by its usage."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "4"
+  unitCode:
+    type: string
+    description: "This specifies the unit of measure for a number of units. This can hold such values as miles, miles per hour, horsepower, CC, inches, feet, meters, kilometers, etc."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Weeks"
+  typeCode:
+    type: string
+    description: "This specifies in more detail the length of time defined by the number and unit code"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Duration
+      - Statute Of Limitations
+    example: "Duration"
+  coveredLossType:
+    type: array
+    description: "This is the set of loss types for which the constraints applies."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      $ref: './enums/applies-to-code-covered-loss-type.yaml'

@@ -1,0 +1,51 @@
+type: object
+description: "This aggregate contains details related to an underwriting decision. <br />
+![Image](https://acord-canonical-model-test.us-east-1.np.paas.lmig.com/images/new.png)"
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This attribute is an identifier to a specific element."
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  decisionCode:
+    type: string
+    description: "A code used to identify the underwriting decision made by the underwriter."
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Accept
+      - Hold
+      - Refer
+      - Reject
+    example: Accept
+  description:
+    type: string
+    description: "The description information about the underwriting decision"
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+  effectiveDate:
+    description: "The date on which this underwriting decision was made on."
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  statusCode:
+    type: string
+    description: "A code used to identify the underwriting status made by the underwriter."
+    x-acord-status: NON_ACORD
+    enum:
+      - Complete
+      - Submitted
+      - Not Submitted
+    example: Complete
+  subject:
+    description: "The title of the note."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    example: "Note Title goes here."
+  entryBy:
+    description: "This object depicts about the employee details."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './employee.yaml'

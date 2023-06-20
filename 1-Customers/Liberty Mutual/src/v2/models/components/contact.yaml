@@ -1,0 +1,25 @@
+type: object
+description: "This object represents a party for which all communication will be done through"
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific contact instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  communications:
+    type: array
+    description: "This is an association to the communication method used for this contact"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './communication.yaml'
+  fullName:
+    type: string
+    description: "This is the full name of the party."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Sam Jones"

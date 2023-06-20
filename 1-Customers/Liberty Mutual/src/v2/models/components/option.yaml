@@ -1,0 +1,50 @@
+type: object
+description: "Explains the characteristics of how a benefit effects a coverage "
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific option instance. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "This identifies the type of option."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Coordination of Medical Benefits
+      - Definition
+      - Economic Only Indicator
+      - Exclusion
+      - Liberty Mutual Managed Care
+      - Optional Bodily Injury
+      - Peril
+      - PIP Copayment Percentage
+      - PIP Level
+      - Settlement Type
+      - Spousal Liability Indicator
+      - Supplementary Uninsured
+      - Third Party Stacking Indicator
+      - Waiver of Collision Deductible Indicator
+      - Work Loss Exclusion
+  description:
+    type: string
+    description: "Free form text that describes the option"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Home Day Care Exclusion"
+  modifiers:
+    type: array
+    description: "For benefits, this represents a list of coverages that this particular product modifies"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './reference-product.yaml'
+  text:
+    type: string
+    description: "Provides the data associated with a particular option when coded values and/or numeric values are not applicable."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "true"

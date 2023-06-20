@@ -1,0 +1,38 @@
+type: object
+description: "Describes a credit/discount/surcharge/modification. "
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This attribute is an identifier to a specific element. "
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "Type of credit or surcharge"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    enum:
+      - Credit
+      - Surcharge
+    example: Credit
+  productCode:
+    type: string
+    description: "This is a carrier assigned code used to identify the object that contains this property. Because the code is assigned by a carrier, it is typically used in conjunction with a CarrierCode to create a unique reference."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "100121"
+  productName:
+    type: string
+    description: "This field provides name of the Policy Product. "
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "Good Student Discount"
+  versionNumber:
+    type: number
+    format: double
+    description: "This is the version history of the independent product."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "2.0" 

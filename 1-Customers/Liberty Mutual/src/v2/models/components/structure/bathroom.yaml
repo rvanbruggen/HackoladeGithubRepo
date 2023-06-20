@@ -1,0 +1,30 @@
+type: object
+description: Bathroom
+title: bathroom
+properties:
+  typeCode:
+    description: A code defining in more detail the specific type of structure defined by the structure type code
+    type: string
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Full
+      - Half
+      - Three Quarter
+    example: Full
+  constructionClassCode:
+    description: A code indicating the quality of the building, part of the building or an item
+    type: string
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Luxury
+      - Premium
+      - Standard
+    example: Standard    
+  number:
+    description: The amount of the structures.
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    type: number
+    example: 2

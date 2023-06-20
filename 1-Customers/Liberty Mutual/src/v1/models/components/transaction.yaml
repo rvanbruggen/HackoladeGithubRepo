@@ -1,0 +1,45 @@
+type: object
+description: "An transaction is a business event having a monetary impact on the financial statements of a business. It is recorded in the accounting records of the business."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific transaction instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  businessDate:
+    description: "This represents the date on which the dispersal of information sent to the customer and business. This maybe different then the effectiveDate or createdDate."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  businessPurposeCode:
+    $ref: './enums/business-purpose-code.yaml'
+  createdDate:
+    description: "This represents the date on which the sender prepared the transaction for delivery."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    format: date-time
+    example: "2023-05-23T15:51:31.000Z"
+  effectiveDate:
+    description: "This represents the date on which the transaction takes effect."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  premiums:
+    type: array
+    description: "This represents the amount of difference of premium for the individual transaction"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './premium.yaml'
+  sequenceNumber:
+    description: "This field details the order in which similar object types appear."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    type: integer
+    example: 0

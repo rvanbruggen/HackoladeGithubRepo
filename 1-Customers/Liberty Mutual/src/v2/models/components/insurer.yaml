@@ -1,0 +1,32 @@
+type: object
+description: "This is association to insurer entity."
+x-releaseCreated: 2.1.0
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific insurer instance."
+    x-releaseCreated: 2.1.0
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "a7a61451-5bd0-4953-83cb-f0f125245a42"
+  commonName:
+    type: string
+    description: "The commonly used name of this company or organization"
+    x-lam-status: 
+    x-acord-status: NON_ACORD
+    example: "TrustCo"  
+  legalEntityName:
+    type: string
+    description: "The legal designated name of this company or organization."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: TRUSTCO INC
+  NAIC:
+    description: "The National Association of Insurance Commissioners (NAIC) provides expertise, data, and analysis for insurance commissioners to effectively regulate the industry and protect consumers. This stores the number."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: integer
+    example: 21458

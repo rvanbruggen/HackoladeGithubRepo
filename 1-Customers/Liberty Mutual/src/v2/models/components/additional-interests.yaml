@@ -1,0 +1,30 @@
+type: object
+description: "The additionalInterest object is used to contain information relating to persons or parties other than the Insured whom, for one reason or another, have an interest in this risk unit."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific party instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  account:
+    description: "This is the account details of the additional interest"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './account.yaml'
+  organization:
+    description: "This is the organization details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './organization.yaml'
+  person:
+    description: "This is the person details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './person.yaml'
+  typeCode:
+    description: "This is any potential role this party may play. The seperate resource object(s) may be put in here at implmenetiaton time inplace of this object."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './enums/additional-interest-code.yaml'

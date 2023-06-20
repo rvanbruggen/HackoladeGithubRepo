@@ -1,0 +1,53 @@
+type: string
+description: "A code to clarify the driver's relationship to the policy if the relationship is informational in nature (e.g. excluded driver, unlicensed driver, etc.). 
+        <table>
+            <tr>
+                 <td>LAM</td>
+                 <td>Safeco Value</td>
+                 <td>Safeco Code</td>
+                 <td>Liberty Value</td>
+                 <td>Liberty Code</td>
+                 <td>Description</td>
+            </tr>
+            <tr>
+                 <td>Deferred</td>
+                 <td>Deferred (MA)</td>
+                 <td>D</td>
+                 <td>Deferred (MA)</td>
+                 <td>04</td>
+                 <td>Deferred driver means they will not be a covered operator on your policy this can be because they have their own & separate auto insurance policy or they do not have a valid driver’s license.</td>
+            </tr>
+            <tr>
+                 <td>Excluded</td>
+                 <td>Excluded / Driver Affidavit (KS)</td>
+                 <td>E</td>
+                 <td>Restricted</td>
+                 <td>03</td>
+                 <td>Excluded driver refers to a driver whom you ask your auto insurance company not to cover. <br /> This can be used to exclude a problem operator who is not a named insured from an account when. Required by state or provincial law in lieu of terminations or Used to save a long-term policyholder otherwise subject to termination, where permitted by law</td>
+            </tr>
+            <tr>
+                 <td>Rated</td>
+                 <td>Rated</td>
+                 <td>R</td>
+                 <td>Listed</td>
+                 <td>01</td>
+                 <td>A rated driver is a member of your household who is of driving age and covered by the policy when using the insured car(s).</td>
+            </tr>
+            <tr>
+                 <td>Unrated</td>
+                 <td>Non-Rated \ Listed(CA/NY/NC/VA)</td>
+                 <td>N</td>
+                 <td>Unlisted</td>
+                 <td>02</td>
+                 <td>As soon as your young driver's gets a permit, you should call your agent. They will be added to your policy as a non-rated driver. This means there is coverage if they are involved in an accident but you are not charged for them being listed on your policy</td>
+            </tr>
+         </table>
+"
+x-lam-status: APPROVED
+x-acord-status: ACORD_PC_XML
+example: "Restricted"
+enum:
+  - Deferred
+  - Excluded
+  - Rated
+  - Unrated
