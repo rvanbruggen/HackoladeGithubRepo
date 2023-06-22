@@ -47,7 +47,6 @@ redocly bundle ./v2/master.yaml --output ./redocly/rix_redocly_liberty_openapi_v
 redocly bundle --dereferenced ./v1/master.yaml --output ./redocly/rix_redocly_liberty_openapi_dereferenced_v1.yaml;
 redocly bundle --dereferenced ./v2/master.yaml --output ./redocly/rix_redocly_liberty_openapi_dereferenced_v2.yaml;
 
-
 # Reverse engineer the combined REDOCLY YAML files into a model
 /Applications/Hackolade.app/Contents/MacOS/Hackolade revEng --target=OPENAPI --files="./redocly/rix_redocly_liberty_openapi_v1.yaml" --model=./redocly/rix_redocly_liberty_openapi_v1_CLI.hck.json;
 
