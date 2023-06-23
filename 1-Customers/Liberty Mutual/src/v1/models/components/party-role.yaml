@@ -1,0 +1,14 @@
+type: object
+description: "This object will contain information regarding identification associated to a specific party"
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the high level party role object used when having a generic party type."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  roleCode:
+    $ref: './enums/party-role-code.yaml'

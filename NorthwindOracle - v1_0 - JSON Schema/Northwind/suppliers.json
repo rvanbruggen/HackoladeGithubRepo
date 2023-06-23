@@ -1,0 +1,65 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "suppliers",
+    "additionalProperties": false,
+    "properties": {
+        "supplier_id": {
+            "type": "number",
+            "description": "number automatically assigned to new supplier."
+        },
+        "company_name": {
+            "type": "string",
+            "maxLength": 40
+        },
+        "contact_name": {
+            "type": "string",
+            "maxLength": 30
+        },
+        "contact_title": {
+            "type": "string",
+            "maxLength": 30
+        },
+        "address": {
+            "type": "string",
+            "description": "street or post-office box.",
+            "maxLength": 60
+        },
+        "city": {
+            "type": "string",
+            "maxLength": 15
+        },
+        "region": {
+            "type": "string",
+            "description": "state or province.",
+            "maxLength": 15
+        },
+        "postal_code": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "country": {
+            "type": "string",
+            "maxLength": 15
+        },
+        "phone": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24
+        },
+        "fax": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24
+        },
+        "home_page": {
+            "type": "string",
+            "description": "supplier",
+            "maxLength": 500
+        }
+    },
+    "required": [
+        "supplier_id",
+        "company_name"
+    ]
+}

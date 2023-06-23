@@ -1,0 +1,27 @@
+type: object
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+description: "This represents the amount of money an individual or business pays for an insurance policy"
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific premium instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  typeCode:
+    $ref: './enums/premium-type.yaml'
+  appliesTo:
+    type: string
+    description: "What portion of the insurance contract the premium applies to"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Uninsured and Underinsured"
+  amount:
+    type: number
+    format: float
+    description: "An insurance premium is the amount of money an individual or business pays for an insurance policy."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: 243.00

@@ -1,0 +1,52 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific accident/violation instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "a7a61451-5bd0-4953-83cb-f0f125245a42"
+  convictionDate:
+    description: "The date on which the conviction occurred."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  description:
+    type: string
+    description: "Description of accident or violation."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+  effectiveDate:
+    description: "Date the accident or violation occurred."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  levelCode:
+    type: number
+    description: "A code that represents the violation level that has been assigned to a violation. Examples: 1 - Administrative, 5 - DUI. There is no RDM table used (0 - Level 0 Violation, 1 - Level 1 Violation, etc.)"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+  numberOfSurchargePoints:
+    type: number
+    description: "The number of points charged to the driver for this accident or violation."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+  statusCode:
+    type: string
+    description: "A code used to identify the accident and violation."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    enum:
+      - Applied
+      - Forgiven
+      - Ignore
+      - Out of Experience
+      - Waived
+    example: Applied

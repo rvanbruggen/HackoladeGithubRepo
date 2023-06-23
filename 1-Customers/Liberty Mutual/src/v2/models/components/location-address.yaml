@@ -1,0 +1,13 @@
+type: object
+x-lob:
+  - HOME
+  - RENTER
+description: "This identifies the location address for the building."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific address instance."
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    $ref: './enums/address-type.yaml'

@@ -1,0 +1,383 @@
+type: object
+x-lob: AUTO
+description: "This object will contain all vehicle information."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific vehicle instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  typeCode:
+    $ref: './enums/vehicle-type.yaml'
+  additionalInterests:
+    type: array
+    description: "The additionalInterest object is used to contain information relating to persons or parties other than the Insured whom, for one reason or another, have an interest in this vehicle."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './additional-interests.yaml'
+  address:
+    description: "This is the associated address object (garaging Address) of the vehicle "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './address.yaml'
+  amountItem:
+    type: array
+    description: "This is an association to any amounts related to an object"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './amount-item.yaml'
+  appliedIndicator:
+    type: boolean
+    description: "Saying this vehicle is applied on the policy."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+  bodyTypeCode:
+    type: string
+    description: "A code indicating the body type of this vehicle (2 Door, 2 Door Coupe, Convertible, Hatchback, King Cab etc)"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Convertible" 
+  colorCode:
+    $ref: ./enums/color-code.yaml
+  costNewAmount:
+    type: number
+    format: double
+    description: "The cost of the vehicle when it was purchased new."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: 135.23
+  coverage:
+    type: array
+    description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits. This is selected coverages."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './coverage.yaml'
+  coverageAvailable:
+    type: array
+    description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits. This is non-selected coverages."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    deprecated: true
+    releaseDeprecated: 1.71.0
+    deprecationReason: Use coverage.acceptedIndicator
+    items:
+      $ref: './coverage-available.yaml'
+  creditOrSurcharge:
+    type: array
+    description: "DEPRECATED: Describes a credit/discount/surcharge/modification. This is selected credit or surcharges."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    deprecated: true
+    releaseDeprecated: 1.68.0
+    deprecationReason: Use discount array
+    items:
+      $ref: './credit-surcharge.yaml'
+  creditOrSurchargeAvailable:
+    type: array
+    description: "DEPRECATED: Describes a credit/discount/surcharge/modification. This is non-selected credit or surcharges."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    deprecated: true        
+    releaseDeprecated: 1.68.0
+    deprecationReason: Use discount array
+    items:
+      $ref: './credit-surcharge-available.yaml'
+  discounts:
+    type: array
+    description: "The list of discounts that apply to this vehicle"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './discount.yaml'
+  distanceOneWay:
+    type: number
+    description: "The average distance driven one-way from the garage location to work, school or commuting station. As used here, the expected measurement in the USA is miles."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "15"
+  effectiveDate:
+    type: string
+    description: "The date the vehicle is effective on the policy"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    x-releaseCreated: 1.74.0
+  estimatedAnnualDistance:
+    type: number
+    description: "The estimated annual distance. As used here, this is the annual distance driven. As used here, the expected measurement in the USA is miles."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "10000"
+  fuelTypeCode:
+    $ref: './enums/vehicle-fuel-type.yaml'
+  identificationNumber:
+    type: string
+    description: "Contains the identification number of the vehicle (VIN). "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "1G1ZD5ST5JF289626"
+  lessor:
+    description: "This is the leasing company for leased vehicles."
+    $ref: './lessor.yaml'
+  license:
+    description: "An entity that represents the relationship between license information and a specific vehicle. This allows for retrieval and management of specific license details. Details include specific properties such as license plate state and license plate number."
+    $ref: './license.yaml'
+  manufacturer:
+    type: string
+    description: "A description of the creator of the vehicle."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "ACUR"
+  model:
+    type: string
+    description: "The manufacturer model name for this vehicle."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "MALIBU LT"
+  modelYear:
+    type: integer
+    description: "The model year for this vehicle May or may not be the actual year built."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    pattern: '\d{4}'
+    example: 2009
+  newVehicleIndicator:
+    type: boolean
+    description: "Indicates if the vehicle was new when purchased."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "true"
+  numberOfDoors:
+    type: integer
+    description: "This indicates the number of doors on the vehicle"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "4"
+  numberOfDaysDrivenPerWeek:
+    type: integer
+    description: "Indicates the number of days per week that the vehicle is used for a specific purpose."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "4"
+  ownershipTypeCode:
+    type: string
+    description: "This code will determine the type of ownership for the vehicle (Leased, Financed, Not Owned, Owned, etc)"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Financed"
+  payee:
+    description: "This is the loss payee for non-leased vehicles."
+    $ref: './payee.yaml'
+  performanceCode:
+    type: string
+    description: "A code list indicating the performance level of the vehicle."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    enum:
+      - Basic
+      - High
+      - Intermediate
+      - Sports Premium
+      - Sports
+    example: Sports
+  purchasedDate:
+    type: string
+    description: "The date the item was purchased."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2021-01-23"
+  surcharges:
+    type: array
+    description: "The list of surcharges that apply to this vehicle"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './surcharge.yaml'
+  symbolCode:
+    type: string
+    description: "An industry code indicating the criteria used in rating this vehicle. The source of this code list is the insurers or one of the third party providers.   <br />
+    BusinessLines - This is more of industry code for commercial insurance. - https://www.thetruthaboutinsurance.com/commercial-auto-insurance-coverage-symbols/ <br />
+    PersonalLines - This is more of proprietary code for ISO. - https://www.verisk.com/insurance/about/faq/iso-s-symbols-for-individual-makes-and-models-of-cars/"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "5"
+  trim:
+    type: string
+    description: "This is the manufacturer name of the vehicle trim level/package which is a particular version of a model with a particular set of configuration, and is usually designated with a specific such as LX, EX, GLE, SE."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "LX"
+  useCode:
+    type: string
+    description: "A code identifying the predominant use of the vehicle. This element uses the VehicleUse code list.
+      <table>
+            <tr>
+                 <td>LAM</td>
+                 <td>Safeco Value</td>
+                 <td>Safeco Code</td>
+                 <td>Liberty Value</td>
+                 <td>Liberty Code</td>
+            </tr>
+            <tr>
+                 <td>Business</td>
+                 <td>Business</td>
+                 <td>BU</td>
+                 <td>Business</td>
+                 <td>3</td>
+            </tr>
+            <tr>
+                 <td>Business Use  (Deprecated)</td>
+                 <td>Business Use</td>
+                 <td>8</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Clergy</td>
+                 <td>Clergy man</td>
+                 <td>CL</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Commercial</td>
+                 <td>Commercial</td>
+                 <td>H</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Commute</td>
+                 <td>Commute</td>
+                 <td>COM</td>
+                 <td>Commute</td>
+                 <td>2</td>
+            </tr>
+            <tr>
+                 <td>Commute Out of State  (Deprecated)</td>
+                 <td>Commute Out of State</td>
+                 <td>7</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Drive To Work School Over</td>
+                 <td>Work School Over</td>
+                 <td>3</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Drive To Work School Under</td>
+                 <td>Work School Under</td>
+                 <td>2</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Driven To and From School</td>
+                 <td>School</td>
+                 <td>E</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Driven To and From Work</td>
+                 <td>To From Work</td>
+                 <td>DW</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Farm</td>
+                 <td>Farm</td>
+                 <td>9</td>
+                 <td>Farm</td>
+                 <td>4</td>
+            </tr>
+            <tr>
+                 <td>Farm or Ranch (Deprecated)</td>
+                 <td>Farm or Ranch</td>
+                 <td>FM</td>
+                 <td></td>
+                 <td></td>
+            </tr> 
+            <tr>
+                 <td>For Hire</td>
+                 <td>For Hire</td>
+                 <td>FH</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Government</td>
+                 <td>Government</td>
+                 <td>GV</td>
+                 <td>Government/Federal</td>
+                 <td>5</td>
+            </tr>
+            <tr>
+                 <td>Other</td>
+                 <td>Other</td>
+                 <td></td>
+                 <td>None</td>
+                 <td>10</td>
+            </tr>
+            <tr>
+                 <td>Pleasure</td>
+                 <td>Pleasure</td>
+                 <td>1</td>
+                 <td>Pleasure</td>
+                 <td>1</td>
+            </tr>
+            <tr>
+                 <td>Pleasure PL (Deprecated)</td>
+                 <td>PleasurePL</td>
+                 <td>PL</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Service</td>
+                 <td>Delivery</td>
+                 <td>SR</td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                 <td>Transportation Network Company (Deprecated)</td>
+                 <td></td>
+                 <td></td>
+                 <td>TNC</td>
+                 <td>11</td>
+            </tr>
+         </table> 
+    "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Business
+      - Clergy
+      - Commercial
+      - Commute
+      - Drive To Work School Over
+      - Drive To Work School Under
+      - Driven To and From School
+      - Driven To and From Work
+      - Farm
+      - For Hire
+      - Government
+      - Other
+      - Pleasure
+      - Service
+      - Transportation Network Company
+      - Business Use
+      - Commute Out of State
+      - Farm or Ranch
+      - Pleasure PL
+    example: Commute

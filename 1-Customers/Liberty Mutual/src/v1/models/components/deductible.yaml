@@ -1,0 +1,101 @@
+type: object
+description: "Contains amount and type of deductible that will be applied."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific deductible instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "A code list that identifies the type of deductible. The deductible is typically a dollar amount but can be a percentage or time-based as in business income. This element uses the DeductibleType code list."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    deprecated: true
+    releaseDeprecated: 1.70.0
+    enum:
+      - All Other Perils
+      - Wind Hail
+      - Hurricane
+      - Glass
+  amount:
+    type: number
+    format: float
+    description: "This is the monetary amount that is associated to the deductible."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  acceptedIndicator:
+    type: boolean
+    description: "This field will be true if deductible has been accepted and false if it has been declined. If neither selected then field will not to be present."
+  appliesToCode:
+    type: string
+    description: "Indicates when (under what circumstances) a deductible is to be paid on a loss"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './enums/deductible-applies-to-code.yaml'
+  effectiveDate:
+    description: "Date that the deductible became effective on ANY version of the policy. Only relevant when the deductible is at the policy level."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  expirationDate:
+    description: "Date that the deductible expires on ANY version of the policy. Only relevant when the deductible is at the policy level."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  coveredLossType:
+    type: array
+    description: "This is the set of loss types for which this deductible applies."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      $ref: './enums/applies-to-code-covered-loss-type.yaml'
+  frequency:
+    type: string
+    description: "A code that specifies what the deductible amount applies to. This can be a time period, an event, an object, etc."
+    example: "Per Person"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      $ref: './enums/applies-to-code-frequency.yaml'
+  modifier:
+    type: array
+    description: "For benefits, this represents a list of coverages that this particular product modifies."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './reference-product.yaml'
+  marketingName:
+    type: string
+    description: A free-form name for the deductible that may vary by state, product, carrier, etc.
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Hurricane Deductible"
+  percentage:
+    type: number
+    description: "If present, this is the deductible expressed as a percent that would need to be applied to another insurance amount on the policy."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "10"
+  premiumIds:
+    type: array
+    description: "Pointers to the premiums that the insured pays for this deductible"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      type: string
+      format: uuid
+  text:
+    type: string
+    description: "This represents the deductible when it is not numeric."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "None"

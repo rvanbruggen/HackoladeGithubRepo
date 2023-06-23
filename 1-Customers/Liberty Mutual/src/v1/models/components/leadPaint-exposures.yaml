@@ -1,0 +1,37 @@
+type: object
+description: "On Premises Lead Paint Exposures"
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific lead paint exposure instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  questionAnswer:
+    type: array
+    description: "This indicates the questions required at the lead paint exposure."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: "This is a unique identifier for this specific lead paint exposure question answer instance."
+          x-lam-status: APPROVED
+          x-acord-status: ACORD_NGDS
+          example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+        questionCode:
+          type: string
+          description: "Questions of the Lead Paint Exposures"
+          x-lam-status: APPROVED
+          x-acord-status: ACORD_NGDS
+          enum:
+            - Certificate Of Deleading
+          example: Certificate Of Deleading
+        answerCode:
+          $ref: './enums/answer-code.yaml'

@@ -1,0 +1,98 @@
+type: object
+description: "Contains elements that are used to describe the limit amount, and how it is applied."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific limit instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "This defines type of Limit. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Limit
+      - Sub Limit
+      - Additional Sub Limit
+  amount:
+    type: number
+    format: float
+    description: "This is a monetary amount that is associated to the limit."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "169850"
+  appliesToCodes:
+    type: array
+    description: "Indicates whom the limit applies to"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './enums/limit-applies-to-code.yaml'
+  availabilityDesignationCode:
+    type: string
+    description: "This specifies how the limit will be used for quoting purposes."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    enum:
+      - Default
+      - Increment
+      - Minimum
+      - Maximum
+  coveredLossTypes:
+    type: array
+    description: "This is the set of loss types for which this limit applies."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      $ref: './enums/applies-to-code-covered-loss-type.yaml'
+  description:
+    type: string
+    description: "Free form text that describes the limit."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Children's electronic ride-on vehicles"
+  frequencies:
+    type: array
+    description: "Specifies what the limit amount applies to. This can be a time period, an event, an object, etc."
+    example: ['Per Person', 'Per Occurence']
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      $ref: './enums/applies-to-code-frequency.yaml'
+  modifiers:
+    type: array
+    description: "For coverages, this represents a list of coverages that this particular product modifies."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './reference-product.yaml'
+  premiumIds:
+    type: array
+    description: "Pointers to the premiums that the insured pays for this limit"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      type: string
+      format: uuid
+  percentage:
+    type: number
+    format: integer
+    description: "If present, this is the limit expressed as a percent that would need to be applied to another insurance amount on the policy."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: 10
+  text:
+    type: string
+    description: "This represents the limit when it is not numeric."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "No Coverage"
+  constraints:
+    type: array
+    description: "Any non-currency constraints that are imposed on the limit (e.g. miles, weeks, months, occurrences, etc.)"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      $ref: './measurement.yaml'

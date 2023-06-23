@@ -1,0 +1,28 @@
+type: object
+description: "For benefits, this represents a coverage that this particular product modifies"
+properties:
+  id:
+    type: string
+    description: "This is the unique identifier of the item being modified"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  appliesTo:
+    type: string
+    description: "This identifies the type of item being modified"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Coverage
+      - Limit
+  modifierMethod:
+    type: string
+    description: "This identifies the manner in which the item is being modified"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    enum:
+      - Add
+      - Remove
+      - Modified By
+      - Replaces
+      - Extend
+      - Share

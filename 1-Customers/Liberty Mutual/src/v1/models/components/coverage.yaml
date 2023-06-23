@@ -1,0 +1,140 @@
+type: object
+description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific coverage instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "Defines the type of product being represented."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Benefit
+      - Coverage
+      - Package
+  name:
+    type: string
+    description: "The canonical name of the coverage. This name will not vary by different iterations of the same coverage. This may not be what appears on the dec (see coverage.marketingName)"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    $ref: './enums/coverage-name.yaml'
+  deductible:
+    type: array
+    description: "Contains amount and type of deductible that will be applied."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './deductible.yaml'
+  description:
+    type: string
+    description: "Description about the coverage."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Coverage C - Personal Property"
+  acceptedIndicator:
+    type: boolean
+    description: "This field will be true if coverage has been accepted and false if it has been declined. If neither selected then field will not to be present."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  limit:
+    type: array
+    description: "Contains elements that are used to describe the amount, and how it is applied."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './limit.yaml'
+  fullPremium:
+    type: number
+    format: float
+    description: "This represents the premium associated with a particular coverage."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "98"
+  individualPremiums:
+    type: array
+    description: "Premiums associated to a sub-component of the coverage (eg a limit or indicator)"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    items:
+      $ref: './premium.yaml'
+  marketingName:
+    type: string
+    description: A free-form name for the coverage that may vary by state, product, carrier, etc.
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Water Backup and Overflow Coverage (Building and Personal Property)"
+  option:
+    type: array
+    description: "Explains the characteristics of how a benefit effects a coverage."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './option.yaml'
+  productCode:
+    type: string
+    description: "The unique product code of the Policy Product."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    deprecated: true
+    releaseDeprecated: 1.69.0
+    example: "100103"
+  effectiveDate:
+    description: "Date that the product became effective on ANY version of the policy."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  expirationDate:
+    description: "Date that the product expires on ANY version of the policy."
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  productName:
+    type: string
+    description: "This field provides the name of the Policy Product."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    deprecated: true
+    releaseDeprecated: 1.69.0
+    example: "Bodily Injury"
+  selectedLimitLevel:
+    type: string
+    description: "Deprecated - The selectedLimitLevel is the amount, percentage, or text that was selected during the quoting process for the limit array."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "50/100"
+    deprecated: true
+    releasedCreated: 1.4.5
+    releaseDeprecated: 1.4.5
+    replacedBy: limit array
+    deprecationReason: This is deprecated as it we are moving towards breaking out the limits into more useable format. This is only around for quoting and viewing policies at the moment. We are asking teams to look at the limit array for more detail instead of this field.
+  settlementType:
+    type: string
+    description: "Defines how the settlement will be determined from a claims perspective. Used primarily for Coverages rather than Benefits."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "Functional Replacement Cost"
+  versionNumber:
+    type: number
+    format: double
+    description: "The version number of a Policy Product. There can be more than one version for a product code."
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    example: "2.0"
+  includedCoverages:
+    type: array
+    description: "For packages, this will contain the list of coverages in the package."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './coverage_package_RIK.yaml'

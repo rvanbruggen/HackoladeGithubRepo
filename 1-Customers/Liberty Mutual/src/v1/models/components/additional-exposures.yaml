@@ -1,0 +1,54 @@
+type: object
+description: "All types of home exposure details"
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific additional exposures instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  indicators:
+    type: array
+    description: "This indicates if the exposures exists or not."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      type: object
+      description: "This indicates if the exposures exists or not."
+      x-lam-status: APPROVED
+      x-acord-status: ACORD_NGDS
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: "This is a unique identifier for this specific indicator if the exposures exists instance."
+          x-lam-status: APPROVED
+          x-acord-status: ACORD_NGDS
+          example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+        questionCode:
+          type: string
+          description: "Indicators Questions"
+          x-lam-status: APPROVED
+          x-acord-status: ACORD_NGDS
+          enum:
+            - Business
+            - Daycare
+            - Incidental Farming
+            - Lead Paint
+          example: Incidental Farming
+        answerCode:
+          $ref: './enums/answer-code.yaml'
+  businesses:
+    type: array
+    description: "Type of the businesses exposures."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './business-exposures.yaml'
+  daycare:
+    $ref: './daycare-exposures.yaml'
+  incidentalFarming:
+    $ref: './incidentalFarming-exposures.yaml'
+  leadPaint:
+    $ref: './leadPaint-exposures.yaml'

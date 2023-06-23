@@ -1,0 +1,51 @@
+type: object
+description: "This object identifies information about the agency or the individual within the agency that is producing this business (policy)."
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This object identifies information about the agency or the individual within the agency that is producing this business (policy)."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    type: string
+    description: "This details what type of 'producer' this object is (ie Agent, Broker, etc)"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Agent
+      - Agency
+      - Sales Representative
+    example: Agent
+  employee:
+    $ref: './employee.yaml'
+  fullName:
+    type: string
+    description: "Deprecated: This is the full name of the party"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: TRUSTCO INC
+    deprecated: true        
+    releasedCreated: 1.4.9
+    releaseDeprecated: 1.4.9
+    replacedBy: Inheritance To Party, Organization - Legal Entity Name
+    deprecationReason: This is deprecated as it we are moving towards inheriting party from NGDS 1.4. This is only by BL Alt-Channel Team at the moment. And moving toward Legal Entity Name.
+  number:
+    type: string
+    description: "This is the number or code assigned by the insurer to identify the producer."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "469905"
+  organization:
+    description: "This is the organization details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './organization.yaml'
+  person:
+    description: "This is the person details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './person.yaml'

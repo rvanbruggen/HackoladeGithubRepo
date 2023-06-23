@@ -1,0 +1,783 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+            "type": "reference",
+            "$ref": "#external/definitions/Movie",
+            "refType": "polyglot",
+            "ref": "ebb4b87c-040e-453c-a252-5ca6c875146f",
+            "refIdPath": [
+                "38d24447-8d1d-421a-a23a-c67c1a278675",
+                "def326be-282d-4589-ac5c-2bc4f44fe82a",
+                "ebb4b87c-040e-453c-a252-5ca6c875146f"
+            ],
+            "isActivated": true,
+            "collectionName": "Movie",
+            "bucketId": "01ffba21-6ce4-4ae2-bd9e-bb0badc8b664",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "fc8699dc-597d-4749-9abf-44a478deec7d"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "9734e2c8-a5ec-4995-8603-567d9a9dbef8",
+                        "childRelationships": [
+                            "6ec8fdbb-e9e4-47f7-beb7-83e7b79c376e"
+                        ],
+                        "error": {},
+                        "primaryKey": true
+                    },
+                    {
+                        "GUID": "3d02a010-13f2-4b78-9b09-0b092bd12ca6",
+                        "childRelationships": [
+                            "8f91f56c-5407-44e8-ad1c-606d4b5d250c"
+                        ],
+                        "error": {},
+                        "primaryKey": true
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "GUID": "c255d2ee-bdad-4f59-94e7-58727fca7137",
+                    "lineageSourceGUID": "b66f3caf-3d92-4189-9a80-73350bea55f1",
+                    "lineageSourceAttrBusName": "",
+                    "lineageSourceAttrTechName": "",
+                    "lineageSrcEntityBusName": "Movie",
+                    "lineageSrcEntityTechName": "",
+                    "lineageSourceContainerBusName": "Container",
+                    "lineageSourceContainerTechName": ""
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "GUID": "0623367f-cdda-4898-9e73-276d4fe231cd",
+            "type": "reference",
+            "$ref": "#external/definitions/Actor",
+            "refType": "polyglot",
+            "ref": "b96b790d-c18a-419e-94e0-cac47839e6fb",
+            "refIdPath": [
+                "38d24447-8d1d-421a-a23a-c67c1a278675",
+                "def326be-282d-4589-ac5c-2bc4f44fe82a",
+                "b96b790d-c18a-419e-94e0-cac47839e6fb"
+            ],
+            "isActivated": true,
+            "collectionName": "Actor",
+            "bucketId": "01ffba21-6ce4-4ae2-bd9e-bb0badc8b664",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "4f8fbd98-8988-44d1-bb38-5f301a5a0642"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "d4ca2227-5b61-43ae-82b9-2e2bdda16b51",
+                        "properties": [
+                            {
+                                "GUID": "adb1c5ef-7675-4eee-bc24-123147b17903",
+                                "relationshipType": "Foreign Key",
+                                "foreignCollection": "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                                "foreignField": [
+                                    "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                                    "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                                    "9734e2c8-a5ec-4995-8603-567d9a9dbef8"
+                                ],
+                                "parentRelationship": "6ec8fdbb-e9e4-47f7-beb7-83e7b79c376e",
+                                "error": {}
+                            },
+                            {
+                                "GUID": "bdb7d355-443f-41ba-a263-8b1efbce63a0",
+                                "relationshipType": "Foreign Master",
+                                "foreignCollection": "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                                "foreignField": [
+                                    "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                                    "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                                    "3d02a010-13f2-4b78-9b09-0b092bd12ca6"
+                                ],
+                                "parentRelationship": "8f91f56c-5407-44e8-ad1c-606d4b5d250c",
+                                "error": {}
+                            }
+                        ],
+                        "error": {}
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "GUID": "38e0e028-6228-4742-b8ab-87eb6a1faf40",
+                    "lineageSourceGUID": "b66f3caf-3d92-4189-9a80-73350bea55f1",
+                    "lineageSourceAttrBusName": "",
+                    "lineageSourceAttrTechName": "",
+                    "lineageSrcEntityBusName": "Actor",
+                    "lineageSrcEntityTechName": "",
+                    "lineageSourceContainerBusName": "Container",
+                    "lineageSourceContainerTechName": ""
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "01ffba21-6ce4-4ae2-bd9e-bb0badc8b664",
+            "name": "Container",
+            "type": "reference",
+            "$ref": "#external/definitions/Container",
+            "refType": "polyglot",
+            "ref": "3cec7a81-2dfd-49f9-9b50-41950e2b4ab8",
+            "refIdPath": [
+                "38d24447-8d1d-421a-a23a-c67c1a278675",
+                "def326be-282d-4589-ac5c-2bc4f44fe82a",
+                "3cec7a81-2dfd-49f9-9b50-41950e2b4ab8"
+            ],
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "collectionIds": [
+                "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                "0623367f-cdda-4898-9e73-276d4fe231cd"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Actor.played in.[0] to Movie.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                    "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                    "9734e2c8-a5ec-4995-8603-567d9a9dbef8"
+                ],
+                [
+                    "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                    "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                    "3d02a010-13f2-4b78-9b09-0b092bd12ca6"
+                ]
+            ],
+            "parentCardinality": "1..n",
+            "childField": [
+                [
+                    "0623367f-cdda-4898-9e73-276d4fe231cd",
+                    "b96b790d-c18a-419e-94e0-cac47839e6fb",
+                    "d4ca2227-5b61-43ae-82b9-2e2bdda16b51",
+                    "adb1c5ef-7675-4eee-bc24-123147b17903"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1..n",
+            "parentCollection": "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+            "childCollection": "0623367f-cdda-4898-9e73-276d4fe231cd",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "561c8ab5-0f5a-4efc-9235-0cc27089b103",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1926,
+                        "y": 1200.6666666666667
+                    },
+                    {
+                        "x": 1875,
+                        "y": 1200.6666666666667
+                    },
+                    {
+                        "x": 1875,
+                        "y": 1196
+                    },
+                    {
+                        "x": 1824,
+                        "y": 1196
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Actor.played in.[0] to Movie.id",
+            "refIdPath": [
+                "38d24447-8d1d-421a-a23a-c67c1a278675",
+                "def326be-282d-4589-ac5c-2bc4f44fe82a",
+                "0f6eed21-a877-47f9-82fc-360c15ccbac5"
+            ],
+            "ref": "0f6eed21-a877-47f9-82fc-360c15ccbac5",
+            "GUID": "6ec8fdbb-e9e4-47f7-beb7-83e7b79c376e"
+        },
+        {
+            "name": "fk Actor.played in.[1] to Movie.name",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                    "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                    "3d02a010-13f2-4b78-9b09-0b092bd12ca6"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "0623367f-cdda-4898-9e73-276d4fe231cd",
+                    "b96b790d-c18a-419e-94e0-cac47839e6fb",
+                    "d4ca2227-5b61-43ae-82b9-2e2bdda16b51",
+                    "bdb7d355-443f-41ba-a263-8b1efbce63a0"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "parentCollection": "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+            "childCollection": "0623367f-cdda-4898-9e73-276d4fe231cd",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "55c7c403-061f-4a51-a375-b5491da27a66",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1926,
+                        "y": 1234.3333333333333
+                    },
+                    {
+                        "x": 1875,
+                        "y": 1234.3333333333333
+                    },
+                    {
+                        "x": 1875,
+                        "y": 1225
+                    },
+                    {
+                        "x": 1824,
+                        "y": 1225
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Actor.played in.[1] to Movie.name",
+            "refIdPath": [
+                "38d24447-8d1d-421a-a23a-c67c1a278675",
+                "def326be-282d-4589-ac5c-2bc4f44fe82a",
+                "bc47c7db-d5b9-4625-ae33-21d61d11c163"
+            ],
+            "ref": "bc47c7db-d5b9-4625-ae33-21d61d11c163",
+            "GUID": "8f91f56c-5407-44e8-ad1c-606d4b5d250c"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "477efd93-cfa9-44b6-bb61-587ffc7bb136": "Movie",
+        "0623367f-cdda-4898-9e73-276d4fe231cd": "Actor",
+        "01ffba21-6ce4-4ae2-bd9e-bb0badc8b664": "Container",
+        "6ec8fdbb-e9e4-47f7-beb7-83e7b79c376e": "fk Actor.played in.[0] to Movie.id",
+        "8f91f56c-5407-44e8-ad1c-606d4b5d250c": "fk Actor.played in.[1] to Movie.name",
+        "b66f3caf-3d92-4189-9a80-73350bea55f1": "Derived from Polyglot"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "c0a36eaf-7b34-4602-a0c7-9db5b760718b"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "Movie",
+                "type": "object",
+                "properties": [
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "integer",
+                        "childType": "numeric",
+                        "type": "numeric",
+                        "compositePartitionKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "triggerUpdateColumns": false,
+                        "name": "id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "9734e2c8-a5ec-4995-8603-567d9a9dbef8",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey",
+                            "triggerUpdateColumns"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "varchar",
+                        "length": 10,
+                        "childType": "char",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "triggerUpdateColumns": false,
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "3d02a010-13f2-4b78-9b09-0b092bd12ca6",
+                        "name": "name",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey",
+                            "triggerUpdateColumns"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "time",
+                        "childType": "datetime",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "triggerUpdateColumns": false,
+                        "name": "length",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "bf4e3790-4155-433a-9280-0d8c023dde24",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey",
+                            "triggerUpdateColumns"
+                        ],
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "343442f7-eeaa-4153-83d3-1e536fbb4112"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                "bucketId": "3cec7a81-2dfd-49f9-9b50-41950e2b4ab8",
+                "definitionEntityType": "collection",
+                "link": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/tutorial/tutorial part7.hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/Container/Movie",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionRefs": [
+                    [
+                        "477efd93-cfa9-44b6-bb61-587ffc7bb136"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Actor",
+                "type": "object",
+                "properties": [
+                    {
+                        "primaryKey": false,
+                        "mode": "varchar",
+                        "length": 10,
+                        "childType": "char",
+                        "type": "string",
+                        "compositePartitionKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "triggerUpdateColumns": false,
+                        "name": "name",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "e7cf3dfb-6296-4011-9e44-96181f1df885",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey",
+                            "triggerUpdateColumns"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "mode": "json",
+                        "subtype": "array",
+                        "properties": [
+                            {
+                                "type": "jsonNumber",
+                                "name": "New column",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "primaryKey": false,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "GUID": "adb1c5ef-7675-4eee-bc24-123147b17903",
+                                "arrayItem": true,
+                                "displayName": "movie_id",
+                                "error": {}
+                            },
+                            {
+                                "type": "jsonString",
+                                "name": "New column",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "primaryKey": false,
+                                "GUID": "bdb7d355-443f-41ba-a263-8b1efbce63a0",
+                                "arrayItem": true,
+                                "displayName": "movie_name",
+                                "error": {}
+                            }
+                        ],
+                        "childType": "json",
+                        "type": "jsonObject",
+                        "compositePartitionKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "triggerUpdateColumns": false,
+                        "name": "played in",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "d4ca2227-5b61-43ae-82b9-2e2bdda16b51",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey",
+                            "triggerUpdateColumns"
+                        ],
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "4c8b49a1-bf34-4aa6-834f-57f772ce6fff"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "b96b790d-c18a-419e-94e0-cac47839e6fb",
+                "bucketId": "3cec7a81-2dfd-49f9-9b50-41950e2b4ab8",
+                "definitionEntityType": "collection",
+                "link": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/tutorial/tutorial part7.hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/Container/Actor",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionRefs": [
+                    [
+                        "0623367f-cdda-4898-9e73-276d4fe231cd"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Actor.played in.[0] to Movie.id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                        "9734e2c8-a5ec-4995-8603-567d9a9dbef8"
+                    ]
+                ],
+                "parentCardinality": "1..n",
+                "childField": [
+                    [
+                        "b96b790d-c18a-419e-94e0-cac47839e6fb",
+                        "d4ca2227-5b61-43ae-82b9-2e2bdda16b51",
+                        "adb1c5ef-7675-4eee-bc24-123147b17903"
+                    ]
+                ],
+                "isActivated": true,
+                "childCardinality": "1..n",
+                "parentCollection": "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                "childCollection": "b96b790d-c18a-419e-94e0-cac47839e6fb",
+                "GUID": "0f6eed21-a877-47f9-82fc-360c15ccbac5",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "561c8ab5-0f5a-4efc-9235-0cc27089b103",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 1926,
+                            "y": 1200.6666666666667
+                        },
+                        {
+                            "x": 1875,
+                            "y": 1200.6666666666667
+                        },
+                        {
+                            "x": 1875,
+                            "y": 1196
+                        },
+                        {
+                            "x": 1824,
+                            "y": 1196
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/tutorial/tutorial part7.hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/relationships/fk Actor.played in.[0] to Movie.id",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "6ec8fdbb-e9e4-47f7-beb7-83e7b79c376e"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Actor.played in.[1] to Movie.name",
+                "relationshipType": "Foreign Master",
+                "parentField": [
+                    [
+                        "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                        "3d02a010-13f2-4b78-9b09-0b092bd12ca6"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "b96b790d-c18a-419e-94e0-cac47839e6fb",
+                        "d4ca2227-5b61-43ae-82b9-2e2bdda16b51",
+                        "bdb7d355-443f-41ba-a263-8b1efbce63a0"
+                    ]
+                ],
+                "isActivated": true,
+                "childCardinality": "1",
+                "parentCollection": "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                "childCollection": "b96b790d-c18a-419e-94e0-cac47839e6fb",
+                "GUID": "bc47c7db-d5b9-4625-ae33-21d61d11c163",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "55c7c403-061f-4a51-a375-b5491da27a66",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 1926,
+                            "y": 1234.3333333333333
+                        },
+                        {
+                            "x": 1875,
+                            "y": 1234.3333333333333
+                        },
+                        {
+                            "x": 1875,
+                            "y": 1225
+                        },
+                        {
+                            "x": 1824,
+                            "y": 1225
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/tutorial/tutorial part7.hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/relationships/fk Actor.played in.[1] to Movie.name",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "8f91f56c-5407-44e8-ad1c-606d4b5d250c"
+                    ]
+                ]
+            },
+            {
+                "name": "Container",
+                "type": "bucket",
+                "collectionIds": [
+                    "ebb4b87c-040e-453c-a252-5ca6c875146f",
+                    "b96b790d-c18a-419e-94e0-cac47839e6fb"
+                ],
+                "backgroundColor": {
+                    "r": 216,
+                    "g": 0,
+                    "b": 115,
+                    "a": 1
+                },
+                "show": true,
+                "isActivated": true,
+                "indexes": [],
+                "GUID": "3cec7a81-2dfd-49f9-9b50-41950e2b4ab8",
+                "definitionEntityType": "bucket",
+                "link": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/tutorial/tutorial part7.hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/Container",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionRefs": [
+                    [
+                        "01ffba21-6ce4-4ae2-bd9e-bb0badc8b664"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "def326be-282d-4589-ac5c-2bc4f44fe82a"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "a724261a-dc9e-4b94-b8af-0a6e2c480a34"
+    },
+    "sources": [
+        {
+            "GUID": "b66f3caf-3d92-4189-9a80-73350bea55f1",
+            "sourceName": "Derived from Polyglot",
+            "lineageTimestamp": "2023-06-12 11:39:32 CEST",
+            "lineageSourceType": "Polyglot",
+            "lineageSourceFormat": "File",
+            "lineageFilePathName": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/tutorial/tutorial part7.hck.json"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVersion": "v13.x",
+    "dbVendor": "PostgreSQL",
+    "tablespace_name": "pg_default",
+    "encoding": "UTF8",
+    "appTarget": "PostgreSQL",
+    "creationTS": "2023-06-12T09:39:02.573Z",
+    "GUID": "38d24447-8d1d-421a-a23a-c67c1a278675",
+    "isLineageEnabled": true,
+    "polyglotModelPaths": [
+        {
+            "GUID": "b6181cd1-1c68-42c9-9716-0237ef2db903",
+            "polyglotModelName": "tutorial part7.hck",
+            "polyglotModelPath": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/tutorial/tutorial part7.hck.json",
+            "normalization": false
+        }
+    ],
+    "lastModifTS": "2023-06-12T09:42:24.463Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "PostgreSQL",
+        "pluginVersion": "0.1.42",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.6"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "477efd93-cfa9-44b6-bb61-587ffc7bb136",
+                        "x": 1654,
+                        "y": 1167,
+                        "width": 170,
+                        "height": 87,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "0623367f-cdda-4898-9e73-276d4fe231cd",
+                        "x": 1926,
+                        "y": 1167,
+                        "width": 244,
+                        "height": 101,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1614,
+                        "y": 1127,
+                        "GUID": "01ffba21-6ce4-4ae2-bd9e-bb0badc8b664"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "6ec8fdbb-e9e4-47f7-beb7-83e7b79c376e",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

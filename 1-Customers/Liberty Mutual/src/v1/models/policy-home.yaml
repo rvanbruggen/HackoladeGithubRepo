@@ -1,0 +1,29 @@
+description: This object defines the details of a policy.
+allOf:
+  - $ref: './base-policy.yaml'
+  - type: object
+    properties:
+      lineOfBusinessCode:
+        type: string
+        const: 'Home'
+      building:
+        description: ""
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        $ref: './components/building.yaml'
+      additionalLocations:
+        type: array
+        description: "Locations covered under this policy that are not the primary building or dwelling"
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './components/location.yaml'
+      scheduledItem:
+        type: array
+        description: "This is the scheduled item. For additional covered items"
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './components/scheduled-item.yaml'
+
+

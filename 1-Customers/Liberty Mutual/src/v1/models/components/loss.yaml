@@ -1,0 +1,36 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific loss instance."
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  amountItem:
+    type: array
+    description: "This object contains the payments, reserves created for this loss"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './amount-item.yaml'
+  statusCode:
+    type: string
+    description: "A code list that identifies the current status of the claim."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Closed
+      - Declined
+      - Litigation
+      - Open
+      - Other
+      - Reopened
+      - Subrogation
+      - Withdrawn
+    example: Closed
+  coverage:
+    type: array
+    description: "Coverage to which the loss is paid against"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    items:
+      $ref: './coverage.yaml'

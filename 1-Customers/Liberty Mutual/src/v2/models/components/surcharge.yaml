@@ -1,0 +1,27 @@
+type: object
+description: "Describes a surcharge to the premium"
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This attribute is an identifier to a specific element. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  description:
+    type: string
+    description: "Further details about the surcharge."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Surcharge for an Operator who has an unverified driving record"
+  marketingName:
+    type: string
+    description: A free-form name for the surcharge that may vary by state, product, carrier, etc.
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Unverified Driving Record Surcharge"
+  value:
+    $ref: "./amount-item.yaml" 
+    description: "A dollar amount or percentage representing the increase in premium"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS

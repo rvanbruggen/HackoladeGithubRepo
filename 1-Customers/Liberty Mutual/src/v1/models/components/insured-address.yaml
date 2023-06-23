@@ -1,0 +1,18 @@
+type: object
+x-lob:
+  - HOME
+  - RENTER
+description: "This identifies the postal address/location."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific address instance."
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    $ref: './enums/address-type.yaml'
+  duration:
+    x-lob: HOME
+    description: "Duration represents the amount of time a task is expected to take. This is the length of time lived at the address/location."
+    items:
+      $ref: './duration.yaml'

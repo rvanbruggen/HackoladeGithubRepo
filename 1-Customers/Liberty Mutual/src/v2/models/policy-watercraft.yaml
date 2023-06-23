@@ -1,0 +1,25 @@
+type: object
+description: This object defines the details of a watercraft policy.
+allOf:
+  - $ref: './base-policy.yaml'
+  - type: object
+    properties:
+      lineOfBusinessCode:
+        type: string
+        const: 'Watercraft'
+      drivers:
+        type: array
+        description: "This object will contain all driver information."
+        x-lob: AUTO
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './components/driver.yaml'
+      vehicles:
+        type: array
+        description: "This object will contain all vehicle information."
+        x-lob: AUTO
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        items:
+          $ref: './components/vehicle.yaml'

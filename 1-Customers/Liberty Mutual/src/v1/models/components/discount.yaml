@@ -1,0 +1,31 @@
+type: object
+description: "Describes a discount to the premium"
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This attribute is an identifier to a specific element. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  acceptedIndicator:
+    type: boolean
+    description: "This field will be true if discount has been accepted and false if it has been declined. If neither selected then field will not to be present."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  description:
+    type: string
+    description: "Further details about the discount."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Discount for students that achieve a certain GPA"
+  value:
+    $ref: "./amount-item.yaml" 
+    description: "A dollar amount or percentage representing the reduction in premium"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  marketingName:
+    type: string
+    description: A free-form name for the discount that may vary by state, product, carrier, etc.
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS

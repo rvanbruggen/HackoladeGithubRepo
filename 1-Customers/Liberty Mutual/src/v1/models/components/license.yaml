@@ -1,0 +1,27 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific license instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    $ref: './enums/license-type.yaml'
+  licensedDate:
+    type: string
+    description: "The original date on which a license was issued."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2005-10-10"
+  stateOrProvinceCode:
+    description: "Geographical location where the license was issued."
+    $ref: './enums/jurisdiction-us.yaml'
+  number:
+    type: string
+    description: "The license identifier as issued by the regulating jurisdiction. Examples include a producer's state license number, a driver's license number, or a vehicle's license plate number in the United States."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "S530-5960-5889"

@@ -1,0 +1,74 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific accident/violation instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "a7a61451-5bd0-4953-83cb-f0f125245a42"
+  convictionDate:
+    description: "The date on which the conviction occurred."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  description:
+    type: string
+    description: "Description of accident or violation."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+  effectiveDate:
+    description: "Date the accident or violation occurred."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  numberOfSurchargePoints:
+    type: number
+    description: "The number of points charged to the driver for this accident or violation."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+  recordTypeCode:
+    type: string
+    description: "An industry code identifying the action taken on the driver's Motor Vehicle Report. This is a state specific coded element.
+     <table>
+            <tr>
+                 <td>LAM</td>
+            </tr>
+            <tr>
+                 <td>Collision</td>
+            </tr>
+            <tr>
+                 <td>Liability</td>
+            </tr>
+            <tr>
+                 <td>Liabiliy Collision</td>
+            </tr>
+            <tr>
+                 <td>Major Accident</td>
+            </tr>
+            <tr>
+                 <td>Minor Accident</td>
+            </tr>
+      </table>
+    "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: Collision
+  statusCode:
+    type: string
+    description: "A code used to identify the accident and violation."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    enum:
+      - Applied
+      - Forgiven
+      - Ignore
+      - Out of Experience
+      - Waived
+    example: Applied

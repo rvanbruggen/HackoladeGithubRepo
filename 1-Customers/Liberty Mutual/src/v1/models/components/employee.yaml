@@ -1,0 +1,93 @@
+type: object
+x-acord-status: ACORD_NGDS
+x-lam-status: APPROVED
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific note instance."
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  address:
+    type: array
+    description: "This identifies the postal address/location."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './address.yaml'
+  communication:
+    type: array
+    description: "This is an association to the communication method used for this contact"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './communication.yaml'
+  givenName:
+    type: string
+    minLength: 2
+    maxLength: 40
+    description: "A portion of an individual's name, also known as First Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Mary"
+  hiredDate:
+    description: "Date of joining of the employee, with the job opportunity.  "
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  jobTitle:
+    type: string
+    description: "Job Title of the employee."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: Sales Representative
+  number:
+    type: string
+    description: "This is the n-number or 3X3 number assigned by the insurer to identify the employee."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: N0123456
+  otherGivenName:
+    type: string
+    minLength: 2
+    maxLength: 100
+    description: "A portion of an individual's name, typically occurring between the givenName and surName. Also known as Middle Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "EN"
+  statusCode:
+    type: string
+    description: "This is the current status of the employee"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: Took job else where
+  suffix:
+    type: string
+    description: "Name Suffix. For example, 'Jr.', or 'III'."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Sr"
+  surname:
+    minLength: 2
+    maxLength: 40
+    type: string
+    description: "A portion of an individual's name, also known as Last Name or Family Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Smith"
+  terminationDate:
+    description: "This is the date the employee was terminated from their position at their employer"
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  terminationReason:
+    type: string
+    description: "This is the reason given for the termination"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: Took job else where

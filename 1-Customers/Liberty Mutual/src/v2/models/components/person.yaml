@@ -1,0 +1,193 @@
+type: object
+description: "This is the high level party object that other party/roles will inherit."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific party instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  addresses:
+    type: array
+    description: "This identifies the postal address/location."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './address.yaml'
+  birthDate:
+    type: string
+    description: "The date on which this person was born."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2005-10-10"
+  communications:
+    type: array
+    description: "This object will contain all phone and email information."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './communication.yaml'
+  communicationPreferenceCode:
+    $ref: "./enums/communication-preference-code.yaml"
+  creditScore:
+    description: "An insurance score is a credit rating used by insurance companies to assess a potential insured consumer's level of risk. The insurance score is one of the primary determinants in how much insurance premium the consumer will be assessed."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    $ref: './creditScore.yaml'
+  deceasedIndicator:
+    type: boolean
+    description: "A deceased indicator is a term used to describe the code they use to say that a consumer is dead."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    example: "false"
+  educationLevelCode:
+    type: string
+    description: "A code indicating a person's level of education completed."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    enum:
+      - Associates Degree
+      - Bachelor Of Arts Degree
+      - Bachelor of Science Degree
+      - Community or Junior College
+      - Doctorate
+      - High School Diploma
+      - Masters Degree
+      - Medical Degree
+      - Law Degree
+      - Less than High School
+      - No High School Diploma
+      - Other
+      - Some College
+      - Unknown
+      - Vocational or Technical
+    example: "Masters Degree"
+  employedIndicator:
+    type: boolean
+    description: "This helps to identify whether the person is working or not."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  genderCode:
+    type: string
+    description: "A code which defines the gender of the person."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Female
+      - Male
+      - Unknown
+      - Other
+    example: Female
+  givenName:
+    type: string
+    minLength: 2
+    maxLength: 40
+    description: "A portion of an individual's name, also known as First Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Mary"
+  languageCode:
+    type: string
+    minLength: 2
+    maxLength: 40
+    description: "A code which defines the preferred language of the person. This list references the ISO 639-3 char list found at https://www.iso.org/iso-639-language-codes.html."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "EN"
+  maritalStatusCode:
+    type: string
+    description: "A code which defines the marital status of the person.  "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - DomesticPartner
+      - Divorced
+      - Married
+      - Separated
+      - Single
+      - CivilUnion
+      - Widowed
+      - CommonLaw
+      - Estranged
+    example: "Single"
+  occupationClassCode:
+    $ref: './enums/occupation-class.yaml'
+  otherGivenName:
+    type: string
+    minLength: 2
+    maxLength: 100
+    description: "A portion of an individual's name, typically occurring between the givenName and surName. Also known as Middle Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "EN"
+  preferredName:
+    type: string
+    description: "Also known as a nick name or casual name, this is the name that the Customer would like to be called. Example: A Given Name of Stephen has indicated that he prefers to be referred to as Steve in casual usage"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "Steve"
+  professionalDesignationCode:
+    type: string
+    minLength: 2
+    maxLength: 100
+    description: "A code indicating a persons professional designation. For example, C.P.A., P.H.D., etc. The source of this code list is the individual insurer."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "P.H.D"
+  relationship:
+    type: object
+    description: "This represents the party that this relationship is associated to"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    x-releaseCreated: v2.0.0
+    properties:
+      id:
+        type: string
+        format: uuid
+        description: "This is a unique identifier for this specific relationship instance."
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        x-releaseCreated: v2.0.0
+        example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+      relationshipToCode:
+        type: string
+        x-lam-status: APPROVED
+        x-acord-status: ACORD_NGDS
+        x-releaseCreated: v2.0.0
+        enum:
+          - Child
+          - Domestic Partner
+          - Life Partner
+          - Other Relative
+          - Other
+          - Roommate
+          - Spouse
+        description: "This is a code that represents the party that this relationship is associated to."
+  suffix:
+    type: string
+    description: "Name Suffix. For example, 'Jr.', or 'III'."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Sr"
+  surname:
+    minLength: 2
+    maxLength: 40
+    type: string
+    description: "A portion of an individual's name, also known as Last Name or Family Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Smith"
+  titlePrefix:
+    type: string
+    description: "This is any phrase that precededs the name which is not part of the actual name, such as Dr. or Mrs."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Mr"
+  vipIndicator:
+    type: boolean
+    description: "This field identifies whether the person is a VIP or not."
+    x-lam-status: APPROVED
+    x-acord-status: NON-ACORD
+    example: "false"

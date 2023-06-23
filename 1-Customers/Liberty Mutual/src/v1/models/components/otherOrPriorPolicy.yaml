@@ -1,0 +1,87 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific other or prior policy instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "a7a61451-5bd0-4953-83cb-f0f125245a42"
+  typeCode:
+    type: string
+    description: |
+            Type of Other of Prior Policies.
+            * No Insurance - This is customer that has no insurance, but has driven a car before. Needs to be selected with one of these reason codes - Active Military, Cancelled or Lapsed, Did Not Own a Vehicle, Driving Without Insurance, Lived Overseas, Not Driving, Previous Company Car, Vehicle Not Operational
+            * No Prior - This is customer that has no prior insurance because they have never driven before. Needs to be selected with one of these reason code First Owned Car.
+            * Other - This is customer that has other active line of business policies.
+            * Prior - This is customer that has prior for a certain line of business policies.            
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    enum:
+      - No Insurance
+      - No Prior
+      - Other
+      - Prior
+  coverage:
+    type: array
+    description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './coverage.yaml'
+  expirationDate:
+    description: "A date on which previous coverage was cancelled or declined."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  insurerName:
+    type: string
+    description: "The Name of the insurer."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: Liberty Mutual
+  lengthTimeWithPreviousInsurer:
+    description: "The length of time the insured has been with the prior insurer. As used here, the expected measurement in the USA is months."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: integer
+    example: "2"  
+  lineOfBusinessCode:
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    $ref: './enums/lob.yaml'
+  number:
+    type: string
+    description: "The policy number assigned to an existing or in process policy, used for reference."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    example: "EQ111111"
+  reasonCode:
+    type: string
+    description: |
+            A reason used to identify the why the driver didn't have prior, no insurance, other insurance.
+            * Active Military - No Insurance - This for the driver was active part of the military.
+            * Cancelled or Lapsed - No Insurance - This is for driver with cancelled or with do not renewed insurance
+            * Did Not Own a Vehicle - No Insurance - This for the driver didn't own a vehicle.
+            * Driving Without Insurance - No Insurance - This is when driver is driving without insurance.
+            * First Owned Car - No Prior - This for the driver first car.
+            * Lived Overseas - No Insurance - This for the driver was living overseas.
+            * Not Driving - No Insurance - This for the driver was not driving a car.
+            * Previous Company Car - No Insurance - This for the driver had a company car prior.
+            * Vehicle Not Operational - No Insurance - This for the driver owned a vehicle though it didn't operate.
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    enum:
+      - Active Military
+      - Cancelled or Lapsed
+      - Did Not Own a Vehicle
+      - Driving Without Insurance
+      - First Owned Car
+      - Lived Overseas
+      - Not Driving
+      - Previous Company Car
+      - Vehicle Not Operational
+    example: Active Military

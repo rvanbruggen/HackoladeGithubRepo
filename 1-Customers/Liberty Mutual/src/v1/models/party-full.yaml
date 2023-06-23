@@ -1,0 +1,51 @@
+type: object
+description: "This is the high level party object that other party/roles will inherit."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is a unique identifier for this specific party instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  address:
+    type: array
+    description: "This identifies the postal address/location for the party."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/address.yaml'
+  communication:
+    type: array
+    description: "This object will contain all phone and email information."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/communication.yaml'
+  organization:
+    description: "This is the organization details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './components/organization.yaml'
+  partyIdentity:
+    type: array
+    description: ""
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/party-identity.yaml'
+  partyRole:
+    description: "This is any potential role this party may play. The seperate resource object(s) may be put in here at implmenetiaton time inplace of this object."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './components/party-role.yaml'
+  person:
+    description: "This is the person details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './components/person.yaml'
+  typeCode:
+    description: "A code indicating the type of party, either a Person or an Organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Person"  

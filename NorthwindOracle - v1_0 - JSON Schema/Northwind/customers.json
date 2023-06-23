@@ -1,0 +1,101 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "customers",
+    "additionalProperties": false,
+    "properties": {
+        "customer_id": {
+            "type": "number",
+            "description": "unique five-character code based on customer name.",
+            "examples": [
+                10
+            ]
+        },
+        "customer_code": {
+            "type": "string",
+            "maxLength": 5,
+            "examples": [
+                "BOTTM"
+            ]
+        },
+        "company_name": {
+            "type": "string",
+            "maxLength": 40,
+            "examples": [
+                "Bottom-Dollar Markets"
+            ]
+        },
+        "contact_name": {
+            "type": "string",
+            "maxLength": 30,
+            "examples": [
+                "Elizabeth Lincoln"
+            ]
+        },
+        "contact_title": {
+            "type": "string",
+            "maxLength": 30,
+            "examples": [
+                "Accounting Manager"
+            ]
+        },
+        "address": {
+            "type": "string",
+            "description": "street or post-office box.",
+            "maxLength": 60,
+            "examples": [
+                "23 Tsawassen Blvd."
+            ]
+        },
+        "city": {
+            "type": "string",
+            "maxLength": 15,
+            "examples": [
+                "Tsawassen"
+            ]
+        },
+        "region": {
+            "type": "string",
+            "description": "state or province.",
+            "maxLength": 15,
+            "examples": [
+                "BC"
+            ]
+        },
+        "postal_code": {
+            "type": "string",
+            "maxLength": 10,
+            "examples": [
+                "T2F 8M4"
+            ]
+        },
+        "country": {
+            "type": "string",
+            "maxLength": 15,
+            "examples": [
+                "Canada"
+            ]
+        },
+        "phone": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24,
+            "examples": [
+                "(604) 555-4729"
+            ]
+        },
+        "fax": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24,
+            "examples": [
+                "(604) 555-3745"
+            ]
+        }
+    },
+    "required": [
+        "customer_id",
+        "customer_code",
+        "company_name"
+    ]
+}

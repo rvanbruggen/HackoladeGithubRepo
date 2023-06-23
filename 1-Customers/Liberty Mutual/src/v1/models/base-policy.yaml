@@ -1,0 +1,294 @@
+type: object
+description: This object defines the details of a policy.
+properties:
+  id:
+    type: string
+    description: "The unique number assigned to the policy being referenced."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "6c3f584c-5f02-4afe-baf6-c8a345261ab5"
+  affinity:
+    $ref: './components/affinity.yaml'
+  billingAddress:
+    $ref: './components/address.yaml'
+  broadLineOfBusinessCode:
+    $ref: './components/enums/broad-lob.yaml'
+  cancellationDate:
+    type: string
+    description: "The date a policys coverage is cancelled prior to the normal expiration date of a policy."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  carrierCode:
+    $ref: './components/enums/carrier-code.yaml'
+  companyProductCode:
+    type: string
+    description: "A company-unique code indicating the product classification of this policy. The source of this code list is the individual insurer. This is the place for the rating program code."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  companyProductSubCode:
+    type: string
+    description: "Contains the sub product code if more than one level of product codes applies."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  contact:
+    type: array
+    description: "This object represents a party for which all communication will be done through. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/contact.yaml'
+  controllingStateProvinceCode:
+    type: string
+    deprecated: true
+    description: "Jurisdiction."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    releaseDeprecated: 1.71.0
+    deprecationReason: NGDS in version 1.5 deprecated. Following NGDS.
+    maxLength: 2
+    minLength: 2
+    $ref: './components/enums/jurisdiction-us.yaml'
+    example: 'IL'
+  controllingStateOrProvinceCode:
+    type: string
+    description: "Jurisdiction."
+    x-releaseCreated: 1.71.0
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    maxLength: 2
+    minLength: 2
+    $ref: './components/enums/jurisdiction-us.yaml'
+    example: 'IL'
+  coverage:
+    type: array
+    description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits. This is selected coverages."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/coverage.yaml'
+  coverageAvailable:
+    type: array
+    description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits. This is non-selected coverages."
+    deprecated: true
+    releaseDeprecated: 1.71.0
+    deprecationReason: Use coverage.acceptedIndicator
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/coverage-available.yaml'
+  coverageEffectiveDate:
+    type: string
+    description: "The date on which the latest coverage changes take effect on the policy. This differs from effectiveDate which represents the beginning of the term. If no policy changes have been made since the beginning of the term, these two dates will be equal"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  coverageExpirationDate:
+    type: string
+    description: "The date on which the latest coverage changes expire on the policy"
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  creditOrSurcharge:
+    type: array
+    description: "DEPRECATED: Describes a credit/discount/surcharge/modification. This is selected credit or surcharges."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    deprecated: true        
+    releaseDeprecated: 1.68.0
+    items:
+      $ref: './components/credit-surcharge.yaml'
+  creditOrSurchargeAvailable:
+    type: array
+    description: "DEPRECATED: Describes a credit/discount/surcharge/modification. This is non-selected credit or surcharges."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    deprecated: true        
+    releaseDeprecated: 1.68.0
+    items:
+      $ref: './components/credit-surcharge-available.yaml'
+  deductible:
+    type: array
+    description: "Contains amount and type of deductible that will be applied."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/deductible.yaml'
+  discounts:
+    type: array
+    description: "The list of discounts that apply to this policy"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/discount.yaml'
+  effectiveDate:
+    description: "The date on which this transaction takes effect.  "
+    x-acord-status: ACORD_NGDS
+    x-lam-status: APPROVED
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  electronicDocsSelectionCode:
+    type: string
+    description: "A code list indicating the insured selection or rejection of electronic documents."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    enum:
+      - Electronic Delivery Only
+      - Electronic Delivery Not Offered
+      - Rejection of Electronic Delivery
+      - Withdrawal of Consent of Electronic Delivery 
+  endorsementNumber:
+    description: "The specific endorsement number for this policy."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    type: integer
+    example: "2"
+  expirationDate:
+    description: "The date on which this policy is no longer valid."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2021-01-23"
+  form:
+    type: array
+    description: "The Form aggregate is used to inform the receiver as to the exact nature of a form that is to be (or has been) attached to the contract."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    items:
+      $ref: './components/form.yaml'
+  inceptionDate:
+    type: string
+    description: "The date this insured first was issued a policy by this insurer."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-23"
+  insured:
+    type: array
+    description: "This object provides information regarding insured or principal parties on a policy "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/insured.yaml'
+  insurer:
+    $ref: './components/insurer.yaml'
+  lifeCycleStatusCode:
+    $ref: './components/enums/lifecycle-status.yaml'
+  mailingAddress:
+    $ref: './components/address.yaml'
+  note:
+    type: array
+    description: "This holds the information about name of the insured, the insurer, the coverage, and what is being covered by the insurance. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/note.yaml'
+  number:
+    type: string
+    description: "The unique number assigned to the policy, or submission, being referenced. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "OY6049477"
+  otherOrPriorPolicy:
+    type: array
+    description: "This aggregate contains pertinent information about policies related to 'this' policy, such as prior policy history information, other policies in force, or underlying policy information associated with an umbrella or excess policy. This aggregate may be repeated as many times as needed to contain the appropriate prior policy history or other policy information."
+    x-acord-status: ACORD_PC_XML
+    items:
+      $ref: './components/otherOrPriorPolicy.yaml'
+  payees:
+    type: array
+    description: "This represents parties that may need to be paid in case of a loss (ex: mortgagees)"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/payee.yaml'
+  producer:
+    type: array
+    description: "This object provides information regarding insured or principal parties on a policy "
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/producer-full.yaml'
+  renewalStatusCode:
+    type: string
+    description: "A code indicating the renewal status of a policy."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    x-extensible-enum:
+      - Do Not Renew
+      - Renewal
+      - Terminated Agent
+  residentialAddress:
+    $ref: './components/address.yaml'
+  statusReasonCode:
+    type: string
+    description: "A reason why the policy status is in the latest committed transaction."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    x-extensible-enum:
+      - Backed Out
+      - Cancelled
+      - Cancelled Not Taken
+      - Non Pay
+      - Non Renewed
+      - Policy Change
+      - Renewed
+      - Replaced
+  statusCode:
+    deprecated: true
+    releaseDeprecated: 1.71.0
+    deprecationReason: "Unclear definition of policy status. Will be replaced by statusCode in V2 with a different enum set. See also statusReasonCode and renewalStatusCode"
+    $ref: './components/enums/policy-status.yaml'
+  surcharges:
+    type: array
+    description: "The list of surcharges that apply to this policy"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/surcharge.yaml'
+  termCode:
+    description: "A code indicating term, or length of the policy. The source of this code list is the individual insurer."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: integer
+    example: "12"
+  tierCode:
+    description: "A code indicating the rating tier. The source of this code list is the individual insurer."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: string
+    example: "12"
+  totalPremium:
+    type: string
+    description: "total amount of policy premium. "
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+  transactionEffectiveDate:
+    description: "The date on which this transaction takes effect."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    type: string
+    format: date
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    example: "2020-01-24"
+  transactions:
+    type: array
+    description: "The list of transactions that have occurred to this policy"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './components/transaction.yaml'
+  underwritingDecision:
+    description: "This aggregate contains details related to an underwriting decision."
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    $ref: './components/underwriting-decision.yaml'

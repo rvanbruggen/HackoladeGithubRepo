@@ -1,0 +1,102 @@
+type: object
+x-lob:
+  - HOME
+  - RENTER
+description: "This identifies the location address."
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS_NEXT_VERSION
+properties:
+  basement:
+    type: array
+    description: "This will define the type of basement"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/basement.yaml'
+  bathroom:
+    type: array
+    description: "This will define the type of bathroom"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/bathroom.yaml'
+  electrical:
+    $ref: './structure/electrical.yaml'
+  exteriorWall:
+    type: array
+    description: "This will define the type of exterior wall"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/exterior-wall.yaml'
+  foundation:
+    type: array
+    description: "This will define the type of foundation"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/foundation.yaml'
+  floor:
+    type: array
+    description: "This will define the type of floor"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/floor.yaml'
+  garage:
+    type: array
+    description: "This will define the type of garage"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/garage.yaml'
+  heating:
+    type: array
+    description: "This will define the type of heating"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/heating.yaml'
+  kitchen:
+    type: array
+    description: "This will define the type of kitchen"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/kitchen.yaml'
+  lowerLevel:
+    type: array
+    description: "This will define the type of lower level"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/lower-level.yaml'
+  roof:
+    type: array
+    description: "This will define the type of roof"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './structure/roof.yaml'
+  wiring:
+    $ref: './structure/wiring.yaml'
+  yearElectricalUpdated:
+    type: number
+    description: The latest year when the plumbing was updated
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+  yearHeatingUpdated:
+    type: number
+    description: The latest year when the plumbing was updated
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+  yearPlumbingUpdated:
+    type: number
+    description: The latest year when the plumbing was updated
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD
+  yearRoofUpdated:
+    type: number
+    description: The latest year when the plumbing was updated
+    x-lam-status: APPROVED
+    x-acord-status: NON_ACORD

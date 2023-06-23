@@ -1,0 +1,24 @@
+type: object
+description: "This is an association to any amounts related to an object"
+properties:
+  reference:
+    $ref: './reference.yaml'
+  typeCode:
+    type: string
+    description: "This will describe the type of amount that is being described."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - TotalReserveAmount
+      - TotalPaidAmount
+      - ReserveAmount
+      - PaidAmount
+      - Appraisal
+    example: "Appraisal"
+  value:
+    type: number
+    format: double
+    description: "This is the numeric value of the described amountItemType."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "65.98"

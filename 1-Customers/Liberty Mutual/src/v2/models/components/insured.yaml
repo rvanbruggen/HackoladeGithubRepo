@@ -1,0 +1,59 @@
+type: object
+description: "This object provides information regarding insured or principal parties on a policy"
+x-lam-status: APPROVED
+x-acord-status: ACORD_NGDS
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific insured instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "f0794df1-f321-4cd0-b643-877f4b30438f"
+  typeCode:
+    $ref: './enums/insured-type.yaml'
+  addresses:
+    type: array
+    description: "Deprecated: This identifies the postal address/location."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './address.yaml'
+    deprecated: true        
+    releasedCreated: 1.4.9
+    releaseDeprecated: 1.4.9
+    replacedBy: Inheritance To Party, Organization - Legal Entity Name
+    deprecationReason: This is deprecated as it we are moving towards inheriting party from NGDS 1.4. This is only by BL Alt-Channel Team at the moment. And moving toward person or organization address.
+  fullName:
+    type: string
+    description: "Deprecated: This is the full name of the party."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Jungle Jims LLC"
+    deprecated: true        
+    releasedCreated: 1.4.9
+    releaseDeprecated: 1.4.9
+    replacedBy: Inheritance To Party, Organization - Legal Entity Name
+    deprecationReason: This is deprecated as it we are moving towards inheriting party from NGDS 1.4. This is only by BL Alt-Channel Team at the moment. And moving toward Legal Entity Name.
+  organization:
+    description: "This is the organization details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './organization.yaml'
+  partyIdentities:
+    type: array
+    description: ""
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './party-identity.yaml'
+  partyRole:
+    description: "This is any potential role this party may play. The seperate resource object(s) may be put in here at implmenetiaton time inplace of this object."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './insured-party-role.yaml'
+  person:
+    description: "This is the person details if the party is an organization"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    $ref: './person.yaml'

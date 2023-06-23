@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "shippers",
+    "additionalProperties": false,
+    "properties": {
+        "shipper_id": {
+            "type": "number",
+            "description": "number automatically assigned to new shipper."
+        },
+        "company_name": {
+            "type": "string",
+            "description": "name of shipping company.",
+            "maxLength": 40
+        },
+        "phone": {
+            "type": "string",
+            "description": "phone number includes country code or area code.",
+            "maxLength": 24
+        }
+    },
+    "required": [
+        "shipper_id",
+        "company_name"
+    ]
+}

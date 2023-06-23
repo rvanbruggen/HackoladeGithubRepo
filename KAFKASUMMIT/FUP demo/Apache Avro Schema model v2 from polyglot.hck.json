@@ -1,0 +1,328 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "3e66dee9-ae79-4280-91e5-0244dd38caaf",
+            "type": "reference",
+            "$ref": "#external/definitions/rental",
+            "refType": "polyglot",
+            "ref": "fed1a055-37d7-11ec-8866-8b7656a20503",
+            "refIdPath": [
+                "6e7f2be9-0681-40ba-8303-3e64f79d49b7",
+                "d6bc63b6-8c81-435e-b22b-bd4302ffe504",
+                "fed1a055-37d7-11ec-8866-8b7656a20503"
+            ],
+            "isActivated": true,
+            "collectionName": "rental",
+            "code": "",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "474ee26b-c009-4cb0-98c5-3293f0f1efd1"
+            },
+            "sources": [
+                {
+                    "GUID": "8919788c-2c22-4d7e-af15-2c181e3ad3ae",
+                    "lineageSourceGUID": "dcb8a3f0-ca7e-420f-963d-7c85e80719fe",
+                    "lineageSourceAttrBusName": "",
+                    "lineageSourceAttrTechName": "",
+                    "lineageSrcEntityBusName": "rental",
+                    "lineageSrcEntityTechName": "",
+                    "lineageSourceContainerBusName": "",
+                    "lineageSourceContainerTechName": ""
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "3e66dee9-ae79-4280-91e5-0244dd38caaf": "rental",
+        "dcb8a3f0-ca7e-420f-963d-7c85e80719fe": "Derived from Polyglot"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1cf5a77c-2a7d-476e-974f-1d8fae30d148"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "rental",
+                "code": "",
+                "isActivated": true,
+                "bucketId": "feda79f0-37d7-11ec-8866-8b7656a20503",
+                "additionalProperties": true,
+                "primaryKey": [
+                    {
+                        "GUID": "fed96884-37d7-11ec-8866-8b7656a20503",
+                        "constraintName": "rental_pkey",
+                        "compositePrimaryKey": [
+                            {
+                                "keyId": "fed1c761-37d7-11ec-8866-8b7656a20503",
+                                "type": ""
+                            }
+                        ],
+                        "indexStorageParameters": "",
+                        "indexTablespace": null
+                    }
+                ],
+                "uniqueKey": [],
+                "properties": [
+                    {
+                        "required": false,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "rental_id",
+                        "code": "",
+                        "isActivated": true,
+                        "default": "nextval('rental_rental_id_seq'::regclass)",
+                        "GUID": "fed1c761-37d7-11ec-8866-8b7656a20503",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "long",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "rental_date",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "fed1c762-37d7-11ec-8866-8b7656a20503",
+                        "logicalType": "local-timestamp-millis",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "inventory_id",
+                        "code": "",
+                        "isActivated": true,
+                        "foreignCollection": "fed326f0-37d7-11ec-8866-8b7656a20503",
+                        "foreignField": [
+                            "fed326f0-37d7-11ec-8866-8b7656a20503",
+                            "fed326f2-37d7-11ec-8866-8b7656a20503"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "GUID": "fed1c763-37d7-11ec-8866-8b7656a20503",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "customer_id",
+                        "code": "",
+                        "isActivated": true,
+                        "foreignCollection": "fed570e1-37d7-11ec-8866-8b7656a20503",
+                        "foreignField": [
+                            "fed570e1-37d7-11ec-8866-8b7656a20503",
+                            "fed570e3-37d7-11ec-8866-8b7656a20503"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "GUID": "fed1c764-37d7-11ec-8866-8b7656a20503",
+                        "error": {}
+                    },
+                    {
+                        "name": "return_date",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "9234336a-5a64-432e-a7bd-bf5508a743e1"
+                            },
+                            {
+                                "childType": "number",
+                                "compositePrimaryKey": false,
+                                "compositeUniqueKey": false,
+                                "unique": false,
+                                "GUID": "21aa5db7-eb0b-4b9c-bed1-e5d725f6d045",
+                                "type": "numeric",
+                                "mode": "long",
+                                "logicalType": "local-timestamp-millis"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": true,
+                        "default": null,
+                        "GUID": "fed1c765-37d7-11ec-8866-8b7656a20503",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "staff_id",
+                        "code": "",
+                        "isActivated": true,
+                        "foreignCollection": "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                        "foreignField": [
+                            "fed0b5f1-37d7-11ec-8866-8b7656a20503",
+                            "fed0b5f3-37d7-11ec-8866-8b7656a20503"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "GUID": "fed1c766-37d7-11ec-8866-8b7656a20503",
+                        "error": {}
+                    },
+                    {
+                        "required": false,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "long",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "last_update",
+                        "code": "",
+                        "isActivated": true,
+                        "default": "now()",
+                        "GUID": "fed1c767-37d7-11ec-8866-8b7656a20503",
+                        "logicalType": "local-timestamp-millis",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "fed1c760-37d7-11ec-8866-8b7656a20503",
+                    "properties": []
+                },
+                "GUID": "fed1a055-37d7-11ec-8866-8b7656a20503",
+                "type": "object",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "link": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/KAFKASUMMIT/FUP demo/DVDrental (Polyglot).hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/public/rental",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "3e66dee9-ae79-4280-91e5-0244dd38caaf"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "d6bc63b6-8c81-435e-b22b-bd4302ffe504"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "4fb154f9-25ea-4675-b87a-0dcc828dea20"
+    },
+    "sources": [
+        {
+            "GUID": "dcb8a3f0-ca7e-420f-963d-7c85e80719fe",
+            "sourceName": "Derived from Polyglot",
+            "lineageTimestamp": "2023-05-18 13:33:28 CEST",
+            "lineageSourceType": "Polyglot",
+            "lineageSourceFormat": "File",
+            "lineageFilePathName": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/KAFKASUMMIT/FUP demo/DVDrental (Polyglot).hck.json"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2023-05-18T11:33:04.036Z",
+    "GUID": "6e7f2be9-0681-40ba-8303-3e64f79d49b7",
+    "isLineageEnabled": true,
+    "polyglotModelPaths": [
+        {
+            "GUID": "1ca2bb38-b617-48f2-8680-fd075de1166d",
+            "polyglotModelName": "DVDrental (Polyglot).hck",
+            "polyglotModelPath": "/Users/rvanbruggen/Library/CloudStorage/OneDrive-Hackolade/Demo/HackoladeGithubRepo/KAFKASUMMIT/FUP demo/DVDrental (Polyglot).hck.json",
+            "normalization": false
+        }
+    ],
+    "lastModifTS": "2023-05-18T11:33:33.384Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.113",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.1"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "3e66dee9-ae79-4280-91e5-0244dd38caaf",
+                        "x": 1420,
+                        "y": 1751.3501477906539,
+                        "width": 308,
+                        "height": 156,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

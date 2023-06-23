@@ -1,0 +1,23 @@
+type: object
+description: Foundation
+title: foundation
+properties:
+  typeCode:
+    description: A code defining in more detail the specific type of structure defined by the structure type code
+    type: string
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    enum:
+      - Basement
+      - Crawl Space
+      - Piers
+      - Slab at Grade
+      - Suspeneded Over Hillside
+      - Walkout or Daylight Basement
+    example: Crawl Space
+  percentage:
+    description: The percentage of coverage of the foundation
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    type: number
+    example: 70

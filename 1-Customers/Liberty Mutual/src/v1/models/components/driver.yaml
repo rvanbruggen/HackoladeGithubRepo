@@ -1,0 +1,139 @@
+type: object
+x-lob: AUTO
+description: "This object will contain all driver information . Majority of this data will come from the Party system."
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "This is the unique identifier for this specific driver instance."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "44743dde-70c1-4ebe-9092-8b4aa5678dda"
+  typeCode:
+    $ref: './enums/driver-type.yaml'
+  accident:
+    type: array
+    description: "This holds information about accidents/violations and automobile losses, whether related to an accident or violation or not. The aggregate should be repeated for describing multiple accidents, violations and/or losses."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    items:
+      $ref: './accident.yaml'
+  addresses:
+    type: array
+    description: "This identifies the postal address/location."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './address.yaml'
+  birthDate:
+    type: string
+    description: "Birth Date of driver."
+    pattern: '^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$'
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "2005-10-10"
+  communication:
+    type: array
+    description: "This object will contain all phone and email information."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './communication.yaml'
+  courses:
+    type: array
+    description: "This object depicts about the course information details for drivers. This helps with providing discounts to the driver."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS_NEXT_VERSION
+    items:
+      $ref: './training.yaml'
+  coverage:
+    type: array
+    description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits. This is selected coverages."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './coverage.yaml'
+  coverageAvailable:
+    type: array
+    description: "This object defines a financial services agreement component detailing the circumstances under which a benefit (money or services) will be paid. Effectively this provides protection against a particular risk. In property insurance, coverage identifies elements such as perils insured against, properties covered, locations covered, individuals insured and the limits of indemnification. In life insurance, a coverage identifies elements such as living and death benefits. This is non-selected coverages."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    deprecated: true
+    releaseDeprecated: 1.68.0
+    deprecationReason: Use coverage.acceptedIndicator
+    items:
+      $ref: './coverage-available.yaml'
+  creditOrSurcharge:
+    type: array
+    description: "DEPRECATED: Describes a credit/discount/surcharge/modification. This is selected credit or surcharges."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    deprecated: true        
+    releaseDeprecated: 1.68.0
+    items:
+      $ref: './credit-surcharge.yaml'
+  creditOrSurchargeAvailable:
+    type: array
+    description: "DEPRECATED: Describes a credit/discount/surcharge/modification. This is non-selected credit or surcharges."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    deprecated: true        
+    releaseDeprecated: 1.68.0
+    items:
+      $ref: './credit-surcharge-available.yaml'
+  discounts:
+    type: array
+    description: "The list of discounts that apply to this driver"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './discount.yaml'
+  gender:
+    type: string
+    description: "Gender of Driver."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    enum:
+      - Female
+      - Male
+      - Unknown
+      - Other
+    example: Female
+  givenName:
+    type: string
+    minLength: 2
+    maxLength: 40
+    description: "A portion of an individual's name, also known as First Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Mary"
+  license:
+    type: array
+    x-lob: AUTO
+    description: "The license information for each license for a producer or a product provider.Licenses are issued by state. Some states require separate licensing for soliciting and selling. It is not uncommon for an agent in one state to also be licensed in bordering states."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './license.yaml'
+  surcharges:
+    type: array
+    description: "The list of surcharges that apply to this driver"
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    items:
+      $ref: './surcharge.yaml'
+  surname:
+    minLength: 2
+    maxLength: 40
+    type: string
+    description: "A portion of an individual's name, also known as Last Name or Family Name."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_NGDS
+    example: "Smith"
+  violation:
+    type: array
+    description: "This holds information about accidents/violations and automobile losses, whether related to an accident or violation or not. The aggregate should be repeated for describing multiple accidents, violations and/or losses."
+    x-lam-status: APPROVED
+    x-acord-status: ACORD_PC_XML
+    items:
+      $ref: './violation.yaml'
