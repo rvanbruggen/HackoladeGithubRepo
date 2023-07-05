@@ -1,0 +1,293 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "collectionName": "Organisation",
+            "type": "object",
+            "properties": [
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "143bb6a3-1c2a-4382-b4e8-d48896fa63dd"
+                    },
+                    "tPrecision": 9,
+                    "index": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "mode": "int64",
+                    "alternateKey": false,
+                    "childType": "integer",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "d70d255a-093f-40f1-b528-0684398d6c16",
+                    "name": "orgHubId",
+                    "error": {}
+                },
+                {
+                    "name": "shortName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "alternateKey": false,
+                    "childType": "nvarchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "2600b776-4cdd-43af-80ef-c8d4834cdbf0",
+                    "error": {}
+                },
+                {
+                    "name": "fullLegalName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "alternateKey": false,
+                    "childType": "nvarchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "8ec57447-ffe9-4456-a144-6ea79627bd3d",
+                    "error": {}
+                },
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "subschema": true,
+                            "isActivated": true,
+                            "type": "document",
+                            "GUID": "d3fe60b0-7994-4bed-87a4-c08e7e5f6421",
+                            "childType": "object",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "autoincrement": {
+                                        "step_num": 1
+                                    },
+                                    "tPrecision": 9,
+                                    "primaryKey": false,
+                                    "alternateKey": false,
+                                    "childType": "nvarchar",
+                                    "type": "string",
+                                    "compositeKey": [
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey"
+                                    ],
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "GUID": "9c9c585a-d8e4-4576-9310-d0814fa81c21",
+                                    "name": "bloombergCompanyId",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true
+                        },
+                        {
+                            "subschema": true,
+                            "isActivated": true,
+                            "type": "document",
+                            "GUID": "b4dfcea5-34d4-4324-9025-c92de6183b66",
+                            "childType": "object",
+                            "properties": [
+                                {
+                                    "name": "legalEntityId",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "autoincrement": {
+                                        "step_num": 1
+                                    },
+                                    "tPrecision": 9,
+                                    "primaryKey": false,
+                                    "alternateKey": false,
+                                    "childType": "nvarchar",
+                                    "type": "string",
+                                    "compositeKey": [
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey"
+                                    ],
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "GUID": "50ea47d5-af50-4d50-87f0-f43f2277ce82",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true
+                        },
+                        {
+                            "subschema": true,
+                            "isActivated": true,
+                            "type": "document",
+                            "GUID": "76d841d0-f70f-4ed0-9723-da32bad658f5",
+                            "childType": "object",
+                            "properties": [
+                                {
+                                    "name": "ticker",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "autoincrement": {
+                                        "step_num": 1
+                                    },
+                                    "tPrecision": 9,
+                                    "primaryKey": false,
+                                    "alternateKey": false,
+                                    "childType": "nvarchar",
+                                    "type": "string",
+                                    "compositeKey": [
+                                        "compositePrimaryKey",
+                                        "compositeUniqueKey"
+                                    ],
+                                    "compositePrimaryKey": false,
+                                    "compositeUniqueKey": false,
+                                    "GUID": "9ebe7e39-2ca8-45e4-8fb2-8e15a90a82c2",
+                                    "error": {}
+                                }
+                            ]
+                        }
+                    ],
+                    "isActivated": true,
+                    "choice": "anyOf",
+                    "GUID": "14bb9ad5-5624-4b9c-880b-acea2df79609"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "35f074d8-26de-404a-a529-3be3d2c00a65"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "GUID": "fa8c9fe3-409d-4480-a5f0-417c439af8ee",
+            "error": {}
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "fa8c9fe3-409d-4480-a5f0-417c439af8ee": "Organisation",
+        "2600b776-4cdd-43af-80ef-c8d4834cdbf0": "shortName",
+        "d70d255a-093f-40f1-b528-0684398d6c16": "orgHubId",
+        "8ec57447-ffe9-4456-a144-6ea79627bd3d": "fullLegalName",
+        "9c9c585a-d8e4-4576-9310-d0814fa81c21": "bloombergCompanyId",
+        "50ea47d5-af50-4d50-87f0-f43f2277ce82": "legalEntityId",
+        "9ebe7e39-2ca8-45e4-8fb2-8e15a90a82c2": "ticker"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "5fce67c9-9d0e-4bcc-858c-5e1a3de3b12e"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "aa2abe78-9d8b-4085-a87b-2f26a4f49fe3"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "d2cdc276-26ed-433f-b2c5-18d96dde46a3"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Polyglot",
+    "appTarget": "Polyglot",
+    "creationTS": "2023-06-27T16:13:45.053Z",
+    "GUID": "32fa3f26-51f7-4479-9554-ec195e96fa23",
+    "isLineageEnabled": false,
+    "lastModifTS": "2023-06-27T16:21:03.348Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.9"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "fa8c9fe3-409d-4480-a5f0-417c439af8ee",
+                        "x": 1523,
+                        "y": 1190,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "fa8c9fe3-409d-4480-a5f0-417c439af8ee",
+                            "size": 100,
+                            "x": 1523,
+                            "y": 1190
+                        }
+                    ],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

@@ -1,0 +1,624 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "b4ea7f5e-1d3c-42c9-9526-328a311db829",
+            "type": "reference",
+            "$ref": "#external/definitions/Organisation",
+            "refType": "polyglot",
+            "ref": "b305c00f-38a7-4e36-b5b3-88fd62e25044",
+            "refIdPath": [
+                "7cce7d5f-0f7a-4b41-993a-6ae02be54788",
+                "1ccb6213-881c-40da-846d-ac058f667173",
+                "b305c00f-38a7-4e36-b5b3-88fd62e25044"
+            ],
+            "isActivated": true,
+            "collectionName": "Organisation",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "6e0d52c3-460d-41f2-8a6b-bcec0fd85206"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "462d3d6b-1734-4b9f-bcd0-2f019b2cd331",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "e1d6ee85-685a-432b-b0dc-2dda8480e42d",
+                        "foreignField": [
+                            "e1d6ee85-685a-432b-b0dc-2dda8480e42d",
+                            "5e0e8832-8de2-4143-95bb-81050713ce89",
+                            "0fa99324-962b-4e22-a229-04e1a69a729e"
+                        ],
+                        "parentRelationship": "5ad2b802-2d00-4c57-841f-d1002ba27ada",
+                        "error": {}
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "GUID": "bd5b7def-cc2b-441d-91f3-78751b3a8307",
+                    "lineageSourceGUID": "cbf857f9-93ce-4ea8-a7a7-2d70734f896d",
+                    "lineageSourceAttrBusName": "",
+                    "lineageSourceAttrTechName": "",
+                    "lineageSrcEntityBusName": "Organisation",
+                    "lineageSrcEntityTechName": "",
+                    "lineageSourceContainerBusName": "",
+                    "lineageSourceContainerTechName": ""
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "GUID": "e1d6ee85-685a-432b-b0dc-2dda8480e42d",
+            "type": "reference",
+            "$ref": "#external/definitions/identifiers",
+            "refType": "polyglot",
+            "ref": "5e0e8832-8de2-4143-95bb-81050713ce89",
+            "refIdPath": [
+                "7cce7d5f-0f7a-4b41-993a-6ae02be54788",
+                "1ccb6213-881c-40da-846d-ac058f667173",
+                "5e0e8832-8de2-4143-95bb-81050713ce89"
+            ],
+            "isActivated": true,
+            "collectionName": "identifiers",
+            "code": "identifiers",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "e08e93b8-0a48-4de3-b90e-b3a033f188c3"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "0fa99324-962b-4e22-a229-04e1a69a729e",
+                        "childRelationships": [
+                            "5ad2b802-2d00-4c57-841f-d1002ba27ada"
+                        ],
+                        "error": {}
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "GUID": "d9fe2bdf-8bb8-4cf0-80b8-559df1fc291e",
+                    "lineageSourceGUID": "cbf857f9-93ce-4ea8-a7a7-2d70734f896d",
+                    "lineageSourceAttrBusName": "",
+                    "lineageSourceAttrTechName": "",
+                    "lineageSrcEntityBusName": "identifiers",
+                    "lineageSrcEntityTechName": "identifiers",
+                    "lineageSourceContainerBusName": "",
+                    "lineageSourceContainerTechName": ""
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk identifiers.id to Organisation.identifiers",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e1d6ee85-685a-432b-b0dc-2dda8480e42d",
+                    "5e0e8832-8de2-4143-95bb-81050713ce89",
+                    "0fa99324-962b-4e22-a229-04e1a69a729e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "b4ea7f5e-1d3c-42c9-9526-328a311db829",
+                    "b305c00f-38a7-4e36-b5b3-88fd62e25044",
+                    "462d3d6b-1734-4b9f-bcd0-2f019b2cd331"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "parentCollection": "e1d6ee85-685a-432b-b0dc-2dda8480e42d",
+            "childCollection": "b4ea7f5e-1d3c-42c9-9526-328a311db829",
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk identifiers.id to Organisation.identifiers",
+            "refIdPath": [
+                "7cce7d5f-0f7a-4b41-993a-6ae02be54788",
+                "1ccb6213-881c-40da-846d-ac058f667173",
+                "77a53044-cea7-45d3-a39a-834037f585b7"
+            ],
+            "ref": "77a53044-cea7-45d3-a39a-834037f585b7",
+            "GUID": "5ad2b802-2d00-4c57-841f-d1002ba27ada",
+            "hackoladeStyles": {
+                "GUID": "c8c562ab-698e-40ce-bd12-b7c3db3dc0dd",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1245,
+                        "y": 1110
+                    },
+                    {
+                        "x": 1278.5,
+                        "y": 1110
+                    },
+                    {
+                        "x": 1278.5,
+                        "y": 1246
+                    },
+                    {
+                        "x": 1312,
+                        "y": 1246
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "b4ea7f5e-1d3c-42c9-9526-328a311db829": "Organisation",
+        "e1d6ee85-685a-432b-b0dc-2dda8480e42d": "identifiers",
+        "5ad2b802-2d00-4c57-841f-d1002ba27ada": "fk identifiers.id to Organisation.identifiers",
+        "cbf857f9-93ce-4ea8-a7a7-2d70734f896d": "Derived from Polyglot"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d6ad6178-fd72-49de-bf67-a73bfa0b6fab"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "Organisation",
+                "type": "object",
+                "properties": [
+                    {
+                        "name": "id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "autoincrement": {
+                            "step_num": 1
+                        },
+                        "tPrecision": 9,
+                        "primaryKey": true,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "23477c51-157f-4e7a-8c1c-e739740cbf14",
+                        "error": {}
+                    },
+                    {
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "alternateKey": false,
+                        "childType": "integer",
+                        "type": "numeric",
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "autoincrement": {
+                            "step_num": 1,
+                            "GUID": "143bb6a3-1c2a-4382-b4e8-d48896fa63dd"
+                        },
+                        "mode": "bigint",
+                        "GUID": "8a4a7054-cb4e-4669-926a-1acc7ac45018",
+                        "name": "orgHubId",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "shortName",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "d212183a-f13e-48d9-9f0d-5d66fb4fe91b",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "mode": "",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "fullLegalName",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "89d2b2cc-afea-4136-a608-8e95b9d7d73e",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "mode": "",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "name": "identifiers",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "autoincrement": {
+                            "step_num": 1
+                        },
+                        "tPrecision": 9,
+                        "primaryKey": false,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "462d3d6b-1734-4b9f-bcd0-2f019b2cd331",
+                        "foreignCollection": "5e0e8832-8de2-4143-95bb-81050713ce89",
+                        "foreignField": [
+                            "5e0e8832-8de2-4143-95bb-81050713ce89",
+                            "0fa99324-962b-4e22-a229-04e1a69a729e"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "bf894c82-3f06-4acf-9f17-9148a05d8ac2"
+                },
+                "isActivated": true,
+                "additionalProperties": true,
+                "GUID": "b305c00f-38a7-4e36-b5b3-88fd62e25044",
+                "error": {},
+                "bucketId": "",
+                "definitionEntityType": "collection",
+                "link": "HUB Organisation v2.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/Organisation",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionRefs": [
+                    [
+                        "b4ea7f5e-1d3c-42c9-9526-328a311db829"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "identifiers",
+                "type": "object",
+                "properties": [
+                    {
+                        "name": "id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "autoincrement": {
+                            "step_num": 1
+                        },
+                        "tPrecision": 9,
+                        "primaryKey": true,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "0fa99324-962b-4e22-a229-04e1a69a729e",
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "f70c80e7-130f-42b9-b697-ec72102d6e08",
+                        "name": "bloombergCompanyId",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "mode": "",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "legalEntityId",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "f92a21e5-917a-4a0b-bddd-4b4ee5795cbf",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "mode": "",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "alternateKey": false,
+                        "childType": "varchar",
+                        "type": "string",
+                        "clusteringKey": false,
+                        "partitioningKey": false,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "name": "ticker",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "d2503f0c-31b7-488f-9114-3d86bb586835",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "mode": "",
+                        "compositeKey": [
+                            "clusteringKey",
+                            "partitioningKey",
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "a2d3cb67-5d88-4d04-8faf-260acbf97af9"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "formatTypeOptions": {
+                    "NULL_IF": [
+                        {
+                            "NULL_IF_item": "\\N",
+                            "GUID": "cdb93095-8701-4576-921e-56e25d8cc445"
+                        }
+                    ],
+                    "GUID": "e0cce900-1dc4-4ae8-8297-408fe0b8af56"
+                },
+                "external": false,
+                "GUID": "5e0e8832-8de2-4143-95bb-81050713ce89",
+                "code": "identifiers",
+                "normalizationSourceFieldId": "462d3d6b-1734-4b9f-bcd0-2f019b2cd331",
+                "definitionEntityType": "collection",
+                "bucketId": "",
+                "normalizationSourceCollection": "b305c00f-38a7-4e36-b5b3-88fd62e25044",
+                "link": "HUB Organisation v2.json",
+                "kind": "relativePath",
+                "fileType": "hackoladeSchema",
+                "normalizationFieldRelativeNamePath": [
+                    "Organisation",
+                    "identifiers"
+                ],
+                "fieldRelativePath": "#/Organisation/properties/identifiers",
+                "definitionRefs": [
+                    [
+                        "e1d6ee85-685a-432b-b0dc-2dda8480e42d"
+                    ]
+                ],
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                }
+            },
+            {
+                "name": "fk identifiers.id to Organisation.identifiers",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    [
+                        "5e0e8832-8de2-4143-95bb-81050713ce89",
+                        "0fa99324-962b-4e22-a229-04e1a69a729e"
+                    ]
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    [
+                        "b305c00f-38a7-4e36-b5b3-88fd62e25044",
+                        "462d3d6b-1734-4b9f-bcd0-2f019b2cd331"
+                    ]
+                ],
+                "isActivated": true,
+                "childCardinality": "1",
+                "parentCollection": "5e0e8832-8de2-4143-95bb-81050713ce89",
+                "childCollection": "b305c00f-38a7-4e36-b5b3-88fd62e25044",
+                "GUID": "77a53044-cea7-45d3-a39a-834037f585b7",
+                "definitionEntityType": "relationship",
+                "normalizationSourceCollection": "b305c00f-38a7-4e36-b5b3-88fd62e25044",
+                "fieldRelativePath": "#/Organisation",
+                "link": "HUB Organisation v2.json",
+                "kind": "relativePath",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "5ad2b802-2d00-4c57-841f-d1002ba27ada"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "1ccb6213-881c-40da-846d-ac058f667173"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "89ac7c6d-463c-4373-bfe0-8e059edc7462"
+    },
+    "sources": [
+        {
+            "GUID": "cbf857f9-93ce-4ea8-a7a7-2d70734f896d",
+            "sourceName": "Derived from Polyglot",
+            "lineageTimestamp": "2023-07-04 8:59:09 CEST",
+            "lineageSourceType": "Polyglot",
+            "lineageSourceFormat": "File",
+            "lineageFilePathName": "HUB Organisation v2.json"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVendor": "Snowflake",
+    "appTarget": "Snowflake",
+    "creationTS": "2023-07-04T06:58:28.246Z",
+    "GUID": "7cce7d5f-0f7a-4b41-993a-6ae02be54788",
+    "isLineageEnabled": true,
+    "polyglotModelPaths": [
+        {
+            "GUID": "64d1a505-0547-4522-80fd-618a576407e4",
+            "polyglotModelName": "HUB Organisation v2",
+            "polyglotModelPath": "HUB Organisation v2.json",
+            "normalization": true
+        }
+    ],
+    "lastModifTS": "2023-07-04T06:59:22.402Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Snowflake",
+        "pluginVersion": "0.1.70",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.10"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "b4ea7f5e-1d3c-42c9-9526-328a311db829",
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 195,
+                        "height": 120,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "e1d6ee85-685a-432b-b0dc-2dda8480e42d",
+                        "x": 1312,
+                        "y": 1195,
+                        "width": 240,
+                        "height": 102,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

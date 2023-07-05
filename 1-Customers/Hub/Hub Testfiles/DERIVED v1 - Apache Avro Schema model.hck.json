@@ -1,0 +1,439 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "38b6cac0-0077-4428-86a2-497392405de8",
+            "type": "reference",
+            "$ref": "#external/definitions/Organisation",
+            "refType": "polyglot",
+            "ref": "fa8c9fe3-409d-4480-a5f0-417c439af8ee",
+            "refIdPath": [
+                "8cdfe65b-aad9-4a84-964e-9ec9fadf3bcf",
+                "cc822b52-3a10-4877-b080-b931793af922",
+                "fa8c9fe3-409d-4480-a5f0-417c439af8ee"
+            ],
+            "isActivated": true,
+            "collectionName": "Organisation",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "facaf235-f710-4587-9a1c-16f4f8e50ea1"
+            },
+            "sources": [
+                {
+                    "GUID": "3345e020-09b1-4612-b2d6-ee78e0057391",
+                    "lineageSourceGUID": "f9f2b9e0-8bdd-4138-aa85-aacc459fdde4",
+                    "lineageSourceAttrBusName": "",
+                    "lineageSourceAttrTechName": "",
+                    "lineageSrcEntityBusName": "Organisation",
+                    "lineageSrcEntityTechName": "",
+                    "lineageSourceContainerBusName": "",
+                    "lineageSourceContainerTechName": ""
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "38b6cac0-0077-4428-86a2-497392405de8": "Organisation",
+        "f9f2b9e0-8bdd-4138-aa85-aacc459fdde4": "Derived from Polyglot"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "dc0ba0a8-af36-4da2-8404-a590e9ffbd71"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "Organisation",
+                "type": "object",
+                "properties": [
+                    {
+                        "name": "orgHubId",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "2e9a8139-76b7-40ba-8bf6-8b2b73c0b6ca"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1,
+                                    "GUID": "143bb6a3-1c2a-4382-b4e8-d48896fa63dd"
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "mode": "long",
+                                "alternateKey": false,
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "de240b1c-c851-4c6b-b789-0c897d7c00fc",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": false,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "d70d255a-093f-40f1-b528-0684398d6c16",
+                        "error": {}
+                    },
+                    {
+                        "name": "shortName",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "f8d737d0-e832-4c6f-98ff-0db771ec8cc2"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "alternateKey": false,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "a6687a29-766e-409e-b5bf-15eb151cc2b7",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": false,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "2600b776-4cdd-43af-80ef-c8d4834cdbf0",
+                        "error": {}
+                    },
+                    {
+                        "name": "fullLegalName",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "f3a3c441-beb0-4c38-98a4-ccf89963e506"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "alternateKey": false,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "87832100-6689-47c0-8804-a86a3e9867de",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": false,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "8ec57447-ffe9-4456-a144-6ea79627bd3d",
+                        "error": {}
+                    },
+                    {
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "name": "bloombergCompanyId",
+                                        "type": "multiple",
+                                        "properties": [],
+                                        "multipleTypes": [
+                                            {
+                                                "type": "null",
+                                                "GUID": "646cbcee-3671-49ee-a147-d5e15c085185"
+                                            },
+                                            {
+                                                "autoincrement": {
+                                                    "step_num": 1
+                                                },
+                                                "tPrecision": 9,
+                                                "alternateKey": false,
+                                                "childType": "string",
+                                                "type": "string",
+                                                "GUID": "54659029-b7e7-4897-9f06-6667a0d95f68",
+                                                "error": {}
+                                            }
+                                        ],
+                                        "isActivated": true,
+                                        "primaryKey": false,
+                                        "hackoladeMeta": {},
+                                        "required": false,
+                                        "compositeKey": [
+                                            "compositePrimaryKey",
+                                            "compositeUniqueKey"
+                                        ],
+                                        "default": null,
+                                        "compositePrimaryKey": false,
+                                        "compositeUniqueKey": false,
+                                        "GUID": "9c9c585a-d8e4-4576-9310-d0814fa81c21",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "d3fe60b0-7994-4bed-87a4-c08e7e5f6421",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "name": "legalEntityId",
+                                        "type": "multiple",
+                                        "properties": [],
+                                        "multipleTypes": [
+                                            {
+                                                "type": "null",
+                                                "GUID": "7b4a3843-3683-4b12-ad94-7431c36866c6"
+                                            },
+                                            {
+                                                "autoincrement": {
+                                                    "step_num": 1
+                                                },
+                                                "tPrecision": 9,
+                                                "alternateKey": false,
+                                                "childType": "string",
+                                                "type": "string",
+                                                "GUID": "7e2cefeb-3587-46a2-b8ab-7c51d1bd5ac3",
+                                                "error": {}
+                                            }
+                                        ],
+                                        "isActivated": true,
+                                        "primaryKey": false,
+                                        "hackoladeMeta": {},
+                                        "required": false,
+                                        "compositeKey": [
+                                            "compositePrimaryKey",
+                                            "compositeUniqueKey"
+                                        ],
+                                        "default": null,
+                                        "compositePrimaryKey": false,
+                                        "compositeUniqueKey": false,
+                                        "GUID": "50ea47d5-af50-4d50-87f0-f43f2277ce82",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "b4dfcea5-34d4-4324-9025-c92de6183b66",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "name": "ticker",
+                                        "type": "multiple",
+                                        "properties": [],
+                                        "multipleTypes": [
+                                            {
+                                                "type": "null",
+                                                "GUID": "98fd81e1-6f0e-4f9a-9211-c9062913d339"
+                                            },
+                                            {
+                                                "autoincrement": {
+                                                    "step_num": 1
+                                                },
+                                                "tPrecision": 9,
+                                                "alternateKey": false,
+                                                "childType": "string",
+                                                "type": "string",
+                                                "GUID": "adbff3ee-1510-44f1-875c-138f955248ca",
+                                                "error": {}
+                                            }
+                                        ],
+                                        "isActivated": true,
+                                        "primaryKey": false,
+                                        "hackoladeMeta": {},
+                                        "required": false,
+                                        "compositeKey": [
+                                            "compositePrimaryKey",
+                                            "compositeUniqueKey"
+                                        ],
+                                        "default": null,
+                                        "compositePrimaryKey": false,
+                                        "compositeUniqueKey": false,
+                                        "GUID": "9ebe7e39-2ca8-45e4-8fb2-8e15a90a82c2",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "76d841d0-f70f-4ed0-9723-da32bad658f5",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "anyOf",
+                        "GUID": "14bb9ad5-5624-4b9c-880b-acea2df79609",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "35f074d8-26de-404a-a529-3be3d2c00a65"
+                },
+                "isActivated": true,
+                "additionalProperties": true,
+                "GUID": "fa8c9fe3-409d-4480-a5f0-417c439af8ee",
+                "error": {},
+                "definitionEntityType": "collection",
+                "link": "HUB Organisation.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/Organisation",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionRefs": [
+                    [
+                        "38b6cac0-0077-4428-86a2-497392405de8"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "cc822b52-3a10-4877-b080-b931793af922"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "97fc0594-1316-4462-982b-a56b7357d4e0"
+    },
+    "sources": [
+        {
+            "GUID": "f9f2b9e0-8bdd-4138-aa85-aacc459fdde4",
+            "sourceName": "Derived from Polyglot",
+            "lineageTimestamp": "2023-07-04 9:04:10 CEST",
+            "lineageSourceType": "Polyglot",
+            "lineageSourceFormat": "File",
+            "lineageFilePathName": "HUB Organisation.json"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2023-07-04T07:03:26.543Z",
+    "GUID": "8cdfe65b-aad9-4a84-964e-9ec9fadf3bcf",
+    "isLineageEnabled": true,
+    "polyglotModelPaths": [
+        {
+            "GUID": "49c66431-57bb-49dd-b89b-e8d41550a6c3",
+            "polyglotModelName": "HUB Organisation",
+            "polyglotModelPath": "HUB Organisation.json",
+            "normalization": false
+        }
+    ],
+    "lastModifTS": "2023-07-04T07:04:23.074Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.119",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.10"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "38b6cac0-0077-4428-86a2-497392405de8",
+                        "x": 1523,
+                        "y": 1190,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
