@@ -1,0 +1,339 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Person",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "c6639918-aa14-4fdc-a9f5-ac5068acbedc",
+                    "error": {}
+                },
+                {
+                    "name": "FirstName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "4843294d-287d-4995-ad39-0b2f4dce0017",
+                    "fakerFunction": "faker.person.firstName()",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8f118e0f-80bc-45a8-ac78-5702ec5f1766",
+                    "name": "LastName",
+                    "fakerFunction": "faker.person.lastName()",
+                    "error": {}
+                },
+                {
+                    "name": "Address",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "e0b38993-722b-4d48-a57b-db38112c3f24",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd",
+                    "foreignField": [
+                        "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd",
+                        "7c24e697-6d9c-4573-837b-d4cdf14271fb"
+                    ],
+                    "parentRelationship": "939e2867-3608-4593-8349-a43fd2cb32e6"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "3005af28-5724-41d2-a884-edb43f7d35a0"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "712a58cc-4ebc-447f-ab00-9b69533ff81d",
+            "bucketId": "e13da384-4ecd-447f-8b75-ed6ea653d05e"
+        },
+        {
+            "collectionName": "Addresses",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "7c24e697-6d9c-4573-837b-d4cdf14271fb",
+                    "error": {},
+                    "childRelationships": [
+                        "939e2867-3608-4593-8349-a43fd2cb32e6"
+                    ]
+                },
+                {
+                    "name": "Street",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "508df727-0a07-4b87-a566-eea93d4c6c97",
+                    "fakerFunction": "faker.location.street()",
+                    "error": {}
+                },
+                {
+                    "name": "BuildingNumber",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8db77e32-12d2-4822-8cdc-2c79e885890b",
+                    "fakerFunction": "faker.location.buildingNumber()",
+                    "error": {}
+                },
+                {
+                    "name": "Zip",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "7201e960-7995-462c-8201-36be45a8b26b",
+                    "fakerFunction": "faker.location.zipCode()",
+                    "error": {}
+                },
+                {
+                    "name": "City",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "db4b8bae-339c-4db0-9383-03d834013082",
+                    "fakerFunction": "faker.location.city()",
+                    "error": {}
+                },
+                {
+                    "name": "Country",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "48c55488-13ee-49f1-958d-0300d502006a",
+                    "fakerFunction": "faker.location.country()",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "39d885a6-2d5d-4583-84e3-6a6d732b6a0e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd",
+            "bucketId": "e13da384-4ecd-447f-8b75-ed6ea653d05e"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "MockDatabase",
+            "type": "bucket",
+            "collectionIds": [
+                "712a58cc-4ebc-447f-ab00-9b69533ff81d",
+                "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "e13da384-4ecd-447f-8b75-ed6ea653d05e"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "Person Lives at Address",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd",
+                    "7c24e697-6d9c-4573-837b-d4cdf14271fb"
+                ]
+            ],
+            "parentCardinality": "1..n",
+            "childField": [
+                [
+                    "712a58cc-4ebc-447f-ab00-9b69533ff81d",
+                    "e0b38993-722b-4d48-a57b-db38112c3f24"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1..n",
+            "parentCollection": "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd",
+            "childCollection": "712a58cc-4ebc-447f-ab00-9b69533ff81d",
+            "GUID": "939e2867-3608-4593-8349-a43fd2cb32e6",
+            "hackoladeStyles": {
+                "GUID": "aa0ca5b9-7561-4dab-ad46-302cc17c2c8e",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1369,
+                        "y": 1149.5
+                    },
+                    {
+                        "x": 1336,
+                        "y": 1149.5
+                    },
+                    {
+                        "x": 1336,
+                        "y": 1201.5
+                    },
+                    {
+                        "x": 1303,
+                        "y": 1201.5
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "e13da384-4ecd-447f-8b75-ed6ea653d05e": "MockDatabase",
+        "712a58cc-4ebc-447f-ab00-9b69533ff81d": "Person",
+        "c6639918-aa14-4fdc-a9f5-ac5068acbedc": "_id",
+        "4843294d-287d-4995-ad39-0b2f4dce0017": "FirstName",
+        "8f118e0f-80bc-45a8-ac78-5702ec5f1766": "LastName",
+        "e0b38993-722b-4d48-a57b-db38112c3f24": "Address",
+        "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd": "Addresses",
+        "7c24e697-6d9c-4573-837b-d4cdf14271fb": "_id",
+        "508df727-0a07-4b87-a566-eea93d4c6c97": "Street",
+        "8db77e32-12d2-4822-8cdc-2c79e885890b": "BuildingNumber",
+        "7201e960-7995-462c-8201-36be45a8b26b": "Zip",
+        "db4b8bae-339c-4db0-9383-03d834013082": "City",
+        "48c55488-13ee-49f1-958d-0300d502006a": "Country",
+        "939e2867-3608-4593-8349-a43fd2cb32e6": "Person Lives at Address"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "8e29c338-afb4-4ce7-860a-9ee85a3d4662"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "ea0c4041-5f5b-4bc8-bff7-f3b0922dd420"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "9540531f-82bf-4397-bfb7-36df46fc5290"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-07-12T08:14:09.254Z",
+    "GUID": "43d1f871-ad72-4217-9b1e-9f60ba652ed8",
+    "isLineageEnabled": true,
+    "lastModifTS": "2023-07-12T08:25:10.458Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.11"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "712a58cc-4ebc-447f-ab00-9b69533ff81d",
+                        "x": 1369,
+                        "y": 1097,
+                        "width": 179,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b8aa0fe5-7b4e-4843-bc52-2856a94dc9bd",
+                        "x": 1089,
+                        "y": 1131,
+                        "width": 214,
+                        "height": 141,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1049,
+                        "y": 1057,
+                        "GUID": "e13da384-4ecd-447f-8b75-ed6ea653d05e"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
