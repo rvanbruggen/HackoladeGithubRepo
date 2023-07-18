@@ -1,0 +1,3071 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "collectionName": "311_service_requests",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "unique_key",
+                    "isActivated": true,
+                    "dataTypeMode": "Required",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "Unique case id",
+                    "GUID": "65b7b469-b5a2-4ed3-933d-41c122625d24",
+                    "sample": 8313291,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "created_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "The date and time when the service request was made",
+                    "GUID": "43b9efca-892c-42c3-b7e5-9e83182e6049",
+                    "sample": "2015-05-21T19:19:51.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "closed_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "The date and time when the service request was closed",
+                    "GUID": "c7a0a8c0-13f5-49d4-a574-0b624d080116",
+                    "sample": "2015-05-28T10:28:35.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "resolution_action_updated_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "The date and time when the service request was last modified. For requests with status=closed, this will be the date the request was closed",
+                    "GUID": "eeedea4d-36bb-4f9d-914c-56a71688c806",
+                    "sample": "2015-05-28T10:28:35.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "status",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "The current status of the service request.",
+                    "GUID": "bf7e882f-8825-4a24-9fc4-a5348d55091e",
+                    "sample": "Closed",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "status_notes",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Explanation of why status was changed to current state or more details on current status than conveyed with status alone",
+                    "GUID": "0626e3e4-b89b-45d2-822e-ed470842622c",
+                    "sample": "resolved: Maximo Service Request has been resolved",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "agency_name",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "The agency responsible for fulfilling or otherwise addressing the service request.",
+                    "GUID": "946a7570-6fba-4f89-8c42-f52258e4a728",
+                    "sample": "PUC Sewer Ops",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "category",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "The Human readable name of the specific service request type (service_name)",
+                    "GUID": "7b43a1d7-2f34-42bf-92b5-ced6f8b8f5c9",
+                    "sample": "Sewer Issues",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "complaint_type",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "More specific description of the problem related to the Category",
+                    "GUID": "a41e9035-8af4-45cf-81b6-aff95bff7a7d",
+                    "sample": "Odor",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "descriptor",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "More specific description of the problem related to the Request Type",
+                    "GUID": "3f51e1c9-2371-4e40-81d1-3b1c5c133bc6",
+                    "sample": "From_catch_basin",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "incident_address",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Human readable address or description of location",
+                    "GUID": "69f724cd-fecf-47ec-9348-588103fea00b",
+                    "sample": "Intersection of ELLIS ST and POWELL ST",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "supervisor_district",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "0fe61d50-182f-4f3e-94fe-927e6912eb8e",
+                    "sample": 3,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "neighborhood",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "b27853e8-2374-4417-9139-6174b1b35891",
+                    "sample": "Downtown / Union Square",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "location",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Latitude and longitude using the (WGS84) projection.",
+                    "GUID": "61524403-9302-48b8-8f7a-897684e0647d",
+                    "sample": "(37.7854916695012, -122.407852490586)",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "source",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "How the service request was made",
+                    "GUID": "9d3034f6-dabc-449e-831c-778ee34570ec",
+                    "sample": "Mobile/Open311",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "media_url",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Website URL",
+                    "GUID": "5a70345b-fb8c-4431-b4d7-79198a79a8d0",
+                    "sample": "http://mobile311.sfgov.org/media/san_francisco/report/photos/555e923ddf86c67a27de0097/report.jpg",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "latitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Latitude using the (WGS84) projection.",
+                    "GUID": "e066f4d9-88dc-4c86-bc1d-ffcdb2451462",
+                    "sample": 37.77483,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "longitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Longitude using the (WGS84) projection.",
+                    "GUID": "89f9f796-d8df-47c6-8d2e-c46d3d65b1c0",
+                    "sample": -122.4185,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "police_district",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "e0ace271-881e-4ba3-884e-26fc1f0fcf07",
+                    "sample": "CENTRAL",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "9a7278de-1005-4e69-8074-f8d7593b14e4",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "87c5c7f7-fbfb-4125-9a7a-0b45bac264fb",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "bikeshare_stations",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "station_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Required",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "Station ID number",
+                    "GUID": "4ae0642c-92e4-41d7-a4e3-35106c0fc2ca",
+                    "sample": 91,
+                    "childRelationships": [
+                        "df4e066d-df6f-4c69-b741-71039dc78386"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "name",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Name of station",
+                    "GUID": "e80103b1-d6e4-4184-87c4-7f80311cde02",
+                    "sample": "Cyril Magnin St at Ellis St",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "latitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Latitude",
+                    "GUID": "7cf0b4db-8210-43ef-8c31-a73e5dc5fd52",
+                    "sample": 37.333988,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "longitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Longitude",
+                    "GUID": "fe1acacb-69f7-47be-bb59-1f1b5f03e667",
+                    "sample": -121.894902,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dockcount",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Number of total docks at station",
+                    "GUID": "4de44164-9755-4d82-856a-e50e5a20af2b",
+                    "sample": 35,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "landmark",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "City (San Francisco, Redwood City, Palo Alto, Mountain View, San Jose)",
+                    "GUID": "b031fbae-7278-44b7-947a-5bf6739686a5",
+                    "sample": "San Francisco",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "installation_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "index": true,
+                    "childType": "date",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Original date that station was installed. If station was moved, it is noted below.",
+                    "GUID": "d2f12922-cc3b-4b71-ada2-12b269c55688",
+                    "sample": "2016-08-04",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "b71a2f0d-65fe-4ee0-beb1-e381717257a9",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "8deeb1c5-07d1-481b-b968-715d89603cd4",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "bikeshare_status",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "station_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Required",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "Station ID number",
+                    "GUID": "3260fbc8-6a66-428d-a870-7f7755b4fc66",
+                    "sample": 2,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "bikes_available",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Number of available bikes",
+                    "GUID": "ab4ee0da-8af1-4e70-a09e-dad6770d916e",
+                    "sample": 1,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "docks_available",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Number of available docks",
+                    "GUID": "f86bc73e-16e9-4707-ba3b-269079b5e5f4",
+                    "sample": 27,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "time",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date and time, PST",
+                    "GUID": "3973ba92-f010-4ce5-a3a0-eb5fa9d46391",
+                    "sample": "2015-09-14T21:20:02.000Z",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "0c2b5b6d-c5ea-4261-b308-88aa5fbcffd2",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "e3075056-ce26-4316-8554-eeee691f4fc6",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "bikeshare_trips",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "trip_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Required",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "Numeric ID of bike trip",
+                    "GUID": "b0570cd2-f5d0-4a0c-b553-083e446cb549",
+                    "sample": 1323138,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "duration_sec",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Time of trip in seconds",
+                    "GUID": "e6db1cc8-fa65-4712-8ab2-168fc911a184",
+                    "sample": 115572,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "start_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Start date of trip with date and time, in PST",
+                    "GUID": "d2594852-b56e-4ed6-8e8c-ead26bd31f52",
+                    "sample": "2013-09-03T12:04:00.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "start_station_name",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Station name of start station",
+                    "GUID": "7c77a01f-eaf0-416b-8886-7450ad1ff4b6",
+                    "sample": "San Jose Diridon Caltrain Station",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "start_station_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Numeric reference for start station",
+                    "GUID": "44ac951c-dc50-4777-bbce-aeaab56b18b0",
+                    "sample": 2,
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "8deeb1c5-07d1-481b-b968-715d89603cd4",
+                    "foreignField": [
+                        "8deeb1c5-07d1-481b-b968-715d89603cd4",
+                        "4ae0642c-92e4-41d7-a4e3-35106c0fc2ca"
+                    ],
+                    "parentRelationship": "df4e066d-df6f-4c69-b741-71039dc78386"
+                },
+                {
+                    "code": "",
+                    "name": "end_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "End date of trip with date and time, in PST",
+                    "GUID": "a8c50710-6687-407d-a557-1df9eeeaf15a",
+                    "sample": "2013-09-03T13:02:00.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "end_station_name",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Station name for end station",
+                    "GUID": "3fd2e0b8-a509-4316-97fd-caa3d40105f2",
+                    "sample": "San Jose Diridon Caltrain Station",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "end_station_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Numeric reference for end station",
+                    "GUID": "02ee8257-13fd-48f0-ac18-f454c172fbcb",
+                    "sample": 2,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "bike_number",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "ID of bike used",
+                    "GUID": "10776edd-cc82-415e-b32f-f577237043a6",
+                    "sample": 713,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "zip_code",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Home zip code of subscriber (customers can choose to manually enter zip at kiosk however data is unreliable)",
+                    "GUID": "ced9a52d-cae2-4baf-aa66-9f97a67aa83d",
+                    "sample": "95125",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "subscriber_type",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Subscriber = annual or 30-day member; Customer = 24-hour or 3-day member",
+                    "GUID": "9daf3625-2dbc-4236-9626-c7efae1d3604",
+                    "sample": "Customer",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "0b1e9ac9-abd3-4340-98df-ab5eed3d47be",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "8999bcc8-e7fe-411a-bf67-4573eb23a306",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "film_locations",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "title",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "",
+                    "GUID": "49625998-d217-4dfa-b241-09769519b937",
+                    "sample": "Interview With The Vampire",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "release_year",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "1da0031d-1e35-4647-913c-f9d034558411",
+                    "sample": 1994,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "locations",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "73b763c2-ca5b-4dc7-b41c-49a92ec4ec7a",
+                    "sample": "6th Street On-ramp to Highway 280",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "fun_facts",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "a403233b-269d-4d01-988a-64297614f268",
+                    "sample": "",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "production_company",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "1034ebbe-619e-456c-86f7-3bc048f3a441",
+                    "sample": "Geffen Pictures",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "distributor",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "197aa26c-b954-437f-ad13-a85a6fe987bc",
+                    "sample": "Geffen Pictures",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "director",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "6a9518f7-f78f-4687-b673-47decba5f335",
+                    "sample": "Neil Jordan",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "writer",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "7b944d53-ff0d-454a-9abd-956f422a8cd7",
+                    "sample": "Anne Rice",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "actor_1",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "da7d9de2-5917-4689-8adc-dc8f7e0fe94f",
+                    "sample": "Brad Pitt",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "actor_2",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "6655a64a-dfad-423c-bf3c-265b1ce7370c",
+                    "sample": "Christian Slater",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "actor_3",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "e3742346-678b-4552-a389-7809c0a255b6",
+                    "sample": "Tom Cruise",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "41103b4b-c070-4355-a590-993086a77412",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "bc810385-afdf-4c11-a09e-04489299b4c5",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "sffd_service_calls",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "call_number",
+                    "isActivated": true,
+                    "dataTypeMode": "Required",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "A unique 9-digit number assigned by the 911 Dispatch Center (DEM) to this call. These number are used for both Police and Fire calls.",
+                    "GUID": "8a81e997-f827-41fc-a0ee-c78475b0775e",
+                    "sample": 142791684,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "unit_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Unit Identifier. For example E01 for Engine 1 or T01 for Truck 1.",
+                    "GUID": "bbb35421-8df2-40f1-bd1a-5a3d0956551d",
+                    "sample": "T02",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "incident_number",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "A unique 8-digit number assigned by DEM to this Fire incident.",
+                    "GUID": "7659208b-26e7-4bab-b769-d6a5d978cb3e",
+                    "sample": 14098153,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "call_type",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Type of call the incident falls into. See the list below.",
+                    "GUID": "0d614f14-ff0a-4594-a9d7-877bdd1d4a5d",
+                    "sample": "Structure Fire",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "call_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "index": true,
+                    "childType": "date",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date the call is received at the 911 Dispatch Center. Used for reporting purposes.",
+                    "GUID": "83955b04-8d53-4657-a8d0-58108a341088",
+                    "sample": "2002-01-04",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "watch_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "index": true,
+                    "childType": "date",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Watch date when the call is received. Watch date starts at 0800 each morning and ends at 0800 the next day.",
+                    "GUID": "52ea2fa2-7030-47c7-924c-3d532e446776",
+                    "sample": "2002-01-04",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "received_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date and time of call is received at the 911 Dispatch Center.",
+                    "GUID": "16e8d359-db7b-4f31-a1f0-9f3a8527e8da",
+                    "sample": "2002-01-04T14:05:19.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "entry_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date and time the 911 operator submits the entry of the initical call information into the CAD system",
+                    "GUID": "f82c06ef-3cd6-477d-81bb-9fb63e1fe586",
+                    "sample": "2002-01-04T14:05:20.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dispatch_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date and time the 911 operator dispatches this unit to the call.",
+                    "GUID": "d80b02f7-539b-401a-bbb6-e13fcd5cc8b0",
+                    "sample": "2002-01-04T14:05:25.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "response_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date and time this unit acknowledges the dispatch and records that the unit is en route to the location of the call.",
+                    "GUID": "7cbd0d2e-ff68-4728-b473-61a80f5731b4",
+                    "sample": "2002-01-04T14:06:52.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "on_scene_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date and time the unit records arriving to the location of the incident",
+                    "GUID": "9890ca97-bf6a-47b9-b462-7ae6eeef3f87",
+                    "sample": "2002-01-04T14:09:27.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "transport_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "If this unit is an ambulance, date and time the unit begins the transport unit arrives to hospital",
+                    "GUID": "8eb3a705-ea06-4e08-9109-4c8ec86db757",
+                    "sample": null,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "hospital_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "If this unit is an ambulance, date and time the unit arrives to the hospital.",
+                    "GUID": "bff5ba0b-a8dd-4ffe-8d9e-b912ac8bc50b",
+                    "sample": null,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "call_final_disposition",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Disposition of the call (Code). For example TH2: Transport to Hospital - Code 2, FIR: Resolved by Fire Department",
+                    "GUID": "061bb982-0cd5-4913-a420-a5358ba836e0",
+                    "sample": "Other",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "available_timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date and time this unit is not longer assigned to this call and it is available for another dispatch.",
+                    "GUID": "85e46517-dda4-48d8-9906-9adc2d04a11a",
+                    "sample": "2002-01-04T14:11:38.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "address",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Address of midblock point associated with incident (obfuscated address to protect caller privacy)",
+                    "GUID": "070d65be-1df5-4bd3-9933-62d99cbdeae3",
+                    "sample": "2100 Block of POWELL ST",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "city",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "City of incident",
+                    "GUID": "54fac72e-5e43-4893-9771-8a581c18d2af",
+                    "sample": "SF",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "zipcode_of_incident",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Zipcode of incident",
+                    "GUID": "ff121d45-18ad-47dc-bf8e-5f88b86496be",
+                    "sample": "94133",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "battalion",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Emergency Response District (There are 9 Fire Emergency Response Districts)",
+                    "GUID": "f7926d12-298d-4a21-9392-0848213cac20",
+                    "sample": "B01",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "station_area",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Fire Station First Response Area associated with the address of the incident",
+                    "GUID": "5f60c9e6-61b9-4085-ba29-b16ed1f6d238",
+                    "sample": "28",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "box",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Fire box associated with the address of the incident. A box is the smallest area used to divide the City. Each box is associated with a unique unit dispatch order. The City is divided into more than 2,400 boxes.",
+                    "GUID": "d80f2ccf-a67a-44c6-96c9-6569f82f3798",
+                    "sample": "0131",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "original_priority",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Initial call priority (Code 2: Non-Emergency or Code 3:Emergency).",
+                    "GUID": "f630f13b-47dc-46ca-8cd6-d3b0b467011f",
+                    "sample": "3",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "priority",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Call priority (Code 2: Non-Emergency or Code 3:Emergency).",
+                    "GUID": "87f9276c-7835-4772-9faa-182aea3934a3",
+                    "sample": "3",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "final_priority",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Final call priority (Code 2: Non-Emergency or Code 3:Emergency).",
+                    "GUID": "dcb09dbc-2680-42dc-ad2b-4c08d4d4c757",
+                    "sample": 3,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "als_unit",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "bool",
+                    "type": "boolean",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Does this unit includes ALS (Advance Life Support) resources? Is there a paramedic in this unit?",
+                    "GUID": "8188ef88-567e-494a-b8d2-8588dfbb0701",
+                    "sample": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "call_type_group",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Call types are divided into four main groups: Fire, Alarm, Potential Life Threatening and Non Life Threatening.",
+                    "GUID": "7c18c138-2817-4b63-b524-482c62132cf2",
+                    "sample": "",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "number_of_alarms",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Number of alarms associated with the incident. This is a number between 1 and 5.",
+                    "GUID": "f8f294eb-0658-4ea0-92d7-cbdd37ca3a83",
+                    "sample": 2,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "unit_type",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Unit type",
+                    "GUID": "893d0726-376c-4662-a23f-1e582bf54d35",
+                    "sample": "TRUCK",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "unit_sequence_in_call_dispatch",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "A number that indicates the order this unit was assigned to this call",
+                    "GUID": "7c381c16-71c2-4775-bc7b-d6b136a04eae",
+                    "sample": 12,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "fire_prevention_district",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Bureau of Fire Prevention District associated with this address",
+                    "GUID": "2d9d6dbe-a3d5-4fe3-87a9-c13df8e7c64e",
+                    "sample": "1",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "supervisor_district",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Supervisor District associated with this address",
+                    "GUID": "894925a6-0c9e-4081-92bc-b7fb6926245d",
+                    "sample": "3",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "neighborhood_district",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Neighborhood District associated with this address, boundaries available here: https://data.sfgov.org/d/p5b7-5n3h",
+                    "GUID": "3ffa1e55-c1c5-4b50-93ae-e7d986cb1e17",
+                    "sample": "",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "location",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Latitude and longitude of address obfuscated either to the midblock, intersection or call box",
+                    "GUID": "84d84e39-7a9e-49d0-a587-e34828d08a16",
+                    "sample": "(37.8044382972452, -122.411605476142)",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "row_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Unique identifier used for managing data updates. It is the concatenation of Call Number and Unit ID separated by a dash",
+                    "GUID": "d5821682-5670-4cd9-a09d-5058be4e3f21",
+                    "sample": "020040262-T02",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "latitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Latitude of the address",
+                    "GUID": "67a65468-674c-42d9-98c0-be283435388a",
+                    "sample": 37.7811758808197,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "longitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Longitude of the address",
+                    "GUID": "c8b4b2cb-3da4-4725-a541-40719166172b",
+                    "sample": -122.391336579912,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d83be7b4-4d04-4a3b-b65b-30668281d8b6",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "8c82a655-0937-45a6-acd9-06641142e001",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "sfpd_incidents",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "unique_key",
+                    "isActivated": true,
+                    "dataTypeMode": "Required",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "The unique incident number for this accident",
+                    "GUID": "8beed3a5-7b7a-4c16-bcc7-2a77d1103bb7",
+                    "sample": 166018573,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "category",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "0eea27bd-3d8d-4459-95cb-3a8b30a11a26",
+                    "sample": "FORGERY/COUNTERFEITING",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "descript",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "7836af17-18ab-4c4d-a376-719637ef6c18",
+                    "sample": "FORGERY, DRIVERS LICENSE OR ID-CARD",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dayofweek",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "bc4e0632-c786-4d7e-aa11-e42eebadc2ad",
+                    "sample": "Sunday",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "pddistrict",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Police Department district",
+                    "GUID": "0bb5865e-db57-48db-afb0-b3e92e728dd6",
+                    "sample": "PARK",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "resolution",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Whether there was an arrest, citation, booking, etc.",
+                    "GUID": "99483e8c-f2fe-4b65-9e3e-a482128e3971",
+                    "sample": "PROSECUTED BY OUTSIDE AGENCY",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "address",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "897a46b1-3cfe-4516-b74a-f65cef56d2c2",
+                    "sample": "4600 Block of 17TH ST",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "longitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "916c8453-63a6-4e2b-af6f-68e9bd8ff420",
+                    "sample": -122.4133519852842,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "latitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "e33e6753-d675-4459-a4c8-12e61d1a5637",
+                    "sample": 37.70820245849022,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "location",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Latitude/Longitude",
+                    "GUID": "8ade159a-5709-4c03-9c7f-3cc85e47e225",
+                    "sample": "(37.7618081854979, -122.4472962354)",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "pdid",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Unique Identifier for use in update and insert operations",
+                    "GUID": "344f6654-cc6f-4234-be6a-1f7dfd12cfe9",
+                    "sample": 16601857306244,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "timestamp",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "",
+                    "GUID": "14ef7c2e-4abf-493c-9ebb-a9236bbee1fe",
+                    "sample": "2007-04-01T09:00:00.000Z",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "1eb579e4-616d-4de2-964b-3f4258aa7465",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "6c6290c2-592d-4e8b-bc4a-3610fc70b4aa",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "street_trees",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "tree_id",
+                    "isActivated": true,
+                    "dataTypeMode": "Required",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": true,
+                    "description": "Unique ID for Tree",
+                    "GUID": "25d3ad69-82bf-4915-afb1-b6c0378ad995",
+                    "sample": 244349,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "legal_status",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Legal staus: Permitted or DPW maintained",
+                    "GUID": "01534eaf-3156-4c92-b35d-eaef3d5c94e6",
+                    "sample": "DPW Maintained",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "species",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Species of tree",
+                    "GUID": "2393efbc-7416-4181-b46a-ff2622a3cec2",
+                    "sample": "Phoenix canariensis :: Canary Island Date Palm",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "address",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Address of Tree",
+                    "GUID": "3f8db0c7-7e62-4d0b-ac15-7c90f4207cc6",
+                    "sample": "2300X Market St",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "site_order",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "int64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Order of tree at address where multiple trees are at same address. Trees are ordered in ascending address order",
+                    "GUID": "85d7d802-77a5-4185-8afe-a460a31661fd",
+                    "sample": 33,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "site_info",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Description of location of tree",
+                    "GUID": "8f523eda-ddd7-4ba6-aeec-5db509ce5e46",
+                    "sample": "Median : Cutout",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "plant_type",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Landscaping or Tree",
+                    "GUID": "60cd55f0-82c5-4d4d-bd89-c7b70eb0dfd0",
+                    "sample": "Tree",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "care_taker",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Agency or person that is primary caregiver to tree. Owner of Tree",
+                    "GUID": "e5efcc36-1eb8-4502-b06c-5a32aaa90ef0",
+                    "sample": "DPW",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "care_assistant",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Agency or person that is secondary caregiver to tree",
+                    "GUID": "b2f36106-f3bf-4f9e-9696-fa2a88fa1750",
+                    "sample": "",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "plant_date",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "childType": "timestamp",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Date tree was planted",
+                    "GUID": "3611078c-6f21-46e5-9932-b3e2bea665f6",
+                    "sample": "1993-04-01T00:00:00.000Z",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dbh",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "depth, height",
+                    "GUID": "ff857899-15e9-4b10-8e1f-909691058fa9",
+                    "sample": "36",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "plot_size",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "dimension of tree plot",
+                    "GUID": "3aaa7f84-db7a-4bc1-a1ec-237cbd047123",
+                    "sample": "10",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "permit_notes",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Tree permit number reference",
+                    "GUID": "e8ca280c-549a-469b-b80a-1d10a6e91e51",
+                    "sample": "",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "x_coordinate",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "CA State Plane III",
+                    "GUID": "13e59fd4-c654-4106-808e-34f24a198819",
+                    "sample": 5991370.3,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "y_coordinate",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "CA State Plane III",
+                    "GUID": "f2c222d7-2e1d-411a-94aa-beb8283a9793",
+                    "sample": 2095943.7,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "latitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "WGS84",
+                    "GUID": "385cdd0a-cfe5-4ff2-aed2-dcacb3d981cc",
+                    "sample": 37.7345659248964,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "longitude",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "childType": "float64",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "WGS84",
+                    "GUID": "e3adcbf8-f623-4046-a7d9-11485c24b1e9",
+                    "sample": -122.472270103664,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "location",
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "primaryKey": false,
+                    "description": "Location formatted for mapping",
+                    "GUID": "793c8c5b-1b76-4383-ae76-fe48421b82fb",
+                    "sample": "(37.7633333608706, -122.43420318117)",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "428ac053-295e-47c1-be72-c9b2003aadc8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "b407133e-a09c-4210-8d13-b2aed63c435d",
+            "bucketId": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "code": "",
+            "clusteringKey": [],
+            "labels": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "san_francisco",
+            "type": "bucket",
+            "collectionIds": [
+                "87c5c7f7-fbfb-4125-9a7a-0b45bac264fb",
+                "8deeb1c5-07d1-481b-b968-715d89603cd4",
+                "e3075056-ce26-4316-8554-eeee691f4fc6",
+                "8999bcc8-e7fe-411a-bf67-4573eb23a306",
+                "bc810385-afdf-4c11-a09e-04489299b4c5",
+                "8c82a655-0937-45a6-acd9-06641142e001",
+                "6c6290c2-592d-4e8b-bc4a-3610fc70b4aa",
+                "b407133e-a09c-4210-8d13-b2aed63c435d"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "unlimitedQuota": false,
+            "dataLocation": "us",
+            "encryption": "Google-managed",
+            "GUID": "fa734d2b-22c2-4e35-802f-2cea4a6a403b",
+            "hackoladeMeta": {},
+            "description": "This dataset has been deprecated and is not being updated. Please use the replacement datasets (bigquery-public-data.san_francisco_311, bigquery-public-data.san_francisco_bikeshare, etc) for data after January 2018.\n\nThis dataset will be deleted after April 30, 2019.",
+            "datasetID": "bigquery-public-data:san_francisco",
+            "enableTableExpiration": false,
+            "labels": [],
+            "code": "",
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "df4e066d-df6f-4c69-b741-71039dc78386",
+            "name": "fk bikeshare_trips.start_station_id to bikeshare_stations.station_id",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "parentCollection": "8deeb1c5-07d1-481b-b968-715d89603cd4",
+            "parentField": [
+                [
+                    "8deeb1c5-07d1-481b-b968-715d89603cd4",
+                    "4ae0642c-92e4-41d7-a4e3-35106c0fc2ca"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "childCollection": "8999bcc8-e7fe-411a-bf67-4573eb23a306",
+            "childField": [
+                [
+                    "8999bcc8-e7fe-411a-bf67-4573eb23a306",
+                    "44ac951c-dc50-4777-bbce-aeaab56b18b0"
+                ]
+            ],
+            "hackoladeStyles": {
+                "GUID": "702a0a4a-e97b-4b6f-8bec-de587bed2361",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1855,
+                        "y": 1614
+                    },
+                    {
+                        "x": 1791,
+                        "y": 1614
+                    },
+                    {
+                        "x": 1791,
+                        "y": 1578
+                    },
+                    {
+                        "x": 1727,
+                        "y": 1578
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "fa734d2b-22c2-4e35-802f-2cea4a6a403b": "san_francisco",
+        "65b7b469-b5a2-4ed3-933d-41c122625d24": "unique_key",
+        "43b9efca-892c-42c3-b7e5-9e83182e6049": "created_date",
+        "c7a0a8c0-13f5-49d4-a574-0b624d080116": "closed_date",
+        "eeedea4d-36bb-4f9d-914c-56a71688c806": "resolution_action_updated_date",
+        "bf7e882f-8825-4a24-9fc4-a5348d55091e": "status",
+        "0626e3e4-b89b-45d2-822e-ed470842622c": "status_notes",
+        "946a7570-6fba-4f89-8c42-f52258e4a728": "agency_name",
+        "7b43a1d7-2f34-42bf-92b5-ced6f8b8f5c9": "category",
+        "a41e9035-8af4-45cf-81b6-aff95bff7a7d": "complaint_type",
+        "3f51e1c9-2371-4e40-81d1-3b1c5c133bc6": "descriptor",
+        "69f724cd-fecf-47ec-9348-588103fea00b": "incident_address",
+        "0fe61d50-182f-4f3e-94fe-927e6912eb8e": "supervisor_district",
+        "b27853e8-2374-4417-9139-6174b1b35891": "neighborhood",
+        "61524403-9302-48b8-8f7a-897684e0647d": "location",
+        "9d3034f6-dabc-449e-831c-778ee34570ec": "source",
+        "5a70345b-fb8c-4431-b4d7-79198a79a8d0": "media_url",
+        "e066f4d9-88dc-4c86-bc1d-ffcdb2451462": "latitude",
+        "89f9f796-d8df-47c6-8d2e-c46d3d65b1c0": "longitude",
+        "e0ace271-881e-4ba3-884e-26fc1f0fcf07": "police_district",
+        "87c5c7f7-fbfb-4125-9a7a-0b45bac264fb": "311_service_requests",
+        "4ae0642c-92e4-41d7-a4e3-35106c0fc2ca": "station_id",
+        "e80103b1-d6e4-4184-87c4-7f80311cde02": "name",
+        "7cf0b4db-8210-43ef-8c31-a73e5dc5fd52": "latitude",
+        "fe1acacb-69f7-47be-bb59-1f1b5f03e667": "longitude",
+        "4de44164-9755-4d82-856a-e50e5a20af2b": "dockcount",
+        "b031fbae-7278-44b7-947a-5bf6739686a5": "landmark",
+        "d2f12922-cc3b-4b71-ada2-12b269c55688": "installation_date",
+        "8deeb1c5-07d1-481b-b968-715d89603cd4": "bikeshare_stations",
+        "3260fbc8-6a66-428d-a870-7f7755b4fc66": "station_id",
+        "ab4ee0da-8af1-4e70-a09e-dad6770d916e": "bikes_available",
+        "f86bc73e-16e9-4707-ba3b-269079b5e5f4": "docks_available",
+        "3973ba92-f010-4ce5-a3a0-eb5fa9d46391": "time",
+        "e3075056-ce26-4316-8554-eeee691f4fc6": "bikeshare_status",
+        "b0570cd2-f5d0-4a0c-b553-083e446cb549": "trip_id",
+        "e6db1cc8-fa65-4712-8ab2-168fc911a184": "duration_sec",
+        "d2594852-b56e-4ed6-8e8c-ead26bd31f52": "start_date",
+        "7c77a01f-eaf0-416b-8886-7450ad1ff4b6": "start_station_name",
+        "44ac951c-dc50-4777-bbce-aeaab56b18b0": "start_station_id",
+        "a8c50710-6687-407d-a557-1df9eeeaf15a": "end_date",
+        "3fd2e0b8-a509-4316-97fd-caa3d40105f2": "end_station_name",
+        "02ee8257-13fd-48f0-ac18-f454c172fbcb": "end_station_id",
+        "10776edd-cc82-415e-b32f-f577237043a6": "bike_number",
+        "ced9a52d-cae2-4baf-aa66-9f97a67aa83d": "zip_code",
+        "9daf3625-2dbc-4236-9626-c7efae1d3604": "subscriber_type",
+        "8999bcc8-e7fe-411a-bf67-4573eb23a306": "bikeshare_trips",
+        "49625998-d217-4dfa-b241-09769519b937": "title",
+        "1da0031d-1e35-4647-913c-f9d034558411": "release_year",
+        "73b763c2-ca5b-4dc7-b41c-49a92ec4ec7a": "locations",
+        "a403233b-269d-4d01-988a-64297614f268": "fun_facts",
+        "1034ebbe-619e-456c-86f7-3bc048f3a441": "production_company",
+        "197aa26c-b954-437f-ad13-a85a6fe987bc": "distributor",
+        "6a9518f7-f78f-4687-b673-47decba5f335": "director",
+        "7b944d53-ff0d-454a-9abd-956f422a8cd7": "writer",
+        "da7d9de2-5917-4689-8adc-dc8f7e0fe94f": "actor_1",
+        "6655a64a-dfad-423c-bf3c-265b1ce7370c": "actor_2",
+        "e3742346-678b-4552-a389-7809c0a255b6": "actor_3",
+        "bc810385-afdf-4c11-a09e-04489299b4c5": "film_locations",
+        "8a81e997-f827-41fc-a0ee-c78475b0775e": "call_number",
+        "bbb35421-8df2-40f1-bd1a-5a3d0956551d": "unit_id",
+        "7659208b-26e7-4bab-b769-d6a5d978cb3e": "incident_number",
+        "0d614f14-ff0a-4594-a9d7-877bdd1d4a5d": "call_type",
+        "83955b04-8d53-4657-a8d0-58108a341088": "call_date",
+        "52ea2fa2-7030-47c7-924c-3d532e446776": "watch_date",
+        "16e8d359-db7b-4f31-a1f0-9f3a8527e8da": "received_timestamp",
+        "f82c06ef-3cd6-477d-81bb-9fb63e1fe586": "entry_timestamp",
+        "d80b02f7-539b-401a-bbb6-e13fcd5cc8b0": "dispatch_timestamp",
+        "7cbd0d2e-ff68-4728-b473-61a80f5731b4": "response_timestamp",
+        "9890ca97-bf6a-47b9-b462-7ae6eeef3f87": "on_scene_timestamp",
+        "8eb3a705-ea06-4e08-9109-4c8ec86db757": "transport_timestamp",
+        "bff5ba0b-a8dd-4ffe-8d9e-b912ac8bc50b": "hospital_timestamp",
+        "061bb982-0cd5-4913-a420-a5358ba836e0": "call_final_disposition",
+        "85e46517-dda4-48d8-9906-9adc2d04a11a": "available_timestamp",
+        "070d65be-1df5-4bd3-9933-62d99cbdeae3": "address",
+        "54fac72e-5e43-4893-9771-8a581c18d2af": "city",
+        "ff121d45-18ad-47dc-bf8e-5f88b86496be": "zipcode_of_incident",
+        "f7926d12-298d-4a21-9392-0848213cac20": "battalion",
+        "5f60c9e6-61b9-4085-ba29-b16ed1f6d238": "station_area",
+        "d80f2ccf-a67a-44c6-96c9-6569f82f3798": "box",
+        "f630f13b-47dc-46ca-8cd6-d3b0b467011f": "original_priority",
+        "87f9276c-7835-4772-9faa-182aea3934a3": "priority",
+        "dcb09dbc-2680-42dc-ad2b-4c08d4d4c757": "final_priority",
+        "8188ef88-567e-494a-b8d2-8588dfbb0701": "als_unit",
+        "7c18c138-2817-4b63-b524-482c62132cf2": "call_type_group",
+        "f8f294eb-0658-4ea0-92d7-cbdd37ca3a83": "number_of_alarms",
+        "893d0726-376c-4662-a23f-1e582bf54d35": "unit_type",
+        "7c381c16-71c2-4775-bc7b-d6b136a04eae": "unit_sequence_in_call_dispatch",
+        "2d9d6dbe-a3d5-4fe3-87a9-c13df8e7c64e": "fire_prevention_district",
+        "894925a6-0c9e-4081-92bc-b7fb6926245d": "supervisor_district",
+        "3ffa1e55-c1c5-4b50-93ae-e7d986cb1e17": "neighborhood_district",
+        "84d84e39-7a9e-49d0-a587-e34828d08a16": "location",
+        "d5821682-5670-4cd9-a09d-5058be4e3f21": "row_id",
+        "67a65468-674c-42d9-98c0-be283435388a": "latitude",
+        "c8b4b2cb-3da4-4725-a541-40719166172b": "longitude",
+        "8c82a655-0937-45a6-acd9-06641142e001": "sffd_service_calls",
+        "8beed3a5-7b7a-4c16-bcc7-2a77d1103bb7": "unique_key",
+        "0eea27bd-3d8d-4459-95cb-3a8b30a11a26": "category",
+        "7836af17-18ab-4c4d-a376-719637ef6c18": "descript",
+        "bc4e0632-c786-4d7e-aa11-e42eebadc2ad": "dayofweek",
+        "0bb5865e-db57-48db-afb0-b3e92e728dd6": "pddistrict",
+        "99483e8c-f2fe-4b65-9e3e-a482128e3971": "resolution",
+        "897a46b1-3cfe-4516-b74a-f65cef56d2c2": "address",
+        "916c8453-63a6-4e2b-af6f-68e9bd8ff420": "longitude",
+        "e33e6753-d675-4459-a4c8-12e61d1a5637": "latitude",
+        "8ade159a-5709-4c03-9c7f-3cc85e47e225": "location",
+        "344f6654-cc6f-4234-be6a-1f7dfd12cfe9": "pdid",
+        "14ef7c2e-4abf-493c-9ebb-a9236bbee1fe": "timestamp",
+        "6c6290c2-592d-4e8b-bc4a-3610fc70b4aa": "sfpd_incidents",
+        "25d3ad69-82bf-4915-afb1-b6c0378ad995": "tree_id",
+        "01534eaf-3156-4c92-b35d-eaef3d5c94e6": "legal_status",
+        "2393efbc-7416-4181-b46a-ff2622a3cec2": "species",
+        "3f8db0c7-7e62-4d0b-ac15-7c90f4207cc6": "address",
+        "85d7d802-77a5-4185-8afe-a460a31661fd": "site_order",
+        "8f523eda-ddd7-4ba6-aeec-5db509ce5e46": "site_info",
+        "60cd55f0-82c5-4d4d-bd89-c7b70eb0dfd0": "plant_type",
+        "e5efcc36-1eb8-4502-b06c-5a32aaa90ef0": "care_taker",
+        "b2f36106-f3bf-4f9e-9696-fa2a88fa1750": "care_assistant",
+        "3611078c-6f21-46e5-9932-b3e2bea665f6": "plant_date",
+        "ff857899-15e9-4b10-8e1f-909691058fa9": "dbh",
+        "3aaa7f84-db7a-4bc1-a1ec-237cbd047123": "plot_size",
+        "e8ca280c-549a-469b-b80a-1d10a6e91e51": "permit_notes",
+        "13e59fd4-c654-4106-808e-34f24a198819": "x_coordinate",
+        "f2c222d7-2e1d-411a-94aa-beb8283a9793": "y_coordinate",
+        "385cdd0a-cfe5-4ff2-aed2-dcacb3d981cc": "latitude",
+        "e3adcbf8-f623-4046-a7d9-11485c24b1e9": "longitude",
+        "793c8c5b-1b76-4383-ae76-fe48421b82fb": "location",
+        "b407133e-a09c-4210-8d13-b2aed63c435d": "street_trees",
+        "df4e066d-df6f-4c69-b741-71039dc78386": "fk bikeshare_trips.start_station_id to bikeshare_stations.station_id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "a728d403-86a2-41d2-a46e-43cde5275113"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "7e94ab57-a7d5-4532-bf39-3ca101482059"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "2d269a02-b948-4531-bf18-375ffee08e20"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v2",
+    "dbVendor": "BigQuery",
+    "appTarget": "BigQuery",
+    "creationTS": "2023-07-18T13:39:05.130Z",
+    "GUID": "a71e0c9f-fab3-4ceb-94ac-670fcf059728",
+    "isLineageEnabled": false,
+    "projectID": "bigquery-public-data",
+    "lastModifTS": "2023-07-18T13:46:00.725Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "BigQuery",
+        "pluginVersion": "0.1.15",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.12"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "87c5c7f7-fbfb-4125-9a7a-0b45bac264fb",
+                        "x": 1500,
+                        "y": 1850,
+                        "width": 300,
+                        "height": 372,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8deeb1c5-07d1-481b-b968-715d89603cd4",
+                        "x": 1500,
+                        "y": 1500,
+                        "width": 227,
+                        "height": 156,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e3075056-ce26-4316-8554-eeee691f4fc6",
+                        "x": 1650,
+                        "y": 1300,
+                        "width": 217,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8999bcc8-e7fe-411a-bf67-4573eb23a306",
+                        "x": 1855,
+                        "y": 1500,
+                        "width": 228,
+                        "height": 228,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bc810385-afdf-4c11-a09e-04489299b4c5",
+                        "x": 1850,
+                        "y": 1850,
+                        "width": 216,
+                        "height": 228,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8c82a655-0937-45a6-acd9-06641142e001",
+                        "x": 1100,
+                        "y": 1150,
+                        "width": 305,
+                        "height": 678,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "6c6290c2-592d-4e8b-bc4a-3610fc70b4aa",
+                        "x": 1050,
+                        "y": 1900,
+                        "width": 203,
+                        "height": 246,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b407133e-a09c-4210-8d13-b2aed63c435d",
+                        "x": 1950,
+                        "y": 1050,
+                        "width": 200,
+                        "height": 354,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1000,
+                        "y": 1000,
+                        "GUID": "fa734d2b-22c2-4e35-802f-2cea4a6a403b"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
