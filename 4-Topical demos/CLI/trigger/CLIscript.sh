@@ -1,4 +1,4 @@
-#!/bin/bash
+∑#!/bin/bash
 clear
 echo "*****************************************"
 echo "* Welcome to the Hackolade CLI example! *"
