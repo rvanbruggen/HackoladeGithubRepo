@@ -13,7 +13,14 @@
                     "properties": [],
                     "color": "#555555",
                     "GUID": "c5e3fa93-a266-4747-a664-35d6314c28d1",
-                    "error": {}
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
+                    "foreignField": [
+                        "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
+                        "71a9ddc4-06a4-459b-8083-547d167afaf4"
+                    ],
+                    "parentRelationship": "dc8d8657-ae36-4614-90d7-5b337ecc742b"
                 },
                 {
                     "name": "test2",
@@ -38,6 +45,49 @@
             "additionalProperties": false,
             "GUID": "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
             "bucketId": "c4fccd89-25c7-40e0-8f49-200d0a2c907f"
+        },
+        {
+            "collectionName": "test2",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "test3",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "71a9ddc4-06a4-459b-8083-547d167afaf4",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {},
+                    "childRelationships": [
+                        "dc8d8657-ae36-4614-90d7-5b337ecc742b"
+                    ]
+                },
+                {
+                    "name": "test4",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "5600eebd-f6f0-4cbf-9007-3f2294ade6bc",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "50b6b9ce-ade3-430b-b3c8-54c63785ca3b"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
+            "bucketId": "c4fccd89-25c7-40e0-8f49-200d0a2c907f",
+            "hackoladeMeta": {}
         }
     ],
     "buckets": [
@@ -45,7 +95,8 @@
             "name": "Document group",
             "type": "bucket",
             "collectionIds": [
-                "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2"
+                "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
+                "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -59,14 +110,71 @@
         }
     ],
     "views": [],
-    "relationships": [],
+    "relationships": [
+        {
+            "name": "fk test.test1 to test2.test3",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
+                    "71a9ddc4-06a4-459b-8083-547d167afaf4"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
+                    "c5e3fa93-a266-4747-a664-35d6314c28d1"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "parentCollection": "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
+            "childCollection": "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
+            "GUID": "dc8d8657-ae36-4614-90d7-5b337ecc742b",
+            "hackoladeStyles": {
+                "GUID": "e29191df-8622-49ef-93e4-f41d5d4dbcb5",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1307,
+                        "y": 1513.5
+                    },
+                    {
+                        "x": 1448,
+                        "y": 1513.5
+                    },
+                    {
+                        "x": 1448,
+                        "y": 1603.5
+                    },
+                    {
+                        "x": 1423,
+                        "y": 1603.5
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            }
+        }
+    ],
     "users": [],
     "diagramViews": [],
     "idToNameHashTable": {
         "c4fccd89-25c7-40e0-8f49-200d0a2c907f": "Document group",
         "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2": "test",
         "c5e3fa93-a266-4747-a664-35d6314c28d1": "test1",
-        "f9aef602-68a0-4f10-8c9b-425ca4e7db1b": "test2"
+        "f9aef602-68a0-4f10-8c9b-425ca4e7db1b": "test2",
+        "71a9ddc4-06a4-459b-8083-547d167afaf4": "test3",
+        "5600eebd-f6f0-4cbf-9007-3f2294ade6bc": "test4",
+        "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39": "test2",
+        "dc8d8657-ae36-4614-90d7-5b337ecc742b": "fk test.test1 to test2.test3"
     },
     "definitions": {
         "type": "definitions",
@@ -91,7 +199,7 @@
     "creationTS": "2023-07-19T11:08:25.951Z",
     "GUID": "03691cda-c0d0-433a-a578-2b1e4451e516",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-07-19T11:09:09.778Z",
+    "lastModifTS": "2023-07-19T11:10:07.201Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -109,6 +217,14 @@
                         "x": 1161,
                         "y": 1479,
                         "width": 146,
+                        "height": 69,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
+                        "x": 1273,
+                        "y": 1569,
+                        "width": 150,
                         "height": 69,
                         "color": {}
                     }
