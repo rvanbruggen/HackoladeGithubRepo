@@ -33,7 +33,10 @@
                     "error": {
                         "name": false,
                         "code": false
-                    }
+                    },
+                    "childRelationships": [
+                        "2ce1a1d8-c74a-46b1-8ccf-673d09ecf526"
+                    ]
                 }
             ],
             "definitions": {
@@ -88,6 +91,52 @@
             "GUID": "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
             "bucketId": "c4fccd89-25c7-40e0-8f49-200d0a2c907f",
             "hackoladeMeta": {}
+        },
+        {
+            "collectionName": "test3",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "test5",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "c6ec4a0b-9614-48d2-abab-1e4aecf07da7",
+                    "foreignCollection": "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
+                    "foreignField": [
+                        "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
+                        "f9aef602-68a0-4f10-8c9b-425ca4e7db1b"
+                    ],
+                    "childRelationships": [],
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "2ce1a1d8-c74a-46b1-8ccf-673d09ecf526"
+                },
+                {
+                    "name": "test6",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "8090b4d7-609a-4990-ac39-5b290bea23a3",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ff570317-9ca9-40f2-bcc9-7dd5381516ff"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "18524cef-00c4-4a2f-be39-d8c701731bc0",
+            "bucketId": "c4fccd89-25c7-40e0-8f49-200d0a2c907f",
+            "hackoladeMeta": {}
         }
     ],
     "buckets": [
@@ -96,7 +145,8 @@
             "type": "bucket",
             "collectionIds": [
                 "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
-                "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39"
+                "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
+                "18524cef-00c4-4a2f-be39-d8c701731bc0"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -141,20 +191,72 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1307,
-                        "y": 1513.5
+                        "x": 1201,
+                        "y": 1176.6666666666667
                     },
                     {
-                        "x": 1448,
-                        "y": 1513.5
+                        "x": 1226,
+                        "y": 1176.6666666666667
                     },
                     {
-                        "x": 1448,
-                        "y": 1603.5
+                        "x": 1226,
+                        "y": 1082.5
                     },
                     {
-                        "x": 1423,
-                        "y": 1603.5
+                        "x": 1201,
+                        "y": 1082.5
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk test3.test5 to test.test2",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
+                    "f9aef602-68a0-4f10-8c9b-425ca4e7db1b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "18524cef-00c4-4a2f-be39-d8c701731bc0",
+                    "c6ec4a0b-9614-48d2-abab-1e4aecf07da7"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "parentCollection": "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
+            "childCollection": "18524cef-00c4-4a2f-be39-d8c701731bc0",
+            "GUID": "2ce1a1d8-c74a-46b1-8ccf-673d09ecf526",
+            "hackoladeStyles": {
+                "GUID": "28b1bcfd-718e-45cf-88e9-9a7e7cea9149",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1201,
+                        "y": 1292.5
+                    },
+                    {
+                        "x": 1226,
+                        "y": 1292.5
+                    },
+                    {
+                        "x": 1226,
+                        "y": 1198.3333333333333
+                    },
+                    {
+                        "x": 1201,
+                        "y": 1198.3333333333333
                     }
                 ],
                 "sides": [
@@ -174,7 +276,11 @@
         "71a9ddc4-06a4-459b-8083-547d167afaf4": "test3",
         "5600eebd-f6f0-4cbf-9007-3f2294ade6bc": "test4",
         "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39": "test2",
-        "dc8d8657-ae36-4614-90d7-5b337ecc742b": "fk test.test1 to test2.test3"
+        "dc8d8657-ae36-4614-90d7-5b337ecc742b": "fk test.test1 to test2.test3",
+        "c6ec4a0b-9614-48d2-abab-1e4aecf07da7": "test5",
+        "8090b4d7-609a-4990-ac39-5b290bea23a3": "test6",
+        "18524cef-00c4-4a2f-be39-d8c701731bc0": "test3",
+        "2ce1a1d8-c74a-46b1-8ccf-673d09ecf526": "fk test3.test5 to test.test2"
     },
     "definitions": {
         "type": "definitions",
@@ -199,7 +305,7 @@
     "creationTS": "2023-07-19T11:08:25.951Z",
     "GUID": "03691cda-c0d0-433a-a578-2b1e4451e516",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-07-19T11:10:07.201Z",
+    "lastModifTS": "2023-07-19T11:13:58.406Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -208,24 +314,35 @@
     "applicationInformation": {
         "version": "6.10.12"
     },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
                 "erd": [
                     {
                         "GUID": "cd4fb34f-b1c6-4050-9f4f-d7ffea10e5c2",
-                        "x": 1161,
-                        "y": 1479,
-                        "width": 146,
-                        "height": 69,
+                        "x": 1050,
+                        "y": 1155,
+                        "width": 151,
+                        "height": 65,
                         "color": {}
                     },
                     {
                         "GUID": "61cfdec8-6e80-4d7d-9b3e-1469e12d3d39",
-                        "x": 1273,
-                        "y": 1569,
-                        "width": 150,
-                        "height": 69,
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 151,
+                        "height": 65,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "18524cef-00c4-4a2f-be39-d8c701731bc0",
+                        "x": 1050,
+                        "y": 1260,
+                        "width": 151,
+                        "height": 65,
                         "color": {}
                     }
                 ],
@@ -237,8 +354,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1121,
-                        "y": 1439,
+                        "x": 1000,
+                        "y": 1000,
                         "GUID": "c4fccd89-25c7-40e0-8f49-200d0a2c907f"
                     }
                 ],
@@ -270,8 +387,5 @@
             "collapsedNodes": [],
             "shouldDistributeCollections": false
         }
-    },
-    "hackoladeMeta": {
-        "customPropertiesUpdated": true
     }
 }
