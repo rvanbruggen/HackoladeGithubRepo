@@ -1,0 +1,1423 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "198b91e1-0f44-4fd0-95b3-81bcbb657748",
+            "type": "reference",
+            "$ref": "#external/definitions/movies",
+            "refType": "polyglot",
+            "ref": "605341c0-04b9-4441-83b5-c5275bf00acb",
+            "refIdPath": [
+                "63543d50-6b98-4c6b-a351-78d6d8b91cee",
+                "ba1bef49-776a-4bb2-a3d1-e69c1ff99708",
+                "605341c0-04b9-4441-83b5-c5275bf00acb"
+            ],
+            "isActivated": true,
+            "collectionName": "movies",
+            "code": "",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "a6f53458-e797-493b-b5fb-d393bc8a747c"
+            },
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "198b91e1-0f44-4fd0-95b3-81bcbb657748": "movies"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "bf295af5-20ce-4d46-9d62-23e475700e34"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "movies",
+                "code": "",
+                "isActivated": true,
+                "bucketId": "ebbc81cf-6e11-4d30-ab76-aa91ce419774",
+                "additionalProperties": true,
+                "properties": [
+                    {
+                        "required": true,
+                        "primaryKey": true,
+                        "type": "string",
+                        "name": "_id",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "38c7828e-0218-4e1c-bb19-3372a527a069",
+                        "pattern": "^[a-fA-F0-9]{24}$",
+                        "error": {}
+                    },
+                    {
+                        "name": "plot",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "a0488d7a-7778-447c-b1eb-f3c029f2dd8f"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "In the mid-1960s, President Johnson and his foreign-policy team debate the decision to withdraw from or escalate the war in Vietnam.",
+                                "GUID": "f2e01dbf-98a9-467a-8b01-d4befddec0af",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": false,
+                        "default": null,
+                        "GUID": "9381a503-4924-4505-8da3-0e0816aa1c39",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "genres",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "eac72542-1db1-5b01-9cb0-83a29ad32c96",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "c6651f39-ad58-54e6-8bc9-3de6f9ed3b32",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Short",
+                                                "GUID": "9389386d-67aa-47ed-ac96-637f775eaeb4",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "genres",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "8c25d1fa-6717-4a09-ae19-4b382ef28c5d",
+                                        "default": null,
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "15e2a2e4-3ad7-50de-8047-dadcac0f8a80",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "genres",
+                        "code": "",
+                        "GUID": "c271d173-96ad-5203-af41-4f7efd48b884",
+                        "error": {}
+                    },
+                    {
+                        "name": "runtime",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "87ff100f-a714-4145-94ea-36f39d7fb035"
+                            },
+                            {
+                                "childType": "number",
+                                "mode": "int",
+                                "sample": 1140,
+                                "GUID": "1f6ce3ed-8252-43df-8583-3a4c8f525848",
+                                "type": "numeric"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": false,
+                        "default": null,
+                        "GUID": "7e9e44eb-9694-400d-a02c-16e1c626b83a",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "cast",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "2c142661-ea3f-54d4-9654-023b74cf9e49",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "6f3aeb70-e5e0-58c7-875b-5742236895ef",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Martin Fuller",
+                                                "GUID": "9832b1f1-e320-4a3f-b11f-d1cde2182bd5",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "cast",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "df0d5479-7c34-449b-bdca-2e2d4e6cc49d",
+                                        "default": null,
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "64d55e16-9a10-5837-8d18-186a6b120108",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "cast",
+                        "code": "",
+                        "GUID": "ac00c826-d8b0-5127-b2e6-985b10a9dd9b",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "num_mflix_comments",
+                        "code": "",
+                        "isActivated": true,
+                        "sample": 153,
+                        "GUID": "a59b6391-183b-41e9-801e-13dbffbc430a",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "type": "string",
+                        "name": "title",
+                        "code": "",
+                        "isActivated": true,
+                        "sample": "Path to War",
+                        "GUID": "07b4ce3d-e1eb-4a42-9b7f-da3b08f6ff36",
+                        "error": {}
+                    },
+                    {
+                        "name": "fullplot",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "3d958907-b9a0-414f-a180-3d3a8395fbf8"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "A portrayal of the Johnson presidency and its spiraling descent into the Vietnam War. Acting on often conflicting advice from his Secretary of Defense, Robert McNamara and other advisers, President Johnson finds his domestic policy agenda for the Great Society overtaken by an ever demanding commitment to ending the war. It also depicts his political skills as he crosses swords with political foes such as Bobby Kennedy and Governor George Wallace. Despite support and encouragement from stalwart friends such as Clark Clifford, Johnson realizes his management of the war no longer has the confidence of the American people and announces that he will not seek the nomination of the Democratic party for the the 1968 election.",
+                                "GUID": "f84d8342-1bc8-40a0-9c4c-d4b82c6e4fea",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": false,
+                        "default": null,
+                        "GUID": "228b8d58-40d4-4498-ac60-0f23b966ad73",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "isActivated": true,
+                                "sample": "USA",
+                                "GUID": "bfd733b1-0d48-458f-b106-317e5f0bf2ea",
+                                "hackoladeMeta": {},
+                                "arrayItem": true,
+                                "error": {}
+                            }
+                        ],
+                        "primaryKey": false,
+                        "uniqueItems": false,
+                        "childType": "array",
+                        "type": "array",
+                        "name": "countries",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "c561aa8c-1b69-4472-9c56-794663ed20c6",
+                        "error": {}
+                    },
+                    {
+                        "name": "released",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "0fd6312b-6e33-41d1-89f3-d6891a8a8d55"
+                            },
+                            {
+                                "childType": "number",
+                                "GUID": "0b623b92-9548-4454-a259-6a6a64f030b0",
+                                "type": "numeric",
+                                "mode": "int",
+                                "logicalType": "date"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": false,
+                        "default": null,
+                        "GUID": "26e893aa-81b4-474a-9923-8df8a73c5833",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "directors",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "b77e36da-e024-5408-971a-c50e2a76d1f0",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "aba51675-e7cc-52b6-a519-43bd5487b162",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Harold M. Shaw",
+                                                "GUID": "253c6051-4ff9-4765-9b9d-8da7233dcdcc",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "directors",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "29aab85f-8c58-4c56-a4f6-a58258fdcd7e",
+                                        "default": null,
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "2770accd-0364-5299-99eb-4ebd67e4cb3d",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "directors",
+                        "code": "",
+                        "GUID": "044dbba1-2696-5601-bbbf-88eb8ebfe4af",
+                        "error": {}
+                    },
+                    {
+                        "name": "rated",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "ae6018be-e106-4074-b593-998dcf7e27f4"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "R",
+                                "GUID": "17eae7f3-e928-4f08-bcce-37d83ae77b5f",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": false,
+                        "default": null,
+                        "GUID": "111e2447-9f7c-45ab-8eba-c4203a4ac89e",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "wins",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 120,
+                                "GUID": "8791d725-75ee-40a1-ac97-d1ae777af55f",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "nominations",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 100,
+                                "GUID": "1340ff15-254c-4412-9633-100e2a91b295",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "name": "text",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": "Won 1 Golden Globe. Another 26 nominations.",
+                                "GUID": "e0731756-5908-4f5c-9106-3246f91e445e",
+                                "error": {}
+                            }
+                        ],
+                        "childType": "record",
+                        "type": "document",
+                        "name": "awards",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "fe9268ab-c148-4fc7-82bc-1562ad2452e1",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "lastupdated",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "50c67623-25da-44b5-bb65-f5efef35a53b",
+                        "logicalType": "date",
+                        "error": {}
+                    },
+                    {
+                        "name": "year",
+                        "code": "",
+                        "isActivated": true,
+                        "type": "multiple",
+                        "required": true,
+                        "primaryKey": false,
+                        "GUID": "cf737fd4-3556-4cd8-a4bb-a4931e2eb748",
+                        "multipleTypes": [
+                            {
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "type": "string",
+                                "GUID": "933914eb-ee7f-49e5-b74f-32cb271ed23d",
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "bytes",
+                                "subtype": "decimal"
+                            },
+                            {
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "type": "string",
+                                "GUID": "0215b17d-0ada-4af3-a2db-3c760d4a4d9d",
+                                "primaryKey": false,
+                                "childType": "string"
+                            }
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "double",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "rating",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 7.1,
+                                "GUID": "579ef390-3f7f-448b-ab10-c95c8f3f76b9",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "votes",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 1513145,
+                                "GUID": "f84e6391-ce83-4ed8-bf28-af73941f3d55",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "primaryKey": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "name": "id",
+                                "code": "",
+                                "isActivated": true,
+                                "sample": 218505,
+                                "GUID": "cfc295b3-f66c-4a70-8733-3fcc364d6673",
+                                "error": {}
+                            }
+                        ],
+                        "childType": "record",
+                        "type": "document",
+                        "name": "imdb",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "405f1666-d72f-4b33-b3f1-0b43fca53dfa",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "type": "string",
+                        "name": "type",
+                        "code": "",
+                        "isActivated": true,
+                        "sample": "movie",
+                        "GUID": "f9e56b0a-d216-4f91-8c0b-1d136f8f2556",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "tomatoes",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "ade50ebd-0b38-51b9-9ac3-8f62c862f25f",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "2a622581-7a42-5be8-a9ba-ffd6e199e9fa",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "primaryKey": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "properties": [
+                                                    {
+                                                        "name": "rating",
+                                                        "type": "multiple",
+                                                        "properties": [],
+                                                        "multipleTypes": [
+                                                            {
+                                                                "type": "null",
+                                                                "GUID": "5eb356c1-afd3-43d0-aba8-0086f2451d00"
+                                                            },
+                                                            {
+                                                                "childType": "number",
+                                                                "mode": "double",
+                                                                "sample": 3.7,
+                                                                "GUID": "ad61ed7b-95ba-4dc4-bbe5-4df7f767396f",
+                                                                "type": "numeric"
+                                                            }
+                                                        ],
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "code": "",
+                                                        "required": false,
+                                                        "default": null,
+                                                        "GUID": "dbfbe6c4-8f36-493b-b1c3-0c6c66f1fcf3",
+                                                        "error": {}
+                                                    },
+                                                    {
+                                                        "required": true,
+                                                        "exclusiveMinimum": false,
+                                                        "exclusiveMaximum": false,
+                                                        "primaryKey": false,
+                                                        "mode": "int",
+                                                        "childType": "number",
+                                                        "type": "numeric",
+                                                        "name": "numReviews",
+                                                        "code": "",
+                                                        "isActivated": true,
+                                                        "sample": 33779417,
+                                                        "GUID": "1558f01d-3386-4323-8c62-d5ca0604d11e",
+                                                        "error": {}
+                                                    },
+                                                    {
+                                                        "name": "meter",
+                                                        "type": "multiple",
+                                                        "properties": [],
+                                                        "multipleTypes": [
+                                                            {
+                                                                "type": "null",
+                                                                "GUID": "33c871e8-8e84-4e42-bc80-7d2edfe4c324"
+                                                            },
+                                                            {
+                                                                "childType": "number",
+                                                                "mode": "int",
+                                                                "sample": 100,
+                                                                "GUID": "01273cf4-d154-4f86-add1-af617114bc83",
+                                                                "type": "numeric"
+                                                            }
+                                                        ],
+                                                        "isActivated": true,
+                                                        "primaryKey": false,
+                                                        "code": "",
+                                                        "required": false,
+                                                        "default": null,
+                                                        "GUID": "643e0be1-621f-4d0d-9a5b-83bccc894b9c",
+                                                        "error": {}
+                                                    }
+                                                ],
+                                                "childType": "record",
+                                                "type": "document",
+                                                "name": "viewer",
+                                                "code": "",
+                                                "isActivated": true,
+                                                "GUID": "c35dcb49-8c31-42f2-b609-3835c119e39b",
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "exclusiveMinimum": false,
+                                                "exclusiveMaximum": false,
+                                                "primaryKey": false,
+                                                "mode": "int",
+                                                "childType": "number",
+                                                "type": "numeric",
+                                                "name": "lastUpdated",
+                                                "code": "",
+                                                "isActivated": true,
+                                                "GUID": "d5bc0da6-3c92-4392-84a5-5e0fb979e10b",
+                                                "logicalType": "date",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "boxOffice",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "e7922adf-cbaa-4910-aa91-56c253c3e108"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "$9.1k",
+                                                        "GUID": "df9a7e61-3093-4dfe-ac6d-76c8525cff26",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": false,
+                                                "default": null,
+                                                "GUID": "54aa4330-3aaa-4814-a6c0-ed832bca8f02",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "consensus",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "6b33d794-d16e-4663-881e-12a2e723adc7"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "This comedy is too slight to leave an impression, and its attempts at whimsy are not as funny as they could have been.",
+                                                        "GUID": "8ed9efcc-15ba-4a87-b09d-32d514efb89a",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": false,
+                                                "default": null,
+                                                "GUID": "c958dea3-66b5-4d6f-9ec0-7dd3943464d6",
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "type": "choice",
+                                                "properties": [
+                                                    {
+                                                        "required": true,
+                                                        "primaryKey": false,
+                                                        "properties": [
+                                                            {
+                                                                "default": null,
+                                                                "type": "null",
+                                                                "primaryKey": false,
+                                                                "name": "critic",
+                                                                "hackoladeMeta": {},
+                                                                "isActivated": true,
+                                                                "required": false,
+                                                                "GUID": "df552f55-64cf-593e-95f4-23b22806de1c",
+                                                                "code": "",
+                                                                "error": {}
+                                                            }
+                                                        ],
+                                                        "childType": "record",
+                                                        "type": "document",
+                                                        "subschema": true,
+                                                        "isActivated": true,
+                                                        "GUID": "adbef2d5-bd4e-5e13-9c0e-3d1dd135b3e9",
+                                                        "error": {}
+                                                    },
+                                                    {
+                                                        "required": true,
+                                                        "primaryKey": false,
+                                                        "properties": [
+                                                            {
+                                                                "required": false,
+                                                                "primaryKey": false,
+                                                                "properties": [
+                                                                    {
+                                                                        "name": "meter",
+                                                                        "type": "multiple",
+                                                                        "properties": [],
+                                                                        "multipleTypes": [
+                                                                            {
+                                                                                "type": "null",
+                                                                                "GUID": "59008eb3-4d8c-4a97-8692-363cb95dd7e7"
+                                                                            },
+                                                                            {
+                                                                                "childType": "number",
+                                                                                "mode": "int",
+                                                                                "sample": 100,
+                                                                                "GUID": "283d449f-4050-42e9-b809-1a48d803fafc",
+                                                                                "type": "numeric"
+                                                                            }
+                                                                        ],
+                                                                        "isActivated": true,
+                                                                        "primaryKey": false,
+                                                                        "code": "",
+                                                                        "required": false,
+                                                                        "default": null,
+                                                                        "GUID": "f9396df6-e575-4fe9-a09c-b0b62d5d2a63",
+                                                                        "error": {}
+                                                                    },
+                                                                    {
+                                                                        "name": "numReviews",
+                                                                        "type": "multiple",
+                                                                        "properties": [],
+                                                                        "multipleTypes": [
+                                                                            {
+                                                                                "type": "null",
+                                                                                "GUID": "01c43c4d-3da9-452e-8df4-31eff89231c5"
+                                                                            },
+                                                                            {
+                                                                                "childType": "number",
+                                                                                "mode": "int",
+                                                                                "sample": 247,
+                                                                                "GUID": "21b78375-4880-4ffc-a780-50a13b42598d",
+                                                                                "type": "numeric"
+                                                                            }
+                                                                        ],
+                                                                        "isActivated": true,
+                                                                        "primaryKey": false,
+                                                                        "code": "",
+                                                                        "required": false,
+                                                                        "default": null,
+                                                                        "GUID": "ed2d7c28-8353-4a86-9512-c0f13594694d",
+                                                                        "error": {}
+                                                                    },
+                                                                    {
+                                                                        "name": "rating",
+                                                                        "type": "multiple",
+                                                                        "properties": [],
+                                                                        "multipleTypes": [
+                                                                            {
+                                                                                "type": "null",
+                                                                                "GUID": "2c27ef6a-573f-4857-aea4-b8581c7a44e3"
+                                                                            },
+                                                                            {
+                                                                                "childType": "number",
+                                                                                "mode": "double",
+                                                                                "sample": 8.1,
+                                                                                "GUID": "0f87164c-7d8a-44d8-a897-f61a5e8e9f12",
+                                                                                "type": "numeric"
+                                                                            }
+                                                                        ],
+                                                                        "isActivated": true,
+                                                                        "primaryKey": false,
+                                                                        "code": "",
+                                                                        "required": false,
+                                                                        "default": null,
+                                                                        "GUID": "8652fc29-1227-4f08-ae62-cddaf0501d75",
+                                                                        "error": {}
+                                                                    }
+                                                                ],
+                                                                "childType": "record",
+                                                                "type": "document",
+                                                                "name": "critic",
+                                                                "code": "",
+                                                                "isActivated": true,
+                                                                "GUID": "4a1df4ae-219c-485e-8e08-0689f4813b63",
+                                                                "default": null,
+                                                                "error": {}
+                                                            }
+                                                        ],
+                                                        "childType": "record",
+                                                        "type": "document",
+                                                        "subschema": true,
+                                                        "isActivated": true,
+                                                        "GUID": "fd4fc16b-ca7a-5eca-a974-aef3cee25dbd",
+                                                        "error": {}
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "choice": "oneOf",
+                                                "default": null,
+                                                "name": "critic",
+                                                "code": "",
+                                                "GUID": "44953ab2-361b-5ba2-ae62-8ebcf0f7ecf1",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "dvd",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "3b19921a-f024-432e-acb0-d2da25a86e6d"
+                                                    },
+                                                    {
+                                                        "childType": "number",
+                                                        "GUID": "e01ef2d4-3ccf-4dfa-93fc-3e18ef5dbf0f",
+                                                        "type": "numeric",
+                                                        "mode": "int",
+                                                        "logicalType": "date"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": false,
+                                                "default": null,
+                                                "GUID": "d8e945a9-36f9-4c22-89f8-e8bd866adc29",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "fresh",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "37309d90-9e30-4121-8297-aae76c7441c1"
+                                                    },
+                                                    {
+                                                        "childType": "number",
+                                                        "mode": "int",
+                                                        "sample": 236,
+                                                        "GUID": "dd63c7ae-7c8c-4562-8439-5a4e968ad943",
+                                                        "type": "numeric"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": false,
+                                                "default": null,
+                                                "GUID": "f4744e04-e0c4-4fe4-8c68-4f16f15457d1",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "production",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "4cb5ed9f-75ca-4191-8e68-519918bdac61"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "HBO Video",
+                                                        "GUID": "3eb244e7-2b74-4054-ace6-a507ad07e03d",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": false,
+                                                "default": null,
+                                                "GUID": "f1225aa3-9fbb-4628-be9f-568013fbe1da",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "rotten",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "59ea6f6b-0ce2-4669-824b-760b497c3831"
+                                                    },
+                                                    {
+                                                        "childType": "number",
+                                                        "mode": "int",
+                                                        "sample": 136,
+                                                        "GUID": "d3a12a4b-b6c8-4585-9217-1fc5b1bc13dd",
+                                                        "type": "numeric"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": false,
+                                                "default": null,
+                                                "GUID": "bf50162c-7d45-4aad-b88d-cd8f6749fd82",
+                                                "error": {}
+                                            },
+                                            {
+                                                "name": "website",
+                                                "type": "multiple",
+                                                "properties": [],
+                                                "multipleTypes": [
+                                                    {
+                                                        "type": "null",
+                                                        "GUID": "5cf14c42-852e-4ee7-b125-a39e25b1cc74"
+                                                    },
+                                                    {
+                                                        "childType": "string",
+                                                        "sample": "http://www.amazon.com/everlastingpiece",
+                                                        "GUID": "76ec8696-fb00-4ee5-811f-f5c62062f22d",
+                                                        "type": "string"
+                                                    }
+                                                ],
+                                                "isActivated": true,
+                                                "primaryKey": false,
+                                                "code": "",
+                                                "required": false,
+                                                "default": null,
+                                                "GUID": "9bf1ebf3-ae0a-4b5a-a00c-d06562441cf5",
+                                                "error": {}
+                                            }
+                                        ],
+                                        "childType": "record",
+                                        "type": "document",
+                                        "name": "tomatoes",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "148e9672-7ac9-47bc-8107-1a9f49f0c038",
+                                        "default": null,
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "69a2912e-9e12-57b3-9b5e-16271faa0eeb",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "tomatoes",
+                        "code": "",
+                        "GUID": "d48e098d-5a1e-5daa-a770-f0d84f318b20",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "languages",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "cbbf5fcb-599b-5974-9ee1-b3aaea5e0995",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "00427f85-4c7c-5ff9-8edd-7972f7db6e23",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "English",
+                                                "GUID": "8e47ce91-7393-4be8-b9fb-d566bc6e8d57",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "languages",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "d64562ed-1f49-4bde-9b45-9d2098e16198",
+                                        "default": null,
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "0b5ac588-9b8a-54c5-bb55-5a53c8213907",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "languages",
+                        "code": "",
+                        "GUID": "e9f64b6f-2801-5211-af95-277654329b14",
+                        "error": {}
+                    },
+                    {
+                        "name": "metacritic",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "5db78a5c-65a5-4ad4-8097-f690fe911fac"
+                            },
+                            {
+                                "childType": "number",
+                                "mode": "int",
+                                "sample": 99,
+                                "GUID": "87db82be-b59e-484d-93cb-9c0305246c1c",
+                                "type": "numeric"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": false,
+                        "default": null,
+                        "GUID": "752b7165-3528-464f-8a36-ef1812f14c64",
+                        "error": {}
+                    },
+                    {
+                        "name": "poster",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "f0d4304f-415b-410a-a0ba-e56996584f53"
+                            },
+                            {
+                                "childType": "string",
+                                "sample": "https://m.media-amazon.com/images/M/MV5BNjE1NDU1MDU5NF5BMl5BanBnXkFtZTYwMzgwNTk5._V1_SY1000_SX677_AL_.jpg",
+                                "GUID": "3bb40fd2-a876-420c-a0f6-e0e9e9f6b100",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "code": "",
+                        "required": false,
+                        "default": null,
+                        "GUID": "c791127f-98fd-48d1-8785-4d0da5b59ad1",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "writers",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "1584d9dd-1dc1-5548-b455-ab1b2ec5a5f0",
+                                        "code": "",
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "4b79ef5d-2822-5b42-9ffa-b25c7ea32470",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "isActivated": true,
+                                                "sample": "Dorothy G. Shore",
+                                                "GUID": "5255b20d-eba4-4f54-8e3e-cbe67c66bed2",
+                                                "hackoladeMeta": {},
+                                                "arrayItem": true,
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "name": "writers",
+                                        "code": "",
+                                        "isActivated": true,
+                                        "GUID": "b8c70a6f-0fac-42d1-a0f5-7266315bfbb7",
+                                        "default": null,
+                                        "error": {}
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "8478a0c8-c26a-5aaf-9544-524f0a16a9e5",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "writers",
+                        "code": "",
+                        "GUID": "29a82e3a-86ba-512e-b383-4b1fc72dd0cc",
+                        "error": {}
+                    },
+                    {
+                        "name": "RBI attribute",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "cf06ef9a-bcff-4280-b0d5-635f811b87fd"
+                            },
+                            {
+                                "childType": "string",
+                                "GUID": "b9ae354a-56d4-4f91-993f-8b13715d8950",
+                                "type": "string"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": false,
+                        "default": null,
+                        "GUID": "22c10239-9337-41f0-9e63-03ed30640640",
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "358bdb50-671d-4459-a862-a1b6889d4ccd",
+                    "properties": []
+                },
+                "GUID": "605341c0-04b9-4441-83b5-c5275bf00acb",
+                "type": "object",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionEntityType": "collection",
+                "link": "/Users/rvanbruggen/Documents/HackoladeRepo/1-Customers/RBI/RBI (Polyglot).hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/sample_mflix/movies",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "198b91e1-0f44-4fd0-95b3-81bcbb657748"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "ba1bef49-776a-4bb2-a3d1-e69c1ff99708"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "7ff8e732-4c06-4ed5-9471-ce748ef5247c"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2023-08-16T10:31:33.065Z",
+    "GUID": "63543d50-6b98-4c6b-a351-78d6d8b91cee",
+    "isLineageEnabled": false,
+    "polyglotModelPaths": [
+        {
+            "GUID": "64566a6e-f9b4-471d-93a2-5fd7a4a8a4a8",
+            "polyglotModelName": "RBI (Polyglot).hck",
+            "polyglotModelPath": "/Users/rvanbruggen/Documents/HackoladeRepo/1-Customers/RBI/RBI (Polyglot).hck.json",
+            "normalization": false
+        }
+    ],
+    "lastModifTS": "2023-08-16T10:32:19.925Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.124",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.16"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "198b91e1-0f44-4fd0-95b3-81bcbb657748",
+                        "x": 1400,
+                        "y": 1350,
+                        "width": 323,
+                        "height": 951,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
