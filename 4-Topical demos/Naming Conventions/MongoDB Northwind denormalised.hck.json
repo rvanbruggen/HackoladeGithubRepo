@@ -1,0 +1,2790 @@
+{
+    "modelName": "northwindoracle",
+    "collections": [
+        {
+            "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "categories",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05f996a0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "category id",
+                    "description": "number automatically assigned to a new category.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "7fb99406-f8a9-4bd1-be09-df9b72d785b7",
+                        "05f92171-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 2,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/2dad6baa-92d2-4051-86da-c675340c3cd6",
+                    "mode": "",
+                    "code": "catgrId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "category name",
+                    "description": "name of food category.",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Beverages",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/c32b4d11-7008-4949-9441-da751ecd9dcd",
+                    "code": "catgrName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "description",
+                    "type": "string",
+                    "maxLength": 2000,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Soft drinks, coffees, teas, beers, and ales",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/000621cf-c5c7-4ebb-a4bb-0f00d4912a1d",
+                    "required": false,
+                    "code": "description",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "picture",
+                    "description": "a picture representing the food category.",
+                    "type": "string",
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "beverages.gif",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/7c3786ce-157f-468d-af27-107eed89ae10",
+                    "required": false,
+                    "code": "picture",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c1-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "hackoladeMeta": {
+                "validationErrors": {},
+                "namingConvention": "code"
+            },
+            "assetUrl": "https://hackolade.collibra.com/asset/130df042-e78a-4908-95d0-472bb148a6ab",
+            "code": "categories"
+        },
+        {
+            "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "customers",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "GUID": "4831bc7b-3d9a-4d22-82c3-ab8f62528f35",
+                    "name": "newIndex",
+                    "isActivated": true,
+                    "key": [
+                        {
+                            "keyId": "05f9e4c6-899e-11e6-a8d7-35e2bcca9f8c",
+                            "type": "ascending"
+                        }
+                    ],
+                    "unique": false,
+                    "dropDups": false,
+                    "sparse": false,
+                    "expireAfterSeconds": "",
+                    "background": false,
+                    "weights": "",
+                    "min": -180,
+                    "max": 180,
+                    "bits": 26,
+                    "language_override": "language",
+                    "storageEngineName": "WiredTiger",
+                    "collation": {}
+                }
+            ],
+            "properties": [
+                {
+                    "GUID": "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "customer id",
+                    "description": "unique five-character code based on customer name.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "2cb13782-382a-4756-ad52-4637046af5eb",
+                        "05f92173-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 10,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/a3b7449a-2747-4450-b7c2-bfbf01ea8adc",
+                    "mode": "",
+                    "code": "custId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c5-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "customer code",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 5,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "BOTTM",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/7120ae75-f1e7-4259-b8bc-fbb298f48e23",
+                    "code": "custCode",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c6-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "company name",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Bottom-Dollar Markets",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/b9f3bfd0-fbf7-42c6-988b-a5ed294f3a73",
+                    "code": "companyName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c7-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact name",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Elizabeth Lincoln",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/c75e7638-ebbc-4527-89a5-e6ab85846a20",
+                    "required": false,
+                    "code": "contactName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c8-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact title",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Accounting Manager",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/aa91089b-d774-4e0d-b5d1-ebeffd5daef0",
+                    "required": false,
+                    "code": "contactTitle",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4c9-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "address",
+                    "description": "street or post-office box.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "23 Tsawassen Blvd.",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/8d5e62eb-d74f-450e-b006-37338d717535",
+                    "required": false,
+                    "code": "address",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4ca-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Tsawassen",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/edbc207e-5652-41b0-8e17-4f938a63495d",
+                    "required": false,
+                    "code": "city",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4cb-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "BC",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/a0f1b9ab-36ad-4f86-8a46-35eb324ca308",
+                    "required": false,
+                    "code": "region",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4cc-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "postal code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "T2F 8M4",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/75564146-a03a-433f-a026-15dfbf3715b6",
+                    "required": false,
+                    "code": "postalCode",
+                    "error": {}
+                },
+                {
+                    "GUID": "05f9e4cd-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Canada",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/59f103bb-0ea3-42d3-b27a-23ddde2af234",
+                    "required": false,
+                    "code": "country",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "(604) 555-4729",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/86e9b85c-c511-41d8-8c1a-6754c0718dab",
+                    "required": false,
+                    "code": "phone",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "fax",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "(604) 555-3745",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/4394e9a2-57ea-4eb7-a60e-0e63afdd1e09",
+                    "required": false,
+                    "code": "fax",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c2-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "hackoladeMeta": {
+                "validationErrors": {},
+                "namingConvention": "code"
+            },
+            "error": {},
+            "assetUrl": "https://hackolade.collibra.com/asset/b563b86a-4122-4f5d-8671-d23d21d51b37",
+            "code": "customers"
+        },
+        {
+            "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "employees",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "employee id",
+                    "description": "number automatically assigned to new employee.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "2a1b707f-60f1-43be-b3d0-1f694b8386af",
+                        "522eb9f5-83bc-4724-9ffc-61b085a068e6",
+                        "05f92170-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05f92174-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/afb955a8-b357-4117-83ae-0919e4153371",
+                    "mode": "",
+                    "code": "employeeId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "lastname",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 20,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/fb24051a-fd56-4707-9bc3-0e653f0d9711",
+                    "code": "lastname",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd5-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "firstname",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/dd770eda-6cd5-4662-9f0b-edba8e226af7",
+                    "code": "firstname",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd6-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "title",
+                    "description": "employee",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/d015a507-55de-4a73-a0b6-64531ec660fc",
+                    "required": false,
+                    "code": "title",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd7-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "title of courtesy",
+                    "description": "title used in salutations.",
+                    "type": "string",
+                    "maxLength": 25,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/20b8986b-6eca-496f-96b4-216fe23b6637",
+                    "required": false,
+                    "code": "titleOfCourtesy",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd8-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "birthdate",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/27b46bd2-00a3-42ac-9e78-136e201c9d38",
+                    "required": false,
+                    "code": "birthdate",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bd9-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "hiredate",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/77c27e6a-c874-43e0-b707-ff1836889d31",
+                    "required": false,
+                    "code": "hiredate",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bda-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "address",
+                    "description": "street or post-office box.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/a16b3ddd-5688-4ce8-a212-e94319e59832",
+                    "required": false,
+                    "code": "address",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bdb-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/3da73fae-e575-4c08-b84d-be7c5a8fc4d4",
+                    "required": false,
+                    "code": "city",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa0bdc-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/68f3d58a-458c-4e35-8fce-1834ea79c65e",
+                    "required": false,
+                    "code": "region",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa32e0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "postal code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/7147ebf6-f887-45c5-af2c-174297880475",
+                    "required": false,
+                    "code": "postalCode",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa32e1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/a305f5aa-8c73-47f6-8976-70dc8507333a",
+                    "required": false,
+                    "code": "country",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa32e2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "home phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/6910bbc8-30de-4a3e-9883-dd7903fd351a",
+                    "required": false,
+                    "code": "homePhone",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "extension",
+                    "description": "internal telephone extension number.",
+                    "type": "string",
+                    "maxLength": 4,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/d372df54-e696-456b-b4de-4a0a4ab156ef",
+                    "required": false,
+                    "code": "extension",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "photo",
+                    "description": "picture of employee.",
+                    "type": "string",
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/9e1753a9-9326-4abc-b630-38d91091437d",
+                    "required": false,
+                    "code": "photo",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "notes",
+                    "description": "general information about employee",
+                    "type": "string",
+                    "maxLength": 2000,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/779375a6-8b07-4e4c-a639-39737aaf628f",
+                    "required": false,
+                    "code": "notes",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "reports to",
+                    "description": "employee",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92170-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/43bfa68f-baca-4e7f-882e-8ab9ba19eee4",
+                    "required": false,
+                    "mode": "",
+                    "code": "reportsTo",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c3-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "hackoladeMeta": {
+                "validationErrors": {},
+                "namingConvention": "code"
+            },
+            "assetUrl": "https://hackolade.collibra.com/asset/9157963c-2c19-4e22-8177-9fd8a7270497",
+            "code": "employees"
+        },
+        {
+            "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "orders",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "order id",
+                    "description": "unique order number.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 10440,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/8a728f9d-77aa-40f3-b441-f3f24d359b4a",
+                    "mode": "",
+                    "code": "orderId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a12-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "customer id",
+                    "description": "same entry as in customers table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92173-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 10,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/1602da00-a929-4943-b173-615b000d5f43",
+                    "mode": "",
+                    "code": "custId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a13-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "employee id",
+                    "description": "same entry as in employees table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92174-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 4,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/f9e58a86-5a52-4ffb-a71a-c4dc9566a8eb",
+                    "mode": "",
+                    "code": "employeeId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a14-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "order date",
+                    "required": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "error": {},
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/2f67a5ca-1dde-4823-885a-e5cae34c20e9",
+                    "code": "orderDate"
+                },
+                {
+                    "GUID": "05fa5a15-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "required date",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "error": {},
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/cd2034aa-d16c-42c6-8043-b6defb14a787",
+                    "required": false,
+                    "code": "requiredDate"
+                },
+                {
+                    "GUID": "05fa5a16-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "shipped date",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "error": {},
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/4f127328-6cf2-4d96-aed2-3ba21de360b3",
+                    "required": false,
+                    "code": "shippedDate"
+                },
+                {
+                    "GUID": "05fa5a17-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship via",
+                    "description": "same as shipper id in shippers table.",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92175-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 2,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/29efbc61-a504-4d35-b0fa-f4c263afaeb5",
+                    "required": false,
+                    "mode": "",
+                    "code": "shipVia",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a18-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "freight",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 86.53,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/e9cf981e-5279-4b5f-9197-58a55286d63d",
+                    "required": false,
+                    "mode": "",
+                    "code": "freight",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a19-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship name",
+                    "description": "name of person or company to receive the shipment.",
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Save-a-lot Markets",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/7e9552fe-5cbd-4014-b62e-d4bc641ff7f1",
+                    "required": false,
+                    "code": "shipName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05faa810-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship address",
+                    "description": "street address only -- no post-office box allowed.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "187 Suffolk Ln.",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/c84cf96d-fa1e-4301-9d7a-0036ed8c9e36",
+                    "required": false,
+                    "code": "shipAddress",
+                    "error": {}
+                },
+                {
+                    "GUID": "05faa811-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Boise",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/fa48b2d0-c9e4-409c-b2ee-edfcb2022380",
+                    "required": false,
+                    "code": "shipCity",
+                    "error": {}
+                },
+                {
+                    "GUID": "05faa812-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "ID",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/21eb6dc7-f48b-43ca-b347-3277f53d7dd4",
+                    "required": false,
+                    "code": "shipRegion",
+                    "error": {}
+                },
+                {
+                    "GUID": "05faa813-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship postal code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "83720",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/cbfdc3ac-1d80-4eb6-8041-38ef4064b4a6",
+                    "required": false,
+                    "code": "shipPostalCode",
+                    "error": {}
+                },
+                {
+                    "GUID": "05faa814-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "USA",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/882c2836-376a-4263-a517-54394557802e",
+                    "required": false,
+                    "code": "shipCountry",
+                    "error": {}
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "GUID": "b46d8de3-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "unit price",
+                                    "required": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "isActivated": true,
+                                    "sample": 35.1,
+                                    "hackoladeMeta": {
+                                        "namingConvention": "code"
+                                    },
+                                    "assetUrl": "https://hackolade.collibra.com/asset/89f4518e-9781-46a9-8480-3a0e5619f979",
+                                    "mode": "",
+                                    "code": "unitPrice",
+                                    "relationshipType": "Foreign Master",
+                                    "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                    "foreignField": [
+                                        "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                        "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c"
+                                    ],
+                                    "parentRelationship": "b1430bbf-8085-4f14-97a8-e2250bd4356a",
+                                    "error": {}
+                                },
+                                {
+                                    "GUID": "b46d8de4-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "quantity",
+                                    "required": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "isActivated": true,
+                                    "sample": 15,
+                                    "hackoladeMeta": {
+                                        "namingConvention": "code"
+                                    },
+                                    "assetUrl": "https://hackolade.collibra.com/asset/4cbeaa3e-04f4-4770-92ba-6713eb4d6680",
+                                    "mode": "",
+                                    "code": "quantity",
+                                    "error": {}
+                                },
+                                {
+                                    "GUID": "b46d8de5-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "discount",
+                                    "required": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "isActivated": true,
+                                    "sample": 0.25,
+                                    "hackoladeMeta": {
+                                        "namingConvention": "code"
+                                    },
+                                    "assetUrl": "https://hackolade.collibra.com/asset/0337ca64-ad2b-4f4f-b17f-6d355d210279",
+                                    "mode": "",
+                                    "code": "discount",
+                                    "error": {}
+                                },
+                                {
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "GUID": "bf70ebb0-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "product id",
+                                            "description": "<p>number automatically assigned to new product.</p>\n",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Key",
+                                            "isActivated": true,
+                                            "sample": 8,
+                                            "childRelationships": [],
+                                            "parentRelationship": "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "hackoladeMeta": {
+                                                "namingConvention": "code"
+                                            },
+                                            "assetUrl": "https://hackolade.collibra.com/asset/e55b0707-f665-4d26-ac9d-fe1d0fd3dc61",
+                                            "mode": "",
+                                            "code": "productId",
+                                            "error": {}
+                                        },
+                                        {
+                                            "GUID": "bf70ebb1-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "product name",
+                                            "required": true,
+                                            "type": "string",
+                                            "maxLength": 40,
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "isActivated": true,
+                                            "sample": "Northwoods Cranberry Sauce",
+                                            "parentRelationship": "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "hackoladeMeta": {
+                                                "namingConvention": "code"
+                                            },
+                                            "assetUrl": "https://hackolade.collibra.com/asset/42a22b4a-8b72-42a5-ab2c-889139920392",
+                                            "code": "productName",
+                                            "error": {}
+                                        },
+                                        {
+                                            "GUID": "bf70ebb2-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "supplier id",
+                                            "description": "same entry as in suppliers table.",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "parentRelationship": "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "isActivated": true,
+                                            "sample": 3,
+                                            "hackoladeMeta": {
+                                                "namingConvention": "code"
+                                            },
+                                            "assetUrl": "https://hackolade.collibra.com/asset/f9f002ba-b680-462d-b356-f1d6e853f1e3",
+                                            "mode": "",
+                                            "code": "supplierId",
+                                            "error": {}
+                                        },
+                                        {
+                                            "GUID": "bf70ebb4-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "category id",
+                                            "description": "same entry as in categories table.",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "parentRelationship": "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "isActivated": true,
+                                            "sample": 2,
+                                            "hackoladeMeta": {
+                                                "namingConvention": "code"
+                                            },
+                                            "assetUrl": "https://hackolade.collibra.com/asset/b65624b9-ee82-46b1-b192-807e11c56a9a",
+                                            "mode": "",
+                                            "code": "catgrId",
+                                            "error": {}
+                                        },
+                                        {
+                                            "GUID": "bf70ebb6-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "quantity per unit",
+                                            "description": "(e.g., 24-count case, 1-liter bottle).",
+                                            "type": "string",
+                                            "maxLength": 20,
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "isActivated": true,
+                                            "sample": "12 - 12 oz jars",
+                                            "parentRelationship": "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "hackoladeMeta": {
+                                                "namingConvention": "code"
+                                            },
+                                            "assetUrl": "https://hackolade.collibra.com/asset/d55a8c77-b12c-4761-b216-bbba747091be",
+                                            "required": false,
+                                            "code": "quantityPerUnit",
+                                            "error": {}
+                                        },
+                                        {
+                                            "GUID": "bf70ebb7-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "unit price",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "isActivated": true,
+                                            "sample": 40,
+                                            "parentRelationship": "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "hackoladeMeta": {
+                                                "namingConvention": "code"
+                                            },
+                                            "assetUrl": "https://hackolade.collibra.com/asset/b1454623-836b-4201-a955-48eb6553dfb8",
+                                            "mode": "",
+                                            "code": "unitPrice",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "GUID": "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "products",
+                                    "required": true,
+                                    "error": {},
+                                    "additionalProperties": true,
+                                    "isActivated": true,
+                                    "hackoladeMeta": {
+                                        "namingConvention": "code"
+                                    },
+                                    "assetUrl": "https://hackolade.collibra.com/asset/f02e5439-496d-4797-b82b-899a3d51c2cf",
+                                    "code": "products"
+                                }
+                            ],
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                            "arrayItem": true,
+                            "additionalProperties": true,
+                            "assetUrl": "https://hackolade.collibra.com/asset/3a0767f0-ccb5-482c-b9e1-b586b83099a3",
+                            "required": false,
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "name": "order details",
+                    "required": false,
+                    "error": {},
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/8c2fd43a-f0e1-4eca-95c6-77cedec47a7f",
+                    "code": "orderDetails"
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c5-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "hackoladeMeta": {
+                "validationErrors": {},
+                "namingConvention": "code"
+            },
+            "assetUrl": "https://hackolade.collibra.com/asset/6eed0806-3b6c-4e54-bdbb-45fa39dacc41",
+            "code": "orders"
+        },
+        {
+            "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "products",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "product id",
+                    "description": "number automatically assigned to new product.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 8,
+                    "childRelationships": [
+                        "f74e12bf-1561-4abb-9d62-0030d904b5b0",
+                        "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa"
+                    ],
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/b0d53eec-9a1e-4fc8-8b19-f20e53bff23b",
+                    "mode": "",
+                    "code": "productId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "product name",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Northwoods Cranberry Sauce",
+                    "childRelationships": [
+                        "6b57c785-4daf-4023-b531-f0b51ae884b0",
+                        "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa"
+                    ],
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/66e60c8d-b1c7-42c5-a336-5b35b5e62a26",
+                    "code": "productName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "supplier id",
+                    "description": "same entry as in suppliers table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92172-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 3,
+                    "childRelationships": [
+                        "81e2c224-6af9-45b8-b835-70979450bac0",
+                        "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa"
+                    ],
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/e7f2f389-e859-44bc-8b56-7d9278901495",
+                    "mode": "",
+                    "code": "supplierId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "category id",
+                    "description": "same entry as in categories table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92171-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05f996a0-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 2,
+                    "childRelationships": [
+                        "5cb215b4-b05f-478b-8028-f9a9001ff79e",
+                        "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa"
+                    ],
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/4aaa794f-467a-4360-8308-7aa334fbd781",
+                    "mode": "",
+                    "code": "catgrId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "quantity per unit",
+                    "description": "(e.g., 24-count case, 1-liter bottle).",
+                    "type": "string",
+                    "maxLength": 20,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "12 - 12 oz jars",
+                    "childRelationships": [
+                        "25dd7b94-0af6-41f5-a953-81add099ddb4",
+                        "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa"
+                    ],
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/d5243b9f-ef0e-4ff1-abde-b541dd5a6725",
+                    "required": false,
+                    "code": "quantityPerUnit",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "unit price",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 40,
+                    "childRelationships": [
+                        "b1430bbf-8085-4f14-97a8-e2250bd4356a",
+                        "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa"
+                    ],
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/4412acff-d9a7-4430-b804-e01e51099ed8",
+                    "mode": "",
+                    "code": "unitPrice",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a0c-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "units in stock",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 6,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/f139622b-a309-40ce-8073-30d4281e5f34",
+                    "mode": "",
+                    "code": "unitsInStock",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a0d-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "units on order",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 0,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/f41845d6-243b-40c4-9b33-cdb572c40acf",
+                    "mode": "",
+                    "code": "unitsOnOrder",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a0e-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "reorder level",
+                    "description": "minimum units to maintain in stock.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 0,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/0bbcb040-c82c-4817-8d3a-b6cfc71465ce",
+                    "mode": "",
+                    "code": "reorderLevel",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a0f-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "discontinued",
+                    "description": "yes means item is no longer available.",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 1,
+                    "default": "n",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "N",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/c5a2c7f5-d20d-4255-8b25-b385bd640e58",
+                    "code": "discontinued",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c6-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "hackoladeMeta": {
+                "validationErrors": {},
+                "namingConvention": "code"
+            },
+            "assetUrl": "https://hackolade.collibra.com/asset/7b0284df-2204-4b4b-a037-5aaf11ef4c35",
+            "code": "products"
+        },
+        {
+            "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "shippers",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "shipper id",
+                    "description": "number automatically assigned to new shipper.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "79f26417-bd03-429e-8e55-2ef61a5c13f3",
+                        "05f92175-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/8a7bc27f-c14f-4578-8f8d-df1ad9177a43",
+                    "mode": "",
+                    "code": "shipperId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a03-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "company name",
+                    "description": "name of shipping company.",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/b98940b8-e944-4882-b25e-194675488627",
+                    "code": "companyName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a04-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/12e28256-bc37-43c0-9900-0b282296fb00",
+                    "required": false,
+                    "code": "phone",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c7-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "hackoladeMeta": {
+                "validationErrors": {},
+                "namingConvention": "code"
+            },
+            "assetUrl": "https://hackolade.collibra.com/asset/21f87722-1267-40d6-9d4f-82bca4c37978",
+            "code": "shippers"
+        },
+        {
+            "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "suppliers",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "supplier id",
+                    "description": "number automatically assigned to new supplier.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "22d27952-2662-4817-be70-07e0f1791777",
+                        "05f92172-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/613ac41f-ec56-41c2-96bb-7e5a2684279f",
+                    "mode": "",
+                    "code": "supplierId",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f6-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "company name",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/d840823e-f6f1-4546-956b-ffda52c950fc",
+                    "code": "companyName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f7-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact name",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/c86ad04a-5f98-4321-8f03-998b0d70d887",
+                    "required": false,
+                    "code": "contactName",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f8-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact title",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/f098e72d-1dd9-4154-bae2-9a31d3474b11",
+                    "required": false,
+                    "code": "contactTitle",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59f9-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "address",
+                    "description": "street or post-office box.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/ff603de9-7669-4094-94ea-1b4514d5a71d",
+                    "required": false,
+                    "code": "address",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59fa-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/3aef7e71-d3c0-4885-927c-d31d1f02a12b",
+                    "required": false,
+                    "code": "city",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59fb-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/dee6164e-d8b9-445d-979c-0205162f391c",
+                    "required": false,
+                    "code": "region",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59fc-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "postal code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/243b3924-a36c-4ed0-8820-98c7a7225533",
+                    "required": false,
+                    "code": "postalCode",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59fd-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/b67f67f1-89f7-4b25-8027-f6f967d3302f",
+                    "required": false,
+                    "code": "country",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59fe-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/34530a68-9d0c-4870-af40-08b12feb68b9",
+                    "required": false,
+                    "code": "phone",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa59ff-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "fax",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/34206e82-2f88-484f-9378-836b7ba70ee1",
+                    "required": false,
+                    "code": "fax",
+                    "error": {}
+                },
+                {
+                    "GUID": "05fa5a00-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "home page",
+                    "description": "supplier",
+                    "type": "string",
+                    "maxLength": 500,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "assetUrl": "https://hackolade.collibra.com/asset/f653982b-4137-4547-9994-803a63966059",
+                    "required": false,
+                    "code": "homePage",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c8-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "hackoladeMeta": {
+                "validationErrors": {},
+                "namingConvention": "code"
+            },
+            "assetUrl": "https://hackolade.collibra.com/asset/13d0ae83-739e-45ec-9180-324cb51f2cd5",
+            "code": "suppliers"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "northwind",
+            "type": "bucket",
+            "collectionIds": [
+                "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
+            "assetUrl": "https://hackolade.collibra.com/asset/da648b76-6b55-4317-84b1-6fa0b671e93e",
+            "hackoladeMeta": {
+                "namingConvention": "code",
+                "validationErrors": {}
+            },
+            "code": "northwind"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "05f92170-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa59f3-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_reports_to",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+            "hackoladeStyles": {
+                "GUID": "96155974-a64f-4df4-aac1-b67a3f610710",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 958.5,
+                        "y": 781
+                    },
+                    {
+                        "x": 958.5,
+                        "y": 756
+                    },
+                    {
+                        "x": 1106,
+                        "y": 756
+                    },
+                    {
+                        "x": 1106,
+                        "y": 894
+                    },
+                    {
+                        "x": 1081,
+                        "y": 894
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "right"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "05f92171-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05f996a0-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_category_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "hackoladeStyles": {
+                "GUID": "6a9a9d80-4160-4973-bcdd-24f234dd4e7d",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1498.7359050445102,
+                        "y": 1458.5
+                    },
+                    {
+                        "x": 1552.367952522255,
+                        "y": 1458.5
+                    },
+                    {
+                        "x": 1552.367952522255,
+                        "y": 1440.5
+                    },
+                    {
+                        "x": 1606,
+                        "y": 1440.5
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "05f92172-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_supplier_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "hackoladeStyles": {
+                "GUID": "dc6df7a0-99b9-4c86-97cd-2459a2d05183",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1245.7359050445102,
+                        "y": 1458.5
+                    },
+                    {
+                        "x": 1162.367952522255,
+                        "y": 1458.5
+                    },
+                    {
+                        "x": 1162.367952522255,
+                        "y": 1440.5
+                    },
+                    {
+                        "x": 1079,
+                        "y": 1440.5
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "05f92173-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a12-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_customer_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "hackoladeStyles": {
+                "GUID": "9defe214-b400-45b0-af9e-283c2621bdcb",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1533,
+                        "y": 948
+                    },
+                    {
+                        "x": 1569.5,
+                        "y": 948
+                    },
+                    {
+                        "x": 1569.5,
+                        "y": 905.5
+                    },
+                    {
+                        "x": 1606,
+                        "y": 905.5
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "05f92174-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a13-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_employee_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "hackoladeStyles": {
+                "GUID": "c78cb64a-fc1e-4570-b023-016ad93a5eca",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1209,
+                        "y": 1031.5
+                    },
+                    {
+                        "x": 1145,
+                        "y": 1031.5
+                    },
+                    {
+                        "x": 1145,
+                        "y": 1007
+                    },
+                    {
+                        "x": 1081,
+                        "y": 1007
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "05f92175-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a17-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_shipper_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "hackoladeStyles": {
+                "GUID": "5a8014aa-7167-44ff-951c-bf3ccd54ec57",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1533,
+                        "y": 1115
+                    },
+                    {
+                        "x": 1567.5660237388724,
+                        "y": 1115
+                    },
+                    {
+                        "x": 1567.5660237388724,
+                        "y": 1139.2804154302667
+                    },
+                    {
+                        "x": 1602.1320474777447,
+                        "y": 1139.2804154302667
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "name": "products...product_id to orders...product_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb0-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {
+                "GUID": "5ecdbd26-ddf9-4922-a2bc-03d63cadbb3d",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1290,
+                        "y": 1282
+                    },
+                    {
+                        "x": 1290,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1308.9859050445102,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1308.9859050445102,
+                        "y": 1352
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "name": "products...product_name to orders...product_name",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb1-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {
+                "GUID": "9f27b916-5638-4f84-94e9-d4ec67205154",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1330.5,
+                        "y": 1282
+                    },
+                    {
+                        "x": 1330.5,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1340.6109050445102,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1340.6109050445102,
+                        "y": 1352
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "name": "products...supplier_id to orders...supplier_id",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb2-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {
+                "GUID": "b4d0cabd-6028-4e19-a044-19fd59ebc914",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1371,
+                        "y": 1282
+                    },
+                    {
+                        "x": 1371,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1372.2359050445102,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1372.2359050445102,
+                        "y": 1352
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "name": "products...category_id to orders...category_id",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb4-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {
+                "GUID": "48480b91-dfea-4dd6-a683-26571526d804",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1411.5,
+                        "y": 1282
+                    },
+                    {
+                        "x": 1411.5,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1403.8609050445102,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1403.8609050445102,
+                        "y": 1352
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "name": "products...quantity_per_unit to orders...quantity_per_unit",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb6-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {
+                "GUID": "011fcb2b-688d-4c3c-aa49-a9180c93fe38",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1452,
+                        "y": 1282
+                    },
+                    {
+                        "x": 1452,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1435.4859050445102,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1435.4859050445102,
+                        "y": 1352
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "name": "products...unit_price to orders...unit_price",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb7-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {
+                "GUID": "45bc53ef-4718-4398-af22-0fb166eb0f7c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1492.5,
+                        "y": 1282
+                    },
+                    {
+                        "x": 1492.5,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1467.1109050445102,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1467.1109050445102,
+                        "y": 1352
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "isActivated": true
+        },
+        {
+            "name": "products...unit_price to orders...unit_price",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de3-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "b1430bbf-8085-4f14-97a8-e2250bd4356a",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "hackoladeStyles": {
+                "GUID": "e328a602-444c-49a3-a77e-6485f4137357",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1249.5,
+                        "y": 1282
+                    },
+                    {
+                        "x": 1249.5,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1277.3609050445102,
+                        "y": 1317
+                    },
+                    {
+                        "x": 1277.3609050445102,
+                        "y": 1352
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "05f996a0-899e-11e6-a8d7-35e2bcca9f8c": "category id",
+        "05f9e4c0-899e-11e6-a8d7-35e2bcca9f8c": "category name",
+        "05f9e4c1-899e-11e6-a8d7-35e2bcca9f8c": "description",
+        "05f9e4c2-899e-11e6-a8d7-35e2bcca9f8c": "picture",
+        "05f96f90-899e-11e6-a8d7-35e2bcca9f8c": "categories",
+        "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c": "customer id",
+        "05f9e4c5-899e-11e6-a8d7-35e2bcca9f8c": "customer code",
+        "05f9e4c6-899e-11e6-a8d7-35e2bcca9f8c": "company name",
+        "05f9e4c7-899e-11e6-a8d7-35e2bcca9f8c": "contact name",
+        "05f9e4c8-899e-11e6-a8d7-35e2bcca9f8c": "contact title",
+        "05f9e4c9-899e-11e6-a8d7-35e2bcca9f8c": "address",
+        "05f9e4ca-899e-11e6-a8d7-35e2bcca9f8c": "city",
+        "05f9e4cb-899e-11e6-a8d7-35e2bcca9f8c": "region",
+        "05f9e4cc-899e-11e6-a8d7-35e2bcca9f8c": "postal code",
+        "05f9e4cd-899e-11e6-a8d7-35e2bcca9f8c": "country",
+        "05fa0bd0-899e-11e6-a8d7-35e2bcca9f8c": "phone",
+        "05fa0bd1-899e-11e6-a8d7-35e2bcca9f8c": "fax",
+        "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c": "customers",
+        "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c": "employee id",
+        "05fa0bd4-899e-11e6-a8d7-35e2bcca9f8c": "lastname",
+        "05fa0bd5-899e-11e6-a8d7-35e2bcca9f8c": "firstname",
+        "05fa0bd6-899e-11e6-a8d7-35e2bcca9f8c": "title",
+        "05fa0bd7-899e-11e6-a8d7-35e2bcca9f8c": "title of courtesy",
+        "05fa0bd8-899e-11e6-a8d7-35e2bcca9f8c": "birthdate",
+        "05fa0bd9-899e-11e6-a8d7-35e2bcca9f8c": "hiredate",
+        "05fa0bda-899e-11e6-a8d7-35e2bcca9f8c": "address",
+        "05fa0bdb-899e-11e6-a8d7-35e2bcca9f8c": "city",
+        "05fa0bdc-899e-11e6-a8d7-35e2bcca9f8c": "region",
+        "05fa32e0-899e-11e6-a8d7-35e2bcca9f8c": "postal code",
+        "05fa32e1-899e-11e6-a8d7-35e2bcca9f8c": "country",
+        "05fa32e2-899e-11e6-a8d7-35e2bcca9f8c": "home phone",
+        "05fa59f0-899e-11e6-a8d7-35e2bcca9f8c": "extension",
+        "05fa59f1-899e-11e6-a8d7-35e2bcca9f8c": "photo",
+        "05fa59f2-899e-11e6-a8d7-35e2bcca9f8c": "notes",
+        "05fa59f3-899e-11e6-a8d7-35e2bcca9f8c": "reports to",
+        "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c": "employees",
+        "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c": "supplier id",
+        "05fa59f6-899e-11e6-a8d7-35e2bcca9f8c": "company name",
+        "05fa59f7-899e-11e6-a8d7-35e2bcca9f8c": "contact name",
+        "05fa59f8-899e-11e6-a8d7-35e2bcca9f8c": "contact title",
+        "05fa59f9-899e-11e6-a8d7-35e2bcca9f8c": "address",
+        "05fa59fa-899e-11e6-a8d7-35e2bcca9f8c": "city",
+        "05fa59fb-899e-11e6-a8d7-35e2bcca9f8c": "region",
+        "05fa59fc-899e-11e6-a8d7-35e2bcca9f8c": "postal code",
+        "05fa59fd-899e-11e6-a8d7-35e2bcca9f8c": "country",
+        "05fa59fe-899e-11e6-a8d7-35e2bcca9f8c": "phone",
+        "05fa59ff-899e-11e6-a8d7-35e2bcca9f8c": "fax",
+        "05fa5a00-899e-11e6-a8d7-35e2bcca9f8c": "home page",
+        "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c": "suppliers",
+        "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c": "shipper id",
+        "05fa5a03-899e-11e6-a8d7-35e2bcca9f8c": "company name",
+        "05fa5a04-899e-11e6-a8d7-35e2bcca9f8c": "phone",
+        "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c": "shippers",
+        "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c": "product id",
+        "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c": "product name",
+        "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c": "supplier id",
+        "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c": "category id",
+        "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c": "quantity per unit",
+        "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c": "unit price",
+        "05fa5a0c-899e-11e6-a8d7-35e2bcca9f8c": "units in stock",
+        "05fa5a0d-899e-11e6-a8d7-35e2bcca9f8c": "units on order",
+        "05fa5a0e-899e-11e6-a8d7-35e2bcca9f8c": "reorder level",
+        "05fa5a0f-899e-11e6-a8d7-35e2bcca9f8c": "discontinued",
+        "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c": "products",
+        "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c": "order id",
+        "05fa5a12-899e-11e6-a8d7-35e2bcca9f8c": "customer id",
+        "05fa5a13-899e-11e6-a8d7-35e2bcca9f8c": "employee id",
+        "05fa5a14-899e-11e6-a8d7-35e2bcca9f8c": "order date",
+        "05fa5a15-899e-11e6-a8d7-35e2bcca9f8c": "required date",
+        "05fa5a16-899e-11e6-a8d7-35e2bcca9f8c": "shipped date",
+        "05fa5a17-899e-11e6-a8d7-35e2bcca9f8c": "ship via",
+        "05fa5a18-899e-11e6-a8d7-35e2bcca9f8c": "freight",
+        "05fa5a19-899e-11e6-a8d7-35e2bcca9f8c": "ship name",
+        "05faa810-899e-11e6-a8d7-35e2bcca9f8c": "ship address",
+        "05faa811-899e-11e6-a8d7-35e2bcca9f8c": "ship city",
+        "05faa812-899e-11e6-a8d7-35e2bcca9f8c": "ship region",
+        "05faa813-899e-11e6-a8d7-35e2bcca9f8c": "ship postal code",
+        "05faa814-899e-11e6-a8d7-35e2bcca9f8c": "ship country",
+        "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c": "orders",
+        "085c2ff0-7ff0-11eb-b777-bbe0d63270e1": "northwind",
+        "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa": "order details",
+        "b46d8de3-9236-11eb-a1cd-2b20d40ce8aa": "unit price",
+        "b46d8de4-9236-11eb-a1cd-2b20d40ce8aa": "quantity",
+        "b46d8de5-9236-11eb-a1cd-2b20d40ce8aa": "discount",
+        "bf709d90-9236-11eb-a1cd-2b20d40ce8aa": "products",
+        "bf70ebb0-9236-11eb-a1cd-2b20d40ce8aa": "product id",
+        "bf70ebb1-9236-11eb-a1cd-2b20d40ce8aa": "product name",
+        "bf70ebb2-9236-11eb-a1cd-2b20d40ce8aa": "supplier id",
+        "bf70ebb4-9236-11eb-a1cd-2b20d40ce8aa": "category id",
+        "bf70ebb6-9236-11eb-a1cd-2b20d40ce8aa": "quantity per unit",
+        "bf70ebb7-9236-11eb-a1cd-2b20d40ce8aa": "unit price",
+        "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa": "products...product_id to orders...product_id",
+        "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa": "products...product_name to orders...product_name",
+        "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa": "products...supplier_id to orders...supplier_id",
+        "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa": "products...category_id to orders...category_id",
+        "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa": "products...quantity_per_unit to orders...quantity_per_unit",
+        "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa": "products...unit_price to orders...unit_price",
+        "05f92170-899e-11e6-a8d7-35e2bcca9f8c": "fk_reports_to",
+        "05f92171-899e-11e6-a8d7-35e2bcca9f8c": "fk_category_id",
+        "05f92172-899e-11e6-a8d7-35e2bcca9f8c": "fk_supplier_id",
+        "05f92173-899e-11e6-a8d7-35e2bcca9f8c": "fk_customer_id",
+        "05f92174-899e-11e6-a8d7-35e2bcca9f8c": "fk_employee_id",
+        "05f92175-899e-11e6-a8d7-35e2bcca9f8c": "fk_shipper_id",
+        "b1430bbf-8085-4f14-97a8-e2250bd4356a": "products...unit_price to orders...unit_price",
+        "6e3eae7a-7523-42f4-9852-bd32d660f3cb": "northwindoracle"
+    },
+    "definitions": {
+        "GUID": "186c47c0-e5f0-11e6-88d2-2d3300b4e17f",
+        "properties": [],
+        "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "975dfad3-b000-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "465b6202-c4a6-11e9-bfa6-8fc6304606d9"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v4.4",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2016-10-03T19:11:11.926Z",
+    "GUID": "6e3eae7a-7523-42f4-9852-bd32d660f3cb",
+    "lastModifTS": "2023-08-22T09:11:45.028Z",
+    "persistenceSchemaVersion": "6",
+    "description": "The famous Microsoft Access example, imported from an Oracle DDL at http://www.geeksengine.com/article/northwind-oracle-2.html",
+    "comments": "More comments here",
+    "author": "John Doe",
+    "version": "1.0",
+    "validation": "MongoDB extension",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.17"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true,
+        "validationErrors": {
+            "code": false,
+            "modelName": false
+        },
+        "namingConvention": "code"
+    },
+    "syncId": "e2fe7bb0-9236-11eb-a1cd-2b20d40ce8aa",
+    "code": "northwindoracle",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1606,
+                        "y": 1388,
+                        "width": 240,
+                        "height": 105
+                    },
+                    {
+                        "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1606,
+                        "y": 781,
+                        "width": 275,
+                        "height": 249
+                    },
+                    {
+                        "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 836,
+                        "y": 781,
+                        "width": 245,
+                        "height": 339
+                    },
+                    {
+                        "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 836,
+                        "y": 1316,
+                        "width": 243,
+                        "height": 249
+                    },
+                    {
+                        "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1602.1320474777447,
+                        "y": 1095.7804154302667,
+                        "width": 243,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1245.7359050445102,
+                        "y": 1352,
+                        "width": 253,
+                        "height": 213
+                    },
+                    {
+                        "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1209,
+                        "y": 781,
+                        "width": 324,
+                        "height": 501
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 796,
+                        "y": 716,
+                        "GUID": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    }
+                ],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
