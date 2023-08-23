@@ -1,0 +1,1482 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "code": "",
+            "collectionName": "Comments",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "Id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "93541b0c-3071-4e1f-bffe-a1cb4fccae06",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Name",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "c6ccc8a3-e957-42cb-9b60-dd386641b359",
+                    "required": true,
+                    "sample": "Qyburn",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Email",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "9457bdc5-cc25-4305-8b88-9c7cc6c586a1",
+                    "required": true,
+                    "sample": "anton_lesser@gameofthron.es",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Movie Id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "GUID": "07296f13-aa4b-4033-b270-0d917972c9ee",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d",
+                    "foreignField": [
+                        "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d",
+                        "95d9d98b-3420-4684-bdde-cf477fd4c324"
+                    ],
+                    "parentRelationship": "f48d4b29-f46b-4807-b398-4b4b8c3d6bc8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Text",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "97154f61-357a-45a9-a6fa-fc0db990d079",
+                    "required": true,
+                    "sample": "Necessitatibus soluta nemo consectetur nemo. Ipsam explicabo perspiciatis recusandae occaecati. Totam facilis nemo et velit illum.",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Date",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "c43a9f7d-0130-44d9-8a94-8ba18da4ede3",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "f45e97c4-ff4e-4b59-8f95-a281abc4ddec",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "93541b0c-3071-4e1f-bffe-a1cb4fccae06",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "8765ad61-bd9e-4247-b07d-112e710be43f"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "c0f919be-fce6-4638-bee9-9165d3233aab",
+            "bucketId": "4182fd6f-cfcb-4977-8df2-b96d96225569",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "code": "",
+            "collectionName": "Movies",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "Id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "95d9d98b-3420-4684-bdde-cf477fd4c324",
+                    "required": true,
+                    "childRelationships": [
+                        "f48d4b29-f46b-4807-b398-4b4b8c3d6bc8"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Plot",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "0fd69663-7d9e-47b2-b265-16090d54f9b3",
+                    "required": false,
+                    "sample": "A prospector sells his wife and daughter to another gold miner for the rights to a gold mine. Twenty years later, the prospector is a wealthy man who owns much of the old west town named ...",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Genres",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "5a5f236e-4d14-46b1-9ca0-3eecd2ddd0ea",
+                            "arrayItem": true,
+                            "sample": "Animation",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "dda078eb-90ab-4989-a38d-ea65f9ba3078",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Runtime",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "bf611f96-4d60-442d-b6ac-b0a5cd42cbb4",
+                    "required": false,
+                    "mode": "integer32",
+                    "sample": 720,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Cast",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "5a258add-cbcb-43f5-b916-92111ccec673",
+                            "arrayItem": true,
+                            "sample": "Winsor McCay",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "1814b62f-c30f-4ba4-89ea-2baffba9c6a1",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Num Mflix Comments",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "472ccd8f-7dc9-48a7-9f54-854c2d03c0af",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 153,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Poster",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "20c84224-a7ff-46b4-86c7-f076113ac938",
+                    "required": false,
+                    "sample": "https://m.media-amazon.com/images/M/MV5BYmVjMzVhNWQtZDkyYS00N2YzLTk3M2QtMTY2ZDgxZDRjOTAxXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_SY1000_SX677_AL_.jpg",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Title",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "1d4827a5-62e6-4c1d-86a3-03e6164aa7c2",
+                    "required": true,
+                    "sample": "The Claim",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Fullplot",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "1a8a7943-e571-4eeb-b136-94645b321331",
+                    "required": false,
+                    "sample": "A prospector sells his wife and daughter to another gold miner for the rights to a gold mine. Twenty years later, the prospector is a wealthy man who owns much of the old west town named Kingdom Come. But changes are brewing and his past is coming back to haunt him. A surveyor and his crew scout the town as a location for a new railroad line and a young woman suddenly appears in the town and is evidently the man's daughter.",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Languages",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "c8ff5fbb-671c-49de-a258-a3b885f0cc25",
+                            "arrayItem": true,
+                            "sample": "English",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "524c0427-2815-4dc7-88bd-a4403bd9919c",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Released",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "5aaf140e-e4c6-4992-885b-4e2f684fca56",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Directors",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "3c94e397-6916-4015-923a-95a96003064e",
+                            "arrayItem": true,
+                            "sample": "Winsor McCay",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "b66c4a5a-4e68-4ffd-b8ab-9977e11b3de9",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Writers",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "9b40b9c6-2cf9-49fd-b8a6-ef90c74e38ab",
+                            "arrayItem": true,
+                            "sample": "Winsor McCay (comic strip \"Little Nemo in Slumberland\")",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "bd33ef43-b74b-47a3-ab1d-5811109823e4",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Awards",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "Wins",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "497d9e6b-159d-43e5-9942-ca69ffe22d21",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 120,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Nominations",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "437418fd-254d-4245-bc09-1f494ffde0ea",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 112,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Text",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "1ea7a69a-c458-49f8-bb0f-d7cf0c6e6701",
+                            "required": true,
+                            "sample": "3 wins & 8 nominations.",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "930964f1-99b3-45c1-93a9-b665bc4e33ec",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Lastupdated",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "6427f93f-91ec-4e56-bd0d-b4f53e66370a",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Year",
+                    "isActivated": true,
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "multipleTypes": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "a74f2229-9ecf-4657-8448-a300edf52218",
+                            "primaryKey": false
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "2b384284-20d3-4058-b1d5-be4e188727d9",
+                            "primaryKey": false
+                        }
+                    ],
+                    "GUID": "3510bb20-beb5-4b38-9ee6-a69501de15f0",
+                    "required": true,
+                    "sample": 2008,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Imdb",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "Rating",
+                            "isActivated": true,
+                            "type": "multiple",
+                            "primaryKey": false,
+                            "multipleTypes": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "352daea1-1c47-43ca-a63e-0e1756e62d52",
+                                    "primaryKey": false
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "d4c2b599-b772-482c-ae8c-571a0a82b7c3",
+                                    "primaryKey": false
+                                }
+                            ],
+                            "GUID": "dfd61b00-6aba-43df-9585-1a384cf3f32e",
+                            "required": true,
+                            "sample": 7.2,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Votes",
+                            "isActivated": true,
+                            "type": "multiple",
+                            "primaryKey": false,
+                            "multipleTypes": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "932c59ed-7c8f-474f-bede-f59ba82d572d",
+                                    "primaryKey": false
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "d47c1ff2-fd26-4a52-b867-d6b50c4b63b1",
+                                    "primaryKey": false
+                                }
+                            ],
+                            "GUID": "c7b8c434-6d34-48bc-8d26-32bf5e929d72",
+                            "required": true,
+                            "sample": 775637,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Id",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "a6ee4eea-b367-48fd-bfa7-98548cb95bee",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 218378,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "44b85d70-1b9f-4c4f-a69b-fdac034f7a05",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Countries",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "a108d929-f748-45bb-9f24-3b3384810b33",
+                            "arrayItem": true,
+                            "sample": "USA",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "353be9d4-5261-4947-84aa-dde143fb5ce2",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Type",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "b77232fa-0b48-40ad-b20c-c416c91f9239",
+                    "required": true,
+                    "sample": "movie",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Tomatoes",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "Viewer",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "Rating",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "101b2bb5-01c4-41bd-8e7f-5449b939d83c",
+                                    "required": true,
+                                    "mode": "double",
+                                    "sample": 3.4,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Num Reviews",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "66368bc2-69c1-40b1-870c-79761eb936d6",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 1159264,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Meter",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "4e92db5d-871d-44a4-9001-066616ce7a5a",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 100,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "1acb235a-864b-455e-9b45-30d5eb026d46",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Last Updated",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "GUID": "0e61f9bb-db15-436b-8497-ce33feac0bc5",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Box Office",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "aa98982f-df82-4321-bd8a-e048b1df30f2",
+                            "required": false,
+                            "sample": "$77.6M",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Consensus",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "19cda27e-aa84-4ecb-bcef-03ca4e714bb0",
+                            "required": false,
+                            "sample": "Though it sometimes feels cold and detached, The Claim is evocative, beautifully shot, and full of understated performances.",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Critic",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "Meter",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "32bdb439-db12-4a47-90f5-f27cb6b4b6c3",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 100,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Num Reviews",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "cc83592e-4105-4beb-9634-52934d0fb91a",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 237,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Rating",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "c8e008b9-776c-4d35-aec8-13e3c5d12feb",
+                                    "required": false,
+                                    "mode": "double",
+                                    "sample": 8.7,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "8dfac119-49ff-401f-9853-06e65da497e7",
+                            "required": false,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Dvd",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "GUID": "cac5bffe-1804-4f1d-9e17-c9e1830fccff",
+                            "required": false,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Fresh",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "d47c63d1-0159-4c9a-9aec-3f6d5beab4f9",
+                            "required": false,
+                            "mode": "integer32",
+                            "sample": 217,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Production",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "b7050b47-9b5e-4e53-ba64-9bd08812a4d6",
+                            "required": false,
+                            "sample": "MGM Distribution Co",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Rotten",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "b7848027-c555-4f6e-a40c-14b84f67d238",
+                            "required": false,
+                            "mode": "integer32",
+                            "sample": 149,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Website",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "4af880ba-78d1-4272-acbe-327e5b90e0c5",
+                            "required": false,
+                            "sample": "http://www.theclaimmovie.com",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "0b908921-06a8-4930-8b2a-3e19039894eb",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Metacritic",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "0bbb32f0-3cff-4bd2-ba71-7218a8dbf8e4",
+                    "required": false,
+                    "mode": "integer32",
+                    "sample": 100,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Rated",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "e8a6df86-78d9-450e-886c-0765b24e37b8",
+                    "required": false,
+                    "sample": "R",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "ca97125f-12d0-4550-9921-420e15d64373",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "95d9d98b-3420-4684-bdde-cf477fd4c324",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "b909de7e-454c-4be5-adc9-bc3f0028c07c"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "1814b62f-c30f-4ba4-89ea-2baffba9c6a1",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "1a8a7943-e571-4eeb-b136-94645b321331",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "dda078eb-90ab-4989-a38d-ea65f9ba3078",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "1d4827a5-62e6-4c1d-86a3-03e6164aa7c2",
+                            "type": "text"
+                        }
+                    ],
+                    "name": "cast_text_fullplot_text_genres_text_title_text",
+                    "weights": "{\n    \"cast\": 1,\n    \"fullplot\": 1,\n    \"genres\": 1,\n    \"title\": 1\n}",
+                    "default_language": "english",
+                    "language_override": "language",
+                    "textIndexVersion": 3,
+                    "GUID": "4e311bd2-7472-4ab5-b28d-9a9a454ee751"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d",
+            "bucketId": "4182fd6f-cfcb-4977-8df2-b96d96225569",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "code": "",
+            "collectionName": "Sessions",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "Id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "69bba523-fb44-49e2-a98f-21fdb3991c97",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "User Id",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "9e7b44e3-9a28-443f-863c-0ece73da26a5",
+                    "required": true,
+                    "sample": "t3qulfeem@kwiv5.6ur",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Jwt",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "98a27f9c-3dc9-4cd7-a959-4733589886ca",
+                    "required": true,
+                    "sample": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTk5MDkzMjEsIm5iZiI6MTUxOTkwOTMyMSwianRpIjoiNmJlZDAwMWYtNTFiYi00NzVhLTgxZDAtMDcwNGE5Mjk0MWZlIiwiZXhwIjoxNTE5OTEwMjIxLCJpZGVudGl0eSI6eyJlbWFpbCI6InQzcXVsZmVlbUBrd2l2NS42dXIiLCJuYW1lIjoiM2lveHJtZnF4IiwicGFzc3dvcmQiOm51bGx9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJ1c2VyIjp7ImVtYWlsIjoidDNxdWxmZWVtQGt3aXY1LjZ1ciIsIm5hbWUiOiIzaW94cm1mcXgiLCJwYXNzd29yZCI6bnVsbH19fQ.ejtr_NyZyBronWMKuE0RFTjWej--T0zGrdc_iymGtVs",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "74cfd88f-7581-46d7-ba44-d5f1182919f7",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "69bba523-fb44-49e2-a98f-21fdb3991c97",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "f7a938e6-5402-443a-8806-db326b40ceaa"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "9e7b44e3-9a28-443f-863c-0ece73da26a5",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "user_id_1",
+                    "unique": true,
+                    "GUID": "d7ab027a-042b-4ccb-aeda-8dbe9ade3515"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "93e26900-f5c7-4dce-9668-85ac34bb59ea",
+            "bucketId": "4182fd6f-cfcb-4977-8df2-b96d96225569",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "code": "",
+            "collectionName": "Theaters",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "Id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "b67c179d-85bd-481e-a711-580b863d85c3",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Theater Id",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "d6455daf-dd99-4658-b4fd-9611c8b00a34",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 8900,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Location",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "Address",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "Street1",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "0dc486ab-d6c2-419a-bdf9-3acb32a5612b",
+                                    "required": true,
+                                    "sample": "2404 S 25th E",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "City",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "7b1f311a-b99e-4264-a861-3bca04d63929",
+                                    "required": true,
+                                    "sample": "Idaho Falls",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "State",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "feb36805-0778-4c47-8a2b-ebb8cd4a7a57",
+                                    "required": true,
+                                    "sample": "ID",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Zipcode",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "0a3f0f2e-a2a8-4310-bda5-c78fcfcc218d",
+                                    "required": true,
+                                    "sample": "83404",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Street2",
+                                    "isActivated": true,
+                                    "type": "multiple",
+                                    "primaryKey": false,
+                                    "multipleTypes": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "220f280d-a8f9-4b57-b986-591e2156fb3b",
+                                            "primaryKey": false
+                                        },
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "null",
+                                            "GUID": "197eaeeb-d204-41b8-aa53-dab79dfab644",
+                                            "primaryKey": false
+                                        }
+                                    ],
+                                    "GUID": "f38a8f1e-fb59-4b42-af72-ef6eb110e59b",
+                                    "required": false,
+                                    "sample": null,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "9e39b270-17aa-4b05-b876-74b935b5e8df",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Geo",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "Type",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "1db18104-0b03-411c-a3a1-cb1f53492a42",
+                                    "required": true,
+                                    "sample": "Point",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Coordinates",
+                                    "isActivated": true,
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "numeric",
+                                            "GUID": "cad1286a-c3de-47bd-81e5-804da2e48a38",
+                                            "arrayItem": true,
+                                            "mode": "double",
+                                            "sample": -78.382912,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "primaryKey": false,
+                                    "GUID": "eb69cd43-e214-41df-b3af-e64f7b715c5f",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "5357cecf-8cc5-466b-b9e0-1f29b948f1a9",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "661bbb97-deef-4ece-94e8-7e9036732be2",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "0660a024-8f9b-4115-aa9e-bc556ba03f05",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "b67c179d-85bd-481e-a711-580b863d85c3",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "016abf68-e1be-427f-8116-2617e6abe536"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "5357cecf-8cc5-466b-b9e0-1f29b948f1a9",
+                            "type": "2DSphere"
+                        }
+                    ],
+                    "name": "geo index",
+                    "2dsphereIndexVersion": 3,
+                    "GUID": "4afeff61-0516-43cc-aabe-e201b49a60bf"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "831f83a2-f4ed-4e20-be7c-6460015de5a0",
+            "bucketId": "4182fd6f-cfcb-4977-8df2-b96d96225569",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "code": "",
+            "collectionName": "Users",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "Id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "d0c61bb8-ea19-4d0e-9b33-c919f0397b3e",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Name",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "058c4240-c994-4664-965a-2386ddfbcd83",
+                    "required": true,
+                    "sample": "Taylor Scott",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Email",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "1d1c7e48-0397-4705-b69f-60fc36590e2e",
+                    "required": true,
+                    "sample": "taylor_scott@fakegmail.com",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Password",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "c94284ae-cd1d-4ffc-b4dd-ab11c0280495",
+                    "required": true,
+                    "sample": "$2b$12$rIJO4MKGZFHKyPeU9X8hSOsCjL3Isa9Gv8rZ7rzM7kKA3XUd1PAlO",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "4de54aa2-9096-44a7-94ee-5971f1304897",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "d0c61bb8-ea19-4d0e-9b33-c919f0397b3e",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "21be73ba-4e09-4022-9539-93ac18d4306d"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "1d1c7e48-0397-4705-b69f-60fc36590e2e",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "email_1",
+                    "unique": true,
+                    "GUID": "5f363c54-42a4-4ac8-b88d-7d73d93afca0"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "90f1beed-1d39-424b-9643-75a4d19c8b12",
+            "bucketId": "4182fd6f-cfcb-4977-8df2-b96d96225569",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "code": "",
+            "name": "sample_mflix",
+            "type": "bucket",
+            "collectionIds": [
+                "c0f919be-fce6-4638-bee9-9165d3233aab",
+                "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d",
+                "93e26900-f5c7-4dce-9668-85ac34bb59ea",
+                "831f83a2-f4ed-4e20-be7c-6460015de5a0",
+                "90f1beed-1d39-424b-9643-75a4d19c8b12"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "4182fd6f-cfcb-4977-8df2-b96d96225569",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk movies._id to comments.movie_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d",
+                    "95d9d98b-3420-4684-bdde-cf477fd4c324"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c0f919be-fce6-4638-bee9-9165d3233aab",
+                    "07296f13-aa4b-4033-b270-0d917972c9ee"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "f48d4b29-f46b-4807-b398-4b4b8c3d6bc8",
+            "parentCollection": "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d",
+            "childCollection": "c0f919be-fce6-4638-bee9-9165d3233aab",
+            "hackoladeStyles": {
+                "GUID": "4d881815-edbe-491e-a7ee-435d4c904cf5",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1764,
+                        "y": 1419
+                    },
+                    {
+                        "x": 1739,
+                        "y": 1419
+                    },
+                    {
+                        "x": 1739,
+                        "y": 1815
+                    },
+                    {
+                        "x": 1714,
+                        "y": 1815
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "4182fd6f-cfcb-4977-8df2-b96d96225569": "sample_mflix",
+        "93541b0c-3071-4e1f-bffe-a1cb4fccae06": "Id",
+        "c6ccc8a3-e957-42cb-9b60-dd386641b359": "Name",
+        "9457bdc5-cc25-4305-8b88-9c7cc6c586a1": "Email",
+        "07296f13-aa4b-4033-b270-0d917972c9ee": "Movie Id",
+        "97154f61-357a-45a9-a6fa-fc0db990d079": "Text",
+        "c43a9f7d-0130-44d9-8a94-8ba18da4ede3": "Date",
+        "c0f919be-fce6-4638-bee9-9165d3233aab": "Comments",
+        "95d9d98b-3420-4684-bdde-cf477fd4c324": "Id",
+        "0fd69663-7d9e-47b2-b265-16090d54f9b3": "Plot",
+        "dda078eb-90ab-4989-a38d-ea65f9ba3078": "Genres",
+        "bf611f96-4d60-442d-b6ac-b0a5cd42cbb4": "Runtime",
+        "1814b62f-c30f-4ba4-89ea-2baffba9c6a1": "Cast",
+        "472ccd8f-7dc9-48a7-9f54-854c2d03c0af": "Num Mflix Comments",
+        "20c84224-a7ff-46b4-86c7-f076113ac938": "Poster",
+        "1d4827a5-62e6-4c1d-86a3-03e6164aa7c2": "Title",
+        "1a8a7943-e571-4eeb-b136-94645b321331": "Fullplot",
+        "524c0427-2815-4dc7-88bd-a4403bd9919c": "Languages",
+        "5aaf140e-e4c6-4992-885b-4e2f684fca56": "Released",
+        "b66c4a5a-4e68-4ffd-b8ab-9977e11b3de9": "Directors",
+        "bd33ef43-b74b-47a3-ab1d-5811109823e4": "Writers",
+        "930964f1-99b3-45c1-93a9-b665bc4e33ec": "Awards",
+        "497d9e6b-159d-43e5-9942-ca69ffe22d21": "Wins",
+        "437418fd-254d-4245-bc09-1f494ffde0ea": "Nominations",
+        "1ea7a69a-c458-49f8-bb0f-d7cf0c6e6701": "Text",
+        "6427f93f-91ec-4e56-bd0d-b4f53e66370a": "Lastupdated",
+        "3510bb20-beb5-4b38-9ee6-a69501de15f0": "Year",
+        "44b85d70-1b9f-4c4f-a69b-fdac034f7a05": "Imdb",
+        "dfd61b00-6aba-43df-9585-1a384cf3f32e": "Rating",
+        "c7b8c434-6d34-48bc-8d26-32bf5e929d72": "Votes",
+        "a6ee4eea-b367-48fd-bfa7-98548cb95bee": "Id",
+        "353be9d4-5261-4947-84aa-dde143fb5ce2": "Countries",
+        "b77232fa-0b48-40ad-b20c-c416c91f9239": "Type",
+        "0b908921-06a8-4930-8b2a-3e19039894eb": "Tomatoes",
+        "1acb235a-864b-455e-9b45-30d5eb026d46": "Viewer",
+        "101b2bb5-01c4-41bd-8e7f-5449b939d83c": "Rating",
+        "66368bc2-69c1-40b1-870c-79761eb936d6": "Num Reviews",
+        "4e92db5d-871d-44a4-9001-066616ce7a5a": "Meter",
+        "0e61f9bb-db15-436b-8497-ce33feac0bc5": "Last Updated",
+        "aa98982f-df82-4321-bd8a-e048b1df30f2": "Box Office",
+        "19cda27e-aa84-4ecb-bcef-03ca4e714bb0": "Consensus",
+        "8dfac119-49ff-401f-9853-06e65da497e7": "Critic",
+        "32bdb439-db12-4a47-90f5-f27cb6b4b6c3": "Meter",
+        "cc83592e-4105-4beb-9634-52934d0fb91a": "Num Reviews",
+        "c8e008b9-776c-4d35-aec8-13e3c5d12feb": "Rating",
+        "cac5bffe-1804-4f1d-9e17-c9e1830fccff": "Dvd",
+        "d47c63d1-0159-4c9a-9aec-3f6d5beab4f9": "Fresh",
+        "b7050b47-9b5e-4e53-ba64-9bd08812a4d6": "Production",
+        "b7848027-c555-4f6e-a40c-14b84f67d238": "Rotten",
+        "4af880ba-78d1-4272-acbe-327e5b90e0c5": "Website",
+        "0bbb32f0-3cff-4bd2-ba71-7218a8dbf8e4": "Metacritic",
+        "e8a6df86-78d9-450e-886c-0765b24e37b8": "Rated",
+        "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d": "Movies",
+        "69bba523-fb44-49e2-a98f-21fdb3991c97": "Id",
+        "9e7b44e3-9a28-443f-863c-0ece73da26a5": "User Id",
+        "98a27f9c-3dc9-4cd7-a959-4733589886ca": "Jwt",
+        "93e26900-f5c7-4dce-9668-85ac34bb59ea": "Sessions",
+        "b67c179d-85bd-481e-a711-580b863d85c3": "Id",
+        "d6455daf-dd99-4658-b4fd-9611c8b00a34": "Theater Id",
+        "661bbb97-deef-4ece-94e8-7e9036732be2": "Location",
+        "9e39b270-17aa-4b05-b876-74b935b5e8df": "Address",
+        "0dc486ab-d6c2-419a-bdf9-3acb32a5612b": "Street1",
+        "7b1f311a-b99e-4264-a861-3bca04d63929": "City",
+        "feb36805-0778-4c47-8a2b-ebb8cd4a7a57": "State",
+        "0a3f0f2e-a2a8-4310-bda5-c78fcfcc218d": "Zipcode",
+        "f38a8f1e-fb59-4b42-af72-ef6eb110e59b": "Street2",
+        "5357cecf-8cc5-466b-b9e0-1f29b948f1a9": "Geo",
+        "1db18104-0b03-411c-a3a1-cb1f53492a42": "Type",
+        "eb69cd43-e214-41df-b3af-e64f7b715c5f": "Coordinates",
+        "831f83a2-f4ed-4e20-be7c-6460015de5a0": "Theaters",
+        "d0c61bb8-ea19-4d0e-9b33-c919f0397b3e": "Id",
+        "058c4240-c994-4664-965a-2386ddfbcd83": "Name",
+        "1d1c7e48-0397-4705-b69f-60fc36590e2e": "Email",
+        "c94284ae-cd1d-4ffc-b4dd-ab11c0280495": "Password",
+        "90f1beed-1d39-424b-9643-75a4d19c8b12": "Users",
+        "f48d4b29-f46b-4807-b398-4b4b8c3d6bc8": "fk movies._id to comments.movie_id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "8ceb57fa-9356-4f68-9912-4d855d6e45fe"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "d65ce538-4733-4007-8863-442287c9d1a8"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "a6032fa6-2382-431e-b886-a161a97daa43"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-08-22T15:06:53.009Z",
+    "GUID": "e1b9502a-669e-42a4-bc34-621b0db1b021",
+    "hackoladeMeta": {
+        "namingConvention": "modelName"
+    },
+    "isLineageEnabled": false,
+    "code": "",
+    "lastModifTS": "2023-08-22T15:08:34.051Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.17"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "c0f919be-fce6-4638-bee9-9165d3233aab",
+                        "x": 1764,
+                        "y": 1350,
+                        "width": 211,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e828187f-6f3d-40ab-8a2c-a5f0febfbf5d",
+                        "x": 1400,
+                        "y": 1350,
+                        "width": 314,
+                        "height": 930,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "93e26900-f5c7-4dce-9668-85ac34bb59ea",
+                        "x": 1150,
+                        "y": 1400,
+                        "width": 196,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "831f83a2-f4ed-4e20-be7c-6460015de5a0",
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 286,
+                        "height": 264,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "90f1beed-1d39-424b-9643-75a4d19c8b12",
+                        "x": 1550,
+                        "y": 1150,
+                        "width": 210,
+                        "height": 102,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1000,
+                        "y": 1000,
+                        "GUID": "4182fd6f-cfcb-4977-8df2-b96d96225569"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
