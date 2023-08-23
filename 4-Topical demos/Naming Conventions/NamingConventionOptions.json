@@ -4,21 +4,21 @@
         "target": "MONGODB"
     },
     "options": {
-        "nameCoupling": "businessToTechnical",
+        "nameCoupling": "no",
         "conversionSource": {
             "type": "file",
             "pathToFile": "/Users/rvanbruggen/Documents/HackoladeRepo/4-Topical demos/Naming Conventions/namingconventions-conversion-file.csv"
         },
         "displayName": "business",
         "businessToTechnicalConversion": {
-            "removeVowels": true,
+            "removeVowels": false,
             "invalidCharacters": "!?.:;()=+-*@/\\>'",
             "invalidCharactersAction": "ignore",
             "replaceInvalidCharactersBy": "_",
-            "caseType": "camelCase"
+            "caseType": "snakeCase"
         },
         "technicalToBusinessConversion": {
-            "caseType": "none"
+            "caseType": "titleCase"
         }
     }
 }
