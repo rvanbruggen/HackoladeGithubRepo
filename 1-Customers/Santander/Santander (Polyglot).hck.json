@@ -1,0 +1,1803 @@
+{
+    "modelName": "Santander (Polyglot)",
+    "collections": [
+        {
+            "collectionName": "CUSTOMER",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "C_CUSTKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0beee0-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 16000,
+                    "GUID": "ab051112-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "C_NAME",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Customer#000016000",
+                    "GUID": "ab051114-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "C_ADDRESS",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 40,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "yAvJ95hQDgAjkXi7YvTtiOCfwxS8tBI6F3JDJ",
+                    "GUID": "ab051110-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "C_NATIONKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0c3d00-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 22,
+                    "GUID": "ab051115-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "C_PHONE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 15,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "32-736-656-6927",
+                    "GUID": "ab051116-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "C_ACCTBAL",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0c3d01-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 248.03,
+                    "GUID": "ab04ea01-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "C_MKTSEGMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 10,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "BUILDING",
+                    "GUID": "ab051113-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "C_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 117,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "s integrate carefully around the ideas. blithely regular p",
+                    "GUID": "ab051111-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0c3d02-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "LINEITEM",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "primaryKey": [
+                {
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "ab06bec9-654b-11ea-8989-7b28ab317531"
+                        },
+                        {
+                            "keyId": "ab06beca-654b-11ea-8989-7b28ab317531"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "L_ORDERKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "foreignCollection": "ab0d2761-654b-11ea-8989-7b28ab317531",
+                    "foreignField": [
+                        "ab0d2761-654b-11ea-8989-7b28ab317531",
+                        "ab07a927-654b-11ea-8989-7b28ab317531"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0c6411-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 4800998,
+                    "GUID": "ab06bec9-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_PARTKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "compositePrimaryKey": true,
+                    "primaryKey": true,
+                    "required": true,
+                    "foreignCollection": "ab0d7581-654b-11ea-8989-7b28ab317531",
+                    "foreignField": [
+                        "ab0d7581-654b-11ea-8989-7b28ab317531",
+                        "ab084566-654b-11ea-8989-7b28ab317531"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0c8b20-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 29535,
+                    "GUID": "ab06beca-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_SUPPKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0c8b21-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 4540,
+                    "GUID": "ab06bed1-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_LINENUMBER",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0c8b22-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 1,
+                    "GUID": "ab06bec7-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_QUANTITY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0c8b23-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 22,
+                    "GUID": "ab06becb-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_EXTENDEDPRICE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0cb230-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 32219.66,
+                    "GUID": "ab06bec6-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_DISCOUNT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0cb231-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 0.04,
+                    "GUID": "ab06bec5-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_TAX",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0cb232-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 0.08,
+                    "GUID": "ab06bed2-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "L_RETURNFLAG",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 1,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "N",
+                    "GUID": "ab06becd-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "L_LINESTATUS",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 1,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "O",
+                    "GUID": "ab06bec8-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "L_SHIPDATE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "1996-11-27",
+                    "GUID": "ab06bece-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "L_COMMITDATE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "1996-10-28",
+                    "GUID": "ab06bec4-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "L_RECEIPTDATE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "1996-12-05",
+                    "GUID": "ab06becc-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "L_SHIPINSTRUCT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "NONE",
+                    "GUID": "ab06becf-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "L_SHIPMODE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 10,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "RAIL",
+                    "GUID": "ab06bed0-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "L_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 44,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "furiously. carefully regul",
+                    "GUID": "ab06bec3-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0d0050-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0c6410-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "NATION",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "N_NATIONKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d0052-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 24,
+                    "GUID": "ab0733f3-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "N_NAME",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "UNITED STATES",
+                    "GUID": "ab0733f2-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "N_REGIONKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ab0e11c1-654b-11ea-8989-7b28ab317531",
+                    "foreignField": [
+                        "ab0e11c1-654b-11ea-8989-7b28ab317531",
+                        "ab08e1a5-654b-11ea-8989-7b28ab317531"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d0053-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 1,
+                    "GUID": "ab0733f4-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "N_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 152,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "y final packages. slow foxes cajole quickly. quickly silent platelets breach ironic accounts. unusual pinto be",
+                    "GUID": "ab0733f1-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0d2760-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0d0051-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "ORDERS",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "O_ORDERKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d2762-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 4804000,
+                    "GUID": "ab07a927-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "O_CUSTKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+                    "foreignField": [
+                        "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+                        "ab051112-654b-11ea-8989-7b28ab317531"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d2763-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 17975,
+                    "GUID": "ab07a925-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "O_ORDERSTATUS",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 1,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "F",
+                    "GUID": "ab07a929-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "O_TOTALPRICE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d4e70-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 157042.06,
+                    "GUID": "ab07a92b-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "O_ORDERDATE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "1993-08-13",
+                    "GUID": "ab07a926-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "O_ORDERPRIORITY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 15,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "1-URGENT",
+                    "GUID": "ab07a928-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "O_CLERK",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 15,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Clerk#000000053",
+                    "GUID": "ab07a923-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "O_SHIPPRIORITY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d4e71-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 0,
+                    "GUID": "ab07a92a-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "O_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 79,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "t thinly quickly unusual instructions. unusual forges haggle ruthlessly. pac",
+                    "GUID": "ab07a924-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0d7580-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0d2761-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "PART",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "P_PARTKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d7582-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 1000,
+                    "GUID": "ab084566-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "P_NAME",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 55,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "wheat frosted chiffon aquamarine saddle",
+                    "GUID": "ab084565-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "P_MFGR",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Manufacturer#2",
+                    "GUID": "ab084564-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "P_BRAND",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 10,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Brand#24",
+                    "GUID": "ab084561-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "P_TYPE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "ECONOMY BRUSHED NICKEL",
+                    "GUID": "ab084569-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "P_SIZE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0d9c90-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 10,
+                    "GUID": "ab084568-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "P_CONTAINER",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 10,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "SM DRUM",
+                    "GUID": "ab084563-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "P_RETAILPRICE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0dc3a0-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 901,
+                    "GUID": "ab084567-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "P_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 23,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "g fluf",
+                    "GUID": "ab084562-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0dc3a1-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0d7581-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "PARTSUPP",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "PS_PARTKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ab0d7581-654b-11ea-8989-7b28ab317531",
+                    "foreignField": [
+                        "ab0d7581-654b-11ea-8989-7b28ab317531",
+                        "ab084566-654b-11ea-8989-7b28ab317531"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0dc3a3-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 250,
+                    "GUID": "ab08ba92-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "PS_SUPPKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ab0e38d1-654b-11ea-8989-7b28ab317531",
+                    "foreignField": [
+                        "ab0e38d1-654b-11ea-8989-7b28ab317531",
+                        "ab09a4f6-654b-11ea-8989-7b28ab317531"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0deab0-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 7751,
+                    "GUID": "ab08ba93-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "PS_AVAILQTY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0deab1-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 4647,
+                    "GUID": "ab08ba90-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "PS_SUPPLYCOST",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0deab2-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 281.06,
+                    "GUID": "ab08ba94-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "PS_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 199,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "ironic packages. blithely special packages affix. quickly regular instructions wake carefully pending, regular packages. carefully silent deposits promise quickly outside the ",
+                    "GUID": "ab08ba91-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0e11c0-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "REGION",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "R_REGIONKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0e11c2-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 4,
+                    "GUID": "ab08e1a5-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "R_NAME",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "MIDDLE EAST",
+                    "GUID": "ab08e1a4-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "R_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 152,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "uickly special accounts cajole carefully blithely close requests. carefully final asymptotes haggle furiousl",
+                    "GUID": "ab08e1a3-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "SantanderCol",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "compositeUniqueKey": false,
+                    "alternateKey": false,
+                    "GUID": "92eed90a-0094-403b-b5c1-cfc7e938aa2c",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Santander 2nd col",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "compositePrimaryKey": false,
+                    "primaryKey": false,
+                    "compositeUniqueKey": false,
+                    "alternateKey": false,
+                    "GUID": "a93874cd-dd09-4c4a-b347-59ca6082188e",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0e38d0-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0e11c1-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "SUPPLIER",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "S_SUPPKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0e38d2-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 7000,
+                    "GUID": "ab09a4f6-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "S_NAME",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 25,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Supplier#000007000",
+                    "GUID": "ab09a4f3-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "S_ADDRESS",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 40,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Shh5qKPCXtvp6ZqDcb2F1Htax3TeV2",
+                    "GUID": "ab09a4f1-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "S_NATIONKEY",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 38,
+                    "scale": 0,
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "ab0d0051-654b-11ea-8989-7b28ab317531",
+                    "foreignField": [
+                        "ab0d0051-654b-11ea-8989-7b28ab317531",
+                        "ab0733f3-654b-11ea-8989-7b28ab317531"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0eae00-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 19,
+                    "GUID": "ab09a4f4-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "S_PHONE",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 15,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "29-885-256-9772",
+                    "GUID": "ab09a4f5-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                },
+                {
+                    "name": "S_ACCTBAL",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "number",
+                    "mode": "",
+                    "precision": 12,
+                    "scale": 2,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "defaultOption": "Default",
+                    "autoincrement": {
+                        "step_num": 1,
+                        "GUID": "ab0ed510-654b-11ea-8989-7b28ab317531"
+                    },
+                    "sample": 1006.09,
+                    "GUID": "ab09a4f0-654b-11ea-8989-7b28ab317531",
+                    "type": "numeric"
+                },
+                {
+                    "name": "S_COMMENT",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "",
+                    "length": 101,
+                    "primaryKey": false,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "lly furiously ruthless accounts. sauternes snooze. furiously final tithes cajole ca",
+                    "GUID": "ab09a4f2-654b-11ea-8989-7b28ab317531",
+                    "type": "string"
+                }
+            ],
+            "definitions": {
+                "GUID": "ab0ed511-654b-11ea-8989-7b28ab317531",
+                "properties": [],
+                "type": "definitions"
+            },
+            "GUID": "ab0e38d1-654b-11ea-8989-7b28ab317531",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "TPCH_SF1",
+            "code": "",
+            "isActivated": true,
+            "comments": "TPC-H, OpenWeatherMap, etc",
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "ab521fa0-654b-11ea-8989-7b28ab317531",
+            "type": "bucket",
+            "collectionIds": [
+                "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+                "ab0c6410-654b-11ea-8989-7b28ab317531",
+                "ab0d0051-654b-11ea-8989-7b28ab317531",
+                "ab0d2761-654b-11ea-8989-7b28ab317531",
+                "ab0d7581-654b-11ea-8989-7b28ab317531",
+                "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+                "ab0e11c1-654b-11ea-8989-7b28ab317531",
+                "ab0e38d1-654b-11ea-8989-7b28ab317531"
+            ],
+            "show": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk CUSTOMER.C_CUSTKEY to ORDERS.O_CUSTKEY",
+            "description": "",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+            "parentField": [
+                [
+                    "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+                    "ab051112-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab0d2761-654b-11ea-8989-7b28ab317531",
+            "childField": [
+                [
+                    "ab0d2761-654b-11ea-8989-7b28ab317531",
+                    "ab07a925-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "b6bb9240-654b-11ea-8989-7b28ab317531",
+            "level": "field"
+        },
+        {
+            "name": "fk REGION.R_REGIONKEY to NATION.N_REGIONKEY",
+            "description": "",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ab0e11c1-654b-11ea-8989-7b28ab317531",
+            "parentField": [
+                [
+                    "ab0e11c1-654b-11ea-8989-7b28ab317531",
+                    "ab08e1a5-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab0d0051-654b-11ea-8989-7b28ab317531",
+            "childField": [
+                [
+                    "ab0d0051-654b-11ea-8989-7b28ab317531",
+                    "ab0733f4-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "bd2543b0-654b-11ea-8989-7b28ab317531",
+            "level": "field"
+        },
+        {
+            "name": "fk ORDERS.O_ORDERKEY to LINEITEM.L_ORDERKEY",
+            "description": "",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ab0d2761-654b-11ea-8989-7b28ab317531",
+            "parentField": [
+                [
+                    "ab0d2761-654b-11ea-8989-7b28ab317531",
+                    "ab07a927-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab0c6410-654b-11ea-8989-7b28ab317531",
+            "childField": [
+                [
+                    "ab0c6410-654b-11ea-8989-7b28ab317531",
+                    "ab06bec9-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "c70b4aa0-654b-11ea-8989-7b28ab317531",
+            "level": "field"
+        },
+        {
+            "name": "fk PART.P_PARTKEY to LINEITEM.L_PARTKEY",
+            "description": "",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ab0d7581-654b-11ea-8989-7b28ab317531",
+            "parentField": [
+                [
+                    "ab0d7581-654b-11ea-8989-7b28ab317531",
+                    "ab084566-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab0c6410-654b-11ea-8989-7b28ab317531",
+            "childField": [
+                [
+                    "ab0c6410-654b-11ea-8989-7b28ab317531",
+                    "ab06beca-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "d28a6820-654b-11ea-8989-7b28ab317531",
+            "level": "field"
+        },
+        {
+            "name": "fk PART.P_PARTKEY to PARTSUPP.PS_PARTKEY",
+            "description": "",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ab0d7581-654b-11ea-8989-7b28ab317531",
+            "parentField": [
+                [
+                    "ab0d7581-654b-11ea-8989-7b28ab317531",
+                    "ab084566-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+            "childField": [
+                [
+                    "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+                    "ab08ba92-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "d9fa8d10-654b-11ea-8989-7b28ab317531",
+            "level": "field"
+        },
+        {
+            "name": "fk SUPPLIER.S_SUPPKEY to PARTSUPP.PS_SUPPKEY",
+            "description": "",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ab0e38d1-654b-11ea-8989-7b28ab317531",
+            "parentField": [
+                [
+                    "ab0e38d1-654b-11ea-8989-7b28ab317531",
+                    "ab09a4f6-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+            "childField": [
+                [
+                    "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+                    "ab08ba93-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "de1349a0-654b-11ea-8989-7b28ab317531",
+            "level": "field"
+        },
+        {
+            "name": "fk NATION.N_NATIONKEY to SUPPLIER.S_NATIONKEY",
+            "description": "",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ab0d0051-654b-11ea-8989-7b28ab317531",
+            "parentField": [
+                [
+                    "ab0d0051-654b-11ea-8989-7b28ab317531",
+                    "ab0733f3-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab0e38d1-654b-11ea-8989-7b28ab317531",
+            "childField": [
+                [
+                    "ab0e38d1-654b-11ea-8989-7b28ab317531",
+                    "ab09a4f4-654b-11ea-8989-7b28ab317531"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "hackoladeStyles": {},
+            "GUID": "08ecd4c0-654c-11ea-8989-7b28ab317531",
+            "level": "field"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "ab0bc7d0-654b-11ea-8989-7b28ab317531": "CUSTOMER",
+        "ab051112-654b-11ea-8989-7b28ab317531": "C_CUSTKEY",
+        "ab051114-654b-11ea-8989-7b28ab317531": "C_NAME",
+        "ab051110-654b-11ea-8989-7b28ab317531": "C_ADDRESS",
+        "ab051115-654b-11ea-8989-7b28ab317531": "C_NATIONKEY",
+        "ab051116-654b-11ea-8989-7b28ab317531": "C_PHONE",
+        "ab04ea01-654b-11ea-8989-7b28ab317531": "C_ACCTBAL",
+        "ab051113-654b-11ea-8989-7b28ab317531": "C_MKTSEGMENT",
+        "ab051111-654b-11ea-8989-7b28ab317531": "C_COMMENT",
+        "ab0c6410-654b-11ea-8989-7b28ab317531": "LINEITEM",
+        "ab06bec9-654b-11ea-8989-7b28ab317531": "L_ORDERKEY",
+        "ab06beca-654b-11ea-8989-7b28ab317531": "L_PARTKEY",
+        "ab06bed1-654b-11ea-8989-7b28ab317531": "L_SUPPKEY",
+        "ab06bec7-654b-11ea-8989-7b28ab317531": "L_LINENUMBER",
+        "ab06becb-654b-11ea-8989-7b28ab317531": "L_QUANTITY",
+        "ab06bec6-654b-11ea-8989-7b28ab317531": "L_EXTENDEDPRICE",
+        "ab06bec5-654b-11ea-8989-7b28ab317531": "L_DISCOUNT",
+        "ab06bed2-654b-11ea-8989-7b28ab317531": "L_TAX",
+        "ab06becd-654b-11ea-8989-7b28ab317531": "L_RETURNFLAG",
+        "ab06bec8-654b-11ea-8989-7b28ab317531": "L_LINESTATUS",
+        "ab06bece-654b-11ea-8989-7b28ab317531": "L_SHIPDATE",
+        "ab06bec4-654b-11ea-8989-7b28ab317531": "L_COMMITDATE",
+        "ab06becc-654b-11ea-8989-7b28ab317531": "L_RECEIPTDATE",
+        "ab06becf-654b-11ea-8989-7b28ab317531": "L_SHIPINSTRUCT",
+        "ab06bed0-654b-11ea-8989-7b28ab317531": "L_SHIPMODE",
+        "ab06bec3-654b-11ea-8989-7b28ab317531": "L_COMMENT",
+        "ab0d0051-654b-11ea-8989-7b28ab317531": "NATION",
+        "ab0733f3-654b-11ea-8989-7b28ab317531": "N_NATIONKEY",
+        "ab0733f2-654b-11ea-8989-7b28ab317531": "N_NAME",
+        "ab0733f4-654b-11ea-8989-7b28ab317531": "N_REGIONKEY",
+        "ab0733f1-654b-11ea-8989-7b28ab317531": "N_COMMENT",
+        "ab0d2761-654b-11ea-8989-7b28ab317531": "ORDERS",
+        "ab07a927-654b-11ea-8989-7b28ab317531": "O_ORDERKEY",
+        "ab07a925-654b-11ea-8989-7b28ab317531": "O_CUSTKEY",
+        "ab07a929-654b-11ea-8989-7b28ab317531": "O_ORDERSTATUS",
+        "ab07a92b-654b-11ea-8989-7b28ab317531": "O_TOTALPRICE",
+        "ab07a926-654b-11ea-8989-7b28ab317531": "O_ORDERDATE",
+        "ab07a928-654b-11ea-8989-7b28ab317531": "O_ORDERPRIORITY",
+        "ab07a923-654b-11ea-8989-7b28ab317531": "O_CLERK",
+        "ab07a92a-654b-11ea-8989-7b28ab317531": "O_SHIPPRIORITY",
+        "ab07a924-654b-11ea-8989-7b28ab317531": "O_COMMENT",
+        "ab0d7581-654b-11ea-8989-7b28ab317531": "PART",
+        "ab084566-654b-11ea-8989-7b28ab317531": "P_PARTKEY",
+        "ab084565-654b-11ea-8989-7b28ab317531": "P_NAME",
+        "ab084564-654b-11ea-8989-7b28ab317531": "P_MFGR",
+        "ab084561-654b-11ea-8989-7b28ab317531": "P_BRAND",
+        "ab084569-654b-11ea-8989-7b28ab317531": "P_TYPE",
+        "ab084568-654b-11ea-8989-7b28ab317531": "P_SIZE",
+        "ab084563-654b-11ea-8989-7b28ab317531": "P_CONTAINER",
+        "ab084567-654b-11ea-8989-7b28ab317531": "P_RETAILPRICE",
+        "ab084562-654b-11ea-8989-7b28ab317531": "P_COMMENT",
+        "ab0dc3a2-654b-11ea-8989-7b28ab317531": "PARTSUPP",
+        "ab08ba92-654b-11ea-8989-7b28ab317531": "PS_PARTKEY",
+        "ab08ba93-654b-11ea-8989-7b28ab317531": "PS_SUPPKEY",
+        "ab08ba90-654b-11ea-8989-7b28ab317531": "PS_AVAILQTY",
+        "ab08ba94-654b-11ea-8989-7b28ab317531": "PS_SUPPLYCOST",
+        "ab08ba91-654b-11ea-8989-7b28ab317531": "PS_COMMENT",
+        "ab0e11c1-654b-11ea-8989-7b28ab317531": "REGION",
+        "ab08e1a5-654b-11ea-8989-7b28ab317531": "R_REGIONKEY",
+        "ab08e1a4-654b-11ea-8989-7b28ab317531": "R_NAME",
+        "ab08e1a3-654b-11ea-8989-7b28ab317531": "R_COMMENT",
+        "92eed90a-0094-403b-b5c1-cfc7e938aa2c": "SantanderCol",
+        "a93874cd-dd09-4c4a-b347-59ca6082188e": "Santander 2nd col",
+        "ab0e38d1-654b-11ea-8989-7b28ab317531": "SUPPLIER",
+        "ab09a4f6-654b-11ea-8989-7b28ab317531": "S_SUPPKEY",
+        "ab09a4f3-654b-11ea-8989-7b28ab317531": "S_NAME",
+        "ab09a4f1-654b-11ea-8989-7b28ab317531": "S_ADDRESS",
+        "ab09a4f4-654b-11ea-8989-7b28ab317531": "S_NATIONKEY",
+        "ab09a4f5-654b-11ea-8989-7b28ab317531": "S_PHONE",
+        "ab09a4f0-654b-11ea-8989-7b28ab317531": "S_ACCTBAL",
+        "ab09a4f2-654b-11ea-8989-7b28ab317531": "S_COMMENT",
+        "ab521fa0-654b-11ea-8989-7b28ab317531": "TPCH_SF1",
+        "b6bb9240-654b-11ea-8989-7b28ab317531": "fk CUSTOMER.C_CUSTKEY to ORDERS.O_CUSTKEY",
+        "bd2543b0-654b-11ea-8989-7b28ab317531": "fk REGION.R_REGIONKEY to NATION.N_REGIONKEY",
+        "c70b4aa0-654b-11ea-8989-7b28ab317531": "fk ORDERS.O_ORDERKEY to LINEITEM.L_ORDERKEY",
+        "d28a6820-654b-11ea-8989-7b28ab317531": "fk PART.P_PARTKEY to LINEITEM.L_PARTKEY",
+        "d9fa8d10-654b-11ea-8989-7b28ab317531": "fk PART.P_PARTKEY to PARTSUPP.PS_PARTKEY",
+        "de1349a0-654b-11ea-8989-7b28ab317531": "fk SUPPLIER.S_SUPPKEY to PARTSUPP.PS_SUPPKEY",
+        "08ecd4c0-654c-11ea-8989-7b28ab317531": "fk NATION.N_NATIONKEY to SUPPLIER.S_NATIONKEY"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "afc656f1-5e2a-11ea-a595-3ba5f5c2642b"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "e66e6df3-b003-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "afc656f2-5e2a-11ea-a595-3ba5f5c2642b"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Polyglot",
+    "appTarget": "Polyglot",
+    "creationTS": "2023-08-25T08:42:33.199Z",
+    "GUID": "0988dd57-8295-4c50-9574-9a1756a55741",
+    "code": "",
+    "description": "Reverse-engineered from sandbox, based on https://docs.snowflake.com/en/user-guide/sample-data-tpch.html",
+    "author": "",
+    "version": "",
+    "comments": "",
+    "dbVersion": "",
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-08-25T08:43:14.732Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "6.10.17"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+                        "x": 1438,
+                        "y": 1244,
+                        "width": 281,
+                        "height": 177,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ab0c6410-654b-11ea-8989-7b28ab317531",
+                        "x": 1836,
+                        "y": 1341.9187939956128,
+                        "width": 291,
+                        "height": 321,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ab0d0051-654b-11ea-8989-7b28ab317531",
+                        "x": 1040,
+                        "y": 1290,
+                        "width": 268,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ab0d2761-654b-11ea-8989-7b28ab317531",
+                        "x": 1432,
+                        "y": 1466,
+                        "width": 294,
+                        "height": 195,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ab0d7581-654b-11ea-8989-7b28ab317531",
+                        "x": 1846,
+                        "y": 1040,
+                        "width": 271,
+                        "height": 195,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+                        "x": 1439,
+                        "y": 1076,
+                        "width": 280,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ab0e11c1-654b-11ea-8989-7b28ab317531",
+                        "x": 1040,
+                        "y": 1464,
+                        "width": 267,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ab0e38d1-654b-11ea-8989-7b28ab317531",
+                        "x": 1041,
+                        "y": 1058,
+                        "width": 266,
+                        "height": 159,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1000,
+                        "y": 1000,
+                        "GUID": "ab521fa0-654b-11ea-8989-7b28ab317531"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+                            "x": 1444.3058350810206,
+                            "y": 1197.652213663934,
+                            "width": 281,
+                            "height": 177,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ab0c6410-654b-11ea-8989-7b28ab317531",
+                            "x": 1783.8698715175422,
+                            "y": 1355.496576495033,
+                            "width": 291,
+                            "height": 321,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ab0d0051-654b-11ea-8989-7b28ab317531",
+                            "x": 1012.7215268975935,
+                            "y": 1280.7874473771105,
+                            "width": 268,
+                            "height": 105,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ab0d2761-654b-11ea-8989-7b28ab317531",
+                            "x": 1514.6207268450687,
+                            "y": 1489.462067946658,
+                            "width": 294,
+                            "height": 195,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ab0d7581-654b-11ea-8989-7b28ab317531",
+                            "x": 1745.907295082062,
+                            "y": 1056.934596636137,
+                            "width": 271,
+                            "height": 195,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+                            "x": 1446.14555102945,
+                            "y": 1025.4273217116538,
+                            "width": 280,
+                            "height": 123,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ab0e11c1-654b-11ea-8989-7b28ab317531",
+                            "x": 1021.0035374080386,
+                            "y": 1581.139276347622,
+                            "width": 267,
+                            "height": 87,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "ab0e38d1-654b-11ea-8989-7b28ab317531",
+                            "x": 1145.1289625755026,
+                            "y": 1010.3938851875056,
+                            "width": 266,
+                            "height": 159,
+                            "color": {}
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 972.7215268975935,
+                            "y": 970.3938851875056,
+                            "GUID": "ab521fa0-654b-11ea-8989-7b28ab317531"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "GUID": "ab0bc7d0-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "ab0c6410-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "ab0d0051-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "ab0d2761-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "ab0d7581-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "ab0dc3a2-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "ab0e11c1-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "ab0e38d1-654b-11ea-8989-7b28ab317531",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    }
+                ],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
