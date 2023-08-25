@@ -1773,6 +1773,31 @@
                     "name": "R_COMMENT",
                     "GUID": "ab08e1a3-654b-11ea-8989-7b28ab317531",
                     "isActivated": true
+                },
+                {
+                    "name": "SantanderCol",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "autoincrement": {
+                        "step_num": 1
+                    },
+                    "tPrecision": 9,
+                    "primaryKey": false,
+                    "alternateKey": false,
+                    "childType": "varchar",
+                    "type": "string",
+                    "compositeKey": [
+                        "clusteringKey",
+                        "partitioningKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "clusteringKey": false,
+                    "partitioningKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "GUID": "92eed90a-0094-403b-b5c1-cfc7e938aa2c",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2357,7 +2382,8 @@
         "d28a6820-654b-11ea-8989-7b28ab317531": "fk PART.P_PARTKEY to LINEITEM.L_PARTKEY",
         "d9fa8d10-654b-11ea-8989-7b28ab317531": "fk PART.P_PARTKEY to PARTSUPP.PS_PARTKEY",
         "de1349a0-654b-11ea-8989-7b28ab317531": "fk SUPPLIER.S_SUPPKEY to PARTSUPP.PS_SUPPKEY",
-        "08ecd4c0-654c-11ea-8989-7b28ab317531": "fk NATION.N_NATIONKEY to SUPPLIER.S_NATIONKEY"
+        "08ecd4c0-654c-11ea-8989-7b28ab317531": "fk NATION.N_NATIONKEY to SUPPLIER.S_NATIONKEY",
+        "92eed90a-0094-403b-b5c1-cfc7e938aa2c": "SantanderCol"
     },
     "definitions": {
         "type": "definitions",
@@ -2381,7 +2407,7 @@
     "creationTS": "2020-03-04T15:13:21.887Z",
     "GUID": "f0cadd78-7d23-48a1-a64e-027e4ec8f1d2",
     "code": "Sample_TPCH_SF1",
-    "lastModifTS": "2023-08-25T07:57:19.933Z",
+    "lastModifTS": "2023-08-25T08:34:25.244Z",
     "persistenceSchemaVersion": "6",
     "description": "Reverse-engineered from sandbox, based on https://docs.snowflake.com/en/user-guide/sample-data-tpch.html",
     "comments": "",
