@@ -417,92 +417,6 @@
             }
         },
         {
-            "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
-            "collectionName": "order_details",
-            "type": "object",
-            "validationLevel": "Off",
-            "validationAction": "Warn",
-            "additionalProperties": false,
-            "collectionUsers": [],
-            "indexes": [],
-            "properties": [
-                {
-                    "GUID": "05faa816-899e-11e6-a8d7-35e2bcca9f8c",
-                    "name": "order_id",
-                    "description": "same as order id in orders table.",
-                    "required": true,
-                    "type": "numeric",
-                    "primaryKey": true,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "90bc1010-c4a6-11e9-bfa6-8fc6304606d9",
-                    "foreignCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
-                    "foreignField": [
-                        "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
-                        "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c"
-                    ],
-                    "isActivated": true,
-                    "sample": 10440
-                },
-                {
-                    "GUID": "05faa817-899e-11e6-a8d7-35e2bcca9f8c",
-                    "name": "product_id",
-                    "description": "same as product id in products table.",
-                    "required": true,
-                    "type": "numeric",
-                    "primaryKey": true,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "05f92177-899e-11e6-a8d7-35e2bcca9f8c",
-                    "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
-                    "foreignField": [
-                        "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
-                        "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c"
-                    ],
-                    "isActivated": true,
-                    "sample": 8
-                },
-                {
-                    "GUID": "05faa818-899e-11e6-a8d7-35e2bcca9f8c",
-                    "name": "unit_price",
-                    "required": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "relationshipType": "",
-                    "isActivated": true,
-                    "sample": 35.1
-                },
-                {
-                    "GUID": "05faa819-899e-11e6-a8d7-35e2bcca9f8c",
-                    "name": "quantity",
-                    "required": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "relationshipType": "",
-                    "isActivated": true,
-                    "sample": 15
-                },
-                {
-                    "GUID": "05faa81a-899e-11e6-a8d7-35e2bcca9f8c",
-                    "name": "discount",
-                    "required": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "relationshipType": "",
-                    "isActivated": true,
-                    "sample": 0.25
-                }
-            ],
-            "definitions": {
-                "GUID": "186c47c4-e5f0-11e6-88d2-2d3300b4e17f",
-                "properties": [],
-                "type": "definitions"
-            },
-            "isActivated": true,
-            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1",
-            "hackoladeMeta": {
-                "validationErrors": {}
-            }
-        },
-        {
             "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
             "collectionName": "orders",
             "type": "object",
@@ -520,9 +434,6 @@
                     "type": "numeric",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "childRelationships": [
-                        "90bc1010-c4a6-11e9-bfa6-8fc6304606d9"
-                    ],
                     "isActivated": true,
                     "sample": 10440
                 },
@@ -675,6 +586,167 @@
                     "relationshipType": "",
                     "isActivated": true,
                     "sample": "USA"
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "GUID": "b46d8de3-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "unit_price",
+                                    "required": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "isActivated": true,
+                                    "sample": 35.1
+                                },
+                                {
+                                    "GUID": "b46d8de4-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "quantity",
+                                    "required": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "isActivated": true,
+                                    "sample": 15
+                                },
+                                {
+                                    "GUID": "b46d8de5-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "discount",
+                                    "required": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "isActivated": true,
+                                    "sample": 0.25
+                                },
+                                {
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "GUID": "bf70ebb0-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "product_id",
+                                            "description": "number automatically assigned to new product.",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Key",
+                                            "isActivated": true,
+                                            "sample": 8,
+                                            "childRelationships": [],
+                                            "parentRelationship": "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ]
+                                        },
+                                        {
+                                            "GUID": "bf70ebb1-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "product_name",
+                                            "required": true,
+                                            "type": "string",
+                                            "maxLength": 40,
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "isActivated": true,
+                                            "sample": "Northwoods Cranberry Sauce",
+                                            "parentRelationship": "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ]
+                                        },
+                                        {
+                                            "GUID": "bf70ebb2-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "supplier_id",
+                                            "description": "same entry as in suppliers table.",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "parentRelationship": "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "isActivated": true,
+                                            "sample": 3
+                                        },
+                                        {
+                                            "GUID": "bf70ebb4-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "category_id",
+                                            "description": "same entry as in categories table.",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "parentRelationship": "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ],
+                                            "isActivated": true,
+                                            "sample": 2
+                                        },
+                                        {
+                                            "GUID": "bf70ebb6-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "quantity_per_unit",
+                                            "description": "(e.g., 24-count case, 1-liter bottle).",
+                                            "type": "string",
+                                            "maxLength": 20,
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "isActivated": true,
+                                            "sample": "12 - 12 oz jars",
+                                            "parentRelationship": "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ]
+                                        },
+                                        {
+                                            "GUID": "bf70ebb7-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "name": "unit_price",
+                                            "required": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "relationshipType": "Foreign Master",
+                                            "isActivated": true,
+                                            "sample": 40,
+                                            "parentRelationship": "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa",
+                                            "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                            "foreignField": [
+                                                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                                                "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c"
+                                            ]
+                                        }
+                                    ],
+                                    "GUID": "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                                    "name": "products",
+                                    "required": true,
+                                    "error": {},
+                                    "isActivated": true,
+                                    "additionalProperties": true
+                                }
+                            ],
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                            "arrayItem": true,
+                            "additionalProperties": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "name": "order_details",
+                    "required": false,
+                    "error": {},
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -706,11 +778,11 @@
                     "type": "numeric",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "childRelationships": [
-                        "05f92177-899e-11e6-a8d7-35e2bcca9f8c"
-                    ],
                     "isActivated": true,
-                    "sample": 8
+                    "sample": 8,
+                    "childRelationships": [
+                        "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa"
+                    ]
                 },
                 {
                     "GUID": "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c",
@@ -721,7 +793,10 @@
                     "primaryKey": false,
                     "relationshipType": "",
                     "isActivated": true,
-                    "sample": "Northwoods Cranberry Sauce"
+                    "sample": "Northwoods Cranberry Sauce",
+                    "childRelationships": [
+                        "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa"
+                    ]
                 },
                 {
                     "GUID": "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c",
@@ -738,7 +813,10 @@
                         "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c"
                     ],
                     "isActivated": true,
-                    "sample": 3
+                    "sample": 3,
+                    "childRelationships": [
+                        "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa"
+                    ]
                 },
                 {
                     "GUID": "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c",
@@ -755,7 +833,10 @@
                         "05f996a0-899e-11e6-a8d7-35e2bcca9f8c"
                     ],
                     "isActivated": true,
-                    "sample": 2
+                    "sample": 2,
+                    "childRelationships": [
+                        "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa"
+                    ]
                 },
                 {
                     "GUID": "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c",
@@ -766,7 +847,10 @@
                     "primaryKey": false,
                     "relationshipType": "",
                     "isActivated": true,
-                    "sample": "12 - 12 oz jars"
+                    "sample": "12 - 12 oz jars",
+                    "childRelationships": [
+                        "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa"
+                    ]
                 },
                 {
                     "GUID": "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c",
@@ -776,7 +860,10 @@
                     "primaryKey": false,
                     "relationshipType": "",
                     "isActivated": true,
-                    "sample": 40
+                    "sample": 40,
+                    "childRelationships": [
+                        "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa"
+                    ]
                 },
                 {
                     "GUID": "05fa5a0c-899e-11e6-a8d7-35e2bcca9f8c",
@@ -1041,7 +1128,6 @@
                 "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
                 "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
                 "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
-                "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
                 "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
                 "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c"
             ],
@@ -1209,7 +1295,7 @@
             "isActivated": true
         },
         {
-            "GUID": "05f92177-899e-11e6-a8d7-35e2bcca9f8c",
+            "name": "products...product_id to orders...product_id",
             "relationshipType": "Foreign Key",
             "parentField": [
                 [
@@ -1220,41 +1306,147 @@
             "parentCardinality": "1",
             "childField": [
                 [
-                    "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
-                    "05faa817-899e-11e6-a8d7-35e2bcca9f8c"
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb0-9236-11eb-a1cd-2b20d40ce8aa"
                 ]
             ],
-            "childCardinality": "0..n",
-            "name": "fk_product_id",
-            "description": "",
-            "comments": "",
+            "childCardinality": "1",
             "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
-            "childCollection": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa",
             "hackoladeStyles": {},
             "isActivated": true
         },
         {
-            "GUID": "90bc1010-c4a6-11e9-bfa6-8fc6304606d9",
-            "name": "fk orders.order_id to order_details.order_id",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "name": "products...product_name to orders...product_name",
+            "relationshipType": "Foreign Master",
             "parentField": [
                 [
-                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
-                    "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c"
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c"
                 ]
             ],
             "parentCardinality": "1",
-            "childCollection": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
             "childField": [
                 [
-                    "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
-                    "05faa816-899e-11e6-a8d7-35e2bcca9f8c"
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb1-9236-11eb-a1cd-2b20d40ce8aa"
                 ]
             ],
-            "childCardinality": "0..n",
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {},
+            "isActivated": true
+        },
+        {
+            "name": "products...supplier_id to orders...supplier_id",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb2-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {},
+            "isActivated": true
+        },
+        {
+            "name": "products...category_id to orders...category_id",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb4-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {},
+            "isActivated": true
+        },
+        {
+            "name": "products...quantity_per_unit to orders...quantity_per_unit",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb6-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa",
+            "hackoladeStyles": {},
+            "isActivated": true
+        },
+        {
+            "name": "products...unit_price to orders...unit_price",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
+                    "bf70ebb7-9236-11eb-a1cd-2b20d40ce8aa"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "GUID": "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa",
             "hackoladeStyles": {},
             "isActivated": true
         }
@@ -1341,21 +1533,30 @@
         "05faa813-899e-11e6-a8d7-35e2bcca9f8c": "ship_postal_code",
         "05faa814-899e-11e6-a8d7-35e2bcca9f8c": "ship_country",
         "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c": "orders",
-        "05faa816-899e-11e6-a8d7-35e2bcca9f8c": "order_id",
-        "05faa817-899e-11e6-a8d7-35e2bcca9f8c": "product_id",
-        "05faa818-899e-11e6-a8d7-35e2bcca9f8c": "unit_price",
-        "05faa819-899e-11e6-a8d7-35e2bcca9f8c": "quantity",
-        "05faa81a-899e-11e6-a8d7-35e2bcca9f8c": "discount",
-        "05faa815-899e-11e6-a8d7-35e2bcca9f8c": "order_details",
-        "90bc1010-c4a6-11e9-bfa6-8fc6304606d9": "fk orders.order_id to order_details.order_id",
         "085c2ff0-7ff0-11eb-b777-bbe0d63270e1": "Northwind",
+        "b46cf1a0-9236-11eb-a1cd-2b20d40ce8aa": "order_details",
+        "b46d8de3-9236-11eb-a1cd-2b20d40ce8aa": "unit_price",
+        "b46d8de4-9236-11eb-a1cd-2b20d40ce8aa": "quantity",
+        "b46d8de5-9236-11eb-a1cd-2b20d40ce8aa": "discount",
+        "bf709d90-9236-11eb-a1cd-2b20d40ce8aa": "products",
+        "bf70ebb0-9236-11eb-a1cd-2b20d40ce8aa": "product_id",
+        "bf70ebb1-9236-11eb-a1cd-2b20d40ce8aa": "product_name",
+        "bf70ebb2-9236-11eb-a1cd-2b20d40ce8aa": "supplier_id",
+        "bf70ebb4-9236-11eb-a1cd-2b20d40ce8aa": "category_id",
+        "bf70ebb6-9236-11eb-a1cd-2b20d40ce8aa": "quantity_per_unit",
+        "bf70ebb7-9236-11eb-a1cd-2b20d40ce8aa": "unit_price",
+        "bf70ebbc-9236-11eb-a1cd-2b20d40ce8aa": "products...product_id to orders...product_id",
+        "bf70ebbd-9236-11eb-a1cd-2b20d40ce8aa": "products...product_name to orders...product_name",
+        "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa": "products...supplier_id to orders...supplier_id",
+        "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa": "products...category_id to orders...category_id",
+        "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa": "products...quantity_per_unit to orders...quantity_per_unit",
+        "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa": "products...unit_price to orders...unit_price",
         "05f92170-899e-11e6-a8d7-35e2bcca9f8c": "fk_reports_to",
         "05f92171-899e-11e6-a8d7-35e2bcca9f8c": "fk_category_id",
         "05f92172-899e-11e6-a8d7-35e2bcca9f8c": "fk_supplier_id",
         "05f92173-899e-11e6-a8d7-35e2bcca9f8c": "fk_customer_id",
         "05f92174-899e-11e6-a8d7-35e2bcca9f8c": "fk_employee_id",
-        "05f92175-899e-11e6-a8d7-35e2bcca9f8c": "fk_shipper_id",
-        "05f92177-899e-11e6-a8d7-35e2bcca9f8c": "fk_product_id"
+        "05f92175-899e-11e6-a8d7-35e2bcca9f8c": "fk_shipper_id"
     },
     "definitions": {
         "GUID": "186c47c0-e5f0-11e6-88d2-2d3300b4e17f",
@@ -1365,7 +1566,7 @@
     "polyglotDefinitions": {
         "type": "polyglotDefinitions",
         "properties": [],
-        "GUID": "4ce97543-9004-11ec-af70-2ffaf73aeaf4"
+        "GUID": "25ec7d55-b718-45a5-8fe7-5c7a73c167f7"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -1378,8 +1579,8 @@
     "dbVendor": "MongoDB",
     "appTarget": "MONGODB",
     "creationTS": "2016-10-03T19:11:11.926Z",
-    "GUID": "cdb409a9-7f34-4c47-9869-4dc46a673b4e",
-    "lastModifTS": "2023-08-30T09:51:59.012Z",
+    "GUID": "1f23fbb4-443d-4cef-8f97-cc831495ea98",
+    "lastModifTS": "2023-08-30T10:20:40.515Z",
     "persistenceSchemaVersion": "6",
     "description": "The famous Microsoft Access example, imported from an Oracle DDL at http://www.geeksengine.com/article/northwind-oracle-2.html",
     "comments": "More comments here",
@@ -1407,58 +1608,51 @@
                     {
                         "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 1810,
-                        "y": 1625,
+                        "y": 1606,
                         "width": 240,
-                        "height": 105
+                        "height": 87
                     },
                     {
                         "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 1810,
                         "y": 1040,
-                        "width": 243,
-                        "height": 249
+                        "width": 250,
+                        "height": 199
                     },
                     {
                         "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 1040,
                         "y": 1040,
-                        "width": 245,
-                        "height": 339
+                        "width": 248,
+                        "height": 272
                     },
                     {
                         "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 1040,
-                        "y": 1553,
+                        "y": 1550,
                         "width": 243,
-                        "height": 249
+                        "height": 199
                     },
                     {
                         "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 1812.7359050445102,
-                        "y": 1379.860534124629,
+                        "x": 1810,
+                        "y": 1280,
                         "width": 250,
                         "height": 75
                     },
                     {
                         "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 1442,
-                        "y": 1571,
+                        "y": 1561,
                         "width": 253,
-                        "height": 213
+                        "height": 177
                     },
                     {
                         "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 1438,
+                        "x": 1413,
                         "y": 1040,
-                        "width": 262,
-                        "height": 285
-                    },
-                    {
-                        "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 1462,
-                        "y": 1391.2134831460671,
-                        "width": 213,
-                        "height": 123
+                        "width": 311,
+                        "height": 397
                     }
                 ],
                 "erdDefinitions": {
@@ -1525,11 +1719,6 @@
                     },
                     {
                         "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
-                        "autoWidth": false,
-                        "autoHeight": false
-                    },
-                    {
-                        "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
                         "autoWidth": false,
                         "autoHeight": false
                     }
