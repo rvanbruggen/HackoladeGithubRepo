@@ -1,0 +1,1436 @@
+{
+    "modelName": "BMS (Polyglot)",
+    "collections": [
+        {
+            "collectionName": "Comments",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "97f865c0-119c-4963-ba4c-187a1832c6c0",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "uuid",
+                    "primaryKey": true,
+                    "required": true,
+                    "GUID": "2a008363-cb8a-4c8e-a41f-98102707134d",
+                    "type": "objectId",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "Arya Stark",
+                    "GUID": "8ecae665-bb15-4756-bc74-bec30a494f33",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Email",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "maisie_williams@gameofthron.es",
+                    "GUID": "43d8a522-03d0-4cc3-85fa-99f5f4b74f28",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Movie Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "uuid",
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+                    "foreignField": [
+                        "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+                        "0a7e7790-dcd6-4f4f-9df6-79bc18b3f948"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "GUID": "b1f30b4e-af1e-4888-bdcc-35314303f8bc",
+                    "type": "objectId",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Text",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "Facere culpa voluptatum porro quibusdam tempora. Commodi praesentium reprehenderit quaerat necessitatibus.",
+                    "GUID": "c61ea99f-4233-4dd7-9600-be9a15c57130",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Date",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "e8d1fa15-e33e-416b-8f90-5f5384e668ce",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "a7ec7c9a-f80b-4a1f-a3c8-9de7f02bcee1",
+                "properties": []
+            },
+            "GUID": "87a1e7b3-1e2a-40ff-9dae-a3dad40acf3e",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Movies",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "97f865c0-119c-4963-ba4c-187a1832c6c0",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "uuid",
+                    "primaryKey": true,
+                    "required": true,
+                    "GUID": "0a7e7790-dcd6-4f4f-9df6-79bc18b3f948",
+                    "type": "objectId",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Plot",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": false,
+                    "sample": "It started as a friendly meeting between 4 old buddies with their basketball coach and ended up in revealing the truth about their relationship. The meeting forces the five men to reveal ...",
+                    "GUID": "ada13743-13ad-4745-bd48-eb7ee28f3353",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Genres",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "sample": "Drama",
+                            "GUID": "d6be9c88-34d7-41ed-8ea8-3d96c4e2a42a",
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "d9c1d59b-db67-4937-9508-0bb495b8936d",
+                    "type": "array",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Runtime",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
+                    "required": false,
+                    "sample": 720,
+                    "GUID": "a35bded3-baf9-47d8-a07f-b089cb210ffe",
+                    "type": "numeric",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Cast",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "sample": "Dominique Sanda",
+                            "GUID": "ca76d83a-1ef4-4ecf-8d7b-aae21d0a1f16",
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "4242a5da-3bd6-4667-848d-f4b49f8bf932",
+                    "type": "array",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Num Mflix Comments",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": 157,
+                    "GUID": "a3ba247c-9984-45da-bab8-ed1e2264153a",
+                    "type": "numeric",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Title",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "That Championship Season",
+                    "GUID": "6716b8c8-c8c9-4a49-baef-448d94e588bb",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Fullplot",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": false,
+                    "sample": "It started as a friendly meeting between 4 old buddies with their basketball coach and ended up in revealing the truth about their relationship. The meeting forces the five men to reveal their true identity, to be honest with each other for the first time in their lives. When the night comes to an end they decide to go back to the old glorious days and reunite into the team which won that championship season, back in 1957...",
+                    "GUID": "a9c2e230-eb5d-4696-8ddd-2f32e44843b8",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Countries",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": true,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "sample": "Italy",
+                            "GUID": "56a14966-ee7a-42b1-a13e-97bd531d2a30",
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "dab5fca3-fefc-4a2c-a751-98bbf0727e3c",
+                    "type": "array",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Released",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "primaryKey": false,
+                    "required": false,
+                    "GUID": "7cc9aa95-dcad-48fd-8c2c-b7ad8a2e1a90",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Directors",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "sample": "Jacques Demy",
+                            "GUID": "41c2700e-5ce7-4abc-8acc-1decd28213eb",
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "e5a0006d-57b2-4f9b-ae9f-c3f6c6d8d091",
+                    "type": "array",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Rated",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": false,
+                    "sample": "R",
+                    "GUID": "340fc1f7-42b8-41d2-b4bb-4197f0ae743f",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Awards",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "object",
+                    "primaryKey": false,
+                    "required": true,
+                    "additionalProperties": true,
+                    "properties": [
+                        {
+                            "name": "Wins",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "integer",
+                            "mode": "int",
+                            "primaryKey": false,
+                            "required": true,
+                            "sample": 120,
+                            "GUID": "ffe9ba0a-50e4-4613-80cc-365999a8db91",
+                            "type": "numeric",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Nominations",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "integer",
+                            "mode": "int",
+                            "primaryKey": false,
+                            "required": true,
+                            "sample": 94,
+                            "GUID": "44b153fa-11be-4656-aab6-2430a1ed2564",
+                            "type": "numeric",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Text",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "primaryKey": false,
+                            "required": true,
+                            "sample": "1 win & 1 nomination.",
+                            "GUID": "90ce702c-f4bf-4241-abc4-3679ca56834f",
+                            "type": "string",
+                            "hackoladeMeta": {}
+                        }
+                    ],
+                    "GUID": "ed3ffce8-933d-4be3-82dd-005580e0d8f6",
+                    "type": "document",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Lastupdated",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "f6e11691-b139-4055-81d7-86a4b0ecb6bd",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Year",
+                    "code": "",
+                    "isActivated": true,
+                    "type": "multiple",
+                    "required": true,
+                    "primaryKey": false,
+                    "GUID": "a7b2e024-f0f6-48e6-998b-0db69f4fe123",
+                    "hackoladeMeta": {},
+                    "multipleTypes": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "18bd26eb-f68e-4b30-8045-05459a8d0196",
+                            "primaryKey": false,
+                            "mode": "numeric",
+                            "childType": "number"
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "054ec356-1d31-4c5a-b1fa-6a7c81fc3f31",
+                            "primaryKey": false,
+                            "mode": "string",
+                            "childType": "varchar"
+                        }
+                    ]
+                },
+                {
+                    "name": "Imdb",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "object",
+                    "primaryKey": false,
+                    "required": true,
+                    "additionalProperties": true,
+                    "properties": [
+                        {
+                            "name": "Rating",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "double",
+                            "mode": "",
+                            "primaryKey": false,
+                            "required": true,
+                            "sample": 7.1,
+                            "GUID": "f398a912-7ef5-4c1d-b070-cbc008ff11d0",
+                            "type": "numeric",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Votes",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "integer",
+                            "mode": "int",
+                            "primaryKey": false,
+                            "required": true,
+                            "sample": 910013,
+                            "GUID": "9d8abb9c-c354-44d6-ad31-3aaf3fdd6e7d",
+                            "type": "numeric",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Id",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "integer",
+                            "mode": "int",
+                            "primaryKey": false,
+                            "required": true,
+                            "sample": 218533,
+                            "GUID": "e0b48579-a6ea-4ae6-ae04-e401eb7b7c94",
+                            "type": "numeric",
+                            "hackoladeMeta": {}
+                        }
+                    ],
+                    "GUID": "57e2792a-9abe-4918-8b5c-ddc75dedb896",
+                    "type": "document",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Type",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "movie",
+                    "GUID": "7f83fc3b-adcd-4f17-add6-b3e936507280",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Tomatoes",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "object",
+                    "primaryKey": false,
+                    "required": false,
+                    "additionalProperties": true,
+                    "properties": [
+                        {
+                            "name": "Viewer",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "object",
+                            "primaryKey": false,
+                            "required": true,
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "Rating",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "double",
+                                    "mode": "",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "sample": 2.9,
+                                    "GUID": "90a4b740-a3a8-4165-bdb0-502a98dfd712",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "Num Reviews",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "sample": 34124318,
+                                    "GUID": "46cbec31-f4bd-4079-9102-f473bf53a0f4",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "Meter",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": false,
+                                    "sample": 100,
+                                    "GUID": "1d1f10d9-777c-4b31-b8e1-4d246ba1c4e5",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {}
+                                }
+                            ],
+                            "GUID": "aaaa0e06-f167-4365-8798-271bd38b4527",
+                            "type": "document",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Last Updated",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "GUID": "ff5cdfd7-0748-43ca-b4c2-c1448219a5aa",
+                            "type": "string",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Box Office",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "primaryKey": false,
+                            "required": false,
+                            "sample": "$45.2k",
+                            "GUID": "7e815970-c0d7-4011-af9f-e78c41aff73c",
+                            "type": "string",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Consensus",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "primaryKey": false,
+                            "required": false,
+                            "sample": "Considered by many fans to be the best of the Star Trek movies, Khan features a strong plot, increased tension, and a sharp supporting performance from Ricardo Montalban.",
+                            "GUID": "7baed552-ccb0-45eb-b647-195577701bcf",
+                            "type": "string",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Critic",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "object",
+                            "primaryKey": false,
+                            "required": false,
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "Meter",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": false,
+                                    "sample": 100,
+                                    "GUID": "220fb003-f1c8-4073-a388-5ca453c6cac4",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "Num Reviews",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": false,
+                                    "sample": 253,
+                                    "GUID": "f2ca4f39-e7a7-4f98-bed3-f2900c0619e8",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "Rating",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "double",
+                                    "mode": "",
+                                    "primaryKey": false,
+                                    "required": false,
+                                    "sample": 7.8,
+                                    "GUID": "65b3e17b-28d4-4ecd-b763-659ca3024e4b",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {}
+                                }
+                            ],
+                            "GUID": "e3f2a8fa-ad0b-43a6-8775-b755112c2f60",
+                            "type": "document",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Dvd",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "date",
+                            "primaryKey": false,
+                            "required": false,
+                            "GUID": "3a4432c7-13e8-4b0d-bb60-dedfd5c61e49",
+                            "type": "string",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Fresh",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "integer",
+                            "mode": "int",
+                            "primaryKey": false,
+                            "required": false,
+                            "sample": 217,
+                            "GUID": "8570960f-5949-4cc3-8367-e21b40844ce5",
+                            "type": "numeric",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Production",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "primaryKey": false,
+                            "required": false,
+                            "sample": "Golan-Globus Productions",
+                            "GUID": "cd91ab37-7ed9-4c2b-b3f8-fa5aaa617ccf",
+                            "type": "string",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Rotten",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "integer",
+                            "mode": "int",
+                            "primaryKey": false,
+                            "required": false,
+                            "sample": 109,
+                            "GUID": "d8cff135-48c9-4c3d-a611-ec13eb562592",
+                            "type": "numeric",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Website",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "primaryKey": false,
+                            "required": false,
+                            "sample": "http://blue-underground.com/",
+                            "GUID": "3cb2add2-9b9f-434f-9715-d842829ac1e2",
+                            "type": "string",
+                            "hackoladeMeta": {}
+                        }
+                    ],
+                    "GUID": "0dd30119-1ed2-46db-af25-71be7f4d8004",
+                    "type": "document",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Languages",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "sample": "French",
+                            "GUID": "c0f8cccc-65fe-4b8d-9908-408518a66cd9",
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "d3cf3ba9-ddce-488d-a289-55865a1b0a59",
+                    "type": "array",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Metacritic",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
+                    "required": false,
+                    "sample": 100,
+                    "GUID": "735ce33f-402b-4116-b09e-79cfcaf04f42",
+                    "type": "numeric",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Poster",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": false,
+                    "sample": "https://m.media-amazon.com/images/M/MV5BZDE1Y2E0NzQtOTJiNC00OGIyLWJiNjUtNjk1ZGRhYWQxNzRmXkEyXkFqcGdeQXVyNTU3MTY2Mg@@._V1_SY1000_SX677_AL_.jpg",
+                    "GUID": "44497d4b-f7d7-4bbc-8d5a-b9d754e48fa6",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Writers",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "primaryKey": false,
+                    "required": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "sample": "Jacques Demy",
+                            "GUID": "f830de57-a85c-4cc0-9ed4-b4729f4c5803",
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "arrayItem": true
+                        }
+                    ],
+                    "GUID": "9e678dcb-bd12-407a-a7fb-09e87aa8b8eb",
+                    "type": "array",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "BMSprop",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "GUID": "46f6b133-e5c7-433a-9f77-eabcb4a2be92",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "bfdfa67e-3307-488f-9a7b-3469bfce42e0",
+                "properties": []
+            },
+            "GUID": "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Sessions",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "97f865c0-119c-4963-ba4c-187a1832c6c0",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "uuid",
+                    "primaryKey": true,
+                    "required": true,
+                    "GUID": "9f77e314-4d14-4a3b-bc79-2ecf631d258d",
+                    "type": "objectId",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "User Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "t3qulfeem@kwiv5.6ur",
+                    "GUID": "5f5798ff-3cbc-402e-85d1-243b08734ce7",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Jwt",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTk5MDkzMjEsIm5iZiI6MTUxOTkwOTMyMSwianRpIjoiNmJlZDAwMWYtNTFiYi00NzVhLTgxZDAtMDcwNGE5Mjk0MWZlIiwiZXhwIjoxNTE5OTEwMjIxLCJpZGVudGl0eSI6eyJlbWFpbCI6InQzcXVsZmVlbUBrd2l2NS42dXIiLCJuYW1lIjoiM2lveHJtZnF4IiwicGFzc3dvcmQiOm51bGx9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJ1c2VyIjp7ImVtYWlsIjoidDNxdWxmZWVtQGt3aXY1LjZ1ciIsIm5hbWUiOiIzaW94cm1mcXgiLCJwYXNzd29yZCI6bnVsbH19fQ.ejtr_NyZyBronWMKuE0RFTjWej--T0zGrdc_iymGtVs",
+                    "GUID": "b17f6689-c398-4d5e-b3d3-450afc4f6e33",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "e156b6de-00c5-4852-bc59-b7d14e2fb4cb",
+                "properties": []
+            },
+            "GUID": "6a36a5db-8c3b-42a6-b248-7c6f8275e43b",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Theaters",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "97f865c0-119c-4963-ba4c-187a1832c6c0",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "uuid",
+                    "primaryKey": true,
+                    "required": true,
+                    "GUID": "f2e7cbab-1958-44d6-bcd7-69a7273c7852",
+                    "type": "objectId",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Theater Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "int",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": 8813,
+                    "GUID": "ab008924-3d93-41f0-b136-75647cb3565a",
+                    "type": "numeric",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Location",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "object",
+                    "primaryKey": false,
+                    "required": true,
+                    "additionalProperties": true,
+                    "properties": [
+                        {
+                            "name": "Address",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "object",
+                            "primaryKey": false,
+                            "required": true,
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "Street1",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "sample": "717 Gravois Rd",
+                                    "GUID": "9601f7df-3a70-46b4-9d34-031b3db599bc",
+                                    "type": "string",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "City",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "sample": "Fenton",
+                                    "GUID": "9e2077d6-3d6b-419c-844c-ebc324c9b4d4",
+                                    "type": "string",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "State",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "sample": "MO",
+                                    "GUID": "b95a54c2-37ee-433f-b08f-e07729a25199",
+                                    "type": "string",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "Zipcode",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "sample": "63026",
+                                    "GUID": "c8c46989-ec0b-42b0-8794-f98509a5e2f6",
+                                    "type": "string",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "Street2",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "type": "multiple",
+                                    "required": false,
+                                    "primaryKey": false,
+                                    "GUID": "09edee11-a1a9-4eb3-b196-27f5ec070fe7",
+                                    "hackoladeMeta": {},
+                                    "multipleTypes": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "9bc901fb-df0f-4ac3-9b2d-695df6b75011",
+                                            "primaryKey": false,
+                                            "mode": "string",
+                                            "childType": "varchar"
+                                        },
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "null",
+                                            "GUID": "fa40099d-cbff-40ab-bbfc-d41985eff7ee",
+                                            "primaryKey": false,
+                                            "childType": "null"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "GUID": "5ce334ea-21ed-46b4-b417-0c56367d171c",
+                            "type": "document",
+                            "hackoladeMeta": {}
+                        },
+                        {
+                            "name": "Geo",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "object",
+                            "primaryKey": false,
+                            "required": true,
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "Type",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "sample": "Point",
+                                    "GUID": "244e1a68-fa80-404a-aab4-c834a1d82271",
+                                    "type": "string",
+                                    "hackoladeMeta": {}
+                                },
+                                {
+                                    "name": "Coordinates",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "array",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "properties": [
+                                        {
+                                            "isActivated": true,
+                                            "childType": "double",
+                                            "mode": "",
+                                            "sample": -118.11414,
+                                            "GUID": "ac5dab02-ac65-42fb-857d-ff2fcb764833",
+                                            "type": "numeric",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true
+                                        }
+                                    ],
+                                    "GUID": "7f2077ff-c541-45a4-80a5-1daa852dd241",
+                                    "type": "array",
+                                    "hackoladeMeta": {}
+                                }
+                            ],
+                            "GUID": "26a41d42-7a0c-49df-b3ee-565cc7c98967",
+                            "type": "document",
+                            "hackoladeMeta": {}
+                        }
+                    ],
+                    "GUID": "9838671d-b2b3-42aa-a397-5f58de15998c",
+                    "type": "document",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "03af4e4e-69aa-4b9e-9ada-745b201ec7aa",
+                "properties": []
+            },
+            "GUID": "95b7e195-0a9c-4e8d-ac4e-0612b0edf6c7",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Users",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "97f865c0-119c-4963-ba4c-187a1832c6c0",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "Id",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "uuid",
+                    "primaryKey": true,
+                    "required": true,
+                    "GUID": "13459b9c-e352-4d9a-946a-12189a5fbafa",
+                    "type": "objectId",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "Anthony Hurst",
+                    "GUID": "4be5b0f2-6c9e-4fcc-9c00-1df27e9f4e97",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Email",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "anthony_hurst@fakegmail.com",
+                    "GUID": "65c241ef-bb25-4e27-a18c-cade2cb67ca7",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "name": "Password",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "sample": "$2b$12$9M2cew6pOM.35LY474rMkeVD4WxfvF2lDtVg60jZrlMdbaexrIfwK",
+                    "GUID": "d28fecd8-51c7-4119-8d35-4b5b2d515dc4",
+                    "type": "string",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "ff6e6ada-d955-42de-86d1-c61d324dd211",
+                "properties": []
+            },
+            "GUID": "1b744c5d-ce0d-424c-bda7-ba68e18c0050",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "sample_mflix",
+            "code": "",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "97f865c0-119c-4963-ba4c-187a1832c6c0",
+            "type": "bucket",
+            "collectionIds": [
+                "87a1e7b3-1e2a-40ff-9dae-a3dad40acf3e",
+                "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+                "6a36a5db-8c3b-42a6-b248-7c6f8275e43b",
+                "95b7e195-0a9c-4e8d-ac4e-0612b0edf6c7",
+                "1b744c5d-ce0d-424c-bda7-ba68e18c0050"
+            ],
+            "hackoladeMeta": {},
+            "show": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk movies._id to comments.movie_id",
+            "isActivated": true,
+            "relationshipType": "Foreign Key",
+            "parentCollection": "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+            "parentField": [
+                [
+                    "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+                    "0a7e7790-dcd6-4f4f-9df6-79bc18b3f948"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "87a1e7b3-1e2a-40ff-9dae-a3dad40acf3e",
+            "childField": [
+                [
+                    "87a1e7b3-1e2a-40ff-9dae-a3dad40acf3e",
+                    "b1f30b4e-af1e-4888-bdcc-35314303f8bc"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "hackoladeStyles": {
+                "GUID": "accd8e2e-f8e5-4302-9a9f-74893da91ef4",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1866.8333333333335,
+                        "y": 1350
+                    },
+                    {
+                        "x": 1866.8333333333335,
+                        "y": 1267.6666666666672
+                    },
+                    {
+                        "x": 1563.6666666666665,
+                        "y": 1267.6666666666672
+                    },
+                    {
+                        "x": 1563.6666666666665,
+                        "y": 1292.6666666666672
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "top"
+                ]
+            },
+            "GUID": "2f0c809d-8b45-4f26-916f-c758478da2b7",
+            "level": "field"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "87a1e7b3-1e2a-40ff-9dae-a3dad40acf3e": "Comments",
+        "2a008363-cb8a-4c8e-a41f-98102707134d": "Id",
+        "8ecae665-bb15-4756-bc74-bec30a494f33": "Name",
+        "43d8a522-03d0-4cc3-85fa-99f5f4b74f28": "Email",
+        "b1f30b4e-af1e-4888-bdcc-35314303f8bc": "Movie Id",
+        "c61ea99f-4233-4dd7-9600-be9a15c57130": "Text",
+        "e8d1fa15-e33e-416b-8f90-5f5384e668ce": "Date",
+        "f88767fe-346a-46a7-af3c-0d1f1c64f446": "Movies",
+        "0a7e7790-dcd6-4f4f-9df6-79bc18b3f948": "Id",
+        "ada13743-13ad-4745-bd48-eb7ee28f3353": "Plot",
+        "d9c1d59b-db67-4937-9508-0bb495b8936d": "Genres",
+        "a35bded3-baf9-47d8-a07f-b089cb210ffe": "Runtime",
+        "4242a5da-3bd6-4667-848d-f4b49f8bf932": "Cast",
+        "a3ba247c-9984-45da-bab8-ed1e2264153a": "Num Mflix Comments",
+        "6716b8c8-c8c9-4a49-baef-448d94e588bb": "Title",
+        "a9c2e230-eb5d-4696-8ddd-2f32e44843b8": "Fullplot",
+        "dab5fca3-fefc-4a2c-a751-98bbf0727e3c": "Countries",
+        "7cc9aa95-dcad-48fd-8c2c-b7ad8a2e1a90": "Released",
+        "e5a0006d-57b2-4f9b-ae9f-c3f6c6d8d091": "Directors",
+        "340fc1f7-42b8-41d2-b4bb-4197f0ae743f": "Rated",
+        "ed3ffce8-933d-4be3-82dd-005580e0d8f6": "Awards",
+        "ffe9ba0a-50e4-4613-80cc-365999a8db91": "Wins",
+        "44b153fa-11be-4656-aab6-2430a1ed2564": "Nominations",
+        "90ce702c-f4bf-4241-abc4-3679ca56834f": "Text",
+        "f6e11691-b139-4055-81d7-86a4b0ecb6bd": "Lastupdated",
+        "a7b2e024-f0f6-48e6-998b-0db69f4fe123": "Year",
+        "57e2792a-9abe-4918-8b5c-ddc75dedb896": "Imdb",
+        "f398a912-7ef5-4c1d-b070-cbc008ff11d0": "Rating",
+        "9d8abb9c-c354-44d6-ad31-3aaf3fdd6e7d": "Votes",
+        "e0b48579-a6ea-4ae6-ae04-e401eb7b7c94": "Id",
+        "7f83fc3b-adcd-4f17-add6-b3e936507280": "Type",
+        "0dd30119-1ed2-46db-af25-71be7f4d8004": "Tomatoes",
+        "aaaa0e06-f167-4365-8798-271bd38b4527": "Viewer",
+        "90a4b740-a3a8-4165-bdb0-502a98dfd712": "Rating",
+        "46cbec31-f4bd-4079-9102-f473bf53a0f4": "Num Reviews",
+        "1d1f10d9-777c-4b31-b8e1-4d246ba1c4e5": "Meter",
+        "ff5cdfd7-0748-43ca-b4c2-c1448219a5aa": "Last Updated",
+        "7e815970-c0d7-4011-af9f-e78c41aff73c": "Box Office",
+        "7baed552-ccb0-45eb-b647-195577701bcf": "Consensus",
+        "e3f2a8fa-ad0b-43a6-8775-b755112c2f60": "Critic",
+        "220fb003-f1c8-4073-a388-5ca453c6cac4": "Meter",
+        "f2ca4f39-e7a7-4f98-bed3-f2900c0619e8": "Num Reviews",
+        "65b3e17b-28d4-4ecd-b763-659ca3024e4b": "Rating",
+        "3a4432c7-13e8-4b0d-bb60-dedfd5c61e49": "Dvd",
+        "8570960f-5949-4cc3-8367-e21b40844ce5": "Fresh",
+        "cd91ab37-7ed9-4c2b-b3f8-fa5aaa617ccf": "Production",
+        "d8cff135-48c9-4c3d-a611-ec13eb562592": "Rotten",
+        "3cb2add2-9b9f-434f-9715-d842829ac1e2": "Website",
+        "d3cf3ba9-ddce-488d-a289-55865a1b0a59": "Languages",
+        "735ce33f-402b-4116-b09e-79cfcaf04f42": "Metacritic",
+        "44497d4b-f7d7-4bbc-8d5a-b9d754e48fa6": "Poster",
+        "9e678dcb-bd12-407a-a7fb-09e87aa8b8eb": "Writers",
+        "46f6b133-e5c7-433a-9f77-eabcb4a2be92": "BMSprop",
+        "6a36a5db-8c3b-42a6-b248-7c6f8275e43b": "Sessions",
+        "9f77e314-4d14-4a3b-bc79-2ecf631d258d": "Id",
+        "5f5798ff-3cbc-402e-85d1-243b08734ce7": "User Id",
+        "b17f6689-c398-4d5e-b3d3-450afc4f6e33": "Jwt",
+        "95b7e195-0a9c-4e8d-ac4e-0612b0edf6c7": "Theaters",
+        "f2e7cbab-1958-44d6-bcd7-69a7273c7852": "Id",
+        "ab008924-3d93-41f0-b136-75647cb3565a": "Theater Id",
+        "9838671d-b2b3-42aa-a397-5f58de15998c": "Location",
+        "5ce334ea-21ed-46b4-b417-0c56367d171c": "Address",
+        "9601f7df-3a70-46b4-9d34-031b3db599bc": "Street1",
+        "9e2077d6-3d6b-419c-844c-ebc324c9b4d4": "City",
+        "b95a54c2-37ee-433f-b08f-e07729a25199": "State",
+        "c8c46989-ec0b-42b0-8794-f98509a5e2f6": "Zipcode",
+        "09edee11-a1a9-4eb3-b196-27f5ec070fe7": "Street2",
+        "26a41d42-7a0c-49df-b3ee-565cc7c98967": "Geo",
+        "244e1a68-fa80-404a-aab4-c834a1d82271": "Type",
+        "7f2077ff-c541-45a4-80a5-1daa852dd241": "Coordinates",
+        "1b744c5d-ce0d-424c-bda7-ba68e18c0050": "Users",
+        "13459b9c-e352-4d9a-946a-12189a5fbafa": "Id",
+        "4be5b0f2-6c9e-4fcc-9c00-1df27e9f4e97": "Name",
+        "65c241ef-bb25-4e27-a18c-cade2cb67ca7": "Email",
+        "d28fecd8-51c7-4119-8d35-4b5b2d515dc4": "Password",
+        "97f865c0-119c-4963-ba4c-187a1832c6c0": "sample_mflix",
+        "2f0c809d-8b45-4f26-916f-c758478da2b7": "fk movies._id to comments.movie_id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cc268ec9-4e17-4886-bf52-2adf81c178c3"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "e450fe31-161b-4840-84fa-7b72fadba101"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "36e238a3-c00e-4ab1-b0c8-73c567a5f4ed"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Polyglot",
+    "appTarget": "Polyglot",
+    "creationTS": "2023-08-25T15:42:53.417Z",
+    "GUID": "2d08646d-6e61-4298-a935-1b6074510da4",
+    "code": "",
+    "isLineageEnabled": false,
+    "dbVersion": "v6.0",
+    "hackoladeMeta": {},
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "lastModifTS": "2023-08-25T15:43:47.490Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "6.10.17"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "87a1e7b3-1e2a-40ff-9dae-a3dad40acf3e",
+                        "x": 1761.3333333333335,
+                        "y": 1350,
+                        "width": 211,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+                        "x": 1402.6666666666665,
+                        "y": 1292.6666666666672,
+                        "width": 322,
+                        "height": 951,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "6a36a5db-8c3b-42a6-b248-7c6f8275e43b",
+                        "x": 1147.3333333333335,
+                        "y": 1400,
+                        "width": 196,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "95b7e195-0a9c-4e8d-ac4e-0612b0edf6c7",
+                        "x": 1047.3333333333335,
+                        "y": 1050,
+                        "width": 286,
+                        "height": 264,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1b744c5d-ce0d-424c-bda7-ba68e18c0050",
+                        "x": 1547.3333333333335,
+                        "y": 1150,
+                        "width": 210,
+                        "height": 102,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1007.3333333333335,
+                        "y": 1010,
+                        "GUID": "97f865c0-119c-4963-ba4c-187a1832c6c0"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "87a1e7b3-1e2a-40ff-9dae-a3dad40acf3e",
+                            "x": 1543.5860388148546,
+                            "y": 1306.0718877901713,
+                            "width": 211,
+                            "height": 138,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "f88767fe-346a-46a7-af3c-0d1f1c64f446",
+                            "x": 1252.9230213119029,
+                            "y": 1229.2725659226921,
+                            "width": 322,
+                            "height": 951,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "6a36a5db-8c3b-42a6-b248-7c6f8275e43b",
+                            "x": 1135.5031931769788,
+                            "y": 1411.3129326068504,
+                            "width": 196,
+                            "height": 84,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "95b7e195-0a9c-4e8d-ac4e-0612b0edf6c7",
+                            "x": 1035.0894968693815,
+                            "y": 1039.7232356595039,
+                            "width": 286,
+                            "height": 264,
+                            "color": {}
+                        },
+                        {
+                            "GUID": "1b744c5d-ce0d-424c-bda7-ba68e18c0050",
+                            "x": 1556.6643951380627,
+                            "y": 1134.1054401266995,
+                            "width": 210,
+                            "height": 102,
+                            "color": {}
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 988.7326308738573,
+                            "y": 994.1050399688343,
+                            "GUID": "97f865c0-119c-4963-ba4c-187a1832c6c0"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
