@@ -367,7 +367,6 @@
                                             "GUID": "28235450-cbf9-11e9-ae66-f7db59c7febc",
                                             "hackoladeMeta": {},
                                             "arrayItem": true,
-                                            "arrayParentType": "array",
                                             "name": "testarr_null",
                                             "displayName": "testarr_null",
                                             "isActivated": true
@@ -778,7 +777,7 @@
             }
         },
         {
-            "collectionName": "New_record(1)",
+            "collectionName": "AnotherRecord",
             "type": "object",
             "properties": [
                 {
@@ -802,22 +801,24 @@
                     "parentRelationship": "aa7b52b2-0827-41fc-939c-2bed132792ec"
                 },
                 {
-                    "name": "New_field(1)",
+                    "name": "AnotherField",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "required": true,
                     "primaryKey": false,
                     "type": "string",
-                    "GUID": "cce1d8e9-e421-45e0-8475-81e0312a223b"
+                    "GUID": "cce1d8e9-e421-45e0-8475-81e0312a223b",
+                    "error": {}
                 },
                 {
-                    "name": "New_field(2)",
+                    "name": "AnotherNewField",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "required": true,
                     "primaryKey": false,
                     "type": "string",
-                    "GUID": "52f5bd52-96b5-46cf-820b-f8151970a58b"
+                    "GUID": "52f5bd52-96b5-46cf-820b-f8151970a58b",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -830,11 +831,8 @@
             "collectionUsers": [],
             "GUID": "606832ca-b0aa-425e-812f-7502dab719b6",
             "bucketId": "38a5abe0-cbed-11e9-ae66-f7db59c7febc",
-            "hackoladeMeta": {
-                "validationErrors": {
-                    "collectionName": true
-                }
-            }
+            "hackoladeMeta": {},
+            "confluentSubjectName": "testSubject"
         }
     ],
     "buckets": [
@@ -910,7 +908,8 @@
                     "left",
                     "right"
                 ]
-            }
+            },
+            "isActivated": true
         }
     ],
     "users": [],
@@ -954,10 +953,10 @@
         "f6007b40-cbfa-11e9-ae66-f7db59c7febc": "VendorRecord",
         "fbaef300-cbfa-11e9-ae66-f7db59c7febc": "Identifier",
         "028f8220-cbfb-11e9-ae66-f7db59c7febc": "Name",
-        "606832ca-b0aa-425e-812f-7502dab719b6": "New_record(1)",
+        "606832ca-b0aa-425e-812f-7502dab719b6": "AnotherRecord",
         "4bb3f5b5-5b91-4e6b-8a39-c5583abff5c2": "New_field",
-        "cce1d8e9-e421-45e0-8475-81e0312a223b": "New_field(1)",
-        "52f5bd52-96b5-46cf-820b-f8151970a58b": "New_field(2)",
+        "cce1d8e9-e421-45e0-8475-81e0312a223b": "AnotherField",
+        "52f5bd52-96b5-46cf-820b-f8151970a58b": "AnotherNewField",
         "aa7b52b2-0827-41fc-939c-2bed132792ec": "fk New_record(1).New_field to New_record.Identifier"
     },
     "definitions": {
@@ -983,7 +982,7 @@
     "creationTS": "2019-08-31T12:45:31.541Z",
     "GUID": "37cd7450-cbed-11e9-ae66-f7db59c7febc",
     "code": "",
-    "lastModifTS": "2023-05-16T15:17:38.069Z",
+    "lastModifTS": "2023-08-31T09:39:10.638Z",
     "persistenceSchemaVersion": "6",
     "description": "",
     "comments": "",
@@ -993,11 +992,11 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Avro",
-        "pluginVersion": "0.1.113",
+        "pluginVersion": "0.1.127",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.10.1"
+        "version": "6.10.18"
     },
     "hackoladeMeta": {},
     "schemaRegistryType": "Confluent Schema Registry",
@@ -1053,7 +1052,18 @@
                 "diagramViews": [],
                 "decorativeSymbols": [],
                 "nestedCollectionsLayout": "horizontal",
-                "options": [],
+                "options": [
+                    {
+                        "GUID": "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "606832ca-b0aa-425e-812f-7502dab719b6",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    }
+                ],
                 "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
