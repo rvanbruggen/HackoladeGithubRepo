@@ -1,0 +1,412 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "0b5d240d-c97f-427a-aae2-62ac20ea2517",
+            "type": "reference",
+            "$ref": "#external/definitions/Union_schema",
+            "refType": "polyglot",
+            "ref": "89de3fcf-8f31-4376-ac15-ae3c491493d7",
+            "refIdPath": [
+                "7920d7d0-0de7-4b5d-9c8b-9a02d4abe3a3",
+                "c80d116d-6540-42d8-8992-aa0a45beafbc",
+                "89de3fcf-8f31-4376-ac15-ae3c491493d7"
+            ],
+            "isActivated": true,
+            "collectionName": "Union_schema",
+            "code": "",
+            "bucketId": "5dc9f476-3d85-42df-9342-29a79c95f02c",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "67b07497-8b3f-4de4-aebe-8e06e0bb84c6"
+            },
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": true
+                }
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "5dc9f476-3d85-42df-9342-29a79c95f02c",
+            "name": "hackolade.gov.ssa.irsrptg.avro",
+            "type": "reference",
+            "$ref": "#external/definitions/hackolade.gov.ssa.irsrptg.avro",
+            "refType": "polyglot",
+            "ref": "988bbbcc-31bf-4742-b84e-47f11e972749",
+            "refIdPath": [
+                "7920d7d0-0de7-4b5d-9c8b-9a02d4abe3a3",
+                "c80d116d-6540-42d8-8992-aa0a45beafbc",
+                "988bbbcc-31bf-4742-b84e-47f11e972749"
+            ],
+            "isActivated": true,
+            "code": "",
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "collectionIds": [
+                "0b5d240d-c97f-427a-aae2-62ac20ea2517"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "0b5d240d-c97f-427a-aae2-62ac20ea2517": "Union_schema",
+        "5dc9f476-3d85-42df-9342-29a79c95f02c": "hackolade.gov.ssa.irsrptg.avro"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "039978eb-05a9-4d98-921d-b6c9321448f4"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "Union_schema",
+                "code": "",
+                "isActivated": true,
+                "description": "This schema represents the data associated with the event generated when the identity on the Unreported Tips earnings report was confirmed against agency records and the Unreported Tips earnings report will be credited to the earner.",
+                "bucketId": "988bbbcc-31bf-4742-b84e-47f11e972749",
+                "additionalProperties": true,
+                "properties": [
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "ssn",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The number assigned by Social Security Administration via the enumeration process to identify a client as reported by the Internal Revenue Service",
+                        "GUID": "f73cd41c-6f81-4401-b4fc-b12fca0c3412",
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "firstNm",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The first name of the earner as reported by the Internal Revenue Service",
+                        "default": null,
+                        "GUID": "fb1da4f0-9653-43e6-9ae0-b3bd71434f65",
+                        "hackoladeMeta": {},
+                        "properties": [],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "middleNm",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The middle name of the earner as reported by the Internal Revenue Service",
+                        "default": null,
+                        "GUID": "0a1e07fc-cde8-4da1-9522-442033b928a8",
+                        "hackoladeMeta": {},
+                        "properties": [],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "lastNm",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The last name of the earner as reported by the Internal Revenue Service",
+                        "default": null,
+                        "GUID": "d1c9319c-9856-427f-a618-be2d162c8941",
+                        "hackoladeMeta": {},
+                        "properties": [],
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "New_field",
+                        "code": "",
+                        "isActivated": true,
+                        "properties": [],
+                        "GUID": "7e27dbc2-51a5-4ae7-91f2-5f17a8c46ed8",
+                        "hackoladeMeta": {},
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "subtype": "int32",
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "childType": "int",
+                        "type": "numeric",
+                        "name": "aggregateId",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The value assigned to an Unreported Wages aggregate by the Unreported Tips and Wages Service. The Social Security Number (SSN), Tax Year and UNREPORTED_TIPS is hashed using the murmur3 algorithm to determine this value",
+                        "GUID": "5fbdff34-6f08-4ba9-ad3d-101a826bb17f",
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "reportId",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The value assigned to an instance of an earnings report received by the Unreported Tips and Wages Service to uniquely identify it. This is a system generated random number that will be unique with a negligible probability of duplication.",
+                        "GUID": "49c1e7cd-9e41-4cce-9c26-9eec2e2b375c",
+                        "error": {}
+                    },
+                    {
+                        "subtype": "int32",
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "childType": "int",
+                        "type": "numeric",
+                        "name": "taxYr",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The year for which taxes are calculated as defined by the Internal Revenue Service.",
+                        "GUID": "c9fa7615-5739-4fb8-aad7-289c770f53f4",
+                        "error": {}
+                    },
+                    {
+                        "name": "confirmedIdentity",
+                        "code": "",
+                        "isActivated": true,
+                        "$ref": "#collection/definitions/Identity",
+                        "refType": "collectionReference",
+                        "refIdPath": [],
+                        "GUID": "9fa0882a-7647-490d-9c0c-1b5cf3527303",
+                        "type": "reference",
+                        "hackoladeMeta": {
+                            "polyglotFieldRelativePath": []
+                        },
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "accountControlNum",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "The value assigned to presumably control an account by the Internal Revenue Service (IRS). The value received is composed of the final digit for the year, followed by the characters 'BLK' , then the 2-digit TOM Code (believed to stand for Type of Modification) Assumed to stand for Type of Modification) and finally a 5 digit sequence number. The value and purpose of this field is unknown to Social Security and is simply passed through. The known values for the TOM Code are: 40 (Unreported Tips), 41(Unreported Wages), 42(Unreported Wage Adjust), 44(Unreported Earnings Adjust)",
+                        "GUID": "ee56681d-d76b-4a4e-9542-43269df86dfb",
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "childType": "string",
+                        "type": "string",
+                        "name": "serviceCenterCd",
+                        "code": "",
+                        "isActivated": true,
+                        "description": "Identifies the Internal Revenue Service (IRS) Service Center (presumably). The exact purpose of this field is unknown, other than it is 14 characters we receive from the IRS on earnings reports. The first two characters are historically used to generate the EIN for Unreported Tips, but the value is otherwise not stored or used by Social Security.",
+                        "GUID": "e830c1c9-9d1b-4a65-a429-591b1ba93bc9",
+                        "error": {}
+                    },
+                    {
+                        "name": "creditedAmts",
+                        "code": "",
+                        "isActivated": true,
+                        "$ref": "#collection/definitions/Amnts",
+                        "refType": "collectionReference",
+                        "refIdPath": [],
+                        "GUID": "79219dc6-6d7c-4b72-9fa2-22418750dca9",
+                        "type": "reference",
+                        "hackoladeMeta": {
+                            "polyglotFieldRelativePath": []
+                        },
+                        "error": {}
+                    },
+                    {
+                        "subtype": "int32",
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "childType": "int",
+                        "type": "numeric",
+                        "name": "eventTs",
+                        "code": "",
+                        "isActivated": true,
+                        "GUID": "e4286729-b264-451f-afa3-8ee5f750828e",
+                        "error": {}
+                    },
+                    {
+                        "name": "UnreportedTipsCredited",
+                        "code": "",
+                        "isActivated": true,
+                        "$ref": "#collection/definitions/UnreportedTipsCredited",
+                        "refType": "collectionReference",
+                        "refIdPath": [],
+                        "GUID": "55287577-75a6-4f26-9cac-bac6d887f281",
+                        "type": "reference",
+                        "hackoladeMeta": {
+                            "polyglotFieldRelativePath": []
+                        },
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "707ccd75-cedf-4b9c-b8e3-a84afd52146d",
+                    "properties": []
+                },
+                "GUID": "89de3fcf-8f31-4376-ac15-ae3c491493d7",
+                "type": "object",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionEntityType": "collection",
+                "link": "/Users/rvanbruggen/Documents/HackoladeRepo/1-Customers/Riskified/Avro-based Polyglot.hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/hackolade.gov.ssa.irsrptg.avro/Union_schema",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "0b5d240d-c97f-427a-aae2-62ac20ea2517"
+                    ]
+                ]
+            },
+            {
+                "name": "hackolade.gov.ssa.irsrptg.avro",
+                "code": "",
+                "isActivated": true,
+                "backgroundColor": {
+                    "r": 216,
+                    "g": 0,
+                    "b": 115,
+                    "a": 1
+                },
+                "GUID": "988bbbcc-31bf-4742-b84e-47f11e972749",
+                "type": "bucket",
+                "collectionIds": [
+                    "89de3fcf-8f31-4376-ac15-ae3c491493d7"
+                ],
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "show": true,
+                "definitionEntityType": "bucket",
+                "link": "/Users/rvanbruggen/Documents/HackoladeRepo/1-Customers/Riskified/Avro-based Polyglot.hck.json",
+                "kind": "localPath",
+                "fieldRelativePath": "#/hackolade.gov.ssa.irsrptg.avro",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "5dc9f476-3d85-42df-9342-29a79c95f02c"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "c80d116d-6540-42d8-8992-aa0a45beafbc"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "5cb85208-f0a0-42bd-9eb3-4d53ebc25480"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "3",
+    "dbVendor": "protobuf",
+    "appTarget": "protobuf",
+    "creationTS": "2023-09-07T08:52:32.290Z",
+    "GUID": "7920d7d0-0de7-4b5d-9c8b-9a02d4abe3a3",
+    "isLineageEnabled": false,
+    "polyglotModelPaths": [
+        {
+            "GUID": "927c9a0a-62f1-4f58-97de-a016f9e811bc",
+            "polyglotModelName": "Avro-based Polyglot.hck",
+            "polyglotModelPath": "/Users/rvanbruggen/Documents/HackoladeRepo/1-Customers/Riskified/Avro-based Polyglot.hck.json",
+            "normalization": false
+        }
+    ],
+    "lastModifTS": "2023-09-07T08:53:13.789Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Protobuf",
+        "pluginVersion": "0.1.10",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.19"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "0b5d240d-c97f-427a-aae2-62ac20ea2517",
+                        "x": 1190,
+                        "y": 1132,
+                        "width": 365,
+                        "height": 281,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1150,
+                        "y": 1092,
+                        "GUID": "5dc9f476-3d85-42df-9342-29a79c95f02c"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
