@@ -1,5 +1,6 @@
-# Welcome to the Hackolade CLI example for Pepsi! *"
+# Welcome to the Hackolade CLI example for Pepsi!
 
+Here are a few examples for the Hackolade CLI!
 ## 1. We will simulate the reverse engineering of a MongoDB database into a Hackolade model"
 
 Let's use the Hackolade CLI to reverse engineer a model.
