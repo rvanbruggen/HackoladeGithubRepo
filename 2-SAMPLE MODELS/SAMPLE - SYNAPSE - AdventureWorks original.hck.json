@@ -3751,7 +3751,10 @@
                         "compositeClusteringKey",
                         "partition"
                     ],
-                    "isActivated": true
+                    "isActivated": true,
+                    "childRelationships": [
+                        "92f73db5-ac69-4604-b87a-09f2395e93d4"
+                    ]
                 },
                 {
                     "code": "",
@@ -8402,7 +8405,14 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "GUID": "810c6098-c116-4304-8058-7be2dcd42a60",
-                    "error": {}
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c6736d03-bba6-11ea-91a7-efa8d96c78e7",
+                    "foreignField": [
+                        "c6736d03-bba6-11ea-91a7-efa8d96c78e7",
+                        "c66a454c-bba6-11ea-91a7-efa8d96c78e7"
+                    ],
+                    "parentRelationship": "92f73db5-ac69-4604-b87a-09f2395e93d4"
                 },
                 {
                     "name": "col2",
@@ -9229,11 +9239,11 @@
                     },
                     {
                         "x": 2827.6201780146607,
-                        "y": 2280.4090033916978
+                        "y": 2182.0756700583643
                     },
                     {
                         "x": 3044.1201775378236,
-                        "y": 2280.4090033916978
+                        "y": 2182.0756700583643
                     }
                 ],
                 "sides": [
@@ -9611,11 +9621,11 @@
                     },
                     {
                         "x": 2158.620178491498,
-                        "y": 2513.0756700583643
+                        "y": 2566.3256700583643
                     },
                     {
                         "x": 1983.1201784914979,
-                        "y": 2513.0756700583643
+                        "y": 2566.3256700583643
                     }
                 ],
                 "sides": [
@@ -9655,11 +9665,11 @@
                 "shape": [
                     {
                         "x": 2590.3041581258576,
-                        "y": 1743.0000019073486
+                        "y": 1633.5000019073486
                     },
                     {
                         "x": 2224.152079539766,
-                        "y": 1743.0000019073486
+                        "y": 1633.5000019073486
                     },
                     {
                         "x": 2224.152079539766,
@@ -9706,11 +9716,11 @@
                 "shape": [
                     {
                         "x": 3462.3041609868806,
-                        "y": 1087
+                        "y": 1110.5
                     },
                     {
                         "x": 2660.1520809702774,
-                        "y": 1087
+                        "y": 1110.5
                     },
                     {
                         "x": 2660.1520809702774,
@@ -10725,11 +10735,11 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1643.0000009536743,
+                        "x": 1714.666667620341,
                         "y": 1810.1765606084982
                     },
                     {
-                        "x": 1643.0000009536743,
+                        "x": 1714.666667620341,
                         "y": 1785.1765606084982
                     },
                     {
@@ -11323,6 +11333,58 @@
                     "right"
                 ]
             }
+        },
+        {
+            "name": "fk UP group v1.col1 to DimProduct.GermanDescription",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c6736d03-bba6-11ea-91a7-efa8d96c78e7",
+                    "c66a454c-bba6-11ea-91a7-efa8d96c78e7"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "524115bc-a738-49eb-93b2-3462f95f15cc",
+                    "810c6098-c116-4304-8058-7be2dcd42a60"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "parentCollection": "c6736d03-bba6-11ea-91a7-efa8d96c78e7",
+            "childCollection": "524115bc-a738-49eb-93b2-3462f95f15cc",
+            "GUID": "92f73db5-ac69-4604-b87a-09f2395e93d4",
+            "hackoladeStyles": {
+                "GUID": "0dd1c9a0-6c56-4522-a2cf-3ce35863767b",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1291.511779480352,
+                        "y": 2609.3571619471068
+                    },
+                    {
+                        "x": 1291.511779480352,
+                        "y": 2541.2668612778025
+                    },
+                    {
+                        "x": 1213,
+                        "y": 2541.2668612778025
+                    },
+                    {
+                        "x": 1213,
+                        "y": 2473.176560608498
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
         }
     ],
     "users": [],
@@ -11801,7 +11863,8 @@
         "f816256d-b126-453f-9e96-afdb555f5af4": "fk DimAccount.ParentAccountCodeAlternateKey to DimAccount.AccountKey",
         "524115bc-a738-49eb-93b2-3462f95f15cc": "UP group v1",
         "810c6098-c116-4304-8058-7be2dcd42a60": "col1",
-        "754bf874-490e-4b97-b325-1ea900183e77": "col2"
+        "754bf874-490e-4b97-b325-1ea900183e77": "col2",
+        "92f73db5-ac69-4604-b87a-09f2395e93d4": "fk UP group v1.col1 to DimProduct.GermanDescription"
     },
     "definitions": {
         "type": "definitions",
@@ -12001,7 +12064,7 @@
     "creationTS": "2020-07-01T14:12:26.539Z",
     "GUID": "e42cbfb0-bba4-11ea-91a7-efa8d96c78e7",
     "code": "",
-    "lastModifTS": "2023-09-11T08:43:54.241Z",
+    "lastModifTS": "2023-09-11T08:45:22.646Z",
     "persistenceSchemaVersion": "6",
     "description": "Model based on the AdventureWorks sample databases\n\nhttps://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms",
     "comments": "",
@@ -12314,7 +12377,7 @@
                     }
                 ],
                 "collapsedNodes": [],
-                "activeRelationship": "",
+                "activeRelationship": "92f73db5-ac69-4604-b87a-09f2395e93d4",
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
