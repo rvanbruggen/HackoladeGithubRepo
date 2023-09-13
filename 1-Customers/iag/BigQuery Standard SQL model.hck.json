@@ -2814,6 +2814,42 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "Iag",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "iag_prop",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "dataTypeMode": "Nullable",
+                    "type": "string",
+                    "compositeKey": [
+                        "timeUnitpartitionKey",
+                        "rangePartitionKey",
+                        "clusteringKey"
+                    ],
+                    "timeUnitpartitionKey": false,
+                    "rangePartitionKey": false,
+                    "clusteringKey": false,
+                    "GUID": "f2182801-f34a-46f5-8ed2-79427f171c69",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "2daf19ee-e4fd-4a53-915f-4a3164e2da86"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "tableType": "Native",
+            "partitioning": "No partitioning",
+            "partitioningType": "",
+            "encryption": "Google-managed",
+            "GUID": "9511be62-ba0e-48e5-8cac-3013aa1ce3cc",
+            "bucketId": "8c05b07c-99cb-4cc8-a3c0-f87e75459c4e"
         }
     ],
     "buckets": [
@@ -2830,7 +2866,8 @@
                 "fae78b93-6bdd-4d0a-8b6f-a7ee547d8bb2",
                 "148507ac-e94d-48d3-99b8-9dd174335011",
                 "bed76be5-5f42-4b36-b030-800081f4c7ee",
-                "def28280-e1c7-4ef2-aa74-83340ba6d3e5"
+                "def28280-e1c7-4ef2-aa74-83340ba6d3e5",
+                "9511be62-ba0e-48e5-8cac-3013aa1ce3cc"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -3872,7 +3909,9 @@
         "b12f547d-5c36-4f3a-be81-d4eda6478822": "fk bmj.keywords to biorxiv.keywords",
         "5b93b141-ee1f-458d-905f-c24c369195a4": "fk jama.keywords to biorxiv.keywords",
         "84b39fde-efd1-4c49-9e52-64eb2f15d704": "fk arxiv.keywords to biorxiv.keywords",
-        "176dc5b0-110e-457f-885d-ecf91d233907": "fk springer.keywords to biorxiv.keywords"
+        "176dc5b0-110e-457f-885d-ecf91d233907": "fk springer.keywords to biorxiv.keywords",
+        "9511be62-ba0e-48e5-8cac-3013aa1ce3cc": "Iag",
+        "f2182801-f34a-46f5-8ed2-79427f171c69": "iag_prop"
     },
     "definitions": {
         "type": "definitions",
@@ -3898,7 +3937,7 @@
     "GUID": "74492b93-a0e1-475d-81db-d7dd048c5585",
     "isLineageEnabled": false,
     "projectID": "bigquery-public-data",
-    "lastModifTS": "2023-09-13T06:33:56.599Z",
+    "lastModifTS": "2023-09-13T06:35:29.672Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -3991,6 +4030,14 @@
                         "y": 1417.751009421265,
                         "width": 243,
                         "height": 245,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9511be62-ba0e-48e5-8cac-3013aa1ce3cc",
+                        "x": 1126.8048452220728,
+                        "y": 1401.9165545087485,
+                        "width": 166,
+                        "height": 51,
                         "color": {}
                     }
                 ],
