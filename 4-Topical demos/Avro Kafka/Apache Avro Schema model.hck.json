@@ -2,135 +2,115 @@
     "modelName": "New model",
     "collections": [
         {
-            "collectionName": "CustomerRecord",
+            "collectionName": "CustomerAddress",
             "type": "object",
             "properties": [
                 {
-                    "name": "TestString",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "required": false,
-                    "primaryKey": false,
-                    "type": "string",
-                    "GUID": "d5ee9724-fb69-458e-9c29-3af7fc9c81ea",
-                    "default": "RequiredDefault",
-                    "comments": "Here are some comments.",
-                    "error": {}
-                },
-                {
-                    "name": "TestString_REQ",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "required": true,
-                    "primaryKey": false,
-                    "type": "string",
-                    "GUID": "d7e7573c-8a16-420b-9920-8a3c87cfd1b3",
-                    "error": {}
-                },
-                {
-                    "name": "TestObject_REQ",
+                    "name": "address",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "required": true,
                     "primaryKey": false,
                     "properties": [
                         {
-                            "name": "FirstName",
+                            "name": "streetAddress",
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "required": true,
                             "primaryKey": false,
                             "type": "string",
-                            "GUID": "ab0af8a6-7895-4f1e-9c92-66ff3013c2f3",
+                            "GUID": "4d4c2ce6-f378-477a-96ed-bcfdf86eb9ad",
                             "error": {}
                         },
                         {
-                            "name": "LastName",
+                            "name": "houseNumber",
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "required": true,
                             "primaryKey": false,
                             "type": "string",
-                            "GUID": "963dcc44-0d6e-42b2-b044-c67d7289d01a",
+                            "GUID": "f92c59b2-f78a-48d6-8b38-69c20af2dce0",
                             "error": {}
                         },
                         {
-                            "GUID": "73dfd05f-3e74-4ebe-8021-f9ff78193c41",
-                            "name": "Address",
-                            "type": "reference",
-                            "$ref": "#model/definitions/Address",
-                            "refType": "model",
-                            "ref": "a3a52e75-0dd4-46e3-9766-7eaa5db93db0",
-                            "refIdPath": [
-                                "75973c34-7488-4ea6-8e13-a3888421559a",
-                                "740a34ea-d078-4e7c-97d8-c669cdd28a50",
-                                "a3a52e75-0dd4-46e3-9766-7eaa5db93db0"
-                            ],
+                            "name": "zipCode",
+                            "hackoladeMeta": {},
                             "isActivated": true,
                             "required": true,
-                            "error": {
-                                "name": false,
-                                "code": false
-                            }
+                            "primaryKey": false,
+                            "type": "string",
+                            "GUID": "e2bfe260-3566-4496-acf1-0be8b3237e04",
+                            "error": {}
+                        },
+                        {
+                            "name": "City",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "required": true,
+                            "primaryKey": false,
+                            "type": "string",
+                            "GUID": "f5148d93-2609-41ee-91ce-bd175dc72d72",
+                            "error": {}
+                        },
+                        {
+                            "name": "Country",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "required": true,
+                            "primaryKey": false,
+                            "type": "string",
+                            "GUID": "ea9bd91b-480a-4bc4-bbd6-1c24c67ad353",
+                            "error": {}
                         }
                     ],
                     "additionalProperties": false,
                     "childType": "record",
                     "type": "document",
-                    "error": {},
-                    "GUID": "d932123a-e25a-4f31-903c-af03734aace5"
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "properties": [],
-                "GUID": "68c80ec0-5792-4f7f-ac86-174a71f5d874"
-            },
-            "isActivated": true,
-            "additionalProperties": false,
-            "collectionUsers": [],
-            "GUID": "21b38081-9148-44ab-8e35-29359a54d308",
-            "bucketId": "93dd7869-dbef-4628-8b3c-4587880b6967",
-            "hackoladeMeta": {}
-        },
-        {
-            "collectionName": "Address",
-            "type": "object",
-            "properties": [
+                    "GUID": "34fbee74-72b0-4463-a47c-713928cfb689",
+                    "error": {}
+                },
                 {
-                    "GUID": "5e2a6520-15f2-4f4c-b46b-3ba34830a84b",
-                    "name": "Address",
-                    "type": "reference",
-                    "$ref": "#model/definitions/Address",
-                    "refType": "model",
-                    "ref": "a3a52e75-0dd4-46e3-9766-7eaa5db93db0",
-                    "refIdPath": [
-                        "75973c34-7488-4ea6-8e13-a3888421559a",
-                        "740a34ea-d078-4e7c-97d8-c669cdd28a50",
-                        "a3a52e75-0dd4-46e3-9766-7eaa5db93db0"
+                    "name": "testField",
+                    "type": "multiple",
+                    "properties": [],
+                    "multipleTypes": [
+                        {
+                            "type": "null",
+                            "GUID": "18d5d237-21f7-4e81-95b6-2ac47e17ec0c",
+                            "error": {}
+                        },
+                        {
+                            "type": "string",
+                            "GUID": "5d5d2e63-122e-46d4-bafa-16b7f0f303fa"
+                        }
                     ],
                     "isActivated": true,
-                    "required": true,
-                    "hackoladeMeta": {}
+                    "primaryKey": false,
+                    "GUID": "f5b8b49a-a7cc-442b-a54d-b2f27d0f31cf",
+                    "hackoladeMeta": {},
+                    "required": false,
+                    "default": null
                 }
             ],
             "definitions": {
                 "type": "definitions",
                 "properties": [],
-                "GUID": "48bece23-7ac9-4de5-b8f7-9a0c78c1aba2"
+                "GUID": "30c5f3ce-50ed-4630-907d-1a3c8e56e8c1"
             },
             "isActivated": true,
-            "additionalProperties": false,
+            "additionalProperties": true,
             "collectionUsers": [],
-            "GUID": "96fdd57e-c4ff-415c-85ac-d1315f9abe15"
+            "GUID": "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d",
+            "bucketId": "b84e05cb-8213-478b-b428-c04f71b487a9",
+            "error": {}
         }
     ],
     "buckets": [
         {
-            "name": "Kafka Namespace",
+            "name": "Customer",
             "type": "bucket",
             "collectionIds": [
-                "21b38081-9148-44ab-8e35-29359a54d308"
+                "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -141,7 +121,7 @@
             "show": true,
             "isActivated": true,
             "indexes": [],
-            "GUID": "93dd7869-dbef-4628-8b3c-4587880b6967"
+            "GUID": "b84e05cb-8213-478b-b428-c04f71b487a9"
         }
     ],
     "views": [],
@@ -149,151 +129,60 @@
     "users": [],
     "diagramViews": [],
     "idToNameHashTable": {
-        "93dd7869-dbef-4628-8b3c-4587880b6967": "Kafka Namespace",
-        "21b38081-9148-44ab-8e35-29359a54d308": "CustomerRecord",
-        "d5ee9724-fb69-458e-9c29-3af7fc9c81ea": "TestString",
-        "d7e7573c-8a16-420b-9920-8a3c87cfd1b3": "TestString_REQ",
-        "d932123a-e25a-4f31-903c-af03734aace5": "TestObject_REQ",
-        "ab0af8a6-7895-4f1e-9c92-66ff3013c2f3": "FirstName",
-        "963dcc44-0d6e-42b2-b044-c67d7289d01a": "LastName",
-        "96fdd57e-c4ff-415c-85ac-d1315f9abe15": "Address",
-        "5e2a6520-15f2-4f4c-b46b-3ba34830a84b": "Address",
-        "73dfd05f-3e74-4ebe-8021-f9ff78193c41": "Address",
-        "a3a52e75-0dd4-46e3-9766-7eaa5db93db0": "Address"
+        "b84e05cb-8213-478b-b428-c04f71b487a9": "Customer",
+        "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d": "CustomerAddress",
+        "34fbee74-72b0-4463-a47c-713928cfb689": "address",
+        "4d4c2ce6-f378-477a-96ed-bcfdf86eb9ad": "streetAddress",
+        "f92c59b2-f78a-48d6-8b38-69c20af2dce0": "houseNumber",
+        "e2bfe260-3566-4496-acf1-0be8b3237e04": "zipCode",
+        "f5148d93-2609-41ee-91ce-bd175dc72d72": "City",
+        "ea9bd91b-480a-4bc4-bbd6-1c24c67ad353": "Country",
+        "f5b8b49a-a7cc-442b-a54d-b2f27d0f31cf": "testField"
     },
     "definitions": {
         "type": "definitions",
-        "properties": [
-            {
-                "name": "Address",
-                "hackoladeMeta": {},
-                "isActivated": true,
-                "required": true,
-                "primaryKey": false,
-                "properties": [
-                    {
-                        "name": "Street",
-                        "hackoladeMeta": {},
-                        "isActivated": true,
-                        "required": true,
-                        "primaryKey": false,
-                        "type": "string",
-                        "GUID": "5e5c7249-2e82-4a7a-80fa-588da8f66263",
-                        "error": {}
-                    },
-                    {
-                        "name": "HouseNr",
-                        "hackoladeMeta": {},
-                        "isActivated": true,
-                        "required": true,
-                        "exclusiveMinimum": false,
-                        "exclusiveMaximum": false,
-                        "primaryKey": false,
-                        "mode": "int",
-                        "childType": "number",
-                        "type": "numeric",
-                        "error": {},
-                        "GUID": "d2980108-fefd-44eb-b9e0-a2ee9295c4fd"
-                    },
-                    {
-                        "name": "Zip",
-                        "hackoladeMeta": {},
-                        "isActivated": true,
-                        "required": true,
-                        "primaryKey": false,
-                        "type": "string",
-                        "GUID": "12f51a60-957e-459e-aae5-48919b45cee7",
-                        "error": {}
-                    },
-                    {
-                        "name": "City",
-                        "hackoladeMeta": {},
-                        "isActivated": true,
-                        "required": true,
-                        "primaryKey": false,
-                        "type": "string",
-                        "GUID": "3416cc1f-46f6-4c8f-85f6-db0b02fa5069",
-                        "error": {}
-                    },
-                    {
-                        "name": "Country",
-                        "hackoladeMeta": {},
-                        "isActivated": true,
-                        "required": true,
-                        "primaryKey": false,
-                        "type": "string",
-                        "GUID": "f32fa32b-0353-4db0-9846-ef5a5c610892",
-                        "error": {}
-                    }
-                ],
-                "additionalProperties": false,
-                "childType": "record",
-                "type": "document",
-                "GUID": "a3a52e75-0dd4-46e3-9766-7eaa5db93db0",
-                "definitionRefs": [
-                    [
-                        "96fdd57e-c4ff-415c-85ac-d1315f9abe15",
-                        "5e2a6520-15f2-4f4c-b46b-3ba34830a84b"
-                    ],
-                    [
-                        "21b38081-9148-44ab-8e35-29359a54d308",
-                        "d932123a-e25a-4f31-903c-af03734aace5",
-                        "73dfd05f-3e74-4ebe-8021-f9ff78193c41"
-                    ]
-                ],
-                "error": {}
-            }
-        ],
-        "GUID": "740a34ea-d078-4e7c-97d8-c669cdd28a50"
+        "properties": [],
+        "GUID": "47bd527c-99fb-4390-a6db-6192b863bb76"
     },
     "polyglotDefinitions": {
         "type": "polyglotDefinitions",
         "properties": [],
-        "GUID": "f398978e-f271-4212-8266-16fbdc9a6ce1"
+        "GUID": "0d527185-ea10-4f6d-ba1a-c31edf3899e5"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
-        "GUID": "19ea9bc0-27c1-4204-b5fb-11f2b1dfe504"
+        "GUID": "b24fea26-df2e-46fb-8a47-d920a981ef63"
     },
     "sources": [],
     "decorativeSymbols": [],
     "dbVendor": "Avro",
     "schemaNameStrategy": "TopicNameStrategy",
     "appTarget": "Avro",
-    "creationTS": "2023-08-31T09:44:05.422Z",
-    "GUID": "75973c34-7488-4ea6-8e13-a3888421559a",
+    "creationTS": "2023-09-19T06:54:50.591Z",
+    "GUID": "e93bd081-71a0-4bf8-92e2-a3efe874cd53",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-08-31T17:59:21.599Z",
+    "lastModifTS": "2023-09-19T07:01:24.143Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Avro",
-        "pluginVersion": "0.1.127",
+        "pluginVersion": "0.1.128",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.10.18"
+        "version": "6.11.0"
     },
-    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
                 "erd": [
                     {
-                        "GUID": "21b38081-9148-44ab-8e35-29359a54d308",
-                        "x": 1264,
-                        "y": 1303,
-                        "width": 263,
-                        "height": 231,
-                        "color": {}
-                    },
-                    {
-                        "GUID": "96fdd57e-c4ff-415c-85ac-d1315f9abe15",
-                        "x": 1341,
-                        "y": 1622,
-                        "width": 243,
-                        "height": 141,
+                        "GUID": "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d",
+                        "x": 1354,
+                        "y": 1185,
+                        "width": 248,
+                        "height": 159,
                         "color": {}
                     }
                 ],
@@ -305,9 +194,9 @@
                 },
                 "buckets": [
                     {
-                        "x": 1224,
-                        "y": 1263,
-                        "GUID": "93dd7869-dbef-4628-8b3c-4587880b6967"
+                        "x": 1314,
+                        "y": 1145,
+                        "GUID": "b84e05cb-8213-478b-b428-c04f71b487a9"
                     }
                 ],
                 "collapsedNodes": [],

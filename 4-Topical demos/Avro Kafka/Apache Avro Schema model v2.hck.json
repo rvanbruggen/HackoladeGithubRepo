@@ -1,0 +1,257 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "collectionName": "Address",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "AddressRecord",
+                    "isActivated": true,
+                    "required": true,
+                    "$ref": "#/definitions/AddressRecord",
+                    "GUID": "67161db6-50ff-4dd4-b1f0-ed9476c1d00b",
+                    "type": "reference",
+                    "refType": "internal",
+                    "refIdPath": [
+                        "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+                        "8ca71225-5656-4ef3-81b7-7c7e5d00db35",
+                        "26ce5f9a-fd33-453c-a4fe-ee3276703e8d"
+                    ],
+                    "ref": "26ce5f9a-fd33-453c-a4fe-ee3276703e8d",
+                    "error": {}
+                },
+                {
+                    "name": "Testfield",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "required": true,
+                    "primaryKey": false,
+                    "type": "string",
+                    "GUID": "0e5e9f14-0c9c-4cb3-a88d-da65ea2f7982",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8ca71225-5656-4ef3-81b7-7c7e5d00db35",
+                "properties": [
+                    {
+                        "code": "",
+                        "name": "AddressRecord",
+                        "isActivated": true,
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "code": "",
+                                "name": "StreetName",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "21099be7-e333-42be-87b7-f531b4847bac",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "HouseNr",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "d0a86ef2-798e-4014-b4e4-05039237d484",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "Zipcode",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "f205edce-552b-4343-a572-099898e18efb",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "City",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "cd05151d-02b9-4c6e-94f8-9ff93ff9eb77",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "Country",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "75f78cd5-bd9b-4801-83fe-6ff69fcfa3dd",
+                                "error": {}
+                            }
+                        ],
+                        "additionalProperties": true,
+                        "childType": "record",
+                        "type": "document",
+                        "GUID": "26ce5f9a-fd33-453c-a4fe-ee3276703e8d",
+                        "definitionRefs": [
+                            [
+                                "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+                                "67161db6-50ff-4dd4-b1f0-ed9476c1d00b"
+                            ]
+                        ],
+                        "error": {}
+                    }
+                ]
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "collectionUsers": [],
+            "GUID": "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+            "code": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "confluentSubjectName": "Address",
+            "confluentVersion": 1,
+            "schemaNameStrategy": "RecordNameStrategy",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "e55f6f66-7e42-48b5-a518-37f929c3707c"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "CustomerAddress",
+            "type": "bucket",
+            "collectionIds": [
+                "2e0e71fc-49f0-42ae-812c-8dc44b794225"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "indexes": [],
+            "GUID": "e55f6f66-7e42-48b5-a518-37f929c3707c",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "code": ""
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "e55f6f66-7e42-48b5-a518-37f929c3707c": "CustomerAddress",
+        "67161db6-50ff-4dd4-b1f0-ed9476c1d00b": "AddressRecord",
+        "26ce5f9a-fd33-453c-a4fe-ee3276703e8d": "AddressRecord",
+        "21099be7-e333-42be-87b7-f531b4847bac": "StreetName",
+        "d0a86ef2-798e-4014-b4e4-05039237d484": "HouseNr",
+        "f205edce-552b-4343-a572-099898e18efb": "Zipcode",
+        "cd05151d-02b9-4c6e-94f8-9ff93ff9eb77": "City",
+        "75f78cd5-bd9b-4801-83fe-6ff69fcfa3dd": "Country",
+        "2e0e71fc-49f0-42ae-812c-8dc44b794225": "Address",
+        "0e5e9f14-0c9c-4cb3-a88d-da65ea2f7982": "Testfield"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "5211ec64-ff75-4cbe-934f-a600c3e4258b"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "8b60ca0f-64d3-4ae2-b554-7c69a22d1f6b"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "37aa85a4-023f-43c1-8b2c-11605cdedd1e"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2023-09-18T09:35:57.673Z",
+    "GUID": "75037d94-8092-490c-bec6-a20c17b866c7",
+    "isLineageEnabled": false,
+    "schemaRegistryType": "Confluent Schema Registry",
+    "schemaRegistryUrl": "https://psrc-lo5k9.eu-central-1.aws.confluent.cloud",
+    "lastModifTS": "2023-09-18T09:36:30.041Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.128",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.11.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 261,
+                        "height": 159,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1010,
+                        "y": 1010,
+                        "GUID": "e55f6f66-7e42-48b5-a518-37f929c3707c"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
