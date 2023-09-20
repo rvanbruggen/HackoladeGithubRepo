@@ -2,91 +2,44 @@
     "modelName": "New model",
     "collections": [
         {
-            "collectionName": "CustomerAddress",
+            "collectionName": "Address",
             "type": "object",
             "properties": [
                 {
-                    "name": "address",
-                    "hackoladeMeta": {},
+                    "code": "",
+                    "name": "AddressRecord",
                     "isActivated": true,
                     "required": true,
-                    "primaryKey": false,
-                    "properties": [
-                        {
-                            "name": "streetAddress",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "required": true,
-                            "primaryKey": false,
-                            "type": "string",
-                            "GUID": "4d4c2ce6-f378-477a-96ed-bcfdf86eb9ad",
-                            "error": {}
-                        },
-                        {
-                            "name": "houseNumber",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "required": true,
-                            "primaryKey": false,
-                            "type": "string",
-                            "GUID": "f92c59b2-f78a-48d6-8b38-69c20af2dce0",
-                            "error": {}
-                        },
-                        {
-                            "name": "zipCode",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "required": true,
-                            "primaryKey": false,
-                            "type": "string",
-                            "GUID": "e2bfe260-3566-4496-acf1-0be8b3237e04",
-                            "error": {}
-                        },
-                        {
-                            "name": "City",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "required": true,
-                            "primaryKey": false,
-                            "type": "string",
-                            "GUID": "f5148d93-2609-41ee-91ce-bd175dc72d72",
-                            "error": {}
-                        },
-                        {
-                            "name": "Country",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "required": true,
-                            "primaryKey": false,
-                            "type": "string",
-                            "GUID": "ea9bd91b-480a-4bc4-bbd6-1c24c67ad353",
-                            "error": {}
-                        }
+                    "$ref": "#/definitions/AddressRecord",
+                    "GUID": "67161db6-50ff-4dd4-b1f0-ed9476c1d00b",
+                    "type": "reference",
+                    "refType": "internal",
+                    "refIdPath": [
+                        "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+                        "8ca71225-5656-4ef3-81b7-7c7e5d00db35",
+                        "26ce5f9a-fd33-453c-a4fe-ee3276703e8d"
                     ],
-                    "additionalProperties": false,
-                    "childType": "record",
-                    "type": "document",
-                    "GUID": "34fbee74-72b0-4463-a47c-713928cfb689",
+                    "ref": "26ce5f9a-fd33-453c-a4fe-ee3276703e8d",
                     "error": {}
                 },
                 {
-                    "name": "testField",
+                    "name": "Testfield",
                     "type": "multiple",
                     "properties": [],
                     "multipleTypes": [
                         {
                             "type": "null",
-                            "GUID": "18d5d237-21f7-4e81-95b6-2ac47e17ec0c",
+                            "GUID": "4dcfa411-39b2-44ca-bb19-13e096e80a54",
                             "error": {}
                         },
                         {
                             "type": "string",
-                            "GUID": "5d5d2e63-122e-46d4-bafa-16b7f0f303fa"
+                            "GUID": "a78743cd-62d5-42ad-8558-33634234e630"
                         }
                     ],
                     "isActivated": true,
                     "primaryKey": false,
-                    "GUID": "f5b8b49a-a7cc-442b-a54d-b2f27d0f31cf",
+                    "GUID": "0e5e9f14-0c9c-4cb3-a88d-da65ea2f7982",
                     "hackoladeMeta": {},
                     "required": false,
                     "default": null
@@ -94,23 +47,101 @@
             ],
             "definitions": {
                 "type": "definitions",
-                "properties": [],
-                "GUID": "30c5f3ce-50ed-4630-907d-1a3c8e56e8c1"
+                "GUID": "8ca71225-5656-4ef3-81b7-7c7e5d00db35",
+                "properties": [
+                    {
+                        "code": "",
+                        "name": "AddressRecord",
+                        "isActivated": true,
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "code": "",
+                                "name": "StreetName",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "21099be7-e333-42be-87b7-f531b4847bac",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "HouseNr",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "d0a86ef2-798e-4014-b4e4-05039237d484",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "Zipcode",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "f205edce-552b-4343-a572-099898e18efb",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "City",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "cd05151d-02b9-4c6e-94f8-9ff93ff9eb77",
+                                "error": {}
+                            },
+                            {
+                                "code": "",
+                                "name": "Country",
+                                "isActivated": true,
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "75f78cd5-bd9b-4801-83fe-6ff69fcfa3dd",
+                                "error": {}
+                            }
+                        ],
+                        "additionalProperties": true,
+                        "childType": "record",
+                        "type": "document",
+                        "GUID": "26ce5f9a-fd33-453c-a4fe-ee3276703e8d",
+                        "definitionRefs": [
+                            [
+                                "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+                                "67161db6-50ff-4dd4-b1f0-ed9476c1d00b"
+                            ]
+                        ],
+                        "error": {}
+                    }
+                ]
             },
             "isActivated": true,
             "additionalProperties": true,
             "collectionUsers": [],
-            "GUID": "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d",
-            "bucketId": "b84e05cb-8213-478b-b428-c04f71b487a9",
-            "error": {}
+            "GUID": "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+            "code": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "confluentSubjectName": "Address",
+            "confluentVersion": 1,
+            "schemaNameStrategy": "RecordNameStrategy",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "e55f6f66-7e42-48b5-a518-37f929c3707c"
         }
     ],
     "buckets": [
         {
-            "name": "Customer",
+            "name": "CustomerAddress",
             "type": "bucket",
             "collectionIds": [
-                "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d"
+                "2e0e71fc-49f0-42ae-812c-8dc44b794225"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -121,7 +152,11 @@
             "show": true,
             "isActivated": true,
             "indexes": [],
-            "GUID": "b84e05cb-8213-478b-b428-c04f71b487a9"
+            "GUID": "e55f6f66-7e42-48b5-a518-37f929c3707c",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "code": ""
         }
     ],
     "views": [],
@@ -129,40 +164,43 @@
     "users": [],
     "diagramViews": [],
     "idToNameHashTable": {
-        "b84e05cb-8213-478b-b428-c04f71b487a9": "Customer",
-        "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d": "CustomerAddress",
-        "34fbee74-72b0-4463-a47c-713928cfb689": "address",
-        "4d4c2ce6-f378-477a-96ed-bcfdf86eb9ad": "streetAddress",
-        "f92c59b2-f78a-48d6-8b38-69c20af2dce0": "houseNumber",
-        "e2bfe260-3566-4496-acf1-0be8b3237e04": "zipCode",
-        "f5148d93-2609-41ee-91ce-bd175dc72d72": "City",
-        "ea9bd91b-480a-4bc4-bbd6-1c24c67ad353": "Country",
-        "f5b8b49a-a7cc-442b-a54d-b2f27d0f31cf": "testField"
+        "e55f6f66-7e42-48b5-a518-37f929c3707c": "CustomerAddress",
+        "67161db6-50ff-4dd4-b1f0-ed9476c1d00b": "AddressRecord",
+        "26ce5f9a-fd33-453c-a4fe-ee3276703e8d": "AddressRecord",
+        "21099be7-e333-42be-87b7-f531b4847bac": "StreetName",
+        "d0a86ef2-798e-4014-b4e4-05039237d484": "HouseNr",
+        "f205edce-552b-4343-a572-099898e18efb": "Zipcode",
+        "cd05151d-02b9-4c6e-94f8-9ff93ff9eb77": "City",
+        "75f78cd5-bd9b-4801-83fe-6ff69fcfa3dd": "Country",
+        "2e0e71fc-49f0-42ae-812c-8dc44b794225": "Address",
+        "0e5e9f14-0c9c-4cb3-a88d-da65ea2f7982": "Testfield"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "47bd527c-99fb-4390-a6db-6192b863bb76"
+        "GUID": "5211ec64-ff75-4cbe-934f-a600c3e4258b"
     },
     "polyglotDefinitions": {
         "type": "polyglotDefinitions",
         "properties": [],
-        "GUID": "0d527185-ea10-4f6d-ba1a-c31edf3899e5"
+        "GUID": "8b60ca0f-64d3-4ae2-b554-7c69a22d1f6b"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
-        "GUID": "b24fea26-df2e-46fb-8a47-d920a981ef63"
+        "GUID": "37aa85a4-023f-43c1-8b2c-11605cdedd1e"
     },
     "sources": [],
     "decorativeSymbols": [],
     "dbVendor": "Avro",
     "schemaNameStrategy": "TopicNameStrategy",
     "appTarget": "Avro",
-    "creationTS": "2023-09-19T06:54:50.591Z",
-    "GUID": "e93bd081-71a0-4bf8-92e2-a3efe874cd53",
+    "creationTS": "2023-09-18T09:35:57.673Z",
+    "GUID": "75037d94-8092-490c-bec6-a20c17b866c7",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-09-19T07:01:24.143Z",
+    "schemaRegistryType": "Confluent Schema Registry",
+    "schemaRegistryUrl": "https://psrc-lo5k9.eu-central-1.aws.confluent.cloud",
+    "lastModifTS": "2023-09-19T07:17:09.072Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -173,15 +211,16 @@
     "applicationInformation": {
         "version": "6.11.0"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
                 "erd": [
                     {
-                        "GUID": "5cde4d5b-3a0a-4d52-ba98-4b795898eb5d",
-                        "x": 1354,
+                        "GUID": "2e0e71fc-49f0-42ae-812c-8dc44b794225",
+                        "x": 1210,
                         "y": 1185,
-                        "width": 248,
+                        "width": 264,
                         "height": 159,
                         "color": {}
                     }
@@ -194,9 +233,9 @@
                 },
                 "buckets": [
                     {
-                        "x": 1314,
+                        "x": 1170,
                         "y": 1145,
-                        "GUID": "b84e05cb-8213-478b-b428-c04f71b487a9"
+                        "GUID": "e55f6f66-7e42-48b5-a518-37f929c3707c"
                     }
                 ],
                 "collapsedNodes": [],
