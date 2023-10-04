@@ -1,0 +1,300 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "accounts",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "acciuntname",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8f61e02b-0184-4133-b914-10f33ea4832f",
+                    "code": "acciuntname",
+                    "fakerFunction": "faker.finance.accountName()",
+                    "error": {},
+                    "childRelationships": [
+                        "8269f2b3-3960-4eff-9165-eea1d763eb2b"
+                    ]
+                },
+                {
+                    "name": "accountnumber",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "7163236f-850b-46d1-a52e-9eaefe718e9b",
+                    "code": "accountnumber",
+                    "fakerFunction": "faker.finance.accountNumber(5)",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "fa1f5c9d-bde2-4592-b526-02c8f9d30a61"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "7bd941ce-3dd4-4389-bc27-09f324addce4",
+            "bucketId": "9150db9c-9f46-43ee-8366-772d5adfa86a",
+            "hackoladeMeta": {
+                "namingConvention": "code"
+            },
+            "code": "accounts"
+        },
+        {
+            "collectionName": "persons",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "New Field",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "2ac34bd6-80f8-4691-bf4e-1c55628f0a0a",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "new_field",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "7bd941ce-3dd4-4389-bc27-09f324addce4",
+                    "foreignField": [
+                        "7bd941ce-3dd4-4389-bc27-09f324addce4",
+                        "8f61e02b-0184-4133-b914-10f33ea4832f"
+                    ],
+                    "parentRelationship": "8269f2b3-3960-4eff-9165-eea1d763eb2b"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "dd445aee-faa3-4a91-bb85-aa7f617ff796"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "45c46ec6-22c6-4718-83b1-323fbde1cd69",
+            "bucketId": "9150db9c-9f46-43ee-8366-772d5adfa86a",
+            "hackoladeMeta": {
+                "namingConvention": "code"
+            },
+            "code": "persons"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "test",
+            "type": "bucket",
+            "collectionIds": [
+                "7bd941ce-3dd4-4389-bc27-09f324addce4",
+                "45c46ec6-22c6-4718-83b1-323fbde1cd69"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "9150db9c-9f46-43ee-8366-772d5adfa86a",
+            "hackoladeMeta": {
+                "namingConvention": "code"
+            },
+            "code": "test"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk persons.new_field to accounts.acciuntname",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7bd941ce-3dd4-4389-bc27-09f324addce4",
+                    "8f61e02b-0184-4133-b914-10f33ea4832f"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "45c46ec6-22c6-4718-83b1-323fbde1cd69",
+                    "2ac34bd6-80f8-4691-bf4e-1c55628f0a0a"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "parentCollection": "7bd941ce-3dd4-4389-bc27-09f324addce4",
+            "childCollection": "45c46ec6-22c6-4718-83b1-323fbde1cd69",
+            "GUID": "8269f2b3-3960-4eff-9165-eea1d763eb2b",
+            "hackoladeStyles": {
+                "GUID": "1535b8a9-0408-4180-9c9b-e1a7d2595b69",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1473,
+                        "y": 1346
+                    },
+                    {
+                        "x": 1473,
+                        "y": 1319.5
+                    },
+                    {
+                        "x": 1415.5,
+                        "y": 1319.5
+                    },
+                    {
+                        "x": 1415.5,
+                        "y": 1293
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "9150db9c-9f46-43ee-8366-772d5adfa86a": "test",
+        "7bd941ce-3dd4-4389-bc27-09f324addce4": "accounts",
+        "8f61e02b-0184-4133-b914-10f33ea4832f": "acciuntname",
+        "7163236f-850b-46d1-a52e-9eaefe718e9b": "accountnumber",
+        "45c46ec6-22c6-4718-83b1-323fbde1cd69": "persons",
+        "2ac34bd6-80f8-4691-bf4e-1c55628f0a0a": "New Field",
+        "8269f2b3-3960-4eff-9165-eea1d763eb2b": "fk persons.new_field to accounts.acciuntname"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "20076371-abff-49a1-bb98-5ea20f057148"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "9fb0ee23-d598-4e94-bf70-fc52c4d46e13"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "4bc61a5a-5e1a-46e9-8ef6-502941a866af"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-09-26T09:39:34.652Z",
+    "GUID": "354813f7-7272-472b-a184-c41484542edc",
+    "hackoladeMeta": {
+        "namingConvention": "code",
+        "validationErrors": {}
+    },
+    "isLineageEnabled": false,
+    "code": "new_model",
+    "lastModifTS": "2023-09-26T09:46:19.358Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.11.2"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "7bd941ce-3dd4-4389-bc27-09f324addce4",
+                        "x": 1312,
+                        "y": 1224,
+                        "width": 207,
+                        "height": 69,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "45c46ec6-22c6-4718-83b1-323fbde1cd69",
+                        "x": 1387,
+                        "y": 1346,
+                        "width": 172,
+                        "height": 51,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1272,
+                        "y": 1184,
+                        "GUID": "9150db9c-9f46-43ee-8366-772d5adfa86a"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "8269f2b3-3960-4eff-9165-eea1d763eb2b",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
